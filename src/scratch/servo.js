@@ -1,14 +1,17 @@
 const Gpio = require('pigpio').Gpio;
 
-const led = new Gpio(17, {mode: Gpio.OUTPUT});
+const motor = new Gpio(10, {mode: Gpio.OUTPUT});
 
-let dutyCycle = 0;
+let pulseWidth = 1000;
+let increment = 100;
 
 setInterval(() => {
-  led.pwmWrite(dutyCycle);
+  motor.servoWrite(pulseWidth);
 
-  dutyCycle += 5;
-  if (dutyCycle > 255) {
-    dutyCycle = 0;
+  pulseWidth += increment;
+  if (pulseWidth >= 2000) {
+    increment = -100;
+  } else if (pulseWidth <= 1000) {
+    increment = 100;
   }
-}, 20);
+}, 1000);
