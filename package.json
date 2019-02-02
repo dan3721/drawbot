@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dan3721/drawbot#readme",
   "dependencies": {
-    "opn": "5.4.0"
+    "opn": "5.4.0",
+    "pigpio": "1.2.1"
   }
 }
