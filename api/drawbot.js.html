@@ -1,11 +1,38 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: drawbot.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: drawbot.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * Mr. Draw Bot.
  *
  * _Auto detects [pigpio](https://github.com/fivdi/pigpio) availability and
  * disables hardware support if not available._
  *
- * The general usage pattern is to queue some commands and then invoke draw().
- * See the example drawings...
+ * The general usage pattern is to queue some commands and then invoke draw()
  *
  * @module drawbot
  * @see module:drawbot
@@ -30,7 +57,7 @@ catch (e) {
 let SERVO_A, SERVO_B
 if (!!pigpio) {
   Gpio = pigpio.Gpio
-  SERVO_A = new Gpio(10, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
+  SERVO_A = new Gpio(10, {mode: Gpio.OUTPUT})
   SERVO_B = new Gpio(9, {mode: Gpio.OUTPUT})
 }
 
@@ -83,7 +110,7 @@ const radians2Degrees = (radians) => {
  * * 1 = Servo B angle
  */
 const calcServoAngles = (x, y) => {
-  const SAME = x < CENTER
+  const SAME = x &lt; CENTER
   return SAME ?
     [
       +((180 - calcServoAngle(x, y, SAME)).toFixed(2)),
@@ -147,7 +174,7 @@ const move = (x, y) => {
  * @param points {number[]} one ore more points
  */
 const mmove = points => {
-  for (let i = 0; i < points.length; i += 2) {
+  for (let i = 0; i &lt; points.length; i += 2) {
     move(points[i], points[i + 1])
   }
 }
@@ -165,36 +192,36 @@ const dumpSVG = () => {
 
   const SVG = FS.createWriteStream(filename)
 
-  SVG.write(`<html>`)
-  SVG.write(`<head><title>${PATH.parse(filename).name}</title></head>`)
-  SVG.write(`<body>`)
+  SVG.write(`&lt;html>`)
+  SVG.write(`&lt;head>&lt;title>${PATH.parse(filename).name}&lt;/title>&lt;/head>`)
+  SVG.write(`&lt;body>`)
   SVG.write(
-    `<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">`)
-  SVG.write(`<g transform="translate(0,500)">`)
+    `&lt;svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">`)
+  SVG.write(`&lt;g transform="translate(0,500)">`)
 
   // x axis
-  SVG.write(`<line x1="0" y1="0" x2="${10 *
+  SVG.write(`&lt;line x1="0" y1="0" x2="${10 *
   SCALE}" y2="0" style="stroke:red;stroke-width:1" />`)
 
   // y axis
   SVG.write(
-    `<line x1="${CENTER * SCALE}" y1="0" x2="${CENTER * SCALE}" y2="${-10 *
+    `&lt;line x1="${CENTER * SCALE}" y1="0" x2="${CENTER * SCALE}" y2="${-10 *
     SCALE}" style="stroke:green;stroke-width:1" />`)
 
   // servo A
-  SVG.write(`<circle cx="${4 *
+  SVG.write(`&lt;circle cx="${4 *
   SCALE}" cy="0" r="10" stroke="black" stroke-width="2" fill="cyan" />`)
-  SVG.write(`<text x="${4 *
-  SCALE}" y="5" text-anchor="middle" stroke="black" stroke-width="1px">A</text>`)
+  SVG.write(`&lt;text x="${4 *
+  SCALE}" y="5" text-anchor="middle" stroke="black" stroke-width="1px">A&lt;/text>`)
 
   // servo B
-  SVG.write(`<circle cx="${6 *
+  SVG.write(`&lt;circle cx="${6 *
   SCALE}" cy="0" r="10" stroke="black" stroke-width="2" fill="yellow" />`)
-  SVG.write(`<text x="${6 *
-  SCALE}" y="5" text-anchor="middle" stroke="black" stroke-width="1px">B</text>`)
+  SVG.write(`&lt;text x="${6 *
+  SCALE}" y="5" text-anchor="middle" stroke="black" stroke-width="1px">B&lt;/text>`)
 
   // path
-  SVG.write('<polyline points="')
+  SVG.write('&lt;polyline points="')
   POINTS.forEach(point => {
     SVG.write(`${point[0] * SCALE},${-point[1] * SCALE} `)
   })
@@ -203,18 +230,18 @@ const dumpSVG = () => {
   // points and labels
   POINTS.forEach((point, index) => {
     // point
-    SVG.write(`<circle cx="${point[0] * SCALE}" cy="${-point[1] *
+    SVG.write(`&lt;circle cx="${point[0] * SCALE}" cy="${-point[1] *
     SCALE}" r="2" stroke="blue" stroke-width="2" fill="blue" />`)
     // label
-    SVG.write(`<text x="${point[0] * SCALE + 3}" y="${-point[1] *
+    SVG.write(`&lt;text x="${point[0] * SCALE + 3}" y="${-point[1] *
     SCALE -
-    8}" fill="blue" style="font-size:85%">${index} (${point[0]},${point[1]})</text>`)
+    8}" fill="blue" style="font-size:85%">${index} (${point[0]},${point[1]})&lt;/text>`)
   })
 
-  SVG.write('</g>')
-  SVG.write('</svg>')
-  SVG.write(`</body>`)
-  SVG.write(`</html>`)
+  SVG.write('&lt;/g>')
+  SVG.write('&lt;/svg>')
+  SVG.write(`&lt;/body>`)
+  SVG.write(`&lt;/html>`)
 
   SVG.end()
 
@@ -394,9 +421,8 @@ move(START_X, START_Y)
 module.exports = {
 
   // calculations
-  calcServoAngle,
-  calcServoAngles,
-  calcTranslation,
+  calcServoPosition: calcServoAngle,
+  calcServoPositions: calcServoAngles,
   getPulseWidth,
 
   // cmds
@@ -406,3 +432,26 @@ module.exports = {
 
   // utility
 }
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-drawbot.html">drawbot</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Feb 03 2019 13:03:39 GMT-0500 (EST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

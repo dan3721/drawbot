@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf out",
     "test": "node src/test.js",
     "diagnostics": "node src/diagnostics.js",
-    "draw-all": "./src/drawings/draw-all.sh"
+    "examples": "./src/examples/run-all.sh",
+    "doc": "rimraf api & jsdoc -c jsdoc.conf.json -R README.md"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
   },
   "optionalDependencies": {
     "pigpio": "1.2.1"
+  },
+  "devDependencies": {
+    "jsdoc": "3.5.5",
+    "rimraf": "2.6.3"
   }
 }

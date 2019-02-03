@@ -1,6 +1,5 @@
-# Draw Bot
 
-# Run
+### Run
 
 **Prerequisites**
 
@@ -22,16 +21,14 @@ not on a Raspberry Pi then, you will see a node-gyp error and then a WARN about 
 _Note(2) The pigpio C library and therefore the pigpio Node.js package requires root/sudo 
 privileges to access hardware peripherals._
 
-# Tools
+##### NPM Scripts
 
-Execute the test cases with: `npm test`
+* `api` execute jsdoc to produce the api documentation
+* `test` execute test cases
+* `diagnostics` run diagnostic tests 
+* `examples` run all the example drawings
 
-Run diagnostics with: `npm run diagnostics`
-
-Produce all drawings: `npm run draw-all`. This exercises all the drawings and dumps out an HTML SVG for each.
-
-
-# Reference
+##### Reference
 
 [Installing gcc/g++ 4.8 on Raspbian Wheezy for the Raspberry Pi](https://github.com/fivdi/onoff/wiki/Node.js-v4-and-native-addons#installing-gccg-48-on-raspbian-wheezy-for-the-raspberry-pi)
 
