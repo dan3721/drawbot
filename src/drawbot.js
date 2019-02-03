@@ -33,8 +33,12 @@ try {
 }
 catch (e) {
   // console.warn(e.message)
-  console.warn(
-    '*** pigpio module not available so there will be no hardware support ***')
+  console.warn('\
+*********************************************************************\n\
+* pigpio module not available so there will be no hardware support! *\n\
+*                                                                   *\n\
+* To resolve install pigpio: npm i pigpio                           *\n\
+*********************************************************************')
 }
 
 // bind output pins
@@ -60,6 +64,11 @@ const SERVO_MAX_PULSE_WIDTH = 2500
 const DEG_PER_PULSE = (SERVO_MAX_DEG /
   (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH))
 const SERVO_SPEED_DEGREES_PER_SECONDS = .18 / 60   // degrees per second
+
+/* Standard servos are supposed to be 0 (off), 500 (most anti-clockwise) to
+* 2500 (most clockwise). However the ones I'm working with are reversed!
+ */
+const PWM_RANGE_REVERSED = true
 
 const CMD_QUEUE = []
 
@@ -240,7 +249,11 @@ const dumpSVG = () => {
  */
 const getPulseWidth = (degrees) => {
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
-  return +(width.toFixed(0))
+  width = +(width.toFixed(0))
+  if (PWM_RANGE_REVERSED) {
+    width = width + (1500 - width) * 2
+  }
+  return width
 }
 
 /**
@@ -328,6 +341,8 @@ const calcTranslation = (x1, y1, x2, y2) => {
  */
 const draw = (dumpSvg = false) => {
 
+  move(START_X, START_Y) // reset to starting position
+
   const START_DATE = new Date()
   const START_TIME = START_DATE.getTime()
   log(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
@@ -377,7 +392,7 @@ const draw = (dumpSvg = false) => {
               POINTS.push([_x, _y])
 
               isExecuting = false
-            }, TRANSLATION_INFO[2])
+            }, TRANSLATION_INFO[2] + 1000) // TODO: temp padd
 
             break
           default:

@@ -25,9 +25,10 @@ const assert = (description, expected, actual) => {
 // TESTS BEGIN
 
 // check conversion of degrees to pulse width
-assert('pulse width is 500 @ 0°', 500, drawbot.getPulseWidth(0))
+// NOTE: current servos are reversed; see drawbot.PWM_RANGE_REVERSED
+assert('pulse width is 500 @ 0°', 2500, drawbot.getPulseWidth(0))
 assert('pulse width is 1500 @ 90°', 1500, drawbot.getPulseWidth(90))
-assert('pulse width is 2500 @ 180°', 2500, drawbot.getPulseWidth(180))
+assert('pulse width is 2500 @ 180°', 500, drawbot.getPulseWidth(180))
 
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
@@ -43,8 +44,11 @@ assert('B angle is 83.22° @ min reach (5,1)', 83.22, positions2[1])
 
 // ensure calcTranslation return information sane
 const TRANSITION_INFO = drawbot.calcTranslation(5, 5, 5, 6)
-assert('calcTranslation: pulse A is 1995', 1995, TRANSITION_INFO[0])
-assert('calcTranslation: pulse B is 1005', 1005, TRANSITION_INFO[1])
+
+// NOTE: current servos are reversed; see drawbot.PWM_RANGE_REVERSED
+assert('calcTranslation: pulse A is 1995', 1005, TRANSITION_INFO[0])
+assert('calcTranslation: pulse B is 1005', 1995, TRANSITION_INFO[1])
+
 assert('calcTranslation: execution time is 26', 26, TRANSITION_INFO[2])
 assert('calcTranslation: origin point', [125.94, 54.06], TRANSITION_INFO[3])
 assert('calcTranslation: target point', [134.59, 45.41], TRANSITION_INFO[4])
@@ -58,6 +62,7 @@ assert('calcTranslation: target point', [134.59, 45.41], TRANSITION_INFO[4])
 // TESTS END
 
 // RESULTS
+console.log()
 console.info(numFailed === 0
   ? '*** ALL TESTS PASSED ***'
   : `*** ${numFailed} FAILURES ***`)
