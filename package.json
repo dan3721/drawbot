@@ -18,7 +18,9 @@
     "url": "https://github.com/dan3721/drawbot/issues"
   },
   "homepage": "https://github.com/dan3721/drawbot#readme",
-  "dependencies": {},
+  "dependencies": {
+    "dateformat": "3.0.3"
+  },
   "optionalDependencies": {
     "pigpio": "1.2.1"
   }

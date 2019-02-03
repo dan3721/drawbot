@@ -1,13 +1,15 @@
 const FS = require('fs')
 const PATH = require('path')
+const DATEFORMAT = require('dateformat')
 
 let pigpio
 try {
   pigpio = require('pigpio')
 }
 catch (e) {
-  console.warn(e.message)
-  console.warn('No servo control!')
+  // console.warn(e.message)
+  console.warn(
+    '*** pigpio module not available so there will be no hardware support ***')
 }
 
 let SERVO_A, SERVO_B
@@ -21,7 +23,7 @@ if (!!pigpio) {
 const ARM_1_LENGTH = 4          // length of arm 1
 const ARM_2_LENGTH = 5          // length of arm 2
 const CENTER = 5                // center point
-const PIVIOT_DIST_FROM_CENT = 1 // distance from servo axel from CENTER
+const PIVIOT_DIST_FROM_CENT = 1  // distance from servo axel from CENTER
 const START_X = 5
 const START_Y = 5
 
@@ -31,16 +33,16 @@ const SERVO_MIN_PULSE_WIDTH = 500
 const SERVO_MAX_PULSE_WIDTH = 2500
 const DEG_PER_PULSE = (SERVO_MAX_DEG /
   (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH))
-// console.log(`DEG_PER_PULSE:[${DEG_PER_PULSE}]`)
+const SERVO_SPEED_DEGREES_PER_SECONDS = .18 / 60   // degrees per second
 
 const CMD_QUEUE = []
 
-// interval between cmd executions
-const CMD_EXECUTION_INTERVAL_IN_MILLIS = !! pigpio ? 1000 : 0
+// interval between cmd execution attempts
+const CMD_EXECUTION_INTERVAL_IN_MILLIS = 10
 
 // current position
-let _x = 0
-let _y = 0
+let _x = START_X
+let _y = START_Y
 
 // point stack
 const POINTS = []
@@ -188,17 +190,23 @@ const dumpSVG = () => {
 
   SVG.end()
 
-  console.log(`${filename}`)
+  console.log(`SVG captured to file: ${filename}`)
 
 }
 
+/**
+ * Calculates the pulse width for the specified degrees.
+ * @param degrees
+ * @returns {number}
+ */
 const getPulseWidth = (degrees) => {
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
-  width = width.toFixed(0)
-  width = +(width)
-  return width
+  return +(width.toFixed(0))
 }
 
+/**
+ * Initiates the drawing cycle which executes all the commands and terminates.
+ */
 const draw = (dumpSvg = false) => {
 
   /**
@@ -212,72 +220,109 @@ const draw = (dumpSvg = false) => {
     return val.padStart(6, ' ')
   }
 
-  const fmtPoint = (x, y) => (`${x},${y}`).padEnd(8, ' ')
+  const fmtPoint = (n) => (`${n}`).padEnd(4, ' ')
 
   const padPulse = (val) => {
     val += ''
     return val.padStart(5, ' ')
   }
 
+  const START_DATE = new Date()
+  const START_TIME = START_DATE.getTime()
+  console.info(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
+
+  let isExecuting = false
   const CMD_EXECUTOR = setInterval(() => {
 
-    const CMD = CMD_QUEUE.shift()
-    if (!!CMD) {
-
-      const CMD_SEGMENTS = CMD.split(' ')
-      const ACTION = CMD_SEGMENTS[0]
-
-      switch (ACTION) {
-        case  'move':
-
-          const x = CMD_SEGMENTS[1]
-          const y = CMD_SEGMENTS[2]
-
-          // const CURRENT_POSITION = calcServoPositions(_x, _y)
-          const TARGET_POSITION = calcServoPositions(x, y)
-
-          // const DELTA_X = Math.abs(CURRENT_POSITION[0] - TARGET_POSITION[0]).
-          //   toFixed(2)
-          // const DELTA_Y = Math.abs(CURRENT_POSITION[1] - TARGET_POSITION[1]).
-          //   toFixed(2)
-
-          const PULSE_A = getPulseWidth(TARGET_POSITION[0])
-          const PULSE_B = getPulseWidth(TARGET_POSITION[1], true)
-
-          // console.info(
-          //   `${fmtPoint(_x, _y)} -> ${fmtPoint(x, y)} A:[${padDeg(
-          //     CURRENT_POSITION[0])} -> ${padDeg(
-          //     TARGET_POSITION[0])}]° B:[${padDeg(CURRENT_POSITION[0])} -> ${padDeg(
-          //     TARGET_POSITION[1])}]° ΔA:${padDeg(
-          //     DELTA_X)} ΔB°:${padDeg(DELTA_Y)}°${DELTA_X === DELTA_Y ? ' ' : '*'} (${PULSE_A}:${PULSE_B})`)
-
-          console.info(
-            `${fmtPoint(x, y)} ${padDeg(TARGET_POSITION[0])}° ${padDeg(
-              TARGET_POSITION[0])}° ${padPulse(PULSE_A)} ${padPulse(PULSE_B)}`)
-
-          if (!!pigpio) {
-            SERVO_A.servoWrite(PULSE_A)
-            SERVO_B.servoWrite(PULSE_B)
-          }
-          // update location
-          _x = x
-          _y = y
-          POINTS.push([_x, _y])
-
-          break
-        default:
-          throw `${ACTION} is an unsupported action!`
-      }
-
+    if (isExecuting) {
+      process.stdout.write('.')
     }
     else {
-      clearInterval(CMD_EXECUTOR)
-      if (dumpSvg) {
-        dumpSVG()
-      }
-      console.info('DONE')
-    }
 
+      const CMD = CMD_QUEUE.shift()
+      if (!!CMD) {
+
+        const CMD_SEGMENTS = CMD.split(' ')
+        const ACTION = CMD_SEGMENTS[0]
+
+        // each cmd is responsible for managing isExecuting !
+        switch (ACTION) {
+          case  'move':
+
+            const x = CMD_SEGMENTS[1]
+            const y = CMD_SEGMENTS[2]
+
+            const CURRENT_POSITION = calcServoPositions(_x, _y)
+            const TARGET_POSITION = calcServoPositions(x, y)
+
+            const DELTA_DEGREES_A = Math.abs(
+              CURRENT_POSITION[0] - TARGET_POSITION[0])
+            const DELTA_DEGREES_B = Math.abs(
+              CURRENT_POSITION[1] - TARGET_POSITION[1])
+
+            const LARGEST_DELTA_DEGREES = +((DELTA_DEGREES_A > DELTA_DEGREES_B
+              ? DELTA_DEGREES_A
+              : DELTA_DEGREES_B).toFixed(2))
+            const EXECUTION_TIME_IN_MILLIS = +(((LARGEST_DELTA_DEGREES *
+              SERVO_SPEED_DEGREES_PER_SECONDS) * 1000).toFixed())
+
+            // const DELTA_X = Math.abs(CURRENT_POSITION[0] - TARGET_POSITION[0]).
+            //   toFixed(2)
+            // const DELTA_Y = Math.abs(CURRENT_POSITION[1] - TARGET_POSITION[1]).
+            //   toFixed(2)
+
+            const PULSE_A = getPulseWidth(TARGET_POSITION[0])
+            const PULSE_B = getPulseWidth(TARGET_POSITION[1], true)
+
+            // feedback
+            process.stdout.write(
+              `\n${fmtPoint(x)} ${fmtPoint(y)} ${padDeg(
+                TARGET_POSITION[0])}° ${padDeg(
+                TARGET_POSITION[1])}° ${padPulse(PULSE_A)} ${padPulse(
+                PULSE_B)} ${('' + EXECUTION_TIME_IN_MILLIS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
+
+            // start pwm for both servos
+            if (!!pigpio) {
+              SERVO_A.servoWrite(PULSE_A)
+              SERVO_B.servoWrite(PULSE_B)
+            }
+
+            isExecuting = true
+
+            setTimeout(() => {
+
+              // stop pwm for both servos
+              if (!!pigpio) {
+                SERVO_A.servoWrite(0)
+                SERVO_B.servoWrite(0)
+              }
+
+              // update and record location
+              _x = x
+              _y = y
+              POINTS.push([_x, _y])
+
+              isExecuting = false
+            }, EXECUTION_TIME_IN_MILLIS)
+
+            break
+          default:
+            throw `${ACTION} is an unsupported action!`
+        }
+
+      }
+
+      // no more cmds so shut it all down...
+      else {
+        clearInterval(CMD_EXECUTOR)
+        if (dumpSvg) {
+          console.log('\n')
+          dumpSVG()
+        }
+        console.info(`DONE Total execution time was ${new Date().getTime() -
+        START_TIME} milliseconds.`)
+      }
+    }
   }, CMD_EXECUTION_INTERVAL_IN_MILLIS)
 
 }
@@ -298,5 +343,4 @@ module.exports = {
   draw,
 
   // utility
-  dumpSVG,
 }
