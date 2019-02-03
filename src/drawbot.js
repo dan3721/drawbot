@@ -15,6 +15,17 @@ const FS = require('fs')
 const PATH = require('path')
 const DATEFORMAT = require('dateformat')
 
+/**
+ * Log message
+ * @param msg message
+ * @private
+ */
+const log = (msg) => {
+  if (!process.env.TESTING) {
+    console.log(msg)
+  }
+}
+
 // load pigpio module
 let pigpio
 try {
@@ -218,7 +229,7 @@ const dumpSVG = () => {
 
   SVG.end()
 
-  console.log(`SVG captured to file: ${filename}`)
+  log(`SVG captured to file: ${filename}`)
 
 }
 
@@ -265,11 +276,11 @@ const padPulse = (val) => {
  * @param x2 {number} target x
  * @param y2 {number} target y
  * @returns {number[]} an array where idx:
- * 0 = pulse A
- * 1 = pulse B
- * 2 = execution time in millis
- * 3 = current positions in degrees of both servos: [A,B]
- * 4 = target positions in degrees of both servos: [A,B]
+ * * 0 = number - pulse A
+ * * 1 = number - pulse B
+ * * 2 = number - execution time in millis
+ * * 3 = number[] - current positions in degrees of both servos
+ * * 4 = number[] - target positions in degrees of both servos
  */
 const calcTranslation = (x1, y1, x2, y2) => {
 
@@ -296,11 +307,13 @@ const calcTranslation = (x1, y1, x2, y2) => {
   const PULSE_B = getPulseWidth(TARGET_POSITION[1], true)
 
   // feedback
-  process.stdout.write(
-    `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
-      TARGET_POSITION[0])}° ${padDeg(
-      TARGET_POSITION[1])}° ${padPulse(PULSE_A)} ${padPulse(
-      PULSE_B)} ${('' + EXECUTION_TIME_IN_MILLIS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
+  if (!process.env.TESTING) {
+    process.stdout.write(
+      `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
+        TARGET_POSITION[0])}° ${padDeg(
+        TARGET_POSITION[1])}° ${padPulse(PULSE_A)} ${padPulse(
+        PULSE_B)} ${('' + EXECUTION_TIME_IN_MILLIS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
+  }
 
   return [
     PULSE_A,
@@ -317,7 +330,7 @@ const draw = (dumpSvg = false) => {
 
   const START_DATE = new Date()
   const START_TIME = START_DATE.getTime()
-  console.info(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
+  log(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
 
   let isExecuting = false
   const CMD_EXECUTOR = setInterval(() => {
@@ -377,10 +390,10 @@ const draw = (dumpSvg = false) => {
       else {
         clearInterval(CMD_EXECUTOR)
         if (dumpSvg) {
-          console.log('\n')
+          log('\n')
           dumpSVG()
         }
-        console.info(`DONE Total execution time was ${new Date().getTime() -
+        log(`DONE Total execution time was ${new Date().getTime() -
         START_TIME} milliseconds.`)
       }
     }
