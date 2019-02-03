@@ -32,6 +32,11 @@ const positions2 = drawbot.calcServoPositions(5, MIN_X)
 assert('A is 96.78° @ min reach (5,1)', 96.78, positions2[0])
 assert('B is 83.22° @ min reach (5,1)', 83.22, positions2[1])
 
+let actual = +(33.446).toFixed(2)
+assert('+() produces a numeric', true, !Number.isNaN(actual))
+assert('+() rounds up properly', 33.45, actual)
+assert('+() rounds down properly', 11.44, +(11.443).toFixed(2))
+
 // TESTS END
 
 // RESULTS

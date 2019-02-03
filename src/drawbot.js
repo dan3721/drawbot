@@ -58,10 +58,10 @@ const calcServoPositions = (x, y) => {
   const SAME = x < CENTER
   return SAME ?
     [
-      Number((180 - calcServoPosition(x, y, SAME)).toFixed(2)),
+      +((180 - calcServoPosition(x, y, SAME)).toFixed(2)),
       calcServoPosition(x, y, !SAME)] : // A
     [
-      Number((180 - calcServoPosition(x, y, !SAME)).toFixed(2)),
+      +((180 - calcServoPosition(x, y, !SAME)).toFixed(2)),
       calcServoPosition(x, y, SAME)]   // B
 }
 
@@ -97,7 +97,7 @@ const calcServoPosition = (x, y, same) => {
   // step 4: add angles
   const ANGLE = (same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1).toFixed(2)
 
-  return Number(ANGLE)
+  return +(ANGLE)
 }
 
 const move = (x, y) => {
@@ -195,7 +195,7 @@ const dumpSVG = () => {
 const getPulseWidth = (degrees) => {
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
   width = width.toFixed(0)
-  width = Number(width)
+  width = +(width)
   return width
 }
 
