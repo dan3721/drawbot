@@ -15,4 +15,4 @@ drawbot.move(points[points.length-2], points[points.length-1])
 // draw star
 drawbot.mmove(points)
 
-drawbot.dumpSVG()
+drawbot.draw(true)

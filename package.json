@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/test.js",
+    "diagnostics": "node src/diagnostics.js",
+    "draw-all": "./src/drawings/draw-all.sh"
   },
   "repository": {
     "type": "git",
@@ -16,8 +18,8 @@
     "url": "https://github.com/dan3721/drawbot/issues"
   },
   "homepage": "https://github.com/dan3721/drawbot#readme",
-  "dependencies": {
-    "opn": "5.4.0",
+  "dependencies": {},
+  "optionalDependencies": {
     "pigpio": "1.2.1"
   }
 }
