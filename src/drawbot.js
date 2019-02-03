@@ -389,8 +389,8 @@ const draw = (dumpSvg = false) => {
       // no more cmds so shut it all down...
       else {
         clearInterval(CMD_EXECUTOR)
+        log('\n')
         if (dumpSvg) {
-          log('\n')
           dumpSVG()
         }
         log(`DONE Total execution time was ${new Date().getTime() -
