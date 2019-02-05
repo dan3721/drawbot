@@ -55,8 +55,8 @@ const START_Y = 1
 const ARM_1_LENGTH = 4
 const ARM_2_LENGTH = 5
 const CENTER = 5
-const PWM_STEP_SIZE = 100
-const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 100 : 0
+const PWM_STEP_SIZE = 1
+const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 10 : 0
 // const PWM_STEPS_PER_MILLIS = 100 / PWM_STEP_DURATION_IN_MILLIS
 const SERVO_OFFSET_FROM_CENTER = 1
 const SERVO_MAX_DEG = 180
@@ -74,7 +74,7 @@ const PWM_RANGE_REVERSED = true
 const CMD_QUEUE = []
 
 // interval between cmd execution attempts
-const CMD_EXECUTION_INTERVAL_IN_MILLIS = !!pigpio ? 10 : 5
+const CMD_EXECUTION_INTERVAL_IN_MILLIS = !!pigpio ? 100 : 5
 
 // current position
 let _x = START_X
@@ -304,8 +304,8 @@ const calcTranslation = (x1, y1, x2, y2) => {
   let DELTA_DEGREES_A = Math.abs(CURRENT_POSITION[0] - TARGET_POSITION[0])
   let DELTA_DEGREES_B = Math.abs(CURRENT_POSITION[1] - TARGET_POSITION[1])
 
-  const LARGEST_DELTA_DEGREES = DELTA_DEGREES_A > DELTA_DEGREES_B
-    ? DELTA_DEGREES_A : DELTA_DEGREES_B
+  // const LARGEST_DELTA_DEGREES = DELTA_DEGREES_A > DELTA_DEGREES_B
+  //   ? DELTA_DEGREES_A : DELTA_DEGREES_B
   // const EXECUTION_TIME_IN_MILLIS = (LARGEST_DELTA_DEGREES *
   //   SERVO_SPEED_DEGREES_PER_SECONDS) * 1000
 
@@ -331,25 +331,17 @@ const calcTranslation = (x1, y1, x2, y2) => {
   let PULSE_STEP_B = DELTA_PULSE_A >= DELTA_PULSE_B ? (DELTA_PULSE_B /
     DELTA_PULSE_A) : 1
 
-  // scale by step size
-  PULSE_STEP_A = PULSE_STEP_A * (PWM_STEP_SIZE / 100)
-  PULSE_STEP_B = PULSE_STEP_B * (PWM_STEP_SIZE / 100)
-
-  const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
+  // const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
 
   const NUM_STEPS = Math.ceil(
-    (PULSE_STEP_A === 1 ? DELTA_PULSE_A : DELTA_PULSE_B) / PWM_STEP_SIZE)
+    (PULSE_STEP_A >= PULSE_STEP_B ? DELTA_PULSE_B : DELTA_PULSE_A) / PWM_STEP_SIZE)
 
-  let PULSE_INCREMENT_A = PULSE_STEP_B === 1
-    ? PULSE_STEP_A * 100
-    : PWM_STEP_SIZE
-  if (TARGET_PULSE_A < CURRENT_PULSE_A) {
+  let PULSE_INCREMENT_A = DELTA_PULSE_A / NUM_STEPS
+    if (TARGET_PULSE_A <= CURRENT_PULSE_A) {
     PULSE_INCREMENT_A = PULSE_INCREMENT_A * -1
   }
-  let PULSE_INCREMENT_B = PULSE_STEP_A === 1
-    ? PULSE_STEP_B * 100
-    : PWM_STEP_SIZE
-  if (TARGET_PULSE_B < CURRENT_PULSE_B) {
+  let PULSE_INCREMENT_B = DELTA_PULSE_B / NUM_STEPS
+  if (TARGET_PULSE_B <= CURRENT_PULSE_B) {
     PULSE_INCREMENT_B = PULSE_INCREMENT_B * -1
   }
 
@@ -359,15 +351,16 @@ const calcTranslation = (x1, y1, x2, y2) => {
   DELTA_DEGREES_A = r2(DELTA_DEGREES_A)
   DELTA_DEGREES_B = r2(DELTA_DEGREES_B)
 
-  PULSE_STEP_A = r2(PULSE_STEP_A)
-  PULSE_STEP_B = r2(PULSE_STEP_B)
+  // PULSE_STEP_A = r2(PULSE_STEP_A)
+  // PULSE_STEP_B = r2(PULSE_STEP_B)
 
   PULSE_INCREMENT_A = r2(PULSE_INCREMENT_A)
   PULSE_INCREMENT_B = r2(PULSE_INCREMENT_B)
 
   // feedback
   if (!process.env.TESTING) {
-    process.stdout.write(
+    // process.stdout.write
+    log(
       `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
         TARGET_POSITION[0])}° ${padDeg(
         TARGET_POSITION[1])}° ${padPulse(TARGET_PULSE_A)} ${padPulse(
@@ -381,8 +374,6 @@ const calcTranslation = (x1, y1, x2, y2) => {
     TARGET_PULSE_A, TARGET_PULSE_B,
     DELTA_DEGREES_A, DELTA_DEGREES_B,
     DELTA_PULSE_A, DELTA_PULSE_B,
-    PULSE_STEP_A, PULSE_STEP_B,
-    PULSE_RATIO,
     NUM_STEPS,
     PULSE_INCREMENT_A, PULSE_INCREMENT_B,
   }
@@ -413,6 +404,8 @@ const draw = (dumpSvg = false) => {
 
   move(START_X, START_Y) // reset to starting position (appends to end)
 
+  log(CMD_QUEUE)
+
   const START_DATE = new Date()
   const START_TIME = START_DATE.getTime()
   log(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
@@ -422,6 +415,7 @@ const draw = (dumpSvg = false) => {
   const CMD_EXECUTOR = setInterval(() => {
 
     if (isExecuting) {
+      // log('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
       // process.stdout.write('+')
     }
     else {
@@ -454,26 +448,28 @@ const draw = (dumpSvg = false) => {
               if (steps < TRANSLATION_INFO.NUM_STEPS) {
 
                 // last step then set both pulses to their respective targets
-                if (steps === TRANSLATION_INFO.NUM_STEPS) {
+                if (steps -1 === TRANSLATION_INFO.NUM_STEPS) {
                   PULSE_A = TRANSLATION_INFO.TARGET_PULSE_A
                   PULSE_B = TRANSLATION_INFO.TARGET_PULSE_B
                 }
                 // otherwise increment
                 else {
-                  PULSE_A += Math.round(TRANSLATION_INFO.PULSE_INCREMENT_A)
-                  PULSE_B += Math.round(TRANSLATION_INFO.PULSE_INCREMENT_B)
+                  PULSE_A += TRANSLATION_INFO.PULSE_INCREMENT_A
+                  PULSE_B += TRANSLATION_INFO.PULSE_INCREMENT_B
                 }
 
-                PULSE_A = protect(PULSE_A)
-                PULSE_B = protect(PULSE_B)
+                PULSE_A = protect(Math.round(PULSE_A))
+                PULSE_B = protect(Math.round(PULSE_B))
 
                 // set pulse
                 if (!!pigpio) {
                   SERVO_A.servoWrite(PULSE_A)
                   SERVO_B.servoWrite(PULSE_B)
+                  console.log(`${PULSE_A}\t${PULSE_B}`)
                 }
 
-                process.stdout.write('-') // per step...
+                // process.stdout.write('-') // per step...
+                // console.log(`${PULSE_A}\t${PULSE_B}`)
 
                 steps++
 
@@ -484,8 +480,8 @@ const draw = (dumpSvg = false) => {
 
                 // stop pwm for both servos
                 if (!!pigpio) {
-                  SERVO_A.servoWrite(PULSE_A)
-                  SERVO_B.servoWrite(PULSE_B)
+                  SERVO_A.servoWrite(0)
+                  SERVO_B.servoWrite(0)
                 }
 
                 // update and record location
