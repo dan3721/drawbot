@@ -334,8 +334,7 @@ const calcTranslation = (x1, y1, x2, y2) => {
 
   const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
 
-  const NUM_STEPS = (PULSE_STEP_A === 1 ? DELTA_PULSE_A : DELTA_PULSE_B) /
-    PWM_STEP_SIZE
+  const NUM_STEPS = Math.round((PULSE_STEP_A === 1 ? DELTA_PULSE_A : DELTA_PULSE_B) / PWM_STEP_SIZE)
 
   let PULSE_INCREMENT_A = PULSE_STEP_B === 1
     ? PULSE_STEP_A * 100
