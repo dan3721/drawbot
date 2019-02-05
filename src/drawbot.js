@@ -331,6 +331,10 @@ const calcTranslation = (x1, y1, x2, y2) => {
   let PULSE_STEP_B = DELTA_PULSE_A >= DELTA_PULSE_B ? (DELTA_PULSE_B /
     DELTA_PULSE_A) : 1
 
+  // scale by step size
+  PULSE_STEP_A = PULSE_STEP_A * (PWM_STEP_SIZE / 100)
+  PULSE_STEP_B = PULSE_STEP_B * (PWM_STEP_SIZE / 100)
+
   const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
 
   const NUM_STEPS = Math.ceil(
@@ -392,6 +396,16 @@ const calcTranslation = (x1, y1, x2, y2) => {
  */
 const r2 = (n) => +(n.toFixed(2))
 
+const protect = (pulse) => {
+  if (pulse < SERVO_MIN_PULSE_WIDTH) {
+    pulse = SERVO_MIN_PULSE_WIDTH
+  }
+  else if (pulse > SERVO_MAX_PULSE_WIDTH) {
+    pulse = SERVO_MAX_PULSE_WIDTH
+  }
+  return pulse
+}
+
 /**
  * Initiates the drawing cycle which executes all the commands and terminates.
  */
@@ -449,6 +463,9 @@ const draw = (dumpSvg = false) => {
                   PULSE_A += Math.round(TRANSLATION_INFO.PULSE_INCREMENT_A)
                   PULSE_B += Math.round(TRANSLATION_INFO.PULSE_INCREMENT_B)
                 }
+
+                PULSE_A = protect(PULSE_A)
+                PULSE_B = protect(PULSE_B)
 
                 // set pulse
                 if (!!pigpio) {
