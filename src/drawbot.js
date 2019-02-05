@@ -50,22 +50,22 @@ if (!!pigpio) {
 }
 
 // setup
-const ARM_1_LENGTH = 4          // length of arm 1
-const ARM_2_LENGTH = 5          // length of arm 2
-const CENTER = 5                // center point
-const PIVIOT_DIST_FROM_CENT = 1 // distance from servo axel from CENTER
 const START_X = 5
 const START_Y = 1
-const PWM_STEP_SIZE = 100        // step size
-const PWM_STEP_DELAY_IN_MILLIS = !!pigpio ? 100 : 0 // delay between steps in millis
-
-// servo specs
+const ARM_1_LENGTH = 4
+const ARM_2_LENGTH = 5
+const CENTER = 5
+const PWM_STEP_SIZE = 100
+const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 100 : 0
+// const PWM_STEPS_PER_MILLIS = 100 / PWM_STEP_DURATION_IN_MILLIS
+const SERVO_OFFSET_FROM_CENTER = 1
 const SERVO_MAX_DEG = 180
 const SERVO_MIN_PULSE_WIDTH = 500
 const SERVO_MAX_PULSE_WIDTH = 2500
 const DEG_PER_PULSE = (SERVO_MAX_DEG /
   (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH))
-const SERVO_SPEED_DEGREES_PER_SECONDS = .18 / 60   // degrees per second
+// const SERVO_SPEED_DEGREES_PER_SECOND = .18 / 60
+// const SERVO_SPEED_DEGREES_PER_MILLIS = SERVO_SPEED_DEGREES_PER_SECOND / 1000
 
 // Standard servos are supposed to be 0 (off), 500 (most anti-clockwise) to
 // 2500 (most clockwise). However the ones I'm working with are reversed!
@@ -90,6 +90,20 @@ const POINTS = []
  */
 const radians2Degrees = (radians) => {
   return radians * 180 / Math.PI
+}
+
+/**
+ * Calculates the pulse width for the specified degrees.
+ * @param degrees
+ * @returns {number} pulse width
+ */
+const getPulseWidth = (degrees) => {
+  let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
+  width = +(width.toFixed(0))
+  if (PWM_RANGE_REVERSED) {
+    width = width + (1500 - width) * 2
+  }
+  return width
 }
 
 /**
@@ -129,8 +143,8 @@ const calcServoAngles = (x, y) => {
 const calcServoAngle = (x, y, same) => {
 
   const OFFSET = same ?
-    CENTER - PIVIOT_DIST_FROM_CENT : // offset is left of center
-    CENTER + PIVIOT_DIST_FROM_CENT // offset is right of center
+    CENTER - SERVO_OFFSET_FROM_CENTER : // offset is left of center
+    CENTER + SERVO_OFFSET_FROM_CENTER // offset is right of center
 
   const OPPOSITE = OFFSET - x
   const ADJACENT = y
@@ -241,20 +255,6 @@ const dumpSVG = () => {
 
   log(`SVG captured to file: ${filename}`)
 
-}
-
-/**
- * Calculates the pulse width for the specified degrees.
- * @param degrees
- * @returns {number} pulse width
- */
-const getPulseWidth = (degrees) => {
-  let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
-  width = +(width.toFixed(0))
-  if (PWM_RANGE_REVERSED) {
-    width = width + (1500 - width) * 2
-  }
-  return width
 }
 
 /**
@@ -480,7 +480,7 @@ const draw = (dumpSvg = false) => {
 
               }
 
-            }, PWM_STEP_DELAY_IN_MILLIS)
+            }, PWM_STEP_DURATION_IN_MILLIS)
 
             break
           default:
