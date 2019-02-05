@@ -55,9 +55,9 @@ const ARM_2_LENGTH = 5          // length of arm 2
 const CENTER = 5                // center point
 const PIVIOT_DIST_FROM_CENT = 1 // distance from servo axel from CENTER
 const START_X = 5
-const START_Y = 5
-const PWM_STEP_SIZE = 100             // step size
-const PWM_STEP_DELAY_IN_MILLIS = 1000 // delay between steps in millis
+const START_Y = 1
+const PWM_STEP_SIZE = 100        // step size
+const PWM_STEP_DELAY_IN_MILLIS = !!pigpio ? 100 : 0 // delay between steps in millis
 
 // servo specs
 const SERVO_MAX_DEG = 180
@@ -67,15 +67,14 @@ const DEG_PER_PULSE = (SERVO_MAX_DEG /
   (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH))
 const SERVO_SPEED_DEGREES_PER_SECONDS = .18 / 60   // degrees per second
 
-/* Standard servos are supposed to be 0 (off), 500 (most anti-clockwise) to
-* 2500 (most clockwise). However the ones I'm working with are reversed!
- */
+// Standard servos are supposed to be 0 (off), 500 (most anti-clockwise) to
+// 2500 (most clockwise). However the ones I'm working with are reversed!
 const PWM_RANGE_REVERSED = true
 
 const CMD_QUEUE = []
 
 // interval between cmd execution attempts
-const CMD_EXECUTION_INTERVAL_IN_MILLIS = 1000
+const CMD_EXECUTION_INTERVAL_IN_MILLIS = !!pigpio ? 10 : 5
 
 // current position
 let _x = START_X
@@ -334,7 +333,8 @@ const calcTranslation = (x1, y1, x2, y2) => {
 
   const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
 
-  const NUM_STEPS = Math.round((PULSE_STEP_A === 1 ? DELTA_PULSE_A : DELTA_PULSE_B) / PWM_STEP_SIZE)
+  const NUM_STEPS = Math.ceil(
+    (PULSE_STEP_A === 1 ? DELTA_PULSE_A : DELTA_PULSE_B) / PWM_STEP_SIZE)
 
   let PULSE_INCREMENT_A = PULSE_STEP_B === 1
     ? PULSE_STEP_A * 100
@@ -367,7 +367,7 @@ const calcTranslation = (x1, y1, x2, y2) => {
       `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
         TARGET_POSITION[0])}° ${padDeg(
         TARGET_POSITION[1])}° ${padPulse(TARGET_PULSE_A)} ${padPulse(
-        TARGET_PULSE_B)} ${NUM_STEPS} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
+        TARGET_PULSE_B)} ${('' + NUM_STEPS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
   }
 
   return {
@@ -397,11 +397,12 @@ const r2 = (n) => +(n.toFixed(2))
  */
 const draw = (dumpSvg = false) => {
 
-  move(START_X, START_Y) // reset to starting position
+  move(START_X, START_Y) // reset to starting position (appends to end)
 
   const START_DATE = new Date()
   const START_TIME = START_DATE.getTime()
   log(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
+  log(module.parent.filename)
 
   let isExecuting = false
   const CMD_EXECUTOR = setInterval(() => {
@@ -436,27 +437,26 @@ const draw = (dumpSvg = false) => {
 
             const TRANSLATION = setInterval(() => {
 
-              if (steps <= TRANSLATION_INFO.NUM_STEPS) {
+              if (steps < TRANSLATION_INFO.NUM_STEPS) {
 
-                // less than a whole step remaining
-                if (steps + 1 > TRANSLATION_INFO.NUM_STEPS) {
+                // last step then set both pulses to their respective targets
+                if (steps === TRANSLATION_INFO.NUM_STEPS) {
                   PULSE_A = TRANSLATION_INFO.TARGET_PULSE_A
                   PULSE_B = TRANSLATION_INFO.TARGET_PULSE_B
                 }
-                // increment
+                // otherwise increment
                 else {
                   PULSE_A += Math.round(TRANSLATION_INFO.PULSE_INCREMENT_A)
                   PULSE_B += Math.round(TRANSLATION_INFO.PULSE_INCREMENT_B)
                 }
 
-                // start pwm for both servos
+                // set pulse
                 if (!!pigpio) {
                   SERVO_A.servoWrite(PULSE_A)
                   SERVO_B.servoWrite(PULSE_B)
                 }
 
-                process.stdout.write('.')
-                // log(`${PULSE_A} ${PULSE_B}`)
+                process.stdout.write('-') // per step...
 
                 steps++
 
@@ -504,7 +504,7 @@ const draw = (dumpSvg = false) => {
 
 }
 
-move(START_X, START_Y)
+move(START_X, START_Y) // reset to starting position
 
 // public API
 module.exports = {

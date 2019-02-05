@@ -48,7 +48,7 @@ assert('B angle is 83.22° @ min reach (5,1)', 83.22, positions2[1])
 
 // calcTranslation vertical
 const VERTICAL_TRANSLATION = drawbot.calcTranslation(5, 5, 5, 6)
-console.log(VERTICAL_TRANSLATION)
+// console.log(VERTICAL_TRANSLATION)
 assert('calcTranslation vertical',
   {
     CURRENT_POSITION: [125.94, 54.06],
@@ -66,7 +66,7 @@ assert('calcTranslation vertical',
     PULSE_STEP_A: 1,
     PULSE_STEP_B: 1,
     PULSE_RATIO: '1:1',
-    NUM_STEPS: 0.96,
+    NUM_STEPS: 1,
     PULSE_INCREMENT_A: -100,
     PULSE_INCREMENT_B: 100,
   },
@@ -74,7 +74,7 @@ assert('calcTranslation vertical',
 
 // calcTranslation horizontal
 const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
-console.log(HORIZANTAL_TRANSLATION)
+// console.log(HORIZANTAL_TRANSLATION)
 assert('calcTranslation horizontal',
   {
     CURRENT_POSITION: [115.67, 21.3],
@@ -92,7 +92,7 @@ assert('calcTranslation horizontal',
     PULSE_STEP_A: 1,
     PULSE_STEP_B: 1,
     PULSE_RATIO: '1:1',
-    NUM_STEPS: 4.78,
+    NUM_STEPS: 5,
     PULSE_INCREMENT_A: -100,
     PULSE_INCREMENT_B: -100,
   },
@@ -101,7 +101,7 @@ assert('calcTranslation horizontal',
 
 // calcTranslation diagonal
 const DIAGONAL_TRANSLATION = drawbot.calcTranslation(3, 3, 6, 3)
-console.log(DIAGONAL_TRANSLATION)
+// console.log(DIAGONAL_TRANSLATION)
 assert('calcTranslation diagonal',
   {
     CURRENT_POSITION: [73.83, 29.62],
@@ -119,7 +119,7 @@ assert('calcTranslation diagonal',
     PULSE_STEP_A: 0.96,
     PULSE_STEP_B: 1,
     PULSE_RATIO: '0.96:1',
-    NUM_STEPS: 6.71,
+    NUM_STEPS: 7,
     PULSE_INCREMENT_A: -95.83,
     PULSE_INCREMENT_B: -100,
   },
