@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>pigpoints validator</title>
+</head>
+
+<body>
+
+<b style="color: blue">originalPoints</b>
+<b style="color:red">pointsXYFliped</b>
+<b style="color: green">pointsScaled</b>
+<b style="color: orange">pointsShifted</b>
+<b style="color: fuchsia">non-drawable area</b>
+
+<hr/>
+
+<table>
+    <thead>
+    <tr>
+        <td>sketcher.html 500x500 (0,0 top left)</td>
+        <td>drawbot plot 10x10 (0,0 top right)</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!-- sketcher.html -->
+        <td>
+            <svg width="500px" height="500px" viewBox="0 0 500 500" style="border: black;border-style: solid">
+                <!-- axis -->
+                <svg height="500" width="500">
+                    <line x1="0" y1="250" x2="500" y2="250" style="stroke:green;stroke-width:2"/>
+                </svg>
+                <svg height="500" width="500">
+                    <line x1="250" y1="0" x2="250" y2="500" style="stroke:red;stroke-width:2"/>
+                </svg>
+                <!-- originalPoints -->
+                <polyline
+                        points="{{originalPoints}}"
+                        style="fill:none;stroke:blue;stroke-width:5"/>
+                <!-- pointsXYFliped -->
+                <polyline
+                        points="{{pointsXYFliped}}"
+                        style="fill:none;stroke:red;stroke-width:5"/>
+            </svg>
+        </td>
+        <!-- drawbot -->
+        <td>
+            <svg width="500px" height="500px" viewBox="0 0 10 10"
+                 style="border: black;border-style: solid; background-color: #ff00ff14">
+                <!-- drawable area -->
+                <rect x="1" y="1" width="8" height="7.5"
+                      style="fill:white;stroke:fuchsia;stroke-width:.01"/>
+                <!-- axis -->
+                <svg height="500" width="500">
+                    <line x1="0" y1="0" x2="10" y2="0" style="stroke:green;stroke-width:.1"/>
+                </svg>
+                <svg height="10" width="10">
+                    <line x1="5" y1="0" x2="5" y2="10" style="stroke:red;stroke-width:.01"/>
+                </svg>
+                <!-- pointsScaled -->
+                <polyline
+                        points="{{pointsScaled}}"
+                        style="fill:none;stroke:green;stroke-width:.1"/>
+
+                <!-- pointsShifted -->
+                <polyline
+                        points="{{pointsShifted}}"
+                        style="fill:none;stroke:orange;stroke-width:.1"/>
+            </svg>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

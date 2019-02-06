@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/dan3721/drawbot#readme",
   "dependencies": {
-    "dateformat": "3.0.3"
+    "dateformat": "3.0.3",
+    "handlebars": "4.0.12"
   },
   "optionalDependencies": {
     "pigpio": "1.2.1"

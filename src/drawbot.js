@@ -95,20 +95,29 @@ const radians2Degrees = (radians) => {
 /**
  * Calculates the pulse width for the specified degrees.
  * @param degrees
+ * @param flip {boolean} flips when servo is used in opposite orientation
  * @returns {number} pulse width
  */
-const getPulseWidth = (degrees) => {
-  if (degrees < 0  || degrees > 180) {
+const getPulseWidth = (degrees, flip = false) => {
+
+  if (degrees < 0 || degrees > 180) {
     throw `ERROR: ${degrees} is outside the range 0° - 180° (inclusive)!`
   }
+
+  if (flip) {
+    degrees = 180 - degrees
+  }
+
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
   width = +(width.toFixed(0))
+  if (width < SERVO_MIN_PULSE_WIDTH || width > SERVO_MAX_PULSE_WIDTH) {
+    throw `ERROR: ${width} is outside the PWM range of ${SERVO_MIN_PULSE_WIDTH} - ${SERVO_MAX_PULSE_WIDTH} (inclusive)!`
+  }
+
   if (PWM_RANGE_REVERSED) {
     width = width + (1500 - width) * 2
   }
-  if (width < 0) {
-    throw `ERROR: ${width} is outside the PWM range of ${SERVO_MIN_PULSE_WIDTH} - ${SERVO_MAX_PULSE_WIDTH} (inclusive)!`
-  }
+
   return width
 }
 
@@ -323,9 +332,9 @@ const calcTranslation = (x1, y1, x2, y2) => {
   const TARGET_PULSE_A = getPulseWidth(TARGET_POSITION[0])
   const DELTA_PULSE_A = Math.abs(TARGET_PULSE_A - CURRENT_PULSE_A)
 
-  // current, target, and delta for B
-  const CURRENT_PULSE_B = getPulseWidth(CURRENT_POSITION[1], true)
-  const TARGET_PULSE_B = getPulseWidth(TARGET_POSITION[1], true)
+  // current, target, and delta for B (don't need to flip because degrees already flipped by calcServoAngles)
+  const CURRENT_PULSE_B = getPulseWidth(CURRENT_POSITION[1])
+  const TARGET_PULSE_B = getPulseWidth(TARGET_POSITION[1])
   const DELTA_PULSE_B = Math.abs(TARGET_PULSE_B - CURRENT_PULSE_B)
 
   // pulse rates for equal transition time. servos move to the target duty cycle
@@ -366,8 +375,7 @@ const calcTranslation = (x1, y1, x2, y2) => {
 
   // feedback
   if (!process.env.TESTING) {
-    // process.stdout.write
-    log(
+    process.stdout.write(
       `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
         TARGET_POSITION[0])}° ${padDeg(
         TARGET_POSITION[1])}° ${padPulse(TARGET_PULSE_A)} ${padPulse(
@@ -472,11 +480,12 @@ const draw = (dumpSvg = false) => {
                 if (!!pigpio) {
                   SERVO_A.servoWrite(PULSE_A)
                   SERVO_B.servoWrite(PULSE_B)
-                  console.log(`${PULSE_A}\t${PULSE_B}`)
+                  // console.log(`${PULSE_A}\t${PULSE_B}`)
                 }
 
-                // process.stdout.write('-') // per step...
-                // console.log(`${PULSE_A}\t${PULSE_B}`)
+                if (steps%16===0) {
+                  process.stdout.write('-') // per step...
+                }
 
                 steps++
 

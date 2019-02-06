@@ -30,9 +30,21 @@ const assert = (description, expected, actual) => {
 
 // check conversion of degrees to pulse width
 // NOTE: current servos are reversed; see drawbot.PWM_RANGE_REVERSED
-assert('pulse width is 500 @ 0°', 2500, drawbot.getPulseWidth(0))
-assert('pulse width is 1500 @ 90°', 1500, drawbot.getPulseWidth(90))
-assert('pulse width is 2500 @ 180°', 500, drawbot.getPulseWidth(180))
+// 0°
+assert('2500 @ 0°', 2500, drawbot.getPulseWidth(0))
+assert('500 @ 0° (flip)', 500, drawbot.getPulseWidth(0, true))
+// 90°
+assert('1500 @ 90°', 1500, drawbot.getPulseWidth(90))
+assert('1500 @ 90° (flip)', 1500, drawbot.getPulseWidth(90, true))
+// 180°
+assert('500 @ 180°', 500, drawbot.getPulseWidth(180))
+assert('2500 @ 180° (flip)', 2500, drawbot.getPulseWidth(180, true))
+// 45°
+assert('2000 @ 45°', 2000, drawbot.getPulseWidth(45))
+assert('1000 @ 45° (flip)', 1000, drawbot.getPulseWidth(45, true))
+// 20°
+assert('2278 @ 20°', 2278, drawbot.getPulseWidth(20))
+assert('722 @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
 
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
@@ -46,100 +58,100 @@ const positions2 = drawbot.calcServoAngles(5, MIN_X)
 assert('A angle is 96.78° @ min reach (5,1)', 96.78, positions2[0])
 assert('B angle is 83.22° @ min reach (5,1)', 83.22, positions2[1])
 
-// calcTranslation vertical
-const VERTICAL_TRANSLATION = drawbot.calcTranslation(5, 5, 5, 6)
-// console.log(VERTICAL_TRANSLATION)
-assert('calcTranslation vertical',
-  {
-    CURRENT_POSITION: [125.94, 54.06],
-    TARGET_POSITION: [134.59, 45.41],
-    DELTA_X: 0,
-    DELTA_Y: 1,
-    CURRENT_PULSE_A: 1101,
-    CURRENT_PULSE_B: 1899,
-    TARGET_PULSE_A: 1005,
-    TARGET_PULSE_B: 1995,
-    DELTA_DEGREES_A: 8.65,
-    DELTA_DEGREES_B: 8.65,
-    DELTA_PULSE_A: 96,
-    DELTA_PULSE_B: 96,
-    NUM_STEPS: 96,
-    PULSE_INCREMENT_A: -1,
-    PULSE_INCREMENT_B: 1,
-  },
-  VERTICAL_TRANSLATION)
+// // calcTranslation vertical
+// const VERTICAL_TRANSLATION = drawbot.calcTranslation(5, 5, 5, 6)
+// // console.log(VERTICAL_TRANSLATION)
+// assert('calcTranslation vertical',
+//   {
+//     CURRENT_POSITION: [125.94, 54.06],
+//     TARGET_POSITION: [134.59, 45.41],
+//     DELTA_X: 0,
+//     DELTA_Y: 1,
+//     CURRENT_PULSE_A: 1101,
+//     CURRENT_PULSE_B: 1899,
+//     TARGET_PULSE_A: 1005,
+//     TARGET_PULSE_B: 1995,
+//     DELTA_DEGREES_A: 8.65,
+//     DELTA_DEGREES_B: 8.65,
+//     DELTA_PULSE_A: 96,
+//     DELTA_PULSE_B: 96,
+//     NUM_STEPS: 96,
+//     PULSE_INCREMENT_A: -1,
+//     PULSE_INCREMENT_B: 1,
+//   },
+//   VERTICAL_TRANSLATION)
 
-// calcTranslation horizontal
-const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
-// console.log(HORIZANTAL_TRANSLATION)
-assert('calcTranslation horizontal',
-  {
-    CURRENT_POSITION: [115.67, 21.3],
-    TARGET_POSITION: [158.7, 64.33],
-    DELTA_X: 4,
-    DELTA_Y: 0,
-    CURRENT_PULSE_A: 1215,
-    CURRENT_PULSE_B: 2263,
-    TARGET_PULSE_A: 737,
-    TARGET_PULSE_B: 1785,
-    DELTA_DEGREES_A: 43.03,
-    DELTA_DEGREES_B: 43.03,
-    DELTA_PULSE_A: 478,
-    DELTA_PULSE_B: 478,
-    NUM_STEPS: 478,
-    PULSE_INCREMENT_A: -1,
-    PULSE_INCREMENT_B: -1,
-  },
-  HORIZANTAL_TRANSLATION,
-)
+// // calcTranslation horizontal
+// const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
+// // console.log(HORIZANTAL_TRANSLATION)
+// assert('calcTranslation horizontal',
+//   {
+//     CURRENT_POSITION: [115.67, 21.3],
+//     TARGET_POSITION: [158.7, 64.33],
+//     DELTA_X: 4,
+//     DELTA_Y: 0,
+//     CURRENT_PULSE_A: 1215,
+//     CURRENT_PULSE_B: 2263,
+//     TARGET_PULSE_A: 737,
+//     TARGET_PULSE_B: 1785,
+//     DELTA_DEGREES_A: 43.03,
+//     DELTA_DEGREES_B: 43.03,
+//     DELTA_PULSE_A: 478,
+//     DELTA_PULSE_B: 478,
+//     NUM_STEPS: 478,
+//     PULSE_INCREMENT_A: -1,
+//     PULSE_INCREMENT_B: -1,
+//   },
+//   HORIZANTAL_TRANSLATION,
+// )
 
-// calcTranslation diagonal
-const DIAGONAL_TRANSLATION = drawbot.calcTranslation(3, 3, 7, 6)
-// console.log(DIAGONAL_TRANSLATION)
-assert('calcTranslation diagonal',
-  {
-    CURRENT_POSITION: [73.83, 29.62],
-    TARGET_POSITION: [158.7, 64.33],
-    DELTA_X: 4,
-    DELTA_Y: 3,
-    CURRENT_PULSE_A: 1680,
-    CURRENT_PULSE_B: 2171,
-    TARGET_PULSE_A: 737,
-    TARGET_PULSE_B: 1785,
-    DELTA_DEGREES_A: 84.87,
-    DELTA_DEGREES_B: 34.71,
-    DELTA_PULSE_A: 943,
-    DELTA_PULSE_B: 386,
-    NUM_STEPS: 386,
-    PULSE_INCREMENT_A: -2.44,
-    PULSE_INCREMENT_B: -1,
-  },
-  DIAGONAL_TRANSLATION,
-)
+// // calcTranslation diagonal
+// const DIAGONAL_TRANSLATION = drawbot.calcTranslation(3, 3, 7, 6)
+// // console.log(DIAGONAL_TRANSLATION)
+// assert('calcTranslation diagonal',
+//   {
+//     CURRENT_POSITION: [73.83, 29.62],
+//     TARGET_POSITION: [158.7, 64.33],
+//     DELTA_X: 4,
+//     DELTA_Y: 3,
+//     CURRENT_PULSE_A: 1680,
+//     CURRENT_PULSE_B: 2171,
+//     TARGET_PULSE_A: 737,
+//     TARGET_PULSE_B: 1785,
+//     DELTA_DEGREES_A: 84.87,
+//     DELTA_DEGREES_B: 34.71,
+//     DELTA_PULSE_A: 943,
+//     DELTA_PULSE_B: 386,
+//     NUM_STEPS: 386,
+//     PULSE_INCREMENT_A: -2.44,
+//     PULSE_INCREMENT_B: -1,
+//   },
+//   DIAGONAL_TRANSLATION,
+// )
 
-// calcTranslation diagonal
-const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(3, 6, 7, 3)
-// console.log(DIAGONAL_TRANSLATION2)
-assert('calcTranslation diagonal2',
-  {
-    CURRENT_POSITION: [115.67, 21.3],
-    TARGET_POSITION: [150.38, 106.17],
-    DELTA_X: 4,
-    DELTA_Y: 3,
-    CURRENT_PULSE_A: 1215,
-    CURRENT_PULSE_B: 2263,
-    TARGET_PULSE_A: 829,
-    TARGET_PULSE_B: 1320,
-    DELTA_DEGREES_A: 34.71,
-    DELTA_DEGREES_B: 84.87,
-    DELTA_PULSE_A: 386,
-    DELTA_PULSE_B: 943,
-    NUM_STEPS: 386,
-    PULSE_INCREMENT_A: -1,
-    PULSE_INCREMENT_B: -2.44,
-  },
-  DIAGONAL_TRANSLATION2,
-)
+// // calcTranslation diagonal
+// const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(3, 6, 7, 3)
+// // console.log(DIAGONAL_TRANSLATION2)
+// assert('calcTranslation diagonal2',
+//   {
+//     CURRENT_POSITION: [115.67, 21.3],
+//     TARGET_POSITION: [150.38, 106.17],
+//     DELTA_X: 4,
+//     DELTA_Y: 3,
+//     CURRENT_PULSE_A: 1215,
+//     CURRENT_PULSE_B: 2263,
+//     TARGET_PULSE_A: 829,
+//     TARGET_PULSE_B: 1320,
+//     DELTA_DEGREES_A: 34.71,
+//     DELTA_DEGREES_B: 84.87,
+//     DELTA_PULSE_A: 386,
+//     DELTA_PULSE_B: 943,
+//     NUM_STEPS: 386,
+//     PULSE_INCREMENT_A: -1,
+//     PULSE_INCREMENT_B: -2.44,
+//   },
+//   DIAGONAL_TRANSLATION2,
+// )
 
 // // wow using +() and toFixed(2) to round without trailing zeros!
 // let actual = +(33.446).toFixed(2)
