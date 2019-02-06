@@ -98,10 +98,16 @@ const radians2Degrees = (radians) => {
  * @returns {number} pulse width
  */
 const getPulseWidth = (degrees) => {
+  if (degrees < 0  || degrees > 180) {
+    throw `ERROR: ${degrees} is outside the range 0° - 180° (inclusive)!`
+  }
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
   width = +(width.toFixed(0))
   if (PWM_RANGE_REVERSED) {
     width = width + (1500 - width) * 2
+  }
+  if (width < 0) {
+    throw `ERROR: ${width} is outside the PWM range of ${SERVO_MIN_PULSE_WIDTH} - ${SERVO_MAX_PULSE_WIDTH} (inclusive)!`
   }
   return width
 }
@@ -334,10 +340,11 @@ const calcTranslation = (x1, y1, x2, y2) => {
   // const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
 
   const NUM_STEPS = Math.ceil(
-    (PULSE_STEP_A >= PULSE_STEP_B ? DELTA_PULSE_B : DELTA_PULSE_A) / PWM_STEP_SIZE)
+    (PULSE_STEP_A >= PULSE_STEP_B ? DELTA_PULSE_B : DELTA_PULSE_A) /
+    PWM_STEP_SIZE)
 
   let PULSE_INCREMENT_A = DELTA_PULSE_A / NUM_STEPS
-    if (TARGET_PULSE_A <= CURRENT_PULSE_A) {
+  if (TARGET_PULSE_A <= CURRENT_PULSE_A) {
     PULSE_INCREMENT_A = PULSE_INCREMENT_A * -1
   }
   let PULSE_INCREMENT_B = DELTA_PULSE_B / NUM_STEPS
@@ -448,7 +455,7 @@ const draw = (dumpSvg = false) => {
               if (steps < TRANSLATION_INFO.NUM_STEPS) {
 
                 // last step then set both pulses to their respective targets
-                if (steps -1 === TRANSLATION_INFO.NUM_STEPS) {
+                if (steps - 1 === TRANSLATION_INFO.NUM_STEPS) {
                   PULSE_A = TRANSLATION_INFO.TARGET_PULSE_A
                   PULSE_B = TRANSLATION_INFO.TARGET_PULSE_B
                 }
@@ -534,5 +541,5 @@ module.exports = {
   draw,
 
   // utility
-  r2
+  r2,
 }
