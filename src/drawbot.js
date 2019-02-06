@@ -534,4 +534,5 @@ module.exports = {
   draw,
 
   // utility
+  r2
 }
