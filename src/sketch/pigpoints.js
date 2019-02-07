@@ -14,7 +14,7 @@ const startDate = DATEFORMAT(new Date(), 'dddd, mmmm dS, yyyy, h:MM:ss TT')
 
 // sketch.html is 500px x 500px
 const SKETCH_FRAME_WIDTH = 500, SKETCH_FRAME_HEIGHT = 500
-const PLOT_WIDTH = 7.5, PLOT_HEIGHT = 7.5
+const PLOT_WIDTH = 7.2, PLOT_HEIGHT = 7.2
 
 const p4 = n => ('' + n).padEnd(5, ' ')
 const p6 = n => ('' + n).padEnd(7, ' ')
@@ -87,13 +87,13 @@ fs.readFile(`./${filename}`, function (err, data) {
     cmds
   }
 
-  fs.readFile('./template-points.sh', function (err, data) {
+  fs.readFile('./templates/pigpoints.sh', function (err, data) {
     if (err) {
       throw err
     }
     const template = Handlebars.compile(data.toString())
     const script = template(CTX)
-    const scriptFilename = `./${filename}.sh`
+    const scriptFilename =filename.replace('.points', '.sh')
     const stream = fs.createWriteStream(scriptFilename)
     stream.write(script)
     stream.end()
@@ -102,13 +102,13 @@ fs.readFile(`./${filename}`, function (err, data) {
 
 
 
-  fs.readFile('./template-validation.html', function (err, data) {
+  fs.readFile('./templates/pigpoints.html', function (err, data) {
     if (err) {
       throw err
     }
     const template = Handlebars.compile(data.toString())
     const html = template(CTX)
-    const validationFilename = `./${filename}.html`
+    const validationFilename =filename.replace('.points', '.html')
     const stream = fs.createWriteStream(validationFilename)
     stream.write(html)
     stream.end()

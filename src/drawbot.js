@@ -45,15 +45,15 @@ catch (e) {
 let SERVO_A, SERVO_B
 if (!!pigpio) {
   Gpio = pigpio.Gpio
-  SERVO_A = new Gpio(10, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
-  SERVO_B = new Gpio(9, {mode: Gpio.OUTPUT})
+  SERVO_A = new Gpio(9, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
+  SERVO_B = new Gpio(10, {mode: Gpio.OUTPUT})
 }
 
 // setup
 const START_X = 5
 const START_Y = 1
 const ARM_1_LENGTH = 4
-const ARM_2_LENGTH = 5
+const ARM_2_LENGTH = 5.75
 const CENTER = 5
 const PWM_STEP_SIZE = 1
 const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 10 : 0
@@ -68,7 +68,7 @@ const DEG_PER_PULSE = (SERVO_MAX_DEG /
 // const SERVO_SPEED_DEGREES_PER_MILLIS = SERVO_SPEED_DEGREES_PER_SECOND / 1000
 
 // Standard servos are supposed to be 0 (off), 500 (most anti-clockwise) to
-// 2500 (most clockwise). However the ones I'm working with are reversed!
+// 2500 (most clockwise). However the first ones we uses were reversed!
 const PWM_RANGE_REVERSED = true
 
 const CMD_QUEUE = []

@@ -10,7 +10,7 @@
 #
 # total points {{pointsFinal.length}}
 #
-MILS=100
+MILS=1
 
 {{#each cmds}}
 {{this}}
