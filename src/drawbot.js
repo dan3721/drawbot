@@ -139,10 +139,10 @@ const calcServoAngles = (x, y) => {
   const SAME = x < CENTER
   return SAME ?
     [
-      +((180 - calcServoAngle(x, y, SAME)).toFixed(2)),
+      r2(180 - calcServoAngle(x, y, SAME)),
       calcServoAngle(x, y, !SAME)] : // A
     [
-      +((180 - calcServoAngle(x, y, !SAME)).toFixed(2)),
+      r2(180 - calcServoAngle(x, y, !SAME)),
       calcServoAngle(x, y, SAME)]   // B
 }
 
@@ -181,9 +181,9 @@ const calcServoAngle = (x, y, same) => {
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
   // step 4: add angles
-  const ANGLE = (same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1).toFixed(2)
+  const ANGLE = (same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1)
 
-  return +(ANGLE)
+  return r2(ANGLE)
 }
 
 /**
@@ -403,7 +403,8 @@ const calcTranslation = (x1, y1, x2, y2) => {
  * @returns {number}
  * @private
  */
-const r2 = (n) => +(n.toFixed(2))
+const r2 = n => +(n.toFixed(2))
+// const r2 = n => n
 
 const protect = (pulse) => {
   if (pulse < SERVO_MIN_PULSE_WIDTH) {
