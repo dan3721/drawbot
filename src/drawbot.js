@@ -109,9 +109,12 @@ const getPulseWidth = (degrees, flip = false) => {
   }
 
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
-  width = +(width.toFixed(0))
-  if (width < SERVO_MIN_PULSE_WIDTH || width > SERVO_MAX_PULSE_WIDTH) {
-    throw `ERROR: ${width} is outside the PWM range of ${SERVO_MIN_PULSE_WIDTH} - ${SERVO_MAX_PULSE_WIDTH} (inclusive)!`
+  width = Math.round(width)
+  if (width < SERVO_MIN_PULSE_WIDTH) {
+    width = SERVO_MIN_PULSE_WIDTH
+  }
+  else if (width > SERVO_MAX_PULSE_WIDTH) {
+    width = SERVO_MAX_PULSE_WIDTH
   }
 
   if (PWM_RANGE_REVERSED) {
@@ -483,7 +486,7 @@ const draw = (dumpSvg = false) => {
                   // console.log(`${PULSE_A}\t${PULSE_B}`)
                 }
 
-                if (steps%16===0) {
+                if (steps % 16 === 0) {
                   process.stdout.write('-') // per step...
                 }
 

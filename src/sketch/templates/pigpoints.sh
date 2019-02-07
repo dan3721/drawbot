@@ -2,15 +2,9 @@
 #
 # {{startDate}}
 #
-# originalPoints {{originalPoints}}
-# pointsXYFliped {{pointsXYFliped}}
-# pointsScaled   {{pointsScaled}}
-# pointsShifted  {{pointsShifted}}
-# pointsFinal    {{pointsFinal}}
-#
 # total points {{pointsFinal.length}}
 #
-MILS=1
+MILS=0
 
 {{#each cmds}}
 {{this}}

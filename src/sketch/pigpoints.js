@@ -31,9 +31,12 @@ fs.readFile(`./${filename}`, function (err, data) {
   const originalPoints = points.split(',').map(val => +(val))
 
   // switch 0,0 from top left to bottom left
-  const pointsXYFliped = originalPoints.map(
+  let pointsXYFliped = originalPoints.map(
     (val, idx) => drawbot.r2(
       idx % 2 === 0 ? SKETCH_FRAME_WIDTH - val : SKETCH_FRAME_HEIGHT - val))
+  pointsXYFliped = pointsXYFliped.map(
+    (val, idx) => drawbot.r2(
+      idx % 2 !== 0 ? val : 255 - (val - 255)))
 
   // let maxX = points.reduce(
   //   (accumulator, val, idx) => idx % 2 === 0 && val > accumulator
@@ -56,7 +59,6 @@ fs.readFile(`./${filename}`, function (err, data) {
     (val, idx) => drawbot.r2(idx % 2 !== 0 ? val + 1 : val + 2)) // x,y
 
   const pointsFinal = pointsShifted
-
 
   let startAngles = drawbot.calcServoAngles(pointsFinal[0], pointsFinal[1])
   // stream.write(`pigs s 10 ${drawbot.getPulseWidth(
@@ -84,7 +86,7 @@ fs.readFile(`./${filename}`, function (err, data) {
     pointsScaled,
     pointsShifted,
     pointsFinal,
-    cmds
+    cmds,
   }
 
   fs.readFile('./templates/pigpoints.sh', function (err, data) {
@@ -93,14 +95,12 @@ fs.readFile(`./${filename}`, function (err, data) {
     }
     const template = Handlebars.compile(data.toString())
     const script = template(CTX)
-    const scriptFilename =filename.replace('.points', '.sh')
+    const scriptFilename = filename.replace('.points', '.sh')
     const stream = fs.createWriteStream(scriptFilename)
     stream.write(script)
     stream.end()
     console.log(scriptFilename)
   })
-
-
 
   fs.readFile('./templates/pigpoints.html', function (err, data) {
     if (err) {
@@ -108,7 +108,7 @@ fs.readFile(`./${filename}`, function (err, data) {
     }
     const template = Handlebars.compile(data.toString())
     const html = template(CTX)
-    const validationFilename =filename.replace('.points', '.html')
+    const validationFilename = filename.replace('.points', '.html')
     const stream = fs.createWriteStream(validationFilename)
     stream.write(html)
     stream.end()
