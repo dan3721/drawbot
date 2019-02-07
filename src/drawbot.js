@@ -67,9 +67,9 @@ const DEG_PER_PULSE = (SERVO_MAX_DEG /
 // const SERVO_SPEED_DEGREES_PER_SECOND = .18 / 60
 // const SERVO_SPEED_DEGREES_PER_MILLIS = SERVO_SPEED_DEGREES_PER_SECOND / 1000
 
-// Standard servos are supposed to be 0 (off), 500 (most anti-clockwise) to
-// 2500 (most clockwise). However the first ones we uses were reversed!
-const PWM_RANGE_REVERSED = true
+// when you setup the servo turned around sush that 500 is most clockwise and
+// 2500 is most anti-clockwise.
+const SERVO_REVERSED = true
 
 const CMD_QUEUE = []
 
@@ -117,7 +117,7 @@ const getPulseWidth = (degrees, flip = false) => {
     width = SERVO_MAX_PULSE_WIDTH
   }
 
-  if (PWM_RANGE_REVERSED) {
+  if (SERVO_REVERSED) {
     width = width + (1500 - width) * 2
   }
 
