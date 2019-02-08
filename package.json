@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rimraf out",
     "test": "node src/test.js",
+    "test2": "node src/test2.js",
     "diagnostics": "node src/diagnostics.js",
     "examples": "./src/examples/run-all.sh",
     "api": "rimraf api & jsdoc -c jsdoc.conf.json -R README.md"

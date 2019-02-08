@@ -1,4 +1,4 @@
-const drawbot = require('./drawbot')
+const drawbot = require('./drawbot2')
 
 // disable logging
 process.env.TESTING = true
@@ -48,18 +48,18 @@ assert('722 @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
 
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
-const positions = drawbot.calcServoAngles(5, MAX_X)
+const positions = drawbot.calcServoAngles(0, MAX_X)
 assert('A angle at max reach', 156.51, positions[0])
 assert('B angle @ max reach', 23.49, positions[1])
 
 // check servo degrees @ min reach (5,1)
 const MIN_X = 1.5
-const positions2 = drawbot.calcServoAngles(5, MIN_X)
+const positions2 = drawbot.calcServoAngles(0, MIN_X)
 assert('A angle @ min reach', 50.41, positions2[0])
 assert('B angle @ min reach', 129.59, positions2[1])
 
 // calcTranslation vertical
-const VERTICAL_TRANSLATION = drawbot.calcTranslation(5, 5, 5, 6)
+const VERTICAL_TRANSLATION = drawbot.calcTranslation(0, 5, 0, 6)
 // console.log(VERTICAL_TRANSLATION)
 assert('calcTranslation vertical',
   {
@@ -82,7 +82,7 @@ assert('calcTranslation vertical',
   VERTICAL_TRANSLATION)
 
 // calcTranslation horizontal
-const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
+const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(-2, 6, 2, 6)
 // console.log(HORIZANTAL_TRANSLATION)
  assert('calcTranslation horizontal',
   { CURRENT_POSITION: [ 104.72, 32.06 ],
@@ -104,7 +104,7 @@ const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
   HORIZANTAL_TRANSLATION)
 
 // calcTranslation diagonal (/)
-const DIAGONAL_TRANSLATION = drawbot.calcTranslation(3, 3, 7, 6)
+const DIAGONAL_TRANSLATION = drawbot.calcTranslation(-2, 3, 2, 6)
 // console.log(DIAGONAL_TRANSLATION)
 assert('calcTranslation diagonal (/)',
   { CURRENT_POSITION: [ 55.35, 43.42 ],
@@ -126,7 +126,7 @@ assert('calcTranslation diagonal (/)',
 )
 
 // calcTranslation diagonal
-const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(3, 6, 7, 3)
+const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(-2, 6, 2, 3)
 // console.log(DIAGONAL_TRANSLATION2)
 assert('calcTranslation diagonal2 (\\)',
   { CURRENT_POSITION: [ 104.72, 32.06 ],

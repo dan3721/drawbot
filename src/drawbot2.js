@@ -15,6 +15,17 @@ const FS = require('fs')
 const PATH = require('path')
 const DATEFORMAT = require('dateformat')
 
+const CFG = {
+  arm1Length: 4,
+  arm2Length: 5.75,
+  servoA: {
+    gipo: 9,
+  },
+  servoB: {
+    gipo: 10,
+  },
+}
+
 /**
  * Log message
  * @param msg message
@@ -45,16 +56,16 @@ catch (e) {
 let SERVO_A, SERVO_B
 if (!!pigpio) {
   Gpio = pigpio.Gpio
-  SERVO_A = new Gpio(9, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
-  SERVO_B = new Gpio(10, {mode: Gpio.OUTPUT})
+  SERVO_A = new Gpio(CFG.servoA.gipo, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
+  SERVO_B = new Gpio(CFG.servoB.gipo, {mode: Gpio.OUTPUT})
 }
 
 // setup
-const START_X = 5
+const START_X = 0
 const START_Y = 1
 const ARM_1_LENGTH = 4
 const ARM_2_LENGTH = 5.75
-const CENTER = 5
+const CENTER = 0
 const PWM_STEP_SIZE = 1
 const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 10 : 0
 // const PWM_STEPS_PER_MILLIS = 100 / PWM_STEP_DURATION_IN_MILLIS
