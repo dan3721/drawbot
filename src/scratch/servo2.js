@@ -1,26 +1,17 @@
 const Gpio = require('pigpio').Gpio;
 
- // const motor1 = new Gpio(10, {mode: Gpio.OUTPUT});
-const motor2 = new Gpio(10, {mode: Gpio.OUTPUT});
+const motor = new Gpio(10, {mode: Gpio.OUTPUT});
 
+let pulseWidth = 1000;
+let increment = 1;
 
-const DUTY = Number(process.argv[2])
-const DUTY2= Number(process.argv[3])
+setInterval(() => {
+  motor.servoWrite(pulseWidth);
 
-console.log(`${DUTY} ${DUTY2}`)
-
-
-setInterval(()=>{
-  // motor1.servoWrite(DUTY);
-  motor2.servoWrite(DUTY);
-}, 1000)
-
-
-setInterval(()=>{
-  // motor1.servoWrite(DUTY2);
-  motor2.servoWrite(DUTY2);
-}, 1000)
-
-
-
-
+  pulseWidth += increment;
+  if (pulseWidth >= 2000) {
+    increment = -100;
+  } else if (pulseWidth <= 1000) {
+    increment = 100;
+  }
+}, 10);
