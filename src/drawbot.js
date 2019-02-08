@@ -101,7 +101,8 @@ const radians2Degrees = (radians) => {
 const getPulseWidth = (degrees, flip = false) => {
 
   if (degrees < 0 || degrees > 180) {
-    throw `ERROR: ${degrees} is outside the range 0° - 180° (inclusive)!`
+    const error = `ERROR: ${degrees} is outside the range 0° - 180° (inclusive)!`
+    throw error
   }
 
   if (flip) {
