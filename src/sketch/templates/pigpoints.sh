@@ -2,7 +2,7 @@
 #
 # {{startDate}}
 #
-# total points {{pointsFinal.length}}
+# num points {{pointsFinal.length}}
 #
 MILS=0
 

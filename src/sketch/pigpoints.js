@@ -32,11 +32,11 @@ fs.readFile(`./${filename}`, function (err, data) {
 
   // switch 0,0 from top left to bottom left
   let pointsXYFliped = originalPoints.map(
-    (val, idx) => drawbot.r2(
-      idx % 2 === 0 ? SKETCH_FRAME_WIDTH - val : SKETCH_FRAME_HEIGHT - val))
+    (val, idx) => idx % 2 === 0
+      ? SKETCH_FRAME_WIDTH - val
+      : SKETCH_FRAME_HEIGHT - val)
   pointsXYFliped = pointsXYFliped.map(
-    (val, idx) => drawbot.r2(
-      idx % 2 !== 0 ? val : 255 - (val - 255)))
+    (val, idx) => idx % 2 !== 0 ? val : 255 - (val - 255))
 
   // let maxX = points.reduce(
   //   (accumulator, val, idx) => idx % 2 === 0 && val > accumulator
@@ -51,12 +51,12 @@ fs.readFile(`./${filename}`, function (err, data) {
   // scale from frame to plot
   const SCALE_WIDTH = PLOT_WIDTH / SKETCH_FRAME_WIDTH
   const SCALE_HEIGHT = PLOT_HEIGHT / SKETCH_FRAME_HEIGHT
-  const pointsScaled = pointsXYFliped.map((val, idx) => drawbot.r2(
-    idx % 2 === 0 ? val * SCALE_WIDTH : val * SCALE_HEIGHT))
+  const pointsScaled = pointsXYFliped.map(
+    (val, idx) => idx % 2 === 0 ? val * SCALE_WIDTH : val * SCALE_HEIGHT)
 
   // shift up away from the x axis (away from the servos) into the drawable area
   const pointsShifted = pointsScaled.map(
-    (val, idx) => drawbot.r2(idx % 2 !== 0 ? val + 1 : val + 2)) // x,y
+    (val, idx) => idx % 2 !== 0 ? val + 1 : val + 2) // x,y
 
   const pointsFinal = pointsShifted
 
@@ -74,9 +74,12 @@ fs.readFile(`./${filename}`, function (err, data) {
     let angleB = angles[1]
     let pwA = drawbot.getPulseWidth(angleA)
     let pwB = drawbot.getPulseWidth(angleB)
-    let cmd = `pigs s 10 ${pwA} s 9 ${pwB} mils $MILS # ${p4(x)} ${p4(y)} ${p6(
+    let cmd = `pigs s 10 ${pwA} s 9 ${pwB} mils $MILS`
+    cmd = cmd.padEnd(36, ' ')
+    let line = `${cmd} # ${p4(
+      drawbot.r2(x))} ${p4(drawbot.r2(y))} ${p6(
       angleA)} ${p6(angleB)}`
-    cmds.push(cmd)
+    cmds.push(line)
   }
 
   const CTX = {
