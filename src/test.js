@@ -49,109 +49,104 @@ assert('722 @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
 const positions = drawbot.calcServoAngles(5, MAX_X)
-assert('A angle is 175.02° at max reach (5,8.8)', 175.02, positions[0])
-assert('B angle is 4.98° when @ max reach (5,8.8)', 4.98, positions[1])
+assert('A angle at max reach', 156.51, positions[0])
+assert('B angle @ max reach', 23.49, positions[1])
 
 // check servo degrees @ min reach (5,1)
-const MIN_X = 1
+const MIN_X = 1.5
 const positions2 = drawbot.calcServoAngles(5, MIN_X)
-assert('A angle is 96.78° @ min reach (5,1)', 96.78, positions2[0])
-assert('B angle is 83.22° @ min reach (5,1)', 83.22, positions2[1])
+assert('A angle @ min reach', 50.41, positions2[0])
+assert('B angle @ min reach', 129.59, positions2[1])
 
-// // calcTranslation vertical
-// const VERTICAL_TRANSLATION = drawbot.calcTranslation(5, 5, 5, 6)
-// // console.log(VERTICAL_TRANSLATION)
-// assert('calcTranslation vertical',
-//   {
-//     CURRENT_POSITION: [125.94, 54.06],
-//     TARGET_POSITION: [134.59, 45.41],
-//     DELTA_X: 0,
-//     DELTA_Y: 1,
-//     CURRENT_PULSE_A: 1101,
-//     CURRENT_PULSE_B: 1899,
-//     TARGET_PULSE_A: 1005,
-//     TARGET_PULSE_B: 1995,
-//     DELTA_DEGREES_A: 8.65,
-//     DELTA_DEGREES_B: 8.65,
-//     DELTA_PULSE_A: 96,
-//     DELTA_PULSE_B: 96,
-//     NUM_STEPS: 96,
-//     PULSE_INCREMENT_A: -1,
-//     PULSE_INCREMENT_B: 1,
-//   },
-//   VERTICAL_TRANSLATION)
+// calcTranslation vertical
+const VERTICAL_TRANSLATION = drawbot.calcTranslation(5, 5, 5, 6)
+// console.log(VERTICAL_TRANSLATION)
+assert('calcTranslation vertical',
+  {
+    CURRENT_POSITION: [113.97, 66.03],
+    TARGET_POSITION: [123.65, 56.35],
+    DELTA_X: 0,
+    DELTA_Y: 1,
+    CURRENT_PULSE_A: 1234,
+    CURRENT_PULSE_B: 1766,
+    TARGET_PULSE_A: 1126,
+    TARGET_PULSE_B: 1874,
+    DELTA_DEGREES_A: 9.68,
+    DELTA_DEGREES_B: 9.68,
+    DELTA_PULSE_A: 108,
+    DELTA_PULSE_B: 108,
+    NUM_STEPS: 108,
+    PULSE_INCREMENT_A: -1,
+    PULSE_INCREMENT_B: 1,
+  },
+  VERTICAL_TRANSLATION)
 
-// // calcTranslation horizontal
-// const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
-// // console.log(HORIZANTAL_TRANSLATION)
-// assert('calcTranslation horizontal',
-//   {
-//     CURRENT_POSITION: [115.67, 21.3],
-//     TARGET_POSITION: [158.7, 64.33],
-//     DELTA_X: 4,
-//     DELTA_Y: 0,
-//     CURRENT_PULSE_A: 1215,
-//     CURRENT_PULSE_B: 2263,
-//     TARGET_PULSE_A: 737,
-//     TARGET_PULSE_B: 1785,
-//     DELTA_DEGREES_A: 43.03,
-//     DELTA_DEGREES_B: 43.03,
-//     DELTA_PULSE_A: 478,
-//     DELTA_PULSE_B: 478,
-//     NUM_STEPS: 478,
-//     PULSE_INCREMENT_A: -1,
-//     PULSE_INCREMENT_B: -1,
-//   },
-//   HORIZANTAL_TRANSLATION,
-// )
+// calcTranslation horizontal
+const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(3, 6, 7, 6)
+// console.log(HORIZANTAL_TRANSLATION)
+ assert('calcTranslation horizontal',
+  { CURRENT_POSITION: [ 104.72, 32.06 ],
+    TARGET_POSITION: [ 147.94, 75.28 ],
+    DELTA_X: 4,
+    DELTA_Y: 0,
+    CURRENT_PULSE_A: 1336,
+    CURRENT_PULSE_B: 2144,
+    TARGET_PULSE_A: 856,
+    TARGET_PULSE_B: 1664,
+    DELTA_DEGREES_A: 43.22,
+    DELTA_DEGREES_B: 43.22,
+    DELTA_PULSE_A: 480,
+    DELTA_PULSE_B: 480,
+    NUM_STEPS: 480,
+    PULSE_INCREMENT_A: -1,
+    PULSE_INCREMENT_B: -1 ,
+    },
+  HORIZANTAL_TRANSLATION)
 
-// // calcTranslation diagonal
-// const DIAGONAL_TRANSLATION = drawbot.calcTranslation(3, 3, 7, 6)
-// // console.log(DIAGONAL_TRANSLATION)
-// assert('calcTranslation diagonal',
-//   {
-//     CURRENT_POSITION: [73.83, 29.62],
-//     TARGET_POSITION: [158.7, 64.33],
-//     DELTA_X: 4,
-//     DELTA_Y: 3,
-//     CURRENT_PULSE_A: 1680,
-//     CURRENT_PULSE_B: 2171,
-//     TARGET_PULSE_A: 737,
-//     TARGET_PULSE_B: 1785,
-//     DELTA_DEGREES_A: 84.87,
-//     DELTA_DEGREES_B: 34.71,
-//     DELTA_PULSE_A: 943,
-//     DELTA_PULSE_B: 386,
-//     NUM_STEPS: 386,
-//     PULSE_INCREMENT_A: -2.44,
-//     PULSE_INCREMENT_B: -1,
-//   },
-//   DIAGONAL_TRANSLATION,
-// )
 
-// // calcTranslation diagonal
-// const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(3, 6, 7, 3)
-// // console.log(DIAGONAL_TRANSLATION2)
-// assert('calcTranslation diagonal2',
-//   {
-//     CURRENT_POSITION: [115.67, 21.3],
-//     TARGET_POSITION: [150.38, 106.17],
-//     DELTA_X: 4,
-//     DELTA_Y: 3,
-//     CURRENT_PULSE_A: 1215,
-//     CURRENT_PULSE_B: 2263,
-//     TARGET_PULSE_A: 829,
-//     TARGET_PULSE_B: 1320,
-//     DELTA_DEGREES_A: 34.71,
-//     DELTA_DEGREES_B: 84.87,
-//     DELTA_PULSE_A: 386,
-//     DELTA_PULSE_B: 943,
-//     NUM_STEPS: 386,
-//     PULSE_INCREMENT_A: -1,
-//     PULSE_INCREMENT_B: -2.44,
-//   },
-//   DIAGONAL_TRANSLATION2,
-// )
+// calcTranslation diagonal (/)
+const DIAGONAL_TRANSLATION = drawbot.calcTranslation(3, 3, 7, 6)
+// console.log(DIAGONAL_TRANSLATION)
+assert('calcTranslation diagonal (/)',
+  { CURRENT_POSITION: [ 55.35, 43.42 ],
+    TARGET_POSITION: [ 147.94, 75.28 ],
+    DELTA_X: 4,
+    DELTA_Y: 3,
+    CURRENT_PULSE_A: 1885,
+    CURRENT_PULSE_B: 2018,
+    TARGET_PULSE_A: 856,
+    TARGET_PULSE_B: 1664,
+    DELTA_DEGREES_A: 92.59,
+    DELTA_DEGREES_B: 31.86,
+    DELTA_PULSE_A: 1029,
+    DELTA_PULSE_B: 354,
+    NUM_STEPS: 354,
+    PULSE_INCREMENT_A: -2.91,
+    PULSE_INCREMENT_B: -1 },
+  DIAGONAL_TRANSLATION,
+)
+
+// calcTranslation diagonal
+const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(3, 6, 7, 3)
+// console.log(DIAGONAL_TRANSLATION2)
+assert('calcTranslation diagonal2 (\\)',
+  { CURRENT_POSITION: [ 104.72, 32.06 ],
+    TARGET_POSITION: [ 136.58, 124.65 ],
+    DELTA_X: 4,
+    DELTA_Y: 3,
+    CURRENT_PULSE_A: 1336,
+    CURRENT_PULSE_B: 2144,
+    TARGET_PULSE_A: 982,
+    TARGET_PULSE_B: 1115,
+    DELTA_DEGREES_A: 31.86,
+    DELTA_DEGREES_B: 92.59,
+    DELTA_PULSE_A: 354,
+    DELTA_PULSE_B: 1029,
+    NUM_STEPS: 354,
+    PULSE_INCREMENT_A: -1,
+    PULSE_INCREMENT_B: -2.91 }/**/,
+  DIAGONAL_TRANSLATION2,
+)
 
 // // wow using +() and toFixed(2) to round without trailing zeros!
 // let actual = +(33.446).toFixed(2)
