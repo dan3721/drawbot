@@ -345,7 +345,6 @@ const calcTranslation = (x1, y1, x2, y2) => {
  * Round to two decimal places.
  * @param n
  * @returns {number}
- * @private
  */
 const r2 = n => +(n.toFixed(2))
 // const r2 = n => n
