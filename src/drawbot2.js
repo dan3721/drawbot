@@ -206,7 +206,7 @@ const calcServoAngle = (x, y, same) => {
  * @param {number} y
  */
 const move = (x, y) => {
-  CMD_QUEUE.push({action: 'move', x, y})
+  CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
 }
 
 /**
@@ -513,8 +513,13 @@ const dumpSVG = (filename, _coordinates) => {
     servoAx: width / 2 - CFG.servoOffset * SCALE,
     servoBx: width / 2 + CFG.servoOffset * SCALE,
     coordinates: _coordinates.map(coordinate => {
-      return {xO: coordinate.x, yO: coordinate.y, x: coordinate.x * SCALE + offsetX, y: height - coordinate.y * SCALE}
-    })
+      return {
+        xO: coordinate.x,
+        yO: coordinate.y,
+        x: coordinate.x * SCALE + offsetX,
+        y: height - coordinate.y * SCALE,
+      }
+    }),
   }
 
   FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
