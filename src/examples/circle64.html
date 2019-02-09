@@ -8,310 +8,318 @@
     <tbody>
     <tr style="vertical-align: top">
         <td>
-            <svg height="660" width="630" style="border: black;border-style: solid;border-width: thin"
+            <svg height="732" width="630"
+                 style="background-color:aquamarine;border: black;border-style: solid;border-width: thin"
                  xmlns="http://www.w3.org/2000/svg">
 
+                <!--open drawable area-->
+                <circle cx="240" cy="432" r="431.25"
+                        stroke="blue" stroke-width="0" fill="white"/>
+                <circle cx="390" cy="432" r="431.25"
+                        stroke="red" stroke-width="0" fill="white"/>
+                <rect y="619.5" width="630" height="112.5" style="fill:aquamarine;stroke-width:0;stroke:red"/>
+
                 <!--x axis-->
-                <line x1="0" y1="660" x2="630" y2="660"
+                <line x1="0" y1="732" x2="630" y2="732"
                       style="stroke:red;stroke-width:4"/>
 
                 <!--y axis-->
-                <line x1="315" y1="660" x2="315" y2="0"
+                <line x1="315" y1="732" x2="315" y2="0"
                       style="stroke:green;stroke-width:1"/>
 
                 <!--servo A-->
-                <circle cx="240" cy="660" r="15" stroke="black" stroke-width="2" fill="cyan"/>
-                <text x="240" y="660" text-anchor="middle" stroke="black" stroke-width="1px">A
+                <circle cx="240" cy="732" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <text x="240" y="732" text-anchor="middle" stroke="black" stroke-width="1px">A
                 </text>
 
                 <!--servo B-->
-                <circle cx="390" cy="660" r="15" stroke="black" stroke-width="2" fill="cyan"/>
-                <text x="390" y="660" text-anchor="middle" stroke="black" stroke-width="1px">B
+                <circle cx="390" cy="732" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <text x="390" y="732" text-anchor="middle" stroke="black" stroke-width="1px">B
                 </text>
 
                 <!-- points and labels -->
-                <polyline points="315,547.5 315,285 502.5,285 501.75,266.25 498.75,248.25 494.25,230.24999999999994 488.25,213 480,196.5 471,180.75 459.75,165.75 447.75,152.25000000000006 434.25,140.25 419.25,129 403.5,120 387,111.75 369.75,105.75 351.75,101.25 333.75,98.25 315,97.5 296.25,98.25 278.25,101.25 260.25,105.75 243,111.75 226.5,120 210.75,129 195.75,140.25 182.25,152.25000000000006 170.25,165.75 159,180.75 150,196.5 141.75,213 135.75,230.24999999999994 131.25,248.25 128.24999999999997,266.25 127.5,285 128.24999999999997,303.75 131.25,321.75 135.75,339.75000000000006 141.75,357 150,373.5 159,389.25 170.25,404.25 182.25,417.75 195.75,429.75 210.75,441 226.5,450 243,458.25 260.25,464.25 278.25,468.75 296.25,471.75 315,472.5 333.75,471.75 351.75,468.75 369.75,464.25 387,458.25 403.5,450 419.25,441 434.25,429.75 447.75,417.75 459.75,404.25 471,389.25 480,373.5 488.25,357 494.25,339.75000000000006 498.75,321.75 501.75,303.75 502.5,285 315,285 315,547.5 "
+                <polyline points="315,619.5 315,319.5 607.5,319.5 606,291 602.25,262.5 594.75,234.75 585,207.75 573,181.5 558,156.75 540.75,134.25 522,112.5 500.25,93.75 477.75,76.5 453,61.5 426.75,49.5 399.75,39.75 372,32.25 343.5,28.499999999999886 315,27 286.5,28.499999999999886 258,32.25 230.25,39.75 203.25,49.5 177,61.5 152.25,76.5 129.74999999999997,93.75 108.00000000000003,112.5 89.25000000000003,134.25 71.99999999999997,156.75 57,181.5 45,207.75 35.25,234.75 27.75,262.5 24,291 22.5,319.5 24,348 27.75,376.5 35.25,404.25 45,431.25 57,457.5 71.99999999999997,482.25 89.25000000000003,504.75 108.00000000000003,526.5 129.74999999999997,545.25 152.25,562.5 177,577.5 203.25,589.5 230.25,599.25 258,606.75 286.5,610.5 315,612 343.5,610.5 372,606.75 399.75,599.25 426.75,589.5 453,577.5 477.75,562.5 500.25,545.25 522,526.5 540.75,504.75 558,482.25 573,457.5 585,431.25 594.75,404.25 602.25,376.5 606,348 607.5,319.5 315,319.5 315,619.5 "
                           style="fill:none;stroke:black;stroke-width:1"/>
-                <circle cx="315" cy="547.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="537.5" fill="blue" style="font-size:85%">
+                <circle cx="315" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="609.5" fill="blue" style="font-size:85%">
                     0(0,1.5)
                 </text>
-                <circle cx="315" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="275" fill="blue" style="font-size:85%">
-                    1(0,5)
-                </text>
-                <circle cx="502.5" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="512.5" y="275" fill="blue" style="font-size:85%">
-                    2(2.5,5)
-                </text>
-                <circle cx="501.75" cy="266.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="511.75" y="256.25" fill="blue" style="font-size:85%">
-                    3(2.49,5.25)
-                </text>
-                <circle cx="498.75" cy="248.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="508.75" y="238.25" fill="blue" style="font-size:85%">
-                    4(2.45,5.49)
-                </text>
-                <circle cx="494.25" cy="230.24999999999994" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="504.25" y="220.24999999999994" fill="blue" style="font-size:85%">
-                    5(2.39,5.73)
-                </text>
-                <circle cx="488.25" cy="213" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="498.25" y="203" fill="blue" style="font-size:85%">
-                    6(2.31,5.96)
-                </text>
-                <circle cx="480" cy="196.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="490" y="186.5" fill="blue" style="font-size:85%">
-                    7(2.2,6.18)
-                </text>
-                <circle cx="471" cy="180.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="481" y="170.75" fill="blue" style="font-size:85%">
-                    8(2.08,6.39)
-                </text>
-                <circle cx="459.75" cy="165.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="469.75" y="155.75" fill="blue" style="font-size:85%">
-                    9(1.93,6.59)
-                </text>
-                <circle cx="447.75" cy="152.25000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="457.75" y="142.25000000000006" fill="blue" style="font-size:85%">
-                    10(1.77,6.77)
-                </text>
-                <circle cx="434.25" cy="140.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="444.25" y="130.25" fill="blue" style="font-size:85%">
-                    11(1.59,6.93)
-                </text>
-                <circle cx="419.25" cy="129" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="429.25" y="119" fill="blue" style="font-size:85%">
-                    12(1.39,7.08)
-                </text>
-                <circle cx="403.5" cy="120" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="413.5" y="110" fill="blue" style="font-size:85%">
-                    13(1.18,7.2)
-                </text>
-                <circle cx="387" cy="111.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="397" y="101.75" fill="blue" style="font-size:85%">
-                    14(0.96,7.31)
-                </text>
-                <circle cx="369.75" cy="105.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="379.75" y="95.75" fill="blue" style="font-size:85%">
-                    15(0.73,7.39)
-                </text>
-                <circle cx="351.75" cy="101.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="361.75" y="91.25" fill="blue" style="font-size:85%">
-                    16(0.49,7.45)
-                </text>
-                <circle cx="333.75" cy="98.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="343.75" y="88.25" fill="blue" style="font-size:85%">
-                    17(0.25,7.49)
-                </text>
-                <circle cx="315" cy="97.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="87.5" fill="blue" style="font-size:85%">
-                    18(0,7.5)
-                </text>
-                <circle cx="296.25" cy="98.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="306.25" y="88.25" fill="blue" style="font-size:85%">
-                    19(-0.25,7.49)
-                </text>
-                <circle cx="278.25" cy="101.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="288.25" y="91.25" fill="blue" style="font-size:85%">
-                    20(-0.49,7.45)
-                </text>
-                <circle cx="260.25" cy="105.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="270.25" y="95.75" fill="blue" style="font-size:85%">
-                    21(-0.73,7.39)
-                </text>
-                <circle cx="243" cy="111.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="253" y="101.75" fill="blue" style="font-size:85%">
-                    22(-0.96,7.31)
-                </text>
-                <circle cx="226.5" cy="120" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="236.5" y="110" fill="blue" style="font-size:85%">
-                    23(-1.18,7.2)
-                </text>
-                <circle cx="210.75" cy="129" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="220.75" y="119" fill="blue" style="font-size:85%">
-                    24(-1.39,7.08)
-                </text>
-                <circle cx="195.75" cy="140.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="205.75" y="130.25" fill="blue" style="font-size:85%">
-                    25(-1.59,6.93)
-                </text>
-                <circle cx="182.25" cy="152.25000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="192.25" y="142.25000000000006" fill="blue" style="font-size:85%">
-                    26(-1.77,6.77)
-                </text>
-                <circle cx="170.25" cy="165.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="180.25" y="155.75" fill="blue" style="font-size:85%">
-                    27(-1.93,6.59)
-                </text>
-                <circle cx="159" cy="180.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="169" y="170.75" fill="blue" style="font-size:85%">
-                    28(-2.08,6.39)
-                </text>
-                <circle cx="150" cy="196.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="160" y="186.5" fill="blue" style="font-size:85%">
-                    29(-2.2,6.18)
-                </text>
-                <circle cx="141.75" cy="213" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="151.75" y="203" fill="blue" style="font-size:85%">
-                    30(-2.31,5.96)
-                </text>
-                <circle cx="135.75" cy="230.24999999999994" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="145.75" y="220.24999999999994" fill="blue" style="font-size:85%">
-                    31(-2.39,5.73)
-                </text>
-                <circle cx="131.25" cy="248.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="141.25" y="238.25" fill="blue" style="font-size:85%">
-                    32(-2.45,5.49)
-                </text>
-                <circle cx="128.24999999999997" cy="266.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="138.24999999999997" y="256.25" fill="blue" style="font-size:85%">
-                    33(-2.49,5.25)
-                </text>
-                <circle cx="127.5" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="137.5" y="275" fill="blue" style="font-size:85%">
-                    34(-2.5,5)
-                </text>
-                <circle cx="128.24999999999997" cy="303.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="138.24999999999997" y="293.75" fill="blue" style="font-size:85%">
-                    35(-2.49,4.75)
-                </text>
-                <circle cx="131.25" cy="321.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="141.25" y="311.75" fill="blue" style="font-size:85%">
-                    36(-2.45,4.51)
-                </text>
-                <circle cx="135.75" cy="339.75000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="145.75" y="329.75000000000006" fill="blue" style="font-size:85%">
-                    37(-2.39,4.27)
-                </text>
-                <circle cx="141.75" cy="357" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="151.75" y="347" fill="blue" style="font-size:85%">
-                    38(-2.31,4.04)
-                </text>
-                <circle cx="150" cy="373.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="160" y="363.5" fill="blue" style="font-size:85%">
-                    39(-2.2,3.82)
-                </text>
-                <circle cx="159" cy="389.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="169" y="379.25" fill="blue" style="font-size:85%">
-                    40(-2.08,3.61)
-                </text>
-                <circle cx="170.25" cy="404.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="180.25" y="394.25" fill="blue" style="font-size:85%">
-                    41(-1.93,3.41)
-                </text>
-                <circle cx="182.25" cy="417.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="192.25" y="407.75" fill="blue" style="font-size:85%">
-                    42(-1.77,3.23)
-                </text>
-                <circle cx="195.75" cy="429.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="205.75" y="419.75" fill="blue" style="font-size:85%">
-                    43(-1.59,3.07)
-                </text>
-                <circle cx="210.75" cy="441" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="220.75" y="431" fill="blue" style="font-size:85%">
-                    44(-1.39,2.92)
-                </text>
-                <circle cx="226.5" cy="450" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="236.5" y="440" fill="blue" style="font-size:85%">
-                    45(-1.18,2.8)
-                </text>
-                <circle cx="243" cy="458.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="253" y="448.25" fill="blue" style="font-size:85%">
-                    46(-0.96,2.69)
-                </text>
-                <circle cx="260.25" cy="464.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="270.25" y="454.25" fill="blue" style="font-size:85%">
-                    47(-0.73,2.61)
-                </text>
-                <circle cx="278.25" cy="468.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="288.25" y="458.75" fill="blue" style="font-size:85%">
-                    48(-0.49,2.55)
-                </text>
-                <circle cx="296.25" cy="471.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="306.25" y="461.75" fill="blue" style="font-size:85%">
-                    49(-0.25,2.51)
-                </text>
-                <circle cx="315" cy="472.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="462.5" fill="blue" style="font-size:85%">
-                    50(0,2.5)
-                </text>
-                <circle cx="333.75" cy="471.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="343.75" y="461.75" fill="blue" style="font-size:85%">
-                    51(0.25,2.51)
-                </text>
-                <circle cx="351.75" cy="468.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="361.75" y="458.75" fill="blue" style="font-size:85%">
-                    52(0.49,2.55)
-                </text>
-                <circle cx="369.75" cy="464.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="379.75" y="454.25" fill="blue" style="font-size:85%">
-                    53(0.73,2.61)
-                </text>
-                <circle cx="387" cy="458.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="397" y="448.25" fill="blue" style="font-size:85%">
-                    54(0.96,2.69)
-                </text>
-                <circle cx="403.5" cy="450" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="413.5" y="440" fill="blue" style="font-size:85%">
-                    55(1.18,2.8)
-                </text>
-                <circle cx="419.25" cy="441" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="429.25" y="431" fill="blue" style="font-size:85%">
-                    56(1.39,2.92)
-                </text>
-                <circle cx="434.25" cy="429.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="444.25" y="419.75" fill="blue" style="font-size:85%">
-                    57(1.59,3.07)
-                </text>
-                <circle cx="447.75" cy="417.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="457.75" y="407.75" fill="blue" style="font-size:85%">
-                    58(1.77,3.23)
-                </text>
-                <circle cx="459.75" cy="404.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="469.75" y="394.25" fill="blue" style="font-size:85%">
-                    59(1.93,3.41)
-                </text>
-                <circle cx="471" cy="389.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="481" y="379.25" fill="blue" style="font-size:85%">
-                    60(2.08,3.61)
-                </text>
-                <circle cx="480" cy="373.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="490" y="363.5" fill="blue" style="font-size:85%">
-                    61(2.2,3.82)
-                </text>
-                <circle cx="488.25" cy="357" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="498.25" y="347" fill="blue" style="font-size:85%">
-                    62(2.31,4.04)
-                </text>
-                <circle cx="494.25" cy="339.75000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="504.25" y="329.75000000000006" fill="blue" style="font-size:85%">
-                    63(2.39,4.27)
-                </text>
-                <circle cx="498.75" cy="321.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="508.75" y="311.75" fill="blue" style="font-size:85%">
-                    64(2.45,4.51)
-                </text>
-                <circle cx="501.75" cy="303.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="511.75" y="293.75" fill="blue" style="font-size:85%">
-                    65(2.49,4.75)
-                </text>
-                <circle cx="502.5" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="512.5" y="275" fill="blue" style="font-size:85%">
-                    66(2.5,5)
-                </text>
-                <circle cx="315" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="275" fill="blue" style="font-size:85%">
-                    67(0,5)
-                </text>
-                <circle cx="315" cy="547.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="537.5" fill="blue" style="font-size:85%">
+                <circle cx="315" cy="319.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="309.5" fill="blue" style="font-size:85%">
+                    1(0,5.5)
+                </text>
+                <circle cx="607.5" cy="319.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="617.5" y="309.5" fill="blue" style="font-size:85%">
+                    2(3.9,5.5)
+                </text>
+                <circle cx="606" cy="291" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="616" y="281" fill="blue" style="font-size:85%">
+                    3(3.88,5.88)
+                </text>
+                <circle cx="602.25" cy="262.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="612.25" y="252.5" fill="blue" style="font-size:85%">
+                    4(3.83,6.26)
+                </text>
+                <circle cx="594.75" cy="234.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="604.75" y="224.75" fill="blue" style="font-size:85%">
+                    5(3.73,6.63)
+                </text>
+                <circle cx="585" cy="207.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="595" y="197.75" fill="blue" style="font-size:85%">
+                    6(3.6,6.99)
+                </text>
+                <circle cx="573" cy="181.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="583" y="171.5" fill="blue" style="font-size:85%">
+                    7(3.44,7.34)
+                </text>
+                <circle cx="558" cy="156.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="568" y="146.75" fill="blue" style="font-size:85%">
+                    8(3.24,7.67)
+                </text>
+                <circle cx="540.75" cy="134.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="550.75" y="124.25" fill="blue" style="font-size:85%">
+                    9(3.01,7.97)
+                </text>
+                <circle cx="522" cy="112.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="532" y="102.5" fill="blue" style="font-size:85%">
+                    10(2.76,8.26)
+                </text>
+                <circle cx="500.25" cy="93.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="510.25" y="83.75" fill="blue" style="font-size:85%">
+                    11(2.47,8.51)
+                </text>
+                <circle cx="477.75" cy="76.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="487.75" y="66.5" fill="blue" style="font-size:85%">
+                    12(2.17,8.74)
+                </text>
+                <circle cx="453" cy="61.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="463" y="51.5" fill="blue" style="font-size:85%">
+                    13(1.84,8.94)
+                </text>
+                <circle cx="426.75" cy="49.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="436.75" y="39.5" fill="blue" style="font-size:85%">
+                    14(1.49,9.1)
+                </text>
+                <circle cx="399.75" cy="39.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="409.75" y="29.75" fill="blue" style="font-size:85%">
+                    15(1.13,9.23)
+                </text>
+                <circle cx="372" cy="32.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="382" y="22.25" fill="blue" style="font-size:85%">
+                    16(0.76,9.33)
+                </text>
+                <circle cx="343.5" cy="28.499999999999886" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="353.5" y="18.499999999999886" fill="blue" style="font-size:85%">
+                    17(0.38,9.38)
+                </text>
+                <circle cx="315" cy="27" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="17" fill="blue" style="font-size:85%">
+                    18(0,9.4)
+                </text>
+                <circle cx="286.5" cy="28.499999999999886" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="296.5" y="18.499999999999886" fill="blue" style="font-size:85%">
+                    19(-0.38,9.38)
+                </text>
+                <circle cx="258" cy="32.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="268" y="22.25" fill="blue" style="font-size:85%">
+                    20(-0.76,9.33)
+                </text>
+                <circle cx="230.25" cy="39.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="240.25" y="29.75" fill="blue" style="font-size:85%">
+                    21(-1.13,9.23)
+                </text>
+                <circle cx="203.25" cy="49.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="213.25" y="39.5" fill="blue" style="font-size:85%">
+                    22(-1.49,9.1)
+                </text>
+                <circle cx="177" cy="61.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="187" y="51.5" fill="blue" style="font-size:85%">
+                    23(-1.84,8.94)
+                </text>
+                <circle cx="152.25" cy="76.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="162.25" y="66.5" fill="blue" style="font-size:85%">
+                    24(-2.17,8.74)
+                </text>
+                <circle cx="129.74999999999997" cy="93.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="139.74999999999997" y="83.75" fill="blue" style="font-size:85%">
+                    25(-2.47,8.51)
+                </text>
+                <circle cx="108.00000000000003" cy="112.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="118.00000000000003" y="102.5" fill="blue" style="font-size:85%">
+                    26(-2.76,8.26)
+                </text>
+                <circle cx="89.25000000000003" cy="134.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="99.25000000000003" y="124.25" fill="blue" style="font-size:85%">
+                    27(-3.01,7.97)
+                </text>
+                <circle cx="71.99999999999997" cy="156.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="81.99999999999997" y="146.75" fill="blue" style="font-size:85%">
+                    28(-3.24,7.67)
+                </text>
+                <circle cx="57" cy="181.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="67" y="171.5" fill="blue" style="font-size:85%">
+                    29(-3.44,7.34)
+                </text>
+                <circle cx="45" cy="207.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="55" y="197.75" fill="blue" style="font-size:85%">
+                    30(-3.6,6.99)
+                </text>
+                <circle cx="35.25" cy="234.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="45.25" y="224.75" fill="blue" style="font-size:85%">
+                    31(-3.73,6.63)
+                </text>
+                <circle cx="27.75" cy="262.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="37.75" y="252.5" fill="blue" style="font-size:85%">
+                    32(-3.83,6.26)
+                </text>
+                <circle cx="24" cy="291" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="34" y="281" fill="blue" style="font-size:85%">
+                    33(-3.88,5.88)
+                </text>
+                <circle cx="22.5" cy="319.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="32.5" y="309.5" fill="blue" style="font-size:85%">
+                    34(-3.9,5.5)
+                </text>
+                <circle cx="24" cy="348" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="34" y="338" fill="blue" style="font-size:85%">
+                    35(-3.88,5.12)
+                </text>
+                <circle cx="27.75" cy="376.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="37.75" y="366.5" fill="blue" style="font-size:85%">
+                    36(-3.83,4.74)
+                </text>
+                <circle cx="35.25" cy="404.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="45.25" y="394.25" fill="blue" style="font-size:85%">
+                    37(-3.73,4.37)
+                </text>
+                <circle cx="45" cy="431.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="55" y="421.25" fill="blue" style="font-size:85%">
+                    38(-3.6,4.01)
+                </text>
+                <circle cx="57" cy="457.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="67" y="447.5" fill="blue" style="font-size:85%">
+                    39(-3.44,3.66)
+                </text>
+                <circle cx="71.99999999999997" cy="482.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="81.99999999999997" y="472.25" fill="blue" style="font-size:85%">
+                    40(-3.24,3.33)
+                </text>
+                <circle cx="89.25000000000003" cy="504.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="99.25000000000003" y="494.75" fill="blue" style="font-size:85%">
+                    41(-3.01,3.03)
+                </text>
+                <circle cx="108.00000000000003" cy="526.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="118.00000000000003" y="516.5" fill="blue" style="font-size:85%">
+                    42(-2.76,2.74)
+                </text>
+                <circle cx="129.74999999999997" cy="545.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="139.74999999999997" y="535.25" fill="blue" style="font-size:85%">
+                    43(-2.47,2.49)
+                </text>
+                <circle cx="152.25" cy="562.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="162.25" y="552.5" fill="blue" style="font-size:85%">
+                    44(-2.17,2.26)
+                </text>
+                <circle cx="177" cy="577.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="187" y="567.5" fill="blue" style="font-size:85%">
+                    45(-1.84,2.06)
+                </text>
+                <circle cx="203.25" cy="589.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="213.25" y="579.5" fill="blue" style="font-size:85%">
+                    46(-1.49,1.9)
+                </text>
+                <circle cx="230.25" cy="599.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="240.25" y="589.25" fill="blue" style="font-size:85%">
+                    47(-1.13,1.77)
+                </text>
+                <circle cx="258" cy="606.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="268" y="596.75" fill="blue" style="font-size:85%">
+                    48(-0.76,1.67)
+                </text>
+                <circle cx="286.5" cy="610.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="296.5" y="600.5" fill="blue" style="font-size:85%">
+                    49(-0.38,1.62)
+                </text>
+                <circle cx="315" cy="612" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="602" fill="blue" style="font-size:85%">
+                    50(0,1.6)
+                </text>
+                <circle cx="343.5" cy="610.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="353.5" y="600.5" fill="blue" style="font-size:85%">
+                    51(0.38,1.62)
+                </text>
+                <circle cx="372" cy="606.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="382" y="596.75" fill="blue" style="font-size:85%">
+                    52(0.76,1.67)
+                </text>
+                <circle cx="399.75" cy="599.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="409.75" y="589.25" fill="blue" style="font-size:85%">
+                    53(1.13,1.77)
+                </text>
+                <circle cx="426.75" cy="589.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="436.75" y="579.5" fill="blue" style="font-size:85%">
+                    54(1.49,1.9)
+                </text>
+                <circle cx="453" cy="577.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="463" y="567.5" fill="blue" style="font-size:85%">
+                    55(1.84,2.06)
+                </text>
+                <circle cx="477.75" cy="562.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="487.75" y="552.5" fill="blue" style="font-size:85%">
+                    56(2.17,2.26)
+                </text>
+                <circle cx="500.25" cy="545.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="510.25" y="535.25" fill="blue" style="font-size:85%">
+                    57(2.47,2.49)
+                </text>
+                <circle cx="522" cy="526.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="532" y="516.5" fill="blue" style="font-size:85%">
+                    58(2.76,2.74)
+                </text>
+                <circle cx="540.75" cy="504.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="550.75" y="494.75" fill="blue" style="font-size:85%">
+                    59(3.01,3.03)
+                </text>
+                <circle cx="558" cy="482.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="568" y="472.25" fill="blue" style="font-size:85%">
+                    60(3.24,3.33)
+                </text>
+                <circle cx="573" cy="457.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="583" y="447.5" fill="blue" style="font-size:85%">
+                    61(3.44,3.66)
+                </text>
+                <circle cx="585" cy="431.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="595" y="421.25" fill="blue" style="font-size:85%">
+                    62(3.6,4.01)
+                </text>
+                <circle cx="594.75" cy="404.25" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="604.75" y="394.25" fill="blue" style="font-size:85%">
+                    63(3.73,4.37)
+                </text>
+                <circle cx="602.25" cy="376.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="612.25" y="366.5" fill="blue" style="font-size:85%">
+                    64(3.83,4.74)
+                </text>
+                <circle cx="606" cy="348" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="616" y="338" fill="blue" style="font-size:85%">
+                    65(3.88,5.12)
+                </text>
+                <circle cx="607.5" cy="319.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="617.5" y="309.5" fill="blue" style="font-size:85%">
+                    66(3.9,5.5)
+                </text>
+                <circle cx="315" cy="319.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="309.5" fill="blue" style="font-size:85%">
+                    67(0,5.5)
+                </text>
+                <circle cx="315" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="609.5" fill="blue" style="font-size:85%">
                     68(0,1.5)
                 </text>
             </svg>
         </td>
         <td>
-            <code>0 0,1.5<br/>1 0,5<br/>2 2.5,5<br/>3 2.49,5.25<br/>4 2.45,5.49<br/>5 2.39,5.73<br/>6 2.31,5.96<br/>7 2.2,6.18<br/>8 2.08,6.39<br/>9 1.93,6.59<br/>10 1.77,6.77<br/>11 1.59,6.93<br/>12 1.39,7.08<br/>13 1.18,7.2<br/>14 0.96,7.31<br/>15 0.73,7.39<br/>16 0.49,7.45<br/>17 0.25,7.49<br/>18 0,7.5<br/>19 -0.25,7.49<br/>20 -0.49,7.45<br/>21 -0.73,7.39<br/>22 -0.96,7.31<br/>23 -1.18,7.2<br/>24 -1.39,7.08<br/>25 -1.59,6.93<br/>26 -1.77,6.77<br/>27 -1.93,6.59<br/>28 -2.08,6.39<br/>29 -2.2,6.18<br/>30 -2.31,5.96<br/>31 -2.39,5.73<br/>32 -2.45,5.49<br/>33 -2.49,5.25<br/>34 -2.5,5<br/>35 -2.49,4.75<br/>36 -2.45,4.51<br/>37 -2.39,4.27<br/>38 -2.31,4.04<br/>39 -2.2,3.82<br/>40 -2.08,3.61<br/>41 -1.93,3.41<br/>42 -1.77,3.23<br/>43 -1.59,3.07<br/>44 -1.39,2.92<br/>45 -1.18,2.8<br/>46 -0.96,2.69<br/>47 -0.73,2.61<br/>48 -0.49,2.55<br/>49 -0.25,2.51<br/>50 0,2.5<br/>51 0.25,2.51<br/>52 0.49,2.55<br/>53 0.73,2.61<br/>54 0.96,2.69<br/>55 1.18,2.8<br/>56 1.39,2.92<br/>57 1.59,3.07<br/>58 1.77,3.23<br/>59 1.93,3.41<br/>60 2.08,3.61<br/>61 2.2,3.82<br/>62 2.31,4.04<br/>63 2.39,4.27<br/>64 2.45,4.51<br/>65 2.49,4.75<br/>66 2.5,5<br/>67 0,5<br/>68 0,1.5<br/></code>
+            <code>0 0,1.5<br/>1 0,5.5<br/>2 3.9,5.5<br/>3 3.88,5.88<br/>4 3.83,6.26<br/>5 3.73,6.63<br/>6 3.6,6.99<br/>7 3.44,7.34<br/>8 3.24,7.67<br/>9 3.01,7.97<br/>10 2.76,8.26<br/>11 2.47,8.51<br/>12 2.17,8.74<br/>13 1.84,8.94<br/>14 1.49,9.1<br/>15 1.13,9.23<br/>16 0.76,9.33<br/>17 0.38,9.38<br/>18 0,9.4<br/>19 -0.38,9.38<br/>20 -0.76,9.33<br/>21 -1.13,9.23<br/>22 -1.49,9.1<br/>23 -1.84,8.94<br/>24 -2.17,8.74<br/>25 -2.47,8.51<br/>26 -2.76,8.26<br/>27 -3.01,7.97<br/>28 -3.24,7.67<br/>29 -3.44,7.34<br/>30 -3.6,6.99<br/>31 -3.73,6.63<br/>32 -3.83,6.26<br/>33 -3.88,5.88<br/>34 -3.9,5.5<br/>35 -3.88,5.12<br/>36 -3.83,4.74<br/>37 -3.73,4.37<br/>38 -3.6,4.01<br/>39 -3.44,3.66<br/>40 -3.24,3.33<br/>41 -3.01,3.03<br/>42 -2.76,2.74<br/>43 -2.47,2.49<br/>44 -2.17,2.26<br/>45 -1.84,2.06<br/>46 -1.49,1.9<br/>47 -1.13,1.77<br/>48 -0.76,1.67<br/>49 -0.38,1.62<br/>50 0,1.6<br/>51 0.38,1.62<br/>52 0.76,1.67<br/>53 1.13,1.77<br/>54 1.49,1.9<br/>55 1.84,2.06<br/>56 2.17,2.26<br/>57 2.47,2.49<br/>58 2.76,2.74<br/>59 3.01,3.03<br/>60 3.24,3.33<br/>61 3.44,3.66<br/>62 3.6,4.01<br/>63 3.73,4.37<br/>64 3.83,4.74<br/>65 3.88,5.12<br/>66 3.9,5.5<br/>67 0,5.5<br/>68 0,1.5<br/></code>
         </td>
     </tr>
     </tbody>

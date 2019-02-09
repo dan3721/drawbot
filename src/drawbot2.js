@@ -1,5 +1,5 @@
 /**
- * Mr. Draw Bot.
+ * Mr. Draw Bot 2.0
  *
  * _Auto detects [pigpio](https://github.com/fivdi/pigpio) availability and
  * disables hardware support if not available._
@@ -99,6 +99,9 @@ let _currentPosition = CFG.home
 // point stack
 const POINTS = []
 
+// pigs cmds
+let _pigs = []
+
 /**
  * Converts the specified radians to degrees.
  * @param radians
@@ -107,6 +110,28 @@ const POINTS = []
 const radians2Degrees = (radians) => {
   return radians * 180 / Math.PI
 }
+
+/**
+ * Round to two decimal places.
+ * @param n
+ * @returns {number}
+ */
+const r2 = n => +(n.toFixed(2))
+// const r2 = n => n
+
+/**
+ * Pad the specified number by 4
+ * @param n
+ * @returns {string}
+ */
+const p4 = n => ('' + n).padEnd(4, ' ')
+
+/**
+ * Pad the specified number by 6
+ * @param n
+ * @returns {string}
+ */
+const p6 = n => ('' + n).padEnd(4, ' ')
 
 /**
  * Calculates the pulse width for the specified degrees.
@@ -213,7 +238,7 @@ const move = (x, y) => {
 
 /**
  * Queues multiple moves.
- * @param points {number[]} one ore more points
+ * @param points {number[]} one or more points
  */
 const mmove = points => {
   for (let i = 0; i < points.length; i += 2) {
@@ -360,13 +385,13 @@ const calcTranslation = (x1, y1, x2, y2) => {
   PULSE_INCREMENT_B = r2(PULSE_INCREMENT_B)
 
   // feedback
-  if (!process.env.TESTING) {
-    process.stdout.write(
-      `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
-        TARGET_POSITION[0])}° ${padDeg(
-        TARGET_POSITION[1])}° ${padPulse(TARGET_PULSE_A)} ${padPulse(
-        TARGET_PULSE_B)} ${('' + NUM_STEPS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
-  }
+  // if (!process.env.TESTING) {
+  //   process.stdout.write(
+  //     `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
+  //       TARGET_POSITION[0])}° ${padDeg(
+  //       TARGET_POSITION[1])}° ${padPulse(TARGET_PULSE_A)} ${padPulse(
+  //       TARGET_PULSE_B)} ${('' + NUM_STEPS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
+  // }
 
   return {
     CURRENT_POSITION, TARGET_POSITION,
@@ -379,14 +404,6 @@ const calcTranslation = (x1, y1, x2, y2) => {
     PULSE_INCREMENT_A, PULSE_INCREMENT_B,
   }
 }
-
-/**
- * Round to two decimal places.
- * @param n
- * @returns {number}
- */
-const r2 = n => +(n.toFixed(2))
-// const r2 = n => n
 
 const protect = (pulse) => {
   if (pulse < SERVO_MIN_PULSE_WIDTH) {
@@ -402,182 +419,208 @@ const protect = (pulse) => {
   return pulse
 }
 
-/**
- * Initiates the drawing cycle which executes all the commands and terminates.
- */
-const draw = (dumpSvg = false) => {
+const draw = () => {
 
   move(CFG.home.x, CFG.home.y) // reset to starting position (appends to end)
 
   // log(CMD_QUEUE)
 
-  const START_DATE = new Date()
-  const START_TIME = START_DATE.getTime()
-  log(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
-  log(module.parent.filename)
+  const NOW = new Date()
+  const START_TIME = NOW.getTime()
+  let startDateFormatted = DATEFORMAT(NOW, 'dddd, mmmm dS, yyyy, h:MM:ss TT')
+  log(startDateFormatted)
+  log(`input: ${module.parent.filename}`)
 
-  let isExecuting = false
-  const CMD_EXECUTOR = setInterval(() => {
+  CMD_QUEUE.forEach(cmd => {
 
-    if (isExecuting) {
-      // log('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-      // process.stdout.write('+')
-    }
-    else {
+    const action = cmd.action
 
-      const CMD = CMD_QUEUE.shift()
-      if (!!CMD) {
+    // each cmd is responsible for managing isExecuting !
+    switch (action) {
+      case  'move':
 
-        const ACTION = CMD.action
+        const TRANSLATION_INFO = calcTranslation(_currentPosition.x,
+          _currentPosition.y, cmd.x, cmd.y)
+        // console.log(TRANSLATION_INFO)
 
-        // each cmd is responsible for managing isExecuting !
-        switch (ACTION) {
-          case  'move':
+        let PULSE_A = TRANSLATION_INFO.CURRENT_PULSE_A
+        let PULSE_B = TRANSLATION_INFO.CURRENT_PULSE_B
 
-            const TRANSLATION_INFO = calcTranslation(_currentPosition.x,
-              _currentPosition.y, CMD.x, CMD.y)
-            // console.log(TRANSLATION_INFO)
+        let DO_TRANSITION = true // set to false to go direct to point
 
-            isExecuting = true
+        if (!DO_TRANSITION) {
+          writePigsS(
+            TRANSLATION_INFO.TARGET_POSITION[0],
+            TRANSLATION_INFO.TARGET_POSITION[1],
+            TRANSLATION_INFO.TARGET_PULSE_A, TRANSLATION_INFO.TARGET_PULSE_B)
+        }
+        else {
+          for (let steps = 0; steps < TRANSLATION_INFO.NUM_STEPS; steps++) {
 
-            let PULSE_A = TRANSLATION_INFO.CURRENT_PULSE_A
-            let PULSE_B = TRANSLATION_INFO.CURRENT_PULSE_B
+            // last step then set both pulses to their respective targets
+            if (steps - 1 === TRANSLATION_INFO.NUM_STEPS) {
+              PULSE_A = TRANSLATION_INFO.TARGET_PULSE_A
+              PULSE_B = TRANSLATION_INFO.TARGET_PULSE_B
+            }
+            // otherwise increment
+            else {
+              PULSE_A += TRANSLATION_INFO.PULSE_INCREMENT_A
+              PULSE_B += TRANSLATION_INFO.PULSE_INCREMENT_B
+            }
 
-            let steps = 0
+            // round the actual pulses
+            const ACTUAL_PULSE_A = protect(Math.round(PULSE_A))
+            const ACTUAL_PULSE_B = protect(Math.round(PULSE_B))
 
-            const TRANSLATION = setInterval(() => {
+            // // set pulse
+            // if (!!pigpio) {
+            //   SERVO_A.servoWrite(PULSE_A)
+            //   SERVO_B.servoWrite(PULSE_B)
+            //   // console.log(`${PULSE_A}\t${PULSE_B}`)
+            // }
 
-              if (steps < TRANSLATION_INFO.NUM_STEPS) {
+            writePigsS(
+              TRANSLATION_INFO.TARGET_POSITION[0],
+              TRANSLATION_INFO.TARGET_POSITION[1],
+              ACTUAL_PULSE_A, ACTUAL_PULSE_B,
+              steps === TRANSLATION_INFO.NUM_STEPS - 1)
 
-                // last step then set both pulses to their respective targets
-                if (steps - 1 === TRANSLATION_INFO.NUM_STEPS) {
-                  PULSE_A = TRANSLATION_INFO.TARGET_PULSE_A
-                  PULSE_B = TRANSLATION_INFO.TARGET_PULSE_B
-                }
-                // otherwise increment
-                else {
-                  PULSE_A += TRANSLATION_INFO.PULSE_INCREMENT_A
-                  PULSE_B += TRANSLATION_INFO.PULSE_INCREMENT_B
-                }
-
-                PULSE_A = protect(Math.round(PULSE_A))
-                PULSE_B = protect(Math.round(PULSE_B))
-
-                // set pulse
-                if (!!pigpio) {
-                  SERVO_A.servoWrite(PULSE_A)
-                  SERVO_B.servoWrite(PULSE_B)
-                  // console.log(`${PULSE_A}\t${PULSE_B}`)
-                }
-
-                if (steps % 16 === 0) {
-                  process.stdout.write('-') // per step...
-                }
-
-                steps++
-
-              }
-              else {
-
-                clearInterval(TRANSLATION)
-
-                // stop pwm for both servos
-                if (!!pigpio) {
-                  SERVO_A.servoWrite(0)
-                  SERVO_B.servoWrite(0)
-                }
-
-                // update and record location
-                _currentPosition = {x: CMD.x, y: CMD.y}
-                POINTS.push(_currentPosition)
-
-                isExecuting = false
-
-              }
-
-            }, PWM_STEP_DURATION_IN_MILLIS)
-
-            break
-          default:
-            throw `${ACTION} is an unsupported action!`
+          }
         }
 
-      }
+        // update and record location
+        _currentPosition = {x: cmd.x, y: cmd.y}
+        POINTS.push(_currentPosition)
 
-      // no more cmds so shut it all down...
-      else {
-        clearInterval(CMD_EXECUTOR)
-        log('\n')
-        if (dumpSvg) {
-          dumpSVG(module.parent.filename, POINTS)
-        }
-        log(`DONE Total execution time was ${new Date().getTime() -
-        START_TIME} milliseconds.`)
-      }
+        break
+      default:
+        throw `${action} is an unsupported action!`
     }
-  }, CMD_EXECUTION_INTERVAL_IN_MILLIS)
+  })
+
+  // // stop pwm for both servos
+  // if (!!pigpio) {
+  //   SERVO_A.servoWrite(0)
+  //   SERVO_B.servoWrite(0)
+  // }
+
+  // write html and pigs files
+  Promise.all([
+    writeHtml(module.parent.filename, POINTS),
+    writePigsScript(module.parent.filename, startDateFormatted)]).then(() => {
+    log(`DONE Total execution time was ${new Date().getTime() -
+    START_TIME} milliseconds.`)
+  })
 
 }
 
+const writePigsS = (x, y, PULSE_A, PULSE_B, isTransitional = false) => {
+  let pcmd = `pigs s 10 ${p4(PULSE_A)} s 9 ${p4(PULSE_B)} mils $MILS`
+  pcmd = pcmd.padEnd(36, ' ')
+  let line = `${pcmd} # `
+  if (isTransitional) {
+    line += `${p4(x)} ${p4(y)}`
+  }
+  else {
+    line += '*' // transitional step
+  }
+  _pigs.push(line)
+}
+
+const writePigsScript = (filename, startDate) => {
+  return new Promise((resolve, reject) => {
+    FS.readFile(PATH.join(__dirname, './templates/pigpoints.sh'),
+      function (err, data) {
+        if (err) {
+          reject(err)
+        }
+        const template = Handlebars.compile(data.toString())
+        const CTX = {
+          startDate,
+          filename: PATH.basename(filename),
+          numPoints: POINTS.length,
+          cmds: _pigs,
+        }
+        const script = template(CTX)
+        const scriptFilename = filename.replace('.js', '.sh')
+        const stream = FS.createWriteStream(scriptFilename)
+        stream.write(script)
+        stream.end()
+        log(`pigs:  ${scriptFilename}`)
+        resolve()
+      })
+  })
+}
 /**
  * Dumps drawing as an SVG HTML file.
  */
-const dumpSVG = (filename, _coordinates) => {
+const writeHtml = (filename, _coordinates) => {
 
-  // const MAX_X = 4.2
-  // const MIN_X = -4.2
-  // const MIN_Y = 1
-  // const MAX_Y = 8.8
+  return new Promise((resolve, reject) => {
 
-  const SCALE = 75
+    const SCALE = 75
 
-  const helpers = require('handlebars-helpers')
-  const math = helpers.math()
+    const helpers = require('handlebars-helpers')
+    const math = helpers.math()
 
-  Handlebars.registerHelper('json', function (context) {
-    return JSON.stringify(context, null, 2)
-  })
-
-  const width = MAX_X * 2 * SCALE
-  const height = Math.ceil(MAX_Y * SCALE)
-  const offsetX = width / 2
-
-  const CTX = {
-    math,
-    SCALE,
-    CFG,
-    object: helpers.object(),
-    MAX_X, MIN_X,
-    MAX_Y, MIN_Y,
-    height,
-    width,
-    title: PATH.parse(filename).name,
-    servoAx: width / 2 - CFG.servoOffset * SCALE,
-    servoBx: width / 2 + CFG.servoOffset * SCALE,
-    coordinates: _coordinates.map(coordinate => {
-      return {
-        xO: coordinate.x,
-        yO: coordinate.y,
-        x: coordinate.x * SCALE + offsetX,
-        y: height - coordinate.y * SCALE,
-      }
-    }),
-    labelPoints: _coordinates.length < 200, // only show labels if legible
-  }
-
-  FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
-    function (err, data) {
-      if (err) {
-        throw err
-      }
-      const template = Handlebars.compile(data.toString())
-      const script = template(CTX)
-      const virtualFilename = filename.replace('.js', '.html')
-      const stream = FS.createWriteStream(virtualFilename)
-      stream.write(script)
-      stream.end()
-      log(virtualFilename)
+    Handlebars.registerHelper('json', function (context) {
+      return JSON.stringify(context, null, 2)
     })
+
+    const width = MAX_X * 2 * SCALE
+    const height = Math.ceil((CFG.arm1Length + CFG.arm2Length) * SCALE)
+    const offsetX = width / 2
+
+    const servoAx = offsetX - CFG.servoOffset * SCALE
+    const servoBx = offsetX + CFG.servoOffset * SCALE
+    const arm2Radius = CFG.arm2Length * SCALE
+
+    const yMin = height - MIN_Y * SCALE
+    const yH = MIN_Y * SCALE
+
+    const CTX = {
+      math,
+      SCALE,
+      CFG,
+      object: helpers.object(),
+      MAX_X, MIN_X,
+      MAX_Y, MIN_Y,
+      height,
+      width,
+      yMin,
+      yH,
+      title: PATH.parse(filename).name,
+      servoAx,
+      servoBx,
+      arm2AMaxReachCoordinate: {x: servoAx, y: height - CFG.arm1Length * SCALE},
+      arm2BMaxReachCoordinate: {x: servoBx, y: height - CFG.arm1Length * SCALE},
+      arm2Radius,
+      coordinates: _coordinates.map(coordinate => {
+        return {
+          xO: coordinate.x,
+          yO: coordinate.y,
+          x: coordinate.x * SCALE + offsetX,
+          y: height - coordinate.y * SCALE,
+        }
+      }),
+      labelPoints: _coordinates.length < 200, // only show labels if legible
+    }
+
+    FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
+      function (err, data) {
+        if (err) {
+          reject(err)
+        }
+        const template = Handlebars.compile(data.toString())
+        const script = template(CTX)
+        const virtualFilename = filename.replace('.js', '.html')
+        const stream = FS.createWriteStream(virtualFilename)
+        stream.write(script)
+        stream.end()
+        log(`html:  ${virtualFilename}`)
+        resolve()
+      })
+  })
 
 }
 
@@ -587,6 +630,7 @@ move(CFG.home.x, CFG.home.y) // reset to starting position
 module.exports = {
 
   // calculations
+  radians2Degrees,
   calcServoAngle,
   calcServoAngles,
   calcTranslation,
@@ -599,5 +643,5 @@ module.exports = {
   drawRegularPolygon,
 
   // utility
-  r2,
+  r2, p4, p6,
 }

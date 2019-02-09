@@ -1,7 +1,7 @@
 /**
- * 64
+ * diagnostic
  */
 const drawbot = require('../drawbot2')
 
-drawbot.drawRegularPolygon(0,5.5,64,3.9)
+drawbot.drawRegularPolygon(0,5.5,8,3.9)
 drawbot.draw()

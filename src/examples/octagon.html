@@ -8,86 +8,94 @@
     <tbody>
     <tr style="vertical-align: top">
         <td>
-            <svg height="660" width="630" style="border: black;border-style: solid;border-width: thin"
+            <svg height="732" width="630"
+                 style="background-color:aquamarine;border: black;border-style: solid;border-width: thin"
                  xmlns="http://www.w3.org/2000/svg">
 
+                <!--open drawable area-->
+                <circle cx="240" cy="432" r="431.25"
+                        stroke="blue" stroke-width="0" fill="white"/>
+                <circle cx="390" cy="432" r="431.25"
+                        stroke="red" stroke-width="0" fill="white"/>
+                <rect y="619.5" width="630" height="112.5" style="fill:aquamarine;stroke-width:0;stroke:red"/>
+
                 <!--x axis-->
-                <line x1="0" y1="660" x2="630" y2="660"
+                <line x1="0" y1="732" x2="630" y2="732"
                       style="stroke:red;stroke-width:4"/>
 
                 <!--y axis-->
-                <line x1="315" y1="660" x2="315" y2="0"
+                <line x1="315" y1="732" x2="315" y2="0"
                       style="stroke:green;stroke-width:1"/>
 
                 <!--servo A-->
-                <circle cx="240" cy="660" r="15" stroke="black" stroke-width="2" fill="cyan"/>
-                <text x="240" y="660" text-anchor="middle" stroke="black" stroke-width="1px">A
+                <circle cx="240" cy="732" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <text x="240" y="732" text-anchor="middle" stroke="black" stroke-width="1px">A
                 </text>
 
                 <!--servo B-->
-                <circle cx="390" cy="660" r="15" stroke="black" stroke-width="2" fill="cyan"/>
-                <text x="390" y="660" text-anchor="middle" stroke="black" stroke-width="1px">B
+                <circle cx="390" cy="732" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <text x="390" y="732" text-anchor="middle" stroke="black" stroke-width="1px">B
                 </text>
 
                 <!-- points and labels -->
-                <polyline points="315,547.5 315,285 502.5,285 447.75,152.25000000000006 315,97.5 182.25,152.25000000000006 127.5,285 182.25,417.75 315,472.5 447.75,417.75 502.5,285 315,285 315,547.5 "
+                <polyline points="315,619.5 315,432 502.5,432 447.75,299.25000000000006 315,244.5 182.25,299.25000000000006 127.5,432 182.25,564.75 315,619.5 447.75,564.75 502.5,432 315,432 315,619.5 "
                           style="fill:none;stroke:black;stroke-width:1"/>
-                <circle cx="315" cy="547.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="537.5" fill="blue" style="font-size:85%">
+                <circle cx="315" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="609.5" fill="blue" style="font-size:85%">
                     0(0,1.5)
                 </text>
-                <circle cx="315" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="275" fill="blue" style="font-size:85%">
-                    1(0,5)
+                <circle cx="315" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="422" fill="blue" style="font-size:85%">
+                    1(0,4)
                 </text>
-                <circle cx="502.5" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="512.5" y="275" fill="blue" style="font-size:85%">
-                    2(2.5,5)
+                <circle cx="502.5" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="512.5" y="422" fill="blue" style="font-size:85%">
+                    2(2.5,4)
                 </text>
-                <circle cx="447.75" cy="152.25000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="457.75" y="142.25000000000006" fill="blue" style="font-size:85%">
-                    3(1.77,6.77)
+                <circle cx="447.75" cy="299.25000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="457.75" y="289.25000000000006" fill="blue" style="font-size:85%">
+                    3(1.77,5.77)
                 </text>
-                <circle cx="315" cy="97.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="87.5" fill="blue" style="font-size:85%">
-                    4(0,7.5)
+                <circle cx="315" cy="244.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="234.5" fill="blue" style="font-size:85%">
+                    4(0,6.5)
                 </text>
-                <circle cx="182.25" cy="152.25000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="192.25" y="142.25000000000006" fill="blue" style="font-size:85%">
-                    5(-1.77,6.77)
+                <circle cx="182.25" cy="299.25000000000006" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="192.25" y="289.25000000000006" fill="blue" style="font-size:85%">
+                    5(-1.77,5.77)
                 </text>
-                <circle cx="127.5" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="137.5" y="275" fill="blue" style="font-size:85%">
-                    6(-2.5,5)
+                <circle cx="127.5" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="137.5" y="422" fill="blue" style="font-size:85%">
+                    6(-2.5,4)
                 </text>
-                <circle cx="182.25" cy="417.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="192.25" y="407.75" fill="blue" style="font-size:85%">
-                    7(-1.77,3.23)
+                <circle cx="182.25" cy="564.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="192.25" y="554.75" fill="blue" style="font-size:85%">
+                    7(-1.77,2.23)
                 </text>
-                <circle cx="315" cy="472.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="462.5" fill="blue" style="font-size:85%">
-                    8(0,2.5)
+                <circle cx="315" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="609.5" fill="blue" style="font-size:85%">
+                    8(0,1.5)
                 </text>
-                <circle cx="447.75" cy="417.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="457.75" y="407.75" fill="blue" style="font-size:85%">
-                    9(1.77,3.23)
+                <circle cx="447.75" cy="564.75" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="457.75" y="554.75" fill="blue" style="font-size:85%">
+                    9(1.77,2.23)
                 </text>
-                <circle cx="502.5" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="512.5" y="275" fill="blue" style="font-size:85%">
-                    10(2.5,5)
+                <circle cx="502.5" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="512.5" y="422" fill="blue" style="font-size:85%">
+                    10(2.5,4)
                 </text>
-                <circle cx="315" cy="285" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="275" fill="blue" style="font-size:85%">
-                    11(0,5)
+                <circle cx="315" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="422" fill="blue" style="font-size:85%">
+                    11(0,4)
                 </text>
-                <circle cx="315" cy="547.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
-                <text x="325" y="537.5" fill="blue" style="font-size:85%">
+                <circle cx="315" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="325" y="609.5" fill="blue" style="font-size:85%">
                     12(0,1.5)
                 </text>
             </svg>
         </td>
         <td>
-            <code>0 0,1.5<br/>1 0,5<br/>2 2.5,5<br/>3 1.77,6.77<br/>4 0,7.5<br/>5 -1.77,6.77<br/>6 -2.5,5<br/>7 -1.77,3.23<br/>8 0,2.5<br/>9 1.77,3.23<br/>10 2.5,5<br/>11 0,5<br/>12 0,1.5<br/></code>
+            <code>0 0,1.5<br/>1 0,4<br/>2 2.5,4<br/>3 1.77,5.77<br/>4 0,6.5<br/>5 -1.77,5.77<br/>6 -2.5,4<br/>7 -1.77,2.23<br/>8 0,1.5<br/>9 1.77,2.23<br/>10 2.5,4<br/>11 0,4<br/>12 0,1.5<br/></code>
         </td>
     </tr>
     </tbody>

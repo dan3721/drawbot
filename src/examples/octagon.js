@@ -16,5 +16,5 @@ const drawbot = require('../drawbot2')
 //   drawbot.move(x, y)
 // }
 
-drawbot.drawRegularPolygon(0,5,8,2.5)
-drawbot.draw(true)
+drawbot.drawRegularPolygon(0,4,8,3.9)
+drawbot.draw()
