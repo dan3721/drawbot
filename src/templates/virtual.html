@@ -34,9 +34,11 @@
                           style="fill:none;stroke:black;stroke-width:1"/>
                 {{#each coordinates}}
                 <circle cx="{{this.x}}" cy="{{this.y}}" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                {{#if @root.labelPoints}}
                 <text x="{{add this.x 10}}" y="{{subtract this.y 10}}" fill="blue" style="font-size:85%">
                     {{@index}}({{this.xO}},{{this.yO}})
                 </text>
+                {{/if}}
                 {{/each}}
             </svg>
         </td>

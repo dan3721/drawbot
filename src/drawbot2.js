@@ -42,6 +42,12 @@ const log = (msg) => {
   }
 }
 
+const warn = (msg) => {
+  if (!process.env.TESTING) {
+    console.warn(`*** ${msg}! ***`)
+  }
+}
+
 // load pigpio module
 let pigpio
 try {
@@ -121,12 +127,8 @@ const getPulseWidth = (degrees, flip = false) => {
 
   let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
   width = Math.round(width)
-  if (width < SERVO_MIN_PULSE_WIDTH) {
-    width = SERVO_MIN_PULSE_WIDTH
-  }
-  else if (width > SERVO_MAX_PULSE_WIDTH) {
-    width = SERVO_MAX_PULSE_WIDTH
-  }
+
+  width = protect(width)
 
   if (SERVO_REVERSED) {
     width = width + (1500 - width) * 2
@@ -217,6 +219,43 @@ const mmove = points => {
   for (let i = 0; i < points.length; i += 2) {
     move(points[i], points[i + 1])
   }
+}
+
+/**
+ * Draws a regular polygon. a regular polygon is a polygon that is equiangular
+ * (all angles are equal in measure) and equilateral (all sides have the same
+ * length)
+ * @param x origin
+ * @param y origin
+ * @param numPoints
+ * @param radius
+ *
+ * @see https://en.wikipedia.org/wiki/Regular_polygon
+ * @see https://stackoverflow.com/questions/5300938/calculating-the-position-of-points-in-a-circle
+ */
+const drawRegularPolygon = (x, y, numPoints, radius) => {
+  let points = []
+  let slice = 2 * Math.PI / numPoints
+  for (let i = 0; i < numPoints; i++) {
+    let angle = slice * i
+    let ptX = radius * Math.cos(angle)
+    let ptY = radius * Math.sin(angle)
+    points.push({x: ptX + x, y: ptY + y})
+  }
+
+  // move from last point to the first point so the final edge is drawn
+  points.push(points[0])
+
+  let moves = points.reduce((accum, point) => {
+    accum.push(point.x)
+    accum.push(point.y)
+    return accum
+  }, [])
+
+  // start and end at the center until we have the ability to lift
+  move(x, y) // TODO: remove when we have lift capabilities
+  mmove(moves)
+  move(x, y) // TODO: remove when we have lift capabilities
 }
 
 /**
@@ -351,10 +390,14 @@ const r2 = n => +(n.toFixed(2))
 
 const protect = (pulse) => {
   if (pulse < SERVO_MIN_PULSE_WIDTH) {
+    warn(
+      `normalized pulse ${pulse} to the minimum because it is less than ${SERVO_MIN_PULSE_WIDTH}`)
     pulse = SERVO_MIN_PULSE_WIDTH
   }
   else if (pulse > SERVO_MAX_PULSE_WIDTH) {
     pulse = SERVO_MAX_PULSE_WIDTH
+    warn(
+      `normalized pulse ${pulse} to the maximum because it is less than ${SERVO_MAX_PULSE_WIDTH}`)
   }
   return pulse
 }
@@ -519,6 +562,7 @@ const dumpSVG = (filename, _coordinates) => {
         y: height - coordinate.y * SCALE,
       }
     }),
+    labelPoints: _coordinates.length < 200, // only show labels if legible
   }
 
   FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
@@ -552,6 +596,7 @@ module.exports = {
   move,
   mmove,
   draw,
+  drawRegularPolygon,
 
   // utility
   r2,
