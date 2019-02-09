@@ -67,7 +67,7 @@ const DEG_PER_PULSE = (SERVO_MAX_DEG /
 // const SERVO_SPEED_DEGREES_PER_SECOND = .18 / 60
 // const SERVO_SPEED_DEGREES_PER_MILLIS = SERVO_SPEED_DEGREES_PER_SECOND / 1000
 
-// when you setup the servo turned around sush that 500 is most clockwise and
+// when you setup the servo turned around such that 500 is most clockwise and
 // 2500 is most anti-clockwise.
 const SERVO_REVERSED = true
 

@@ -32,24 +32,24 @@ const assert = (description, expected, actual) => {
 // NOTE: current servos are reversed; see drawbot.PWM_RANGE_REVERSED
 // 0°
 assert('2500 @ 0°', 2500, drawbot.getPulseWidth(0))
-assert('500 @ 0° (flip)', 500, drawbot.getPulseWidth(0, true))
+assert('500  @ 0° (flip)', 500, drawbot.getPulseWidth(0, true))
 // 90°
 assert('1500 @ 90°', 1500, drawbot.getPulseWidth(90))
 assert('1500 @ 90° (flip)', 1500, drawbot.getPulseWidth(90, true))
 // 180°
-assert('500 @ 180°', 500, drawbot.getPulseWidth(180))
+assert('500  @ 180°', 500, drawbot.getPulseWidth(180))
 assert('2500 @ 180° (flip)', 2500, drawbot.getPulseWidth(180, true))
 // 45°
 assert('2000 @ 45°', 2000, drawbot.getPulseWidth(45))
 assert('1000 @ 45° (flip)', 1000, drawbot.getPulseWidth(45, true))
 // 20°
 assert('2278 @ 20°', 2278, drawbot.getPulseWidth(20))
-assert('722 @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
+assert('722  @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
 
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
 const positions = drawbot.calcServoAngles(0, MAX_X)
-assert('A angle at max reach', 156.51, positions[0])
+assert('A angle @ max reach', 156.51, positions[0])
 assert('B angle @ max reach', 23.49, positions[1])
 
 // check servo degrees @ min reach (5,1)
