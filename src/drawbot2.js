@@ -14,17 +14,22 @@
 const FS = require('fs')
 const PATH = require('path')
 const DATEFORMAT = require('dateformat')
+const Handlebars = require('handlebars')
 
 const CFG = {
+  home: {x: 0, y: 1.5},
+  servoOffset: 1,
   arm1Length: 4,
   arm2Length: 5.75,
-  servoA: {
-    gipo: 9,
-  },
-  servoB: {
-    gipo: 10,
-  },
+  gigpoA: 9,
+  gigpoB: 10,
 }
+
+// TODO: derive
+const MAX_X = 4.2
+const MIN_X = -4.2
+const MIN_Y = 1.5
+const MAX_Y = 8.8
 
 /**
  * Log message
@@ -56,20 +61,15 @@ catch (e) {
 let SERVO_A, SERVO_B
 if (!!pigpio) {
   Gpio = pigpio.Gpio
-  SERVO_A = new Gpio(CFG.servoA.gipo, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
-  SERVO_B = new Gpio(CFG.servoB.gipo, {mode: Gpio.OUTPUT})
+  SERVO_A = new Gpio(CFG.gigpoA, {mode: Gpio.OUTPUT})
+  SERVO_B = new Gpio(CFG.gigpoB, {mode: Gpio.OUTPUT})
 }
 
 // setup
-const START_X = 0
-const START_Y = 1
-const ARM_1_LENGTH = 4
-const ARM_2_LENGTH = 5.75
 const CENTER = 0
 const PWM_STEP_SIZE = 1
-const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 10 : 0
+const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 1 : 0
 // const PWM_STEPS_PER_MILLIS = 100 / PWM_STEP_DURATION_IN_MILLIS
-const SERVO_OFFSET_FROM_CENTER = 1
 const SERVO_MAX_DEG = 180
 const SERVO_MIN_PULSE_WIDTH = 500
 const SERVO_MAX_PULSE_WIDTH = 2500
@@ -88,8 +88,7 @@ const CMD_QUEUE = []
 const CMD_EXECUTION_INTERVAL_IN_MILLIS = !!pigpio ? 100 : 5
 
 // current position
-let _x = START_X
-let _y = START_Y
+let _currentPosition = CFG.home
 
 // point stack
 const POINTS = []
@@ -173,8 +172,8 @@ const calcServoAngles = (x, y) => {
 const calcServoAngle = (x, y, same) => {
 
   const OFFSET = same ?
-    CENTER - SERVO_OFFSET_FROM_CENTER : // offset is left of center
-    CENTER + SERVO_OFFSET_FROM_CENTER // offset is right of center
+    CENTER - CFG.servoOffset : // offset is left of center
+    CENTER + CFG.servoOffset // offset is right of center
 
   const OPPOSITE = OFFSET - x
   const ADJACENT = y
@@ -187,8 +186,8 @@ const calcServoAngle = (x, y, same) => {
 
   // step 3: solve angle 2
   const A = HYPOTENUSE
-  const B = ARM_1_LENGTH
-  const C = ARM_2_LENGTH
+  const B = CFG.arm1Length
+  const C = CFG.arm2Length
   const ANGLE2 = radians2Degrees(
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
@@ -207,7 +206,7 @@ const calcServoAngle = (x, y, same) => {
  * @param {number} y
  */
 const move = (x, y) => {
-  CMD_QUEUE.push(`move ${x} ${y}`)
+  CMD_QUEUE.push({action: 'move', x, y})
 }
 
 /**
@@ -218,76 +217,6 @@ const mmove = points => {
   for (let i = 0; i < points.length; i += 2) {
     move(points[i], points[i + 1])
   }
-}
-
-/**
- * Dumps drawing as an SVG HTML file.
- */
-const dumpSVG = () => {
-
-  const SCALE = 50
-
-  // filename based on drawing js
-  let filename = module.parent.filename
-  filename = filename.replace('.js', '.html')
-
-  const SVG = FS.createWriteStream(filename)
-
-  SVG.write(`<html>`)
-  SVG.write(`<head><title>${PATH.parse(filename).name}</title></head>`)
-  SVG.write(`<body>`)
-  SVG.write(
-    `<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">`)
-  SVG.write(`<g transform="translate(0,500)">`)
-
-  // x axis
-  SVG.write(`<line x1="0" y1="0" x2="${10 *
-  SCALE}" y2="0" style="stroke:red;stroke-width:1" />`)
-
-  // y axis
-  SVG.write(
-    `<line x1="${CENTER * SCALE}" y1="0" x2="${CENTER * SCALE}" y2="${-10 *
-    SCALE}" style="stroke:green;stroke-width:1" />`)
-
-  // servo A
-  SVG.write(`<circle cx="${4 *
-  SCALE}" cy="0" r="10" stroke="black" stroke-width="2" fill="cyan" />`)
-  SVG.write(`<text x="${4 *
-  SCALE}" y="5" text-anchor="middle" stroke="black" stroke-width="1px">A</text>`)
-
-  // servo B
-  SVG.write(`<circle cx="${6 *
-  SCALE}" cy="0" r="10" stroke="black" stroke-width="2" fill="yellow" />`)
-  SVG.write(`<text x="${6 *
-  SCALE}" y="5" text-anchor="middle" stroke="black" stroke-width="1px">B</text>`)
-
-  // path
-  SVG.write('<polyline points="')
-  POINTS.forEach(point => {
-    SVG.write(`${point[0] * SCALE},${-point[1] * SCALE} `)
-  })
-  SVG.write('" style="fill:none;stroke:black;stroke-width:1" />')
-
-  // points and labels
-  POINTS.forEach((point, index) => {
-    // point
-    SVG.write(`<circle cx="${point[0] * SCALE}" cy="${-point[1] *
-    SCALE}" r="2" stroke="blue" stroke-width="2" fill="blue" />`)
-    // label
-    SVG.write(`<text x="${point[0] * SCALE + 3}" y="${-point[1] *
-    SCALE -
-    8}" fill="blue" style="font-size:85%">${index} (${point[0]},${point[1]})</text>`)
-  })
-
-  SVG.write('</g>')
-  SVG.write('</svg>')
-  SVG.write(`</body>`)
-  SVG.write(`</html>`)
-
-  SVG.end()
-
-  log(`SVG captured to file: ${filename}`)
-
 }
 
 /**
@@ -436,9 +365,9 @@ const protect = (pulse) => {
  */
 const draw = (dumpSvg = false) => {
 
-  move(START_X, START_Y) // reset to starting position (appends to end)
+  move(CFG.home.x, CFG.home.y) // reset to starting position (appends to end)
 
-  log(CMD_QUEUE)
+  // log(CMD_QUEUE)
 
   const START_DATE = new Date()
   const START_TIME = START_DATE.getTime()
@@ -457,17 +386,14 @@ const draw = (dumpSvg = false) => {
       const CMD = CMD_QUEUE.shift()
       if (!!CMD) {
 
-        const CMD_SEGMENTS = CMD.split(' ')
-        const ACTION = CMD_SEGMENTS[0]
+        const ACTION = CMD.action
 
         // each cmd is responsible for managing isExecuting !
         switch (ACTION) {
           case  'move':
 
-            const x = CMD_SEGMENTS[1]
-            const y = CMD_SEGMENTS[2]
-
-            const TRANSLATION_INFO = calcTranslation(_x, _y, x, y)
+            const TRANSLATION_INFO = calcTranslation(_currentPosition.x,
+              _currentPosition.y, CMD.x, CMD.y)
             // console.log(TRANSLATION_INFO)
 
             isExecuting = true
@@ -520,9 +446,8 @@ const draw = (dumpSvg = false) => {
                 }
 
                 // update and record location
-                _x = x
-                _y = y
-                POINTS.push([_x, _y])
+                _currentPosition = {x: CMD.x, y: CMD.y}
+                POINTS.push(_currentPosition)
 
                 isExecuting = false
 
@@ -542,7 +467,7 @@ const draw = (dumpSvg = false) => {
         clearInterval(CMD_EXECUTOR)
         log('\n')
         if (dumpSvg) {
-          dumpSVG()
+          dumpSVG(module.parent.filename, POINTS)
         }
         log(`DONE Total execution time was ${new Date().getTime() -
         START_TIME} milliseconds.`)
@@ -552,7 +477,63 @@ const draw = (dumpSvg = false) => {
 
 }
 
-move(START_X, START_Y) // reset to starting position
+/**
+ * Dumps drawing as an SVG HTML file.
+ */
+const dumpSVG = (filename, _coordinates) => {
+
+  // const MAX_X = 4.2
+  // const MIN_X = -4.2
+  // const MIN_Y = 1
+  // const MAX_Y = 8.8
+
+  const SCALE = 75
+
+  const helpers = require('handlebars-helpers')
+  const math = helpers.math()
+
+  Handlebars.registerHelper('json', function (context) {
+    return JSON.stringify(context, null, 2)
+  })
+
+  const width = MAX_X * 2 * SCALE
+  const height = Math.ceil(MAX_Y * SCALE)
+  const offsetX = width / 2
+
+  const CTX = {
+    math,
+    SCALE,
+    CFG,
+    object: helpers.object(),
+    MAX_X, MIN_X,
+    MAX_Y, MIN_Y,
+    height,
+    width,
+    title: PATH.parse(filename).name,
+    servoAx: width / 2 - CFG.servoOffset * SCALE,
+    servoBx: width / 2 + CFG.servoOffset * SCALE,
+    coordinates: _coordinates.map(coordinate => {
+      return {xO: coordinate.x, yO: coordinate.y, x: coordinate.x * SCALE + offsetX, y: height - coordinate.y * SCALE}
+    })
+  }
+
+  FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
+    function (err, data) {
+      if (err) {
+        throw err
+      }
+      const template = Handlebars.compile(data.toString())
+      const script = template(CTX)
+      const virtualFilename = filename.replace('.js', '.html')
+      const stream = FS.createWriteStream(virtualFilename)
+      stream.write(script)
+      stream.end()
+      log(virtualFilename)
+    })
+
+}
+
+move(CFG.home.x, CFG.home.y) // reset to starting position
 
 // public API
 module.exports = {

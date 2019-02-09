@@ -1,7 +1,6 @@
-const drawbot = require('../drawbot')
+const drawbot = require('../drawbot2')
 
-drawbot.move(5, 4) // vertical (from origin START_X,START_Y)
-drawbot.move(3, 6) // diagonal
-drawbot.move(7, 6) // horizontal
-
+drawbot.move(0, 4) // vertical
+drawbot.move(-2, 6) // diagonal
+drawbot.move(2, 6) // horizontal
 drawbot.draw(true)

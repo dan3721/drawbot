@@ -1,0 +1,51 @@
+<html>
+<head><title>{{title}}</title></head>
+<body>
+
+<table>
+    <thead>
+    </thead>
+    <tbody>
+    <tr style="vertical-align: top">
+        <td>
+            <svg height="{{height}}" width="{{width}}" style="border: black;border-style: solid;border-width: thin"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!--x axis-->
+                <line x1="0" y1="{{ceil height}}" x2="{{width}}" y2="{{ceil height}}"
+                      style="stroke:red;stroke-width:4"/>
+
+                <!--y axis-->
+                <line x1="{{divide width 2}}" y1="{{ceil height}}" x2="{{divide width 2}}" y2="0"
+                      style="stroke:green;stroke-width:1"/>
+
+                <!--servo A-->
+                <circle cx="{{servoAx}}" cy="{{ceil height}}" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <text x="{{servoAx}}" y="{{ceil height}}" text-anchor="middle" stroke="black" stroke-width="1px">A
+                </text>
+
+                <!--servo B-->
+                <circle cx="{{servoBx}}" cy="{{ceil height}}" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <text x="{{servoBx}}" y="{{ceil height}}" text-anchor="middle" stroke="black" stroke-width="1px">B
+                </text>
+
+                <!-- points and labels -->
+                <polyline points="{{#each coordinates}}{{this.x}},{{this.y}} {{/each}}"
+                          style="fill:none;stroke:black;stroke-width:1"/>
+                {{#each coordinates}}
+                <circle cx="{{this.x}}" cy="{{this.y}}" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="{{add this.x 10}}" y="{{subtract this.y 10}}" fill="blue" style="font-size:85%">
+                    {{@index}}({{this.xO}},{{this.yO}})
+                </text>
+                {{/each}}
+            </svg>
+        </td>
+        <td>
+            <code>{{#each coordinates}}{{@index}} {{this.xO}},{{this.yO}}<br/>{{/each}}</code>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
