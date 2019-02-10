@@ -244,7 +244,7 @@ const calcServoAngle = (x, y, same) => {
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
   // step 4: add angles
-  const ANGLE = (same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1)
+  const ANGLE = same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1
 
   // console.log(
   //   `x:[${x}] y:[${y}] OFFSET:[${OFFSET}] OPPOSITE:[${OPPOSITE}] ADJACENT:[${ADJACENT}] HYPOTENUSE:[${HYPOTENUSE}] ANGLE1:[${ANGLE1}] ANGLE2:[${ANGLE2}] ANGLE:[${ANGLE2}]`)
