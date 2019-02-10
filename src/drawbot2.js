@@ -357,7 +357,6 @@ const drawTrangle = (x, y, base, height) => {
 const CIRCLE_RESOLUTION = .20 // lower = more points of resolution
 const drawCircle = (x, y, radius) => {
   const numPoints = Math.round((2 * Math.PI/CIRCLE_RESOLUTION)*radius)
-  log(numPoints)
   drawRegularPolygon(x, y, numPoints, radius)
 }
 
@@ -651,7 +650,7 @@ const writeHtml = (filename, _coordinates) => {
           y: height - coordinate.y * SCALE,
         }
       }),
-      labelPoints: _coordinates.length < 200, // only show labels if legible
+      labelPoints: _coordinates.length <= 100, // only show labels if legible
     }
 
     FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
