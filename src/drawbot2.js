@@ -354,6 +354,13 @@ const drawTrangle = (x, y, base, height) => {
   move(x, y + halfHeight, true) // back to top
 }
 
+const CIRCLE_RESOLUTION = .20 // lower = more points of resolution
+const drawCircle = (x, y, radius) => {
+  const numPoints = Math.round((2 * Math.PI/CIRCLE_RESOLUTION)*radius)
+  log(numPoints)
+  drawRegularPolygon(x, y, numPoints, radius)
+}
+
 /**
  * Given origin and target points, calculates all the relevant information.
  *
@@ -690,6 +697,7 @@ module.exports = {
   drawRegularPolygon,
   drawSquare,
   drawTrangle,
+  drawCircle,
   execute,
 
   // utility

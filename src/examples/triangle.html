@@ -1,0 +1,79 @@
+<html>
+<head><title>triangle</title></head>
+<body>
+
+<table>
+    <thead>
+    </thead>
+    <tbody>
+    <tr style="vertical-align: top">
+        <td>
+            <svg height="732" width="712.5"
+                 style="background-color:white;border: black;border-style: solid;border-width: thin"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!--open drawable area-->
+                <circle cx="281.25" cy="432" r="431.25"
+                        stroke="orange" stroke-width="1" fill="yellow" style="fill-opacity: 0.05;"/>
+                <circle cx="431.25" cy="432" r="431.25"
+                        stroke="cyan" stroke-width="1" fill="cyan" style="fill-opacity: 0.05"/>
+                <rect y="619.5" width="712.5" height="112.5" style="fill:white;stroke-width:1;stroke:black"/>
+
+                <!--x axis-->
+                <line x1="0" y1="732" x2="712.5" y2="732"
+                      style="stroke:red;stroke-width:4"/>
+
+                <!--y axis-->
+                <line x1="356.25" y1="732" x2="356.25" y2="0"
+                      style="stroke:green;stroke-width:1"/>
+
+                <!--servo A-->
+                <circle cx="281.25" cy="732" r="15" stroke="green" stroke-width="2" fill="green"
+                        style="fill-opacity: 0.1"/>
+                <text x="281.25" y="732" text-anchor="middle" stroke="black" stroke-width="1px">A
+                </text>
+
+                <!--servo B-->
+                <circle cx="431.25" cy="732" r="15" stroke="red" stroke-width="2" fill="red"
+                        style="fill-opacity: 0.1"/>
+                <text x="431.25" y="732" text-anchor="middle" stroke="black" stroke-width="1px">B
+                </text>
+
+                <!-- points and labels -->
+                <polyline points="356.25,619.5 356.25,207 468.75,507 243.75,507 356.25,207 356.25,619.5 "
+                          style="fill:none;stroke:black;stroke-width:1"/>
+                <circle cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="366.25" y="609.5" fill="blue" style="font-size:85%">
+                    0(0,1.5)
+                </text>
+                <circle cx="356.25" cy="207" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="366.25" y="197" fill="blue" style="font-size:85%">
+                    1(0,7)
+                </text>
+                <circle cx="468.75" cy="507" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="478.75" y="497" fill="blue" style="font-size:85%">
+                    2(1.5,3)
+                </text>
+                <circle cx="243.75" cy="507" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="253.75" y="497" fill="blue" style="font-size:85%">
+                    3(-1.5,3)
+                </text>
+                <circle cx="356.25" cy="207" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="366.25" y="197" fill="blue" style="font-size:85%">
+                    4(0,7)
+                </text>
+                <circle cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <text x="366.25" y="609.5" fill="blue" style="font-size:85%">
+                    5(0,1.5)
+                </text>
+            </svg>
+        </td>
+        <td>
+            <code>0 0,1.5<br/>1 0,7<br/>2 1.5,3<br/>3 -1.5,3<br/>4 0,7<br/>5 0,1.5<br/></code>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
