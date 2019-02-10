@@ -1,5 +1,25 @@
 <html>
-<head><title>star</title></head>
+<head>
+    <title>star</title>
+    <script>
+      function showPoint (pointId, x, y) {
+        console.log(pointId, x, y)
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.fill = 'red'
+        elePoint.style.stroke = 'red'
+        elePoint.style.r = 4
+        document.getElementById('currentPoint').innerHTML = `# ${pointId} (${x},${y})`
+      }
+
+      function resetPoint (pointId) {
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.fill = 'blue'
+        elePoint.style.stroke = 'blue'
+        elePoint.style.r = 2
+        document.getElementById('currentPoint').innerHTML = ''
+      }
+    </script>
+</head>
 <body>
 
 <table>
@@ -42,42 +62,60 @@
                 <!-- points and labels -->
                 <polyline points="356.25,619.5 356.25,582 206.25,132 581.25,432 131.25,432 506.25,132 356.25,582 356.25,619.5 "
                           style="fill:none;stroke:black;stroke-width:1"/>
-                <circle cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p0" cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(0, 0, 1.5)"
+                        onmouseout="resetPoint(0)"/>
                 <text x="366.25" y="609.5" fill="blue" style="font-size:85%">
                     0(0,1.5)
                 </text>
-                <circle cx="356.25" cy="582" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p1" cx="356.25" cy="582" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(1, 0, 2)"
+                        onmouseout="resetPoint(1)"/>
                 <text x="366.25" y="572" fill="blue" style="font-size:85%">
                     1(0,2)
                 </text>
-                <circle cx="206.25" cy="132" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p2" cx="206.25" cy="132" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(2, -2, 8)"
+                        onmouseout="resetPoint(2)"/>
                 <text x="216.25" y="122" fill="blue" style="font-size:85%">
                     2(-2,8)
                 </text>
-                <circle cx="581.25" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p3" cx="581.25" cy="432" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(3, 3, 4)"
+                        onmouseout="resetPoint(3)"/>
                 <text x="591.25" y="422" fill="blue" style="font-size:85%">
                     3(3,4)
                 </text>
-                <circle cx="131.25" cy="432" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p4" cx="131.25" cy="432" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(4, -3, 4)"
+                        onmouseout="resetPoint(4)"/>
                 <text x="141.25" y="422" fill="blue" style="font-size:85%">
                     4(-3,4)
                 </text>
-                <circle cx="506.25" cy="132" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p5" cx="506.25" cy="132" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(5, 2, 8)"
+                        onmouseout="resetPoint(5)"/>
                 <text x="516.25" y="122" fill="blue" style="font-size:85%">
                     5(2,8)
                 </text>
-                <circle cx="356.25" cy="582" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p6" cx="356.25" cy="582" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(6, 0, 2)"
+                        onmouseout="resetPoint(6)"/>
                 <text x="366.25" y="572" fill="blue" style="font-size:85%">
                     6(0,2)
                 </text>
-                <circle cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p7" cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(7, 0, 1.5)"
+                        onmouseout="resetPoint(7)"/>
                 <text x="366.25" y="609.5" fill="blue" style="font-size:85%">
                     7(0,1.5)
                 </text>
             </svg>
         </td>
         <td>
-            <code>0 0,1.5<br/>1 0,2<br/>2 -2,8<br/>3 3,4<br/>4 -3,4<br/>5 2,8<br/>6 0,2<br/>7 0,1.5<br/></code>
+            <code>
+                <div id="currentPoint"></div>
+            </code>
         </td>
     </tr>
     </tbody>

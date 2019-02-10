@@ -1,5 +1,25 @@
 <html>
-<head><title>triangle</title></head>
+<head>
+    <title>triangle</title>
+    <script>
+      function showPoint (pointId, x, y) {
+        console.log(pointId, x, y)
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.fill = 'red'
+        elePoint.style.stroke = 'red'
+        elePoint.style.r = 4
+        document.getElementById('currentPoint').innerHTML = `# ${pointId} (${x},${y})`
+      }
+
+      function resetPoint (pointId) {
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.fill = 'blue'
+        elePoint.style.stroke = 'blue'
+        elePoint.style.r = 2
+        document.getElementById('currentPoint').innerHTML = ''
+      }
+    </script>
+</head>
 <body>
 
 <table>
@@ -42,34 +62,48 @@
                 <!-- points and labels -->
                 <polyline points="356.25,619.5 356.25,207 468.75,507 243.75,507 356.25,207 356.25,619.5 "
                           style="fill:none;stroke:black;stroke-width:1"/>
-                <circle cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p0" cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(0, 0, 1.5)"
+                        onmouseout="resetPoint(0)"/>
                 <text x="366.25" y="609.5" fill="blue" style="font-size:85%">
                     0(0,1.5)
                 </text>
-                <circle cx="356.25" cy="207" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p1" cx="356.25" cy="207" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(1, 0, 7)"
+                        onmouseout="resetPoint(1)"/>
                 <text x="366.25" y="197" fill="blue" style="font-size:85%">
                     1(0,7)
                 </text>
-                <circle cx="468.75" cy="507" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p2" cx="468.75" cy="507" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(2, 1.5, 3)"
+                        onmouseout="resetPoint(2)"/>
                 <text x="478.75" y="497" fill="blue" style="font-size:85%">
                     2(1.5,3)
                 </text>
-                <circle cx="243.75" cy="507" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p3" cx="243.75" cy="507" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(3, -1.5, 3)"
+                        onmouseout="resetPoint(3)"/>
                 <text x="253.75" y="497" fill="blue" style="font-size:85%">
                     3(-1.5,3)
                 </text>
-                <circle cx="356.25" cy="207" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p4" cx="356.25" cy="207" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(4, 0, 7)"
+                        onmouseout="resetPoint(4)"/>
                 <text x="366.25" y="197" fill="blue" style="font-size:85%">
                     4(0,7)
                 </text>
-                <circle cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2" fill="blue"/>
+                <circle id="p5" cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(5, 0, 1.5)"
+                        onmouseout="resetPoint(5)"/>
                 <text x="366.25" y="609.5" fill="blue" style="font-size:85%">
                     5(0,1.5)
                 </text>
             </svg>
         </td>
         <td>
-            <code>0 0,1.5<br/>1 0,7<br/>2 1.5,3<br/>3 -1.5,3<br/>4 0,7<br/>5 0,1.5<br/></code>
+            <code>
+                <div id="currentPoint"></div>
+            </code>
         </td>
     </tr>
     </tbody>
