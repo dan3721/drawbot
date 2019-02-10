@@ -33,6 +33,8 @@ const min_y = CFG.servoOffset + CFG.servoOffset / 2 // swag
 const max_y = Math.sqrt(
   (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2))) + CFG.arm1Length
 
+console.log(`<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
+
 const getRandomPoint = () => {
   for (; ;) {
     let x = _.random(min_x, max_x, true)
@@ -248,6 +250,11 @@ const calcServoAngle = (x, y, same) => {
 
   // console.log(
   //   `x:[${x}] y:[${y}] OFFSET:[${OFFSET}] OPPOSITE:[${OPPOSITE}] ADJACENT:[${ADJACENT}] HYPOTENUSE:[${HYPOTENUSE}] ANGLE1:[${ANGLE1}] ANGLE2:[${ANGLE2}] ANGLE:[${ANGLE2}]`)
+
+  // TODO: remove after we figure out why this is occurring (seeing in bubbles; close boundaries case?)
+  if (ANGLE<0 || ANGLE>180) {
+    console.error(x,y,same, ANGLE)
+  }
 
   return r2(ANGLE)
 }
