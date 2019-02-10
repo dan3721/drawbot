@@ -14,6 +14,7 @@ const FS = require('fs')
 const PATH = require('path')
 const DATEFORMAT = require('dateformat')
 const Handlebars = require('handlebars')
+const _ = require('lodash')
 
 const CFG = {
   home: {x: 0, y: 1.5},
@@ -30,7 +31,17 @@ const max_x = 0 - CFG.servoOffset + CFG.arm2Length
 
 const min_y = CFG.servoOffset + CFG.servoOffset / 2 // swag
 const max_y = Math.sqrt(
-  (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2)))
+  (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2))) + CFG.arm1Length
+
+const getRandomPoint = () => {
+  for (; ;) {
+    let x = _.random(min_x, max_x, true)
+    let y = _.random(min_y, max_y, true)
+    if (isValidPoint(x, y)) {
+      return {x, y}
+    }
+  }
+}
 
 /**
  * Determins the distance of a point from origin
@@ -41,13 +52,17 @@ const max_y = Math.sqrt(
 const distance = (originX, originY, x, y) => Math.sqrt(
   Math.pow(originX - x, 2) + Math.pow(originY - y, 2))
 
+const isPointWithinCircle = (x, y, originX, originY, radius) =>
+  distance(originX, originY, x, y) <= radius
+
 const isValidPoint = (x, y) => {
   let valid = false
   if (y >= min_y) { // greater than the y min
     // and within the circle sweeps of both second arm segments
-    if ((distance(0 - CFG.servoOffset, CFG.arm1Length, x, y) <=
+    if (isPointWithinCircle(x, y, 0 - CFG.servoOffset, CFG.arm1Length,
       CFG.arm2Length) &&
-      (distance(0 + CFG.servoOffset, CFG.arm1Length, x, y) <= CFG.arm2Length)) {
+      isPointWithinCircle(x, y, 0 + CFG.servoOffset, CFG.arm1Length,
+        CFG.arm2Length)) {
       valid = true
     }
   }
@@ -356,7 +371,7 @@ const drawTrangle = (x, y, base, height) => {
 
 const CIRCLE_RESOLUTION = .20 // lower = more points of resolution
 const drawCircle = (x, y, radius) => {
-  const numPoints = Math.round((2 * Math.PI/CIRCLE_RESOLUTION)*radius)
+  const numPoints = Math.round((2 * Math.PI / CIRCLE_RESOLUTION) * radius)
   drawRegularPolygon(x, y, numPoints, radius)
 }
 
@@ -650,7 +665,7 @@ const writeHtml = (filename, _coordinates) => {
           y: height - coordinate.y * SCALE,
         }
       }),
-      labelPoints: _coordinates.length <= 100, // only show labels if legible
+      labelPoints: _coordinates.length <= 16, // only show labels if legible
     }
 
     FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
@@ -701,4 +716,6 @@ module.exports = {
 
   // utility
   r2, p4, p6,
+  getRandomPoint,
+  isPointWithinCircle,
 }
