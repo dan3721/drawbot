@@ -1,12 +1,11 @@
 /**
- * Mr. Draw Bot 2.0
- *
- * _Auto detects [pigpio](https://github.com/fivdi/pigpio) availability and
- * disables hardware support if not available._
+ * Draw Bot 2.0
  *
  * The general usage pattern is to queue some commands and then invoke draw().
+ *
  * See the example drawings...
  *
+ * @version 2.0
  * @module drawbot
  * @see module:drawbot
  */
@@ -77,50 +76,20 @@ const error = (msg) => {
   }
 }
 
-// load pigpio module
-let pigpio
-try {
-  pigpio = require('pigpio')
-}
-catch (e) {
-  // warn(e.message)
-  warn('\n\
-*********************************************************************\n\
-* pigpio module not available so there will be no hardware support! *\n\
-*                                                                   *\n\
-* To resolve install pigpio: npm i pigpio                           *\n\
-*********************************************************************\n')
-}
-
-// bind output pins
-let SERVO_A, SERVO_B
-if (!!pigpio) {
-  Gpio = pigpio.Gpio
-  SERVO_A = new Gpio(CFG.gigpoA, {mode: Gpio.OUTPUT})
-  SERVO_B = new Gpio(CFG.gigpoB, {mode: Gpio.OUTPUT})
-}
-
 // setup
 const CENTER = 0
 const PWM_STEP_SIZE = 1
-const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 1 : 0
-// const PWM_STEPS_PER_MILLIS = 100 / PWM_STEP_DURATION_IN_MILLIS
 const SERVO_MAX_DEG = 180
 const SERVO_MIN_PULSE_WIDTH = 500
 const SERVO_MAX_PULSE_WIDTH = 2500
 const DEG_PER_PULSE = (SERVO_MAX_DEG /
   (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH))
-// const SERVO_SPEED_DEGREES_PER_SECOND = .18 / 60
-// const SERVO_SPEED_DEGREES_PER_MILLIS = SERVO_SPEED_DEGREES_PER_SECOND / 1000
 
 // when you setup the servo turned around such that 500 is most clockwise and
 // 2500 is most anti-clockwise.
 const SERVO_REVERSED = true
 
 const CMD_QUEUE = []
-
-// interval between cmd execution attempts
-const CMD_EXECUTION_INTERVAL_IN_MILLIS = !!pigpio ? 100 : 5
 
 // current position
 let _currentPosition = CFG.home
@@ -513,13 +482,6 @@ const draw = () => {
             const ACTUAL_PULSE_A = protect(Math.round(PULSE_A))
             const ACTUAL_PULSE_B = protect(Math.round(PULSE_B))
 
-            // // set pulse
-            // if (!!pigpio) {
-            //   SERVO_A.servoWrite(PULSE_A)
-            //   SERVO_B.servoWrite(PULSE_B)
-            //   // console.log(`${PULSE_A}\t${PULSE_B}`)
-            // }
-
             writePigsS(
               TRANSLATION_INFO.TARGET_POSITION[0],
               TRANSLATION_INFO.TARGET_POSITION[1],
@@ -538,12 +500,6 @@ const draw = () => {
         throw `${action} is an unsupported action!`
     }
   })
-
-  // // stop pwm for both servos
-  // if (!!pigpio) {
-  //   SERVO_A.servoWrite(0)
-  //   SERVO_B.servoWrite(0)
-  // }
 
   // write html and pigs files
   Promise.all([
