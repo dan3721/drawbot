@@ -25,11 +25,34 @@ const CFG = {
   gigpoB: 10,
 }
 
-// TODO: derive
-const MAX_X = 4.2
-const MIN_X = -4.2
-const MIN_Y = 1.5
-const MAX_Y = 8.8
+const min_x = 0 + CFG.servoOffset - CFG.arm2Length
+const max_x = 0 - CFG.servoOffset + CFG.arm2Length
+
+const min_y = CFG.servoOffset + CFG.servoOffset / 2 // swag
+const max_y = Math.sqrt(
+  (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2)))
+
+/**
+ * Determins the distance of a point from origin
+ * @param x
+ * @param y
+ * @returns {number}
+ */
+const distance = (originX, originY, x, y) => Math.sqrt(
+  Math.pow(originX - x, 2) + Math.pow(originY - y, 2))
+
+const isValidPoint = (x, y) => {
+  let valid = false
+  if (y >= min_y) { // greater than the y min
+    // and within the circle sweeps of both second arm segments
+    if ((distance(0 - CFG.servoOffset, CFG.arm1Length, x, y) <=
+      CFG.arm2Length) &&
+      (distance(0 + CFG.servoOffset, CFG.arm1Length, x, y) <= CFG.arm2Length)) {
+      valid = true
+    }
+  }
+  return valid
+}
 
 /**
  * Log message
@@ -233,6 +256,10 @@ const calcServoAngle = (x, y, same) => {
  * @param {number} y
  */
 const move = (x, y) => {
+  if (!isValidPoint(x, y)) {
+    let error = `${x},${y} is outside the drawable area`
+    throw error
+  }
   CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
 }
 
@@ -283,17 +310,17 @@ const drawRegularPolygon = (x, y, numPoints, radius) => {
   move(x, y) // TODO: remove when we have lift capabilities
 }
 
-/**
- * Smart padding for values fixed to 2. If the value ends with two digits the
- * padding is added to the beginning else it's added to the end. This nicely
- * pads values like 96.78 and 158.7 so they are left aligned.
- * @private
- */
-const padDeg = (val) => {
-  val += ''
-  // return val.match(/^\.\d\d$/) ? val.padStart(6, ' ') : val.padEnd(6, ' ')
-  return val.padStart(6, ' ')
-}
+// /**
+//  * Smart padding for values fixed to 2. If the value ends with two digits the
+//  * padding is added to the beginning else it's added to the end. This nicely
+//  * pads values like 96.78 and 158.7 so they are left aligned.
+//  * @private
+//  */
+// const padDeg = (val) => {
+//   val += ''
+//   // return val.match(/^\.\d\d$/) ? val.padStart(6, ' ') : val.padEnd(6, ' ')
+//   return val.padStart(6, ' ')
+// }
 
 /**
  * @private
@@ -567,7 +594,7 @@ const writeHtml = (filename, _coordinates) => {
       return JSON.stringify(context, null, 2)
     })
 
-    const width = MAX_X * 2 * SCALE
+    const width = max_x * 2 * SCALE
     const height = Math.ceil((CFG.arm1Length + CFG.arm2Length) * SCALE)
     const offsetX = width / 2
 
@@ -575,16 +602,16 @@ const writeHtml = (filename, _coordinates) => {
     const servoBx = offsetX + CFG.servoOffset * SCALE
     const arm2Radius = CFG.arm2Length * SCALE
 
-    const yMin = height - MIN_Y * SCALE
-    const yH = MIN_Y * SCALE
+    const yMin = height - min_y * SCALE
+    const yH = min_y * SCALE
 
     const CTX = {
       math,
       SCALE,
       CFG,
       object: helpers.object(),
-      MAX_X, MIN_X,
-      MAX_Y, MIN_Y,
+      MAX_X: max_x, MIN_X: min_x,
+      MAX_Y: max_y, MIN_Y: min_y,
       height,
       width,
       yMin,
@@ -629,7 +656,13 @@ move(CFG.home.x, CFG.home.y) // reset to starting position
 // public API
 module.exports = {
 
+  // derived
+  min_x, max_x,
+  min_y, max_y,
+
   // calculations
+  distance,
+  isValidPoint,
   radians2Degrees,
   calcServoAngle,
   calcServoAngles,

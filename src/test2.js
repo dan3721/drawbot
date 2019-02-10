@@ -46,6 +46,13 @@ assert('1000 @ 45° (flip)', 1000, drawbot.getPulseWidth(45, true))
 assert('2278 @ 20°', 2278, drawbot.getPulseWidth(20))
 assert('722  @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
 
+assert('distance', drawbot.distance(3, 3, 6, 7), 5)
+
+assert('valid point 3,3', true, drawbot.isValidPoint(3, 3))
+assert('valid point 0,just a bit less than min_y', false,
+  drawbot.isValidPoint(0, drawbot.min_y - .01)) // just a bit outside
+assert('valid point 4,9', false, drawbot.isValidPoint(4, 8)) // out top right
+
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
 const positions = drawbot.calcServoAngles(0, MAX_X)
@@ -84,9 +91,10 @@ assert('calcTranslation vertical',
 // calcTranslation horizontal
 const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(-2, 6, 2, 6)
 // console.log(HORIZANTAL_TRANSLATION)
- assert('calcTranslation horizontal',
-  { CURRENT_POSITION: [ 104.72, 32.06 ],
-    TARGET_POSITION: [ 147.94, 75.28 ],
+assert('calcTranslation horizontal',
+  {
+    CURRENT_POSITION: [104.72, 32.06],
+    TARGET_POSITION: [147.94, 75.28],
     DELTA_X: 4,
     DELTA_Y: 0,
     CURRENT_PULSE_A: 1336,
@@ -99,16 +107,17 @@ const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(-2, 6, 2, 6)
     DELTA_PULSE_B: 480,
     NUM_STEPS: 480,
     PULSE_INCREMENT_A: -1,
-    PULSE_INCREMENT_B: -1 ,
-    },
+    PULSE_INCREMENT_B: -1,
+  },
   HORIZANTAL_TRANSLATION)
 
 // calcTranslation diagonal (/)
 const DIAGONAL_TRANSLATION = drawbot.calcTranslation(-2, 3, 2, 6)
 // console.log(DIAGONAL_TRANSLATION)
 assert('calcTranslation diagonal (/)',
-  { CURRENT_POSITION: [ 55.35, 43.42 ],
-    TARGET_POSITION: [ 147.94, 75.28 ],
+  {
+    CURRENT_POSITION: [55.35, 43.42],
+    TARGET_POSITION: [147.94, 75.28],
     DELTA_X: 4,
     DELTA_Y: 3,
     CURRENT_PULSE_A: 1885,
@@ -121,7 +130,8 @@ assert('calcTranslation diagonal (/)',
     DELTA_PULSE_B: 354,
     NUM_STEPS: 354,
     PULSE_INCREMENT_A: -2.91,
-    PULSE_INCREMENT_B: -1 },
+    PULSE_INCREMENT_B: -1,
+  },
   DIAGONAL_TRANSLATION,
 )
 
@@ -129,8 +139,9 @@ assert('calcTranslation diagonal (/)',
 const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(-2, 6, 2, 3)
 // console.log(DIAGONAL_TRANSLATION2)
 assert('calcTranslation diagonal2 (\\)',
-  { CURRENT_POSITION: [ 104.72, 32.06 ],
-    TARGET_POSITION: [ 136.58, 124.65 ],
+  {
+    CURRENT_POSITION: [104.72, 32.06],
+    TARGET_POSITION: [136.58, 124.65],
     DELTA_X: 4,
     DELTA_Y: 3,
     CURRENT_PULSE_A: 1336,
@@ -143,7 +154,8 @@ assert('calcTranslation diagonal2 (\\)',
     DELTA_PULSE_B: 1029,
     NUM_STEPS: 354,
     PULSE_INCREMENT_A: -1,
-    PULSE_INCREMENT_B: -2.91 }/**/,
+    PULSE_INCREMENT_B: -2.91,
+  }/**/,
   DIAGONAL_TRANSLATION2,
 )
 

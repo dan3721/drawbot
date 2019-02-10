@@ -9,15 +9,15 @@
     <tr style="vertical-align: top">
         <td>
             <svg height="{{height}}" width="{{width}}"
-                 style="background-color:aquamarine;border: black;border-style: solid;border-width: thin"
+                 style="background-color:white;border: black;border-style: solid;border-width: thin"
                  xmlns="http://www.w3.org/2000/svg">
 
                 <!--open drawable area-->
                 <circle cx="{{arm2AMaxReachCoordinate.x}}" cy="{{arm2AMaxReachCoordinate.y}}" r="{{arm2Radius}}"
-                        stroke="blue" stroke-width="0" fill="white"/>
+                        stroke="orange" stroke-width="1" fill="yellow" style="fill-opacity: 0.05;"/>
                 <circle cx="{{arm2BMaxReachCoordinate.x}}" cy="{{arm2BMaxReachCoordinate.y}}" r="{{arm2Radius}}"
-                        stroke="red" stroke-width="0" fill="white"/>
-                <rect y="{{yMin}}" width="{{width}}" height="{{yH}}" style="fill:aquamarine;stroke-width:0;stroke:red"/>
+                        stroke="cyan" stroke-width="1" fill="cyan" style="fill-opacity: 0.05"/>
+                <rect y="{{yMin}}" width="{{width}}" height="{{yH}}" style="fill:white;stroke-width:1;stroke:black"/>
 
                 <!--x axis-->
                 <line x1="0" y1="{{ceil height}}" x2="{{width}}" y2="{{ceil height}}"
@@ -28,12 +28,14 @@
                       style="stroke:green;stroke-width:1"/>
 
                 <!--servo A-->
-                <circle cx="{{servoAx}}" cy="{{ceil height}}" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <circle cx="{{servoAx}}" cy="{{ceil height}}" r="15" stroke="green" stroke-width="2" fill="green"
+                        style="fill-opacity: 0.1"/>
                 <text x="{{servoAx}}" y="{{ceil height}}" text-anchor="middle" stroke="black" stroke-width="1px">A
                 </text>
 
                 <!--servo B-->
-                <circle cx="{{servoBx}}" cy="{{ceil height}}" r="15" stroke="black" stroke-width="2" fill="cyan"/>
+                <circle cx="{{servoBx}}" cy="{{ceil height}}" r="15" stroke="red" stroke-width="2" fill="red"
+                        style="fill-opacity: 0.1"/>
                 <text x="{{servoBx}}" y="{{ceil height}}" text-anchor="middle" stroke="black" stroke-width="1px">B
                 </text>
 
