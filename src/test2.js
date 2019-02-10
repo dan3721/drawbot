@@ -49,9 +49,12 @@ assert('722  @ 20° (flip)', 722, drawbot.getPulseWidth(20, true))
 assert('distance', drawbot.distance(3, 3, 6, 7), 5)
 
 assert('valid point 3,3', true, drawbot.isValidPoint(3, 3))
-assert('valid point 0,just a bit less than min_y', false,
+assert('invalid point 0,just a bit less than min_y', false,
   drawbot.isValidPoint(0, drawbot.min_y - .01)) // just a bit outside
-assert('valid point 4,9', false, drawbot.isValidPoint(4, 8)) // out top right
+assert('invalid point 4,9', false, drawbot.isValidPoint(4, 8)) // out top right
+
+assert('move invalid point 4,9 does not throw an error by default', undefined, drawbot.move(4, 8))
+assert('move invalid point 4,9 does throw an error if directed to', undefined, drawbot.move(4, 8, true))
 
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8

@@ -67,7 +67,13 @@ const log = (msg) => {
 
 const warn = (msg) => {
   if (!process.env.TESTING) {
-    console.warn(`*** ${msg}! ***`)
+    console.warn(`*** WARN: ${msg} ***`)
+  }
+}
+
+const error = (msg) => {
+  if (!process.env.TESTING) {
+    console.error(`!!! ERROR: ${msg} !!!`)
   }
 }
 
@@ -77,13 +83,13 @@ try {
   pigpio = require('pigpio')
 }
 catch (e) {
-  // console.warn(e.message)
-  console.warn('\
+  // warn(e.message)
+  warn('\n\
 *********************************************************************\n\
 * pigpio module not available so there will be no hardware support! *\n\
 *                                                                   *\n\
 * To resolve install pigpio: npm i pigpio                           *\n\
-*********************************************************************')
+*********************************************************************\n')
 }
 
 // bind output pins
@@ -255,12 +261,20 @@ const calcServoAngle = (x, y, same) => {
  * @param {number} x
  * @param {number} y
  */
-const move = (x, y) => {
+const move = (x, y, throwErrorIfInvalid = false) => {
   if (!isValidPoint(x, y)) {
-    let error = `${x},${y} is outside the drawable area`
-    throw error
+    let error = `${x},${y} is outside the drawable area!`
+    if (throwErrorIfInvalid) {
+      throw error
+    }
+    else {
+      error += ' SKIPPING POINT!'
+      warn(error)
+    }
   }
-  CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
+  else {
+    CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
+  }
 }
 
 /**
@@ -435,13 +449,13 @@ const calcTranslation = (x1, y1, x2, y2) => {
 const protect = (pulse) => {
   if (pulse < SERVO_MIN_PULSE_WIDTH) {
     warn(
-      `normalized pulse ${pulse} to the minimum because it is less than ${SERVO_MIN_PULSE_WIDTH}`)
+      `Normalized pulse ${pulse} to the minimum because it is less than ${SERVO_MIN_PULSE_WIDTH}!`)
     pulse = SERVO_MIN_PULSE_WIDTH
   }
   else if (pulse > SERVO_MAX_PULSE_WIDTH) {
     pulse = SERVO_MAX_PULSE_WIDTH
     warn(
-      `normalized pulse ${pulse} to the maximum because it is less than ${SERVO_MAX_PULSE_WIDTH}`)
+      `Normalized pulse ${pulse} to the maximum because it is less than ${SERVO_MAX_PULSE_WIDTH}!`)
   }
   return pulse
 }
