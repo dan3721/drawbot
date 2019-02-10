@@ -1,0 +1,1730 @@
+<html>
+<head>
+    <title>bubbles</title>
+    <script>
+      function showPoint (pointId, x, y) {
+        console.log(pointId, x, y)
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.fill = 'red'
+        elePoint.style.stroke = 'red'
+        elePoint.style.r = 4
+        document.getElementById('currentPoint').innerHTML = `# ${pointId} (${x},${y})`
+      }
+
+      function resetPoint (pointId) {
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.fill = 'blue'
+        elePoint.style.stroke = 'blue'
+        elePoint.style.r = 2
+        document.getElementById('currentPoint').innerHTML = ''
+      }
+    </script>
+</head>
+<body>
+
+<table>
+    <thead>
+    </thead>
+    <tbody>
+    <tr style="vertical-align: top">
+        <td>
+            <svg height="732" width="712.5"
+                 style="background-color:white;border: black;border-style: solid;border-width: thin"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!--open drawable area-->
+                <circle cx="281.25" cy="432" r="431.25"
+                        stroke="orange" stroke-width="1" fill="yellow" style="fill-opacity: 0.05;"/>
+                <circle cx="431.25" cy="432" r="431.25"
+                        stroke="cyan" stroke-width="1" fill="cyan" style="fill-opacity: 0.05"/>
+                <rect y="619.5" width="712.5" height="112.5" style="fill:white;stroke-width:1;stroke:black"/>
+
+                <!--x axis-->
+                <line x1="0" y1="732" x2="712.5" y2="732"
+                      style="stroke:red;stroke-width:4"/>
+
+                <!--y axis-->
+                <line x1="356.25" y1="732" x2="356.25" y2="0"
+                      style="stroke:green;stroke-width:1"/>
+
+                <!--servo A-->
+                <circle cx="281.25" cy="732" r="15" stroke="green" stroke-width="2" fill="green"
+                        style="fill-opacity: 0.1"/>
+                <text x="281.25" y="732" text-anchor="middle" stroke="black" stroke-width="1px">A
+                </text>
+
+                <!--servo B-->
+                <circle cx="431.25" cy="732" r="15" stroke="red" stroke-width="2" fill="red"
+                        style="fill-opacity: 0.1"/>
+                <text x="431.25" y="732" text-anchor="middle" stroke="black" stroke-width="1px">B
+                </text>
+
+                <!-- points and labels -->
+                <polyline points="356.25,619.5 453,432.75 453,425.25 452.25,417.74999999999994 451.5,410.25 450,403.5 447.75,395.99999999999994 446.25,388.5 443.25,381.75 440.25,374.25000000000006 437.25,367.5 433.5,361.49999999999994 429.75,354.75 425.25,348.75 420.75,342.74999999999994 416.25,336.75000000000006 411,331.5 405,326.25 399.75,321.75 393.75,316.5 387.75,312.75 381,309 374.25,305.24999999999994 367.5,301.5 360.75,299.25000000000006 354,296.25000000000006 346.5,294 339,292.5 331.5,291 324,290.25 316.5,289.5 309,289.5 301.5,289.5 294,290.25 286.5,291 279,292.5 272.25,294 264.75,296.25000000000006 258,299.25000000000006 250.5,301.5 243.75,305.24999999999994 237.75,309 231,312.75 225,316.5 219,321.75 213,326.25 207.75,331.5 202.5,336.75000000000006 197.25,342.74999999999994 192.75,348.75 189,354.75 184.5,361.49999999999994 181.5,367.5 177.75,374.25000000000006 174.75,381.75 172.5,388.5 170.25,395.99999999999994 168.75,403.5 167.25,410.25 166.50000000000003,417.74999999999994 165.75,425.25 165.75,432.75 165.75,440.25 166.50000000000003,447.75 167.25,455.25 168.75,462.75 170.25,470.25 172.5,477.75 174.75,484.5 177.75,491.25 181.5,498 184.5,504.75 189,511.5 192.75,517.5 197.25,523.5 202.5,529.5 207.75,534.75 213,540 219,544.5 225,549 231,553.5 237.75,557.25 243.75,561 250.5,564 258,567 264.75,570 272.25,571.5 279,573.75 286.5,575.25 294,576 301.5,576.75 309,576.75 316.5,576.75 324,576 331.5,575.25 339,573.75 346.5,571.5 354,570 360.75,567 367.5,564 374.25,561 381,557.25 387.75,553.5 393.75,549 399.75,544.5 405,540 411,534.75 416.25,529.5 420.75,523.5 425.25,517.5 429.75,511.5 433.5,504.75 437.25,498 440.25,491.25 443.25,484.5 446.25,477.75 447.75,470.25 450,462.75 451.5,455.25 452.25,447.75 453,440.25 329.25,259.5 327.75,252.75 324,245.99999999999994 318,241.5 311.25,239.25 303.75,239.25 297,241.5 291.75,245.99999999999994 288,252.75 286.5,259.5 288,267 291.75,273.75 297,278.25 303.75,280.50000000000006 311.25,280.50000000000006 318,278.25 324,273.75 327.75,267 618.75,432 618.75,424.5 617.25,417 615.75,409.5 613.5,402.75 610.5,395.99999999999994 606.75,389.25 602.25,383.25 597.75,377.24999999999994 591.75,372 586.5,367.5 579.75,363.75 573.75,360 566.25,357 559.5,354.75 552,353.25 544.5,352.50000000000006 537,352.50000000000006 529.5,352.50000000000006 522.75,354 515.25,355.50000000000006 508.5,358.49999999999994 501.75,361.49999999999994 495,365.25 489,369.75 483.75,375 478.5,380.24999999999994 474,386.25 470.25,392.25 466.5,398.99999999999994 463.5,405.75 462,413.25 460.5,420.75 459.75,428.25 459.75,435.75 460.5,443.25 462,450 463.5,457.5 466.5,464.25 470.25,471 474,477 478.5,483 483.75,489 489,493.5 495,498 501.75,501.75 508.5,504.75 515.25,507.75 522.75,509.25 529.5,510.75 537,511.5 544.5,511.5 552,510 559.5,508.5 566.25,506.25 573.75,503.25 579.75,500.25 586.5,495.75 591.75,491.25 597.75,486 602.25,480 606.75,474 610.5,468 613.5,461.25 615.75,453.75 617.25,446.25 618.75,439.5 462.75,616.5 456.75,613.5 670.5,252.75 663.75,249.75 656.25,247.5 649.5,245.99999999999994 642,245.99999999999994 634.5,245.99999999999994 627,247.5 619.5,249.75 612.75,252.75 606.75,256.5 600.75,261.75000000000006 595.5,267 590.25,272.25 586.5,279 583.5,285.75 581.25,293.25 579.75,300 579.75,307.5 579.75,315.00000000000006 581.25,322.5 583.5,330 586.5,336.75000000000006 590.25,342.74999999999994 595.5,348.75 600.75,354 606.75,359.25 612.75,363 619.5,366 627,368.25 634.5,369.75 642,369.75 649.5,369.75 656.25,368.25 663.75,366 670.5,363 677.25,359.25 682.5,354 688.5,348.75 693,342.74999999999994 696.75,336.75000000000006 699.75,330 447.75,195 447,187.5 445.5,180.75 442.5,173.25 438.75,167.25 433.5,161.25 428.25,156.75 421.5,152.25 414.75,150 407.25,147.75 399.75,147 392.25,147.75 384.75,150 378,152.25 372,156.75 366,161.25 361.5,167.25 357,173.25 354.75,180.75 352.5,187.5 351.75,195 352.5,202.5 354.75,210 357,216.75 361.5,223.5 366,228.75 372,234 378,237.75 384.75,240.75 392.25,242.25 399.75,243.00000000000006 407.25,242.25 414.75,240.75 421.5,237.75 428.25,234 433.5,228.75 438.75,223.5 442.5,216.75 445.5,210 447,202.5 152.24999999999997,595.5 151.5,587.25 150.74999999999997,580.5 148.5,573 145.5,566.25 141.75,559.5 137.25,553.5 131.99999999999997,547.5 126,543 120,538.5 113.24999999999997,535.5 105.75,532.5 98.25,531 90.75,530.25 83.25,530.25 75.75,531 69,532.5 61.5,535.5 54.75000000000006,538.5 48.75,543 42.75,547.5 37.5,553.5 33.00000000000006,559.5 29.25,566.25 26.25,573 148.5,617.25 150.74999999999997,609.75 151.5,603 357.75,138.75 357,131.25 356.25,124.5 354.75,117 352.5,109.5 349.5,102.75 346.5,96 342.75,90 338.25,84 333,78 327.75,72.75000000000011 321.75,68.25 315.75,63.75 309,59.999999999999886 302.25,57 295.5,54.75 288,52.5 280.5,51.75 273,51 265.5,51 258,51.75 250.5,52.5 243.75,54.75 236.25,57 229.5,59.999999999999886 223.5,63.75 216.75,68.25 210.75,72.75000000000011 205.50000000000003,78 201,84 196.5,90 192,96 189,102.75 186,109.5 183.75,117 182.25,124.5 181.5,131.25 181.5,138.75 181.5,146.25 182.25,153.75 183.75,161.25 186,168.75 189,175.5 192,182.25 196.5,188.25 201,194.25 205.50000000000003,200.25 210.75,205.5 216.75,210 223.5,214.5 229.5,217.5 236.25,221.25000000000006 243.75,223.5 250.5,225 258,226.5 265.5,227.24999999999994 273,227.24999999999994 280.5,226.5 288,225 295.5,223.5 302.25,221.25000000000006 309,217.5 315.75,214.5 321.75,210 327.75,205.5 333,200.25 338.25,194.25 342.75,188.25 346.5,182.25 349.5,175.5 352.5,168.75 354.75,161.25 356.25,153.75 357,146.25 524.25,325.5 523.5,318.00000000000006 520.5,310.5 516.75,304.5 512.25,298.5 506.25,294 498.75,291 492,289.5 484.5,289.5 477,291 470.25,294 463.5,298.5 459,304.5 455.25,310.5 453,318.00000000000006 452.25,325.5 453,333 455.25,339.74999999999994 459,346.5 463.5,352.50000000000006 470.25,357 477,360 484.5,361.49999999999994 492,361.49999999999994 498.75,360 506.25,357 512.25,352.50000000000006 516.75,346.5 520.5,339.74999999999994 523.5,333 136.5,195.75 135.75,188.25 131.99999999999997,182.25 126,177 119.25,174 111.75000000000003,173.25 104.25,174.75 98.25,179.25 93.75,185.25 90.75,192 90.75,200.25 93.75,207 98.25,213 104.25,217.5 111.75000000000003,219 119.25,218.25 126,215.25 131.99999999999997,210 135.75,203.25 159.75,318.00000000000006 159,310.5 158.25,303 156.75,295.5 155.25,288.75 152.24999999999997,281.25 149.25000000000003,274.5 145.5,268.5 141.75,261.75000000000006 137.25,255.75 131.99999999999997,250.5 126.75,245.25 120.75,240.75 114.74999999999997,236.25 108.75,232.5 102,228.75 95.25,226.5 87.75,224.25000000000006 80.25,222 73.5,221.25000000000006 66,220.5 58.5,220.5 3,395.25 9,399.75 15.75,403.5 21.75,407.25 29.25,409.5 36.00000000000006,411.75000000000006 43.5,414 51,414.74999999999994 58.5,415.5 66,415.5 73.5,414.74999999999994 80.25,414 87.75,411.75000000000006 95.25,409.5 102,407.25 108.75,403.5 114.74999999999997,399.75 120.75,395.25 126.75,390.75 131.99999999999997,385.5 137.25,380.24999999999994 141.75,374.25000000000006 145.5,367.5 149.25000000000003,361.49999999999994 152.24999999999997,354.75 155.25,347.25 156.75,340.5 158.25,333 159,325.5 474.75,165.75 472.5,158.25 466.5,153.75 459,153.75 453,158.25 450.75,165.75 453,172.5 459,177 466.5,177 472.5,172.5 624,562.5 622.5,555 618,548.25 612,544.5 604.5,543 597,544.5 591,548.25 586.5,555 585,562.5 586.5,570 591,576 597,580.5 604.5,582 612,580.5 618,576 622.5,570 661.5,517.5 659.25,510.75 651.75,507.75 645,510.75 642,517.5 645,524.25 651.75,527.25 659.25,524.25 491.25,264 489.75,256.5 487.5,248.99999999999994 483,243.00000000000006 477,238.5 470.25,235.5 462.75,234 455.25,234 448.5,237 442.5,240.75 437.25,245.99999999999994 433.5,252.75 431.25,260.25 431.25,267.74999999999994 433.5,274.5 437.25,281.25 442.5,286.49999999999994 448.5,291 455.25,293.25 462.75,293.25 470.25,291.75 477,288.75 483,284.25 487.5,278.25 489.75,270.75 356.25,619.5 "
+                          style="fill:none;stroke:black;stroke-width:1"/>
+                <circle id="p0" cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(0, 0, 1.5)"
+                        onmouseout="resetPoint(0)"/>
+                <circle id="p1" cx="453" cy="432.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(1, 1.29, 3.99)"
+                        onmouseout="resetPoint(1)"/>
+                <circle id="p2" cx="453" cy="425.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(2, 1.29, 4.09)"
+                        onmouseout="resetPoint(2)"/>
+                <circle id="p3" cx="452.25" cy="417.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(3, 1.28, 4.19)"
+                        onmouseout="resetPoint(3)"/>
+                <circle id="p4" cx="451.5" cy="410.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(4, 1.27, 4.29)"
+                        onmouseout="resetPoint(4)"/>
+                <circle id="p5" cx="450" cy="403.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(5, 1.25, 4.38)"
+                        onmouseout="resetPoint(5)"/>
+                <circle id="p6" cx="447.75" cy="395.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(6, 1.22, 4.48)"
+                        onmouseout="resetPoint(6)"/>
+                <circle id="p7" cx="446.25" cy="388.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(7, 1.2, 4.58)"
+                        onmouseout="resetPoint(7)"/>
+                <circle id="p8" cx="443.25" cy="381.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(8, 1.16, 4.67)"
+                        onmouseout="resetPoint(8)"/>
+                <circle id="p9" cx="440.25" cy="374.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(9, 1.12, 4.77)"
+                        onmouseout="resetPoint(9)"/>
+                <circle id="p10" cx="437.25" cy="367.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(10, 1.08, 4.86)"
+                        onmouseout="resetPoint(10)"/>
+                <circle id="p11" cx="433.5" cy="361.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(11, 1.03, 4.94)"
+                        onmouseout="resetPoint(11)"/>
+                <circle id="p12" cx="429.75" cy="354.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(12, 0.98, 5.03)"
+                        onmouseout="resetPoint(12)"/>
+                <circle id="p13" cx="425.25" cy="348.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(13, 0.92, 5.11)"
+                        onmouseout="resetPoint(13)"/>
+                <circle id="p14" cx="420.75" cy="342.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(14, 0.86, 5.19)"
+                        onmouseout="resetPoint(14)"/>
+                <circle id="p15" cx="416.25" cy="336.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(15, 0.8, 5.27)"
+                        onmouseout="resetPoint(15)"/>
+                <circle id="p16" cx="411" cy="331.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(16, 0.73, 5.34)"
+                        onmouseout="resetPoint(16)"/>
+                <circle id="p17" cx="405" cy="326.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(17, 0.65, 5.41)"
+                        onmouseout="resetPoint(17)"/>
+                <circle id="p18" cx="399.75" cy="321.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(18, 0.58, 5.47)"
+                        onmouseout="resetPoint(18)"/>
+                <circle id="p19" cx="393.75" cy="316.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(19, 0.5, 5.54)"
+                        onmouseout="resetPoint(19)"/>
+                <circle id="p20" cx="387.75" cy="312.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(20, 0.42, 5.59)"
+                        onmouseout="resetPoint(20)"/>
+                <circle id="p21" cx="381" cy="309" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(21, 0.33, 5.64)"
+                        onmouseout="resetPoint(21)"/>
+                <circle id="p22" cx="374.25" cy="305.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(22, 0.24, 5.69)"
+                        onmouseout="resetPoint(22)"/>
+                <circle id="p23" cx="367.5" cy="301.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(23, 0.15, 5.74)"
+                        onmouseout="resetPoint(23)"/>
+                <circle id="p24" cx="360.75" cy="299.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(24, 0.06, 5.77)"
+                        onmouseout="resetPoint(24)"/>
+                <circle id="p25" cx="354" cy="296.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(25, -0.03, 5.81)"
+                        onmouseout="resetPoint(25)"/>
+                <circle id="p26" cx="346.5" cy="294" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(26, -0.13, 5.84)"
+                        onmouseout="resetPoint(26)"/>
+                <circle id="p27" cx="339" cy="292.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(27, -0.23, 5.86)"
+                        onmouseout="resetPoint(27)"/>
+                <circle id="p28" cx="331.5" cy="291" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(28, -0.33, 5.88)"
+                        onmouseout="resetPoint(28)"/>
+                <circle id="p29" cx="324" cy="290.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(29, -0.43, 5.89)"
+                        onmouseout="resetPoint(29)"/>
+                <circle id="p30" cx="316.5" cy="289.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(30, -0.53, 5.9)"
+                        onmouseout="resetPoint(30)"/>
+                <circle id="p31" cx="309" cy="289.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(31, -0.63, 5.9)"
+                        onmouseout="resetPoint(31)"/>
+                <circle id="p32" cx="301.5" cy="289.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(32, -0.73, 5.9)"
+                        onmouseout="resetPoint(32)"/>
+                <circle id="p33" cx="294" cy="290.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(33, -0.83, 5.89)"
+                        onmouseout="resetPoint(33)"/>
+                <circle id="p34" cx="286.5" cy="291" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(34, -0.93, 5.88)"
+                        onmouseout="resetPoint(34)"/>
+                <circle id="p35" cx="279" cy="292.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(35, -1.03, 5.86)"
+                        onmouseout="resetPoint(35)"/>
+                <circle id="p36" cx="272.25" cy="294" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(36, -1.12, 5.84)"
+                        onmouseout="resetPoint(36)"/>
+                <circle id="p37" cx="264.75" cy="296.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(37, -1.22, 5.81)"
+                        onmouseout="resetPoint(37)"/>
+                <circle id="p38" cx="258" cy="299.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(38, -1.31, 5.77)"
+                        onmouseout="resetPoint(38)"/>
+                <circle id="p39" cx="250.5" cy="301.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(39, -1.41, 5.74)"
+                        onmouseout="resetPoint(39)"/>
+                <circle id="p40" cx="243.75" cy="305.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(40, -1.5, 5.69)"
+                        onmouseout="resetPoint(40)"/>
+                <circle id="p41" cx="237.75" cy="309" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(41, -1.58, 5.64)"
+                        onmouseout="resetPoint(41)"/>
+                <circle id="p42" cx="231" cy="312.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(42, -1.67, 5.59)"
+                        onmouseout="resetPoint(42)"/>
+                <circle id="p43" cx="225" cy="316.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(43, -1.75, 5.54)"
+                        onmouseout="resetPoint(43)"/>
+                <circle id="p44" cx="219" cy="321.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(44, -1.83, 5.47)"
+                        onmouseout="resetPoint(44)"/>
+                <circle id="p45" cx="213" cy="326.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(45, -1.91, 5.41)"
+                        onmouseout="resetPoint(45)"/>
+                <circle id="p46" cx="207.75" cy="331.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(46, -1.98, 5.34)"
+                        onmouseout="resetPoint(46)"/>
+                <circle id="p47" cx="202.5" cy="336.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(47, -2.05, 5.27)"
+                        onmouseout="resetPoint(47)"/>
+                <circle id="p48" cx="197.25" cy="342.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(48, -2.12, 5.19)"
+                        onmouseout="resetPoint(48)"/>
+                <circle id="p49" cx="192.75" cy="348.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(49, -2.18, 5.11)"
+                        onmouseout="resetPoint(49)"/>
+                <circle id="p50" cx="189" cy="354.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(50, -2.23, 5.03)"
+                        onmouseout="resetPoint(50)"/>
+                <circle id="p51" cx="184.5" cy="361.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(51, -2.29, 4.94)"
+                        onmouseout="resetPoint(51)"/>
+                <circle id="p52" cx="181.5" cy="367.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(52, -2.33, 4.86)"
+                        onmouseout="resetPoint(52)"/>
+                <circle id="p53" cx="177.75" cy="374.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(53, -2.38, 4.77)"
+                        onmouseout="resetPoint(53)"/>
+                <circle id="p54" cx="174.75" cy="381.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(54, -2.42, 4.67)"
+                        onmouseout="resetPoint(54)"/>
+                <circle id="p55" cx="172.5" cy="388.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(55, -2.45, 4.58)"
+                        onmouseout="resetPoint(55)"/>
+                <circle id="p56" cx="170.25" cy="395.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(56, -2.48, 4.48)"
+                        onmouseout="resetPoint(56)"/>
+                <circle id="p57" cx="168.75" cy="403.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(57, -2.5, 4.38)"
+                        onmouseout="resetPoint(57)"/>
+                <circle id="p58" cx="167.25" cy="410.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(58, -2.52, 4.29)"
+                        onmouseout="resetPoint(58)"/>
+                <circle id="p59" cx="166.50000000000003" cy="417.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(59, -2.53, 4.19)"
+                        onmouseout="resetPoint(59)"/>
+                <circle id="p60" cx="165.75" cy="425.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(60, -2.54, 4.09)"
+                        onmouseout="resetPoint(60)"/>
+                <circle id="p61" cx="165.75" cy="432.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(61, -2.54, 3.99)"
+                        onmouseout="resetPoint(61)"/>
+                <circle id="p62" cx="165.75" cy="440.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(62, -2.54, 3.89)"
+                        onmouseout="resetPoint(62)"/>
+                <circle id="p63" cx="166.50000000000003" cy="447.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(63, -2.53, 3.79)"
+                        onmouseout="resetPoint(63)"/>
+                <circle id="p64" cx="167.25" cy="455.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(64, -2.52, 3.69)"
+                        onmouseout="resetPoint(64)"/>
+                <circle id="p65" cx="168.75" cy="462.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(65, -2.5, 3.59)"
+                        onmouseout="resetPoint(65)"/>
+                <circle id="p66" cx="170.25" cy="470.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(66, -2.48, 3.49)"
+                        onmouseout="resetPoint(66)"/>
+                <circle id="p67" cx="172.5" cy="477.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(67, -2.45, 3.39)"
+                        onmouseout="resetPoint(67)"/>
+                <circle id="p68" cx="174.75" cy="484.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(68, -2.42, 3.3)"
+                        onmouseout="resetPoint(68)"/>
+                <circle id="p69" cx="177.75" cy="491.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(69, -2.38, 3.21)"
+                        onmouseout="resetPoint(69)"/>
+                <circle id="p70" cx="181.5" cy="498" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(70, -2.33, 3.12)"
+                        onmouseout="resetPoint(70)"/>
+                <circle id="p71" cx="184.5" cy="504.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(71, -2.29, 3.03)"
+                        onmouseout="resetPoint(71)"/>
+                <circle id="p72" cx="189" cy="511.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(72, -2.23, 2.94)"
+                        onmouseout="resetPoint(72)"/>
+                <circle id="p73" cx="192.75" cy="517.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(73, -2.18, 2.86)"
+                        onmouseout="resetPoint(73)"/>
+                <circle id="p74" cx="197.25" cy="523.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(74, -2.12, 2.78)"
+                        onmouseout="resetPoint(74)"/>
+                <circle id="p75" cx="202.5" cy="529.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(75, -2.05, 2.7)"
+                        onmouseout="resetPoint(75)"/>
+                <circle id="p76" cx="207.75" cy="534.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(76, -1.98, 2.63)"
+                        onmouseout="resetPoint(76)"/>
+                <circle id="p77" cx="213" cy="540" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(77, -1.91, 2.56)"
+                        onmouseout="resetPoint(77)"/>
+                <circle id="p78" cx="219" cy="544.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(78, -1.83, 2.5)"
+                        onmouseout="resetPoint(78)"/>
+                <circle id="p79" cx="225" cy="549" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(79, -1.75, 2.44)"
+                        onmouseout="resetPoint(79)"/>
+                <circle id="p80" cx="231" cy="553.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(80, -1.67, 2.38)"
+                        onmouseout="resetPoint(80)"/>
+                <circle id="p81" cx="237.75" cy="557.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(81, -1.58, 2.33)"
+                        onmouseout="resetPoint(81)"/>
+                <circle id="p82" cx="243.75" cy="561" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(82, -1.5, 2.28)"
+                        onmouseout="resetPoint(82)"/>
+                <circle id="p83" cx="250.5" cy="564" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(83, -1.41, 2.24)"
+                        onmouseout="resetPoint(83)"/>
+                <circle id="p84" cx="258" cy="567" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(84, -1.31, 2.2)"
+                        onmouseout="resetPoint(84)"/>
+                <circle id="p85" cx="264.75" cy="570" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(85, -1.22, 2.16)"
+                        onmouseout="resetPoint(85)"/>
+                <circle id="p86" cx="272.25" cy="571.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(86, -1.12, 2.14)"
+                        onmouseout="resetPoint(86)"/>
+                <circle id="p87" cx="279" cy="573.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(87, -1.03, 2.11)"
+                        onmouseout="resetPoint(87)"/>
+                <circle id="p88" cx="286.5" cy="575.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(88, -0.93, 2.09)"
+                        onmouseout="resetPoint(88)"/>
+                <circle id="p89" cx="294" cy="576" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(89, -0.83, 2.08)"
+                        onmouseout="resetPoint(89)"/>
+                <circle id="p90" cx="301.5" cy="576.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(90, -0.73, 2.07)"
+                        onmouseout="resetPoint(90)"/>
+                <circle id="p91" cx="309" cy="576.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(91, -0.63, 2.07)"
+                        onmouseout="resetPoint(91)"/>
+                <circle id="p92" cx="316.5" cy="576.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(92, -0.53, 2.07)"
+                        onmouseout="resetPoint(92)"/>
+                <circle id="p93" cx="324" cy="576" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(93, -0.43, 2.08)"
+                        onmouseout="resetPoint(93)"/>
+                <circle id="p94" cx="331.5" cy="575.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(94, -0.33, 2.09)"
+                        onmouseout="resetPoint(94)"/>
+                <circle id="p95" cx="339" cy="573.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(95, -0.23, 2.11)"
+                        onmouseout="resetPoint(95)"/>
+                <circle id="p96" cx="346.5" cy="571.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(96, -0.13, 2.14)"
+                        onmouseout="resetPoint(96)"/>
+                <circle id="p97" cx="354" cy="570" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(97, -0.03, 2.16)"
+                        onmouseout="resetPoint(97)"/>
+                <circle id="p98" cx="360.75" cy="567" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(98, 0.06, 2.2)"
+                        onmouseout="resetPoint(98)"/>
+                <circle id="p99" cx="367.5" cy="564" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(99, 0.15, 2.24)"
+                        onmouseout="resetPoint(99)"/>
+                <circle id="p100" cx="374.25" cy="561" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(100, 0.24, 2.28)"
+                        onmouseout="resetPoint(100)"/>
+                <circle id="p101" cx="381" cy="557.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(101, 0.33, 2.33)"
+                        onmouseout="resetPoint(101)"/>
+                <circle id="p102" cx="387.75" cy="553.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(102, 0.42, 2.38)"
+                        onmouseout="resetPoint(102)"/>
+                <circle id="p103" cx="393.75" cy="549" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(103, 0.5, 2.44)"
+                        onmouseout="resetPoint(103)"/>
+                <circle id="p104" cx="399.75" cy="544.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(104, 0.58, 2.5)"
+                        onmouseout="resetPoint(104)"/>
+                <circle id="p105" cx="405" cy="540" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(105, 0.65, 2.56)"
+                        onmouseout="resetPoint(105)"/>
+                <circle id="p106" cx="411" cy="534.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(106, 0.73, 2.63)"
+                        onmouseout="resetPoint(106)"/>
+                <circle id="p107" cx="416.25" cy="529.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(107, 0.8, 2.7)"
+                        onmouseout="resetPoint(107)"/>
+                <circle id="p108" cx="420.75" cy="523.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(108, 0.86, 2.78)"
+                        onmouseout="resetPoint(108)"/>
+                <circle id="p109" cx="425.25" cy="517.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(109, 0.92, 2.86)"
+                        onmouseout="resetPoint(109)"/>
+                <circle id="p110" cx="429.75" cy="511.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(110, 0.98, 2.94)"
+                        onmouseout="resetPoint(110)"/>
+                <circle id="p111" cx="433.5" cy="504.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(111, 1.03, 3.03)"
+                        onmouseout="resetPoint(111)"/>
+                <circle id="p112" cx="437.25" cy="498" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(112, 1.08, 3.12)"
+                        onmouseout="resetPoint(112)"/>
+                <circle id="p113" cx="440.25" cy="491.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(113, 1.12, 3.21)"
+                        onmouseout="resetPoint(113)"/>
+                <circle id="p114" cx="443.25" cy="484.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(114, 1.16, 3.3)"
+                        onmouseout="resetPoint(114)"/>
+                <circle id="p115" cx="446.25" cy="477.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(115, 1.2, 3.39)"
+                        onmouseout="resetPoint(115)"/>
+                <circle id="p116" cx="447.75" cy="470.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(116, 1.22, 3.49)"
+                        onmouseout="resetPoint(116)"/>
+                <circle id="p117" cx="450" cy="462.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(117, 1.25, 3.59)"
+                        onmouseout="resetPoint(117)"/>
+                <circle id="p118" cx="451.5" cy="455.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(118, 1.27, 3.69)"
+                        onmouseout="resetPoint(118)"/>
+                <circle id="p119" cx="452.25" cy="447.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(119, 1.28, 3.79)"
+                        onmouseout="resetPoint(119)"/>
+                <circle id="p120" cx="453" cy="440.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(120, 1.29, 3.89)"
+                        onmouseout="resetPoint(120)"/>
+                <circle id="p121" cx="329.25" cy="259.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(121, -0.36, 6.3)"
+                        onmouseout="resetPoint(121)"/>
+                <circle id="p122" cx="327.75" cy="252.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(122, -0.38, 6.39)"
+                        onmouseout="resetPoint(122)"/>
+                <circle id="p123" cx="324" cy="245.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(123, -0.43, 6.48)"
+                        onmouseout="resetPoint(123)"/>
+                <circle id="p124" cx="318" cy="241.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(124, -0.51, 6.54)"
+                        onmouseout="resetPoint(124)"/>
+                <circle id="p125" cx="311.25" cy="239.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(125, -0.6, 6.57)"
+                        onmouseout="resetPoint(125)"/>
+                <circle id="p126" cx="303.75" cy="239.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(126, -0.7, 6.57)"
+                        onmouseout="resetPoint(126)"/>
+                <circle id="p127" cx="297" cy="241.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(127, -0.79, 6.54)"
+                        onmouseout="resetPoint(127)"/>
+                <circle id="p128" cx="291.75" cy="245.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(128, -0.86, 6.48)"
+                        onmouseout="resetPoint(128)"/>
+                <circle id="p129" cx="288" cy="252.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(129, -0.91, 6.39)"
+                        onmouseout="resetPoint(129)"/>
+                <circle id="p130" cx="286.5" cy="259.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(130, -0.93, 6.3)"
+                        onmouseout="resetPoint(130)"/>
+                <circle id="p131" cx="288" cy="267" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(131, -0.91, 6.2)"
+                        onmouseout="resetPoint(131)"/>
+                <circle id="p132" cx="291.75" cy="273.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(132, -0.86, 6.11)"
+                        onmouseout="resetPoint(132)"/>
+                <circle id="p133" cx="297" cy="278.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(133, -0.79, 6.05)"
+                        onmouseout="resetPoint(133)"/>
+                <circle id="p134" cx="303.75" cy="280.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(134, -0.7, 6.02)"
+                        onmouseout="resetPoint(134)"/>
+                <circle id="p135" cx="311.25" cy="280.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(135, -0.6, 6.02)"
+                        onmouseout="resetPoint(135)"/>
+                <circle id="p136" cx="318" cy="278.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(136, -0.51, 6.05)"
+                        onmouseout="resetPoint(136)"/>
+                <circle id="p137" cx="324" cy="273.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(137, -0.43, 6.11)"
+                        onmouseout="resetPoint(137)"/>
+                <circle id="p138" cx="327.75" cy="267" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(138, -0.38, 6.2)"
+                        onmouseout="resetPoint(138)"/>
+                <circle id="p139" cx="618.75" cy="432" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(139, 3.5, 4)"
+                        onmouseout="resetPoint(139)"/>
+                <circle id="p140" cx="618.75" cy="424.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(140, 3.5, 4.1)"
+                        onmouseout="resetPoint(140)"/>
+                <circle id="p141" cx="617.25" cy="417" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(141, 3.48, 4.2)"
+                        onmouseout="resetPoint(141)"/>
+                <circle id="p142" cx="615.75" cy="409.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(142, 3.46, 4.3)"
+                        onmouseout="resetPoint(142)"/>
+                <circle id="p143" cx="613.5" cy="402.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(143, 3.43, 4.39)"
+                        onmouseout="resetPoint(143)"/>
+                <circle id="p144" cx="610.5" cy="395.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(144, 3.39, 4.48)"
+                        onmouseout="resetPoint(144)"/>
+                <circle id="p145" cx="606.75" cy="389.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(145, 3.34, 4.57)"
+                        onmouseout="resetPoint(145)"/>
+                <circle id="p146" cx="602.25" cy="383.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(146, 3.28, 4.65)"
+                        onmouseout="resetPoint(146)"/>
+                <circle id="p147" cx="597.75" cy="377.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(147, 3.22, 4.73)"
+                        onmouseout="resetPoint(147)"/>
+                <circle id="p148" cx="591.75" cy="372" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(148, 3.14, 4.8)"
+                        onmouseout="resetPoint(148)"/>
+                <circle id="p149" cx="586.5" cy="367.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(149, 3.07, 4.86)"
+                        onmouseout="resetPoint(149)"/>
+                <circle id="p150" cx="579.75" cy="363.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(150, 2.98, 4.91)"
+                        onmouseout="resetPoint(150)"/>
+                <circle id="p151" cx="573.75" cy="360" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(151, 2.9, 4.96)"
+                        onmouseout="resetPoint(151)"/>
+                <circle id="p152" cx="566.25" cy="357" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(152, 2.8, 5)"
+                        onmouseout="resetPoint(152)"/>
+                <circle id="p153" cx="559.5" cy="354.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(153, 2.71, 5.03)"
+                        onmouseout="resetPoint(153)"/>
+                <circle id="p154" cx="552" cy="353.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(154, 2.61, 5.05)"
+                        onmouseout="resetPoint(154)"/>
+                <circle id="p155" cx="544.5" cy="352.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(155, 2.51, 5.06)"
+                        onmouseout="resetPoint(155)"/>
+                <circle id="p156" cx="537" cy="352.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(156, 2.41, 5.06)"
+                        onmouseout="resetPoint(156)"/>
+                <circle id="p157" cx="529.5" cy="352.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(157, 2.31, 5.06)"
+                        onmouseout="resetPoint(157)"/>
+                <circle id="p158" cx="522.75" cy="354" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(158, 2.22, 5.04)"
+                        onmouseout="resetPoint(158)"/>
+                <circle id="p159" cx="515.25" cy="355.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(159, 2.12, 5.02)"
+                        onmouseout="resetPoint(159)"/>
+                <circle id="p160" cx="508.5" cy="358.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(160, 2.03, 4.98)"
+                        onmouseout="resetPoint(160)"/>
+                <circle id="p161" cx="501.75" cy="361.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(161, 1.94, 4.94)"
+                        onmouseout="resetPoint(161)"/>
+                <circle id="p162" cx="495" cy="365.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(162, 1.85, 4.89)"
+                        onmouseout="resetPoint(162)"/>
+                <circle id="p163" cx="489" cy="369.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(163, 1.77, 4.83)"
+                        onmouseout="resetPoint(163)"/>
+                <circle id="p164" cx="483.75" cy="375" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(164, 1.7, 4.76)"
+                        onmouseout="resetPoint(164)"/>
+                <circle id="p165" cx="478.5" cy="380.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(165, 1.63, 4.69)"
+                        onmouseout="resetPoint(165)"/>
+                <circle id="p166" cx="474" cy="386.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(166, 1.57, 4.61)"
+                        onmouseout="resetPoint(166)"/>
+                <circle id="p167" cx="470.25" cy="392.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(167, 1.52, 4.53)"
+                        onmouseout="resetPoint(167)"/>
+                <circle id="p168" cx="466.5" cy="398.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(168, 1.47, 4.44)"
+                        onmouseout="resetPoint(168)"/>
+                <circle id="p169" cx="463.5" cy="405.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(169, 1.43, 4.35)"
+                        onmouseout="resetPoint(169)"/>
+                <circle id="p170" cx="462" cy="413.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(170, 1.41, 4.25)"
+                        onmouseout="resetPoint(170)"/>
+                <circle id="p171" cx="460.5" cy="420.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(171, 1.39, 4.15)"
+                        onmouseout="resetPoint(171)"/>
+                <circle id="p172" cx="459.75" cy="428.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(172, 1.38, 4.05)"
+                        onmouseout="resetPoint(172)"/>
+                <circle id="p173" cx="459.75" cy="435.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(173, 1.38, 3.95)"
+                        onmouseout="resetPoint(173)"/>
+                <circle id="p174" cx="460.5" cy="443.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(174, 1.39, 3.85)"
+                        onmouseout="resetPoint(174)"/>
+                <circle id="p175" cx="462" cy="450" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(175, 1.41, 3.76)"
+                        onmouseout="resetPoint(175)"/>
+                <circle id="p176" cx="463.5" cy="457.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(176, 1.43, 3.66)"
+                        onmouseout="resetPoint(176)"/>
+                <circle id="p177" cx="466.5" cy="464.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(177, 1.47, 3.57)"
+                        onmouseout="resetPoint(177)"/>
+                <circle id="p178" cx="470.25" cy="471" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(178, 1.52, 3.48)"
+                        onmouseout="resetPoint(178)"/>
+                <circle id="p179" cx="474" cy="477" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(179, 1.57, 3.4)"
+                        onmouseout="resetPoint(179)"/>
+                <circle id="p180" cx="478.5" cy="483" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(180, 1.63, 3.32)"
+                        onmouseout="resetPoint(180)"/>
+                <circle id="p181" cx="483.75" cy="489" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(181, 1.7, 3.24)"
+                        onmouseout="resetPoint(181)"/>
+                <circle id="p182" cx="489" cy="493.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(182, 1.77, 3.18)"
+                        onmouseout="resetPoint(182)"/>
+                <circle id="p183" cx="495" cy="498" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(183, 1.85, 3.12)"
+                        onmouseout="resetPoint(183)"/>
+                <circle id="p184" cx="501.75" cy="501.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(184, 1.94, 3.07)"
+                        onmouseout="resetPoint(184)"/>
+                <circle id="p185" cx="508.5" cy="504.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(185, 2.03, 3.03)"
+                        onmouseout="resetPoint(185)"/>
+                <circle id="p186" cx="515.25" cy="507.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(186, 2.12, 2.99)"
+                        onmouseout="resetPoint(186)"/>
+                <circle id="p187" cx="522.75" cy="509.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(187, 2.22, 2.97)"
+                        onmouseout="resetPoint(187)"/>
+                <circle id="p188" cx="529.5" cy="510.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(188, 2.31, 2.95)"
+                        onmouseout="resetPoint(188)"/>
+                <circle id="p189" cx="537" cy="511.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(189, 2.41, 2.94)"
+                        onmouseout="resetPoint(189)"/>
+                <circle id="p190" cx="544.5" cy="511.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(190, 2.51, 2.94)"
+                        onmouseout="resetPoint(190)"/>
+                <circle id="p191" cx="552" cy="510" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(191, 2.61, 2.96)"
+                        onmouseout="resetPoint(191)"/>
+                <circle id="p192" cx="559.5" cy="508.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(192, 2.71, 2.98)"
+                        onmouseout="resetPoint(192)"/>
+                <circle id="p193" cx="566.25" cy="506.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(193, 2.8, 3.01)"
+                        onmouseout="resetPoint(193)"/>
+                <circle id="p194" cx="573.75" cy="503.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(194, 2.9, 3.05)"
+                        onmouseout="resetPoint(194)"/>
+                <circle id="p195" cx="579.75" cy="500.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(195, 2.98, 3.09)"
+                        onmouseout="resetPoint(195)"/>
+                <circle id="p196" cx="586.5" cy="495.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(196, 3.07, 3.15)"
+                        onmouseout="resetPoint(196)"/>
+                <circle id="p197" cx="591.75" cy="491.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(197, 3.14, 3.21)"
+                        onmouseout="resetPoint(197)"/>
+                <circle id="p198" cx="597.75" cy="486" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(198, 3.22, 3.28)"
+                        onmouseout="resetPoint(198)"/>
+                <circle id="p199" cx="602.25" cy="480" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(199, 3.28, 3.36)"
+                        onmouseout="resetPoint(199)"/>
+                <circle id="p200" cx="606.75" cy="474" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(200, 3.34, 3.44)"
+                        onmouseout="resetPoint(200)"/>
+                <circle id="p201" cx="610.5" cy="468" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(201, 3.39, 3.52)"
+                        onmouseout="resetPoint(201)"/>
+                <circle id="p202" cx="613.5" cy="461.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(202, 3.43, 3.61)"
+                        onmouseout="resetPoint(202)"/>
+                <circle id="p203" cx="615.75" cy="453.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(203, 3.46, 3.71)"
+                        onmouseout="resetPoint(203)"/>
+                <circle id="p204" cx="617.25" cy="446.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(204, 3.48, 3.81)"
+                        onmouseout="resetPoint(204)"/>
+                <circle id="p205" cx="618.75" cy="439.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(205, 3.5, 3.9)"
+                        onmouseout="resetPoint(205)"/>
+                <circle id="p206" cx="462.75" cy="616.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(206, 1.42, 1.54)"
+                        onmouseout="resetPoint(206)"/>
+                <circle id="p207" cx="456.75" cy="613.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(207, 1.34, 1.58)"
+                        onmouseout="resetPoint(207)"/>
+                <circle id="p208" cx="670.5" cy="252.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(208, 4.19, 6.39)"
+                        onmouseout="resetPoint(208)"/>
+                <circle id="p209" cx="663.75" cy="249.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(209, 4.1, 6.43)"
+                        onmouseout="resetPoint(209)"/>
+                <circle id="p210" cx="656.25" cy="247.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(210, 4, 6.46)"
+                        onmouseout="resetPoint(210)"/>
+                <circle id="p211" cx="649.5" cy="245.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(211, 3.91, 6.48)"
+                        onmouseout="resetPoint(211)"/>
+                <circle id="p212" cx="642" cy="245.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(212, 3.81, 6.48)"
+                        onmouseout="resetPoint(212)"/>
+                <circle id="p213" cx="634.5" cy="245.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(213, 3.71, 6.48)"
+                        onmouseout="resetPoint(213)"/>
+                <circle id="p214" cx="627" cy="247.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(214, 3.61, 6.46)"
+                        onmouseout="resetPoint(214)"/>
+                <circle id="p215" cx="619.5" cy="249.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(215, 3.51, 6.43)"
+                        onmouseout="resetPoint(215)"/>
+                <circle id="p216" cx="612.75" cy="252.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(216, 3.42, 6.39)"
+                        onmouseout="resetPoint(216)"/>
+                <circle id="p217" cx="606.75" cy="256.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(217, 3.34, 6.34)"
+                        onmouseout="resetPoint(217)"/>
+                <circle id="p218" cx="600.75" cy="261.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(218, 3.26, 6.27)"
+                        onmouseout="resetPoint(218)"/>
+                <circle id="p219" cx="595.5" cy="267" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(219, 3.19, 6.2)"
+                        onmouseout="resetPoint(219)"/>
+                <circle id="p220" cx="590.25" cy="272.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(220, 3.12, 6.13)"
+                        onmouseout="resetPoint(220)"/>
+                <circle id="p221" cx="586.5" cy="279" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(221, 3.07, 6.04)"
+                        onmouseout="resetPoint(221)"/>
+                <circle id="p222" cx="583.5" cy="285.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(222, 3.03, 5.95)"
+                        onmouseout="resetPoint(222)"/>
+                <circle id="p223" cx="581.25" cy="293.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(223, 3, 5.85)"
+                        onmouseout="resetPoint(223)"/>
+                <circle id="p224" cx="579.75" cy="300" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(224, 2.98, 5.76)"
+                        onmouseout="resetPoint(224)"/>
+                <circle id="p225" cx="579.75" cy="307.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(225, 2.98, 5.66)"
+                        onmouseout="resetPoint(225)"/>
+                <circle id="p226" cx="579.75" cy="315.00000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(226, 2.98, 5.56)"
+                        onmouseout="resetPoint(226)"/>
+                <circle id="p227" cx="581.25" cy="322.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(227, 3, 5.46)"
+                        onmouseout="resetPoint(227)"/>
+                <circle id="p228" cx="583.5" cy="330" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(228, 3.03, 5.36)"
+                        onmouseout="resetPoint(228)"/>
+                <circle id="p229" cx="586.5" cy="336.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(229, 3.07, 5.27)"
+                        onmouseout="resetPoint(229)"/>
+                <circle id="p230" cx="590.25" cy="342.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(230, 3.12, 5.19)"
+                        onmouseout="resetPoint(230)"/>
+                <circle id="p231" cx="595.5" cy="348.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(231, 3.19, 5.11)"
+                        onmouseout="resetPoint(231)"/>
+                <circle id="p232" cx="600.75" cy="354" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(232, 3.26, 5.04)"
+                        onmouseout="resetPoint(232)"/>
+                <circle id="p233" cx="606.75" cy="359.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(233, 3.34, 4.97)"
+                        onmouseout="resetPoint(233)"/>
+                <circle id="p234" cx="612.75" cy="363" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(234, 3.42, 4.92)"
+                        onmouseout="resetPoint(234)"/>
+                <circle id="p235" cx="619.5" cy="366" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(235, 3.51, 4.88)"
+                        onmouseout="resetPoint(235)"/>
+                <circle id="p236" cx="627" cy="368.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(236, 3.61, 4.85)"
+                        onmouseout="resetPoint(236)"/>
+                <circle id="p237" cx="634.5" cy="369.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(237, 3.71, 4.83)"
+                        onmouseout="resetPoint(237)"/>
+                <circle id="p238" cx="642" cy="369.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(238, 3.81, 4.83)"
+                        onmouseout="resetPoint(238)"/>
+                <circle id="p239" cx="649.5" cy="369.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(239, 3.91, 4.83)"
+                        onmouseout="resetPoint(239)"/>
+                <circle id="p240" cx="656.25" cy="368.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(240, 4, 4.85)"
+                        onmouseout="resetPoint(240)"/>
+                <circle id="p241" cx="663.75" cy="366" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(241, 4.1, 4.88)"
+                        onmouseout="resetPoint(241)"/>
+                <circle id="p242" cx="670.5" cy="363" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(242, 4.19, 4.92)"
+                        onmouseout="resetPoint(242)"/>
+                <circle id="p243" cx="677.25" cy="359.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(243, 4.28, 4.97)"
+                        onmouseout="resetPoint(243)"/>
+                <circle id="p244" cx="682.5" cy="354" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(244, 4.35, 5.04)"
+                        onmouseout="resetPoint(244)"/>
+                <circle id="p245" cx="688.5" cy="348.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(245, 4.43, 5.11)"
+                        onmouseout="resetPoint(245)"/>
+                <circle id="p246" cx="693" cy="342.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(246, 4.49, 5.19)"
+                        onmouseout="resetPoint(246)"/>
+                <circle id="p247" cx="696.75" cy="336.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(247, 4.54, 5.27)"
+                        onmouseout="resetPoint(247)"/>
+                <circle id="p248" cx="699.75" cy="330" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(248, 4.58, 5.36)"
+                        onmouseout="resetPoint(248)"/>
+                <circle id="p249" cx="447.75" cy="195" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(249, 1.22, 7.16)"
+                        onmouseout="resetPoint(249)"/>
+                <circle id="p250" cx="447" cy="187.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(250, 1.21, 7.26)"
+                        onmouseout="resetPoint(250)"/>
+                <circle id="p251" cx="445.5" cy="180.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(251, 1.19, 7.35)"
+                        onmouseout="resetPoint(251)"/>
+                <circle id="p252" cx="442.5" cy="173.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(252, 1.15, 7.45)"
+                        onmouseout="resetPoint(252)"/>
+                <circle id="p253" cx="438.75" cy="167.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(253, 1.1, 7.53)"
+                        onmouseout="resetPoint(253)"/>
+                <circle id="p254" cx="433.5" cy="161.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(254, 1.03, 7.61)"
+                        onmouseout="resetPoint(254)"/>
+                <circle id="p255" cx="428.25" cy="156.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(255, 0.96, 7.67)"
+                        onmouseout="resetPoint(255)"/>
+                <circle id="p256" cx="421.5" cy="152.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(256, 0.87, 7.73)"
+                        onmouseout="resetPoint(256)"/>
+                <circle id="p257" cx="414.75" cy="150" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(257, 0.78, 7.76)"
+                        onmouseout="resetPoint(257)"/>
+                <circle id="p258" cx="407.25" cy="147.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(258, 0.68, 7.79)"
+                        onmouseout="resetPoint(258)"/>
+                <circle id="p259" cx="399.75" cy="147" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(259, 0.58, 7.8)"
+                        onmouseout="resetPoint(259)"/>
+                <circle id="p260" cx="392.25" cy="147.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(260, 0.48, 7.79)"
+                        onmouseout="resetPoint(260)"/>
+                <circle id="p261" cx="384.75" cy="150" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(261, 0.38, 7.76)"
+                        onmouseout="resetPoint(261)"/>
+                <circle id="p262" cx="378" cy="152.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(262, 0.29, 7.73)"
+                        onmouseout="resetPoint(262)"/>
+                <circle id="p263" cx="372" cy="156.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(263, 0.21, 7.67)"
+                        onmouseout="resetPoint(263)"/>
+                <circle id="p264" cx="366" cy="161.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(264, 0.13, 7.61)"
+                        onmouseout="resetPoint(264)"/>
+                <circle id="p265" cx="361.5" cy="167.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(265, 0.07, 7.53)"
+                        onmouseout="resetPoint(265)"/>
+                <circle id="p266" cx="357" cy="173.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(266, 0.01, 7.45)"
+                        onmouseout="resetPoint(266)"/>
+                <circle id="p267" cx="354.75" cy="180.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(267, -0.02, 7.35)"
+                        onmouseout="resetPoint(267)"/>
+                <circle id="p268" cx="352.5" cy="187.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(268, -0.05, 7.26)"
+                        onmouseout="resetPoint(268)"/>
+                <circle id="p269" cx="351.75" cy="195" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(269, -0.06, 7.16)"
+                        onmouseout="resetPoint(269)"/>
+                <circle id="p270" cx="352.5" cy="202.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(270, -0.05, 7.06)"
+                        onmouseout="resetPoint(270)"/>
+                <circle id="p271" cx="354.75" cy="210" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(271, -0.02, 6.96)"
+                        onmouseout="resetPoint(271)"/>
+                <circle id="p272" cx="357" cy="216.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(272, 0.01, 6.87)"
+                        onmouseout="resetPoint(272)"/>
+                <circle id="p273" cx="361.5" cy="223.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(273, 0.07, 6.78)"
+                        onmouseout="resetPoint(273)"/>
+                <circle id="p274" cx="366" cy="228.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(274, 0.13, 6.71)"
+                        onmouseout="resetPoint(274)"/>
+                <circle id="p275" cx="372" cy="234" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(275, 0.21, 6.64)"
+                        onmouseout="resetPoint(275)"/>
+                <circle id="p276" cx="378" cy="237.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(276, 0.29, 6.59)"
+                        onmouseout="resetPoint(276)"/>
+                <circle id="p277" cx="384.75" cy="240.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(277, 0.38, 6.55)"
+                        onmouseout="resetPoint(277)"/>
+                <circle id="p278" cx="392.25" cy="242.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(278, 0.48, 6.53)"
+                        onmouseout="resetPoint(278)"/>
+                <circle id="p279" cx="399.75" cy="243.00000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(279, 0.58, 6.52)"
+                        onmouseout="resetPoint(279)"/>
+                <circle id="p280" cx="407.25" cy="242.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(280, 0.68, 6.53)"
+                        onmouseout="resetPoint(280)"/>
+                <circle id="p281" cx="414.75" cy="240.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(281, 0.78, 6.55)"
+                        onmouseout="resetPoint(281)"/>
+                <circle id="p282" cx="421.5" cy="237.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(282, 0.87, 6.59)"
+                        onmouseout="resetPoint(282)"/>
+                <circle id="p283" cx="428.25" cy="234" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(283, 0.96, 6.64)"
+                        onmouseout="resetPoint(283)"/>
+                <circle id="p284" cx="433.5" cy="228.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(284, 1.03, 6.71)"
+                        onmouseout="resetPoint(284)"/>
+                <circle id="p285" cx="438.75" cy="223.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(285, 1.1, 6.78)"
+                        onmouseout="resetPoint(285)"/>
+                <circle id="p286" cx="442.5" cy="216.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(286, 1.15, 6.87)"
+                        onmouseout="resetPoint(286)"/>
+                <circle id="p287" cx="445.5" cy="210" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(287, 1.19, 6.96)"
+                        onmouseout="resetPoint(287)"/>
+                <circle id="p288" cx="447" cy="202.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(288, 1.21, 7.06)"
+                        onmouseout="resetPoint(288)"/>
+                <circle id="p289" cx="152.24999999999997" cy="595.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(289, -2.72, 1.82)"
+                        onmouseout="resetPoint(289)"/>
+                <circle id="p290" cx="151.5" cy="587.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(290, -2.73, 1.93)"
+                        onmouseout="resetPoint(290)"/>
+                <circle id="p291" cx="150.74999999999997" cy="580.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(291, -2.74, 2.02)"
+                        onmouseout="resetPoint(291)"/>
+                <circle id="p292" cx="148.5" cy="573" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(292, -2.77, 2.12)"
+                        onmouseout="resetPoint(292)"/>
+                <circle id="p293" cx="145.5" cy="566.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(293, -2.81, 2.21)"
+                        onmouseout="resetPoint(293)"/>
+                <circle id="p294" cx="141.75" cy="559.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(294, -2.86, 2.3)"
+                        onmouseout="resetPoint(294)"/>
+                <circle id="p295" cx="137.25" cy="553.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(295, -2.92, 2.38)"
+                        onmouseout="resetPoint(295)"/>
+                <circle id="p296" cx="131.99999999999997" cy="547.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(296, -2.99, 2.46)"
+                        onmouseout="resetPoint(296)"/>
+                <circle id="p297" cx="126" cy="543" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(297, -3.07, 2.52)"
+                        onmouseout="resetPoint(297)"/>
+                <circle id="p298" cx="120" cy="538.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(298, -3.15, 2.58)"
+                        onmouseout="resetPoint(298)"/>
+                <circle id="p299" cx="113.24999999999997" cy="535.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(299, -3.24, 2.62)"
+                        onmouseout="resetPoint(299)"/>
+                <circle id="p300" cx="105.75" cy="532.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(300, -3.34, 2.66)"
+                        onmouseout="resetPoint(300)"/>
+                <circle id="p301" cx="98.25" cy="531" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(301, -3.44, 2.68)"
+                        onmouseout="resetPoint(301)"/>
+                <circle id="p302" cx="90.75" cy="530.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(302, -3.54, 2.69)"
+                        onmouseout="resetPoint(302)"/>
+                <circle id="p303" cx="83.25" cy="530.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(303, -3.64, 2.69)"
+                        onmouseout="resetPoint(303)"/>
+                <circle id="p304" cx="75.75" cy="531" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(304, -3.74, 2.68)"
+                        onmouseout="resetPoint(304)"/>
+                <circle id="p305" cx="69" cy="532.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(305, -3.83, 2.66)"
+                        onmouseout="resetPoint(305)"/>
+                <circle id="p306" cx="61.5" cy="535.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(306, -3.93, 2.62)"
+                        onmouseout="resetPoint(306)"/>
+                <circle id="p307" cx="54.75000000000006" cy="538.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(307, -4.02, 2.58)"
+                        onmouseout="resetPoint(307)"/>
+                <circle id="p308" cx="48.75" cy="543" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(308, -4.1, 2.52)"
+                        onmouseout="resetPoint(308)"/>
+                <circle id="p309" cx="42.75" cy="547.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(309, -4.18, 2.46)"
+                        onmouseout="resetPoint(309)"/>
+                <circle id="p310" cx="37.5" cy="553.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(310, -4.25, 2.38)"
+                        onmouseout="resetPoint(310)"/>
+                <circle id="p311" cx="33.00000000000006" cy="559.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(311, -4.31, 2.3)"
+                        onmouseout="resetPoint(311)"/>
+                <circle id="p312" cx="29.25" cy="566.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(312, -4.36, 2.21)"
+                        onmouseout="resetPoint(312)"/>
+                <circle id="p313" cx="26.25" cy="573" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(313, -4.4, 2.12)"
+                        onmouseout="resetPoint(313)"/>
+                <circle id="p314" cx="148.5" cy="617.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(314, -2.77, 1.53)"
+                        onmouseout="resetPoint(314)"/>
+                <circle id="p315" cx="150.74999999999997" cy="609.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(315, -2.74, 1.63)"
+                        onmouseout="resetPoint(315)"/>
+                <circle id="p316" cx="151.5" cy="603" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(316, -2.73, 1.72)"
+                        onmouseout="resetPoint(316)"/>
+                <circle id="p317" cx="357.75" cy="138.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(317, 0.02, 7.91)"
+                        onmouseout="resetPoint(317)"/>
+                <circle id="p318" cx="357" cy="131.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(318, 0.01, 8.01)"
+                        onmouseout="resetPoint(318)"/>
+                <circle id="p319" cx="356.25" cy="124.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(319, 0, 8.1)"
+                        onmouseout="resetPoint(319)"/>
+                <circle id="p320" cx="354.75" cy="117" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(320, -0.02, 8.2)"
+                        onmouseout="resetPoint(320)"/>
+                <circle id="p321" cx="352.5" cy="109.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(321, -0.05, 8.3)"
+                        onmouseout="resetPoint(321)"/>
+                <circle id="p322" cx="349.5" cy="102.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(322, -0.09, 8.39)"
+                        onmouseout="resetPoint(322)"/>
+                <circle id="p323" cx="346.5" cy="96" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(323, -0.13, 8.48)"
+                        onmouseout="resetPoint(323)"/>
+                <circle id="p324" cx="342.75" cy="90" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(324, -0.18, 8.56)"
+                        onmouseout="resetPoint(324)"/>
+                <circle id="p325" cx="338.25" cy="84" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(325, -0.24, 8.64)"
+                        onmouseout="resetPoint(325)"/>
+                <circle id="p326" cx="333" cy="78" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(326, -0.31, 8.72)"
+                        onmouseout="resetPoint(326)"/>
+                <circle id="p327" cx="327.75" cy="72.75000000000011" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(327, -0.38, 8.79)"
+                        onmouseout="resetPoint(327)"/>
+                <circle id="p328" cx="321.75" cy="68.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(328, -0.46, 8.85)"
+                        onmouseout="resetPoint(328)"/>
+                <circle id="p329" cx="315.75" cy="63.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(329, -0.54, 8.91)"
+                        onmouseout="resetPoint(329)"/>
+                <circle id="p330" cx="309" cy="59.999999999999886" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(330, -0.63, 8.96)"
+                        onmouseout="resetPoint(330)"/>
+                <circle id="p331" cx="302.25" cy="57" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(331, -0.72, 9)"
+                        onmouseout="resetPoint(331)"/>
+                <circle id="p332" cx="295.5" cy="54.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(332, -0.81, 9.03)"
+                        onmouseout="resetPoint(332)"/>
+                <circle id="p333" cx="288" cy="52.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(333, -0.91, 9.06)"
+                        onmouseout="resetPoint(333)"/>
+                <circle id="p334" cx="280.5" cy="51.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(334, -1.01, 9.07)"
+                        onmouseout="resetPoint(334)"/>
+                <circle id="p335" cx="273" cy="51" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(335, -1.11, 9.08)"
+                        onmouseout="resetPoint(335)"/>
+                <circle id="p336" cx="265.5" cy="51" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(336, -1.21, 9.08)"
+                        onmouseout="resetPoint(336)"/>
+                <circle id="p337" cx="258" cy="51.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(337, -1.31, 9.07)"
+                        onmouseout="resetPoint(337)"/>
+                <circle id="p338" cx="250.5" cy="52.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(338, -1.41, 9.06)"
+                        onmouseout="resetPoint(338)"/>
+                <circle id="p339" cx="243.75" cy="54.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(339, -1.5, 9.03)"
+                        onmouseout="resetPoint(339)"/>
+                <circle id="p340" cx="236.25" cy="57" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(340, -1.6, 9)"
+                        onmouseout="resetPoint(340)"/>
+                <circle id="p341" cx="229.5" cy="59.999999999999886" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(341, -1.69, 8.96)"
+                        onmouseout="resetPoint(341)"/>
+                <circle id="p342" cx="223.5" cy="63.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(342, -1.77, 8.91)"
+                        onmouseout="resetPoint(342)"/>
+                <circle id="p343" cx="216.75" cy="68.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(343, -1.86, 8.85)"
+                        onmouseout="resetPoint(343)"/>
+                <circle id="p344" cx="210.75" cy="72.75000000000011" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(344, -1.94, 8.79)"
+                        onmouseout="resetPoint(344)"/>
+                <circle id="p345" cx="205.50000000000003" cy="78" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(345, -2.01, 8.72)"
+                        onmouseout="resetPoint(345)"/>
+                <circle id="p346" cx="201" cy="84" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(346, -2.07, 8.64)"
+                        onmouseout="resetPoint(346)"/>
+                <circle id="p347" cx="196.5" cy="90" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(347, -2.13, 8.56)"
+                        onmouseout="resetPoint(347)"/>
+                <circle id="p348" cx="192" cy="96" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(348, -2.19, 8.48)"
+                        onmouseout="resetPoint(348)"/>
+                <circle id="p349" cx="189" cy="102.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(349, -2.23, 8.39)"
+                        onmouseout="resetPoint(349)"/>
+                <circle id="p350" cx="186" cy="109.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(350, -2.27, 8.3)"
+                        onmouseout="resetPoint(350)"/>
+                <circle id="p351" cx="183.75" cy="117" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(351, -2.3, 8.2)"
+                        onmouseout="resetPoint(351)"/>
+                <circle id="p352" cx="182.25" cy="124.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(352, -2.32, 8.1)"
+                        onmouseout="resetPoint(352)"/>
+                <circle id="p353" cx="181.5" cy="131.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(353, -2.33, 8.01)"
+                        onmouseout="resetPoint(353)"/>
+                <circle id="p354" cx="181.5" cy="138.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(354, -2.33, 7.91)"
+                        onmouseout="resetPoint(354)"/>
+                <circle id="p355" cx="181.5" cy="146.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(355, -2.33, 7.81)"
+                        onmouseout="resetPoint(355)"/>
+                <circle id="p356" cx="182.25" cy="153.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(356, -2.32, 7.71)"
+                        onmouseout="resetPoint(356)"/>
+                <circle id="p357" cx="183.75" cy="161.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(357, -2.3, 7.61)"
+                        onmouseout="resetPoint(357)"/>
+                <circle id="p358" cx="186" cy="168.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(358, -2.27, 7.51)"
+                        onmouseout="resetPoint(358)"/>
+                <circle id="p359" cx="189" cy="175.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(359, -2.23, 7.42)"
+                        onmouseout="resetPoint(359)"/>
+                <circle id="p360" cx="192" cy="182.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(360, -2.19, 7.33)"
+                        onmouseout="resetPoint(360)"/>
+                <circle id="p361" cx="196.5" cy="188.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(361, -2.13, 7.25)"
+                        onmouseout="resetPoint(361)"/>
+                <circle id="p362" cx="201" cy="194.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(362, -2.07, 7.17)"
+                        onmouseout="resetPoint(362)"/>
+                <circle id="p363" cx="205.50000000000003" cy="200.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(363, -2.01, 7.09)"
+                        onmouseout="resetPoint(363)"/>
+                <circle id="p364" cx="210.75" cy="205.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(364, -1.94, 7.02)"
+                        onmouseout="resetPoint(364)"/>
+                <circle id="p365" cx="216.75" cy="210" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(365, -1.86, 6.96)"
+                        onmouseout="resetPoint(365)"/>
+                <circle id="p366" cx="223.5" cy="214.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(366, -1.77, 6.9)"
+                        onmouseout="resetPoint(366)"/>
+                <circle id="p367" cx="229.5" cy="217.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(367, -1.69, 6.86)"
+                        onmouseout="resetPoint(367)"/>
+                <circle id="p368" cx="236.25" cy="221.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(368, -1.6, 6.81)"
+                        onmouseout="resetPoint(368)"/>
+                <circle id="p369" cx="243.75" cy="223.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(369, -1.5, 6.78)"
+                        onmouseout="resetPoint(369)"/>
+                <circle id="p370" cx="250.5" cy="225" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(370, -1.41, 6.76)"
+                        onmouseout="resetPoint(370)"/>
+                <circle id="p371" cx="258" cy="226.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(371, -1.31, 6.74)"
+                        onmouseout="resetPoint(371)"/>
+                <circle id="p372" cx="265.5" cy="227.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(372, -1.21, 6.73)"
+                        onmouseout="resetPoint(372)"/>
+                <circle id="p373" cx="273" cy="227.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(373, -1.11, 6.73)"
+                        onmouseout="resetPoint(373)"/>
+                <circle id="p374" cx="280.5" cy="226.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(374, -1.01, 6.74)"
+                        onmouseout="resetPoint(374)"/>
+                <circle id="p375" cx="288" cy="225" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(375, -0.91, 6.76)"
+                        onmouseout="resetPoint(375)"/>
+                <circle id="p376" cx="295.5" cy="223.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(376, -0.81, 6.78)"
+                        onmouseout="resetPoint(376)"/>
+                <circle id="p377" cx="302.25" cy="221.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(377, -0.72, 6.81)"
+                        onmouseout="resetPoint(377)"/>
+                <circle id="p378" cx="309" cy="217.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(378, -0.63, 6.86)"
+                        onmouseout="resetPoint(378)"/>
+                <circle id="p379" cx="315.75" cy="214.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(379, -0.54, 6.9)"
+                        onmouseout="resetPoint(379)"/>
+                <circle id="p380" cx="321.75" cy="210" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(380, -0.46, 6.96)"
+                        onmouseout="resetPoint(380)"/>
+                <circle id="p381" cx="327.75" cy="205.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(381, -0.38, 7.02)"
+                        onmouseout="resetPoint(381)"/>
+                <circle id="p382" cx="333" cy="200.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(382, -0.31, 7.09)"
+                        onmouseout="resetPoint(382)"/>
+                <circle id="p383" cx="338.25" cy="194.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(383, -0.24, 7.17)"
+                        onmouseout="resetPoint(383)"/>
+                <circle id="p384" cx="342.75" cy="188.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(384, -0.18, 7.25)"
+                        onmouseout="resetPoint(384)"/>
+                <circle id="p385" cx="346.5" cy="182.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(385, -0.13, 7.33)"
+                        onmouseout="resetPoint(385)"/>
+                <circle id="p386" cx="349.5" cy="175.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(386, -0.09, 7.42)"
+                        onmouseout="resetPoint(386)"/>
+                <circle id="p387" cx="352.5" cy="168.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(387, -0.05, 7.51)"
+                        onmouseout="resetPoint(387)"/>
+                <circle id="p388" cx="354.75" cy="161.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(388, -0.02, 7.61)"
+                        onmouseout="resetPoint(388)"/>
+                <circle id="p389" cx="356.25" cy="153.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(389, 0, 7.71)"
+                        onmouseout="resetPoint(389)"/>
+                <circle id="p390" cx="357" cy="146.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(390, 0.01, 7.81)"
+                        onmouseout="resetPoint(390)"/>
+                <circle id="p391" cx="524.25" cy="325.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(391, 2.24, 5.42)"
+                        onmouseout="resetPoint(391)"/>
+                <circle id="p392" cx="523.5" cy="318.00000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(392, 2.23, 5.52)"
+                        onmouseout="resetPoint(392)"/>
+                <circle id="p393" cx="520.5" cy="310.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(393, 2.19, 5.62)"
+                        onmouseout="resetPoint(393)"/>
+                <circle id="p394" cx="516.75" cy="304.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(394, 2.14, 5.7)"
+                        onmouseout="resetPoint(394)"/>
+                <circle id="p395" cx="512.25" cy="298.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(395, 2.08, 5.78)"
+                        onmouseout="resetPoint(395)"/>
+                <circle id="p396" cx="506.25" cy="294" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(396, 2, 5.84)"
+                        onmouseout="resetPoint(396)"/>
+                <circle id="p397" cx="498.75" cy="291" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(397, 1.9, 5.88)"
+                        onmouseout="resetPoint(397)"/>
+                <circle id="p398" cx="492" cy="289.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(398, 1.81, 5.9)"
+                        onmouseout="resetPoint(398)"/>
+                <circle id="p399" cx="484.5" cy="289.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(399, 1.71, 5.9)"
+                        onmouseout="resetPoint(399)"/>
+                <circle id="p400" cx="477" cy="291" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(400, 1.61, 5.88)"
+                        onmouseout="resetPoint(400)"/>
+                <circle id="p401" cx="470.25" cy="294" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(401, 1.52, 5.84)"
+                        onmouseout="resetPoint(401)"/>
+                <circle id="p402" cx="463.5" cy="298.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(402, 1.43, 5.78)"
+                        onmouseout="resetPoint(402)"/>
+                <circle id="p403" cx="459" cy="304.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(403, 1.37, 5.7)"
+                        onmouseout="resetPoint(403)"/>
+                <circle id="p404" cx="455.25" cy="310.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(404, 1.32, 5.62)"
+                        onmouseout="resetPoint(404)"/>
+                <circle id="p405" cx="453" cy="318.00000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(405, 1.29, 5.52)"
+                        onmouseout="resetPoint(405)"/>
+                <circle id="p406" cx="452.25" cy="325.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(406, 1.28, 5.42)"
+                        onmouseout="resetPoint(406)"/>
+                <circle id="p407" cx="453" cy="333" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(407, 1.29, 5.32)"
+                        onmouseout="resetPoint(407)"/>
+                <circle id="p408" cx="455.25" cy="339.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(408, 1.32, 5.23)"
+                        onmouseout="resetPoint(408)"/>
+                <circle id="p409" cx="459" cy="346.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(409, 1.37, 5.14)"
+                        onmouseout="resetPoint(409)"/>
+                <circle id="p410" cx="463.5" cy="352.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(410, 1.43, 5.06)"
+                        onmouseout="resetPoint(410)"/>
+                <circle id="p411" cx="470.25" cy="357" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(411, 1.52, 5)"
+                        onmouseout="resetPoint(411)"/>
+                <circle id="p412" cx="477" cy="360" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(412, 1.61, 4.96)"
+                        onmouseout="resetPoint(412)"/>
+                <circle id="p413" cx="484.5" cy="361.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(413, 1.71, 4.94)"
+                        onmouseout="resetPoint(413)"/>
+                <circle id="p414" cx="492" cy="361.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(414, 1.81, 4.94)"
+                        onmouseout="resetPoint(414)"/>
+                <circle id="p415" cx="498.75" cy="360" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(415, 1.9, 4.96)"
+                        onmouseout="resetPoint(415)"/>
+                <circle id="p416" cx="506.25" cy="357" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(416, 2, 5)"
+                        onmouseout="resetPoint(416)"/>
+                <circle id="p417" cx="512.25" cy="352.50000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(417, 2.08, 5.06)"
+                        onmouseout="resetPoint(417)"/>
+                <circle id="p418" cx="516.75" cy="346.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(418, 2.14, 5.14)"
+                        onmouseout="resetPoint(418)"/>
+                <circle id="p419" cx="520.5" cy="339.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(419, 2.19, 5.23)"
+                        onmouseout="resetPoint(419)"/>
+                <circle id="p420" cx="523.5" cy="333" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(420, 2.23, 5.32)"
+                        onmouseout="resetPoint(420)"/>
+                <circle id="p421" cx="136.5" cy="195.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(421, -2.93, 7.15)"
+                        onmouseout="resetPoint(421)"/>
+                <circle id="p422" cx="135.75" cy="188.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(422, -2.94, 7.25)"
+                        onmouseout="resetPoint(422)"/>
+                <circle id="p423" cx="131.99999999999997" cy="182.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(423, -2.99, 7.33)"
+                        onmouseout="resetPoint(423)"/>
+                <circle id="p424" cx="126" cy="177" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(424, -3.07, 7.4)"
+                        onmouseout="resetPoint(424)"/>
+                <circle id="p425" cx="119.25" cy="174" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(425, -3.16, 7.44)"
+                        onmouseout="resetPoint(425)"/>
+                <circle id="p426" cx="111.75000000000003" cy="173.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(426, -3.26, 7.45)"
+                        onmouseout="resetPoint(426)"/>
+                <circle id="p427" cx="104.25" cy="174.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(427, -3.36, 7.43)"
+                        onmouseout="resetPoint(427)"/>
+                <circle id="p428" cx="98.25" cy="179.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(428, -3.44, 7.37)"
+                        onmouseout="resetPoint(428)"/>
+                <circle id="p429" cx="93.75" cy="185.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(429, -3.5, 7.29)"
+                        onmouseout="resetPoint(429)"/>
+                <circle id="p430" cx="90.75" cy="192" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(430, -3.54, 7.2)"
+                        onmouseout="resetPoint(430)"/>
+                <circle id="p431" cx="90.75" cy="200.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(431, -3.54, 7.09)"
+                        onmouseout="resetPoint(431)"/>
+                <circle id="p432" cx="93.75" cy="207" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(432, -3.5, 7)"
+                        onmouseout="resetPoint(432)"/>
+                <circle id="p433" cx="98.25" cy="213" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(433, -3.44, 6.92)"
+                        onmouseout="resetPoint(433)"/>
+                <circle id="p434" cx="104.25" cy="217.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(434, -3.36, 6.86)"
+                        onmouseout="resetPoint(434)"/>
+                <circle id="p435" cx="111.75000000000003" cy="219" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(435, -3.26, 6.84)"
+                        onmouseout="resetPoint(435)"/>
+                <circle id="p436" cx="119.25" cy="218.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(436, -3.16, 6.85)"
+                        onmouseout="resetPoint(436)"/>
+                <circle id="p437" cx="126" cy="215.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(437, -3.07, 6.89)"
+                        onmouseout="resetPoint(437)"/>
+                <circle id="p438" cx="131.99999999999997" cy="210" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(438, -2.99, 6.96)"
+                        onmouseout="resetPoint(438)"/>
+                <circle id="p439" cx="135.75" cy="203.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(439, -2.94, 7.05)"
+                        onmouseout="resetPoint(439)"/>
+                <circle id="p440" cx="159.75" cy="318.00000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(440, -2.62, 5.52)"
+                        onmouseout="resetPoint(440)"/>
+                <circle id="p441" cx="159" cy="310.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(441, -2.63, 5.62)"
+                        onmouseout="resetPoint(441)"/>
+                <circle id="p442" cx="158.25" cy="303" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(442, -2.64, 5.72)"
+                        onmouseout="resetPoint(442)"/>
+                <circle id="p443" cx="156.75" cy="295.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(443, -2.66, 5.82)"
+                        onmouseout="resetPoint(443)"/>
+                <circle id="p444" cx="155.25" cy="288.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(444, -2.68, 5.91)"
+                        onmouseout="resetPoint(444)"/>
+                <circle id="p445" cx="152.24999999999997" cy="281.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(445, -2.72, 6.01)"
+                        onmouseout="resetPoint(445)"/>
+                <circle id="p446" cx="149.25000000000003" cy="274.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(446, -2.76, 6.1)"
+                        onmouseout="resetPoint(446)"/>
+                <circle id="p447" cx="145.5" cy="268.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(447, -2.81, 6.18)"
+                        onmouseout="resetPoint(447)"/>
+                <circle id="p448" cx="141.75" cy="261.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(448, -2.86, 6.27)"
+                        onmouseout="resetPoint(448)"/>
+                <circle id="p449" cx="137.25" cy="255.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(449, -2.92, 6.35)"
+                        onmouseout="resetPoint(449)"/>
+                <circle id="p450" cx="131.99999999999997" cy="250.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(450, -2.99, 6.42)"
+                        onmouseout="resetPoint(450)"/>
+                <circle id="p451" cx="126.75" cy="245.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(451, -3.06, 6.49)"
+                        onmouseout="resetPoint(451)"/>
+                <circle id="p452" cx="120.75" cy="240.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(452, -3.14, 6.55)"
+                        onmouseout="resetPoint(452)"/>
+                <circle id="p453" cx="114.74999999999997" cy="236.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(453, -3.22, 6.61)"
+                        onmouseout="resetPoint(453)"/>
+                <circle id="p454" cx="108.75" cy="232.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(454, -3.3, 6.66)"
+                        onmouseout="resetPoint(454)"/>
+                <circle id="p455" cx="102" cy="228.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(455, -3.39, 6.71)"
+                        onmouseout="resetPoint(455)"/>
+                <circle id="p456" cx="95.25" cy="226.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(456, -3.48, 6.74)"
+                        onmouseout="resetPoint(456)"/>
+                <circle id="p457" cx="87.75" cy="224.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(457, -3.58, 6.77)"
+                        onmouseout="resetPoint(457)"/>
+                <circle id="p458" cx="80.25" cy="222" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(458, -3.68, 6.8)"
+                        onmouseout="resetPoint(458)"/>
+                <circle id="p459" cx="73.5" cy="221.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(459, -3.77, 6.81)"
+                        onmouseout="resetPoint(459)"/>
+                <circle id="p460" cx="66" cy="220.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(460, -3.87, 6.82)"
+                        onmouseout="resetPoint(460)"/>
+                <circle id="p461" cx="58.5" cy="220.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(461, -3.97, 6.82)"
+                        onmouseout="resetPoint(461)"/>
+                <circle id="p462" cx="3" cy="395.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(462, -4.71, 4.49)"
+                        onmouseout="resetPoint(462)"/>
+                <circle id="p463" cx="9" cy="399.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(463, -4.63, 4.43)"
+                        onmouseout="resetPoint(463)"/>
+                <circle id="p464" cx="15.75" cy="403.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(464, -4.54, 4.38)"
+                        onmouseout="resetPoint(464)"/>
+                <circle id="p465" cx="21.75" cy="407.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(465, -4.46, 4.33)"
+                        onmouseout="resetPoint(465)"/>
+                <circle id="p466" cx="29.25" cy="409.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(466, -4.36, 4.3)"
+                        onmouseout="resetPoint(466)"/>
+                <circle id="p467" cx="36.00000000000006" cy="411.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(467, -4.27, 4.27)"
+                        onmouseout="resetPoint(467)"/>
+                <circle id="p468" cx="43.5" cy="414" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(468, -4.17, 4.24)"
+                        onmouseout="resetPoint(468)"/>
+                <circle id="p469" cx="51" cy="414.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(469, -4.07, 4.23)"
+                        onmouseout="resetPoint(469)"/>
+                <circle id="p470" cx="58.5" cy="415.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(470, -3.97, 4.22)"
+                        onmouseout="resetPoint(470)"/>
+                <circle id="p471" cx="66" cy="415.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(471, -3.87, 4.22)"
+                        onmouseout="resetPoint(471)"/>
+                <circle id="p472" cx="73.5" cy="414.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(472, -3.77, 4.23)"
+                        onmouseout="resetPoint(472)"/>
+                <circle id="p473" cx="80.25" cy="414" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(473, -3.68, 4.24)"
+                        onmouseout="resetPoint(473)"/>
+                <circle id="p474" cx="87.75" cy="411.75000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(474, -3.58, 4.27)"
+                        onmouseout="resetPoint(474)"/>
+                <circle id="p475" cx="95.25" cy="409.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(475, -3.48, 4.3)"
+                        onmouseout="resetPoint(475)"/>
+                <circle id="p476" cx="102" cy="407.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(476, -3.39, 4.33)"
+                        onmouseout="resetPoint(476)"/>
+                <circle id="p477" cx="108.75" cy="403.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(477, -3.3, 4.38)"
+                        onmouseout="resetPoint(477)"/>
+                <circle id="p478" cx="114.74999999999997" cy="399.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(478, -3.22, 4.43)"
+                        onmouseout="resetPoint(478)"/>
+                <circle id="p479" cx="120.75" cy="395.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(479, -3.14, 4.49)"
+                        onmouseout="resetPoint(479)"/>
+                <circle id="p480" cx="126.75" cy="390.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(480, -3.06, 4.55)"
+                        onmouseout="resetPoint(480)"/>
+                <circle id="p481" cx="131.99999999999997" cy="385.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(481, -2.99, 4.62)"
+                        onmouseout="resetPoint(481)"/>
+                <circle id="p482" cx="137.25" cy="380.24999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(482, -2.92, 4.69)"
+                        onmouseout="resetPoint(482)"/>
+                <circle id="p483" cx="141.75" cy="374.25000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(483, -2.86, 4.77)"
+                        onmouseout="resetPoint(483)"/>
+                <circle id="p484" cx="145.5" cy="367.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(484, -2.81, 4.86)"
+                        onmouseout="resetPoint(484)"/>
+                <circle id="p485" cx="149.25000000000003" cy="361.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(485, -2.76, 4.94)"
+                        onmouseout="resetPoint(485)"/>
+                <circle id="p486" cx="152.24999999999997" cy="354.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(486, -2.72, 5.03)"
+                        onmouseout="resetPoint(486)"/>
+                <circle id="p487" cx="155.25" cy="347.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(487, -2.68, 5.13)"
+                        onmouseout="resetPoint(487)"/>
+                <circle id="p488" cx="156.75" cy="340.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(488, -2.66, 5.22)"
+                        onmouseout="resetPoint(488)"/>
+                <circle id="p489" cx="158.25" cy="333" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(489, -2.64, 5.32)"
+                        onmouseout="resetPoint(489)"/>
+                <circle id="p490" cx="159" cy="325.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(490, -2.63, 5.42)"
+                        onmouseout="resetPoint(490)"/>
+                <circle id="p491" cx="474.75" cy="165.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(491, 1.58, 7.55)"
+                        onmouseout="resetPoint(491)"/>
+                <circle id="p492" cx="472.5" cy="158.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(492, 1.55, 7.65)"
+                        onmouseout="resetPoint(492)"/>
+                <circle id="p493" cx="466.5" cy="153.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(493, 1.47, 7.71)"
+                        onmouseout="resetPoint(493)"/>
+                <circle id="p494" cx="459" cy="153.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(494, 1.37, 7.71)"
+                        onmouseout="resetPoint(494)"/>
+                <circle id="p495" cx="453" cy="158.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(495, 1.29, 7.65)"
+                        onmouseout="resetPoint(495)"/>
+                <circle id="p496" cx="450.75" cy="165.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(496, 1.26, 7.55)"
+                        onmouseout="resetPoint(496)"/>
+                <circle id="p497" cx="453" cy="172.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(497, 1.29, 7.46)"
+                        onmouseout="resetPoint(497)"/>
+                <circle id="p498" cx="459" cy="177" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(498, 1.37, 7.4)"
+                        onmouseout="resetPoint(498)"/>
+                <circle id="p499" cx="466.5" cy="177" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(499, 1.47, 7.4)"
+                        onmouseout="resetPoint(499)"/>
+                <circle id="p500" cx="472.5" cy="172.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(500, 1.55, 7.46)"
+                        onmouseout="resetPoint(500)"/>
+                <circle id="p501" cx="624" cy="562.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(501, 3.57, 2.26)"
+                        onmouseout="resetPoint(501)"/>
+                <circle id="p502" cx="622.5" cy="555" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(502, 3.55, 2.36)"
+                        onmouseout="resetPoint(502)"/>
+                <circle id="p503" cx="618" cy="548.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(503, 3.49, 2.45)"
+                        onmouseout="resetPoint(503)"/>
+                <circle id="p504" cx="612" cy="544.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(504, 3.41, 2.5)"
+                        onmouseout="resetPoint(504)"/>
+                <circle id="p505" cx="604.5" cy="543" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(505, 3.31, 2.52)"
+                        onmouseout="resetPoint(505)"/>
+                <circle id="p506" cx="597" cy="544.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(506, 3.21, 2.5)"
+                        onmouseout="resetPoint(506)"/>
+                <circle id="p507" cx="591" cy="548.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(507, 3.13, 2.45)"
+                        onmouseout="resetPoint(507)"/>
+                <circle id="p508" cx="586.5" cy="555" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(508, 3.07, 2.36)"
+                        onmouseout="resetPoint(508)"/>
+                <circle id="p509" cx="585" cy="562.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(509, 3.05, 2.26)"
+                        onmouseout="resetPoint(509)"/>
+                <circle id="p510" cx="586.5" cy="570" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(510, 3.07, 2.16)"
+                        onmouseout="resetPoint(510)"/>
+                <circle id="p511" cx="591" cy="576" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(511, 3.13, 2.08)"
+                        onmouseout="resetPoint(511)"/>
+                <circle id="p512" cx="597" cy="580.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(512, 3.21, 2.02)"
+                        onmouseout="resetPoint(512)"/>
+                <circle id="p513" cx="604.5" cy="582" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(513, 3.31, 2)"
+                        onmouseout="resetPoint(513)"/>
+                <circle id="p514" cx="612" cy="580.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(514, 3.41, 2.02)"
+                        onmouseout="resetPoint(514)"/>
+                <circle id="p515" cx="618" cy="576" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(515, 3.49, 2.08)"
+                        onmouseout="resetPoint(515)"/>
+                <circle id="p516" cx="622.5" cy="570" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(516, 3.55, 2.16)"
+                        onmouseout="resetPoint(516)"/>
+                <circle id="p517" cx="661.5" cy="517.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(517, 4.07, 2.86)"
+                        onmouseout="resetPoint(517)"/>
+                <circle id="p518" cx="659.25" cy="510.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(518, 4.04, 2.95)"
+                        onmouseout="resetPoint(518)"/>
+                <circle id="p519" cx="651.75" cy="507.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(519, 3.94, 2.99)"
+                        onmouseout="resetPoint(519)"/>
+                <circle id="p520" cx="645" cy="510.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(520, 3.85, 2.95)"
+                        onmouseout="resetPoint(520)"/>
+                <circle id="p521" cx="642" cy="517.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(521, 3.81, 2.86)"
+                        onmouseout="resetPoint(521)"/>
+                <circle id="p522" cx="645" cy="524.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(522, 3.85, 2.77)"
+                        onmouseout="resetPoint(522)"/>
+                <circle id="p523" cx="651.75" cy="527.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(523, 3.94, 2.73)"
+                        onmouseout="resetPoint(523)"/>
+                <circle id="p524" cx="659.25" cy="524.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(524, 4.04, 2.77)"
+                        onmouseout="resetPoint(524)"/>
+                <circle id="p525" cx="491.25" cy="264" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(525, 1.8, 6.24)"
+                        onmouseout="resetPoint(525)"/>
+                <circle id="p526" cx="489.75" cy="256.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(526, 1.78, 6.34)"
+                        onmouseout="resetPoint(526)"/>
+                <circle id="p527" cx="487.5" cy="248.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(527, 1.75, 6.44)"
+                        onmouseout="resetPoint(527)"/>
+                <circle id="p528" cx="483" cy="243.00000000000006" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(528, 1.69, 6.52)"
+                        onmouseout="resetPoint(528)"/>
+                <circle id="p529" cx="477" cy="238.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(529, 1.61, 6.58)"
+                        onmouseout="resetPoint(529)"/>
+                <circle id="p530" cx="470.25" cy="235.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(530, 1.52, 6.62)"
+                        onmouseout="resetPoint(530)"/>
+                <circle id="p531" cx="462.75" cy="234" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(531, 1.42, 6.64)"
+                        onmouseout="resetPoint(531)"/>
+                <circle id="p532" cx="455.25" cy="234" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(532, 1.32, 6.64)"
+                        onmouseout="resetPoint(532)"/>
+                <circle id="p533" cx="448.5" cy="237" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(533, 1.23, 6.6)"
+                        onmouseout="resetPoint(533)"/>
+                <circle id="p534" cx="442.5" cy="240.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(534, 1.15, 6.55)"
+                        onmouseout="resetPoint(534)"/>
+                <circle id="p535" cx="437.25" cy="245.99999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(535, 1.08, 6.48)"
+                        onmouseout="resetPoint(535)"/>
+                <circle id="p536" cx="433.5" cy="252.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(536, 1.03, 6.39)"
+                        onmouseout="resetPoint(536)"/>
+                <circle id="p537" cx="431.25" cy="260.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(537, 1, 6.29)"
+                        onmouseout="resetPoint(537)"/>
+                <circle id="p538" cx="431.25" cy="267.74999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(538, 1, 6.19)"
+                        onmouseout="resetPoint(538)"/>
+                <circle id="p539" cx="433.5" cy="274.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(539, 1.03, 6.1)"
+                        onmouseout="resetPoint(539)"/>
+                <circle id="p540" cx="437.25" cy="281.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(540, 1.08, 6.01)"
+                        onmouseout="resetPoint(540)"/>
+                <circle id="p541" cx="442.5" cy="286.49999999999994" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(541, 1.15, 5.94)"
+                        onmouseout="resetPoint(541)"/>
+                <circle id="p542" cx="448.5" cy="291" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(542, 1.23, 5.88)"
+                        onmouseout="resetPoint(542)"/>
+                <circle id="p543" cx="455.25" cy="293.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(543, 1.32, 5.85)"
+                        onmouseout="resetPoint(543)"/>
+                <circle id="p544" cx="462.75" cy="293.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(544, 1.42, 5.85)"
+                        onmouseout="resetPoint(544)"/>
+                <circle id="p545" cx="470.25" cy="291.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(545, 1.52, 5.87)"
+                        onmouseout="resetPoint(545)"/>
+                <circle id="p546" cx="477" cy="288.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(546, 1.61, 5.91)"
+                        onmouseout="resetPoint(546)"/>
+                <circle id="p547" cx="483" cy="284.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(547, 1.69, 5.97)"
+                        onmouseout="resetPoint(547)"/>
+                <circle id="p548" cx="487.5" cy="278.25" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(548, 1.75, 6.05)"
+                        onmouseout="resetPoint(548)"/>
+                <circle id="p549" cx="489.75" cy="270.75" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(549, 1.78, 6.15)"
+                        onmouseout="resetPoint(549)"/>
+                <circle id="p550" cx="356.25" cy="619.5" r="2" stroke="blue" stroke-width="2"
+                        fill="blue" onmouseover="showPoint(550, 0, 1.5)"
+                        onmouseout="resetPoint(550)"/>
+            </svg>
+        </td>
+        <td>
+            <code>
+                <div id="currentPoint"></div>
+            </code>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
