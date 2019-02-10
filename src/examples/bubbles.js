@@ -4,13 +4,6 @@
  * Note(1): There is currently some bug in which bubbles appear within others.
  * boundingfx was intended to prevent that; either it has a bug or the approach
  * is flawed.
- *
- * Note(1): How are we getting invalid degrees?
- *
- * /Users/dan/devel/techentourage/github/drawbot/src/drawbot2.js:171
- * throw error
- * ^
- * ERROR: -1.51 is outside the range 0° - 180° (inclusive)!
  */
 const drawbot = require('../drawbot2')
 const _ = require('lodash')

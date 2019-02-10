@@ -19,8 +19,8 @@ const _ = require('lodash')
 const CFG = {
   home: {x: 0, y: 1.5},
   servoOffset: 1,
-  arm1Length: 4,
-  arm2Length: 5.75,
+  arm1Length: 4.5, // 4
+  arm2Length: 5.3, // 5.75
   gigpoA: 9,  // servo A (left)
   gigpoB: 10, // servo B (right)
   gigpoC: 11,  // servo C (wrist)
@@ -252,6 +252,7 @@ const calcServoAngle = (x, y, same) => {
   //   `x:[${x}] y:[${y}] OFFSET:[${OFFSET}] OPPOSITE:[${OPPOSITE}] ADJACENT:[${ADJACENT}] HYPOTENUSE:[${HYPOTENUSE}] ANGLE1:[${ANGLE1}] ANGLE2:[${ANGLE2}] ANGLE:[${ANGLE2}]`)
 
   // TODO: remove after we figure out why this is occurring (seeing in bubbles; close boundaries case?)
+  // updated arm lengths and no longer seeing this...
   if (ANGLE<0 || ANGLE>180) {
     console.error(x,y,same, ANGLE)
   }

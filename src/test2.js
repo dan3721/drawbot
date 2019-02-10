@@ -70,33 +70,33 @@ assert('move invalid point 4,9 does throw an error if directed to', !undefined,
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
 const positions = drawbot.calcServoAngles(0, MAX_X)
-assert('A angle @ max reach', 156.51, positions[0])
-assert('B angle @ max reach', 23.49, positions[1])
+assert('A angle @ max reach', 158.82, positions[0])
+assert('B angle @ max reach', 21.18, positions[1])
 
 // check servo degrees @ min reach (5,1)
 const MIN_X = 1.5
 const positions2 = drawbot.calcServoAngles(0, MIN_X)
-assert('A angle @ min reach', 50.41, positions2[0])
-assert('B angle @ min reach', 129.59, positions2[1])
+assert('A angle @ min reach', 107.26, positions2[0])
+assert('B angle @ min reach', 72.74, positions2[1])
 
 // calcTranslation vertical
 const VERTICAL_TRANSLATION = drawbot.calcTranslation(0, 5, 0, 6)
 // console.log(VERTICAL_TRANSLATION)
 assert('calcTranslation vertical',
   {
-    CURRENT_POSITION: [113.97, 66.03],
-    TARGET_POSITION: [123.65, 56.35],
+    CURRENT_POSITION: [124.62, 55.38],
+    TARGET_POSITION: [131.65, 48.35],
     DELTA_X: 0,
     DELTA_Y: 1,
-    CURRENT_PULSE_A: 1234,
-    CURRENT_PULSE_B: 1766,
-    TARGET_PULSE_A: 1126,
-    TARGET_PULSE_B: 1874,
-    DELTA_DEGREES_A: 9.68,
-    DELTA_DEGREES_B: 9.68,
-    DELTA_PULSE_A: 108,
-    DELTA_PULSE_B: 108,
-    NUM_STEPS: 108,
+    CURRENT_PULSE_A: 1115,
+    CURRENT_PULSE_B: 1885,
+    TARGET_PULSE_A: 1037,
+    TARGET_PULSE_B: 1963,
+    DELTA_DEGREES_A: 7.03,
+    DELTA_DEGREES_B: 7.03,
+    DELTA_PULSE_A: 78,
+    DELTA_PULSE_B: 78,
+    NUM_STEPS: 78,
     PULSE_INCREMENT_A: -1,
     PULSE_INCREMENT_B: 1,
   },
@@ -107,19 +107,19 @@ const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(-2, 6, 2, 6)
 // console.log(HORIZANTAL_TRANSLATION)
 assert('calcTranslation horizontal',
   {
-    CURRENT_POSITION: [104.72, 32.06],
-    TARGET_POSITION: [147.94, 75.28],
+    CURRENT_POSITION: [112.72, 25.45],
+    TARGET_POSITION: [154.55, 67.28],
     DELTA_X: 4,
     DELTA_Y: 0,
-    CURRENT_PULSE_A: 1336,
-    CURRENT_PULSE_B: 2144,
-    TARGET_PULSE_A: 856,
-    TARGET_PULSE_B: 1664,
-    DELTA_DEGREES_A: 43.22,
-    DELTA_DEGREES_B: 43.22,
-    DELTA_PULSE_A: 480,
-    DELTA_PULSE_B: 480,
-    NUM_STEPS: 480,
+    CURRENT_PULSE_A: 1248,
+    CURRENT_PULSE_B: 2217,
+    TARGET_PULSE_A: 783,
+    TARGET_PULSE_B: 1752,
+    DELTA_DEGREES_A: 41.83,
+    DELTA_DEGREES_B: 41.83,
+    DELTA_PULSE_A: 465,
+    DELTA_PULSE_B: 465,
+    NUM_STEPS: 465,
     PULSE_INCREMENT_A: -1,
     PULSE_INCREMENT_B: -1,
   },
@@ -130,20 +130,20 @@ const DIAGONAL_TRANSLATION = drawbot.calcTranslation(-2, 3, 2, 6)
 // console.log(DIAGONAL_TRANSLATION)
 assert('calcTranslation diagonal (/)',
   {
-    CURRENT_POSITION: [55.35, 43.42],
-    TARGET_POSITION: [147.94, 75.28],
+    CURRENT_POSITION: [75.92, 29.57],
+    TARGET_POSITION: [154.55, 67.28],
     DELTA_X: 4,
     DELTA_Y: 3,
-    CURRENT_PULSE_A: 1885,
-    CURRENT_PULSE_B: 2018,
-    TARGET_PULSE_A: 856,
-    TARGET_PULSE_B: 1664,
-    DELTA_DEGREES_A: 92.59,
-    DELTA_DEGREES_B: 31.86,
-    DELTA_PULSE_A: 1029,
-    DELTA_PULSE_B: 354,
-    NUM_STEPS: 354,
-    PULSE_INCREMENT_A: -2.91,
+    CURRENT_PULSE_A: 1656,
+    CURRENT_PULSE_B: 2171,
+    TARGET_PULSE_A: 783,
+    TARGET_PULSE_B: 1752,
+    DELTA_DEGREES_A: 78.63,
+    DELTA_DEGREES_B: 37.71,
+    DELTA_PULSE_A: 873,
+    DELTA_PULSE_B: 419,
+    NUM_STEPS: 419,
+    PULSE_INCREMENT_A: -2.08,
     PULSE_INCREMENT_B: -1,
   },
   DIAGONAL_TRANSLATION,
@@ -154,22 +154,22 @@ const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(-2, 6, 2, 3)
 // console.log(DIAGONAL_TRANSLATION2)
 assert('calcTranslation diagonal2 (\\)',
   {
-    CURRENT_POSITION: [104.72, 32.06],
-    TARGET_POSITION: [136.58, 124.65],
+    CURRENT_POSITION: [112.72, 25.45],
+    TARGET_POSITION: [150.43, 104.08],
     DELTA_X: 4,
     DELTA_Y: 3,
-    CURRENT_PULSE_A: 1336,
-    CURRENT_PULSE_B: 2144,
-    TARGET_PULSE_A: 982,
-    TARGET_PULSE_B: 1115,
-    DELTA_DEGREES_A: 31.86,
-    DELTA_DEGREES_B: 92.59,
-    DELTA_PULSE_A: 354,
-    DELTA_PULSE_B: 1029,
-    NUM_STEPS: 354,
+    CURRENT_PULSE_A: 1248,
+    CURRENT_PULSE_B: 2217,
+    TARGET_PULSE_A: 829,
+    TARGET_PULSE_B: 1344,
+    DELTA_DEGREES_A: 37.71,
+    DELTA_DEGREES_B: 78.63,
+    DELTA_PULSE_A: 419,
+    DELTA_PULSE_B: 873,
+    NUM_STEPS: 419,
     PULSE_INCREMENT_A: -1,
-    PULSE_INCREMENT_B: -2.91,
-  }/**/,
+    PULSE_INCREMENT_B: -2.08,
+  },
   DIAGONAL_TRANSLATION2,
 )
 
