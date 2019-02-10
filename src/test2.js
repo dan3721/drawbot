@@ -53,8 +53,19 @@ assert('invalid point 0,just a bit less than min_y', false,
   drawbot.isValidPoint(0, drawbot.min_y - .01)) // just a bit outside
 assert('invalid point 4,9', false, drawbot.isValidPoint(4, 8)) // out top right
 
-assert('move invalid point 4,9 does not throw an error by default', undefined, drawbot.move(4, 8))
-assert('move invalid point 4,9 does throw an error if directed to', undefined, drawbot.move(4, 8, true))
+assert('move invalid point 4,9 does not throw an error by default', undefined,
+  drawbot.move(4, 8))
+
+// TODO: support asserting errors directly
+let error
+try {
+  drawbot.move(4, 8, true)
+}
+catch (e) {
+  error = e
+}
+assert('move invalid point 4,9 does throw an error if directed to', !undefined,
+  !!error)
 
 // check servo degrees @ max reach (5,8.8)
 const MAX_X = 8.8
