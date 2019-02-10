@@ -90,8 +90,13 @@ const DEG_PER_PULSE = (SERVO_MAX_DEG /
 // 2500 is most anti-clockwise.
 const SERVO_REVERSED = true
 
+// TODO: temporary till we can test on hardware
+const ENABLE_DRAW_ON_OFF = false
+
 const PULSE_LOWER = 500
 const PULSE_RAISE = PULSE_LOWER + 200
+
+let _drawEnabled = false
 
 const CMD_QUEUE = []
 
@@ -121,19 +126,22 @@ const radians2Degrees = (radians) => {
 const r2 = n => +(n.toFixed(2))
 // const r2 = n => n
 
-/**
- * Pad the specified number by 4
- * @param n
- * @returns {string}
- */
+// pad and pad Left
 const p4 = n => ('' + n).padEnd(4, ' ')
+const p4L = n => ('' + n).padStart(4, ' ')
+const p6 = n => ('' + n).padEnd(6, ' ')
 
-/**
- * Pad the specified number by 6
- * @param n
- * @returns {string}
- */
-const p6 = n => ('' + n).padEnd(4, ' ')
+// /**
+//  * Smart padding for values fixed to 2. If the value ends with two digits the
+//  * padding is added to the beginning else it's added to the end. This nicely
+//  * pads values like 96.78 and 158.7 so they are left aligned.
+//  * @private
+//  */
+// const padDeg = (val) => {
+//   val += ''
+//   // return val.match(/^\.\d\d$/) ? val.padStart(6, ' ') : val.padEnd(6, ' ')
+//   return val.padStart(6, ' ')
+// }
 
 /**
  * Calculates the pulse width for the specified degrees.
@@ -230,6 +238,30 @@ const calcServoAngle = (x, y, same) => {
 }
 
 /**
+ * Activate drawing by lowering.
+ */
+const drawOn = () => {
+  if (ENABLE_DRAW_ON_OFF) {
+    if (!_drawEnabled) {
+      CMD_QUEUE.push({action: 'lower'})
+      _drawEnabled = true
+    }
+  }
+}
+
+/**
+ * Disable drawing by raising.
+ */
+const drawOff = () => {
+  if (ENABLE_DRAW_ON_OFF) {
+    if (_drawEnabled) {
+      CMD_QUEUE.push({action: 'raise'})
+      _drawEnabled = false
+    }
+  }
+}
+
+/**
  * Queues a move to a point.
  * @param {number} x
  * @param {number} y
@@ -248,7 +280,6 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
   else {
     drawMove ? drawOn() : drawOff()
     CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
-    drawOff()
   }
 }
 
@@ -305,43 +336,22 @@ const drawRegularPolygon = (x, y, numPoints, radius) => {
   drawPolyline(points)
 }
 
-/**
- * Activate drawing by lowering.
- */
-const drawOn = () => {
-  CMD_QUEUE.push({action: 'lower'})
+const drawSquare = (x, y, width) => {
+  const halfWidth = width / 2
+  move(x - halfWidth, y + halfWidth) // start at top left
+  move(x + halfWidth, y + halfWidth, true) // top right
+  move(x + halfWidth, y - halfWidth, true) // bottom right
+  move(x - halfWidth, y - halfWidth, true) // bottom left
+  move(x - halfWidth, y + halfWidth, true) // back top left
 }
 
-/**
- * Disable drawing by raising.
- */
-const drawOff = () => {
-  CMD_QUEUE.push({action: 'raise'})
-}
-
-// /**
-//  * Smart padding for values fixed to 2. If the value ends with two digits the
-//  * padding is added to the beginning else it's added to the end. This nicely
-//  * pads values like 96.78 and 158.7 so they are left aligned.
-//  * @private
-//  */
-// const padDeg = (val) => {
-//   val += ''
-//   // return val.match(/^\.\d\d$/) ? val.padStart(6, ' ') : val.padEnd(6, ' ')
-//   return val.padStart(6, ' ')
-// }
-
-/**
- * @private
- */
-const fmtPoint = (n) => (`${n}`).padEnd(4, ' ')
-
-/**
- * @private
- */
-const padPulse = (val) => {
-  val += ''
-  return val.padStart(5, ' ')
+const drawTrangle = (x, y, base, height) => {
+  const halfHeight = height / 2
+  const halfBase = base / 2
+  move(x, y + halfHeight) // start at top
+  move(x + halfBase, y - halfHeight, true) // bottom right
+  move(x - halfBase, y - halfHeight, true) // bottom left
+  move(x, y + halfHeight, true) // back to top
 }
 
 /**
@@ -485,13 +495,18 @@ const execute = () => {
         let PULSE_A = TRANSLATION_INFO.CURRENT_PULSE_A
         let PULSE_B = TRANSLATION_INFO.CURRENT_PULSE_B
 
+        // TODO: temporary until we figure out smoothing (interpolation)
         let DO_TRANSITION = true // set to false to go direct to point
 
         if (!DO_TRANSITION) {
+
           writePigsS(
+            TRANSLATION_INFO.TARGET_PULSE_A,
+            TRANSLATION_INFO.TARGET_PULSE_B,
+            cmd.x, cmd.y,
             TRANSLATION_INFO.TARGET_POSITION[0],
-            TRANSLATION_INFO.TARGET_POSITION[1],
-            TRANSLATION_INFO.TARGET_PULSE_A, TRANSLATION_INFO.TARGET_PULSE_B)
+            TRANSLATION_INFO.TARGET_POSITION[1])
+
         }
         else {
           for (let steps = 0; steps < TRANSLATION_INFO.NUM_STEPS; steps++) {
@@ -512,10 +527,11 @@ const execute = () => {
             const ACTUAL_PULSE_B = protect(Math.round(PULSE_B))
 
             writePigsS(
+              ACTUAL_PULSE_A, ACTUAL_PULSE_B,
+              cmd.x, cmd.y,
               TRANSLATION_INFO.TARGET_POSITION[0],
               TRANSLATION_INFO.TARGET_POSITION[1],
-              ACTUAL_PULSE_A, ACTUAL_PULSE_B,
-              steps === TRANSLATION_INFO.NUM_STEPS - 1)
+              steps !== TRANSLATION_INFO.NUM_STEPS - 1)
 
           }
         }
@@ -538,12 +554,13 @@ const execute = () => {
 
 }
 
-const writePigsS = (x, y, PULSE_A, PULSE_B, isTransitional = false) => {
+const writePigsS = (
+  PULSE_A, PULSE_B, x, y, degreesA, degreesB, isTransitional = false) => {
+
   let pcmd = `pigs s 10 ${p4(PULSE_A)} s 9 ${p4(PULSE_B)} mils $MILS`
-  pcmd = pcmd.padEnd(36, ' ')
   let line = `${pcmd} # `
-  if (isTransitional) {
-    line += `${p4(x)} ${p4(y)}`
+  if (!isTransitional) {
+    line += `${p6(degreesA)}° ${p6(degreesB)}° ${x},${y}`
   }
   else {
     line += '*' // transitional step
@@ -671,6 +688,8 @@ module.exports = {
   moveHome,
   drawPolyline,
   drawRegularPolygon,
+  drawSquare,
+  drawTrangle,
   execute,
 
   // utility
