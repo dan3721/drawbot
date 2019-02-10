@@ -1,13 +1,16 @@
 #!/bin/sh
 #
-# Saturday, February 9th, 2019, 11:45:56 PM
+# Sunday, February 10th, 2019, 11:16:17 AM
 #
 # filename:     star.js
-# num cmds:     3265
+# num cmds:     3282
 # num points:   8
 #
 MILS=0
 
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
 pigs s 10 1939 s 9 1061 mils $MILS   # *
 pigs s 10 1938 s 9 1062 mils $MILS   # *
 pigs s 10 1937 s 9 1063 mils $MILS   # *
@@ -272,6 +275,8 @@ pigs s 10 1679 s 9 1321 mils $MILS   # *
 pigs s 10 1678 s 9 1322 mils $MILS   # *
 pigs s 10 1677 s 9 1323 mils $MILS   # *
 pigs s 10 1676 s 9 1324 mils $MILS   # 74.16 105.84
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 1675 s 9 1326 mils $MILS   # *
 pigs s 10 1674 s 9 1327 mils $MILS   # *
 pigs s 10 1673 s 9 1329 mils $MILS   # *
@@ -902,6 +907,8 @@ pigs s 10 1049 s 9 2333 mils $MILS   # *
 pigs s 10 1048 s 9 2335 mils $MILS   # *
 pigs s 10 1047 s 9 2337 mils $MILS   # *
 pigs s 10 1046 s 9 2338 mils $MILS   # 130.88 14.52
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 1045 s 9 2335 mils $MILS   # *
 pigs s 10 1044 s 9 2331 mils $MILS   # *
 pigs s 10 1043 s 9 2327 mils $MILS   # *
@@ -1162,6 +1169,8 @@ pigs s 10 789  s 9 1270 mils $MILS   # *
 pigs s 10 788  s 9 1266 mils $MILS   # *
 pigs s 10 787  s 9 1262 mils $MILS   # *
 pigs s 10 786  s 9 1257 mils $MILS   # 154.27 111.86
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 787  s 9 1258 mils $MILS   # *
 pigs s 10 788  s 9 1259 mils $MILS   # *
 pigs s 10 789  s 9 1260 mils $MILS   # *
@@ -2119,6 +2128,8 @@ pigs s 10 1740 s 9 2211 mils $MILS   # *
 pigs s 10 1741 s 9 2212 mils $MILS   # *
 pigs s 10 1742 s 9 2213 mils $MILS   # *
 pigs s 10 1743 s 9 2214 mils $MILS   # 68.14 25.73
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 1739 s 9 2213 mils $MILS   # *
 pigs s 10 1735 s 9 2212 mils $MILS   # *
 pigs s 10 1731 s 9 2211 mils $MILS   # *
@@ -2379,6 +2390,8 @@ pigs s 10 674  s 9 1957 mils $MILS   # *
 pigs s 10 670  s 9 1956 mils $MILS   # *
 pigs s 10 666  s 9 1955 mils $MILS   # *
 pigs s 10 661  s 9 1954 mils $MILS   # 165.48 49.12
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 663  s 9 1953 mils $MILS   # *
 pigs s 10 664  s 9 1952 mils $MILS   # *
 pigs s 10 666  s 9 1951 mils $MILS   # *
@@ -3009,6 +3022,9 @@ pigs s 10 1670 s 9 1327 mils $MILS   # *
 pigs s 10 1672 s 9 1326 mils $MILS   # *
 pigs s 10 1674 s 9 1325 mils $MILS   # *
 pigs s 10 1675 s 9 1324 mils $MILS   # 74.16 105.84
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
 pigs s 10 1677 s 9 1323 mils $MILS   # *
 pigs s 10 1678 s 9 1322 mils $MILS   # *
 pigs s 10 1679 s 9 1321 mils $MILS   # *
@@ -3273,5 +3289,6 @@ pigs s 10 1937 s 9 1063 mils $MILS   # *
 pigs s 10 1938 s 9 1062 mils $MILS   # *
 pigs s 10 1939 s 9 1061 mils $MILS   # *
 pigs s 10 1940 s 9 1060 mils $MILS   # 50.41 129.59
+pigs s 11 700 s 11 0 # raise
 
 pigs s 10 0 s 9 0 # all quiet

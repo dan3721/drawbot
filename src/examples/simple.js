@@ -1,6 +1,5 @@
 const drawbot = require('../drawbot2')
 
-drawbot.move(0, 4) // vertical
-drawbot.move(-2, 6) // diagonal
-drawbot.move(2, 6) // horizontal
-drawbot.draw()
+// vertical, diagonal, horizontal
+drawbot.drawPolyline([0, 4, -2, 6, 2, 6])
+drawbot.execute()

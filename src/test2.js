@@ -59,7 +59,7 @@ assert('move invalid point 4,9 does not throw an error by default', undefined,
 // TODO: support asserting errors directly
 let error
 try {
-  drawbot.move(4, 8, true)
+  drawbot.move(4, 8, false, true)
 }
 catch (e) {
   error = e

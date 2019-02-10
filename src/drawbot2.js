@@ -1,7 +1,7 @@
 /**
  * Draw Bot 2.0
  *
- * The general usage pattern is to queue some commands and then invoke draw().
+ * The general usage pattern is to queue some commands and then invoke execute).
  *
  * See the example drawings...
  *
@@ -20,8 +20,9 @@ const CFG = {
   servoOffset: 1,
   arm1Length: 4,
   arm2Length: 5.75,
-  gigpoA: 9,
-  gigpoB: 10,
+  gigpoA: 9,  // servo A (left)
+  gigpoB: 10, // servo B (right)
+  gigpoC: 11,  // servo C (wrist)
 }
 
 const min_x = 0 + CFG.servoOffset - CFG.arm2Length
@@ -88,6 +89,9 @@ const DEG_PER_PULSE = (SERVO_MAX_DEG /
 // when you setup the servo turned around such that 500 is most clockwise and
 // 2500 is most anti-clockwise.
 const SERVO_REVERSED = true
+
+const PULSE_LOWER = 500
+const PULSE_RAISE = PULSE_LOWER + 200
 
 const CMD_QUEUE = []
 
@@ -230,7 +234,7 @@ const calcServoAngle = (x, y, same) => {
  * @param {number} x
  * @param {number} y
  */
-const move = (x, y, throwErrorIfInvalid = false) => {
+const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
   if (!isValidPoint(x, y)) {
     let error = `${x},${y} is outside the drawable area!`
     if (throwErrorIfInvalid) {
@@ -242,18 +246,29 @@ const move = (x, y, throwErrorIfInvalid = false) => {
     }
   }
   else {
+    drawMove ? drawOn() : drawOff()
     CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
+    drawOff()
   }
 }
+
+const moveHome = () => move(CFG.home.x, CFG.home.y)
 
 /**
  * Queues multiple moves.
  * @param points {number[]} one or more points
  */
-const mmove = points => {
+const drawPolyline = points => {
+
+  // move to starting location (without drawing)
+  move(points.shift(), points.shift())
+
+  // draw to all points
   for (let i = 0; i < points.length; i += 2) {
-    move(points[i], points[i + 1])
+    move(points[i], points[i + 1], true)
   }
+
+  drawOff()
 }
 
 /**
@@ -281,16 +296,27 @@ const drawRegularPolygon = (x, y, numPoints, radius) => {
   // move from last point to the first point so the final edge is drawn
   points.push(points[0])
 
-  let moves = points.reduce((accum, point) => {
+  points = points.reduce((accum, point) => {
     accum.push(point.x)
     accum.push(point.y)
     return accum
   }, [])
 
-  // start and end at the center until we have the ability to lift
-  move(x, y) // TODO: remove when we have lift capabilities
-  mmove(moves)
-  move(x, y) // TODO: remove when we have lift capabilities
+  drawPolyline(points)
+}
+
+/**
+ * Activate drawing by lowering.
+ */
+const drawOn = () => {
+  CMD_QUEUE.push({action: 'lower'})
+}
+
+/**
+ * Disable drawing by raising.
+ */
+const drawOff = () => {
+  CMD_QUEUE.push({action: 'raise'})
 }
 
 // /**
@@ -429,26 +455,29 @@ const protect = (pulse) => {
   return pulse
 }
 
-const draw = () => {
-
-  move(CFG.home.x, CFG.home.y) // reset to starting position (appends to end)
-
-  // log(CMD_QUEUE)
+const execute = () => {
 
   const NOW = new Date()
-  const START_TIME = NOW.getTime()
   let startDateFormatted = DATEFORMAT(NOW, 'dddd, mmmm dS, yyyy, h:MM:ss TT')
-  log(startDateFormatted)
+
   log(`input: ${module.parent.filename}`)
 
+  moveHome() // reset to starting position (appends to end)
   CMD_QUEUE.forEach(cmd => {
 
     const action = cmd.action
 
     // each cmd is responsible for managing isExecuting !
     switch (action) {
+      case 'raise' :
+        _pigs.push(
+          `pigs s ${CFG.gigpoC} ${PULSE_RAISE} s ${CFG.gigpoC} 0 # raise`)
+        break
+      case 'lower' :
+        _pigs.push(
+          `pigs s ${CFG.gigpoC} ${PULSE_LOWER} s ${CFG.gigpoC} 0 # lower`)
+        break
       case  'move':
-
         const TRANSLATION_INFO = calcTranslation(_currentPosition.x,
           _currentPosition.y, cmd.x, cmd.y)
         // console.log(TRANSLATION_INFO)
@@ -505,8 +534,6 @@ const draw = () => {
   Promise.all([
     writeHtml(module.parent.filename, POINTS),
     writePigsScript(module.parent.filename, startDateFormatted)]).then(() => {
-    log(`DONE Total execution time was ${new Date().getTime() -
-    START_TIME} milliseconds.`)
   })
 
 }
@@ -641,9 +668,10 @@ module.exports = {
 
   // cmds
   move,
-  mmove,
-  draw,
+  moveHome,
+  drawPolyline,
   drawRegularPolygon,
+  execute,
 
   // utility
   r2, p4, p6,

@@ -1,13 +1,16 @@
 #!/bin/sh
 #
-# Saturday, February 9th, 2019, 11:45:57 PM
+# Sunday, February 10th, 2019, 11:16:18 AM
 #
 # filename:     simple.js
-# num cmds:     1688
+# num cmds:     1699
 # num points:   5
 #
 MILS=0
 
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
 pigs s 10 1939 s 9 1061 mils $MILS   # *
 pigs s 10 1938 s 9 1062 mils $MILS   # *
 pigs s 10 1937 s 9 1063 mils $MILS   # *
@@ -603,6 +606,8 @@ pigs s 10 1348 s 9 1652 mils $MILS   # *
 pigs s 10 1347 s 9 1653 mils $MILS   # *
 pigs s 10 1346 s 9 1654 mils $MILS   # *
 pigs s 10 1345 s 9 1655 mils $MILS   # 103.93 76.07
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 1344 s 9 1709 mils $MILS   # *
 pigs s 10 1343 s 9 1764 mils $MILS   # *
 pigs s 10 1342 s 9 1818 mils $MILS   # *
@@ -612,6 +617,8 @@ pigs s 10 1339 s 9 1981 mils $MILS   # *
 pigs s 10 1338 s 9 2035 mils $MILS   # *
 pigs s 10 1337 s 9 2090 mils $MILS   # *
 pigs s 10 1336 s 9 2144 mils $MILS   # 104.72 32.06
+pigs s 11 700 s 11 0 # raise
+pigs s 11 500 s 11 0 # lower
 pigs s 10 1335 s 9 2143 mils $MILS   # *
 pigs s 10 1334 s 9 2142 mils $MILS   # *
 pigs s 10 1333 s 9 2141 mils $MILS   # *
@@ -1092,6 +1099,9 @@ pigs s 10 859  s 9 1667 mils $MILS   # *
 pigs s 10 858  s 9 1666 mils $MILS   # *
 pigs s 10 857  s 9 1665 mils $MILS   # *
 pigs s 10 856  s 9 1664 mils $MILS   # 147.94 75.28
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
+pigs s 11 700 s 11 0 # raise
 pigs s 10 858  s 9 1663 mils $MILS   # *
 pigs s 10 860  s 9 1662 mils $MILS   # *
 pigs s 10 861  s 9 1661 mils $MILS   # *
@@ -1696,5 +1706,6 @@ pigs s 10 1932 s 9 1063 mils $MILS   # *
 pigs s 10 1934 s 9 1062 mils $MILS   # *
 pigs s 10 1935 s 9 1061 mils $MILS   # *
 pigs s 10 1937 s 9 1060 mils $MILS   # 50.41 129.59
+pigs s 11 700 s 11 0 # raise
 
 pigs s 10 0 s 9 0 # all quiet
