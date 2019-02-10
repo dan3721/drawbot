@@ -8,7 +8,7 @@
 const drawbot = require('../drawbot2')
 const _ = require('lodash')
 
-const NUM_BUBBLES = 16
+const NUM_BUBBLES = 32
 
 const CIRCLE_RESOLUTION = .10 // lower = more points of resolution
 const genCircle = (x, y, radius) => {
@@ -26,9 +26,7 @@ const getPoints = (x, y, numPoints, radius) => {
     points.push(ptX + x, ptY + y)
   }
   return {
-    points, boundingfx: (tx, ty) => {
-      return drawbot.isPointWithinCircle(tx, ty, x, y, radius)
-    },
+    points, isCollision: (tx, ty) => drawbot.isPointWithinCircle(tx, ty, x, y, radius) 
   }
 }
 
@@ -38,9 +36,14 @@ do {
   let newBubble = genCircle(point.x, point.y, _.random(0, 3, true))
 
   let hasPointsWithinAnExistingBubble = bubbles.some(bubble => {
-    for (let k = 0; k < newBubble.points.length; k += 2) {
-      if (bubble.boundingfx(newBubble.points[k], newBubble.points[k + 1])) {
-        return true
+    if (bubble.isCollision(point.x, point.y)) {
+      return true
+    }
+    else {
+      for (let k = 0; k < newBubble.points.length; k += 2) {
+        if (bubble.isCollision(newBubble.points[k], newBubble.points[k + 1])) {
+          return true
+        }
       }
     }
     return false
