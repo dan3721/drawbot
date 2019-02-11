@@ -26,7 +26,19 @@ const getPoints = (x, y, numPoints, radius) => {
     points.push(ptX + x, ptY + y)
   }
   return {
-    points, isCollision: (tx, ty) => drawbot.isPointWithinCircle(tx, ty, x, y, radius) 
+    x,y,numPoints,radius,
+    points,
+    isCollision: (bubble) => {
+      let collides = false;
+      for (let j = 0; j < bubble.points.length; j += 2) {
+        if (drawbot.isPointWithinCircle(bubble.points[j], bubble.points[j+2], x, y, radius) ) {
+          return true
+        }
+      }
+      return bubble.isCollision(this)
+    }
+
+    // drawbot.isPointWithinCircle(tx, ty, x, y, radius)
   }
 }
 
