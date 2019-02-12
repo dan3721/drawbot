@@ -33,7 +33,8 @@ const min_y = CFG.servoOffset + CFG.servoOffset / 2 // swag
 const max_y = Math.sqrt(
   (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2))) + CFG.arm1Length
 
-console.log(`<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
+console.log(
+  `<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
 
 const getRandomPoint = () => {
   for (; ;) {
@@ -84,13 +85,13 @@ const log = (msg) => {
 
 const warn = (msg) => {
   if (!process.env.TESTING) {
-    console.warn(`*** WARN: ${msg} ***`)
+    console.warn(`WARN: ${msg}`)
   }
 }
 
 const error = (msg) => {
   if (!process.env.TESTING) {
-    console.error(`!!! ERROR: ${msg} !!!`)
+    console.error(`ERROR: ${msg}`)
   }
 }
 
@@ -246,18 +247,24 @@ const calcServoAngle = (x, y, same) => {
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
   // step 4: add angles
-  const ANGLE = same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1
+  let angle = same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1
 
   // console.log(
   //   `x:[${x}] y:[${y}] OFFSET:[${OFFSET}] OPPOSITE:[${OPPOSITE}] ADJACENT:[${ADJACENT}] HYPOTENUSE:[${HYPOTENUSE}] ANGLE1:[${ANGLE1}] ANGLE2:[${ANGLE2}] ANGLE:[${ANGLE2}]`)
 
-  // TODO: remove after we figure out why this is occurring (seeing in bubbles; close boundaries case?)
   // updated arm lengths and no longer seeing this...
-  if (ANGLE<0 || ANGLE>180) {
-    console.error(x,y,same, ANGLE)
+  if (angle < 0) {
+    warn(
+      `x:[${x}] y:[${y}] same:[${same}] produced angle:[${angle}°] which is less than 0° Normalizing to 0°`)
+    angle = 0
+  }
+  else if (angle > 180) {
+    warn(
+      `x:[${x}] y:[${y}] same:[${same}] produced angle:[${angle}°] which is greater than 180° Normalizing to 180°`)
+    angle = 180
   }
 
-  return r2(ANGLE)
+  return r2(angle)
 }
 
 /**
@@ -295,15 +302,10 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
     if (throwErrorIfInvalid) {
       throw error
     }
-    else {
-      error += ' SKIPPING POINT!'
-      warn(error)
-    }
   }
-  else {
-    drawMove ? drawOn() : drawOff()
-    CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
-  }
+
+  drawMove ? drawOn() : drawOff()
+  CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
 }
 
 const moveHome = () => move(CFG.home.x, CFG.home.y)
@@ -633,10 +635,6 @@ const writeHtml = (filename, _coordinates) => {
     const helpers = require('handlebars-helpers')
     const math = helpers.math()
 
-    Handlebars.registerHelper('json', function (context) {
-      return JSON.stringify(context, null, 2)
-    })
-
     const width = max_x * 2 * SCALE
     const height = Math.ceil((CFG.arm1Length + CFG.arm2Length) * SCALE)
     const offsetX = width / 2
@@ -647,6 +645,12 @@ const writeHtml = (filename, _coordinates) => {
 
     const yMin = height - min_y * SCALE
     const yH = min_y * SCALE
+
+    Handlebars.registerHelper('json',
+      context = () => JSON.stringify(context, null, 2))
+
+    Handlebars.registerHelper('isValidPoint',
+      (x, y) => isValidPoint((x - offsetX) / SCALE, (height - y) / SCALE))
 
     const CTX = {
       math,

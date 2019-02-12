@@ -5,16 +5,18 @@
       function showPoint (pointId, x, y) {
         console.log(pointId, x, y)
         const elePoint = document.getElementById(`p${pointId}`)
-        elePoint.style.fill = 'red'
+        elePoint.lastStroke = elePoint.style.stroke
+        elePoint.lastFill = elePoint.style.fill
         elePoint.style.stroke = 'red'
-        elePoint.style.r = 4
+        elePoint.style.fill = 'red'
+        elePoint.style.r = 5
         document.getElementById('currentPoint').innerHTML = `# ${pointId} (${x},${y})`
       }
 
       function resetPoint (pointId) {
         const elePoint = document.getElementById(`p${pointId}`)
-        elePoint.style.fill = 'blue'
-        elePoint.style.stroke = 'blue'
+        elePoint.style.stroke = elePoint.lastStroke
+        elePoint.style.fill = elePoint.lastFill
         elePoint.style.r = 2
         document.getElementById('currentPoint').innerHTML = ''
       }
@@ -63,8 +65,9 @@
                 <polyline points="{{#each coordinates}}{{this.x}},{{this.y}} {{/each}}"
                           style="fill:none;stroke:black;stroke-width:1"/>
                 {{#each coordinates}}
-                <circle id="p{{@index}}" cx="{{this.x}}" cy="{{this.y}}" r="2" stroke="blue" stroke-width="2"
-                        fill="blue" onmouseover="showPoint({{@index}}, {{this.xO}}, {{this.yO}})"
+                <circle id="p{{@index}}" cx="{{this.x}}" cy="{{this.y}}" r="2"
+                        stroke="{{#if (isValidPoint this.x this.y)}}blue{{else}}lightblue{{/if}}" stroke-width="2"
+                        fill="black" onmouseover="showPoint({{@index}}, {{this.xO}}, {{this.yO}})"
                         onmouseout="resetPoint({{@index}})"/>
                 {{#if @root.labelPoints}}
                 <text x="{{add this.x 10}}" y="{{subtract this.y 10}}" fill="blue" style="font-size:85%">
