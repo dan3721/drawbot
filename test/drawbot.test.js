@@ -1,11 +1,7 @@
-const drawbot = require('../src/drawbot2')
-
 // disable logging
 process.env.TESTING = true
 
-// test('test', () => {
-//   expect(1).toBe(1)
-// })
+const drawbot = require('../src/drawbot2')
 
 describe('getPulseWidth', () => {
 
@@ -115,7 +111,7 @@ describe('calcTranslation', () => {
 // calcTranslation diagonal (/)
   const DIAGONAL_TRANSLATION = drawbot.calcTranslation(-2, 3, 2, 6)
 // console.log(DIAGONAL_TRANSLATION)
-  test('calcTranslation diagonal (/)',
+  test('calcTranslation diagonal /',
     () => expect(DIAGONAL_TRANSLATION).toEqual({
       CURRENT_POSITION: [75.92, 29.57],
       TARGET_POSITION: [154.55, 67.28],
@@ -137,7 +133,7 @@ describe('calcTranslation', () => {
 // calcTranslation diagonal
   const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(-2, 6, 2, 3)
 // console.log(DIAGONAL_TRANSLATION2)
-  test('calcTranslation diagonal2 (\\)',
+  test('calcTranslation diagonal2 \\',
     () => expect(DIAGONAL_TRANSLATION2).toEqual({
       CURRENT_POSITION: [112.72, 25.45],
       TARGET_POSITION: [150.43, 104.08],
