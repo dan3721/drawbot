@@ -16,6 +16,29 @@ const DATEFORMAT = require('dateformat')
 const Handlebars = require('handlebars')
 const _ = require('lodash')
 
+/**
+ * Log message
+ * @param msg message
+ * @private
+ */
+const log = (msg) => {
+  if (!process.env.TESTING) {
+    console.log(msg)
+  }
+}
+
+const warn = (msg) => {
+  if (!process.env.TESTING) {
+    console.warn(`WARN: ${msg}`)
+  }
+}
+
+const error = (msg) => {
+  if (!process.env.TESTING) {
+    console.error(`ERROR: ${msg}`)
+  }
+}
+
 const CFG = {
   home: {x: 0, y: 1.5},
   servoOffset: 1,
@@ -33,7 +56,7 @@ const min_y = CFG.servoOffset + CFG.servoOffset / 2 // swag
 const max_y = Math.sqrt(
   (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2))) + CFG.arm1Length
 
-console.log(
+log(
   `<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
 
 const getRandomPoint = () => {
@@ -70,29 +93,6 @@ const isValidPoint = (x, y) => {
     }
   }
   return valid
-}
-
-/**
- * Log message
- * @param msg message
- * @private
- */
-const log = (msg) => {
-  if (!process.env.TESTING) {
-    console.log(msg)
-  }
-}
-
-const warn = (msg) => {
-  if (!process.env.TESTING) {
-    console.warn(`WARN: ${msg}`)
-  }
-}
-
-const error = (msg) => {
-  if (!process.env.TESTING) {
-    console.error(`ERROR: ${msg}`)
-  }
 }
 
 // setup
