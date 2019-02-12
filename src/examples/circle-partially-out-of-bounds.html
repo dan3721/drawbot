@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>circle-partially-out-of-bounds</title>
+    <script>
+      function showPoint (pointId, x, y) {
+        console.log(pointId, x, y)
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.lastStroke = elePoint.style.stroke
+        elePoint.lastFill = elePoint.style.fill
+        elePoint.style.stroke = 'red'
+        elePoint.style.fill = 'red'
+        elePoint.style.r = 5
+        document.getElementById('currentPoint').innerHTML = `# ${pointId} (${x},${y})`
+      }
+
+      function resetPoint (pointId) {
+        const elePoint = document.getElementById(`p${pointId}`)
+        elePoint.style.stroke = elePoint.lastStroke
+        elePoint.style.fill = elePoint.lastFill
+        elePoint.style.r = 2
+        document.getElementById('currentPoint').innerHTML = ''
+      }
+    </script>
+</head>
+<body>
+
+<table>
+    <thead>
+    </thead>
+    <tbody>
+    <tr style="vertical-align: top">
+        <td>
+            <svg height="735" width="645"
+                 style="background-color:white;border: black;border-style: solid;border-width: thin"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!--open drawable area-->
+                <circle cx="247.5" cy="397.5" r="397.5"
+                        stroke="orange" stroke-width="1" fill="yellow" style="fill-opacity: 0.05;"/>
+                <circle cx="397.5" cy="397.5" r="397.5"
+                        stroke="cyan" stroke-width="1" fill="cyan" style="fill-opacity: 0.05"/>
+                <rect y="622.5" width="645" height="112.5" style="fill:white;stroke-width:1;stroke:black"/>
+
+                <!--x axis-->
+                <line x1="0" y1="735" x2="645" y2="735"
+                      style="stroke:red;stroke-width:4"/>
+
+                <!--y axis-->
+                <line x1="322.5" y1="735" x2="322.5" y2="0"
+                      style="stroke:green;stroke-width:1"/>
+
+                <!--servo A-->
+                <circle cx="247.5" cy="735" r="15" stroke="green" stroke-width="2" fill="green"
+                        style="fill-opacity: 0.1"/>
+                <text x="247.5" y="735" text-anchor="middle" stroke="black" stroke-width="1px">A
+                </text>
+
+                <!--servo B-->
+                <circle cx="397.5" cy="735" r="15" stroke="red" stroke-width="2" fill="red"
+                        style="fill-opacity: 0.1"/>
+                <text x="397.5" y="735" text-anchor="middle" stroke="black" stroke-width="1px">B
+                </text>
+
+                <!-- points and labels -->
+                <polyline points="322.5,622.5 172.5,135 166.5,106.49999999999989 150.75,81.74999999999989 126,66 97.5,60 69,66 44.25,81.74999999999989 28.5,106.49999999999989 22.5,135 28.5,163.5 44.25,188.25 69,204 97.5,210 126,204 150.75,188.25 166.5,163.5 322.5,622.5 "
+                          style="fill:none;stroke:black;stroke-width:1"/>
+                <circle id="p0" cx="322.5" cy="622.5" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(0, 0, 1.5)"
+                        onmouseout="resetPoint(0)"/>
+                <circle id="p1" cx="172.5" cy="135" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(1, -2, 8)"
+                        onmouseout="resetPoint(1)"/>
+                <circle id="p2" cx="166.5" cy="106.49999999999989" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(2, -2.08, 8.38)"
+                        onmouseout="resetPoint(2)"/>
+                <circle id="p3" cx="150.75" cy="81.74999999999989" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(3, -2.29, 8.71)"
+                        onmouseout="resetPoint(3)"/>
+                <circle id="p4" cx="126" cy="66" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(4, -2.62, 8.92)"
+                        onmouseout="resetPoint(4)"/>
+                <circle id="p5" cx="97.5" cy="60" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(5, -3, 9)"
+                        onmouseout="resetPoint(5)"/>
+                <circle id="p6" cx="69" cy="66" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(6, -3.38, 8.92)"
+                        onmouseout="resetPoint(6)"/>
+                <circle id="p7" cx="44.25" cy="81.74999999999989" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(7, -3.71, 8.71)"
+                        onmouseout="resetPoint(7)"/>
+                <circle id="p8" cx="28.5" cy="106.49999999999989" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(8, -3.92, 8.38)"
+                        onmouseout="resetPoint(8)"/>
+                <circle id="p9" cx="22.5" cy="135" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(9, -4, 8)"
+                        onmouseout="resetPoint(9)"/>
+                <circle id="p10" cx="28.5" cy="163.5" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(10, -3.92, 7.62)"
+                        onmouseout="resetPoint(10)"/>
+                <circle id="p11" cx="44.25" cy="188.25" r="2"
+                        stroke="lightblue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(11, -3.71, 7.29)"
+                        onmouseout="resetPoint(11)"/>
+                <circle id="p12" cx="69" cy="204" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(12, -3.38, 7.08)"
+                        onmouseout="resetPoint(12)"/>
+                <circle id="p13" cx="97.5" cy="210" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(13, -3, 7)"
+                        onmouseout="resetPoint(13)"/>
+                <circle id="p14" cx="126" cy="204" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(14, -2.62, 7.08)"
+                        onmouseout="resetPoint(14)"/>
+                <circle id="p15" cx="150.75" cy="188.25" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(15, -2.29, 7.29)"
+                        onmouseout="resetPoint(15)"/>
+                <circle id="p16" cx="166.5" cy="163.5" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(16, -2.08, 7.62)"
+                        onmouseout="resetPoint(16)"/>
+                <circle id="p17" cx="322.5" cy="622.5" r="2"
+                        stroke="blue" stroke-width="2"
+                        fill="black" onmouseover="showPoint(17, 0, 1.5)"
+                        onmouseout="resetPoint(17)"/>
+            </svg>
+        </td>
+        <td>
+            <code>
+                <div id="currentPoint"></div>
+            </code>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

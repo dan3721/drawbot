@@ -59,6 +59,10 @@ const max_y = Math.sqrt(
 log(
   `<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
 
+/**
+ * Generates a random point within the drawable area.
+ * @returns {{x: number, y: number}}
+ */
 const getRandomPoint = () => {
   for (; ;) {
     let x = _.random(min_x, max_x, true)
@@ -67,6 +71,90 @@ const getRandomPoint = () => {
       return {x, y}
     }
   }
+}
+
+/**
+ * Checks points to ensure they are all valid / within the drawable area.
+ * @param points
+ * @returns {boolean} true any of the points are invalid / outside the drawable area.
+ * @see {@link #isValidPoint}
+ */
+const ploylineContainsBadPoint = points => {
+  for (let j = 0; j < points.length; j += 2) {
+    if (!isValidPoint(points[j], points[j + 1])) {
+      return true
+    }
+  }
+  return false
+}
+
+/**
+ * Checks the polyline for invalid points and if necessary splits it up into
+ * moves so the transition from drawable to non drawable points is done as a
+ * move as opposed to causing the arms to trace along the boundary of the
+ * drawable area while attempting to reach the invalid points.
+ *
+ * A good example of this is a circle that is half in and half out of the
+ * drawing area.
+ *
+ * @param polyline
+ * @param ignore, used for recursion purposes
+ * @returns {Array} Original polyline or an array of polylines / moves.
+ */
+const splitIntoContiguousMoves = (polyline, moves = []) => {
+
+  if (ploylineContainsBadPoint(polyline)) {
+
+    // drop leading bad points
+    let pointsCopy = [...polyline]
+    for (let j = 0; j < pointsCopy.length; j += 2) {
+      if (!isValidPoint(pointsCopy[j], pointsCopy[j + 1])) {
+        polyline.shift()
+        polyline.shift()
+      }
+      else {
+        break
+      }
+    }
+
+    // drop trailing bad points
+    pointsCopy = [...polyline]
+    for (let j = pointsCopy.length; j > 0; j -= 2) {
+      if (!isValidPoint(pointsCopy[j - 2], pointsCopy[j - 1])) {
+        polyline.pop()
+        polyline.pop()
+      }
+      else {
+        break
+      }
+    }
+
+    // still some bad points?
+    if (ploylineContainsBadPoint(polyline)) {
+
+      let currentMove = []
+
+      // build till we hit one
+      pointsCopy = [...polyline]
+      for (let j = 0; j < pointsCopy.length; j += 2) {
+        if (isValidPoint(pointsCopy[j], pointsCopy[j + 1])) {
+          currentMove.push(polyline.shift())
+          currentMove.push(polyline.shift())
+        }
+        else {
+          moves.push(currentMove)
+          return splitIntoContiguousMoves(polyline, moves)
+        }
+      }
+
+    }
+    else {
+      moves.push(polyline)
+    }
+
+  }
+
+  return moves
 }
 
 /**
@@ -730,4 +818,7 @@ module.exports = {
   r2, p4, p6,
   getRandomPoint,
   isPointWithinCircle,
+  ploylineContainsBadPoint,
+  splitIntoContiguousMoves,
+
 }
