@@ -3,6 +3,14 @@ process.env.TESTING = true
 
 const drawbot = require('../src/drawbot2')
 
+const spyError = jest.spyOn(console, 'error')
+const spyWarn = jest.spyOn(console, 'warn')
+
+beforeEach(() => {
+  spyError.mockReset()
+  spyWarn.mockReset()
+})
+
 describe('getPulseWidth', () => {
 
 // check conversion of degrees to pulse width
@@ -27,6 +35,9 @@ describe('getPulseWidth', () => {
   test('2278 @ 20°', () => expect(drawbot.getPulseWidth(20)).toBe(2278))
   test('722  @ 20° (flip)',
     () => expect(drawbot.getPulseWidth(20, true)).toBe(722))
+
+  test('warn > 108°', () => expect(() => drawbot.getPulseWidth(181)).toThrow())
+
 })
 
 describe('utility', () => {
@@ -52,6 +63,20 @@ describe('utility', () => {
     () => expect(
       drawbot.splitIntoContiguousMoves(POINTS_HALF_IN_HALF_OUT).length).toBe(2))
 
+  test('duty < 500', () => {
+    drawbot.protect(499)
+    expect(spyWarn).not.toHaveBeenCalled()
+  })
+  test('duty cycle > 2500', () => {
+    drawbot.protect(2501)
+    expect(spyWarn).not.toHaveBeenCalled()
+  })
+
+  test('random point',
+    () => {
+      let p = drawbot.getRandomPoint()
+      expect(drawbot.isValidPoint(p.x, p.y)).toBeTruthy()
+    })
 })
 
 describe('calcServoAngles', () => {
@@ -62,7 +87,7 @@ describe('calcServoAngles', () => {
   test('A angle @ max reach', () => expect(positions[0]).toBe(158.82))
   test('B angle @ max reach', () => expect(positions[1]).toBe(21.18))
 
-// check servo degrees @ min reach (5,1)
+  // check servo degrees @ min reach (5,1)
   const MIN_X = 1.5
   const positions2 = drawbot.calcServoAngles(0, MIN_X)
   test('A angle @ min reach', () => expect(positions2[0]).toBe(107.26))
@@ -71,12 +96,20 @@ describe('calcServoAngles', () => {
 })
 
 describe('move', () => {
-
+  test('move home', () => drawbot.moveHome())
   test('move invalid point 4,9 does not throw an error by default',
     () => expect(drawbot.move(4, 8)).toBeUndefined())
-
   test('move invalid point 4,9 does throw an error if directed to',
     () => expect(() => drawbot.move(4, 8, false, true)).toThrow())
+})
+
+describe('draw', () => {
+  test('square',
+    () => expect(() => drawbot.drawPolyline([-3, -2, 3, 4])).not.toThrow())
+  test('square', () => expect(() => drawbot.drawSquare(2, 4, 2)).not.toThrow())
+  test('square',
+    () => expect(() => drawbot.drawTrangle(2, 4, 4, 4)).not.toThrow())
+  test('square', () => expect(() => drawbot.drawCircle(2, 4, 3)).not.toThrow())
 })
 
 describe('calcTranslation', () => {

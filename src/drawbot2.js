@@ -21,18 +21,21 @@ const _ = require('lodash')
  * @param msg message
  * @private
  */
+/* istanbul ignore next */
 const log = (msg) => {
   if (!process.env.TESTING) {
     console.log(msg)
   }
 }
 
+/* istanbul ignore next */
 const warn = (msg) => {
   if (!process.env.TESTING) {
     console.warn(`WARN: ${msg}`)
   }
 }
 
+/* istanbul ignore next */
 const error = (msg) => {
   if (!process.env.TESTING) {
     console.error(`ERROR: ${msg}`)
@@ -233,8 +236,14 @@ const r2 = n => +(n.toFixed(2))
 // const r2 = n => n
 
 // pad and pad Left
+
+/* istanbul ignore next */
 const p4 = n => ('' + n).padEnd(4, ' ')
+
+/* istanbul ignore next */
 const p4L = n => ('' + n).padStart(4, ' ')
+
+/* istanbul ignore next */
 const p6 = n => ('' + n).padEnd(6, ' ')
 
 // /**
@@ -358,6 +367,7 @@ const calcServoAngle = (x, y, same) => {
 /**
  * Activate drawing by lowering.
  */
+/* istanbul ignore next */
 const drawOn = () => {
   if (ENABLE_DRAW_ON_OFF) {
     if (!_drawEnabled) {
@@ -370,6 +380,7 @@ const drawOn = () => {
 /**
  * Disable drawing by raising.
  */
+/* istanbul ignore next */
 const drawOff = () => {
   if (ENABLE_DRAW_ON_OFF) {
     if (_drawEnabled) {
@@ -584,6 +595,7 @@ const protect = (pulse) => {
   return pulse
 }
 
+/* istanbul ignore next */
 const execute = () => {
 
   const NOW = new Date()
@@ -673,6 +685,7 @@ const execute = () => {
 
 }
 
+/* istanbul ignore next */
 const writePigsS = (
   PULSE_A, PULSE_B, x, y, degreesA, degreesB, isTransitional = false) => {
 
@@ -687,6 +700,7 @@ const writePigsS = (
   _pigs.push(line)
 }
 
+/* istanbul ignore next */
 const writePigsScript = (filename, startDate) => {
   return new Promise((resolve, reject) => {
     FS.readFile(PATH.join(__dirname, './templates/pigpoints.sh'),
@@ -714,6 +728,7 @@ const writePigsScript = (filename, startDate) => {
 /**
  * Dumps drawing as an SVG HTML file.
  */
+/* istanbul ignore next */
 const writeHtml = (filename, _coordinates) => {
 
   return new Promise((resolve, reject) => {
@@ -816,6 +831,7 @@ module.exports = {
 
   // utility
   r2, p4, p6,
+  protect,
   getRandomPoint,
   isPointWithinCircle,
   ploylineContainsBadPoint,

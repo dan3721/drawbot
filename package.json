@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf out",
-    "test": "jest",
+    "test": "jest --coverage",
     "diagnostics": "node src/diagnostics.js",
     "examples": "./src/examples/run-all.sh",
     "api": "rimraf api & jsdoc -c jsdoc.conf.json -R README.md"
