@@ -52,6 +52,10 @@ const CFG = {
   gigpoA: 23, // servo A (left)
   gigpoB: 24, // servo B (right)
   gigpoC: 25, // servo C (wrist)
+  servoAMaxPulseWidth: 2500,
+  servoAMinPulseWidth: 500,
+  servoBMaxPulseWidth: 2500,
+  servoBMinPulseWidth: 500,
 }
 
 const min_x = 0 + CFG.servoOffset - CFG.arm2Length
@@ -261,10 +265,11 @@ const p6 = n => ('' + n).padEnd(6, ' ')
 // }
 
 /**
- * Calculates the pulse width for the specified degrees.
+ * Calculates the "standard"(500-2500) pulse width for the specified degrees (0-180°).
  * @param degrees
  * @param flip {boolean} flips when servo is used in opposite orientation
  * @returns {number} pulse width
+ * @see {@link mapPulseWidthToRange}
  */
 const getPulseWidth = (degrees, flip = false) => {
 
@@ -287,6 +292,25 @@ const getPulseWidth = (degrees, flip = false) => {
   }
 
   return width
+}
+
+/**
+ * Maps the standard pulse width into the specified range.
+ *
+ * We need this to deal with servos that are not 500 at 0° and or 2500 @ 180°.
+ * It also allows us to calibrate and factor out dead spots at the limits.
+ *
+ * @param pulseWidth
+ * @param minPulseWidth
+ * @param maxPulseWidth
+ * @returns the adjusted pulse width
+ * @see {@link getPulseWidth}
+ */
+const mapPulseWidthToRange = (
+  pulseWidth, minPulseWidth, maxPulseWidth) => {
+  const pulsePercentage = (pulseWidth - 500) / 2000
+  const range = maxPulseWidth - minPulseWidth
+  return (range * pulsePercentage) + minPulseWidth
 }
 
 /**
@@ -656,8 +680,10 @@ const execute = () => {
             }
 
             // round the actual pulses
-            const ACTUAL_PULSE_A = protect(Math.round(PULSE_A))
-            const ACTUAL_PULSE_B = protect(Math.round(PULSE_B))
+            const ACTUAL_PULSE_A = mapPulseWidthToRange(
+              protect(Math.round(PULSE_A)))
+            const ACTUAL_PULSE_B = mapPulseWidthToRange(
+              protect(Math.round(PULSE_B)))
 
             writePigsS(
               ACTUAL_PULSE_A, ACTUAL_PULSE_B,
@@ -821,6 +847,7 @@ module.exports = {
   calcServoAngles,
   calcTranslation,
   getPulseWidth,
+  mapPulseWidthToRange,
 
   // cmds
   move,

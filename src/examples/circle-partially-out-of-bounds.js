@@ -16,7 +16,7 @@ const getPoints = (x, y, numPoints, radius) => {
   return points
 }
 
-let polygon = getPoints(-3, 8, 16, 1).map(p => drawbot.r2(p))
+let polygon = getPoints(-1.5, 8, 16, 1).map(p => drawbot.r2(p))
 
 drawbot.drawPolyline(polygon)
 drawbot.execute()
