@@ -36,10 +36,11 @@ for (let i = 2 - Z; i > 0.0 - Z * 2; i -= Z) {
 
 // put them all together
 const points = [
+  ...bottomLeftPoints,
+  ...topLeftPoints,
   ...topRightPoints,
   ...bottomRightPoints,
-  ...bottomLeftPoints,
-  ...topLeftPoints]
+]
 
 // shift into drawable area
 const Y_SHIFT = 6.5
