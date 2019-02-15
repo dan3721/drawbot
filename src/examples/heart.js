@@ -16,32 +16,37 @@ const add = (a, b) => parseFloat(a) + parseFloat(b)
 // point resolution
 const Z = .1
 
-// top
+// top curves
 const topRightPoints = []
 const topLeftPoints = []
-for (let i = 0.0-Z; i <= 2; i += Z) {
+for (let i = 0.0 - Z; i <= 2; i += Z) {
   let x = r2(add(i, Z))
   topRightPoints.push(x, fx1(x))
-  topLeftPoints.push(x*-1, fx1(x))
+  topLeftPoints.unshift(x * -1, fx1(x))
 }
 
-// bottom
+// bottom curves
 const bottomRightPoints = []
 const bottomLeftPoints = []
-for (let i = 2-Z; i > 0.0-Z*2; i -= Z) {
+for (let i = 2 - Z; i > 0.0 - Z * 2; i -= Z) {
   let x = r2(add(i, Z))
   bottomRightPoints.push(x, fx2(x))
-  bottomLeftPoints.push(x*-1, fx2(x))
+  bottomLeftPoints.unshift(x * -1, fx2(x))
 }
 
-const points = [...topRightPoints, ...bottomRightPoints, ...topLeftPoints, ...bottomLeftPoints]
+// put them all together
+const points = [
+  ...topRightPoints,
+  ...bottomRightPoints,
+  ...bottomLeftPoints,
+  ...topLeftPoints]
 
+// shift into drawable area
 const Y_SHIFT = 6.5
 const pointsShifted = []
 for (let j = 0; j < points.length; j += 2) {
   pointsShifted.push(points[j], points[j + 1] + Y_SHIFT)
 }
-
 
 drawbot.drawPolyline(pointsShifted)
 drawbot.execute()
