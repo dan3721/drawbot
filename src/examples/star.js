@@ -1,5 +1,6 @@
 const drawbot = require('../drawbot2')
+const shapes = require('../shapes')
 
-let points = [0,2,-2,8,3,4,-3,4,2,8,0,2]
-drawbot.drawPolyline(points)
+const points = shapes.star(-.5, 5.5, 2.5)
+drawbot.drawPolygon(points)
 drawbot.execute()

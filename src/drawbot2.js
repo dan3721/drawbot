@@ -435,19 +435,28 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
 
 const moveHome = () => move(CFG.home.x, CFG.home.y)
 
+const drawPolygon = (points) => {
+  drawPolyline(points, true)
+}
+
 /**
  * Queues multiple moves.
  * @param points {number[]} one or more points
  */
-const drawPolyline = points => {
+const drawPolyline = (points, returnToStart = false) => {
 
   // move to starting location (without drawing)
-  move(points.shift(), points.shift())
+  const xStart = points.shift()
+  const yStart = points.shift()
+  move(xStart, yStart)
 
   // draw to all points
   for (let i = 0; i < points.length; i += 2) {
     move(points[i], points[i + 1], true)
   }
+
+  // return to start so starting point
+  move(xStart, yStart)
 
   drawOff()
 }
@@ -474,16 +483,13 @@ const drawRegularPolygon = (x, y, numPoints, radius) => {
     points.push({x: ptX + x, y: ptY + y})
   }
 
-  // move from last point to the first point so the final edge is drawn
-  points.push(points[0])
-
   points = points.reduce((accum, point) => {
     accum.push(point.x)
     accum.push(point.y)
     return accum
   }, [])
 
-  drawPolyline(points)
+  drawPolygon(points)
 }
 
 const drawSquare = (x, y, width) => {
@@ -853,6 +859,7 @@ module.exports = {
   move,
   moveHome,
   drawPolyline,
+  drawPolygon,
   drawRegularPolygon,
   drawSquare,
   drawTrangle,

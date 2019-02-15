@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Friday, February 15th, 2019, 2:01:01 PM
+# Friday, February 15th, 2019, 2:57:38 PM
 #
 # filename:     bubbles.js
-# num cmds:     8306
-# num points:   339
+# num cmds:     5698
+# num points:   299
 #
 MILS=0
 
@@ -231,7 +231,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 176.68° 85.24 ° 2.25,2.55
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -250,7 +249,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 175   ° 83.11 ° 2.24,2.75
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -265,37 +263,45 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.56° 73.54 ° 3.26,4.89
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.31° 69.43 ° 3.23,5.29
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.16° 67.39 ° 3.2,5.48
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 173.36° 80.92 ° 2.22,2.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.88° 65.23 ° 3.15,5.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.59° 63.01 ° 3.09,5.86
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.29° 60.74 ° 3.02,6.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 177.83° 58.45 ° 2.93,6.23
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 177.32° 56.19 ° 2.83,6.4
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.64° 78.54 ° 2.18,3.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 176.75° 53.96 ° 2.72,6.56
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 176.15° 51.67 ° 2.6,6.72
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -304,14 +310,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 175.36° 49.34 ° 2.46,6.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.01° 76.2  ° 2.13,3.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 174.61° 47.09 ° 2.32,7.01
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -321,16 +328,17 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 173.71° 44.96 ° 2.17,7.13
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 168.26° 73.68 ° 2.06,3.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 172.77° 42.75 ° 2.01,7.25
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -342,8 +350,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 171.72° 40.55 ° 1.84,7.36
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 166.56° 71.2  ° 1.98,3.71
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -356,6 +364,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 170.5 ° 38.45 ° 1.66,7.45
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -364,11 +373,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 164.72° 68.55 ° 1.88,3.89
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 169.26° 36.42 ° 1.48,7.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -383,8 +392,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 167.9 ° 34.39 ° 1.29,7.6
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 162.91° 65.93 ° 1.77,4.06
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -400,11 +409,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 166.44° 32.52 ° 1.1,7.65
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 161.1 ° 63.34 ° 1.65,4.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -415,6 +424,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 165.02° 30.62 ° 0.91,7.7
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -424,7 +434,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 159.28° 60.77 ° 1.52,4.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -434,6 +443,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 163.3 ° 28.89 ° 0.71,7.72
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -446,12 +456,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 157.31° 58.08 ° 1.37,4.51
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 161.63° 27.12 ° 0.51,7.74
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -467,9 +477,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 155.43° 55.51 ° 1.22,4.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 159.83° 25.49 ° 0.31,7.74
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -485,12 +495,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 157.88° 24.01 ° 0.11,7.72
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 153.37° 52.86 ° 1.05,4.75
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -501,6 +511,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 156.07° 22.56 ° -0.08,7.7
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -512,10 +523,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 151.38° 50.32 ° 0.88,4.85
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 153.93° 21.23 ° -0.28,7.65
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -529,13 +540,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 151.91° 19.94 ° -0.47,7.6
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 149.31° 47.74 ° 0.7,4.94
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -543,6 +554,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 149.74° 18.75 ° -0.66,7.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -554,16 +566,17 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 147.59° 17.67 ° -0.84,7.45
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 147.28° 45.24 ° 0.52,5.02
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 145.46° 16.7  ° -1.01,7.36
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -573,6 +586,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 143.16° 15.8  ° -1.18,7.25
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -581,15 +595,16 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 140.88° 14.99 ° -1.34,7.13
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 145.02° 42.62 ° 0.32,5.08
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 138.69° 14.2  ° -1.49,7.01
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -598,47 +613,65 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 136.34° 13.45 ° -1.64,6.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 134.06° 12.87 ° -1.77,6.72
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 142.91° 40.18 ° 0.13,5.13
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 131.77° 12.36 ° -1.89,6.56
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 129.56° 11.86 ° -2,6.4
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 127.34° 11.41 ° -2.1,6.23
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 125.11° 11.02 ° -2.19,6.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 122.86° 10.66 ° -2.27,5.86
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 120.76° 10.41 ° -2.33,5.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 118.73° 10.18 ° -2.38,5.48
+pigs s 23 NaN  s 24 NaN  mils $MILS # 116.86° 10.07 ° -2.41,5.29
+pigs s 23 NaN  s 24 NaN  mils $MILS # 114.99° 9.98  ° -2.43,5.09
+pigs s 23 NaN  s 24 NaN  mils $MILS # 113.19° 9.9   ° -2.44,4.89
+pigs s 23 NaN  s 24 NaN  mils $MILS # 111.59° 9.95  ° -2.43,4.69
+pigs s 23 NaN  s 24 NaN  mils $MILS # 108.77° 10.07 ° -2.38,4.3
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 107.62° 10.27 ° -2.33,4.1
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 106.72° 10.49 ° -2.27,3.91
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 140.64° 37.7  ° -0.07,5.16
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 106.21° 10.89 ° -2.19,3.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 105.93° 11.32 ° -2.1,3.55
+pigs s 23 NaN  s 24 NaN  mils $MILS # 106.01° 11.83 ° -2,3.38
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 106.41° 12.37 ° -1.89,3.21
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -646,6 +679,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 107.33° 13.06 ° -1.77,3.06
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -654,10 +688,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 108.69° 13.83 ° -1.64,2.91
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 138.34° 35.31 ° -0.27,5.17
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -665,6 +699,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 110.81° 14.87 ° -1.49,2.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -676,6 +711,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 113.38° 15.95 ° -1.34,2.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -683,7 +719,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 136.02° 32.93 ° -0.47,5.17
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -691,6 +726,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 116.61° 17.32 ° -1.18,2.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -707,9 +743,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 120.49° 18.85 ° -1.01,2.42
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.67° 30.58 ° -0.67,5.16
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -727,6 +763,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 124.74° 20.63 ° -0.84,2.33
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -735,7 +772,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 131.25° 28.27 ° -0.87,5.13
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -751,6 +787,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 129.5 ° 22.75 ° -0.66,2.25
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -760,7 +797,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 128.72° 25.98 ° -1.07,5.08
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -779,13 +815,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 134.63° 25.31 ° -0.47,2.18
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 126.25° 23.79 ° -1.26,5.02
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -808,10 +844,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 123.76° 21.71 ° -1.44,4.94
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 139.73° 28.18 ° -0.28,2.12
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -831,7 +867,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 121.18° 19.61 ° -1.62,4.85
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -852,10 +887,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 144.77° 31.75 ° -0.08,2.08
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 118.53° 17.46 ° -1.8,4.75
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -877,7 +912,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 115.99° 15.5  ° -1.96,4.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -895,11 +929,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 149.26° 35.55 ° 0.11,2.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 113.27° 13.48 ° -2.12,4.51
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -920,7 +954,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 110.64° 11.63 ° -2.26,4.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -941,9 +974,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 107.88° 9.69  ° -2.4,4.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 153.43° 40.14 ° 0.31,2.04
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -961,7 +994,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 105.19° 7.89  ° -2.52,4.06
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -981,12 +1013,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 102.44° 6.1   ° -2.63,3.89
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 157.19° 45.16 ° 0.51,2.04
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1000,7 +1032,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 99.75 ° 4.43  ° -2.72,3.71
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1018,13 +1049,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 97.08 ° 2.79  ° -2.8,3.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 160.55° 50.52 ° 0.71,2.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1037,7 +1068,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 94.32 ° 1.11  ° -2.87,3.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1049,7 +1079,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 91.57 ° 0     ° -2.93,3.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1058,6 +1087,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 163.42° 56.13 ° 0.91,2.08
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1084,6 +1114,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 165.83° 61.44 ° 1.1,2.12
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1105,6 +1136,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 167.88° 66.52 ° 1.29,2.18
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1125,6 +1157,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 169.74° 71.18 ° 1.48,2.25
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1141,6 +1174,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 171.31° 75.09 ° 1.66,2.33
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1157,6 +1191,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 172.77° 78.46 ° 1.84,2.42
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1168,6 +1203,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 173.92° 81.01 ° 2.01,2.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1179,6 +1215,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 174.99° 82.96 ° 2.17,2.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1188,38 +1225,51 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 175.82° 84.21 ° 2.32,2.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 176.53° 84.94 ° 2.46,2.91
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 177.24° 85.34 ° 2.6,3.06
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.23° 84.81 ° 2.83,3.38
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.64° 84.12 ° 2.93,3.55
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.99° 83.15 ° 3.02,3.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.2 ° 81.96 ° 3.09,3.91
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.37° 80.55 ° 3.15,4.1
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.51° 78.94 ° 3.2,4.3
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.67° 75.51 ° 3.26,4.69
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.56° 73.54 ° 3.26,4.89
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 32.15 ° 2.05,8.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.51° 26.65 ° 1.5,8.4
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1241,6 +1291,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 175.5 ° 28.61 ° 1.44,8.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1256,10 +1307,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 174.1 ° 31.14 ° 1.5,8.04
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 174.54° 33.35 ° 1.65,7.93
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1272,15 +1325,18 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 176.57° 34.52 ° 1.84,7.93
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.42° 34.09 ° 1.99,8.04
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 32.15 ° 2.05,8.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1567,6 +1623,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 127.18° 6.26  ° -2.47,6.51
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1581,6 +1638,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 128.48° 4.78  ° -2.53,6.69
+pigs s 23 NaN  s 24 NaN  mils $MILS # 128.63° 2.55  ° -2.68,6.8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1593,8 +1652,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 127.46° 0.29  ° -2.88,6.8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 125.52° 0     ° -3.03,6.69
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1602,7 +1663,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 121.82° 0.71  ° -3.03,6.32
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 121.68° 2.8   ° -2.88,6.21
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1616,6 +1679,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 122.98° 5.05  ° -2.68,6.21
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1629,6 +1693,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 125.01° 6.34  ° -2.53,6.32
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1659,6 +1724,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 148.77° 9.06  ° -1.31,7.92
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1677,12 +1743,14 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 150.47° 6.71  ° -1.36,8.1
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 151.08° 3.64  ° -1.51,8.23
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1691,6 +1759,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 150.32° 1.18  ° -1.7,8.26
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1701,6 +1770,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 148.26° 0.16  ° -1.88,8.18
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1708,6 +1778,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 145.72° 0.92  ° -1.98,8.02
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1730,6 +1801,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 143.4 ° 2.98  ° -1.98,7.82
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1741,8 +1813,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 142.26° 5.51  ° -1.88,7.66
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 142.58° 8.07  ° -1.7,7.58
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1759,9 +1833,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 144.07° 9.87  ° -1.51,7.6
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 146.42° 10.3  ° -1.36,7.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1774,6 +1850,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 148.77° 9.06  ° -1.31,7.92
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1826,6 +1903,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 171.76° 13.82 ° 0.33,8.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1866,6 +1944,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 175.43° 10.04 ° 0.31,8.93
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1910,12 +1989,14 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.5 ° 4.86  ° 0.22,9.11
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 160.85° 0.67  ° -1.08,8.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1946,6 +2027,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 158   ° 4.41  ° -1.05,8.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1966,6 +2048,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 156.19° 7.79  ° -0.96,8.35
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1975,6 +2058,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 155.29° 10.83 ° -0.83,8.2
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -1984,6 +2068,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 156.11° 15.98 ° -0.47,8.03
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2000,6 +2085,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 157.7 ° 17.75 ° -0.27,8.03
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2011,7 +2097,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 159.89° 18.77 ° -0.08,8.09
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 162.52° 18.99 ° 0.09,8.2
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2019,6 +2107,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 165.39° 18.28 ° 0.22,8.35
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2036,6 +2125,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 168.52° 16.65 ° 0.31,8.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2066,6 +2156,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 171.76° 13.82 ° 0.33,8.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2124,7 +2215,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 104.08° 8.59  ° -2.39,3.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 105.29° 8.7   ° -2.43,3.96
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2135,6 +2228,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 104.31° 5.73  ° -2.73,4.2
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2154,6 +2248,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 102.5 ° 3.52  ° -2.92,4.2
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2178,6 +2273,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 99.99 ° 1.23  ° -3.1,4.11
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2191,11 +2287,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 97.41 ° 0     ° -3.22,3.96
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 93.77 ° 0.54  ° -2.92,3.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2219,6 +2317,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 95.93 ° 2.74  ° -2.73,3.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2247,6 +2346,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 99    ° 5.3   ° -2.55,3.43
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2269,6 +2369,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 101.89° 7.39  ° -2.43,3.58
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2281,6 +2382,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 104.08° 8.59  ° -2.39,3.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2308,6 +2410,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 136.99° 11.05 ° -1.77,7.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2324,7 +2427,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 138.52° 9.25  ° -1.82,7.25
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 138.73° 6.65  ° -1.98,7.38
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2334,6 +2439,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 137.79° 4.26  ° -2.18,7.41
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2347,6 +2453,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 135.78° 2.94  ° -2.36,7.32
+pigs s 23 NaN  s 24 NaN  mils $MILS # 133.38° 2.87  ° -2.47,7.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2359,6 +2467,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 131.38° 4.08  ° -2.47,6.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2369,11 +2478,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 130.44° 6.21  ° -2.36,6.78
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 130.91° 8.57  ° -2.18,6.7
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2391,6 +2502,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 132.59° 10.58 ° -1.98,6.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2401,11 +2513,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 134.91° 11.61 ° -1.82,6.86
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 136.99° 11.05 ° -1.77,7.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2449,13 +2563,16 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 110.78° 7.11  ° -2.68,4.86
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 112.07° 6.54  ° -2.73,5.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 112.3 ° 4.99  ° -2.86,5.19
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2463,6 +2580,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 111.61° 2.89  ° -3.04,5.26
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2479,6 +2597,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 110.09° 0.73  ° -3.23,5.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2486,6 +2605,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 107.94° 0     ° -3.39,5.13
+pigs s 23 NaN  s 24 NaN  mils $MILS # 102.63° 0.44  ° -3.23,4.48
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2499,6 +2620,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 103.87° 2.58  ° -3.04,4.45
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2522,6 +2644,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 106.09° 4.76  ° -2.86,4.52
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2539,6 +2662,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 108.63° 6.43  ° -2.73,4.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2546,6 +2670,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 110.78° 7.11  ° -2.68,4.86
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2571,6 +2696,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 116.86° 9.41  ° -1.18,1.85
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2587,6 +2713,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 114.5 ° 11    ° -1.25,2.04
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2599,6 +2726,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 109.77° 9.83  ° -1.43,2.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2632,6 +2760,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 104.43° 6.72  ° -1.63,2.11
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2670,6 +2799,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 100.06° 3.2   ° -1.76,1.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2683,15 +2813,16 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # NaN   ° 147.04° -0.87,-0.02
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 98.67 ° 0.64  ° -1.76,1.75
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 101.87° 0     ° -1.63,1.59
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2709,6 +2840,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 108.94° 1.6   ° -1.43,1.55
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2716,7 +2848,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # NaN   ° 144.12° -0.67,-0.06
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2749,11 +2880,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # NaN   ° 141.15° -0.47,-0.07
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 115.19° 5.59  ° -1.25,1.66
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2771,6 +2902,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 116.86° 9.41  ° -1.18,1.85
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2790,10 +2922,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 118.62° 3.86  ° -2.87,5.88
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 79.43 ° 137.13° -0.27,-0.07
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2805,14 +2937,17 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 119.99° 2.42  ° -2.95,6.08
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 119.5 ° 0.04  ° -3.14,6.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 114.26° 1.33  ° -3.14,5.61
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2834,11 +2969,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 116.3 ° 3.36  ° -2.95,5.69
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 118.62° 3.86  ° -2.87,5.88
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2859,7 +2996,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 56.04 ° 131.18° -0.07,-0.06
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2927,6 +3063,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 107.62° 11.82 ° -1.6,2.58
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2938,6 +3075,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 105.72° 11.63 ° -1.8,2.9
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2961,9 +3099,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 44.57 ° 122.06° 0.13,-0.02
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 102.57° 9.31  ° -1.99,2.92
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2980,7 +3118,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 178.3 ° 87.11 ° 2.24,2.35
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -2993,12 +3130,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 99.05 ° 6.63  ° -2.16,2.84
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 176.68° 85.24 ° 2.25,2.55
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3021,6 +3158,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 95.71 ° 4.11  ° -2.27,2.68
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3035,11 +3173,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 56.21 ° 3.28,6.65
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 93.8  ° 2.58  ° -2.27,2.49
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 94.12 ° 2.36  ° -2.16,2.32
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3048,52 +3187,45 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 177.74° 33.58 ° 1.86,8.02
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 96.87 ° 3.62  ° -1.99,2.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 175.36° 32.61 ° 1.66,8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 172.86° 31.97 ° 1.47,7.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.16° 31.56 ° 1.28,7.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 167.57° 31.4  ° 1.11,7.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 165   ° 31.57 ° 0.96,7.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 162.54° 31.97 ° 0.83,7.49
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 160.21° 32.58 ° 0.72,7.32
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 101.33° 6.28  ° -1.8,2.27
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.07° 33.33 ° 0.63,7.14
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3104,7 +3236,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 156.23° 34.29 ° 0.57,6.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3117,7 +3248,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 154.7 ° 35.5  ° 0.54,6.75
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3128,9 +3258,9 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 105.54° 9.51  ° -1.65,2.4
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 153.55° 36.89 ° 0.54,6.55
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3138,30 +3268,26 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 152.85° 38.44 ° 0.57,6.36
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 152.5 ° 40.29 ° 0.63,6.16
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 152.67° 42.3  ° 0.72,5.98
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 153.25° 44.37 ° 0.83,5.82
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 107.62° 11.82 ° -1.6,2.58
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 154.18° 46.61 ° 0.96,5.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3176,7 +3302,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 155.49° 48.95 ° 1.11,5.54
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3194,7 +3319,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 157.18° 51.32 ° 1.28,5.44
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3217,7 +3341,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 159.21° 53.78 ° 1.47,5.36
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3240,7 +3363,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 161.32° 56.03 ° 1.66,5.31
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3263,7 +3385,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 163.6 ° 58.13 ° 1.86,5.29
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3279,12 +3400,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.41° 22.51 ° 1.24,8.58
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 165.91° 60.02 ° 2.06,5.29
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3297,10 +3418,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 19.28 ° 1.18,8.76
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 168.25° 61.5  ° 2.26,5.33
+pigs s 23 NaN  s 24 NaN  mils $MILS # 177.21° 14.56 ° 0.68,8.84
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3313,20 +3435,17 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.5 ° 62.62 ° 2.45,5.39
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 172.57° 63.12 ° 2.62,5.49
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 174.67° 63.41 ° 2.79,5.6
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 173.17° 16.43 ° 0.57,8.68
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 176.51° 63.1  ° 2.93,5.74
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3334,7 +3453,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 178.23° 62.37 ° 3.05,5.9
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3345,9 +3463,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 179.83° 61.34 ° 3.15,6.07
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 59.87 ° 3.22,6.26
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3359,6 +3475,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 170.19° 19.31 ° 0.57,8.48
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3369,12 +3486,14 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 169.16° 22.18 ° 0.68,8.32
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 169.81° 24.38 ° 0.85,8.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3385,6 +3504,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 172.02° 25.36 ° 1.04,8.27
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3392,6 +3512,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 175.08° 24.64 ° 1.18,8.4
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3415,6 +3536,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 178.41° 22.51 ° 1.24,8.58
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3431,6 +3553,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.89° 74.78 ° 1.53,1.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3450,6 +3573,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 176.4 ° 73    ° 1.49,1.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3491,6 +3615,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 172.62° 69.03 ° 1.37,1.89
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3531,6 +3656,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 168.94° 64.04 ° 1.2,1.99
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3566,6 +3692,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 165.73° 58.34 ° 1,2.01
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3588,11 +3715,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 163.58° 52.55 ° 0.81,1.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 163.07° 46.96 ° 0.66,1.82
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3614,6 +3743,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 165.02° 41.83 ° 0.58,1.63
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3655,8 +3785,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 168.87° 38.01 ° 0.58,1.44
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 152.2 ° 17.18 ° -0.62,7.76
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3677,12 +3807,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 154.05° 15.13 ° -0.64,7.96
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 174.42° 35.58 ° 0.66,1.25
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3696,21 +3826,23 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 155.78° 12.5  ° -0.7,8.16
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.5 ° 37.01 ° 0.81,1.12
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 43.93 ° 1,1.06
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.89° 74.78 ° 1.53,1.53
+pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 87.72 ° 2.06,1.93
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 157.07° 9.59  ° -0.8,8.33
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3721,16 +3853,14 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.04° 6.25  ° -0.94,8.48
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.68° 2.78  ° -1.1,8.6
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.72° 0     ° -1.29,8.68
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 177.85° 84.54 ° 2,2.11
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3744,7 +3874,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 135.66° 1.34  ° -2.47,7.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3758,19 +3887,17 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 134.38° 3.72  ° -2.37,7.19
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.71° 6.08  ° -2.24,7.04
+pigs s 23 NaN  s 24 NaN  mils $MILS # 174.87° 80.18 ° 1.85,2.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 134.23° 10.97 ° -1.89,6.84
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3783,7 +3910,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 135.35° 13.3  ° -1.69,6.8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3794,14 +3920,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 172.45° 75.71 ° 1.66,2.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 136.89° 15.39 ° -1.49,6.8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 171.71° 72.46 ° 1.51,2.11
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3813,6 +3940,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 173.14° 71.34 ° 1.45,1.93
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3821,7 +3949,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 138.81° 17.24 ° -1.29,6.84
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3837,8 +3964,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 141   ° 18.71 ° -1.1,6.92
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 176.36° 73.6  ° 1.51,1.75
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3846,16 +3973,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 143.28° 19.57 ° -0.94,7.04
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 145.67° 19.95 ° -0.8,7.19
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 148.01° 19.61 ° -0.7,7.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3865,7 +3989,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 150.17° 18.7  ° -0.64,7.56
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3879,10 +4002,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 179.73° 78.89 ° 1.66,1.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 84.91 ° 1.85,1.64
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 152.2 ° 17.18 ° -0.62,7.76
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3968,7 +4092,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 167.94° 24.97 ° 0.77,8.14
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -3989,7 +4112,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 169.87° 22.3  ° 0.73,8.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4001,8 +4123,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.93° 19.41 ° 0.62,8.5
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.79° 16.74 ° 0.45,8.6
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4019,18 +4139,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 169.29° 14.89 ° 0.25,8.62
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 166.64° 14.36 ° 0.06,8.55
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 163.73° 14.93 ° -0.08,8.42
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4047,7 +4164,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 160.9 ° 16.43 ° -0.16,8.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4070,7 +4186,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.81° 18.5  ° -0.16,8.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4083,9 +4198,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 157.66° 20.98 ° -0.08,7.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 157.54° 23.49 ° 0.06,7.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4098,7 +4211,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.67° 25.64 ° 0.25,7.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4114,12 +4226,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 160.65° 27.1  ° 0.45,7.69
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 163.09° 27.51 ° 0.62,7.79
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4128,7 +4238,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 165.61° 26.74 ° 0.73,7.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4148,7 +4257,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 167.94° 24.97 ° 0.77,8.14
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4188,7 +4296,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.12° 21.33 ° -1.25,6.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4198,18 +4305,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 134.04° 20.04 ° -1.3,6.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 134.38° 18.15 ° -1.41,6.41
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.7 ° 15.79 ° -1.59,6.51
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4225,7 +4329,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 132.28° 13.56 ° -1.79,6.53
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4245,7 +4348,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 130.23° 11.83 ° -1.98,6.46
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4256,18 +4358,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 128.05° 10.83 ° -2.12,6.33
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 125.81° 10.48 ° -2.21,6.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 124.1 ° 11.09 ° -2.21,5.95
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4276,8 +4375,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 123.32° 12.56 ° -2.12,5.77
-pigs s 23 NaN  s 24 NaN  mils $MILS # 123.39° 14.44 ° -1.98,5.63
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4291,7 +4388,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 124.64° 16.72 ° -1.79,5.57
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4313,7 +4409,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 126.66° 18.94 ° -1.59,5.59
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4333,7 +4428,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 129.08° 20.72 ° -1.41,5.69
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4342,9 +4436,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 131.24° 21.47 ° -1.3,5.85
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.12° 21.33 ° -1.25,6.05
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4481,15 +4573,12 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 145.44° 36.47 ° 0.09,5.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 146.11° 35.12 ° 0.06,6.07
-pigs s 23 NaN  s 24 NaN  mils $MILS # 146.01° 33.19 ° -0.04,6.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4498,7 +4587,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 145.18° 30.86 ° -0.2,6.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4513,7 +4601,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 143.79° 28.56 ° -0.39,6.44
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4534,7 +4621,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 141.9 ° 26.54 ° -0.59,6.44
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4552,7 +4638,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 139.67° 24.94 ° -0.78,6.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4563,13 +4648,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 137.39° 23.98 ° -0.93,6.24
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 135.3 ° 23.63 ° -1.03,6.07
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.58° 23.94 ° -1.07,5.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4579,7 +4661,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 132.68° 25.04 ° -1.03,5.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4589,7 +4670,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 133.54° 28.75 ° -0.78,5.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4608,7 +4688,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 135.27° 31.16 ° -0.59,5.3
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4633,7 +4712,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 137.52° 33.49 ° -0.39,5.3
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4655,7 +4733,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 139.99° 35.45 ° -0.2,5.37
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4669,18 +4746,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 142.35° 36.76 ° -0.04,5.5
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 144.19° 37.11 ° 0.06,5.67
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 145.44° 36.47 ° 0.09,5.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4852,6 +4926,8 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 96.98 ° 4.83  ° -2.41,3.03
+pigs s 23 NaN  s 24 NaN  mils $MILS # 97.74 ° 4.97  ° -2.49,3.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4869,6 +4945,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 96.14 ° 3.2   ° -2.67,3.29
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4897,12 +4974,15 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 93.14 ° 0.62  ° -2.86,3.22
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 90.22 ° 0     ° -2.93,3.03
+pigs s 23 NaN  s 24 NaN  mils $MILS # 90.56 ° 0.08  ° -2.67,2.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4931,14 +5011,13 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 168.01° 65.85 ° 2.26,4.8
+pigs s 23 NaN  s 24 NaN  mils $MILS # 94    ° 2.72  ° -2.49,2.85
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 167.42° 63.82 ° 2.21,4.99
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4952,11 +5031,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 166.11° 61.48 ° 2.09,5.14
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 96.98 ° 4.83  ° -2.41,3.03
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4973,7 +5052,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 164.22° 59.16 ° 1.92,5.23
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -4993,7 +5071,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 162.02° 57.3  ° 1.73,5.23
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5007,22 +5084,18 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 159.8 ° 56.1  ° 1.55,5.14
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.21° 55.81 ° 1.43,4.99
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 157.59° 56.57 ° 1.39,4.8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 158.04° 58.14 ° 1.43,4.62
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5039,7 +5112,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 159.59° 60.57 ° 1.55,4.46
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5065,7 +5137,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 161.89° 63.26 ° 1.73,4.38
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5090,7 +5161,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 164.24° 65.49 ° 1.92,4.38
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5104,13 +5174,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 166.21° 66.8  ° 2.09,4.46
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 168.01° 65.85 ° 2.26,4.8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5232,7 +5300,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 179.07° 76.86 ° 3.19,4.5
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5240,7 +5307,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 178.41° 74.68 ° 3.15,4.69
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5257,11 +5323,11 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 176.82° 72.31 ° 3.02,4.83
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 161.23° 31.11 ° 0.27,1.54
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5280,7 +5346,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 174.73° 70.21 ° 2.84,4.9
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5289,6 +5354,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 156.47° 33.54 ° 0.22,1.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5296,21 +5362,18 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 172.54° 68.78 ° 2.65,4.88
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.71° 68.3  ° 2.49,4.77
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 151.17° 32.42 ° 0.08,1.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 169.77° 68.89 ° 2.4,4.6
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170   ° 70.58 ° 2.4,4.4
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5325,7 +5388,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.37° 72.99 ° 2.49,4.23
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5346,10 +5408,10 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 145.92° 28.74 ° -0.12,1.92
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 173.51° 75.63 ° 2.65,4.12
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5372,7 +5434,6 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 175.78° 77.71 ° 2.84,4.1
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5383,16 +5444,14 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 177.71° 78.7  ° 3.02,4.17
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 178.92° 78.43 ° 3.15,4.31
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 179.07° 76.86 ° 3.19,4.5
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 141.98° 24.09 ° -0.31,1.87
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5411,6 +5470,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 140.33° 19.09 ° -0.45,1.73
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5432,6 +5492,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 142.32° 14.57 ° -0.5,1.54
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5472,6 +5533,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 148.78° 10.93 ° -0.45,1.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5486,6 +5548,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 157.4 ° 9.53  ° -0.31,1.2
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5504,6 +5567,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 163.89° 11.28 ° -0.12,1.15
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5531,6 +5595,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 166.37° 16.95 ° 0.08,1.2
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5545,6 +5610,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 165.03° 24.7  ° 0.22,1.34
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
@@ -5587,2681 +5653,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 119.2 ° 12.54 ° -2.19,5.34
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 120.25° 11.71 ° -2.24,5.52
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 120.1 ° 9.77  ° -2.39,5.65
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 118.87° 7.7   ° -2.57,5.67
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 116.79° 5.8   ° -2.75,5.59
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 114.59° 4.89  ° -2.85,5.43
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 112.93° 5.07  ° -2.85,5.25
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 112.26° 6.3   ° -2.75,5.09
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 113.07° 8.39  ° -2.57,5.01
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 114.84° 10.47 ° -2.39,5.03
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 117.28° 12.14 ° -2.24,5.16
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 119.2 ° 12.54 ° -2.19,5.34
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 128.69° 9.39  ° -2.2,6.47
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 130.13° 8.11  ° -2.24,6.66
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 130.79° 6.16  ° -2.35,6.81
-pigs s 23 NaN  s 24 NaN  mils $MILS # 130.68° 3.75  ° -2.52,6.91
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 129.69° 1.4   ° -2.72,6.93
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 128.07° 0     ° -2.9,6.87
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 120.43° 0.94  ° -3.05,6.19
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 120.12° 3.04  ° -2.9,6.06
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 120.76° 5.24  ° -2.72,6
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 122.36° 7.43  ° -2.52,6.02
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 124.5 ° 9.03  ° -2.35,6.12
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 126.72° 9.7   ° -2.24,6.28
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 128.69° 9.39  ° -2.2,6.47
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.7 ° 5.64  ° -0.15,8.95
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 176.73° 0     ° -0.19,9.15
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 160.21° 2.34  ° -1.03,8.67
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 159.15° 6.13  ° -0.88,8.53
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 159.67° 8.82  ° -0.69,8.47
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 161.42° 10.41 ° -0.49,8.49
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 164.2 ° 10.62 ° -0.31,8.59
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 167.79° 8.99  ° -0.19,8.76
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.7 ° 5.64  ° -0.15,8.95
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 148.64° 26.93 ° -0.24,6.95
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 149.43° 24.96 ° -0.31,7.14
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 148.67° 22.55 ° -0.49,7.24
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 146.74° 20.87 ° -0.69,7.21
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 144.36° 20.69 ° -0.82,7.05
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 142.79° 21.93 ° -0.82,6.85
-pigs s 23 NaN  s 24 NaN  mils $MILS # 142.73° 24.16 ° -0.69,6.69
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 144.32° 26.32 ° -0.49,6.66
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 146.66° 27.49 ° -0.31,6.76
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 148.64° 26.93 ° -0.24,6.95
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 87.57 ° 3.26,3.53
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 179.36° 82.47 ° 3.09,3.86
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 177.06° 80.05 ° 2.91,3.93
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 174.93° 78.42 ° 2.72,3.9
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 173.35° 77.62 ° 2.56,3.8
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 172.89° 78.14 ° 2.47,3.63
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 173.75° 79.99 ° 2.47,3.43
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 175.66° 82.78 ° 2.56,3.26
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 178.08° 85.83 ° 2.72,3.16
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 88.42 ° 2.91,3.13
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.56° 74.45 ° 2.47,4.04
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.31° 72.12 ° 2.4,4.22
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 168.09° 69.44 ° 2.23,4.32
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 165.85° 67.62 ° 2.04,4.28
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 164.62° 67.25 ° 1.92,4.14
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 165.09° 68.71 ° 1.92,3.94
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 167.04° 71.38 ° 2.04,3.79
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 169.49° 74.05 ° 2.23,3.76
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.24° 75.24 ° 2.4,3.86
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 171.56° 74.45 ° 2.47,4.04
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 179.81° 23.51 ° 1.38,8.57
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 180   ° 19.96 ° 1.32,8.77
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 178.38° 15.01 ° 0.77,8.85
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 174.04° 17.09 ° 0.66,8.68
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.9 ° 20.11 ° 0.66,8.47
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 169.76° 23.08 ° 0.77,8.3
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 170.53° 25.52 ° 0.96,8.21
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 172.96° 26.6  ° 1.17,8.24
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 176.28° 25.8  ° 1.32,8.38
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 179.81° 23.51 ° 1.38,8.57
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 106.25° 3.94  ° -2.94,4.61
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 107.39° 3.27  ° -3.01,4.79
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 106.77° 1.24  ° -3.19,4.87
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 104.69° 0     ° -3.37,4.79
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 101.74° 0.71  ° -3.19,4.36
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 103.93° 2.9   ° -3.01,4.43
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # 106.25° 3.94  ° -2.94,4.61
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 161.23° 31.11 ° 0.27,1.54
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *

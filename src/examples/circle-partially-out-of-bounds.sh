@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Friday, February 15th, 2019, 2:01:04 PM
+# Friday, February 15th, 2019, 2:57:40 PM
 #
 # filename:     circle-partially-out-of-bounds.js
-# num cmds:     274
-# num points:   18
+# num cmds:     262
+# num points:   19
 #
 MILS=0
 
@@ -258,19 +258,7 @@ pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
-pigs s 23 NaN  s 24 NaN  mils $MILS # *
+pigs s 23 NaN  s 24 NaN  mils $MILS # 155.56° 16.01 ° -0.5,8
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
 pigs s 23 NaN  s 24 NaN  mils $MILS # *
