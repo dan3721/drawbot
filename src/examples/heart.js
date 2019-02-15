@@ -1,5 +1,7 @@
 /**
  * Heart
+ *
+ * https://www.quora.com/What-is-the-equation-that-gives-you-a-heart-on-the-graph
  */
 const drawbot = require('../drawbot2')
 

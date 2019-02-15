@@ -39,7 +39,7 @@ Promise.all([tempSensorP, humiditySensorP]).then(sensors => {
 
     if (!!tempF && rh) {
       console.log(
-        `The temperature is ${tempF}°F with a relative humidity of ${rh}°`)
+        `The temperature is ${tempF}°F with a relative humidity of ${rh}%`)
     }
 
   }, 1000)

@@ -5,6 +5,8 @@
  *
  * See the example drawings...
  *
+ * Arm servos [TowerPro MG995|https://www.towerpro.com.tw/product/mg995/]
+ *
  * @version 2.0
  * @module drawbot
  * @see module:drawbot
@@ -45,11 +47,11 @@ const error = (msg) => {
 const CFG = {
   home: {x: 0, y: 1.5},
   servoOffset: 1,
-  arm1Length: 4.5, // 4
-  arm2Length: 5.3, // 5.75
-  gigpoA: 9,  // servo A (left)
-  gigpoB: 10, // servo B (right)
-  gigpoC: 11,  // servo C (wrist)
+  arm1Length: 5,
+  arm2Length: 4.3,
+  gigpoA: 23, // servo A (left)
+  gigpoB: 24, // servo B (right)
+  gigpoC: 25, // servo C (wrist)
 }
 
 const min_x = 0 + CFG.servoOffset - CFG.arm2Length
@@ -689,7 +691,8 @@ const execute = () => {
 const writePigsS = (
   PULSE_A, PULSE_B, x, y, degreesA, degreesB, isTransitional = false) => {
 
-  let pcmd = `pigs s 10 ${p4(PULSE_A)} s 9 ${p4(PULSE_B)} mils $MILS`
+  let pcmd = `pigs s ${CFG.gigpoA} ${p4(PULSE_A)} s ${CFG.gigpoB} ${p4(
+    PULSE_B)} mils $MILS`
   let line = `${pcmd} # `
   if (!isTransitional) {
     line += `${p6(degreesA)}° ${p6(degreesB)}° ${x},${y}`
