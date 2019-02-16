@@ -5,11 +5,11 @@ provide the actual drawing movements and the third provides the wrist movement t
 drawing implement from the drawing surface.
 
 1. Choose arm servos which have a deadband less than 5 usec or lines will not be smooth. I 
-    chose [TowerPro MG995|https://www.towerpro.com.tw/product/mg995/](s) which have a
+    chose [TowerPro MG995](https://www.towerpro.com.tw/product/mg995/)(s) which have a
     deadband of 1 usec. 
 1. Calibrate the servos.
 1. The wrist servo is less of a concern but having a bracket to do the mounting is handy. I 
-    chose [Hobbypark HDR315M|https://www.amazon.com/Hobbypark-HDR315M-Digital-Torque-Mouting/dp/B01H6IR7T0].
+    chose [Hobbypark HDR315M](https://www.amazon.com/Hobbypark-HDR315M-Digital-Torque-Mouting/dp/B01H6IR7T0).
 1. Build the arms and configure their detentions in drawbot.CFG.
 
 #### Specifics
