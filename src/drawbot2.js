@@ -1,12 +1,6 @@
 /**
  * Draw Bot 2.0
  *
- * The general usage pattern is to queue some commands and then invoke execute).
- *
- * See the example drawings...
- *
- * Arm servos [TowerPro MG995|https://www.towerpro.com.tw/product/mg995/]
- *
  * @version 2.0
  * @module drawbot
  * @see module:drawbot
