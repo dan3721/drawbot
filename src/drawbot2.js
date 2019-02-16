@@ -441,6 +441,9 @@ const drawPolyline = (points, returnToStart = false) => {
     }, [])
   }
 
+  // TODO: test with circle-partially-out-of-bounds.js
+  // points = splitIntoContiguousMoves(points)
+
   // move to starting location (without drawing)
   const xStart = points.shift()
   const yStart = points.shift()
