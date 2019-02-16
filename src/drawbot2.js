@@ -39,6 +39,9 @@ const error = (msg) => {
   }
 }
 
+/**
+ * Setup configurations.
+ */
 const CFG = {
   home: {x: 0, y: 1.5},
   servoOffset: 1,
@@ -161,6 +164,12 @@ const splitIntoContiguousMoves = (polyline, moves = []) => {
   return moves
 }
 
+/**
+ * Tests the specified point to see if it is within the drawable area.
+ * @param x
+ * @param y
+ * @returns {boolean}
+ */
 const isValidPoint = (x, y) => {
   let valid = false
   if (y >= min_y) { // greater than the y min
@@ -404,8 +413,16 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
   CMD_QUEUE.push({action: 'move', x: r2(x), y: r2(y)})
 }
 
+/**
+ * Moves the arms to the home position.
+ */
 const moveHome = () => move(CFG.home.x, CFG.home.y)
 
+/**
+ * Queues the specified polygon.
+ * @param points
+ * @see {@link drawPolyline}
+ */
 const drawPolygon = (points) => {
   drawPolyline(points, true)
 }
@@ -537,6 +554,11 @@ const calcTranslation = (x1, y1, x2, y2) => {
   }
 }
 
+/**
+ * Ensures the specified pulse is between 500 and 2500 inclusive.
+ * @param pulse
+ * @returns {*}
+ */
 const protect = (pulse) => {
   if (pulse < SERVO_MIN_PULSE_WIDTH) {
     warn(
@@ -551,6 +573,9 @@ const protect = (pulse) => {
   return pulse
 }
 
+/**
+ * Executes all queued draw commands.
+ */
 /* istanbul ignore next */
 const execute = () => {
 
@@ -645,6 +670,10 @@ const execute = () => {
 
 }
 
+/**
+ * Writes a pigs servo command to the pigs script.
+ * @see {@link writePigsScript}
+ */
 /* istanbul ignore next */
 const writePigsS = (
   PULSE_A, PULSE_B, x, y, degreesA, degreesB, isTransitional = false) => {
@@ -661,6 +690,10 @@ const writePigsS = (
   _pigs.push(line)
 }
 
+/**
+ * Emits an executable shell script of pig commands to actually render the
+ * drawing.
+ */
 /* istanbul ignore next */
 const writePigsScript = (filename, startDate) => {
   return new Promise((resolve, reject) => {
@@ -686,6 +719,7 @@ const writePigsScript = (filename, startDate) => {
       })
   })
 }
+
 /**
  * Dumps drawing as an SVG HTML file.
  */

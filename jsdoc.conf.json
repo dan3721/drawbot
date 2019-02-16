@@ -27,6 +27,7 @@
     "monospaceLinks": false,
     "systemName": "Mr. Drawbot",
     "systemSummary": "_What's the matter with this thing? What's all this churning and bubbling, you call that a radar screen? - Dark Helmet_",
-    "search": false
+    "search": false,
+    "sort": "longname, version, since, linenum"
   }
 }
