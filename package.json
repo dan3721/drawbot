@@ -28,6 +28,7 @@
     "lodash": "4.17.11"
   },
   "devDependencies": {
+    "foodoc": "0.0.9",
     "jest": "24.1.0",
     "jsdoc": "3.5.5",
     "rimraf": "2.6.3"

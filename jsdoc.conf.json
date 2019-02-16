@@ -1,6 +1,7 @@
 {
   "opts": {
-    "destination": "api"
+    "destination": "api",
+    "template": "node_modules/foodoc/template"
   },
   "plugins": [
     "plugins/markdown"
@@ -23,6 +24,9 @@
   },
   "templates": {
     "cleverLinks": false,
-    "monospaceLinks": false
+    "monospaceLinks": false,
+    "systemName": "Mr. Drawbot",
+    "systemSummary": "_What's the matter with this thing? What's all this churning and bubbling, you call that a radar screen? - Dark Helmet_",
+    "search": false
   }
 }

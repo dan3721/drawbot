@@ -1,10 +1,9 @@
-<!-- start:readme.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Mr. Drawbot</title>
+		<title>Globals</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -48,52 +47,21 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">readme</span>
-				<h1><span class="name">Mr. Drawbot</span></h1>
-				<div class="summary"><p><em>What's the matter with this thing? What's all this churning and bubbling, you call that a radar screen? - Dark Helmet</em></p></div>			</div>
+				<span class="kind">global</span>
+				<h1><span class="name">Globals</span></h1>
+				<div class="summary"><p>All documented globals.</p></div>			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
 			<div class="col-md-9 main-content">
-		<section class="readme-section">
-			<article><p>Drawbot is a DIY project consisting of a Raspberry Pi and two arms which can produce 
-drawings.</p>
-<p>Check out the <a href="https://photos.app.goo.gl/QHCGD5CoiTJ2aDMZA">Drawbot Gallery</a>!</p>
-<h3>Hardware Setup</h3><p>The setup consist of A Raspberry Pi three servos and two arms. The two for the arms(A/B) 
-provide the actual drawing movements and the third provides the wrist movement to lift the 
-drawing implement from the drawing surface.</p>
-<ol>
-<li>Choose arm servos which have a deadband less than 5 usec or lines will not be smooth. I 
- chose <a href="https://www.towerpro.com.tw/product/mg995/">TowerPro MG995</a>(s) which have a
- deadband of 1 usec. </li>
-<li>Calibrate the servos and configure their GIPOs in drawbot.CFG.</li>
-<li>The wrist servo is less of a concern but having a bracket to do the mounting is handy. I 
- chose <a href="https://www.amazon.com/Hobbypark-HDR315M-Digital-Torque-Mouting/dp/B01H6IR7T0">Hobbypark HDR315M</a>.</li>
-<li>Build the arms and configure their detentions in drawbot.CFG.</li>
-</ol>
-<h3>Software</h3><p>The primary module is <code>drawbot2</code> and it contains all the smarts for directing the arms. All
-the geometric related stuff is located in <code>geometry</code>. Test cases are under <code>test</code>.</p>
-<p>The basic usage is to create some points and queue them by invoking <code>drawbot2.draw</code> operations. 
-Then invoke <code>drawbot.execute()</code> which produces both a virtual render and an executable shell scrip of the actual 
-<a href="http://abyz.me.uk/rpi/pigpio/pigs.html">pigs</a> commands to actual perform the render.</p>
-<p>Check out all the examples under <code>src/examples</code> and run <code>npm run examples</code> to freshen them.</p>
-<h3>NPM Scripts</h3><ul>
-<li><code>api</code> execute jsdoc to produce the api documentation</li>
-<li><code>test</code> execute test cases</li>
-<li><code>testupdate</code> refresh snapshots and re-execute test cases</li>
-<li><code>diagnostics</code> run diagnostic tests (intended to run with just primary arms attached) </li>
-<li><code>examples</code> run all the example drawings</li>
-</ul>
-<h2>Discussion Points</h2><ol>
-<li><strong>Arm segment lengths:</strong> In general arm segment 2 needs be longer than arm segment 1.</li>
-<li><strong>Deadband:</strong> The setup makes use of digital servos so the deadband is important. The lower the better. Higher 
- deadband means less resolution between PWM values and will result in jagged lines.</li>
-</ol>
-<h2>Reference</h2><ol>
-<li><a href="http://abyz.me.uk/rpi/pigpio/">pigpio</a></li>
-<li><a href="https://github.com/fivdi/onoff/wiki/Node.js-v4-and-native-addons#installing-gccg-48-on-raspbian-wheezy-for-the-raspberry-pi">Installing gcc/g++ 4.8 on Raspbian Wheezy for the Raspberry Pi</a></li>
-</ol></article>
-		</section>
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li class="active">Globals</li>
+						</ol>
+					<section>
+							<article class="secondary">
+							</article>
+					</section>
 			</div>
 				<div class="col-md-3 side-content">
 					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
@@ -112,4 +80,3 @@ Then invoke <code>drawbot.execute()</code> which produces both a virtual render 
 	
 </body>
 </html>
-<!-- end:readme.hbs -->
