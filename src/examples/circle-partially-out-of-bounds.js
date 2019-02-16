@@ -2,22 +2,11 @@
  * This circle is partially and partially out of bounds.
  */
 const drawbot = require('../drawbot2')
+const geometry = require('../geometry')
 
-const getPoints = (x, y, numPoints, radius) => {
-  let points = []
-  let slice = 2 * Math.PI / numPoints
-  for (let i = 0; i < numPoints; i++) {
-    let angle = slice * i
-    let ptX = radius * Math.cos(angle)
-    let ptY = radius * Math.sin(angle)
-    points.push(ptX + x, ptY + y)
-  }
-  // points.push(points[0], points[1])
-  return points
-}
+let polygon = geometry.regularPolygon(-1.5, 8, 16, 1).
+  points.map(p => {return {x: drawbot.r2(p.x), y: drawbot.r2(p.y)}})
 
-let polygon = getPoints(-1.5, 8, 16, 1).map(p => drawbot.r2(p))
-
-drawbot.drawPolyline(polygon)
+drawbot.drawPolygon(polygon)
 drawbot.execute()
 

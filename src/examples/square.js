@@ -1,4 +1,5 @@
 const drawbot = require('../drawbot2')
+const geometry = require('../geometry')
 
-drawbot.drawSquare(0,5,3)
+drawbot.drawPolygon(geometry.square(0,5,3).points)
 drawbot.execute()

@@ -2,6 +2,7 @@
 process.env.TESTING = true
 
 const drawbot = require('../src/drawbot2')
+const geometry = require('../src/geometry')
 
 const spyError = jest.spyOn(console, 'error')
 const spyWarn = jest.spyOn(console, 'warn')
@@ -55,7 +56,7 @@ describe('duty cycles', () => {
 })
 
 describe('utility', () => {
-  test('distance', () => expect(drawbot.distance(3, 3, 6, 7)).toBe(5))
+  test('distance', () => expect(geometry.distance(3, 3, 6, 7)).toBe(5))
   test('valid point 2,2', () => expect(drawbot.isValidPoint(2, 2)).toBe(true))
   test('invalid point 0,just a bit less than min_y', () => expect(
     drawbot.isValidPoint(0, drawbot.min_y - .01)).toBe(false)) // just a bit outside
@@ -121,10 +122,10 @@ describe('move', () => {
 describe('draw', () => {
   test('square',
     () => expect(() => drawbot.drawPolyline([-3, -2, 3, 4])).not.toThrow())
-  test('square', () => expect(() => drawbot.drawSquare(2, 4, 2)).not.toThrow())
+  test('square', () => expect(() => geometry.square(2, 4, 2)).not.toThrow())
   test('square',
-    () => expect(() => drawbot.drawTrangle(2, 4, 4, 4)).not.toThrow())
-  test('square', () => expect(() => drawbot.drawCircle(2, 4, 3)).not.toThrow())
+    () => expect(() => geometry.trangle(2, 4, 4, 4)).not.toThrow())
+  test('square', () => expect(() => geometry.circle(2, 4, 3)).not.toThrow())
 })
 
 // DSIABLED BECAUSE WE ARE FOOLING WITH THE ARM LENGTHS

@@ -2,6 +2,7 @@
  * diagnostic
  */
 const drawbot = require('../drawbot2')
+const geometry = require('../geometry')
 
-drawbot.drawRegularPolygon(0, 5.5, 8, 2)
+drawbot.drawPolygon(geometry.circle(0, 5.5, 8, 2).points)
 drawbot.execute()

@@ -2,6 +2,7 @@
  * octagon
  */
 const drawbot = require('../drawbot2')
+const geometry = require('../geometry')
 
-drawbot.drawRegularPolygon(0,5,8,2)
+drawbot.drawPolygon(geometry.regularPolygon(0, 5, 8, 2).points)
 drawbot.execute()

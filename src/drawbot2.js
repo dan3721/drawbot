@@ -12,6 +12,7 @@
  * @see module:drawbot
  */
 
+const geometry = require('./geometry')
 const FS = require('fs')
 const PATH = require('path')
 const DATEFORMAT = require('dateformat')
@@ -166,25 +167,13 @@ const splitIntoContiguousMoves = (polyline, moves = []) => {
   return moves
 }
 
-/**
- * Determins the distance of a point from origin
- * @param x
- * @param y
- * @returns {number}
- */
-const distance = (originX, originY, x, y) => Math.sqrt(
-  Math.pow(originX - x, 2) + Math.pow(originY - y, 2))
-
-const isPointWithinCircle = (x, y, originX, originY, radius) =>
-  distance(originX, originY, x, y) <= radius
-
 const isValidPoint = (x, y) => {
   let valid = false
   if (y >= min_y) { // greater than the y min
     // and within the circle sweeps of both second arm segments
-    if (isPointWithinCircle(x, y, 0 - CFG.servoOffset, CFG.arm1Length,
+    if (geometry.isPointWithinCircle(x, y, 0 - CFG.servoOffset, CFG.arm1Length,
       CFG.arm2Length) &&
-      isPointWithinCircle(x, y, 0 + CFG.servoOffset, CFG.arm1Length,
+      geometry.isPointWithinCircle(x, y, 0 + CFG.servoOffset, CFG.arm1Length,
         CFG.arm2Length)) {
       valid = true
     }
@@ -251,18 +240,6 @@ const p4L = n => ('' + n).padStart(4, ' ')
 
 /* istanbul ignore next */
 const p6 = n => ('' + n).padEnd(6, ' ')
-
-// /**
-//  * Smart padding for values fixed to 2. If the value ends with two digits the
-//  * padding is added to the beginning else it's added to the end. This nicely
-//  * pads values like 96.78 and 158.7 so they are left aligned.
-//  * @private
-//  */
-// const padDeg = (val) => {
-//   val += ''
-//   // return val.match(/^\.\d\d$/) ? val.padStart(6, ' ') : val.padEnd(6, ' ')
-//   return val.padStart(6, ' ')
-// }
 
 /**
  * Calculates the "standard"(500-2500) pulse width for the specified degrees (0-180°).
@@ -441,9 +418,17 @@ const drawPolygon = (points) => {
 
 /**
  * Queues multiple moves.
- * @param points {number[]} one or more points
+ * @param points [x1,y1,x2,y2,x3,...] or [{x1,y1},{x2,y2},{x3...]
  */
 const drawPolyline = (points, returnToStart = false) => {
+
+  if (_.isObject(points[0])) {
+    points = points.reduce((accum, point) => {
+      accum.push(point.x)
+      accum.push(point.y)
+      return accum
+    }, [])
+  }
 
   // move to starting location (without drawing)
   const xStart = points.shift()
@@ -459,61 +444,6 @@ const drawPolyline = (points, returnToStart = false) => {
   move(xStart, yStart)
 
   drawOff()
-}
-
-/**
- * Draws a regular polygon. a regular polygon is a polygon that is equiangular
- * (all angles are equal in measure) and equilateral (all sides have the same
- * length)
- * @param x origin
- * @param y origin
- * @param numPoints
- * @param radius
- *
- * @see https://en.wikipedia.org/wiki/Regular_polygon
- * @see https://stackoverflow.com/questions/5300938/calculating-the-position-of-points-in-a-circle
- */
-const drawRegularPolygon = (x, y, numPoints, radius) => {
-  let points = []
-  let slice = 2 * Math.PI / numPoints
-  for (let i = 0; i < numPoints; i++) {
-    let angle = slice * i
-    let ptX = radius * Math.cos(angle)
-    let ptY = radius * Math.sin(angle)
-    points.push({x: ptX + x, y: ptY + y})
-  }
-
-  points = points.reduce((accum, point) => {
-    accum.push(point.x)
-    accum.push(point.y)
-    return accum
-  }, [])
-
-  drawPolygon(points)
-}
-
-const drawSquare = (x, y, width) => {
-  const halfWidth = width / 2
-  move(x - halfWidth, y + halfWidth) // start at top left
-  move(x + halfWidth, y + halfWidth, true) // top right
-  move(x + halfWidth, y - halfWidth, true) // bottom right
-  move(x - halfWidth, y - halfWidth, true) // bottom left
-  move(x - halfWidth, y + halfWidth, true) // back top left
-}
-
-const drawTrangle = (x, y, base, height) => {
-  const halfHeight = height / 2
-  const halfBase = base / 2
-  move(x, y + halfHeight) // start at top
-  move(x + halfBase, y - halfHeight, true) // bottom right
-  move(x - halfBase, y - halfHeight, true) // bottom left
-  move(x, y + halfHeight, true) // back to top
-}
-
-const CIRCLE_RESOLUTION = .20 // lower = more points of resolution
-const drawCircle = (x, y, radius) => {
-  const numPoints = Math.round((2 * Math.PI / CIRCLE_RESOLUTION) * radius)
-  drawRegularPolygon(x, y, numPoints, radius)
 }
 
 /**
@@ -687,9 +617,11 @@ const execute = () => {
 
             // round the actual pulses
             const ACTUAL_PULSE_A = mapPulseWidthToRange(
-              protect(Math.round(PULSE_A)))
+              protect(Math.round(PULSE_A)), CFG.servoAMinPulseWidth,
+              CFG.servoAMaxPulseWidth)
             const ACTUAL_PULSE_B = mapPulseWidthToRange(
-              protect(Math.round(PULSE_B)))
+              protect(Math.round(PULSE_B)), CFG.servoBMinPulseWidth,
+              CFG.servoBMaxPulseWidth)
 
             writePigsS(
               ACTUAL_PULSE_A, ACTUAL_PULSE_B,
@@ -846,7 +778,6 @@ module.exports = {
   min_y, max_y,
 
   // calculations
-  distance,
   isValidPoint,
   radians2Degrees,
   calcServoAngle,
@@ -860,17 +791,12 @@ module.exports = {
   moveHome,
   drawPolyline,
   drawPolygon,
-  drawRegularPolygon,
-  drawSquare,
-  drawTrangle,
-  drawCircle,
   execute,
 
   // utility
   r2, p4, p6,
   protect,
   getRandomPoint,
-  isPointWithinCircle,
   ploylineContainsBadPoint,
   splitIntoContiguousMoves,
 
