@@ -67,24 +67,11 @@
         ],
         "module-drawbot.html": [
           "2.0",
-          "arm",
           "bot",
-          "command",
           "draw",
           "drawbot",
-          "exampl",
-          "execut",
-          "gener",
-          "invok",
-          "mg995|https://www.towerpro.com.tw/product/mg995",
           "modul",
-          "module:drawbot",
-          "pattern",
-          "queue",
-          "see",
-          "servo",
-          "towerpro",
-          "usag"
+          "module:drawbot"
         ],
         "module-geometry.html": [
           "gener",
@@ -111,7 +98,7 @@
               "docs": {
                 "module-drawbot.html": {
                   "ref": "module-drawbot.html",
-                  "tf": 2.941176470588235
+                  "tf": 16.666666666666664
                 }
               }
             },
@@ -144,7 +131,7 @@
               "docs": {
                 "module-drawbot.html": {
                   "ref": "module-drawbot.html",
-                  "tf": 2.941176470588235
+                  "tf": 16.666666666666664
                 }
               }
             }
@@ -182,29 +169,6 @@
                 }
               }
             }
-          },
-          "o": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "d": {
-                      "docs": {
-                        "module-drawbot.html": {
-                          "ref": "module-drawbot.html",
-                          "tf": 2.941176470588235
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         },
         "d": {
@@ -231,7 +195,7 @@
                 "docs": {
                   "module-drawbot.html": {
                     "ref": "module-drawbot.html",
-                    "tf": 5.88235294117647
+                    "tf": 16.666666666666664
                   }
                 },
                 "b": {
@@ -322,20 +286,6 @@
                     "index.html": {
                       "ref": "index.html",
                       "tf": 1300
-                    }
-                  }
-                }
-              }
-            },
-            "v": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "k": {
-                  "docs": {
-                    "module-drawbot.html": {
-                      "ref": "module-drawbot.html",
-                      "tf": 2.941176470588235
                     }
                   }
                 }
@@ -458,149 +408,6 @@
                 }
               }
             }
-          },
-          "g": {
-            "9": {
-              "9": {
-                "5": {
-                  "docs": {},
-                  "|": {
-                    "docs": {},
-                    "h": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "t": {
-                          "docs": {},
-                          "p": {
-                            "docs": {},
-                            "s": {
-                              "docs": {},
-                              ":": {
-                                "docs": {},
-                                "/": {
-                                  "docs": {},
-                                  "/": {
-                                    "docs": {},
-                                    "w": {
-                                      "docs": {},
-                                      "w": {
-                                        "docs": {},
-                                        "w": {
-                                          "docs": {},
-                                          ".": {
-                                            "docs": {},
-                                            "t": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "w": {
-                                                  "docs": {},
-                                                  "e": {
-                                                    "docs": {},
-                                                    "r": {
-                                                      "docs": {},
-                                                      "p": {
-                                                        "docs": {},
-                                                        "r": {
-                                                          "docs": {},
-                                                          "o": {
-                                                            "docs": {},
-                                                            ".": {
-                                                              "docs": {},
-                                                              "c": {
-                                                                "docs": {},
-                                                                "o": {
-                                                                  "docs": {},
-                                                                  "m": {
-                                                                    "docs": {},
-                                                                    ".": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {},
-                                                                        "w": {
-                                                                          "docs": {},
-                                                                          "/": {
-                                                                            "docs": {},
-                                                                            "p": {
-                                                                              "docs": {},
-                                                                              "r": {
-                                                                                "docs": {},
-                                                                                "o": {
-                                                                                  "docs": {},
-                                                                                  "d": {
-                                                                                    "docs": {},
-                                                                                    "u": {
-                                                                                      "docs": {},
-                                                                                      "c": {
-                                                                                        "docs": {},
-                                                                                        "t": {
-                                                                                          "docs": {},
-                                                                                          "/": {
-                                                                                            "docs": {},
-                                                                                            "m": {
-                                                                                              "docs": {},
-                                                                                              "g": {
-                                                                                                "9": {
-                                                                                                  "9": {
-                                                                                                    "5": {
-                                                                                                      "docs": {
-                                                                                                        "module-drawbot.html": {
-                                                                                                          "ref": "module-drawbot.html",
-                                                                                                          "tf": 2.941176470588235
-                                                                                                        }
-                                                                                                      }
-                                                                                                    },
-                                                                                                    "docs": {}
-                                                                                                  },
-                                                                                                  "docs": {}
-                                                                                                },
-                                                                                                "docs": {}
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "docs": {}
-              },
-              "docs": {}
-            },
-            "docs": {}
           }
         },
         "r": {
@@ -664,28 +471,6 @@
           },
           "e": {
             "docs": {},
-            "e": {
-              "docs": {
-                "module-drawbot.html": {
-                  "ref": "module-drawbot.html",
-                  "tf": 2.941176470588235
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "v": {
-                "docs": {},
-                "o": {
-                  "docs": {
-                    "module-drawbot.html": {
-                      "ref": "module-drawbot.html",
-                      "tf": 2.941176470588235
-                    }
-                  }
-                }
-              }
-            },
             "t": {
               "docs": {
                 "module-geometry.html": {
@@ -765,32 +550,6 @@
                 }
               }
             }
-          },
-          "o": {
-            "docs": {},
-            "w": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "p": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "o": {
-                        "docs": {
-                          "module-drawbot.html": {
-                            "ref": "module-drawbot.html",
-                            "tf": 2.941176470588235
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         },
         "w": {
@@ -843,10 +602,6 @@
                 "docs": {},
                 "r": {
                   "docs": {
-                    "module-drawbot.html": {
-                      "ref": "module-drawbot.html",
-                      "tf": 2.941176470588235
-                    },
                     "module-geometry.html": {
                       "ref": "module-geometry.html",
                       "tf": 5
@@ -920,54 +675,17 @@
             }
           }
         },
-        "a": {
+        "o": {
           "docs": {},
-          "r": {
+          "p": {
             "docs": {},
-            "m": {
-              "docs": {
-                "module-drawbot.html": {
-                  "ref": "module-drawbot.html",
-                  "tf": 2.941176470588235
-                }
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {},
-          "x": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "p": {
-                  "docs": {},
-                  "l": {
-                    "docs": {
-                      "module-drawbot.html": {
-                        "ref": "module-drawbot.html",
-                        "tf": 2.941176470588235
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "e": {
               "docs": {},
-              "c": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "module-drawbot.html": {
-                        "ref": "module-drawbot.html",
-                        "tf": 2.941176470588235
-                      }
-                    }
+              "r": {
+                "docs": {
+                  "module-geometry.html": {
+                    "ref": "module-geometry.html",
+                    "tf": 5
                   }
                 }
               }
@@ -976,29 +694,6 @@
         },
         "p": {
           "docs": {},
-          "a": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "module-drawbot.html": {
-                          "ref": "module-drawbot.html",
-                          "tf": 2.941176470588235
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "o": {
             "docs": {},
             "i": {
@@ -1017,42 +712,8 @@
             }
           }
         },
-        "q": {
-          "docs": {},
-          "u": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "module-drawbot.html": {
-                      "ref": "module-drawbot.html",
-                      "tf": 2.941176470588235
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "u": {
           "docs": {},
-          "s": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "g": {
-                "docs": {
-                  "module-drawbot.html": {
-                    "ref": "module-drawbot.html",
-                    "tf": 2.941176470588235
-                  }
-                }
-              }
-            }
-          },
           "t": {
             "docs": {},
             "i": {
@@ -1067,71 +728,42 @@
               }
             }
           }
-        },
-        "o": {
-          "docs": {},
-          "p": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "r": {
-                "docs": {
-                  "module-geometry.html": {
-                    "ref": "module-geometry.html",
-                    "tf": 5
-                  }
-                }
-              }
-            }
-          }
         }
       },
-      "length": 50
+      "length": 37
     },
     "corpusTokens": [
       "2.0",
-      "arm",
       "bot",
       "bubbl",
       "call",
       "churn",
-      "command",
       "dark",
       "document",
       "draw",
       "drawbot",
-      "exampl",
-      "execut",
       "gener",
       "geometri",
       "global",
       "helmet",
       "index",
-      "invok",
       "list",
       "list:modul",
       "matter",
-      "mg995|https://www.towerpro.com.tw/product/mg995",
       "modul",
       "module:drawbot",
       "module:geometri",
       "mr",
       "oper",
-      "pattern",
       "point",
-      "queue",
       "radar",
       "readm",
       "screen",
-      "see",
-      "servo",
       "set",
       "shape",
       "super",
       "sweet",
       "thing",
-      "towerpro",
-      "usag",
       "util",
       "what'"
     ],
@@ -1183,7 +815,7 @@
       "name": "drawbot",
       "tags": "module:drawbot",
       "summary": "",
-      "description": "Draw Bot 2.0 The general usage pattern is to queue some commands and then invoke execute). See the example drawings... Arm servos [TowerPro MG995|https://www.towerpro.com.tw/product/mg995/]",
+      "description": "Draw Bot 2.0",
       "body": ""
     },
     "module-geometry.html": {
