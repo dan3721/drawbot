@@ -45,6 +45,6 @@ Check out all the examples under `src/examples` and run `npm run examples` to fr
 
 ## Reference
 
-1. [pigpio](http://abyz.me.uk/rpi/pigpio/). Do **NOT** start the daemon.
+1. [pigpio](http://abyz.me.uk/rpi/pigpio/)
 1. [Installing gcc/g++ 4.8 on Raspbian Wheezy for the Raspberry Pi](https://github.com/fivdi/onoff/wiki/Node.js-v4-and-native-addons#installing-gccg-48-on-raspbian-wheezy-for-the-raspberry-pi)
 
