@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Friday, February 15th, 2019, 9:29:18 PM
+# Saturday, February 16th, 2019, 12:58:34 PM
 #
 # filename:     simple.js
-# num cmds:     282
-# num points:   5
+# num cmds:     200
+# num points:   4
 #
 MILS=0
 
@@ -149,88 +149,6 @@ pigs s 23 823  s 24 2177 mils $MILS # *
 pigs s 23 822  s 24 2178 mils $MILS # *
 pigs s 23 821  s 24 2179 mils $MILS # *
 pigs s 23 820  s 24 2180 mils $MILS # 151.18° 28.82 ° 0,7
-pigs s 23 821  s 24 2179 mils $MILS # *
-pigs s 23 822  s 24 2178 mils $MILS # *
-pigs s 23 823  s 24 2177 mils $MILS # *
-pigs s 23 824  s 24 2176 mils $MILS # *
-pigs s 23 825  s 24 2175 mils $MILS # *
-pigs s 23 826  s 24 2174 mils $MILS # *
-pigs s 23 827  s 24 2173 mils $MILS # *
-pigs s 23 828  s 24 2172 mils $MILS # *
-pigs s 23 829  s 24 2171 mils $MILS # *
-pigs s 23 830  s 24 2170 mils $MILS # *
-pigs s 23 831  s 24 2169 mils $MILS # *
-pigs s 23 832  s 24 2168 mils $MILS # *
-pigs s 23 833  s 24 2167 mils $MILS # *
-pigs s 23 834  s 24 2166 mils $MILS # *
-pigs s 23 835  s 24 2165 mils $MILS # *
-pigs s 23 836  s 24 2164 mils $MILS # *
-pigs s 23 837  s 24 2163 mils $MILS # *
-pigs s 23 838  s 24 2162 mils $MILS # *
-pigs s 23 839  s 24 2161 mils $MILS # *
-pigs s 23 840  s 24 2160 mils $MILS # *
-pigs s 23 841  s 24 2159 mils $MILS # *
-pigs s 23 842  s 24 2158 mils $MILS # *
-pigs s 23 843  s 24 2157 mils $MILS # *
-pigs s 23 844  s 24 2156 mils $MILS # *
-pigs s 23 845  s 24 2155 mils $MILS # *
-pigs s 23 846  s 24 2154 mils $MILS # *
-pigs s 23 847  s 24 2153 mils $MILS # *
-pigs s 23 848  s 24 2152 mils $MILS # *
-pigs s 23 849  s 24 2151 mils $MILS # *
-pigs s 23 850  s 24 2150 mils $MILS # *
-pigs s 23 851  s 24 2149 mils $MILS # *
-pigs s 23 852  s 24 2148 mils $MILS # *
-pigs s 23 853  s 24 2147 mils $MILS # *
-pigs s 23 854  s 24 2146 mils $MILS # *
-pigs s 23 855  s 24 2145 mils $MILS # *
-pigs s 23 856  s 24 2144 mils $MILS # *
-pigs s 23 857  s 24 2143 mils $MILS # *
-pigs s 23 858  s 24 2142 mils $MILS # *
-pigs s 23 859  s 24 2141 mils $MILS # *
-pigs s 23 860  s 24 2140 mils $MILS # *
-pigs s 23 861  s 24 2139 mils $MILS # 147.55° 32.45 ° 0,2
-pigs s 23 860  s 24 2140 mils $MILS # *
-pigs s 23 859  s 24 2141 mils $MILS # *
-pigs s 23 858  s 24 2142 mils $MILS # *
-pigs s 23 857  s 24 2143 mils $MILS # *
-pigs s 23 856  s 24 2144 mils $MILS # *
-pigs s 23 855  s 24 2145 mils $MILS # *
-pigs s 23 854  s 24 2146 mils $MILS # *
-pigs s 23 853  s 24 2147 mils $MILS # *
-pigs s 23 852  s 24 2148 mils $MILS # *
-pigs s 23 851  s 24 2149 mils $MILS # *
-pigs s 23 850  s 24 2150 mils $MILS # *
-pigs s 23 849  s 24 2151 mils $MILS # *
-pigs s 23 848  s 24 2152 mils $MILS # *
-pigs s 23 847  s 24 2153 mils $MILS # *
-pigs s 23 846  s 24 2154 mils $MILS # *
-pigs s 23 845  s 24 2155 mils $MILS # *
-pigs s 23 844  s 24 2156 mils $MILS # *
-pigs s 23 843  s 24 2157 mils $MILS # *
-pigs s 23 842  s 24 2158 mils $MILS # *
-pigs s 23 841  s 24 2159 mils $MILS # *
-pigs s 23 840  s 24 2160 mils $MILS # *
-pigs s 23 839  s 24 2161 mils $MILS # *
-pigs s 23 838  s 24 2162 mils $MILS # *
-pigs s 23 837  s 24 2163 mils $MILS # *
-pigs s 23 836  s 24 2164 mils $MILS # *
-pigs s 23 835  s 24 2165 mils $MILS # *
-pigs s 23 834  s 24 2166 mils $MILS # *
-pigs s 23 833  s 24 2167 mils $MILS # *
-pigs s 23 832  s 24 2168 mils $MILS # *
-pigs s 23 831  s 24 2169 mils $MILS # *
-pigs s 23 830  s 24 2170 mils $MILS # *
-pigs s 23 829  s 24 2171 mils $MILS # *
-pigs s 23 828  s 24 2172 mils $MILS # *
-pigs s 23 827  s 24 2173 mils $MILS # *
-pigs s 23 826  s 24 2174 mils $MILS # *
-pigs s 23 825  s 24 2175 mils $MILS # *
-pigs s 23 824  s 24 2176 mils $MILS # *
-pigs s 23 823  s 24 2177 mils $MILS # *
-pigs s 23 822  s 24 2178 mils $MILS # *
-pigs s 23 821  s 24 2179 mils $MILS # *
-pigs s 23 820  s 24 2180 mils $MILS # *
 pigs s 23 819  s 24 2181 mils $MILS # *
 pigs s 23 818  s 24 2182 mils $MILS # *
 pigs s 23 817  s 24 2183 mils $MILS # *

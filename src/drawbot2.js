@@ -430,6 +430,7 @@ const drawPolygon = (points) => {
 /**
  * Queues multiple moves.
  * @param points {Array(x1,y1,x2,y2,x3,...)} or {Array({x1,y1},{x2,y2},{x3...)}
+ * @param returnToStart returns the first point to complete the path for polygons
  */
 const drawPolyline = (points, returnToStart = false) => {
 
@@ -454,8 +455,9 @@ const drawPolyline = (points, returnToStart = false) => {
     move(points[i], points[i + 1], true)
   }
 
-  // return to start so starting point
-  move(xStart, yStart)
+  if (returnToStart) {
+    move(xStart, yStart)
+  }
 
   drawOff()
 }

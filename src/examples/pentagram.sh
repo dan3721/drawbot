@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Friday, February 15th, 2019, 9:29:16 PM
+# Saturday, February 16th, 2019, 12:58:32 PM
 #
 # filename:     pentagram.js
 # num cmds:     1840
-# num points:   9
+# num points:   8
 #
 MILS=0
 
