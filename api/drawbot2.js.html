@@ -732,6 +732,7 @@ const execute = () => {
 /**
  * Writes a pigs servo command to the pigs script.
  * @see {@link writePigsScript}
+ * @private
  */
 /* istanbul ignore next */
 const writePigsS = (
@@ -752,6 +753,7 @@ const writePigsS = (
 /**
  * Emits an executable shell script of pig commands to actually render the
  * drawing.
+ * @private
  */
 /* istanbul ignore next */
 const writePigsScript = (filename, startDate) => {
@@ -781,6 +783,7 @@ const writePigsScript = (filename, startDate) => {
 
 /**
  * Dumps drawing as an SVG HTML file.
+ * @private
  */
 /* istanbul ignore next */
 const writeHtml = (filename, _coordinates) => {
