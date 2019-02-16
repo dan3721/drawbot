@@ -61,38 +61,48 @@ try {
 }
 catch (e) {
   // console.warn(e.message)
-  console.warn(
-    '*** pigpio module not available so there will be no hardware support ***')
+  console.warn('\
+*********************************************************************\n\
+* pigpio module not available so there will be no hardware support! *\n\
+*                                                                   *\n\
+* To resolve install pigpio: npm i pigpio                           *\n\
+*********************************************************************')
 }
 
 // bind output pins
 let SERVO_A, SERVO_B
 if (!!pigpio) {
   Gpio = pigpio.Gpio
-  SERVO_A = new Gpio(10, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
-  SERVO_B = new Gpio(9, {mode: Gpio.OUTPUT})
+  SERVO_A = new Gpio(9, {mode: Gpio.OUTPUT}) // TODO: flip and or re-assign pins?
+  SERVO_B = new Gpio(10, {mode: Gpio.OUTPUT})
 }
 
 // setup
-const ARM_1_LENGTH = 4          // length of arm 1
-const ARM_2_LENGTH = 5          // length of arm 2
-const CENTER = 5                // center point
-const PIVIOT_DIST_FROM_CENT = 1 // distance from servo axel from CENTER
 const START_X = 5
-const START_Y = 5
-
-// servo specs
+const START_Y = 1
+const ARM_1_LENGTH = 4
+const ARM_2_LENGTH = 5.75
+const CENTER = 5
+const PWM_STEP_SIZE = 1
+const PWM_STEP_DURATION_IN_MILLIS = !!pigpio ? 10 : 0
+// const PWM_STEPS_PER_MILLIS = 100 / PWM_STEP_DURATION_IN_MILLIS
+const SERVO_OFFSET_FROM_CENTER = 1
 const SERVO_MAX_DEG = 180
 const SERVO_MIN_PULSE_WIDTH = 500
 const SERVO_MAX_PULSE_WIDTH = 2500
 const DEG_PER_PULSE = (SERVO_MAX_DEG /
   (SERVO_MAX_PULSE_WIDTH - SERVO_MIN_PULSE_WIDTH))
-const SERVO_SPEED_DEGREES_PER_SECONDS = .18 / 60   // degrees per second
+// const SERVO_SPEED_DEGREES_PER_SECOND = .18 / 60
+// const SERVO_SPEED_DEGREES_PER_MILLIS = SERVO_SPEED_DEGREES_PER_SECOND / 1000
+
+// when you setup the servo turned around such that 500 is most clockwise and
+// 2500 is most anti-clockwise.
+const SERVO_REVERSED = true
 
 const CMD_QUEUE = []
 
 // interval between cmd execution attempts
-const CMD_EXECUTION_INTERVAL_IN_MILLIS = 10
+const CMD_EXECUTION_INTERVAL_IN_MILLIS = !!pigpio ? 100 : 5
 
 // current position
 let _x = START_X
@@ -111,6 +121,39 @@ const radians2Degrees = (radians) => {
 }
 
 /**
+ * Calculates the pulse width for the specified degrees.
+ * @param degrees
+ * @param flip {boolean} flips when servo is used in opposite orientation
+ * @returns {number} pulse width
+ */
+const getPulseWidth = (degrees, flip = false) => {
+
+  if (degrees &lt; 0 || degrees > 180) {
+    const error = `ERROR: ${degrees} is outside the range 0° - 180° (inclusive)!`
+    throw error
+  }
+
+  if (flip) {
+    degrees = 180 - degrees
+  }
+
+  let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
+  width = Math.round(width)
+  if (width &lt; SERVO_MIN_PULSE_WIDTH) {
+    width = SERVO_MIN_PULSE_WIDTH
+  }
+  else if (width > SERVO_MAX_PULSE_WIDTH) {
+    width = SERVO_MAX_PULSE_WIDTH
+  }
+
+  if (SERVO_REVERSED) {
+    width = width + (1500 - width) * 2
+  }
+
+  return width
+}
+
+/**
  * Given a point returns the corresponding angles in degrees for both
  * servos. Note we are leveraging {@link calcServoAngle} for both the A and B
  * servos by flipping the SAME flag!
@@ -125,10 +168,10 @@ const calcServoAngles = (x, y) => {
   const SAME = x &lt; CENTER
   return SAME ?
     [
-      +((180 - calcServoAngle(x, y, SAME)).toFixed(2)),
+      r2(180 - calcServoAngle(x, y, SAME)),
       calcServoAngle(x, y, !SAME)] : // A
     [
-      +((180 - calcServoAngle(x, y, !SAME)).toFixed(2)),
+      r2(180 - calcServoAngle(x, y, !SAME)),
       calcServoAngle(x, y, SAME)]   // B
 }
 
@@ -147,8 +190,8 @@ const calcServoAngles = (x, y) => {
 const calcServoAngle = (x, y, same) => {
 
   const OFFSET = same ?
-    CENTER - PIVIOT_DIST_FROM_CENT : // offset is left of center
-    CENTER + PIVIOT_DIST_FROM_CENT // offset is right of center
+    CENTER - SERVO_OFFSET_FROM_CENTER : // offset is left of center
+    CENTER + SERVO_OFFSET_FROM_CENTER // offset is right of center
 
   const OPPOSITE = OFFSET - x
   const ADJACENT = y
@@ -167,9 +210,12 @@ const calcServoAngle = (x, y, same) => {
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
   // step 4: add angles
-  const ANGLE = (same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1).toFixed(2)
+  const ANGLE = (same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1)
 
-  return +(ANGLE)
+  // console.log(
+  //   `x:[${x}] y:[${y}] OFFSET:[${OFFSET}] OPPOSITE:[${OPPOSITE}] ADJACENT:[${ADJACENT}] HYPOTENUSE:[${HYPOTENUSE}] ANGLE1:[${ANGLE1}] ANGLE2:[${ANGLE2}] ANGLE:[${ANGLE2}]`)
+
+  return r2(ANGLE)
 }
 
 /**
@@ -262,16 +308,6 @@ const dumpSVG = () => {
 }
 
 /**
- * Calculates the pulse width for the specified degrees.
- * @param degrees
- * @returns {number} pulse width
- */
-const getPulseWidth = (degrees) => {
-  let width = (degrees / DEG_PER_PULSE) + SERVO_MIN_PULSE_WIDTH
-  return +(width.toFixed(0))
-}
-
-/**
  * Smart padding for values fixed to 2. If the value ends with two digits the
  * padding is added to the beginning else it's added to the end. This nicely
  * pads values like 96.78 and 158.7 so they are left aligned.
@@ -315,40 +351,101 @@ const calcTranslation = (x1, y1, x2, y2) => {
   const CURRENT_POSITION = calcServoAngles(x1, y1)
   const TARGET_POSITION = calcServoAngles(x2, y2)
 
-  const DELTA_DEGREES_A = Math.abs(
-    CURRENT_POSITION[0] - TARGET_POSITION[0])
-  const DELTA_DEGREES_B = Math.abs(
-    CURRENT_POSITION[1] - TARGET_POSITION[1])
+  let DELTA_DEGREES_A = Math.abs(CURRENT_POSITION[0] - TARGET_POSITION[0])
+  let DELTA_DEGREES_B = Math.abs(CURRENT_POSITION[1] - TARGET_POSITION[1])
 
-  const LARGEST_DELTA_DEGREES = +((DELTA_DEGREES_A > DELTA_DEGREES_B
-    ? DELTA_DEGREES_A
-    : DELTA_DEGREES_B).toFixed(2))
-  const EXECUTION_TIME_IN_MILLIS = +(((LARGEST_DELTA_DEGREES *
-    SERVO_SPEED_DEGREES_PER_SECONDS) * 1000).toFixed())
+  // const LARGEST_DELTA_DEGREES = DELTA_DEGREES_A > DELTA_DEGREES_B
+  //   ? DELTA_DEGREES_A : DELTA_DEGREES_B
+  // const EXECUTION_TIME_IN_MILLIS = (LARGEST_DELTA_DEGREES *
+  //   SERVO_SPEED_DEGREES_PER_SECONDS) * 1000
 
-  // const DELTA_X = Math.abs(CURRENT_POSITION[0] - TARGET_POSITION[0]).
-  //   toFixed(2)
-  // const DELTA_Y = Math.abs(CURRENT_POSITION[1] - TARGET_POSITION[1]).
-  //   toFixed(2)
+  let DELTA_X = Math.abs(x2 - x1)
+  let DELTA_Y = Math.abs(y2 - y1)
 
-  const PULSE_A = getPulseWidth(TARGET_POSITION[0])
-  const PULSE_B = getPulseWidth(TARGET_POSITION[1], true)
+  // current, target, and delta for A
+  const CURRENT_PULSE_A = getPulseWidth(CURRENT_POSITION[0])
+  const TARGET_PULSE_A = getPulseWidth(TARGET_POSITION[0])
+  const DELTA_PULSE_A = Math.abs(TARGET_PULSE_A - CURRENT_PULSE_A)
+
+  // current, target, and delta for B (don't need to flip because degrees already flipped by calcServoAngles)
+  const CURRENT_PULSE_B = getPulseWidth(CURRENT_POSITION[1])
+  const TARGET_PULSE_B = getPulseWidth(TARGET_POSITION[1])
+  const DELTA_PULSE_B = Math.abs(TARGET_PULSE_B - CURRENT_PULSE_B)
+
+  // pulse rates for equal transition time. servos move to the target duty cycle
+  // as fast as they can so all we can do is let the one that is moving the
+  // shorter distance go along at its native rate and then slow down the one
+  // which has a longer way to go
+  let PULSE_STEP_A = DELTA_PULSE_A &lt;= DELTA_PULSE_B ? (DELTA_PULSE_A /
+    DELTA_PULSE_B) : 1
+  let PULSE_STEP_B = DELTA_PULSE_A >= DELTA_PULSE_B ? (DELTA_PULSE_B /
+    DELTA_PULSE_A) : 1
+
+  // const PULSE_RATIO = `${r2(PULSE_STEP_A)}:${r2(PULSE_STEP_B)}`
+
+  const NUM_STEPS = Math.ceil(
+    (PULSE_STEP_A >= PULSE_STEP_B ? DELTA_PULSE_B : DELTA_PULSE_A) /
+    PWM_STEP_SIZE)
+
+  let PULSE_INCREMENT_A = DELTA_PULSE_A / NUM_STEPS
+  if (TARGET_PULSE_A &lt;= CURRENT_PULSE_A) {
+    PULSE_INCREMENT_A = PULSE_INCREMENT_A * -1
+  }
+  let PULSE_INCREMENT_B = DELTA_PULSE_B / NUM_STEPS
+  if (TARGET_PULSE_B &lt;= CURRENT_PULSE_B) {
+    PULSE_INCREMENT_B = PULSE_INCREMENT_B * -1
+  }
+
+  DELTA_X = r2(DELTA_X)
+  DELTA_Y = r2(DELTA_Y)
+
+  DELTA_DEGREES_A = r2(DELTA_DEGREES_A)
+  DELTA_DEGREES_B = r2(DELTA_DEGREES_B)
+
+  // PULSE_STEP_A = r2(PULSE_STEP_A)
+  // PULSE_STEP_B = r2(PULSE_STEP_B)
+
+  PULSE_INCREMENT_A = r2(PULSE_INCREMENT_A)
+  PULSE_INCREMENT_B = r2(PULSE_INCREMENT_B)
 
   // feedback
   if (!process.env.TESTING) {
     process.stdout.write(
       `\n${fmtPoint(x2)} ${fmtPoint(y2)} ${padDeg(
         TARGET_POSITION[0])}° ${padDeg(
-        TARGET_POSITION[1])}° ${padPulse(PULSE_A)} ${padPulse(
-        PULSE_B)} ${('' + EXECUTION_TIME_IN_MILLIS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
+        TARGET_POSITION[1])}° ${padPulse(TARGET_PULSE_A)} ${padPulse(
+        TARGET_PULSE_B)} ${('' + NUM_STEPS).padEnd(3, ' ')} `) // ${EXECUTION_TIME_IN_MILLIS}(${LARGEST_DELTA_DEGREES}°)
   }
 
-  return [
-    PULSE_A,
-    PULSE_B,
-    EXECUTION_TIME_IN_MILLIS,
-    CURRENT_POSITION,
-    TARGET_POSITION]
+  return {
+    CURRENT_POSITION, TARGET_POSITION,
+    DELTA_X, DELTA_Y,
+    CURRENT_PULSE_A, CURRENT_PULSE_B,
+    TARGET_PULSE_A, TARGET_PULSE_B,
+    DELTA_DEGREES_A, DELTA_DEGREES_B,
+    DELTA_PULSE_A, DELTA_PULSE_B,
+    NUM_STEPS,
+    PULSE_INCREMENT_A, PULSE_INCREMENT_B,
+  }
+}
+
+/**
+ * Round to two decimal places.
+ * @param n
+ * @returns {number}
+ * @private
+ */
+const r2 = n => +(n.toFixed(2))
+// const r2 = n => n
+
+const protect = (pulse) => {
+  if (pulse &lt; SERVO_MIN_PULSE_WIDTH) {
+    pulse = SERVO_MIN_PULSE_WIDTH
+  }
+  else if (pulse > SERVO_MAX_PULSE_WIDTH) {
+    pulse = SERVO_MAX_PULSE_WIDTH
+  }
+  return pulse
 }
 
 /**
@@ -356,15 +453,21 @@ const calcTranslation = (x1, y1, x2, y2) => {
  */
 const draw = (dumpSvg = false) => {
 
+  move(START_X, START_Y) // reset to starting position (appends to end)
+
+  log(CMD_QUEUE)
+
   const START_DATE = new Date()
   const START_TIME = START_DATE.getTime()
   log(DATEFORMAT(START_DATE, 'dddd, mmmm dS, yyyy, h:MM:ss TT'))
+  log(module.parent.filename)
 
   let isExecuting = false
   const CMD_EXECUTOR = setInterval(() => {
 
     if (isExecuting) {
-      process.stdout.write('.')
+      // log('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+      // process.stdout.write('+')
     }
     else {
 
@@ -381,31 +484,68 @@ const draw = (dumpSvg = false) => {
             const x = CMD_SEGMENTS[1]
             const y = CMD_SEGMENTS[2]
 
-            const TRANSLATION_INFO = calcTranslation(x, _y, x, y)
-
-            // start pwm for both servos
-            if (!!pigpio) {
-              SERVO_A.servoWrite(TRANSLATION_INFO[0])
-              SERVO_B.servoWrite(TRANSLATION_INFO[1])
-            }
+            const TRANSLATION_INFO = calcTranslation(_x, _y, x, y)
+            // console.log(TRANSLATION_INFO)
 
             isExecuting = true
 
-            setTimeout(() => {
+            let PULSE_A = TRANSLATION_INFO.CURRENT_PULSE_A
+            let PULSE_B = TRANSLATION_INFO.CURRENT_PULSE_B
 
-              // stop pwm for both servos
-              if (!!pigpio) {
-                SERVO_A.servoWrite(0)
-                SERVO_B.servoWrite(0)
+            let steps = 0
+
+            const TRANSLATION = setInterval(() => {
+
+              if (steps &lt; TRANSLATION_INFO.NUM_STEPS) {
+
+                // last step then set both pulses to their respective targets
+                if (steps - 1 === TRANSLATION_INFO.NUM_STEPS) {
+                  PULSE_A = TRANSLATION_INFO.TARGET_PULSE_A
+                  PULSE_B = TRANSLATION_INFO.TARGET_PULSE_B
+                }
+                // otherwise increment
+                else {
+                  PULSE_A += TRANSLATION_INFO.PULSE_INCREMENT_A
+                  PULSE_B += TRANSLATION_INFO.PULSE_INCREMENT_B
+                }
+
+                PULSE_A = protect(Math.round(PULSE_A))
+                PULSE_B = protect(Math.round(PULSE_B))
+
+                // set pulse
+                if (!!pigpio) {
+                  SERVO_A.servoWrite(PULSE_A)
+                  SERVO_B.servoWrite(PULSE_B)
+                  // console.log(`${PULSE_A}\t${PULSE_B}`)
+                }
+
+                if (steps % 16 === 0) {
+                  process.stdout.write('-') // per step...
+                }
+
+                steps++
+
+              }
+              else {
+
+                clearInterval(TRANSLATION)
+
+                // stop pwm for both servos
+                if (!!pigpio) {
+                  SERVO_A.servoWrite(0)
+                  SERVO_B.servoWrite(0)
+                }
+
+                // update and record location
+                _x = x
+                _y = y
+                POINTS.push([_x, _y])
+
+                isExecuting = false
+
               }
 
-              // update and record location
-              _x = x
-              _y = y
-              POINTS.push([_x, _y])
-
-              isExecuting = false
-            }, TRANSLATION_INFO[2])
+            }, PWM_STEP_DURATION_IN_MILLIS)
 
             break
           default:
@@ -417,8 +557,8 @@ const draw = (dumpSvg = false) => {
       // no more cmds so shut it all down...
       else {
         clearInterval(CMD_EXECUTOR)
+        log('\n')
         if (dumpSvg) {
-          log('\n')
           dumpSVG()
         }
         log(`DONE Total execution time was ${new Date().getTime() -
@@ -429,7 +569,7 @@ const draw = (dumpSvg = false) => {
 
 }
 
-move(START_X, START_Y)
+move(START_X, START_Y) // reset to starting position
 
 // public API
 module.exports = {
@@ -446,6 +586,7 @@ module.exports = {
   draw,
 
   // utility
+  r2,
 }
 </code></pre>
         </article>
@@ -457,13 +598,13 @@ module.exports = {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-drawbot.html">drawbot</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-drawbot.html">drawbot</a></li><li><a href="module-geometry.html">geometry</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Feb 03 2019 13:48:08 GMT-0500 (EST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Feb 15 2019 21:42:25 GMT-0500 (EST)
 </footer>
 
 <script> prettyPrint(); </script>

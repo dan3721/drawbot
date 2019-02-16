@@ -1,4 +1,32 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: drawbot2.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: drawbot2.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * Draw Bot 2.0
  *
  * The general usage pattern is to queue some commands and then invoke execute).
@@ -67,7 +95,7 @@ const max_y = Math.sqrt(
   (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2))) + CFG.arm1Length
 
 log(
-  `<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
+  `&lt;&lt; min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
 
 /**
  * Generates a random point within the drawable area.
@@ -90,7 +118,7 @@ const getRandomPoint = () => {
  * @see {@link #isValidPoint}
  */
 const ploylineContainsBadPoint = points => {
-  for (let j = 0; j < points.length; j += 2) {
+  for (let j = 0; j &lt; points.length; j += 2) {
     if (!isValidPoint(points[j], points[j + 1])) {
       return true
     }
@@ -117,7 +145,7 @@ const splitIntoContiguousMoves = (polyline, moves = []) => {
 
     // drop leading bad points
     let pointsCopy = [...polyline]
-    for (let j = 0; j < pointsCopy.length; j += 2) {
+    for (let j = 0; j &lt; pointsCopy.length; j += 2) {
       if (!isValidPoint(pointsCopy[j], pointsCopy[j + 1])) {
         polyline.shift()
         polyline.shift()
@@ -146,7 +174,7 @@ const splitIntoContiguousMoves = (polyline, moves = []) => {
 
       // build till we hit one
       pointsCopy = [...polyline]
-      for (let j = 0; j < pointsCopy.length; j += 2) {
+      for (let j = 0; j &lt; pointsCopy.length; j += 2) {
         if (isValidPoint(pointsCopy[j], pointsCopy[j + 1])) {
           currentMove.push(polyline.shift())
           currentMove.push(polyline.shift())
@@ -172,7 +200,7 @@ const isValidPoint = (x, y) => {
   if (y >= min_y) { // greater than the y min
     // and within the circle sweeps of both second arm segments
     if (geometry.isPointWithinCircle(x, y, 0 - CFG.servoOffset, CFG.arm1Length,
-      CFG.arm2Length) &&
+      CFG.arm2Length) &amp;&amp;
       geometry.isPointWithinCircle(x, y, 0 + CFG.servoOffset, CFG.arm1Length,
         CFG.arm2Length)) {
       valid = true
@@ -250,7 +278,7 @@ const p6 = n => ('' + n).padEnd(6, ' ')
  */
 const getPulseWidth = (degrees, flip = false) => {
 
-  if (degrees < 0 || degrees > 180) {
+  if (degrees &lt; 0 || degrees > 180) {
     const error = `ERROR: ${degrees} is outside the range 0° - 180° (inclusive)!`
     throw error
   }
@@ -302,7 +330,7 @@ const mapPulseWidthToRange = (
  * * 1 = Servo B angle
  */
 const calcServoAngles = (x, y) => {
-  const SAME = x < CENTER
+  const SAME = x &lt; CENTER
   return SAME ?
     [
       r2(180 - calcServoAngle(x, y, SAME)),
@@ -353,7 +381,7 @@ const calcServoAngle = (x, y, same) => {
   //   `x:[${x}] y:[${y}] OFFSET:[${OFFSET}] OPPOSITE:[${OPPOSITE}] ADJACENT:[${ADJACENT}] HYPOTENUSE:[${HYPOTENUSE}] ANGLE1:[${ANGLE1}] ANGLE2:[${ANGLE2}] ANGLE:[${ANGLE2}]`)
 
   // updated arm lengths and no longer seeing this...
-  if (angle < 0) {
+  if (angle &lt; 0) {
     warn(
       `x:[${x}] y:[${y}] same:[${same}] produced angle:[${angle}°] which is less than 0° Normalizing to 0°`)
     angle = 0
@@ -436,7 +464,7 @@ const drawPolyline = (points, returnToStart = false) => {
   move(xStart, yStart)
 
   // draw to all points
-  for (let i = 0; i < points.length; i += 2) {
+  for (let i = 0; i &lt; points.length; i += 2) {
     move(points[i], points[i + 1], true)
   }
 
@@ -490,7 +518,7 @@ const calcTranslation = (x1, y1, x2, y2) => {
   // as fast as they can so all we can do is let the one that is moving the
   // shorter distance go along at its native rate and then slow down the one
   // which has a longer way to go
-  let PULSE_STEP_A = DELTA_PULSE_A <= DELTA_PULSE_B ? (DELTA_PULSE_A /
+  let PULSE_STEP_A = DELTA_PULSE_A &lt;= DELTA_PULSE_B ? (DELTA_PULSE_A /
     DELTA_PULSE_B) : 1
   let PULSE_STEP_B = DELTA_PULSE_A >= DELTA_PULSE_B ? (DELTA_PULSE_B /
     DELTA_PULSE_A) : 1
@@ -502,11 +530,11 @@ const calcTranslation = (x1, y1, x2, y2) => {
     PWM_STEP_SIZE)
 
   let PULSE_INCREMENT_A = DELTA_PULSE_A / NUM_STEPS
-  if (TARGET_PULSE_A <= CURRENT_PULSE_A) {
+  if (TARGET_PULSE_A &lt;= CURRENT_PULSE_A) {
     PULSE_INCREMENT_A = PULSE_INCREMENT_A * -1
   }
   let PULSE_INCREMENT_B = DELTA_PULSE_B / NUM_STEPS
-  if (TARGET_PULSE_B <= CURRENT_PULSE_B) {
+  if (TARGET_PULSE_B &lt;= CURRENT_PULSE_B) {
     PULSE_INCREMENT_B = PULSE_INCREMENT_B * -1
   }
 
@@ -544,7 +572,7 @@ const calcTranslation = (x1, y1, x2, y2) => {
 }
 
 const protect = (pulse) => {
-  if (pulse < SERVO_MIN_PULSE_WIDTH) {
+  if (pulse &lt; SERVO_MIN_PULSE_WIDTH) {
     warn(
       `Normalized pulse ${pulse} to the minimum because it is less than ${SERVO_MIN_PULSE_WIDTH}!`)
     pulse = SERVO_MIN_PULSE_WIDTH
@@ -602,7 +630,7 @@ const execute = () => {
 
         }
         else {
-          for (let steps = 0; steps < TRANSLATION_INFO.NUM_STEPS; steps++) {
+          for (let steps = 0; steps &lt; TRANSLATION_INFO.NUM_STEPS; steps++) {
 
             // last step then set both pulses to their respective targets
             if (steps - 1 === TRANSLATION_INFO.NUM_STEPS) {
@@ -747,7 +775,7 @@ const writeHtml = (filename, _coordinates) => {
           y: height - coordinate.y * SCALE,
         }
       }),
-      labelPoints: _coordinates.length <= 16, // only show labels if legible
+      labelPoints: _coordinates.length &lt;= 16, // only show labels if legible
     }
 
     FS.readFile(PATH.join(__dirname, './templates/virtual.html'),
@@ -801,3 +829,26 @@ module.exports = {
   splitIntoContiguousMoves,
 
 }
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-drawbot.html">drawbot</a></li><li><a href="module-geometry.html">geometry</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Feb 15 2019 21:42:25 GMT-0500 (EST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
