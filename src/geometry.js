@@ -27,7 +27,6 @@ const regularPolygon = (x = 0, y = 0, numPoints = 5, radius = 2) => {
     const ptY = radius * Math.sin(angle)
     points.push({x: ptX + x, y: ptY + y})
   }
-
   return {
     points,
     isCollision: (otherThing) => {
@@ -43,23 +42,26 @@ const regularPolygon = (x = 0, y = 0, numPoints = 5, radius = 2) => {
   }
 }
 
-const CIRCLE_RESOLUTION = .20 // lower = more points of resolution
-
-const circle = (x = 0, y = 0, radius = 2) => {
-  const numPoints = Math.round((2 * Math.PI / CIRCLE_RESOLUTION) * radius)
+const circle = (x = 0, y = 0, radius = 2, circleResolution = .20) => {
+  const numPoints = Math.round((2 * Math.PI / circleResolution) * radius)
   return regularPolygon(x, y, numPoints, radius)
 }
 
-const star = (x = 0, y = 0, radius = 2) => {
+const star = (x = 0, y = 0, radius = 2, cleftToPointRatio = .40) => {
   const numPoints = 10
   const points = []
   const slice = 2 * Math.PI / numPoints
-  for (let i = 0; i < numPoints; i++) {
+  // -2 just to make start position more friendly
+  for (let i = -2; i < numPoints - 2; i++) {
     const angle = slice * i
-    const factor = i % 2 === 0 ? radius : radius / 2
+    const factor = i % 2 === 0 ? radius : radius * cleftToPointRatio
     const ptX = factor * Math.cos(angle)
     const ptY = factor * Math.sin(angle)
-    points.push({x: ptX + x, y: ptY + y})
+    points.push(
+      {
+        x: ptX * (1 - cleftToPointRatio) + x,
+        y: ptY * (1 - cleftToPointRatio) + y,
+      })
   }
   return {
     points,

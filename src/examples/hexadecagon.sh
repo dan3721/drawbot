@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Friday, February 15th, 2019, 9:11:03 PM
+# Friday, February 15th, 2019, 9:29:19 PM
 #
 # filename:     hexadecagon.js
 # num cmds:     0
-# num points:   506
+# num points:   53
 #
 MILS=0
 
