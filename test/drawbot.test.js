@@ -56,7 +56,6 @@ describe('duty cycles', () => {
 })
 
 describe('utility', () => {
-  test('distance', () => expect(geometry.distance(3, 3, 6, 7)).toBe(5))
   test('valid point 2,2', () => expect(drawbot.isValidPoint(2, 2)).toBe(true))
   test('invalid point 0,just a bit less than min_y', () => expect(
     drawbot.isValidPoint(0, drawbot.min_y - .01)).toBe(false)) // just a bit outside
@@ -95,19 +94,19 @@ describe('utility', () => {
 })
 
 // DSIABLED BECAUSE WE ARE FOOLING WITH THE ARM LENGTHS
-xdescribe('calcServoAngles', () => {
+describe('calcServoAngles', () => {
 
   // check servo degrees @ max reach (5,8.8)
   const MAX_X = 8.8
   const positions = drawbot.calcServoAngles(0, MAX_X)
-  test('A angle @ max reach', () => expect(positions[0]).toBe(158.82))
-  test('B angle @ max reach', () => expect(positions[1]).toBe(21.18))
+  test('A angle @ max reach', () => expect(positions[0]).toMatchSnapshot())
+  test('B angle @ max reach', () => expect(positions[1]).toMatchSnapshot())
 
   // check servo degrees @ min reach (5,1)
   const MIN_X = 1.5
   const positions2 = drawbot.calcServoAngles(0, MIN_X)
-  test('A angle @ min reach', () => expect(positions2[0]).toBe(107.26))
-  test('B angle @ min reach', () => expect(positions2[1]).toBe(72.74))
+  test('A angle @ min reach', () => expect(positions2[0]).toMatchSnapshot())
+  test('B angle @ min reach', () => expect(positions2[1]).toMatchSnapshot())
 
 })
 
@@ -120,103 +119,47 @@ describe('move', () => {
 })
 
 describe('draw', () => {
-  test('square',
+  test('line',
     () => expect(() => drawbot.drawPolyline([-3, -2, 3, 4])).not.toThrow())
-  test('square', () => expect(() => geometry.square(2, 4, 2)).not.toThrow())
   test('square',
-    () => expect(() => geometry.trangle(2, 4, 4, 4)).not.toThrow())
-  test('square', () => expect(() => geometry.circle(2, 4, 3)).not.toThrow())
+    () => expect(() => drawbot.drawPolygon(geometry.square(2, 4, 2).points)).
+      not.
+      toThrow())
+  test('triangle', () => expect(
+    () => drawbot.drawPolygon(geometry.triangle(2, 4, 4, 4).points)).
+    not.
+    toThrow())
+  test('circle',
+    () => expect(() => drawbot.drawPolygon(geometry.circle(2, 4, 3).points)).
+      not.
+      toThrow())
 })
 
 // DSIABLED BECAUSE WE ARE FOOLING WITH THE ARM LENGTHS
-xdescribe('calcTranslation', () => {
+describe('calcTranslation', () => {
 
 // calcTranslation vertical
   const VERTICAL_TRANSLATION = drawbot.calcTranslation(0, 5, 0, 6)
 // console.log(VERTICAL_TRANSLATION)
   test('calcTranslation vertical',
-    () => expect(VERTICAL_TRANSLATION).toEqual({
-      CURRENT_POSITION: [124.62, 55.38],
-      TARGET_POSITION: [131.65, 48.35],
-      DELTA_X: 0,
-      DELTA_Y: 1,
-      CURRENT_PULSE_A: 1115,
-      CURRENT_PULSE_B: 1885,
-      TARGET_PULSE_A: 1037,
-      TARGET_PULSE_B: 1963,
-      DELTA_DEGREES_A: 7.03,
-      DELTA_DEGREES_B: 7.03,
-      DELTA_PULSE_A: 78,
-      DELTA_PULSE_B: 78,
-      NUM_STEPS: 78,
-      PULSE_INCREMENT_A: -1,
-      PULSE_INCREMENT_B: 1,
-    }))
+    () => expect(VERTICAL_TRANSLATION).toMatchSnapshot())
 
 // calcTranslation horizontal
   const HORIZANTAL_TRANSLATION = drawbot.calcTranslation(-2, 6, 2, 6)
 // console.log(HORIZANTAL_TRANSLATION)
   test('calcTranslation horizontal',
-    () => expect(HORIZANTAL_TRANSLATION).toEqual({
-      CURRENT_POSITION: [112.72, 25.45],
-      TARGET_POSITION: [154.55, 67.28],
-      DELTA_X: 4,
-      DELTA_Y: 0,
-      CURRENT_PULSE_A: 1248,
-      CURRENT_PULSE_B: 2217,
-      TARGET_PULSE_A: 783,
-      TARGET_PULSE_B: 1752,
-      DELTA_DEGREES_A: 41.83,
-      DELTA_DEGREES_B: 41.83,
-      DELTA_PULSE_A: 465,
-      DELTA_PULSE_B: 465,
-      NUM_STEPS: 465,
-      PULSE_INCREMENT_A: -1,
-      PULSE_INCREMENT_B: -1,
-    }))
+    () => expect(HORIZANTAL_TRANSLATION).toMatchSnapshot())
 
 // calcTranslation diagonal (/)
   const DIAGONAL_TRANSLATION = drawbot.calcTranslation(-2, 3, 2, 6)
 // console.log(DIAGONAL_TRANSLATION)
   test('calcTranslation diagonal /',
-    () => expect(DIAGONAL_TRANSLATION).toEqual({
-      CURRENT_POSITION: [75.92, 29.57],
-      TARGET_POSITION: [154.55, 67.28],
-      DELTA_X: 4,
-      DELTA_Y: 3,
-      CURRENT_PULSE_A: 1656,
-      CURRENT_PULSE_B: 2171,
-      TARGET_PULSE_A: 783,
-      TARGET_PULSE_B: 1752,
-      DELTA_DEGREES_A: 78.63,
-      DELTA_DEGREES_B: 37.71,
-      DELTA_PULSE_A: 873,
-      DELTA_PULSE_B: 419,
-      NUM_STEPS: 419,
-      PULSE_INCREMENT_A: -2.08,
-      PULSE_INCREMENT_B: -1,
-    }))
+    () => expect(DIAGONAL_TRANSLATION).toMatchSnapshot())
 
 // calcTranslation diagonal
   const DIAGONAL_TRANSLATION2 = drawbot.calcTranslation(-2, 6, 2, 3)
 // console.log(DIAGONAL_TRANSLATION2)
   test('calcTranslation diagonal2 \\',
-    () => expect(DIAGONAL_TRANSLATION2).toEqual({
-      CURRENT_POSITION: [112.72, 25.45],
-      TARGET_POSITION: [150.43, 104.08],
-      DELTA_X: 4,
-      DELTA_Y: 3,
-      CURRENT_PULSE_A: 1248,
-      CURRENT_PULSE_B: 2217,
-      TARGET_PULSE_A: 829,
-      TARGET_PULSE_B: 1344,
-      DELTA_DEGREES_A: 37.71,
-      DELTA_DEGREES_B: 78.63,
-      DELTA_PULSE_A: 419,
-      DELTA_PULSE_B: 873,
-      NUM_STEPS: 419,
-      PULSE_INCREMENT_A: -1,
-      PULSE_INCREMENT_B: -2.08,
-    }))
+    () => expect(DIAGONAL_TRANSLATION2).toMatchSnapshot())
 
 })

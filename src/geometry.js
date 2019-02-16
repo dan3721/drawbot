@@ -92,7 +92,7 @@ const square = (x = 0, y = 0, width = 2) => {
   }
 }
 
-const trangle = (x = 0, y = 0, base = 2, height = 2) => {
+const triangle = (x = 0, y = 0, base = 2, height = 2) => {
   const halfHeight = height / 2
   const halfBase = base / 2
   const points = []
@@ -174,12 +174,17 @@ const heart = (x = 0, y = 0) => {
 
 // public API
 module.exports = {
-  distance,
-  isPointWithinCircle,
+
+  // shapes
   regularPolygon,
   circle,
   square,
-  trangle,
+  triangle,
   star,
   heart,
+
+  // utility
+  distance,
+  isPointWithinCircle,
+
 }

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Friday, February 15th, 2019, 8:40:52 PM
+# Friday, February 15th, 2019, 9:11:03 PM
 #
 # filename:     triangle.js
 # num cmds:     973
