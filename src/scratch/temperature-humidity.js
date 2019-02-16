@@ -1,4 +1,6 @@
 /**
+ * "mcp-spi-adc": "2.0.6"
+ *
  * Humidity/Temperature Sensor(1125) https://www.phidgets.com/?tier=3&catid=14&pcid=12&prodid=96
  *
  * https://www.npmjs.com/package/mcp-spi-adc

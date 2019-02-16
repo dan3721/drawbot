@@ -27,10 +27,6 @@
     "handlebars-helpers": "0.10.0",
     "lodash": "4.17.11"
   },
-  "optionalDependencies": {
-    "pigpio": "1.2.1",
-    "mcp-spi-adc": "2.0.6"
-  },
   "devDependencies": {
     "jest": "24.1.0",
     "jsdoc": "3.5.5",
