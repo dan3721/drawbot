@@ -1,7 +1,7 @@
 {
   "name": "drawbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A DYI drawing bot.",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf out",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/dan3721/drawbot.git"
   },
-  "author": "",
+  "author": "Dan Bush <dan.bush@techentourage.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dan3721/drawbot/issues"
