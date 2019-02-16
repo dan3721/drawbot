@@ -69,9 +69,26 @@
 
 const NOT_IMPLEMENTED = 'Not implemented!'
 
+/**
+ * Calculates the distance between two points.
+ * @param originX
+ * @param originY
+ * @param x
+ * @param y
+ * @returns {number}
+ */
 const distance = (originX, originY, x, y) => Math.sqrt(
   Math.pow(originX - x, 2) + Math.pow(originY - y, 2))
 
+/**
+ * Determines if point lies within a circle.
+ * @param x
+ * @param y
+ * @param originX
+ * @param originY
+ * @param radius
+ * @returns {boolean}
+ */
 const isPointWithinCircle = (x, y, originX, originY, radius) =>
   distance(originX, originY, x, y) &lt;= radius
 
