@@ -12,24 +12,19 @@ drawing implement from the drawing surface.
 1. Choose arm servos which have a deadband less than 5 usec or lines will not be smooth. I 
     chose [TowerPro MG995](https://www.towerpro.com.tw/product/mg995/)(s) which have a
     deadband of 1 usec. 
-1. Calibrate the servos.
+1. Calibrate the servos and configure their GIPOs in drawbot.CFG.
 1. The wrist servo is less of a concern but having a bracket to do the mounting is handy. I 
     chose [Hobbypark HDR315M](https://www.amazon.com/Hobbypark-HDR315M-Digital-Torque-Mouting/dp/B01H6IR7T0).
 1. Build the arms and configure their detentions in drawbot.CFG.
 
-#### Generalisms
-
-1. In general arm segment 2 should be greater than arm segment 1.
-1. Choose servos with a deadband less than 5usec or lines will not be smooth.
-
 ### Software
 
-The primary module is `drawbot2.js` and it contains all the smarts for directing the arms. All
-the geometric related stuff is located in `geometry.js`. Test cases are under `test`.
+The primary module is `drawbot2` and it contains all the smarts for directing the arms. All
+the geometric related stuff is located in `geometry`. Test cases are under `test`.
 
-The basic usage is to create some points and queue them by invoking `drawbot.draw` operations. 
-The invoke `drawbot.execute()` which produces both a virtual render and a shell scrip of the 
-[pigs](http://abyz.me.uk/rpi/pigpio/pigs.html) cmds to actual perform the render.
+The basic usage is to create some points and queue them by invoking `drawbot2.draw` operations. 
+Then invoke `drawbot.execute()` which produces both a virtual render and an executable shell scrip of the actual 
+[pigs](http://abyz.me.uk/rpi/pigpio/pigs.html) commands to actual perform the render.
 
 Check out all the examples under `src/examples` and run `npm run examples` to freshen them.
  
@@ -40,6 +35,13 @@ Check out all the examples under `src/examples` and run `npm run examples` to fr
 * `testupdate` refresh snapshots and re-execute test cases
 * `diagnostics` run diagnostic tests (intended to run with just primary arms attached) 
 * `examples` run all the example drawings
+
+## Discussion Points
+
+1. **Arm segment lengths:** In general arm segment 2 needs be longer than arm segment 1.
+1. **Deadband:** The setup makes use of digital servos so the deadband is important. The lower the better. Higher 
+    deadband means less resolution between PWM values and will result in jagged lines.
+
 
 ## Reference
 
