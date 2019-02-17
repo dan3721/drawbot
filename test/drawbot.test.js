@@ -14,25 +14,23 @@ beforeEach(() => {
 
 describe('duty cycles', () => {
 
-// check conversion of degrees to pulse width
-// NOTE: current servos are reversed; see drawbot.PWM_RANGE_REVERSED
-// 0°
+  // 0°
   test('2500 @ 0°', () => expect(drawbot.getPulseWidth(0)).toBe(2500))
   test('500 @ 0° (flip)',
     () => expect(drawbot.getPulseWidth(0, true)).toBe(500))
-// 90°
+  // 90°
   test('1500 @ 90°', () => expect(drawbot.getPulseWidth(90)).toBe(1500))
   test('1500 @ 90° (flip)',
     () => expect(drawbot.getPulseWidth(90, true)).toBe(1500))
-// 180°
+  // 180°
   test('500 @ 180°', () => expect(drawbot.getPulseWidth(180)).toBe(500))
   test('2500 @ 180° (flip)',
     () => expect(drawbot.getPulseWidth(180, true)).toBe(2500))
-// 45°
+  // 45°
   test('2000 @ 45°', () => expect(drawbot.getPulseWidth(45)).toBe(2000))
   test('1000 @ 45° (flip)',
     () => expect(drawbot.getPulseWidth(45, true)).toBe(1000))
-// 20°
+  // 20°
   test('2278 @ 20°', () => expect(drawbot.getPulseWidth(20)).toBe(2278))
   test('722 @ 20° (flip)',
     () => expect(drawbot.getPulseWidth(20, true)).toBe(722))
@@ -93,7 +91,6 @@ describe('utility', () => {
     })
 })
 
-// DSIABLED BECAUSE WE ARE FOOLING WITH THE ARM LENGTHS
 describe('calcServoAngles', () => {
 
   // check servo degrees @ max reach (5,8.8)
@@ -135,7 +132,6 @@ describe('queue', () => {
       toThrow())
 })
 
-// DSIABLED BECAUSE WE ARE FOOLING WITH THE ARM LENGTHS
 describe('calcTranslation', () => {
 
 // calcTranslation vertical
