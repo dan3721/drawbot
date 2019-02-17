@@ -351,7 +351,7 @@ const calcServoAngle = (x, y, same) => {
   const ANGLE2 = radians2Degrees(
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
-  // step 4: add angles
+  // step 4: add / subtract angles
   let angle = same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1
 
   // console.log(
