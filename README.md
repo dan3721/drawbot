@@ -22,7 +22,7 @@ drawing implement from the drawing surface.
 The primary module is `drawbot2` and it contains all the smarts for directing the arms. All
 the geometric related stuff is located in `geometry`. Test cases are under `test`.
 
-The basic usage is to create some points and queue them by invoking `drawbot2.draw` operations. 
+The basic usage is to create some points and queue them by invoking `drawbot2.queueX` operations. 
 Then invoke `drawbot.execute()` which produces both a virtual render and an executable shell scrip of the actual 
 [pigs](http://abyz.me.uk/rpi/pigpio/pigs.html) commands to actual perform the render.
 

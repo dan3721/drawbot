@@ -21,6 +21,6 @@ do {
 }
 while (bubbles.length < NUM_BUBBLES)
 
-bubbles.forEach(bubble => drawbot.drawPolyline(bubble.points))
+bubbles.forEach(bubble => drawbot.queuePolyline(bubble.points))
 
 drawbot.execute()

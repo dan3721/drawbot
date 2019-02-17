@@ -419,12 +419,12 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
 const moveHome = () => move(CFG.home.x, CFG.home.y)
 
 /**
- * Queues the specified polygon.
+ * Queues the specified polygon. Same as invoking `queuePolyline(pints, true)`
  * @param points
- * @see {@link drawPolyline}
+ * @see {@link queuePolyline}
  */
-const drawPolygon = (points) => {
-  drawPolyline(points, true)
+const queuePolygon = (points) => {
+  queuePolyline(points, true)
 }
 
 /**
@@ -432,7 +432,7 @@ const drawPolygon = (points) => {
  * @param points {Array(x1,y1,x2,y2,x3,...)} or {Array({x1,y1},{x2,y2},{x3...)}
  * @param returnToStart returns the first point to complete the path for polygons
  */
-const drawPolyline = (points, returnToStart = false) => {
+const queuePolyline = (points, returnToStart = false) => {
 
   if (_.isObject(points[0])) {
     points = points.reduce((accum, point) => {
@@ -825,8 +825,8 @@ module.exports = {
   // cmds
   move,
   moveHome,
-  drawPolyline,
-  drawPolygon,
+  queuePolyline,
+  queuePolygon,
   execute,
 
   // utility
