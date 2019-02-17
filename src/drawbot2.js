@@ -43,7 +43,6 @@ const error = (msg) => {
  * Setup configurations.
  */
 const CFG = {
-  home: {x: 0, y: 1.5},
   servoOffset: 1,
   arm1Length: 5,
   arm2Length: 4.3,
@@ -65,6 +64,9 @@ const max_y = Math.sqrt(
 
 log(
   `<< min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
+
+const HOME_X = 0
+const HOME_Y = min_y
 
 /**
  * Generates a random point within the drawable area.
@@ -208,7 +210,7 @@ let _drawEnabled = false
 const CMD_QUEUE = []
 
 // current position
-let _currentPosition = CFG.home
+let _currentPosition = {x: HOME_X, y: HOME_Y}
 
 // point stack
 const POINTS = []
@@ -416,7 +418,7 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
 /**
  * Moves the arms to the home position.
  */
-const moveHome = () => move(CFG.home.x, CFG.home.y)
+const moveHome = () => move(HOME_X, HOME_Y)
 
 /**
  * Queues the specified polygon. Same as invoking `queuePolyline(pints, true)`
@@ -804,7 +806,7 @@ const writeHtml = (filename, _coordinates) => {
 
 }
 
-move(CFG.home.x, CFG.home.y) // reset to starting position
+moveHome() // start at home position
 
 // public API
 module.exports = {

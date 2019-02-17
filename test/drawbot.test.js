@@ -118,19 +118,19 @@ describe('move', () => {
     () => expect(() => drawbot.move(4, 8, false, true)).toThrow())
 })
 
-describe('draw', () => {
+describe('queue', () => {
   test('line',
-    () => expect(() => drawbot.drawPolyline([-3, -2, 3, 4])).not.toThrow())
+    () => expect(() => drawbot.queuePolyline([-3, -2, 3, 4])).not.toThrow())
   test('square',
-    () => expect(() => drawbot.drawPolygon(geometry.square(2, 4, 2).points)).
+    () => expect(() => drawbot.queuePolygon(geometry.square(2, 4, 2).points)).
       not.
       toThrow())
   test('triangle', () => expect(
-    () => drawbot.drawPolygon(geometry.triangle(2, 4, 4, 4).points)).
+    () => drawbot.queuePolygon(geometry.triangle(2, 4, 4, 4).points)).
     not.
     toThrow())
   test('circle',
-    () => expect(() => drawbot.drawPolygon(geometry.circle(2, 4, 3).points)).
+    () => expect(() => drawbot.queuePolygon(geometry.circle(2, 4, 3).points)).
       not.
       toThrow())
 })
