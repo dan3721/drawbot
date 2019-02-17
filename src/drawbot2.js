@@ -446,8 +446,7 @@ const queuePolyline = (points, returnToStart = false) => {
       return accum
     }, [])
   }
-
-  // TODO: test with circle-partially-out-of-bounds.js
+  
   let moves = splitIntoContiguousMoves(points)
   if (moves.length > 1) {
     // capture starting point
