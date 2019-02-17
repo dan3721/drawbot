@@ -685,7 +685,7 @@ const writePigsS = (
   PULSE_A, PULSE_B, x, y, degreesA, degreesB, isTransitional = false) => {
 
   let pcmd = `pigs s ${CFG.gigpoA} ${p4(PULSE_A)} s ${CFG.gigpoB} ${p4(
-    PULSE_B)} mils $MILS`
+    PULSE_B)}`
   let line = `${pcmd} # `
   if (!isTransitional) {
     line += `${p6(degreesA)}° ${p6(degreesB)}° ${x},${y}`

@@ -6,7 +6,6 @@
 # num cmds:     {{cmds.length}}
 # num points:   {{numPoints}}
 #
-MILS=0
 
 {{#each cmds}}
 {{this}}

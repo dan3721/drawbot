@@ -1,2759 +1,2758 @@
 #!/bin/sh
 #
-# Saturday, February 16th, 2019, 12:58:34 PM
+# Sunday, February 17th, 2019, 8:37:24 AM
 #
 # filename:     circles.js
 # num cmds:     2747
 # num points:   193
 #
-MILS=0
 
-pigs s 23 762  s 24 2231 mils $MILS # *
-pigs s 23 763  s 24 2223 mils $MILS # *
-pigs s 23 764  s 24 2215 mils $MILS # *
-pigs s 23 765  s 24 2207 mils $MILS # *
-pigs s 23 766  s 24 2199 mils $MILS # *
-pigs s 23 767  s 24 2191 mils $MILS # *
-pigs s 23 768  s 24 2183 mils $MILS # *
-pigs s 23 769  s 24 2175 mils $MILS # *
-pigs s 23 770  s 24 2167 mils $MILS # *
-pigs s 23 771  s 24 2159 mils $MILS # *
-pigs s 23 772  s 24 2151 mils $MILS # *
-pigs s 23 773  s 24 2143 mils $MILS # *
-pigs s 23 774  s 24 2135 mils $MILS # *
-pigs s 23 775  s 24 2127 mils $MILS # *
-pigs s 23 776  s 24 2119 mils $MILS # *
-pigs s 23 777  s 24 2111 mils $MILS # *
-pigs s 23 778  s 24 2102 mils $MILS # *
-pigs s 23 779  s 24 2094 mils $MILS # *
-pigs s 23 780  s 24 2086 mils $MILS # *
-pigs s 23 781  s 24 2078 mils $MILS # *
-pigs s 23 782  s 24 2070 mils $MILS # *
-pigs s 23 783  s 24 2062 mils $MILS # *
-pigs s 23 784  s 24 2054 mils $MILS # *
-pigs s 23 785  s 24 2046 mils $MILS # *
-pigs s 23 786  s 24 2038 mils $MILS # *
-pigs s 23 787  s 24 2030 mils $MILS # *
-pigs s 23 788  s 24 2022 mils $MILS # *
-pigs s 23 789  s 24 2014 mils $MILS # *
-pigs s 23 790  s 24 2006 mils $MILS # *
-pigs s 23 791  s 24 1998 mils $MILS # *
-pigs s 23 792  s 24 1990 mils $MILS # *
-pigs s 23 793  s 24 1982 mils $MILS # *
-pigs s 23 794  s 24 1974 mils $MILS # *
-pigs s 23 795  s 24 1966 mils $MILS # *
-pigs s 23 796  s 24 1958 mils $MILS # *
-pigs s 23 797  s 24 1950 mils $MILS # *
-pigs s 23 798  s 24 1942 mils $MILS # *
-pigs s 23 799  s 24 1934 mils $MILS # 153.06° 50.94 ° 1,5
-pigs s 23 798  s 24 1949 mils $MILS # 153.18° 49.6  ° 0.98,5.2
-pigs s 23 799  s 24 1955 mils $MILS # *
-pigs s 23 800  s 24 1962 mils $MILS # *
-pigs s 23 801  s 24 1968 mils $MILS # 152.92° 47.86 ° 0.92,5.39
-pigs s 23 802  s 24 1971 mils $MILS # *
-pigs s 23 803  s 24 1975 mils $MILS # *
-pigs s 23 804  s 24 1978 mils $MILS # *
-pigs s 23 805  s 24 1982 mils $MILS # *
-pigs s 23 806  s 24 1985 mils $MILS # *
-pigs s 23 807  s 24 1989 mils $MILS # *
-pigs s 23 808  s 24 1992 mils $MILS # 152.29° 45.76 ° 0.82,5.57
-pigs s 23 809  s 24 1994 mils $MILS # *
-pigs s 23 810  s 24 1997 mils $MILS # *
-pigs s 23 811  s 24 1999 mils $MILS # *
-pigs s 23 812  s 24 2002 mils $MILS # *
-pigs s 23 813  s 24 2004 mils $MILS # *
-pigs s 23 814  s 24 2006 mils $MILS # *
-pigs s 23 815  s 24 2009 mils $MILS # *
-pigs s 23 816  s 24 2011 mils $MILS # *
-pigs s 23 817  s 24 2014 mils $MILS # *
-pigs s 23 818  s 24 2016 mils $MILS # 151.34° 43.55 ° 0.69,5.72
-pigs s 23 819  s 24 2018 mils $MILS # *
-pigs s 23 820  s 24 2020 mils $MILS # *
-pigs s 23 821  s 24 2022 mils $MILS # *
-pigs s 23 822  s 24 2024 mils $MILS # *
-pigs s 23 823  s 24 2026 mils $MILS # *
-pigs s 23 824  s 24 2028 mils $MILS # *
-pigs s 23 825  s 24 2030 mils $MILS # *
-pigs s 23 826  s 24 2031 mils $MILS # *
-pigs s 23 827  s 24 2033 mils $MILS # *
-pigs s 23 828  s 24 2035 mils $MILS # *
-pigs s 23 829  s 24 2037 mils $MILS # *
-pigs s 23 830  s 24 2039 mils $MILS # *
-pigs s 23 831  s 24 2041 mils $MILS # *
-pigs s 23 832  s 24 2043 mils $MILS # 150.08° 41.16 ° 0.53,5.85
-pigs s 23 833  s 24 2044 mils $MILS # *
-pigs s 23 834  s 24 2046 mils $MILS # *
-pigs s 23 835  s 24 2047 mils $MILS # *
-pigs s 23 836  s 24 2049 mils $MILS # *
-pigs s 23 837  s 24 2050 mils $MILS # *
-pigs s 23 838  s 24 2052 mils $MILS # *
-pigs s 23 839  s 24 2053 mils $MILS # *
-pigs s 23 840  s 24 2055 mils $MILS # *
-pigs s 23 841  s 24 2056 mils $MILS # *
-pigs s 23 842  s 24 2057 mils $MILS # *
-pigs s 23 843  s 24 2059 mils $MILS # *
-pigs s 23 844  s 24 2060 mils $MILS # *
-pigs s 23 845  s 24 2062 mils $MILS # *
-pigs s 23 846  s 24 2063 mils $MILS # *
-pigs s 23 847  s 24 2065 mils $MILS # *
-pigs s 23 848  s 24 2066 mils $MILS # *
-pigs s 23 849  s 24 2067 mils $MILS # *
-pigs s 23 850  s 24 2069 mils $MILS # 148.53° 38.8  ° 0.35,5.94
-pigs s 23 851  s 24 2070 mils $MILS # *
-pigs s 23 852  s 24 2071 mils $MILS # *
-pigs s 23 853  s 24 2073 mils $MILS # *
-pigs s 23 854  s 24 2074 mils $MILS # *
-pigs s 23 855  s 24 2075 mils $MILS # *
-pigs s 23 856  s 24 2076 mils $MILS # *
-pigs s 23 857  s 24 2078 mils $MILS # *
-pigs s 23 858  s 24 2079 mils $MILS # *
-pigs s 23 859  s 24 2080 mils $MILS # *
-pigs s 23 860  s 24 2081 mils $MILS # *
-pigs s 23 861  s 24 2083 mils $MILS # *
-pigs s 23 862  s 24 2084 mils $MILS # *
-pigs s 23 863  s 24 2085 mils $MILS # *
-pigs s 23 864  s 24 2086 mils $MILS # *
-pigs s 23 865  s 24 2088 mils $MILS # *
-pigs s 23 866  s 24 2089 mils $MILS # *
-pigs s 23 867  s 24 2090 mils $MILS # *
-pigs s 23 868  s 24 2091 mils $MILS # *
-pigs s 23 869  s 24 2093 mils $MILS # *
-pigs s 23 870  s 24 2094 mils $MILS # *
-pigs s 23 871  s 24 2095 mils $MILS # 146.65° 36.48 ° 0.15,5.99
-pigs s 23 872  s 24 2096 mils $MILS # *
-pigs s 23 873  s 24 2097 mils $MILS # *
-pigs s 23 874  s 24 2098 mils $MILS # *
-pigs s 23 875  s 24 2099 mils $MILS # *
-pigs s 23 876  s 24 2100 mils $MILS # *
-pigs s 23 877  s 24 2101 mils $MILS # *
-pigs s 23 878  s 24 2102 mils $MILS # *
-pigs s 23 879  s 24 2103 mils $MILS # *
-pigs s 23 880  s 24 2104 mils $MILS # *
-pigs s 23 881  s 24 2106 mils $MILS # *
-pigs s 23 882  s 24 2107 mils $MILS # *
-pigs s 23 883  s 24 2108 mils $MILS # *
-pigs s 23 884  s 24 2109 mils $MILS # *
-pigs s 23 885  s 24 2110 mils $MILS # *
-pigs s 23 886  s 24 2111 mils $MILS # *
-pigs s 23 887  s 24 2112 mils $MILS # *
-pigs s 23 888  s 24 2113 mils $MILS # *
-pigs s 23 889  s 24 2114 mils $MILS # *
-pigs s 23 890  s 24 2115 mils $MILS # *
-pigs s 23 891  s 24 2116 mils $MILS # *
-pigs s 23 892  s 24 2117 mils $MILS # *
-pigs s 23 893  s 24 2118 mils $MILS # 144.61° 34.35 ° -0.05,6
-pigs s 23 894  s 24 2119 mils $MILS # *
-pigs s 23 895  s 24 2120 mils $MILS # *
-pigs s 23 896  s 24 2121 mils $MILS # *
-pigs s 23 898  s 24 2122 mils $MILS # *
-pigs s 23 899  s 24 2123 mils $MILS # *
-pigs s 23 900  s 24 2124 mils $MILS # *
-pigs s 23 901  s 24 2125 mils $MILS # *
-pigs s 23 902  s 24 2126 mils $MILS # *
-pigs s 23 903  s 24 2127 mils $MILS # *
-pigs s 23 904  s 24 2128 mils $MILS # *
-pigs s 23 906  s 24 2129 mils $MILS # *
-pigs s 23 907  s 24 2130 mils $MILS # *
-pigs s 23 908  s 24 2131 mils $MILS # *
-pigs s 23 909  s 24 2132 mils $MILS # *
-pigs s 23 910  s 24 2133 mils $MILS # *
-pigs s 23 911  s 24 2134 mils $MILS # *
-pigs s 23 912  s 24 2135 mils $MILS # *
-pigs s 23 914  s 24 2136 mils $MILS # *
-pigs s 23 915  s 24 2137 mils $MILS # *
-pigs s 23 916  s 24 2138 mils $MILS # *
-pigs s 23 917  s 24 2139 mils $MILS # *
-pigs s 23 918  s 24 2140 mils $MILS # 142.39° 32.39 ° -0.25,5.97
-pigs s 23 919  s 24 2141 mils $MILS # *
-pigs s 23 921  s 24 2142 mils $MILS # *
-pigs s 23 922  s 24 2143 mils $MILS # *
-pigs s 23 923  s 24 2144 mils $MILS # *
-pigs s 23 925  s 24 2145 mils $MILS # *
-pigs s 23 926  s 24 2146 mils $MILS # *
-pigs s 23 928  s 24 2147 mils $MILS # *
-pigs s 23 929  s 24 2148 mils $MILS # *
-pigs s 23 930  s 24 2149 mils $MILS # *
-pigs s 23 932  s 24 2150 mils $MILS # *
-pigs s 23 933  s 24 2151 mils $MILS # *
-pigs s 23 934  s 24 2152 mils $MILS # *
-pigs s 23 936  s 24 2153 mils $MILS # *
-pigs s 23 937  s 24 2154 mils $MILS # *
-pigs s 23 939  s 24 2155 mils $MILS # *
-pigs s 23 940  s 24 2156 mils $MILS # *
-pigs s 23 941  s 24 2157 mils $MILS # *
-pigs s 23 943  s 24 2158 mils $MILS # *
-pigs s 23 944  s 24 2159 mils $MILS # 140.05° 30.68 ° -0.44,5.9
-pigs s 23 946  s 24 2160 mils $MILS # *
-pigs s 23 947  s 24 2161 mils $MILS # *
-pigs s 23 949  s 24 2162 mils $MILS # *
-pigs s 23 951  s 24 2163 mils $MILS # *
-pigs s 23 952  s 24 2164 mils $MILS # *
-pigs s 23 954  s 24 2165 mils $MILS # *
-pigs s 23 955  s 24 2166 mils $MILS # *
-pigs s 23 957  s 24 2167 mils $MILS # *
-pigs s 23 959  s 24 2168 mils $MILS # *
-pigs s 23 960  s 24 2169 mils $MILS # *
-pigs s 23 962  s 24 2170 mils $MILS # *
-pigs s 23 964  s 24 2171 mils $MILS # *
-pigs s 23 965  s 24 2172 mils $MILS # *
-pigs s 23 967  s 24 2173 mils $MILS # *
-pigs s 23 968  s 24 2174 mils $MILS # *
-pigs s 23 970  s 24 2175 mils $MILS # 137.68° 29.28 ° -0.61,5.79
-pigs s 23 972  s 24 2176 mils $MILS # *
-pigs s 23 974  s 24 2177 mils $MILS # *
-pigs s 23 977  s 24 2178 mils $MILS # *
-pigs s 23 979  s 24 2179 mils $MILS # *
-pigs s 23 981  s 24 2180 mils $MILS # *
-pigs s 23 983  s 24 2181 mils $MILS # *
-pigs s 23 985  s 24 2182 mils $MILS # *
-pigs s 23 987  s 24 2183 mils $MILS # *
-pigs s 23 990  s 24 2184 mils $MILS # *
-pigs s 23 992  s 24 2185 mils $MILS # *
-pigs s 23 994  s 24 2186 mils $MILS # *
-pigs s 23 996  s 24 2187 mils $MILS # 135.32° 28.13 ° -0.76,5.65
-pigs s 23 999  s 24 2188 mils $MILS # *
-pigs s 23 1001 s 24 2189 mils $MILS # *
-pigs s 23 1004 s 24 2190 mils $MILS # *
-pigs s 23 1006 s 24 2191 mils $MILS # *
-pigs s 23 1009 s 24 2192 mils $MILS # *
-pigs s 23 1011 s 24 2193 mils $MILS # *
-pigs s 23 1014 s 24 2194 mils $MILS # *
-pigs s 23 1016 s 24 2195 mils $MILS # *
-pigs s 23 1019 s 24 2196 mils $MILS # 133.25° 27.38 ° -0.87,5.49
-pigs s 23 1025 s 24 2197 mils $MILS # *
-pigs s 23 1030 s 24 2198 mils $MILS # *
-pigs s 23 1036 s 24 2199 mils $MILS # *
-pigs s 23 1041 s 24 2200 mils $MILS # 131.3 ° 26.96 ° -0.95,5.3
-pigs s 23 1059 s 24 2201 mils $MILS # 129.73° 26.9  ° -0.99,5.1
-pigs s 23 1063 s 24 2200 mils $MILS # *
-pigs s 23 1067 s 24 2199 mils $MILS # *
-pigs s 23 1071 s 24 2198 mils $MILS # 128.64° 27.21 ° -0.99,4.9
-pigs s 23 1072 s 24 2197 mils $MILS # *
-pigs s 23 1073 s 24 2195 mils $MILS # *
-pigs s 23 1074 s 24 2194 mils $MILS # *
-pigs s 23 1075 s 24 2193 mils $MILS # *
-pigs s 23 1076 s 24 2191 mils $MILS # *
-pigs s 23 1077 s 24 2190 mils $MILS # 128.09° 27.91 ° -0.95,4.7
-pigs s 23 1076 s 24 2177 mils $MILS # 128.2 ° 29.05 ° -0.87,4.51
-pigs s 23 1075 s 24 2175 mils $MILS # *
-pigs s 23 1074 s 24 2173 mils $MILS # *
-pigs s 23 1073 s 24 2172 mils $MILS # *
-pigs s 23 1072 s 24 2170 mils $MILS # *
-pigs s 23 1071 s 24 2168 mils $MILS # *
-pigs s 23 1070 s 24 2166 mils $MILS # *
-pigs s 23 1069 s 24 2165 mils $MILS # *
-pigs s 23 1068 s 24 2163 mils $MILS # *
-pigs s 23 1067 s 24 2161 mils $MILS # 128.97° 30.53 ° -0.76,4.35
-pigs s 23 1066 s 24 2160 mils $MILS # *
-pigs s 23 1065 s 24 2158 mils $MILS # *
-pigs s 23 1064 s 24 2157 mils $MILS # *
-pigs s 23 1063 s 24 2156 mils $MILS # *
-pigs s 23 1062 s 24 2154 mils $MILS # *
-pigs s 23 1061 s 24 2153 mils $MILS # *
-pigs s 23 1060 s 24 2152 mils $MILS # *
-pigs s 23 1059 s 24 2150 mils $MILS # *
-pigs s 23 1058 s 24 2149 mils $MILS # *
-pigs s 23 1057 s 24 2148 mils $MILS # *
-pigs s 23 1056 s 24 2146 mils $MILS # *
-pigs s 23 1055 s 24 2145 mils $MILS # *
-pigs s 23 1054 s 24 2143 mils $MILS # *
-pigs s 23 1053 s 24 2142 mils $MILS # *
-pigs s 23 1052 s 24 2141 mils $MILS # *
-pigs s 23 1051 s 24 2139 mils $MILS # *
-pigs s 23 1050 s 24 2138 mils $MILS # 130.52° 32.55 ° -0.61,4.21
-pigs s 23 1049 s 24 2137 mils $MILS # *
-pigs s 23 1048 s 24 2136 mils $MILS # *
-pigs s 23 1047 s 24 2135 mils $MILS # *
-pigs s 23 1046 s 24 2133 mils $MILS # *
-pigs s 23 1045 s 24 2132 mils $MILS # *
-pigs s 23 1044 s 24 2131 mils $MILS # *
-pigs s 23 1043 s 24 2130 mils $MILS # *
-pigs s 23 1042 s 24 2129 mils $MILS # *
-pigs s 23 1041 s 24 2128 mils $MILS # *
-pigs s 23 1040 s 24 2127 mils $MILS # *
-pigs s 23 1039 s 24 2126 mils $MILS # *
-pigs s 23 1038 s 24 2124 mils $MILS # *
-pigs s 23 1037 s 24 2123 mils $MILS # *
-pigs s 23 1036 s 24 2122 mils $MILS # *
-pigs s 23 1035 s 24 2121 mils $MILS # *
-pigs s 23 1034 s 24 2120 mils $MILS # *
-pigs s 23 1033 s 24 2119 mils $MILS # *
-pigs s 23 1032 s 24 2118 mils $MILS # *
-pigs s 23 1031 s 24 2117 mils $MILS # *
-pigs s 23 1030 s 24 2115 mils $MILS # *
-pigs s 23 1029 s 24 2114 mils $MILS # *
-pigs s 23 1028 s 24 2113 mils $MILS # *
-pigs s 23 1027 s 24 2112 mils $MILS # 132.61° 34.89 ° -0.44,4.1
-pigs s 23 1026 s 24 2111 mils $MILS # *
-pigs s 23 1025 s 24 2110 mils $MILS # *
-pigs s 23 1024 s 24 2109 mils $MILS # *
-pigs s 23 1023 s 24 2108 mils $MILS # *
-pigs s 23 1022 s 24 2107 mils $MILS # *
-pigs s 23 1021 s 24 2106 mils $MILS # *
-pigs s 23 1020 s 24 2105 mils $MILS # *
-pigs s 23 1019 s 24 2104 mils $MILS # *
-pigs s 23 1018 s 24 2103 mils $MILS # *
-pigs s 23 1017 s 24 2102 mils $MILS # *
-pigs s 23 1016 s 24 2101 mils $MILS # *
-pigs s 23 1015 s 24 2100 mils $MILS # *
-pigs s 23 1014 s 24 2099 mils $MILS # *
-pigs s 23 1013 s 24 2098 mils $MILS # *
-pigs s 23 1012 s 24 2097 mils $MILS # *
-pigs s 23 1011 s 24 2096 mils $MILS # *
-pigs s 23 1010 s 24 2094 mils $MILS # *
-pigs s 23 1009 s 24 2093 mils $MILS # *
-pigs s 23 1008 s 24 2092 mils $MILS # *
-pigs s 23 1007 s 24 2091 mils $MILS # *
-pigs s 23 1006 s 24 2090 mils $MILS # *
-pigs s 23 1005 s 24 2089 mils $MILS # *
-pigs s 23 1004 s 24 2088 mils $MILS # *
-pigs s 23 1003 s 24 2087 mils $MILS # *
-pigs s 23 1002 s 24 2086 mils $MILS # *
-pigs s 23 1001 s 24 2085 mils $MILS # *
-pigs s 23 1000 s 24 2084 mils $MILS # *
-pigs s 23 999  s 24 2083 mils $MILS # *
-pigs s 23 998  s 24 2082 mils $MILS # 135.2 ° 37.58 ° -0.25,4.03
-pigs s 23 997  s 24 2081 mils $MILS # *
-pigs s 23 996  s 24 2080 mils $MILS # *
-pigs s 23 995  s 24 2079 mils $MILS # *
-pigs s 23 994  s 24 2078 mils $MILS # *
-pigs s 23 993  s 24 2077 mils $MILS # *
-pigs s 23 992  s 24 2076 mils $MILS # *
-pigs s 23 991  s 24 2075 mils $MILS # *
-pigs s 23 990  s 24 2074 mils $MILS # *
-pigs s 23 989  s 24 2073 mils $MILS # *
-pigs s 23 988  s 24 2072 mils $MILS # *
-pigs s 23 987  s 24 2071 mils $MILS # *
-pigs s 23 986  s 24 2070 mils $MILS # *
-pigs s 23 985  s 24 2069 mils $MILS # *
-pigs s 23 984  s 24 2068 mils $MILS # *
-pigs s 23 983  s 24 2067 mils $MILS # *
-pigs s 23 982  s 24 2066 mils $MILS # *
-pigs s 23 981  s 24 2065 mils $MILS # *
-pigs s 23 980  s 24 2064 mils $MILS # *
-pigs s 23 979  s 24 2063 mils $MILS # *
-pigs s 23 978  s 24 2062 mils $MILS # *
-pigs s 23 977  s 24 2061 mils $MILS # *
-pigs s 23 976  s 24 2060 mils $MILS # *
-pigs s 23 975  s 24 2059 mils $MILS # *
-pigs s 23 974  s 24 2058 mils $MILS # *
-pigs s 23 973  s 24 2057 mils $MILS # *
-pigs s 23 972  s 24 2056 mils $MILS # *
-pigs s 23 971  s 24 2055 mils $MILS # *
-pigs s 23 970  s 24 2054 mils $MILS # *
-pigs s 23 969  s 24 2053 mils $MILS # *
-pigs s 23 968  s 24 2052 mils $MILS # *
-pigs s 23 967  s 24 2051 mils $MILS # *
-pigs s 23 966  s 24 2050 mils $MILS # 138.07° 40.47 ° -0.05,4
-pigs s 23 965  s 24 2049 mils $MILS # *
-pigs s 23 964  s 24 2048 mils $MILS # *
-pigs s 23 963  s 24 2047 mils $MILS # *
-pigs s 23 962  s 24 2046 mils $MILS # *
-pigs s 23 961  s 24 2045 mils $MILS # *
-pigs s 23 960  s 24 2044 mils $MILS # *
-pigs s 23 959  s 24 2043 mils $MILS # *
-pigs s 23 958  s 24 2042 mils $MILS # *
-pigs s 23 957  s 24 2041 mils $MILS # *
-pigs s 23 956  s 24 2040 mils $MILS # *
-pigs s 23 955  s 24 2039 mils $MILS # *
-pigs s 23 954  s 24 2038 mils $MILS # *
-pigs s 23 953  s 24 2037 mils $MILS # *
-pigs s 23 952  s 24 2036 mils $MILS # *
-pigs s 23 951  s 24 2035 mils $MILS # *
-pigs s 23 950  s 24 2034 mils $MILS # *
-pigs s 23 949  s 24 2033 mils $MILS # *
-pigs s 23 948  s 24 2032 mils $MILS # *
-pigs s 23 947  s 24 2031 mils $MILS # *
-pigs s 23 946  s 24 2030 mils $MILS # *
-pigs s 23 945  s 24 2029 mils $MILS # *
-pigs s 23 944  s 24 2028 mils $MILS # *
-pigs s 23 943  s 24 2027 mils $MILS # *
-pigs s 23 942  s 24 2026 mils $MILS # *
-pigs s 23 941  s 24 2025 mils $MILS # *
-pigs s 23 940  s 24 2024 mils $MILS # *
-pigs s 23 939  s 24 2023 mils $MILS # *
-pigs s 23 938  s 24 2022 mils $MILS # *
-pigs s 23 937  s 24 2021 mils $MILS # *
-pigs s 23 936  s 24 2020 mils $MILS # *
-pigs s 23 935  s 24 2019 mils $MILS # *
-pigs s 23 934  s 24 2018 mils $MILS # 140.98° 43.37 ° 0.15,4.01
-pigs s 23 933  s 24 2017 mils $MILS # *
-pigs s 23 932  s 24 2016 mils $MILS # *
-pigs s 23 931  s 24 2015 mils $MILS # *
-pigs s 23 930  s 24 2014 mils $MILS # *
-pigs s 23 929  s 24 2013 mils $MILS # *
-pigs s 23 928  s 24 2012 mils $MILS # *
-pigs s 23 927  s 24 2011 mils $MILS # *
-pigs s 23 926  s 24 2010 mils $MILS # *
-pigs s 23 925  s 24 2009 mils $MILS # *
-pigs s 23 924  s 24 2008 mils $MILS # *
-pigs s 23 923  s 24 2007 mils $MILS # *
-pigs s 23 922  s 24 2006 mils $MILS # *
-pigs s 23 921  s 24 2005 mils $MILS # *
-pigs s 23 920  s 24 2004 mils $MILS # *
-pigs s 23 919  s 24 2003 mils $MILS # *
-pigs s 23 918  s 24 2002 mils $MILS # *
-pigs s 23 916  s 24 2001 mils $MILS # *
-pigs s 23 915  s 24 2000 mils $MILS # *
-pigs s 23 914  s 24 1999 mils $MILS # *
-pigs s 23 913  s 24 1998 mils $MILS # *
-pigs s 23 912  s 24 1997 mils $MILS # *
-pigs s 23 911  s 24 1996 mils $MILS # *
-pigs s 23 910  s 24 1995 mils $MILS # *
-pigs s 23 909  s 24 1994 mils $MILS # *
-pigs s 23 908  s 24 1993 mils $MILS # *
-pigs s 23 907  s 24 1992 mils $MILS # *
-pigs s 23 906  s 24 1991 mils $MILS # *
-pigs s 23 905  s 24 1990 mils $MILS # *
-pigs s 23 904  s 24 1989 mils $MILS # *
-pigs s 23 903  s 24 1988 mils $MILS # *
-pigs s 23 902  s 24 1987 mils $MILS # 143.84° 46.19 ° 0.35,4.06
-pigs s 23 901  s 24 1986 mils $MILS # *
-pigs s 23 900  s 24 1985 mils $MILS # *
-pigs s 23 899  s 24 1984 mils $MILS # *
-pigs s 23 898  s 24 1983 mils $MILS # *
-pigs s 23 897  s 24 1982 mils $MILS # *
-pigs s 23 896  s 24 1981 mils $MILS # *
-pigs s 23 894  s 24 1980 mils $MILS # *
-pigs s 23 893  s 24 1979 mils $MILS # *
-pigs s 23 892  s 24 1978 mils $MILS # *
-pigs s 23 891  s 24 1977 mils $MILS # *
-pigs s 23 890  s 24 1976 mils $MILS # *
-pigs s 23 889  s 24 1975 mils $MILS # *
-pigs s 23 888  s 24 1974 mils $MILS # *
-pigs s 23 887  s 24 1973 mils $MILS # *
-pigs s 23 886  s 24 1972 mils $MILS # *
-pigs s 23 885  s 24 1971 mils $MILS # *
-pigs s 23 884  s 24 1970 mils $MILS # *
-pigs s 23 883  s 24 1969 mils $MILS # *
-pigs s 23 881  s 24 1968 mils $MILS # *
-pigs s 23 880  s 24 1967 mils $MILS # *
-pigs s 23 879  s 24 1966 mils $MILS # *
-pigs s 23 878  s 24 1965 mils $MILS # *
-pigs s 23 877  s 24 1964 mils $MILS # *
-pigs s 23 876  s 24 1963 mils $MILS # *
-pigs s 23 875  s 24 1962 mils $MILS # *
-pigs s 23 874  s 24 1961 mils $MILS # 146.36° 48.54 ° 0.53,4.15
-pigs s 23 873  s 24 1960 mils $MILS # *
-pigs s 23 872  s 24 1959 mils $MILS # *
-pigs s 23 870  s 24 1958 mils $MILS # *
-pigs s 23 869  s 24 1957 mils $MILS # *
-pigs s 23 868  s 24 1956 mils $MILS # *
-pigs s 23 867  s 24 1955 mils $MILS # *
-pigs s 23 866  s 24 1954 mils $MILS # *
-pigs s 23 864  s 24 1953 mils $MILS # *
-pigs s 23 863  s 24 1952 mils $MILS # *
-pigs s 23 862  s 24 1951 mils $MILS # *
-pigs s 23 861  s 24 1950 mils $MILS # *
-pigs s 23 860  s 24 1949 mils $MILS # *
-pigs s 23 858  s 24 1948 mils $MILS # *
-pigs s 23 857  s 24 1947 mils $MILS # *
-pigs s 23 856  s 24 1946 mils $MILS # *
-pigs s 23 855  s 24 1945 mils $MILS # *
-pigs s 23 854  s 24 1944 mils $MILS # *
-pigs s 23 852  s 24 1943 mils $MILS # *
-pigs s 23 851  s 24 1942 mils $MILS # *
-pigs s 23 850  s 24 1941 mils $MILS # 148.53° 50.35 ° 0.69,4.28
-pigs s 23 848  s 24 1940 mils $MILS # *
-pigs s 23 847  s 24 1939 mils $MILS # *
-pigs s 23 845  s 24 1938 mils $MILS # *
-pigs s 23 844  s 24 1937 mils $MILS # *
-pigs s 23 842  s 24 1936 mils $MILS # *
-pigs s 23 841  s 24 1935 mils $MILS # *
-pigs s 23 839  s 24 1934 mils $MILS # *
-pigs s 23 838  s 24 1933 mils $MILS # *
-pigs s 23 836  s 24 1932 mils $MILS # *
-pigs s 23 835  s 24 1931 mils $MILS # *
-pigs s 23 833  s 24 1930 mils $MILS # *
-pigs s 23 832  s 24 1929 mils $MILS # *
-pigs s 23 830  s 24 1928 mils $MILS # 150.28° 51.5  ° 0.82,4.43
-pigs s 23 827  s 24 1927 mils $MILS # *
-pigs s 23 824  s 24 1926 mils $MILS # *
-pigs s 23 821  s 24 1925 mils $MILS # *
-pigs s 23 818  s 24 1924 mils $MILS # *
-pigs s 23 815  s 24 1923 mils $MILS # 151.64° 51.97 ° 0.92,4.61
-pigs s 23 810  s 24 1924 mils $MILS # *
-pigs s 23 805  s 24 1925 mils $MILS # 152.55° 51.76 ° 0.98,4.8
-pigs s 23 804  s 24 1927 mils $MILS # *
-pigs s 23 803  s 24 1928 mils $MILS # *
-pigs s 23 802  s 24 1930 mils $MILS # *
-pigs s 23 801  s 24 1931 mils $MILS # *
-pigs s 23 800  s 24 1933 mils $MILS # *
-pigs s 23 799  s 24 1934 mils $MILS # 153.06° 50.94 ° 1,5
-pigs s 23 798  s 24 1933 mils $MILS # *
-pigs s 23 797  s 24 1932 mils $MILS # *
-pigs s 23 796  s 24 1931 mils $MILS # *
-pigs s 23 795  s 24 1930 mils $MILS # *
-pigs s 23 793  s 24 1929 mils $MILS # *
-pigs s 23 792  s 24 1928 mils $MILS # *
-pigs s 23 791  s 24 1927 mils $MILS # *
-pigs s 23 790  s 24 1926 mils $MILS # *
-pigs s 23 789  s 24 1925 mils $MILS # *
-pigs s 23 788  s 24 1924 mils $MILS # *
-pigs s 23 787  s 24 1923 mils $MILS # *
-pigs s 23 786  s 24 1922 mils $MILS # *
-pigs s 23 785  s 24 1921 mils $MILS # *
-pigs s 23 784  s 24 1920 mils $MILS # *
-pigs s 23 782  s 24 1919 mils $MILS # *
-pigs s 23 781  s 24 1918 mils $MILS # *
-pigs s 23 780  s 24 1917 mils $MILS # *
-pigs s 23 779  s 24 1916 mils $MILS # *
-pigs s 23 778  s 24 1915 mils $MILS # *
-pigs s 23 777  s 24 1914 mils $MILS # *
-pigs s 23 776  s 24 1913 mils $MILS # *
-pigs s 23 775  s 24 1912 mils $MILS # *
-pigs s 23 774  s 24 1911 mils $MILS # *
-pigs s 23 773  s 24 1910 mils $MILS # *
-pigs s 23 771  s 24 1909 mils $MILS # *
-pigs s 23 770  s 24 1908 mils $MILS # *
-pigs s 23 769  s 24 1907 mils $MILS # *
-pigs s 23 768  s 24 1906 mils $MILS # *
-pigs s 23 767  s 24 1905 mils $MILS # *
-pigs s 23 766  s 24 1904 mils $MILS # *
-pigs s 23 765  s 24 1903 mils $MILS # *
-pigs s 23 764  s 24 1902 mils $MILS # *
-pigs s 23 763  s 24 1901 mils $MILS # *
-pigs s 23 762  s 24 1900 mils $MILS # *
-pigs s 23 760  s 24 1899 mils $MILS # *
-pigs s 23 759  s 24 1898 mils $MILS # *
-pigs s 23 758  s 24 1897 mils $MILS # *
-pigs s 23 757  s 24 1896 mils $MILS # *
-pigs s 23 756  s 24 1895 mils $MILS # *
-pigs s 23 755  s 24 1894 mils $MILS # *
-pigs s 23 754  s 24 1893 mils $MILS # *
-pigs s 23 753  s 24 1892 mils $MILS # *
-pigs s 23 752  s 24 1891 mils $MILS # *
-pigs s 23 751  s 24 1890 mils $MILS # *
-pigs s 23 749  s 24 1889 mils $MILS # *
-pigs s 23 748  s 24 1888 mils $MILS # *
-pigs s 23 747  s 24 1887 mils $MILS # *
-pigs s 23 746  s 24 1886 mils $MILS # *
-pigs s 23 745  s 24 1885 mils $MILS # *
-pigs s 23 744  s 24 1884 mils $MILS # *
-pigs s 23 743  s 24 1883 mils $MILS # *
-pigs s 23 742  s 24 1882 mils $MILS # *
-pigs s 23 741  s 24 1881 mils $MILS # *
-pigs s 23 740  s 24 1880 mils $MILS # *
-pigs s 23 738  s 24 1879 mils $MILS # *
-pigs s 23 737  s 24 1878 mils $MILS # *
-pigs s 23 736  s 24 1877 mils $MILS # *
-pigs s 23 735  s 24 1876 mils $MILS # *
-pigs s 23 734  s 24 1875 mils $MILS # *
-pigs s 23 733  s 24 1874 mils $MILS # *
-pigs s 23 732  s 24 1873 mils $MILS # *
-pigs s 23 731  s 24 1872 mils $MILS # *
-pigs s 23 730  s 24 1871 mils $MILS # *
-pigs s 23 729  s 24 1870 mils $MILS # *
-pigs s 23 727  s 24 1869 mils $MILS # *
-pigs s 23 726  s 24 1868 mils $MILS # *
-pigs s 23 725  s 24 1867 mils $MILS # *
-pigs s 23 724  s 24 1866 mils $MILS # *
-pigs s 23 723  s 24 1865 mils $MILS # *
-pigs s 23 722  s 24 1864 mils $MILS # *
-pigs s 23 721  s 24 1863 mils $MILS # *
-pigs s 23 720  s 24 1862 mils $MILS # *
-pigs s 23 719  s 24 1861 mils $MILS # *
-pigs s 23 718  s 24 1860 mils $MILS # *
-pigs s 23 716  s 24 1859 mils $MILS # *
-pigs s 23 715  s 24 1858 mils $MILS # *
-pigs s 23 714  s 24 1857 mils $MILS # *
-pigs s 23 713  s 24 1856 mils $MILS # *
-pigs s 23 712  s 24 1855 mils $MILS # *
-pigs s 23 711  s 24 1854 mils $MILS # *
-pigs s 23 710  s 24 1853 mils $MILS # *
-pigs s 23 709  s 24 1852 mils $MILS # *
-pigs s 23 708  s 24 1851 mils $MILS # *
-pigs s 23 707  s 24 1850 mils $MILS # *
-pigs s 23 705  s 24 1849 mils $MILS # *
-pigs s 23 704  s 24 1848 mils $MILS # *
-pigs s 23 703  s 24 1847 mils $MILS # *
-pigs s 23 702  s 24 1846 mils $MILS # *
-pigs s 23 701  s 24 1845 mils $MILS # *
-pigs s 23 700  s 24 1844 mils $MILS # *
-pigs s 23 699  s 24 1843 mils $MILS # *
-pigs s 23 698  s 24 1842 mils $MILS # *
-pigs s 23 697  s 24 1841 mils $MILS # *
-pigs s 23 696  s 24 1840 mils $MILS # *
-pigs s 23 694  s 24 1839 mils $MILS # *
-pigs s 23 693  s 24 1838 mils $MILS # *
-pigs s 23 692  s 24 1837 mils $MILS # *
-pigs s 23 691  s 24 1836 mils $MILS # *
-pigs s 23 690  s 24 1835 mils $MILS # *
-pigs s 23 689  s 24 1834 mils $MILS # *
-pigs s 23 688  s 24 1833 mils $MILS # *
-pigs s 23 687  s 24 1832 mils $MILS # *
-pigs s 23 686  s 24 1831 mils $MILS # *
-pigs s 23 685  s 24 1830 mils $MILS # *
-pigs s 23 683  s 24 1829 mils $MILS # *
-pigs s 23 682  s 24 1828 mils $MILS # *
-pigs s 23 681  s 24 1827 mils $MILS # *
-pigs s 23 680  s 24 1826 mils $MILS # *
-pigs s 23 679  s 24 1825 mils $MILS # *
-pigs s 23 678  s 24 1824 mils $MILS # *
-pigs s 23 677  s 24 1823 mils $MILS # *
-pigs s 23 676  s 24 1822 mils $MILS # *
-pigs s 23 675  s 24 1821 mils $MILS # *
-pigs s 23 674  s 24 1820 mils $MILS # *
-pigs s 23 672  s 24 1819 mils $MILS # *
-pigs s 23 671  s 24 1818 mils $MILS # *
-pigs s 23 670  s 24 1817 mils $MILS # *
-pigs s 23 669  s 24 1816 mils $MILS # *
-pigs s 23 668  s 24 1815 mils $MILS # *
-pigs s 23 667  s 24 1814 mils $MILS # 164.97° 61.7  ° 2,5
-pigs s 23 668  s 24 1853 mils $MILS # 164.91° 58.23 ° 1.96,5.4
-pigs s 23 669  s 24 1864 mils $MILS # *
-pigs s 23 670  s 24 1874 mils $MILS # 164.68° 56.3  ° 1.91,5.59
-pigs s 23 671  s 24 1880 mils $MILS # *
-pigs s 23 672  s 24 1886 mils $MILS # *
-pigs s 23 673  s 24 1892 mils $MILS # *
-pigs s 23 674  s 24 1898 mils $MILS # 164.33° 54.2  ° 1.84,5.78
-pigs s 23 675  s 24 1904 mils $MILS # *
-pigs s 23 676  s 24 1910 mils $MILS # *
-pigs s 23 677  s 24 1915 mils $MILS # *
-pigs s 23 678  s 24 1921 mils $MILS # 163.95° 52.1  ° 1.76,5.96
-pigs s 23 679  s 24 1925 mils $MILS # *
-pigs s 23 680  s 24 1928 mils $MILS # *
-pigs s 23 681  s 24 1932 mils $MILS # *
-pigs s 23 682  s 24 1935 mils $MILS # *
-pigs s 23 683  s 24 1939 mils $MILS # *
-pigs s 23 684  s 24 1942 mils $MILS # *
-pigs s 23 685  s 24 1946 mils $MILS # 163.31° 49.83 ° 1.65,6.13
-pigs s 23 686  s 24 1949 mils $MILS # *
-pigs s 23 687  s 24 1953 mils $MILS # *
-pigs s 23 688  s 24 1956 mils $MILS # *
-pigs s 23 689  s 24 1959 mils $MILS # *
-pigs s 23 690  s 24 1962 mils $MILS # *
-pigs s 23 691  s 24 1966 mils $MILS # *
-pigs s 23 692  s 24 1969 mils $MILS # *
-pigs s 23 693  s 24 1972 mils $MILS # 162.63° 47.56 ° 1.53,6.29
-pigs s 23 694  s 24 1975 mils $MILS # *
-pigs s 23 695  s 24 1977 mils $MILS # *
-pigs s 23 696  s 24 1980 mils $MILS # *
-pigs s 23 697  s 24 1983 mils $MILS # *
-pigs s 23 698  s 24 1985 mils $MILS # *
-pigs s 23 699  s 24 1988 mils $MILS # *
-pigs s 23 700  s 24 1991 mils $MILS # *
-pigs s 23 701  s 24 1993 mils $MILS # *
-pigs s 23 702  s 24 1996 mils $MILS # 161.84° 45.38 ° 1.4,6.43
-pigs s 23 703  s 24 1998 mils $MILS # *
-pigs s 23 704  s 24 2001 mils $MILS # *
-pigs s 23 705  s 24 2003 mils $MILS # *
-pigs s 23 706  s 24 2005 mils $MILS # *
-pigs s 23 707  s 24 2007 mils $MILS # *
-pigs s 23 708  s 24 2010 mils $MILS # *
-pigs s 23 709  s 24 2012 mils $MILS # *
-pigs s 23 710  s 24 2014 mils $MILS # *
-pigs s 23 711  s 24 2016 mils $MILS # *
-pigs s 23 712  s 24 2019 mils $MILS # *
-pigs s 23 713  s 24 2021 mils $MILS # 160.87° 43.1  ° 1.25,6.56
-pigs s 23 714  s 24 2023 mils $MILS # *
-pigs s 23 715  s 24 2026 mils $MILS # *
-pigs s 23 716  s 24 2028 mils $MILS # *
-pigs s 23 717  s 24 2030 mils $MILS # *
-pigs s 23 718  s 24 2032 mils $MILS # *
-pigs s 23 719  s 24 2035 mils $MILS # *
-pigs s 23 720  s 24 2037 mils $MILS # *
-pigs s 23 721  s 24 2039 mils $MILS # *
-pigs s 23 722  s 24 2041 mils $MILS # *
-pigs s 23 723  s 24 2044 mils $MILS # *
-pigs s 23 724  s 24 2046 mils $MILS # 159.83° 40.82 ° 1.09,6.68
-pigs s 23 725  s 24 2048 mils $MILS # *
-pigs s 23 726  s 24 2050 mils $MILS # *
-pigs s 23 727  s 24 2052 mils $MILS # *
-pigs s 23 728  s 24 2053 mils $MILS # *
-pigs s 23 729  s 24 2055 mils $MILS # *
-pigs s 23 730  s 24 2057 mils $MILS # *
-pigs s 23 731  s 24 2059 mils $MILS # *
-pigs s 23 732  s 24 2061 mils $MILS # *
-pigs s 23 733  s 24 2063 mils $MILS # *
-pigs s 23 734  s 24 2065 mils $MILS # *
-pigs s 23 735  s 24 2066 mils $MILS # *
-pigs s 23 736  s 24 2068 mils $MILS # *
-pigs s 23 737  s 24 2070 mils $MILS # *
-pigs s 23 738  s 24 2072 mils $MILS # 158.56° 38.52 ° 0.91,6.78
-pigs s 23 739  s 24 2074 mils $MILS # *
-pigs s 23 740  s 24 2075 mils $MILS # *
-pigs s 23 741  s 24 2077 mils $MILS # *
-pigs s 23 742  s 24 2078 mils $MILS # *
-pigs s 23 743  s 24 2080 mils $MILS # *
-pigs s 23 744  s 24 2082 mils $MILS # *
-pigs s 23 745  s 24 2083 mils $MILS # *
-pigs s 23 746  s 24 2085 mils $MILS # *
-pigs s 23 747  s 24 2086 mils $MILS # *
-pigs s 23 748  s 24 2088 mils $MILS # *
-pigs s 23 749  s 24 2090 mils $MILS # *
-pigs s 23 750  s 24 2091 mils $MILS # *
-pigs s 23 751  s 24 2093 mils $MILS # *
-pigs s 23 752  s 24 2094 mils $MILS # *
-pigs s 23 753  s 24 2096 mils $MILS # 157.24° 36.36 ° 0.73,6.86
-pigs s 23 754  s 24 2098 mils $MILS # *
-pigs s 23 755  s 24 2099 mils $MILS # *
-pigs s 23 756  s 24 2101 mils $MILS # *
-pigs s 23 757  s 24 2102 mils $MILS # *
-pigs s 23 758  s 24 2104 mils $MILS # *
-pigs s 23 759  s 24 2105 mils $MILS # *
-pigs s 23 760  s 24 2107 mils $MILS # *
-pigs s 23 761  s 24 2108 mils $MILS # *
-pigs s 23 762  s 24 2110 mils $MILS # *
-pigs s 23 763  s 24 2111 mils $MILS # *
-pigs s 23 764  s 24 2113 mils $MILS # *
-pigs s 23 765  s 24 2114 mils $MILS # *
-pigs s 23 766  s 24 2116 mils $MILS # *
-pigs s 23 767  s 24 2117 mils $MILS # *
-pigs s 23 768  s 24 2119 mils $MILS # *
-pigs s 23 769  s 24 2120 mils $MILS # 155.81° 34.18 ° 0.54,6.93
-pigs s 23 770  s 24 2121 mils $MILS # *
-pigs s 23 771  s 24 2123 mils $MILS # *
-pigs s 23 772  s 24 2124 mils $MILS # *
-pigs s 23 773  s 24 2125 mils $MILS # *
-pigs s 23 774  s 24 2126 mils $MILS # *
-pigs s 23 775  s 24 2128 mils $MILS # *
-pigs s 23 776  s 24 2129 mils $MILS # *
-pigs s 23 777  s 24 2130 mils $MILS # *
-pigs s 23 778  s 24 2132 mils $MILS # *
-pigs s 23 779  s 24 2133 mils $MILS # *
-pigs s 23 780  s 24 2134 mils $MILS # *
-pigs s 23 781  s 24 2135 mils $MILS # *
-pigs s 23 782  s 24 2137 mils $MILS # *
-pigs s 23 783  s 24 2138 mils $MILS # *
-pigs s 23 784  s 24 2139 mils $MILS # *
-pigs s 23 785  s 24 2141 mils $MILS # *
-pigs s 23 786  s 24 2142 mils $MILS # 154.25° 32.2  ° 0.35,6.97
-pigs s 23 787  s 24 2143 mils $MILS # *
-pigs s 23 788  s 24 2144 mils $MILS # *
-pigs s 23 789  s 24 2145 mils $MILS # *
-pigs s 23 790  s 24 2146 mils $MILS # *
-pigs s 23 791  s 24 2147 mils $MILS # *
-pigs s 23 792  s 24 2149 mils $MILS # *
-pigs s 23 793  s 24 2150 mils $MILS # *
-pigs s 23 794  s 24 2151 mils $MILS # *
-pigs s 23 795  s 24 2152 mils $MILS # *
-pigs s 23 796  s 24 2153 mils $MILS # *
-pigs s 23 797  s 24 2154 mils $MILS # *
-pigs s 23 798  s 24 2155 mils $MILS # *
-pigs s 23 799  s 24 2156 mils $MILS # *
-pigs s 23 800  s 24 2157 mils $MILS # *
-pigs s 23 801  s 24 2158 mils $MILS # *
-pigs s 23 802  s 24 2160 mils $MILS # *
-pigs s 23 803  s 24 2161 mils $MILS # *
-pigs s 23 804  s 24 2162 mils $MILS # *
-pigs s 23 805  s 24 2163 mils $MILS # *
-pigs s 23 806  s 24 2164 mils $MILS # 152.5 ° 30.26 ° 0.15,6.99
-pigs s 23 807  s 24 2165 mils $MILS # *
-pigs s 23 808  s 24 2166 mils $MILS # *
-pigs s 23 809  s 24 2167 mils $MILS # *
-pigs s 23 810  s 24 2168 mils $MILS # *
-pigs s 23 811  s 24 2170 mils $MILS # *
-pigs s 23 812  s 24 2171 mils $MILS # *
-pigs s 23 813  s 24 2172 mils $MILS # *
-pigs s 23 814  s 24 2173 mils $MILS # *
-pigs s 23 815  s 24 2174 mils $MILS # *
-pigs s 23 816  s 24 2175 mils $MILS # *
-pigs s 23 817  s 24 2176 mils $MILS # *
-pigs s 23 818  s 24 2177 mils $MILS # *
-pigs s 23 819  s 24 2178 mils $MILS # *
-pigs s 23 820  s 24 2180 mils $MILS # *
-pigs s 23 821  s 24 2181 mils $MILS # *
-pigs s 23 822  s 24 2182 mils $MILS # *
-pigs s 23 823  s 24 2183 mils $MILS # *
-pigs s 23 824  s 24 2184 mils $MILS # *
-pigs s 23 825  s 24 2185 mils $MILS # 150.72° 28.36 ° -0.05,7
-pigs s 23 826  s 24 2186 mils $MILS # *
-pigs s 23 827  s 24 2187 mils $MILS # *
-pigs s 23 828  s 24 2188 mils $MILS # *
-pigs s 23 830  s 24 2189 mils $MILS # *
-pigs s 23 831  s 24 2190 mils $MILS # *
-pigs s 23 832  s 24 2191 mils $MILS # *
-pigs s 23 833  s 24 2192 mils $MILS # *
-pigs s 23 834  s 24 2193 mils $MILS # *
-pigs s 23 835  s 24 2194 mils $MILS # *
-pigs s 23 837  s 24 2195 mils $MILS # *
-pigs s 23 838  s 24 2196 mils $MILS # *
-pigs s 23 839  s 24 2197 mils $MILS # *
-pigs s 23 840  s 24 2198 mils $MILS # *
-pigs s 23 841  s 24 2199 mils $MILS # *
-pigs s 23 842  s 24 2200 mils $MILS # *
-pigs s 23 844  s 24 2201 mils $MILS # *
-pigs s 23 845  s 24 2202 mils $MILS # *
-pigs s 23 846  s 24 2203 mils $MILS # *
-pigs s 23 847  s 24 2204 mils $MILS # 148.76° 26.63 ° -0.25,6.98
-pigs s 23 848  s 24 2205 mils $MILS # *
-pigs s 23 849  s 24 2206 mils $MILS # *
-pigs s 23 850  s 24 2207 mils $MILS # *
-pigs s 23 852  s 24 2208 mils $MILS # *
-pigs s 23 853  s 24 2209 mils $MILS # *
-pigs s 23 854  s 24 2210 mils $MILS # *
-pigs s 23 855  s 24 2211 mils $MILS # *
-pigs s 23 856  s 24 2212 mils $MILS # *
-pigs s 23 857  s 24 2213 mils $MILS # *
-pigs s 23 859  s 24 2214 mils $MILS # *
-pigs s 23 860  s 24 2215 mils $MILS # *
-pigs s 23 861  s 24 2216 mils $MILS # *
-pigs s 23 862  s 24 2217 mils $MILS # *
-pigs s 23 863  s 24 2218 mils $MILS # *
-pigs s 23 864  s 24 2219 mils $MILS # *
-pigs s 23 866  s 24 2220 mils $MILS # *
-pigs s 23 867  s 24 2221 mils $MILS # *
-pigs s 23 868  s 24 2222 mils $MILS # *
-pigs s 23 869  s 24 2223 mils $MILS # 146.76° 24.93 ° -0.45,6.95
-pigs s 23 870  s 24 2224 mils $MILS # *
-pigs s 23 872  s 24 2225 mils $MILS # *
-pigs s 23 873  s 24 2226 mils $MILS # *
-pigs s 23 874  s 24 2227 mils $MILS # *
-pigs s 23 876  s 24 2228 mils $MILS # *
-pigs s 23 877  s 24 2229 mils $MILS # *
-pigs s 23 878  s 24 2230 mils $MILS # *
-pigs s 23 880  s 24 2231 mils $MILS # *
-pigs s 23 881  s 24 2232 mils $MILS # *
-pigs s 23 883  s 24 2233 mils $MILS # *
-pigs s 23 884  s 24 2234 mils $MILS # *
-pigs s 23 885  s 24 2235 mils $MILS # *
-pigs s 23 887  s 24 2236 mils $MILS # *
-pigs s 23 888  s 24 2237 mils $MILS # *
-pigs s 23 889  s 24 2238 mils $MILS # *
-pigs s 23 891  s 24 2239 mils $MILS # *
-pigs s 23 892  s 24 2240 mils $MILS # 144.72° 23.4  ° -0.64,6.9
-pigs s 23 894  s 24 2241 mils $MILS # *
-pigs s 23 895  s 24 2242 mils $MILS # *
-pigs s 23 897  s 24 2243 mils $MILS # *
-pigs s 23 899  s 24 2244 mils $MILS # *
-pigs s 23 901  s 24 2245 mils $MILS # *
-pigs s 23 902  s 24 2246 mils $MILS # *
-pigs s 23 904  s 24 2247 mils $MILS # *
-pigs s 23 906  s 24 2248 mils $MILS # *
-pigs s 23 907  s 24 2249 mils $MILS # *
-pigs s 23 909  s 24 2250 mils $MILS # *
-pigs s 23 911  s 24 2251 mils $MILS # *
-pigs s 23 913  s 24 2252 mils $MILS # *
-pigs s 23 914  s 24 2253 mils $MILS # *
-pigs s 23 916  s 24 2254 mils $MILS # 142.56° 22.11 ° -0.82,6.82
-pigs s 23 918  s 24 2255 mils $MILS # *
-pigs s 23 919  s 24 2256 mils $MILS # *
-pigs s 23 921  s 24 2257 mils $MILS # *
-pigs s 23 923  s 24 2258 mils $MILS # *
-pigs s 23 924  s 24 2259 mils $MILS # *
-pigs s 23 926  s 24 2260 mils $MILS # *
-pigs s 23 928  s 24 2261 mils $MILS # *
-pigs s 23 929  s 24 2262 mils $MILS # *
-pigs s 23 931  s 24 2263 mils $MILS # *
-pigs s 23 933  s 24 2264 mils $MILS # *
-pigs s 23 934  s 24 2265 mils $MILS # *
-pigs s 23 936  s 24 2266 mils $MILS # *
-pigs s 23 938  s 24 2267 mils $MILS # *
-pigs s 23 939  s 24 2268 mils $MILS # *
-pigs s 23 941  s 24 2269 mils $MILS # 140.33° 20.81 ° -1,6.73
-pigs s 23 943  s 24 2270 mils $MILS # *
-pigs s 23 945  s 24 2271 mils $MILS # *
-pigs s 23 947  s 24 2272 mils $MILS # *
-pigs s 23 949  s 24 2273 mils $MILS # *
-pigs s 23 951  s 24 2274 mils $MILS # *
-pigs s 23 953  s 24 2275 mils $MILS # *
-pigs s 23 954  s 24 2276 mils $MILS # *
-pigs s 23 956  s 24 2277 mils $MILS # *
-pigs s 23 958  s 24 2278 mils $MILS # *
-pigs s 23 960  s 24 2279 mils $MILS # *
-pigs s 23 962  s 24 2280 mils $MILS # *
-pigs s 23 964  s 24 2281 mils $MILS # *
-pigs s 23 966  s 24 2282 mils $MILS # 138.04° 19.66 ° -1.17,6.62
-pigs s 23 969  s 24 2283 mils $MILS # *
-pigs s 23 971  s 24 2284 mils $MILS # *
-pigs s 23 974  s 24 2285 mils $MILS # *
-pigs s 23 976  s 24 2286 mils $MILS # *
-pigs s 23 979  s 24 2287 mils $MILS # *
-pigs s 23 981  s 24 2288 mils $MILS # *
-pigs s 23 984  s 24 2289 mils $MILS # *
-pigs s 23 986  s 24 2290 mils $MILS # *
-pigs s 23 989  s 24 2291 mils $MILS # *
-pigs s 23 991  s 24 2292 mils $MILS # 135.84° 18.68 ° -1.32,6.5
-pigs s 23 993  s 24 2293 mils $MILS # *
-pigs s 23 996  s 24 2294 mils $MILS # *
-pigs s 23 998  s 24 2295 mils $MILS # *
-pigs s 23 1000 s 24 2296 mils $MILS # *
-pigs s 23 1003 s 24 2297 mils $MILS # *
-pigs s 23 1005 s 24 2298 mils $MILS # *
-pigs s 23 1008 s 24 2299 mils $MILS # *
-pigs s 23 1010 s 24 2300 mils $MILS # *
-pigs s 23 1012 s 24 2301 mils $MILS # *
-pigs s 23 1015 s 24 2302 mils $MILS # *
-pigs s 23 1017 s 24 2303 mils $MILS # 133.49° 17.73 ° -1.47,6.36
-pigs s 23 1020 s 24 2304 mils $MILS # *
-pigs s 23 1023 s 24 2305 mils $MILS # *
-pigs s 23 1026 s 24 2306 mils $MILS # *
-pigs s 23 1029 s 24 2307 mils $MILS # *
-pigs s 23 1032 s 24 2308 mils $MILS # *
-pigs s 23 1035 s 24 2309 mils $MILS # *
-pigs s 23 1038 s 24 2310 mils $MILS # *
-pigs s 23 1041 s 24 2311 mils $MILS # 131.3 ° 17.04 ° -1.59,6.21
-pigs s 23 1045 s 24 2312 mils $MILS # *
-pigs s 23 1048 s 24 2313 mils $MILS # *
-pigs s 23 1052 s 24 2314 mils $MILS # *
-pigs s 23 1056 s 24 2315 mils $MILS # *
-pigs s 23 1060 s 24 2316 mils $MILS # *
-pigs s 23 1063 s 24 2317 mils $MILS # *
-pigs s 23 1067 s 24 2318 mils $MILS # 128.96° 16.34 ° -1.71,6.04
-pigs s 23 1071 s 24 2319 mils $MILS # *
-pigs s 23 1075 s 24 2320 mils $MILS # *
-pigs s 23 1079 s 24 2321 mils $MILS # *
-pigs s 23 1083 s 24 2322 mils $MILS # *
-pigs s 23 1087 s 24 2323 mils $MILS # *
-pigs s 23 1091 s 24 2324 mils $MILS # 126.85° 15.87 ° -1.8,5.87
-pigs s 23 1097 s 24 2325 mils $MILS # *
-pigs s 23 1103 s 24 2326 mils $MILS # *
-pigs s 23 1109 s 24 2327 mils $MILS # *
-pigs s 23 1115 s 24 2328 mils $MILS # 124.67° 15.46 ° -1.88,5.68
-pigs s 23 1122 s 24 2329 mils $MILS # *
-pigs s 23 1130 s 24 2330 mils $MILS # *
-pigs s 23 1137 s 24 2331 mils $MILS # 122.65° 15.17 ° -1.94,5.49
-pigs s 23 1148 s 24 2332 mils $MILS # *
-pigs s 23 1158 s 24 2333 mils $MILS # 120.81° 15    ° -1.98,5.3
-pigs s 23 1177 s 24 2334 mils $MILS # 119.07° 14.97 ° -2,5.1
-pigs s 23 1194 s 24 2333 mils $MILS # 117.54° 15.06 ° -2,4.9
-pigs s 23 1199 s 24 2332 mils $MILS # *
-pigs s 23 1204 s 24 2331 mils $MILS # *
-pigs s 23 1209 s 24 2330 mils $MILS # 116.22° 15.29 ° -1.98,4.7
-pigs s 23 1212 s 24 2329 mils $MILS # *
-pigs s 23 1215 s 24 2328 mils $MILS # *
-pigs s 23 1217 s 24 2327 mils $MILS # *
-pigs s 23 1220 s 24 2326 mils $MILS # 115.24° 15.65 ° -1.94,4.51
-pigs s 23 1221 s 24 2325 mils $MILS # *
-pigs s 23 1222 s 24 2324 mils $MILS # *
-pigs s 23 1224 s 24 2323 mils $MILS # *
-pigs s 23 1225 s 24 2322 mils $MILS # *
-pigs s 23 1226 s 24 2321 mils $MILS # *
-pigs s 23 1227 s 24 2320 mils $MILS # 114.54° 16.18 ° -1.88,4.32
-pigs s 23 1228 s 24 2318 mils $MILS # *
-pigs s 23 1229 s 24 2317 mils $MILS # *
-pigs s 23 1230 s 24 2315 mils $MILS # *
-pigs s 23 1231 s 24 2313 mils $MILS # 114.17° 16.86 ° -1.8,4.13
-pigs s 23 1230 s 24 2302 mils $MILS # *
-pigs s 23 1229 s 24 2300 mils $MILS # *
-pigs s 23 1228 s 24 2298 mils $MILS # *
-pigs s 23 1227 s 24 2296 mils $MILS # *
-pigs s 23 1226 s 24 2294 mils $MILS # *
-pigs s 23 1225 s 24 2292 mils $MILS # 114.74° 18.72 ° -1.59,3.79
-pigs s 23 1224 s 24 2291 mils $MILS # *
-pigs s 23 1223 s 24 2290 mils $MILS # *
-pigs s 23 1222 s 24 2288 mils $MILS # *
-pigs s 23 1221 s 24 2287 mils $MILS # *
-pigs s 23 1220 s 24 2286 mils $MILS # *
-pigs s 23 1219 s 24 2285 mils $MILS # *
-pigs s 23 1218 s 24 2284 mils $MILS # *
-pigs s 23 1217 s 24 2282 mils $MILS # *
-pigs s 23 1216 s 24 2281 mils $MILS # *
-pigs s 23 1215 s 24 2280 mils $MILS # 115.63° 19.83 ° -1.47,3.64
-pigs s 23 1214 s 24 2279 mils $MILS # *
-pigs s 23 1213 s 24 2278 mils $MILS # *
-pigs s 23 1212 s 24 2277 mils $MILS # *
-pigs s 23 1211 s 24 2276 mils $MILS # *
-pigs s 23 1210 s 24 2275 mils $MILS # *
-pigs s 23 1209 s 24 2274 mils $MILS # *
-pigs s 23 1208 s 24 2273 mils $MILS # *
-pigs s 23 1207 s 24 2272 mils $MILS # *
-pigs s 23 1205 s 24 2271 mils $MILS # *
-pigs s 23 1204 s 24 2270 mils $MILS # *
-pigs s 23 1203 s 24 2269 mils $MILS # *
-pigs s 23 1202 s 24 2268 mils $MILS # *
-pigs s 23 1201 s 24 2267 mils $MILS # *
-pigs s 23 1200 s 24 2266 mils $MILS # *
-pigs s 23 1199 s 24 2265 mils $MILS # *
-pigs s 23 1198 s 24 2264 mils $MILS # *
-pigs s 23 1197 s 24 2263 mils $MILS # 117.23° 21.37 ° -1.32,3.5
-pigs s 23 1196 s 24 2262 mils $MILS # *
-pigs s 23 1195 s 24 2261 mils $MILS # *
-pigs s 23 1193 s 24 2260 mils $MILS # *
-pigs s 23 1192 s 24 2259 mils $MILS # *
-pigs s 23 1191 s 24 2258 mils $MILS # *
-pigs s 23 1190 s 24 2257 mils $MILS # *
-pigs s 23 1189 s 24 2256 mils $MILS # *
-pigs s 23 1188 s 24 2255 mils $MILS # *
-pigs s 23 1186 s 24 2254 mils $MILS # *
-pigs s 23 1185 s 24 2253 mils $MILS # *
-pigs s 23 1184 s 24 2252 mils $MILS # *
-pigs s 23 1183 s 24 2251 mils $MILS # *
-pigs s 23 1182 s 24 2250 mils $MILS # *
-pigs s 23 1181 s 24 2249 mils $MILS # *
-pigs s 23 1179 s 24 2248 mils $MILS # *
-pigs s 23 1178 s 24 2247 mils $MILS # *
-pigs s 23 1177 s 24 2246 mils $MILS # *
-pigs s 23 1176 s 24 2245 mils $MILS # 119.18° 22.98 ° -1.17,3.38
-pigs s 23 1175 s 24 2244 mils $MILS # *
-pigs s 23 1173 s 24 2243 mils $MILS # *
-pigs s 23 1172 s 24 2242 mils $MILS # *
-pigs s 23 1171 s 24 2241 mils $MILS # *
-pigs s 23 1169 s 24 2240 mils $MILS # *
-pigs s 23 1168 s 24 2239 mils $MILS # *
-pigs s 23 1167 s 24 2238 mils $MILS # *
-pigs s 23 1165 s 24 2237 mils $MILS # *
-pigs s 23 1164 s 24 2236 mils $MILS # *
-pigs s 23 1163 s 24 2235 mils $MILS # *
-pigs s 23 1161 s 24 2234 mils $MILS # *
-pigs s 23 1160 s 24 2233 mils $MILS # *
-pigs s 23 1159 s 24 2232 mils $MILS # *
-pigs s 23 1158 s 24 2231 mils $MILS # *
-pigs s 23 1156 s 24 2230 mils $MILS # *
-pigs s 23 1155 s 24 2229 mils $MILS # *
-pigs s 23 1154 s 24 2228 mils $MILS # *
-pigs s 23 1152 s 24 2227 mils $MILS # *
-pigs s 23 1151 s 24 2226 mils $MILS # *
-pigs s 23 1150 s 24 2225 mils $MILS # *
-pigs s 23 1148 s 24 2224 mils $MILS # *
-pigs s 23 1147 s 24 2223 mils $MILS # 121.74° 24.97 ° -1,3.27
-pigs s 23 1146 s 24 2222 mils $MILS # *
-pigs s 23 1144 s 24 2221 mils $MILS # *
-pigs s 23 1143 s 24 2220 mils $MILS # *
-pigs s 23 1142 s 24 2219 mils $MILS # *
-pigs s 23 1141 s 24 2218 mils $MILS # *
-pigs s 23 1139 s 24 2217 mils $MILS # *
-pigs s 23 1138 s 24 2216 mils $MILS # *
-pigs s 23 1137 s 24 2215 mils $MILS # *
-pigs s 23 1136 s 24 2214 mils $MILS # *
-pigs s 23 1134 s 24 2213 mils $MILS # *
-pigs s 23 1133 s 24 2212 mils $MILS # *
-pigs s 23 1132 s 24 2211 mils $MILS # *
-pigs s 23 1130 s 24 2210 mils $MILS # *
-pigs s 23 1129 s 24 2209 mils $MILS # *
-pigs s 23 1128 s 24 2208 mils $MILS # *
-pigs s 23 1127 s 24 2207 mils $MILS # *
-pigs s 23 1125 s 24 2206 mils $MILS # *
-pigs s 23 1124 s 24 2205 mils $MILS # *
-pigs s 23 1123 s 24 2204 mils $MILS # *
-pigs s 23 1122 s 24 2203 mils $MILS # *
-pigs s 23 1120 s 24 2202 mils $MILS # *
-pigs s 23 1119 s 24 2201 mils $MILS # *
-pigs s 23 1118 s 24 2200 mils $MILS # *
-pigs s 23 1117 s 24 2199 mils $MILS # *
-pigs s 23 1115 s 24 2198 mils $MILS # *
-pigs s 23 1114 s 24 2197 mils $MILS # 124.77° 27.25 ° -0.82,3.18
-pigs s 23 1113 s 24 2196 mils $MILS # *
-pigs s 23 1111 s 24 2195 mils $MILS # *
-pigs s 23 1110 s 24 2194 mils $MILS # *
-pigs s 23 1109 s 24 2193 mils $MILS # *
-pigs s 23 1107 s 24 2192 mils $MILS # *
-pigs s 23 1106 s 24 2191 mils $MILS # *
-pigs s 23 1105 s 24 2190 mils $MILS # *
-pigs s 23 1103 s 24 2189 mils $MILS # *
-pigs s 23 1102 s 24 2188 mils $MILS # *
-pigs s 23 1101 s 24 2187 mils $MILS # *
-pigs s 23 1099 s 24 2186 mils $MILS # *
-pigs s 23 1098 s 24 2185 mils $MILS # *
-pigs s 23 1097 s 24 2184 mils $MILS # *
-pigs s 23 1095 s 24 2183 mils $MILS # *
-pigs s 23 1094 s 24 2182 mils $MILS # *
-pigs s 23 1093 s 24 2181 mils $MILS # *
-pigs s 23 1091 s 24 2180 mils $MILS # *
-pigs s 23 1090 s 24 2179 mils $MILS # *
-pigs s 23 1089 s 24 2178 mils $MILS # *
-pigs s 23 1087 s 24 2177 mils $MILS # *
-pigs s 23 1086 s 24 2176 mils $MILS # *
-pigs s 23 1085 s 24 2175 mils $MILS # *
-pigs s 23 1083 s 24 2174 mils $MILS # *
-pigs s 23 1082 s 24 2173 mils $MILS # *
-pigs s 23 1081 s 24 2172 mils $MILS # *
-pigs s 23 1079 s 24 2171 mils $MILS # *
-pigs s 23 1078 s 24 2170 mils $MILS # 128   ° 29.69 ° -0.64,3.1
-pigs s 23 1077 s 24 2169 mils $MILS # *
-pigs s 23 1076 s 24 2168 mils $MILS # *
-pigs s 23 1074 s 24 2167 mils $MILS # *
-pigs s 23 1073 s 24 2166 mils $MILS # *
-pigs s 23 1072 s 24 2165 mils $MILS # *
-pigs s 23 1071 s 24 2164 mils $MILS # *
-pigs s 23 1069 s 24 2163 mils $MILS # *
-pigs s 23 1068 s 24 2162 mils $MILS # *
-pigs s 23 1067 s 24 2161 mils $MILS # *
-pigs s 23 1066 s 24 2160 mils $MILS # *
-pigs s 23 1064 s 24 2159 mils $MILS # *
-pigs s 23 1063 s 24 2158 mils $MILS # *
-pigs s 23 1062 s 24 2157 mils $MILS # *
-pigs s 23 1061 s 24 2156 mils $MILS # *
-pigs s 23 1059 s 24 2155 mils $MILS # *
-pigs s 23 1058 s 24 2154 mils $MILS # *
-pigs s 23 1057 s 24 2153 mils $MILS # *
-pigs s 23 1056 s 24 2152 mils $MILS # *
-pigs s 23 1054 s 24 2151 mils $MILS # *
-pigs s 23 1053 s 24 2150 mils $MILS # *
-pigs s 23 1052 s 24 2149 mils $MILS # *
-pigs s 23 1051 s 24 2148 mils $MILS # *
-pigs s 23 1049 s 24 2147 mils $MILS # *
-pigs s 23 1048 s 24 2146 mils $MILS # *
-pigs s 23 1047 s 24 2145 mils $MILS # *
-pigs s 23 1046 s 24 2144 mils $MILS # *
-pigs s 23 1044 s 24 2143 mils $MILS # *
-pigs s 23 1043 s 24 2142 mils $MILS # *
-pigs s 23 1042 s 24 2141 mils $MILS # *
-pigs s 23 1041 s 24 2140 mils $MILS # *
-pigs s 23 1039 s 24 2139 mils $MILS # *
-pigs s 23 1038 s 24 2138 mils $MILS # 131.55° 32.54 ° -0.45,3.05
-pigs s 23 1037 s 24 2137 mils $MILS # *
-pigs s 23 1036 s 24 2136 mils $MILS # *
-pigs s 23 1035 s 24 2135 mils $MILS # *
-pigs s 23 1033 s 24 2134 mils $MILS # *
-pigs s 23 1032 s 24 2133 mils $MILS # *
-pigs s 23 1031 s 24 2132 mils $MILS # *
-pigs s 23 1030 s 24 2131 mils $MILS # *
-pigs s 23 1029 s 24 2130 mils $MILS # *
-pigs s 23 1028 s 24 2129 mils $MILS # *
-pigs s 23 1027 s 24 2128 mils $MILS # *
-pigs s 23 1025 s 24 2127 mils $MILS # *
-pigs s 23 1024 s 24 2126 mils $MILS # *
-pigs s 23 1023 s 24 2125 mils $MILS # *
-pigs s 23 1022 s 24 2124 mils $MILS # *
-pigs s 23 1021 s 24 2123 mils $MILS # *
-pigs s 23 1020 s 24 2122 mils $MILS # *
-pigs s 23 1019 s 24 2121 mils $MILS # *
-pigs s 23 1017 s 24 2120 mils $MILS # *
-pigs s 23 1016 s 24 2119 mils $MILS # *
-pigs s 23 1015 s 24 2118 mils $MILS # *
-pigs s 23 1014 s 24 2117 mils $MILS # *
-pigs s 23 1013 s 24 2116 mils $MILS # *
-pigs s 23 1012 s 24 2115 mils $MILS # *
-pigs s 23 1011 s 24 2114 mils $MILS # *
-pigs s 23 1009 s 24 2113 mils $MILS # *
-pigs s 23 1008 s 24 2112 mils $MILS # *
-pigs s 23 1007 s 24 2111 mils $MILS # *
-pigs s 23 1006 s 24 2110 mils $MILS # *
-pigs s 23 1005 s 24 2109 mils $MILS # *
-pigs s 23 1004 s 24 2108 mils $MILS # *
-pigs s 23 1003 s 24 2107 mils $MILS # *
-pigs s 23 1002 s 24 2106 mils $MILS # *
-pigs s 23 1000 s 24 2105 mils $MILS # *
-pigs s 23 999  s 24 2104 mils $MILS # *
-pigs s 23 998  s 24 2103 mils $MILS # *
-pigs s 23 997  s 24 2102 mils $MILS # 135.3 ° 35.78 ° -0.25,3.02
-pigs s 23 996  s 24 2101 mils $MILS # *
-pigs s 23 995  s 24 2100 mils $MILS # *
-pigs s 23 994  s 24 2099 mils $MILS # *
-pigs s 23 993  s 24 2098 mils $MILS # *
-pigs s 23 991  s 24 2097 mils $MILS # *
-pigs s 23 990  s 24 2096 mils $MILS # *
-pigs s 23 989  s 24 2095 mils $MILS # *
-pigs s 23 988  s 24 2094 mils $MILS # *
-pigs s 23 987  s 24 2093 mils $MILS # *
-pigs s 23 986  s 24 2092 mils $MILS # *
-pigs s 23 985  s 24 2091 mils $MILS # *
-pigs s 23 984  s 24 2090 mils $MILS # *
-pigs s 23 983  s 24 2089 mils $MILS # *
-pigs s 23 981  s 24 2088 mils $MILS # *
-pigs s 23 980  s 24 2087 mils $MILS # *
-pigs s 23 979  s 24 2086 mils $MILS # *
-pigs s 23 978  s 24 2085 mils $MILS # *
-pigs s 23 977  s 24 2084 mils $MILS # *
-pigs s 23 976  s 24 2083 mils $MILS # *
-pigs s 23 975  s 24 2082 mils $MILS # *
-pigs s 23 974  s 24 2081 mils $MILS # *
-pigs s 23 973  s 24 2080 mils $MILS # *
-pigs s 23 971  s 24 2079 mils $MILS # *
-pigs s 23 970  s 24 2078 mils $MILS # *
-pigs s 23 969  s 24 2077 mils $MILS # *
-pigs s 23 968  s 24 2076 mils $MILS # *
-pigs s 23 967  s 24 2075 mils $MILS # *
-pigs s 23 966  s 24 2074 mils $MILS # *
-pigs s 23 965  s 24 2073 mils $MILS # *
-pigs s 23 964  s 24 2072 mils $MILS # *
-pigs s 23 963  s 24 2071 mils $MILS # *
-pigs s 23 961  s 24 2070 mils $MILS # *
-pigs s 23 960  s 24 2069 mils $MILS # *
-pigs s 23 959  s 24 2068 mils $MILS # *
-pigs s 23 958  s 24 2067 mils $MILS # *
-pigs s 23 957  s 24 2066 mils $MILS # *
-pigs s 23 956  s 24 2065 mils $MILS # *
-pigs s 23 955  s 24 2064 mils $MILS # 139.01° 39.2  ° -0.05,3
-pigs s 23 954  s 24 2063 mils $MILS # *
-pigs s 23 953  s 24 2062 mils $MILS # *
-pigs s 23 952  s 24 2061 mils $MILS # *
-pigs s 23 951  s 24 2060 mils $MILS # *
-pigs s 23 950  s 24 2059 mils $MILS # *
-pigs s 23 949  s 24 2058 mils $MILS # *
-pigs s 23 948  s 24 2057 mils $MILS # *
-pigs s 23 947  s 24 2056 mils $MILS # *
-pigs s 23 946  s 24 2055 mils $MILS # *
-pigs s 23 945  s 24 2054 mils $MILS # *
-pigs s 23 944  s 24 2053 mils $MILS # *
-pigs s 23 943  s 24 2052 mils $MILS # *
-pigs s 23 942  s 24 2051 mils $MILS # *
-pigs s 23 941  s 24 2050 mils $MILS # *
-pigs s 23 940  s 24 2049 mils $MILS # *
-pigs s 23 939  s 24 2048 mils $MILS # *
-pigs s 23 938  s 24 2046 mils $MILS # *
-pigs s 23 937  s 24 2045 mils $MILS # *
-pigs s 23 936  s 24 2044 mils $MILS # *
-pigs s 23 935  s 24 2043 mils $MILS # *
-pigs s 23 934  s 24 2042 mils $MILS # *
-pigs s 23 933  s 24 2041 mils $MILS # *
-pigs s 23 932  s 24 2040 mils $MILS # *
-pigs s 23 931  s 24 2039 mils $MILS # *
-pigs s 23 930  s 24 2038 mils $MILS # *
-pigs s 23 929  s 24 2037 mils $MILS # *
-pigs s 23 928  s 24 2036 mils $MILS # *
-pigs s 23 927  s 24 2035 mils $MILS # *
-pigs s 23 926  s 24 2034 mils $MILS # *
-pigs s 23 925  s 24 2033 mils $MILS # *
-pigs s 23 924  s 24 2032 mils $MILS # *
-pigs s 23 923  s 24 2031 mils $MILS # *
-pigs s 23 922  s 24 2030 mils $MILS # *
-pigs s 23 921  s 24 2029 mils $MILS # *
-pigs s 23 920  s 24 2028 mils $MILS # *
-pigs s 23 919  s 24 2027 mils $MILS # *
-pigs s 23 918  s 24 2026 mils $MILS # *
-pigs s 23 917  s 24 2025 mils $MILS # *
-pigs s 23 916  s 24 2024 mils $MILS # 142.53° 42.84 ° 0.15,3.01
-pigs s 23 915  s 24 2023 mils $MILS # *
-pigs s 23 914  s 24 2022 mils $MILS # *
-pigs s 23 913  s 24 2021 mils $MILS # *
-pigs s 23 912  s 24 2020 mils $MILS # *
-pigs s 23 911  s 24 2018 mils $MILS # *
-pigs s 23 910  s 24 2017 mils $MILS # *
-pigs s 23 909  s 24 2016 mils $MILS # *
-pigs s 23 908  s 24 2015 mils $MILS # *
-pigs s 23 907  s 24 2014 mils $MILS # *
-pigs s 23 906  s 24 2013 mils $MILS # *
-pigs s 23 905  s 24 2012 mils $MILS # *
-pigs s 23 904  s 24 2011 mils $MILS # *
-pigs s 23 903  s 24 2010 mils $MILS # *
-pigs s 23 902  s 24 2008 mils $MILS # *
-pigs s 23 901  s 24 2007 mils $MILS # *
-pigs s 23 900  s 24 2006 mils $MILS # *
-pigs s 23 899  s 24 2005 mils $MILS # *
-pigs s 23 898  s 24 2004 mils $MILS # *
-pigs s 23 897  s 24 2003 mils $MILS # *
-pigs s 23 896  s 24 2002 mils $MILS # *
-pigs s 23 895  s 24 2001 mils $MILS # *
-pigs s 23 894  s 24 2000 mils $MILS # *
-pigs s 23 893  s 24 1998 mils $MILS # *
-pigs s 23 892  s 24 1997 mils $MILS # *
-pigs s 23 891  s 24 1996 mils $MILS # *
-pigs s 23 890  s 24 1995 mils $MILS # *
-pigs s 23 889  s 24 1994 mils $MILS # *
-pigs s 23 888  s 24 1993 mils $MILS # *
-pigs s 23 887  s 24 1992 mils $MILS # *
-pigs s 23 886  s 24 1991 mils $MILS # *
-pigs s 23 885  s 24 1990 mils $MILS # *
-pigs s 23 884  s 24 1988 mils $MILS # *
-pigs s 23 883  s 24 1987 mils $MILS # *
-pigs s 23 882  s 24 1986 mils $MILS # *
-pigs s 23 881  s 24 1985 mils $MILS # *
-pigs s 23 880  s 24 1984 mils $MILS # *
-pigs s 23 879  s 24 1983 mils $MILS # 145.88° 46.56 ° 0.35,3.03
-pigs s 23 878  s 24 1982 mils $MILS # *
-pigs s 23 877  s 24 1981 mils $MILS # *
-pigs s 23 876  s 24 1979 mils $MILS # *
-pigs s 23 875  s 24 1978 mils $MILS # *
-pigs s 23 874  s 24 1977 mils $MILS # *
-pigs s 23 873  s 24 1976 mils $MILS # *
-pigs s 23 872  s 24 1975 mils $MILS # *
-pigs s 23 871  s 24 1973 mils $MILS # *
-pigs s 23 870  s 24 1972 mils $MILS # *
-pigs s 23 869  s 24 1971 mils $MILS # *
-pigs s 23 868  s 24 1970 mils $MILS # *
-pigs s 23 867  s 24 1968 mils $MILS # *
-pigs s 23 866  s 24 1967 mils $MILS # *
-pigs s 23 865  s 24 1966 mils $MILS # *
-pigs s 23 864  s 24 1965 mils $MILS # *
-pigs s 23 863  s 24 1964 mils $MILS # *
-pigs s 23 862  s 24 1962 mils $MILS # *
-pigs s 23 861  s 24 1961 mils $MILS # *
-pigs s 23 860  s 24 1960 mils $MILS # *
-pigs s 23 859  s 24 1959 mils $MILS # *
-pigs s 23 858  s 24 1958 mils $MILS # *
-pigs s 23 857  s 24 1956 mils $MILS # *
-pigs s 23 856  s 24 1955 mils $MILS # *
-pigs s 23 855  s 24 1954 mils $MILS # *
-pigs s 23 854  s 24 1953 mils $MILS # *
-pigs s 23 853  s 24 1952 mils $MILS # *
-pigs s 23 852  s 24 1950 mils $MILS # *
-pigs s 23 851  s 24 1949 mils $MILS # *
-pigs s 23 850  s 24 1948 mils $MILS # *
-pigs s 23 849  s 24 1947 mils $MILS # *
-pigs s 23 848  s 24 1945 mils $MILS # *
-pigs s 23 847  s 24 1944 mils $MILS # *
-pigs s 23 846  s 24 1943 mils $MILS # 148.85° 50.14 ° 0.54,3.07
-pigs s 23 845  s 24 1942 mils $MILS # *
-pigs s 23 844  s 24 1940 mils $MILS # *
-pigs s 23 843  s 24 1939 mils $MILS # *
-pigs s 23 842  s 24 1938 mils $MILS # *
-pigs s 23 841  s 24 1937 mils $MILS # *
-pigs s 23 840  s 24 1935 mils $MILS # *
-pigs s 23 839  s 24 1934 mils $MILS # *
-pigs s 23 838  s 24 1933 mils $MILS # *
-pigs s 23 837  s 24 1931 mils $MILS # *
-pigs s 23 836  s 24 1930 mils $MILS # *
-pigs s 23 835  s 24 1929 mils $MILS # *
-pigs s 23 834  s 24 1927 mils $MILS # *
-pigs s 23 833  s 24 1926 mils $MILS # *
-pigs s 23 832  s 24 1925 mils $MILS # *
-pigs s 23 831  s 24 1924 mils $MILS # *
-pigs s 23 830  s 24 1922 mils $MILS # *
-pigs s 23 829  s 24 1921 mils $MILS # *
-pigs s 23 828  s 24 1920 mils $MILS # *
-pigs s 23 827  s 24 1918 mils $MILS # *
-pigs s 23 826  s 24 1917 mils $MILS # *
-pigs s 23 825  s 24 1916 mils $MILS # *
-pigs s 23 824  s 24 1914 mils $MILS # *
-pigs s 23 823  s 24 1913 mils $MILS # *
-pigs s 23 822  s 24 1912 mils $MILS # *
-pigs s 23 821  s 24 1911 mils $MILS # *
-pigs s 23 820  s 24 1909 mils $MILS # *
-pigs s 23 819  s 24 1908 mils $MILS # *
-pigs s 23 818  s 24 1907 mils $MILS # *
-pigs s 23 817  s 24 1905 mils $MILS # *
-pigs s 23 816  s 24 1904 mils $MILS # 151.54° 53.64 ° 0.73,3.14
-pigs s 23 815  s 24 1903 mils $MILS # *
-pigs s 23 814  s 24 1901 mils $MILS # *
-pigs s 23 813  s 24 1900 mils $MILS # *
-pigs s 23 812  s 24 1899 mils $MILS # *
-pigs s 23 811  s 24 1897 mils $MILS # *
-pigs s 23 810  s 24 1896 mils $MILS # *
-pigs s 23 809  s 24 1895 mils $MILS # *
-pigs s 23 808  s 24 1893 mils $MILS # *
-pigs s 23 807  s 24 1892 mils $MILS # *
-pigs s 23 806  s 24 1891 mils $MILS # *
-pigs s 23 805  s 24 1889 mils $MILS # *
-pigs s 23 804  s 24 1888 mils $MILS # *
-pigs s 23 803  s 24 1886 mils $MILS # *
-pigs s 23 802  s 24 1885 mils $MILS # *
-pigs s 23 801  s 24 1884 mils $MILS # *
-pigs s 23 800  s 24 1882 mils $MILS # *
-pigs s 23 799  s 24 1881 mils $MILS # *
-pigs s 23 798  s 24 1880 mils $MILS # *
-pigs s 23 797  s 24 1878 mils $MILS # *
-pigs s 23 796  s 24 1877 mils $MILS # *
-pigs s 23 795  s 24 1876 mils $MILS # *
-pigs s 23 794  s 24 1874 mils $MILS # *
-pigs s 23 793  s 24 1873 mils $MILS # *
-pigs s 23 792  s 24 1872 mils $MILS # *
-pigs s 23 791  s 24 1870 mils $MILS # *
-pigs s 23 790  s 24 1869 mils $MILS # 153.92° 56.78 ° 0.91,3.22
-pigs s 23 789  s 24 1868 mils $MILS # *
-pigs s 23 788  s 24 1866 mils $MILS # *
-pigs s 23 787  s 24 1865 mils $MILS # *
-pigs s 23 786  s 24 1864 mils $MILS # *
-pigs s 23 785  s 24 1863 mils $MILS # *
-pigs s 23 784  s 24 1861 mils $MILS # *
-pigs s 23 783  s 24 1860 mils $MILS # *
-pigs s 23 782  s 24 1859 mils $MILS # *
-pigs s 23 781  s 24 1857 mils $MILS # *
-pigs s 23 780  s 24 1856 mils $MILS # *
-pigs s 23 779  s 24 1855 mils $MILS # *
-pigs s 23 778  s 24 1854 mils $MILS # *
-pigs s 23 777  s 24 1852 mils $MILS # *
-pigs s 23 776  s 24 1851 mils $MILS # *
-pigs s 23 775  s 24 1850 mils $MILS # *
-pigs s 23 774  s 24 1849 mils $MILS # *
-pigs s 23 773  s 24 1847 mils $MILS # *
-pigs s 23 772  s 24 1846 mils $MILS # *
-pigs s 23 771  s 24 1845 mils $MILS # *
-pigs s 23 770  s 24 1843 mils $MILS # *
-pigs s 23 769  s 24 1842 mils $MILS # *
-pigs s 23 768  s 24 1841 mils $MILS # *
-pigs s 23 767  s 24 1840 mils $MILS # *
-pigs s 23 766  s 24 1838 mils $MILS # *
-pigs s 23 765  s 24 1837 mils $MILS # 156.13° 59.67 ° 1.09,3.32
-pigs s 23 764  s 24 1836 mils $MILS # *
-pigs s 23 763  s 24 1834 mils $MILS # *
-pigs s 23 762  s 24 1833 mils $MILS # *
-pigs s 23 761  s 24 1832 mils $MILS # *
-pigs s 23 760  s 24 1830 mils $MILS # *
-pigs s 23 759  s 24 1829 mils $MILS # *
-pigs s 23 758  s 24 1828 mils $MILS # *
-pigs s 23 757  s 24 1826 mils $MILS # *
-pigs s 23 756  s 24 1825 mils $MILS # *
-pigs s 23 755  s 24 1824 mils $MILS # *
-pigs s 23 754  s 24 1822 mils $MILS # *
-pigs s 23 753  s 24 1821 mils $MILS # *
-pigs s 23 752  s 24 1820 mils $MILS # *
-pigs s 23 751  s 24 1819 mils $MILS # *
-pigs s 23 750  s 24 1817 mils $MILS # *
-pigs s 23 749  s 24 1816 mils $MILS # *
-pigs s 23 748  s 24 1815 mils $MILS # *
-pigs s 23 747  s 24 1813 mils $MILS # *
-pigs s 23 746  s 24 1812 mils $MILS # 157.9 ° 61.9  ° 1.25,3.44
-pigs s 23 745  s 24 1811 mils $MILS # *
-pigs s 23 744  s 24 1810 mils $MILS # *
-pigs s 23 743  s 24 1809 mils $MILS # *
-pigs s 23 742  s 24 1808 mils $MILS # *
-pigs s 23 741  s 24 1806 mils $MILS # *
-pigs s 23 740  s 24 1805 mils $MILS # *
-pigs s 23 739  s 24 1804 mils $MILS # *
-pigs s 23 738  s 24 1803 mils $MILS # *
-pigs s 23 737  s 24 1802 mils $MILS # *
-pigs s 23 736  s 24 1801 mils $MILS # *
-pigs s 23 735  s 24 1800 mils $MILS # *
-pigs s 23 734  s 24 1799 mils $MILS # *
-pigs s 23 733  s 24 1798 mils $MILS # *
-pigs s 23 732  s 24 1796 mils $MILS # *
-pigs s 23 731  s 24 1795 mils $MILS # *
-pigs s 23 730  s 24 1794 mils $MILS # *
-pigs s 23 729  s 24 1793 mils $MILS # *
-pigs s 23 728  s 24 1792 mils $MILS # 159.47° 63.68 ° 1.4,3.57
-pigs s 23 727  s 24 1791 mils $MILS # *
-pigs s 23 726  s 24 1790 mils $MILS # *
-pigs s 23 725  s 24 1789 mils $MILS # *
-pigs s 23 724  s 24 1788 mils $MILS # *
-pigs s 23 723  s 24 1787 mils $MILS # *
-pigs s 23 722  s 24 1786 mils $MILS # *
-pigs s 23 720  s 24 1785 mils $MILS # *
-pigs s 23 719  s 24 1784 mils $MILS # *
-pigs s 23 718  s 24 1783 mils $MILS # *
-pigs s 23 717  s 24 1782 mils $MILS # *
-pigs s 23 716  s 24 1781 mils $MILS # *
-pigs s 23 715  s 24 1780 mils $MILS # *
-pigs s 23 714  s 24 1779 mils $MILS # 160.73° 64.87 ° 1.53,3.71
-pigs s 23 713  s 24 1778 mils $MILS # *
-pigs s 23 711  s 24 1777 mils $MILS # *
-pigs s 23 710  s 24 1776 mils $MILS # *
-pigs s 23 708  s 24 1775 mils $MILS # *
-pigs s 23 707  s 24 1774 mils $MILS # *
-pigs s 23 705  s 24 1773 mils $MILS # *
-pigs s 23 704  s 24 1772 mils $MILS # *
-pigs s 23 702  s 24 1771 mils $MILS # 161.83° 65.6  ° 1.65,3.87
-pigs s 23 699  s 24 1770 mils $MILS # *
-pigs s 23 697  s 24 1769 mils $MILS # *
-pigs s 23 694  s 24 1768 mils $MILS # *
-pigs s 23 691  s 24 1767 mils $MILS # 162.83° 65.94 ° 1.76,4.04
-pigs s 23 689  s 24 1768 mils $MILS # *
-pigs s 23 686  s 24 1769 mils $MILS # *
-pigs s 23 684  s 24 1770 mils $MILS # 163.48° 65.7  ° 1.84,4.22
-pigs s 23 683  s 24 1771 mils $MILS # *
-pigs s 23 682  s 24 1772 mils $MILS # *
-pigs s 23 680  s 24 1773 mils $MILS # *
-pigs s 23 679  s 24 1774 mils $MILS # *
-pigs s 23 678  s 24 1775 mils $MILS # *
-pigs s 23 677  s 24 1776 mils $MILS # 164.08° 65.16 ° 1.91,4.41
-pigs s 23 676  s 24 1778 mils $MILS # *
-pigs s 23 675  s 24 1780 mils $MILS # *
-pigs s 23 674  s 24 1781 mils $MILS # *
-pigs s 23 673  s 24 1783 mils $MILS # *
-pigs s 23 672  s 24 1785 mils $MILS # 164.52° 64.31 ° 1.96,4.6
-pigs s 23 671  s 24 1790 mils $MILS # *
-pigs s 23 670  s 24 1794 mils $MILS # *
-pigs s 23 669  s 24 1799 mils $MILS # 164.81° 63.12 ° 1.99,4.8
-pigs s 23 668  s 24 1807 mils $MILS # *
-pigs s 23 667  s 24 1814 mils $MILS # 164.97° 61.7  ° 2,5
-pigs s 23 666  s 24 1813 mils $MILS # *
-pigs s 23 664  s 24 1812 mils $MILS # *
-pigs s 23 663  s 24 1811 mils $MILS # *
-pigs s 23 662  s 24 1810 mils $MILS # *
-pigs s 23 660  s 24 1809 mils $MILS # *
-pigs s 23 659  s 24 1808 mils $MILS # *
-pigs s 23 658  s 24 1807 mils $MILS # *
-pigs s 23 656  s 24 1806 mils $MILS # *
-pigs s 23 655  s 24 1805 mils $MILS # *
-pigs s 23 654  s 24 1804 mils $MILS # *
-pigs s 23 652  s 24 1803 mils $MILS # *
-pigs s 23 651  s 24 1802 mils $MILS # *
-pigs s 23 650  s 24 1801 mils $MILS # *
-pigs s 23 649  s 24 1800 mils $MILS # *
-pigs s 23 647  s 24 1799 mils $MILS # *
-pigs s 23 646  s 24 1798 mils $MILS # *
-pigs s 23 645  s 24 1797 mils $MILS # *
-pigs s 23 643  s 24 1796 mils $MILS # *
-pigs s 23 642  s 24 1795 mils $MILS # *
-pigs s 23 641  s 24 1794 mils $MILS # *
-pigs s 23 639  s 24 1793 mils $MILS # *
-pigs s 23 638  s 24 1792 mils $MILS # *
-pigs s 23 637  s 24 1791 mils $MILS # *
-pigs s 23 635  s 24 1790 mils $MILS # *
-pigs s 23 634  s 24 1789 mils $MILS # *
-pigs s 23 633  s 24 1788 mils $MILS # *
-pigs s 23 631  s 24 1787 mils $MILS # *
-pigs s 23 630  s 24 1786 mils $MILS # *
-pigs s 23 629  s 24 1785 mils $MILS # *
-pigs s 23 627  s 24 1784 mils $MILS # *
-pigs s 23 626  s 24 1783 mils $MILS # *
-pigs s 23 625  s 24 1782 mils $MILS # *
-pigs s 23 623  s 24 1781 mils $MILS # *
-pigs s 23 622  s 24 1780 mils $MILS # *
-pigs s 23 621  s 24 1779 mils $MILS # *
-pigs s 23 619  s 24 1778 mils $MILS # *
-pigs s 23 618  s 24 1777 mils $MILS # *
-pigs s 23 617  s 24 1776 mils $MILS # *
-pigs s 23 616  s 24 1775 mils $MILS # *
-pigs s 23 614  s 24 1774 mils $MILS # *
-pigs s 23 613  s 24 1773 mils $MILS # *
-pigs s 23 612  s 24 1772 mils $MILS # *
-pigs s 23 610  s 24 1771 mils $MILS # *
-pigs s 23 609  s 24 1770 mils $MILS # *
-pigs s 23 608  s 24 1769 mils $MILS # *
-pigs s 23 606  s 24 1768 mils $MILS # *
-pigs s 23 605  s 24 1767 mils $MILS # *
-pigs s 23 604  s 24 1766 mils $MILS # *
-pigs s 23 602  s 24 1765 mils $MILS # *
-pigs s 23 601  s 24 1764 mils $MILS # *
-pigs s 23 600  s 24 1763 mils $MILS # *
-pigs s 23 598  s 24 1762 mils $MILS # *
-pigs s 23 597  s 24 1761 mils $MILS # *
-pigs s 23 596  s 24 1760 mils $MILS # *
-pigs s 23 594  s 24 1759 mils $MILS # *
-pigs s 23 593  s 24 1758 mils $MILS # *
-pigs s 23 592  s 24 1757 mils $MILS # *
-pigs s 23 590  s 24 1756 mils $MILS # *
-pigs s 23 589  s 24 1755 mils $MILS # *
-pigs s 23 588  s 24 1754 mils $MILS # *
-pigs s 23 586  s 24 1753 mils $MILS # *
-pigs s 23 585  s 24 1752 mils $MILS # *
-pigs s 23 584  s 24 1751 mils $MILS # *
-pigs s 23 583  s 24 1750 mils $MILS # *
-pigs s 23 581  s 24 1749 mils $MILS # *
-pigs s 23 580  s 24 1748 mils $MILS # *
-pigs s 23 579  s 24 1747 mils $MILS # *
-pigs s 23 577  s 24 1746 mils $MILS # *
-pigs s 23 576  s 24 1745 mils $MILS # *
-pigs s 23 575  s 24 1744 mils $MILS # *
-pigs s 23 573  s 24 1743 mils $MILS # *
-pigs s 23 572  s 24 1742 mils $MILS # *
-pigs s 23 571  s 24 1741 mils $MILS # *
-pigs s 23 569  s 24 1740 mils $MILS # *
-pigs s 23 568  s 24 1739 mils $MILS # *
-pigs s 23 567  s 24 1738 mils $MILS # *
-pigs s 23 565  s 24 1737 mils $MILS # *
-pigs s 23 564  s 24 1736 mils $MILS # *
-pigs s 23 563  s 24 1735 mils $MILS # *
-pigs s 23 561  s 24 1734 mils $MILS # *
-pigs s 23 560  s 24 1733 mils $MILS # *
-pigs s 23 559  s 24 1732 mils $MILS # *
-pigs s 23 557  s 24 1731 mils $MILS # *
-pigs s 23 556  s 24 1730 mils $MILS # *
-pigs s 23 555  s 24 1729 mils $MILS # *
-pigs s 23 553  s 24 1728 mils $MILS # *
-pigs s 23 552  s 24 1727 mils $MILS # *
-pigs s 23 551  s 24 1726 mils $MILS # *
-pigs s 23 550  s 24 1725 mils $MILS # *
-pigs s 23 548  s 24 1724 mils $MILS # *
-pigs s 23 547  s 24 1723 mils $MILS # *
-pigs s 23 546  s 24 1722 mils $MILS # *
-pigs s 23 544  s 24 1721 mils $MILS # *
-pigs s 23 543  s 24 1720 mils $MILS # *
-pigs s 23 542  s 24 1719 mils $MILS # *
-pigs s 23 540  s 24 1718 mils $MILS # *
-pigs s 23 539  s 24 1717 mils $MILS # *
-pigs s 23 538  s 24 1716 mils $MILS # 176.56° 70.55 ° 3,5
-pigs s 23 539  s 24 1738 mils $MILS # 176.5 ° 68.59 ° 2.99,5.2
-pigs s 23 540  s 24 1760 mils $MILS # 176.44° 66.57 ° 2.97,5.4
-pigs s 23 541  s 24 1792 mils $MILS # *
-pigs s 23 542  s 24 1799 mils $MILS # *
-pigs s 23 543  s 24 1807 mils $MILS # 176.16° 62.36 ° 2.89,5.79
-pigs s 23 544  s 24 1819 mils $MILS # *
-pigs s 23 545  s 24 1831 mils $MILS # 175.94° 60.17 ° 2.83,5.98
-pigs s 23 546  s 24 1839 mils $MILS # *
-pigs s 23 547  s 24 1848 mils $MILS # *
-pigs s 23 548  s 24 1856 mils $MILS # 175.71° 57.93 ° 2.76,6.17
-pigs s 23 549  s 24 1864 mils $MILS # *
-pigs s 23 550  s 24 1873 mils $MILS # *
-pigs s 23 551  s 24 1881 mils $MILS # 175.44° 55.71 ° 2.68,6.35
-pigs s 23 552  s 24 1888 mils $MILS # *
-pigs s 23 553  s 24 1894 mils $MILS # *
-pigs s 23 554  s 24 1901 mils $MILS # *
-pigs s 23 555  s 24 1907 mils $MILS # 175.05° 53.36 ° 2.58,6.53
-pigs s 23 556  s 24 1912 mils $MILS # *
-pigs s 23 557  s 24 1917 mils $MILS # *
-pigs s 23 558  s 24 1923 mils $MILS # *
-pigs s 23 559  s 24 1928 mils $MILS # *
-pigs s 23 560  s 24 1933 mils $MILS # 174.61° 51.04 ° 2.47,6.7
-pigs s 23 561  s 24 1937 mils $MILS # *
-pigs s 23 562  s 24 1941 mils $MILS # *
-pigs s 23 563  s 24 1946 mils $MILS # *
-pigs s 23 564  s 24 1950 mils $MILS # *
-pigs s 23 565  s 24 1954 mils $MILS # *
-pigs s 23 566  s 24 1958 mils $MILS # 174.1 ° 48.74 ° 2.35,6.86
-pigs s 23 567  s 24 1962 mils $MILS # *
-pigs s 23 568  s 24 1967 mils $MILS # *
-pigs s 23 569  s 24 1971 mils $MILS # *
-pigs s 23 570  s 24 1975 mils $MILS # *
-pigs s 23 571  s 24 1980 mils $MILS # *
-pigs s 23 572  s 24 1984 mils $MILS # 173.52° 46.45 ° 2.22,7.01
-pigs s 23 573  s 24 1989 mils $MILS # *
-pigs s 23 574  s 24 1994 mils $MILS # *
-pigs s 23 575  s 24 1999 mils $MILS # *
-pigs s 23 576  s 24 2004 mils $MILS # *
-pigs s 23 577  s 24 2009 mils $MILS # 173.03° 44.15 ° 2.09,7.16
-pigs s 23 578  s 24 2012 mils $MILS # *
-pigs s 23 579  s 24 2015 mils $MILS # *
-pigs s 23 580  s 24 2017 mils $MILS # *
-pigs s 23 581  s 24 2020 mils $MILS # *
-pigs s 23 582  s 24 2023 mils $MILS # *
-pigs s 23 583  s 24 2026 mils $MILS # *
-pigs s 23 584  s 24 2028 mils $MILS # *
-pigs s 23 585  s 24 2031 mils $MILS # *
-pigs s 23 586  s 24 2034 mils $MILS # 172.29° 41.9  ° 1.94,7.29
-pigs s 23 587  s 24 2037 mils $MILS # *
-pigs s 23 588  s 24 2041 mils $MILS # *
-pigs s 23 589  s 24 2044 mils $MILS # *
-pigs s 23 590  s 24 2047 mils $MILS # *
-pigs s 23 591  s 24 2050 mils $MILS # *
-pigs s 23 592  s 24 2054 mils $MILS # *
-pigs s 23 593  s 24 2057 mils $MILS # *
-pigs s 23 594  s 24 2060 mils $MILS # 171.53° 39.56 ° 1.78,7.42
-pigs s 23 595  s 24 2063 mils $MILS # *
-pigs s 23 596  s 24 2065 mils $MILS # *
-pigs s 23 597  s 24 2068 mils $MILS # *
-pigs s 23 598  s 24 2070 mils $MILS # *
-pigs s 23 599  s 24 2073 mils $MILS # *
-pigs s 23 600  s 24 2075 mils $MILS # *
-pigs s 23 601  s 24 2078 mils $MILS # *
-pigs s 23 602  s 24 2080 mils $MILS # *
-pigs s 23 603  s 24 2083 mils $MILS # *
-pigs s 23 604  s 24 2085 mils $MILS # 170.6 ° 37.32 ° 1.61,7.53
-pigs s 23 605  s 24 2087 mils $MILS # *
-pigs s 23 606  s 24 2089 mils $MILS # *
-pigs s 23 607  s 24 2092 mils $MILS # *
-pigs s 23 608  s 24 2094 mils $MILS # *
-pigs s 23 609  s 24 2096 mils $MILS # *
-pigs s 23 610  s 24 2098 mils $MILS # *
-pigs s 23 611  s 24 2100 mils $MILS # *
-pigs s 23 612  s 24 2102 mils $MILS # *
-pigs s 23 613  s 24 2105 mils $MILS # *
-pigs s 23 614  s 24 2107 mils $MILS # *
-pigs s 23 615  s 24 2109 mils $MILS # 169.66° 35.15 ° 1.44,7.63
-pigs s 23 616  s 24 2111 mils $MILS # *
-pigs s 23 617  s 24 2113 mils $MILS # *
-pigs s 23 618  s 24 2115 mils $MILS # *
-pigs s 23 619  s 24 2117 mils $MILS # *
-pigs s 23 620  s 24 2119 mils $MILS # *
-pigs s 23 621  s 24 2121 mils $MILS # *
-pigs s 23 622  s 24 2124 mils $MILS # *
-pigs s 23 623  s 24 2126 mils $MILS # *
-pigs s 23 624  s 24 2128 mils $MILS # *
-pigs s 23 625  s 24 2130 mils $MILS # *
-pigs s 23 626  s 24 2132 mils $MILS # *
-pigs s 23 627  s 24 2134 mils $MILS # 168.61° 32.98 ° 1.26,7.72
-pigs s 23 628  s 24 2136 mils $MILS # *
-pigs s 23 629  s 24 2138 mils $MILS # *
-pigs s 23 630  s 24 2140 mils $MILS # *
-pigs s 23 631  s 24 2142 mils $MILS # *
-pigs s 23 632  s 24 2144 mils $MILS # *
-pigs s 23 633  s 24 2147 mils $MILS # *
-pigs s 23 634  s 24 2149 mils $MILS # *
-pigs s 23 635  s 24 2151 mils $MILS # *
-pigs s 23 636  s 24 2153 mils $MILS # *
-pigs s 23 637  s 24 2155 mils $MILS # *
-pigs s 23 638  s 24 2157 mils $MILS # 167.54° 30.88 ° 1.08,7.8
-pigs s 23 639  s 24 2159 mils $MILS # *
-pigs s 23 640  s 24 2160 mils $MILS # *
-pigs s 23 641  s 24 2162 mils $MILS # *
-pigs s 23 642  s 24 2164 mils $MILS # *
-pigs s 23 643  s 24 2165 mils $MILS # *
-pigs s 23 644  s 24 2167 mils $MILS # *
-pigs s 23 645  s 24 2168 mils $MILS # *
-pigs s 23 646  s 24 2170 mils $MILS # *
-pigs s 23 647  s 24 2172 mils $MILS # *
-pigs s 23 648  s 24 2173 mils $MILS # *
-pigs s 23 649  s 24 2175 mils $MILS # *
-pigs s 23 650  s 24 2177 mils $MILS # *
-pigs s 23 651  s 24 2178 mils $MILS # *
-pigs s 23 652  s 24 2180 mils $MILS # 166.35° 28.77 ° 0.89,7.87
-pigs s 23 653  s 24 2182 mils $MILS # *
-pigs s 23 654  s 24 2183 mils $MILS # *
-pigs s 23 655  s 24 2185 mils $MILS # *
-pigs s 23 656  s 24 2186 mils $MILS # *
-pigs s 23 657  s 24 2188 mils $MILS # *
-pigs s 23 658  s 24 2189 mils $MILS # *
-pigs s 23 659  s 24 2191 mils $MILS # *
-pigs s 23 660  s 24 2193 mils $MILS # *
-pigs s 23 661  s 24 2194 mils $MILS # *
-pigs s 23 662  s 24 2196 mils $MILS # *
-pigs s 23 663  s 24 2197 mils $MILS # *
-pigs s 23 664  s 24 2199 mils $MILS # *
-pigs s 23 665  s 24 2200 mils $MILS # *
-pigs s 23 666  s 24 2202 mils $MILS # 165.04° 26.82 ° 0.7,7.92
-pigs s 23 667  s 24 2203 mils $MILS # *
-pigs s 23 668  s 24 2205 mils $MILS # *
-pigs s 23 669  s 24 2206 mils $MILS # *
-pigs s 23 670  s 24 2208 mils $MILS # *
-pigs s 23 671  s 24 2209 mils $MILS # *
-pigs s 23 672  s 24 2210 mils $MILS # *
-pigs s 23 673  s 24 2212 mils $MILS # *
-pigs s 23 674  s 24 2213 mils $MILS # *
-pigs s 23 675  s 24 2214 mils $MILS # *
-pigs s 23 676  s 24 2216 mils $MILS # *
-pigs s 23 677  s 24 2217 mils $MILS # *
-pigs s 23 678  s 24 2219 mils $MILS # *
-pigs s 23 679  s 24 2220 mils $MILS # *
-pigs s 23 680  s 24 2221 mils $MILS # *
-pigs s 23 681  s 24 2223 mils $MILS # *
-pigs s 23 682  s 24 2224 mils $MILS # 163.59° 24.86 ° 0.5,7.96
-pigs s 23 683  s 24 2225 mils $MILS # *
-pigs s 23 684  s 24 2226 mils $MILS # *
-pigs s 23 685  s 24 2227 mils $MILS # *
-pigs s 23 686  s 24 2228 mils $MILS # *
-pigs s 23 687  s 24 2230 mils $MILS # *
-pigs s 23 688  s 24 2231 mils $MILS # *
-pigs s 23 689  s 24 2232 mils $MILS # *
-pigs s 23 690  s 24 2233 mils $MILS # *
-pigs s 23 691  s 24 2234 mils $MILS # *
-pigs s 23 692  s 24 2235 mils $MILS # *
-pigs s 23 693  s 24 2236 mils $MILS # *
-pigs s 23 694  s 24 2237 mils $MILS # *
-pigs s 23 695  s 24 2238 mils $MILS # *
-pigs s 23 696  s 24 2240 mils $MILS # *
-pigs s 23 697  s 24 2241 mils $MILS # *
-pigs s 23 698  s 24 2242 mils $MILS # *
-pigs s 23 699  s 24 2243 mils $MILS # *
-pigs s 23 700  s 24 2244 mils $MILS # 162.01° 23.06 ° 0.3,7.98
-pigs s 23 701  s 24 2245 mils $MILS # *
-pigs s 23 702  s 24 2246 mils $MILS # *
-pigs s 23 703  s 24 2248 mils $MILS # *
-pigs s 23 704  s 24 2249 mils $MILS # *
-pigs s 23 705  s 24 2250 mils $MILS # *
-pigs s 23 706  s 24 2251 mils $MILS # *
-pigs s 23 707  s 24 2252 mils $MILS # *
-pigs s 23 708  s 24 2253 mils $MILS # *
-pigs s 23 709  s 24 2255 mils $MILS # *
-pigs s 23 710  s 24 2256 mils $MILS # *
-pigs s 23 711  s 24 2257 mils $MILS # *
-pigs s 23 712  s 24 2258 mils $MILS # *
-pigs s 23 713  s 24 2259 mils $MILS # *
-pigs s 23 714  s 24 2261 mils $MILS # *
-pigs s 23 715  s 24 2262 mils $MILS # *
-pigs s 23 716  s 24 2263 mils $MILS # *
-pigs s 23 717  s 24 2264 mils $MILS # 160.47° 21.22 ° 0.1,8
-pigs s 23 718  s 24 2265 mils $MILS # *
-pigs s 23 719  s 24 2266 mils $MILS # *
-pigs s 23 720  s 24 2267 mils $MILS # *
-pigs s 23 721  s 24 2268 mils $MILS # *
-pigs s 23 722  s 24 2269 mils $MILS # *
-pigs s 23 723  s 24 2270 mils $MILS # *
-pigs s 23 724  s 24 2271 mils $MILS # *
-pigs s 23 725  s 24 2272 mils $MILS # *
-pigs s 23 726  s 24 2273 mils $MILS # *
-pigs s 23 727  s 24 2274 mils $MILS # *
-pigs s 23 728  s 24 2275 mils $MILS # *
-pigs s 23 729  s 24 2276 mils $MILS # *
-pigs s 23 730  s 24 2277 mils $MILS # *
-pigs s 23 731  s 24 2278 mils $MILS # *
-pigs s 23 732  s 24 2279 mils $MILS # *
-pigs s 23 733  s 24 2280 mils $MILS # *
-pigs s 23 734  s 24 2281 mils $MILS # *
-pigs s 23 735  s 24 2282 mils $MILS # *
-pigs s 23 736  s 24 2283 mils $MILS # 158.78° 19.53 ° -0.1,8
-pigs s 23 737  s 24 2284 mils $MILS # *
-pigs s 23 738  s 24 2285 mils $MILS # *
-pigs s 23 740  s 24 2286 mils $MILS # *
-pigs s 23 741  s 24 2287 mils $MILS # *
-pigs s 23 742  s 24 2288 mils $MILS # *
-pigs s 23 743  s 24 2289 mils $MILS # *
-pigs s 23 744  s 24 2290 mils $MILS # *
-pigs s 23 745  s 24 2291 mils $MILS # *
-pigs s 23 747  s 24 2292 mils $MILS # *
-pigs s 23 748  s 24 2293 mils $MILS # *
-pigs s 23 749  s 24 2294 mils $MILS # *
-pigs s 23 750  s 24 2295 mils $MILS # *
-pigs s 23 751  s 24 2296 mils $MILS # *
-pigs s 23 753  s 24 2297 mils $MILS # *
-pigs s 23 754  s 24 2298 mils $MILS # *
-pigs s 23 755  s 24 2299 mils $MILS # *
-pigs s 23 756  s 24 2300 mils $MILS # 156.94° 17.99 ° -0.3,7.98
-pigs s 23 757  s 24 2301 mils $MILS # *
-pigs s 23 758  s 24 2302 mils $MILS # *
-pigs s 23 759  s 24 2303 mils $MILS # *
-pigs s 23 760  s 24 2304 mils $MILS # *
-pigs s 23 762  s 24 2305 mils $MILS # *
-pigs s 23 763  s 24 2306 mils $MILS # *
-pigs s 23 764  s 24 2307 mils $MILS # *
-pigs s 23 765  s 24 2308 mils $MILS # *
-pigs s 23 766  s 24 2309 mils $MILS # *
-pigs s 23 767  s 24 2310 mils $MILS # *
-pigs s 23 768  s 24 2311 mils $MILS # *
-pigs s 23 769  s 24 2312 mils $MILS # *
-pigs s 23 770  s 24 2313 mils $MILS # *
-pigs s 23 772  s 24 2314 mils $MILS # *
-pigs s 23 773  s 24 2315 mils $MILS # *
-pigs s 23 774  s 24 2316 mils $MILS # *
-pigs s 23 775  s 24 2317 mils $MILS # *
-pigs s 23 776  s 24 2318 mils $MILS # 155.14° 16.41 ° -0.5,7.96
-pigs s 23 777  s 24 2319 mils $MILS # *
-pigs s 23 779  s 24 2320 mils $MILS # *
-pigs s 23 780  s 24 2321 mils $MILS # *
-pigs s 23 782  s 24 2322 mils $MILS # *
-pigs s 23 783  s 24 2323 mils $MILS # *
-pigs s 23 784  s 24 2324 mils $MILS # *
-pigs s 23 786  s 24 2325 mils $MILS # *
-pigs s 23 787  s 24 2326 mils $MILS # *
-pigs s 23 788  s 24 2327 mils $MILS # *
-pigs s 23 790  s 24 2328 mils $MILS # *
-pigs s 23 791  s 24 2329 mils $MILS # *
-pigs s 23 793  s 24 2330 mils $MILS # *
-pigs s 23 794  s 24 2331 mils $MILS # *
-pigs s 23 795  s 24 2332 mils $MILS # *
-pigs s 23 797  s 24 2333 mils $MILS # *
-pigs s 23 798  s 24 2334 mils $MILS # 153.18° 14.96 ° -0.7,7.92
-pigs s 23 800  s 24 2335 mils $MILS # *
-pigs s 23 801  s 24 2336 mils $MILS # *
-pigs s 23 803  s 24 2337 mils $MILS # *
-pigs s 23 804  s 24 2338 mils $MILS # *
-pigs s 23 806  s 24 2339 mils $MILS # *
-pigs s 23 807  s 24 2340 mils $MILS # *
-pigs s 23 809  s 24 2341 mils $MILS # *
-pigs s 23 811  s 24 2342 mils $MILS # *
-pigs s 23 812  s 24 2343 mils $MILS # *
-pigs s 23 814  s 24 2344 mils $MILS # *
-pigs s 23 815  s 24 2345 mils $MILS # *
-pigs s 23 817  s 24 2346 mils $MILS # *
-pigs s 23 818  s 24 2347 mils $MILS # *
-pigs s 23 820  s 24 2348 mils $MILS # 151.23° 13.65 ° -0.89,7.87
-pigs s 23 822  s 24 2349 mils $MILS # *
-pigs s 23 823  s 24 2350 mils $MILS # *
-pigs s 23 825  s 24 2351 mils $MILS # *
-pigs s 23 827  s 24 2352 mils $MILS # *
-pigs s 23 828  s 24 2353 mils $MILS # *
-pigs s 23 830  s 24 2354 mils $MILS # *
-pigs s 23 831  s 24 2355 mils $MILS # *
-pigs s 23 833  s 24 2356 mils $MILS # *
-pigs s 23 835  s 24 2357 mils $MILS # *
-pigs s 23 836  s 24 2358 mils $MILS # *
-pigs s 23 838  s 24 2359 mils $MILS # *
-pigs s 23 840  s 24 2360 mils $MILS # *
-pigs s 23 841  s 24 2361 mils $MILS # *
-pigs s 23 843  s 24 2362 mils $MILS # 149.12° 12.46 ° -1.08,7.8
-pigs s 23 845  s 24 2363 mils $MILS # *
-pigs s 23 847  s 24 2364 mils $MILS # *
-pigs s 23 849  s 24 2365 mils $MILS # *
-pigs s 23 851  s 24 2366 mils $MILS # *
-pigs s 23 853  s 24 2367 mils $MILS # *
-pigs s 23 856  s 24 2368 mils $MILS # *
-pigs s 23 858  s 24 2369 mils $MILS # *
-pigs s 23 860  s 24 2370 mils $MILS # *
-pigs s 23 862  s 24 2371 mils $MILS # *
-pigs s 23 864  s 24 2372 mils $MILS # *
-pigs s 23 866  s 24 2373 mils $MILS # 147.02° 11.39 ° -1.26,7.72
-pigs s 23 868  s 24 2374 mils $MILS # *
-pigs s 23 870  s 24 2375 mils $MILS # *
-pigs s 23 872  s 24 2376 mils $MILS # *
-pigs s 23 874  s 24 2377 mils $MILS # *
-pigs s 23 876  s 24 2378 mils $MILS # *
-pigs s 23 878  s 24 2379 mils $MILS # *
-pigs s 23 881  s 24 2380 mils $MILS # *
-pigs s 23 883  s 24 2381 mils $MILS # *
-pigs s 23 885  s 24 2382 mils $MILS # *
-pigs s 23 887  s 24 2383 mils $MILS # *
-pigs s 23 889  s 24 2384 mils $MILS # *
-pigs s 23 891  s 24 2385 mils $MILS # 144.85° 10.34 ° -1.44,7.63
-pigs s 23 893  s 24 2386 mils $MILS # *
-pigs s 23 895  s 24 2387 mils $MILS # *
-pigs s 23 898  s 24 2388 mils $MILS # *
-pigs s 23 900  s 24 2389 mils $MILS # *
-pigs s 23 902  s 24 2390 mils $MILS # *
-pigs s 23 904  s 24 2391 mils $MILS # *
-pigs s 23 906  s 24 2392 mils $MILS # *
-pigs s 23 908  s 24 2393 mils $MILS # *
-pigs s 23 911  s 24 2394 mils $MILS # *
-pigs s 23 913  s 24 2395 mils $MILS # *
-pigs s 23 915  s 24 2396 mils $MILS # 142.68° 9.4   ° -1.61,7.53
-pigs s 23 918  s 24 2397 mils $MILS # *
-pigs s 23 920  s 24 2398 mils $MILS # *
-pigs s 23 923  s 24 2399 mils $MILS # *
-pigs s 23 925  s 24 2400 mils $MILS # *
-pigs s 23 928  s 24 2401 mils $MILS # *
-pigs s 23 930  s 24 2402 mils $MILS # *
-pigs s 23 933  s 24 2403 mils $MILS # *
-pigs s 23 935  s 24 2404 mils $MILS # *
-pigs s 23 938  s 24 2405 mils $MILS # *
-pigs s 23 940  s 24 2406 mils $MILS # 140.44° 8.47  ° -1.78,7.42
-pigs s 23 943  s 24 2407 mils $MILS # *
-pigs s 23 947  s 24 2408 mils $MILS # *
-pigs s 23 950  s 24 2409 mils $MILS # *
-pigs s 23 953  s 24 2410 mils $MILS # *
-pigs s 23 956  s 24 2411 mils $MILS # *
-pigs s 23 960  s 24 2412 mils $MILS # *
-pigs s 23 963  s 24 2413 mils $MILS # *
-pigs s 23 966  s 24 2414 mils $MILS # 138.1 ° 7.71  ° -1.94,7.29
-pigs s 23 969  s 24 2415 mils $MILS # *
-pigs s 23 972  s 24 2416 mils $MILS # *
-pigs s 23 974  s 24 2417 mils $MILS # *
-pigs s 23 977  s 24 2418 mils $MILS # *
-pigs s 23 980  s 24 2419 mils $MILS # *
-pigs s 23 983  s 24 2420 mils $MILS # *
-pigs s 23 985  s 24 2421 mils $MILS # *
-pigs s 23 988  s 24 2422 mils $MILS # *
-pigs s 23 991  s 24 2423 mils $MILS # 135.85° 6.97  ° -2.09,7.16
-pigs s 23 996  s 24 2424 mils $MILS # *
-pigs s 23 1001 s 24 2425 mils $MILS # *
-pigs s 23 1006 s 24 2426 mils $MILS # *
-pigs s 23 1011 s 24 2427 mils $MILS # *
-pigs s 23 1016 s 24 2428 mils $MILS # 133.55° 6.48  ° -2.22,7.01
-pigs s 23 1020 s 24 2429 mils $MILS # *
-pigs s 23 1025 s 24 2430 mils $MILS # *
-pigs s 23 1029 s 24 2431 mils $MILS # *
-pigs s 23 1033 s 24 2432 mils $MILS # *
-pigs s 23 1038 s 24 2433 mils $MILS # *
-pigs s 23 1042 s 24 2434 mils $MILS # 131.26° 5.9   ° -2.35,6.86
-pigs s 23 1046 s 24 2435 mils $MILS # *
-pigs s 23 1050 s 24 2436 mils $MILS # *
-pigs s 23 1055 s 24 2437 mils $MILS # *
-pigs s 23 1059 s 24 2438 mils $MILS # *
-pigs s 23 1063 s 24 2439 mils $MILS # *
-pigs s 23 1067 s 24 2440 mils $MILS # 128.96° 5.39  ° -2.47,6.7
-pigs s 23 1072 s 24 2441 mils $MILS # *
-pigs s 23 1077 s 24 2442 mils $MILS # *
-pigs s 23 1083 s 24 2443 mils $MILS # *
-pigs s 23 1088 s 24 2444 mils $MILS # *
-pigs s 23 1093 s 24 2445 mils $MILS # 126.64° 4.95  ° -2.58,6.53
-pigs s 23 1100 s 24 2446 mils $MILS # *
-pigs s 23 1106 s 24 2447 mils $MILS # *
-pigs s 23 1113 s 24 2448 mils $MILS # *
-pigs s 23 1119 s 24 2449 mils $MILS # 124.29° 4.56  ° -2.68,6.35
-pigs s 23 1127 s 24 2450 mils $MILS # *
-pigs s 23 1136 s 24 2451 mils $MILS # *
-pigs s 23 1144 s 24 2452 mils $MILS # 122.07° 4.29  ° -2.76,6.17
-pigs s 23 1152 s 24 2453 mils $MILS # *
-pigs s 23 1161 s 24 2454 mils $MILS # *
-pigs s 23 1169 s 24 2455 mils $MILS # 119.83° 4.06  ° -2.83,5.98
-pigs s 23 1181 s 24 2456 mils $MILS # *
-pigs s 23 1193 s 24 2457 mils $MILS # 117.64° 3.84  ° -2.89,5.79
-pigs s 23 1201 s 24 2458 mils $MILS # *
-pigs s 23 1208 s 24 2459 mils $MILS # *
-pigs s 23 1216 s 24 2460 mils $MILS # 115.52° 3.63  ° -2.94,5.6
-pigs s 23 1262 s 24 2461 mils $MILS # 111.41° 3.5   ° -2.99,5.2
-pigs s 23 1284 s 24 2462 mils $MILS # 109.45° 3.44  ° -3,5
-pigs s 23 1304 s 24 2461 mils $MILS # 107.64° 3.51  ° -2.99,4.8
-pigs s 23 1323 s 24 2460 mils $MILS # 105.9 ° 3.58  ° -2.97,4.6
-pigs s 23 1342 s 24 2459 mils $MILS # 104.25° 3.66  ° -2.94,4.4
-pigs s 23 1350 s 24 2458 mils $MILS # *
-pigs s 23 1357 s 24 2457 mils $MILS # 102.88° 3.89  ° -2.89,4.21
-pigs s 23 1362 s 24 2456 mils $MILS # *
-pigs s 23 1366 s 24 2455 mils $MILS # *
-pigs s 23 1371 s 24 2454 mils $MILS # 101.62° 4.13  ° -2.83,4.02
-pigs s 23 1375 s 24 2453 mils $MILS # *
-pigs s 23 1379 s 24 2452 mils $MILS # *
-pigs s 23 1383 s 24 2451 mils $MILS # 100.49° 4.38  ° -2.76,3.83
-pigs s 23 1386 s 24 2450 mils $MILS # *
-pigs s 23 1390 s 24 2449 mils $MILS # *
-pigs s 23 1393 s 24 2448 mils $MILS # 99.61 ° 4.68  ° -2.68,3.65
-pigs s 23 1394 s 24 2447 mils $MILS # *
-pigs s 23 1396 s 24 2446 mils $MILS # *
-pigs s 23 1397 s 24 2445 mils $MILS # *
-pigs s 23 1399 s 24 2444 mils $MILS # *
-pigs s 23 1400 s 24 2443 mils $MILS # 99.02 ° 5.12  ° -2.58,3.47
-pigs s 23 1401 s 24 2441 mils $MILS # *
-pigs s 23 1402 s 24 2440 mils $MILS # *
-pigs s 23 1403 s 24 2438 mils $MILS # 98.77 ° 5.62  ° -2.47,3.3
-pigs s 23 1402 s 24 2435 mils $MILS # *
-pigs s 23 1401 s 24 2431 mils $MILS # 98.89 ° 6.21  ° -2.35,3.14
-pigs s 23 1400 s 24 2430 mils $MILS # *
-pigs s 23 1399 s 24 2428 mils $MILS # *
-pigs s 23 1398 s 24 2427 mils $MILS # *
-pigs s 23 1397 s 24 2426 mils $MILS # *
-pigs s 23 1396 s 24 2424 mils $MILS # *
-pigs s 23 1395 s 24 2423 mils $MILS # 99.44 ° 6.89  ° -2.22,2.99
-pigs s 23 1394 s 24 2422 mils $MILS # *
-pigs s 23 1392 s 24 2421 mils $MILS # *
-pigs s 23 1391 s 24 2420 mils $MILS # *
-pigs s 23 1390 s 24 2419 mils $MILS # *
-pigs s 23 1388 s 24 2418 mils $MILS # *
-pigs s 23 1387 s 24 2417 mils $MILS # 100.21° 7.5   ° -2.09,2.84
-pigs s 23 1385 s 24 2416 mils $MILS # *
-pigs s 23 1384 s 24 2415 mils $MILS # *
-pigs s 23 1382 s 24 2414 mils $MILS # *
-pigs s 23 1380 s 24 2413 mils $MILS # *
-pigs s 23 1379 s 24 2412 mils $MILS # *
-pigs s 23 1377 s 24 2411 mils $MILS # *
-pigs s 23 1376 s 24 2410 mils $MILS # *
-pigs s 23 1374 s 24 2409 mils $MILS # *
-pigs s 23 1372 s 24 2408 mils $MILS # *
-pigs s 23 1371 s 24 2407 mils $MILS # *
-pigs s 23 1369 s 24 2406 mils $MILS # 101.79° 8.43  ° -1.94,2.71
-pigs s 23 1367 s 24 2405 mils $MILS # *
-pigs s 23 1365 s 24 2404 mils $MILS # *
-pigs s 23 1362 s 24 2403 mils $MILS # *
-pigs s 23 1360 s 24 2402 mils $MILS # *
-pigs s 23 1358 s 24 2401 mils $MILS # *
-pigs s 23 1356 s 24 2400 mils $MILS # *
-pigs s 23 1354 s 24 2399 mils $MILS # *
-pigs s 23 1352 s 24 2398 mils $MILS # *
-pigs s 23 1349 s 24 2397 mils $MILS # *
-pigs s 23 1347 s 24 2396 mils $MILS # *
-pigs s 23 1345 s 24 2395 mils $MILS # 103.91° 9.43  ° -1.78,2.58
-pigs s 23 1343 s 24 2394 mils $MILS # *
-pigs s 23 1340 s 24 2393 mils $MILS # *
-pigs s 23 1338 s 24 2392 mils $MILS # *
-pigs s 23 1336 s 24 2391 mils $MILS # *
-pigs s 23 1334 s 24 2390 mils $MILS # *
-pigs s 23 1331 s 24 2389 mils $MILS # *
-pigs s 23 1329 s 24 2388 mils $MILS # *
-pigs s 23 1327 s 24 2387 mils $MILS # *
-pigs s 23 1324 s 24 2386 mils $MILS # *
-pigs s 23 1322 s 24 2385 mils $MILS # *
-pigs s 23 1320 s 24 2384 mils $MILS # *
-pigs s 23 1318 s 24 2383 mils $MILS # *
-pigs s 23 1315 s 24 2382 mils $MILS # *
-pigs s 23 1313 s 24 2381 mils $MILS # 106.81° 10.7  ° -1.61,2.47
-pigs s 23 1310 s 24 2380 mils $MILS # *
-pigs s 23 1308 s 24 2379 mils $MILS # *
-pigs s 23 1305 s 24 2378 mils $MILS # *
-pigs s 23 1303 s 24 2377 mils $MILS # *
-pigs s 23 1300 s 24 2376 mils $MILS # *
-pigs s 23 1298 s 24 2375 mils $MILS # *
-pigs s 23 1295 s 24 2374 mils $MILS # *
-pigs s 23 1293 s 24 2373 mils $MILS # *
-pigs s 23 1290 s 24 2372 mils $MILS # *
-pigs s 23 1288 s 24 2371 mils $MILS # *
-pigs s 23 1285 s 24 2370 mils $MILS # *
-pigs s 23 1283 s 24 2369 mils $MILS # *
-pigs s 23 1280 s 24 2368 mils $MILS # *
-pigs s 23 1278 s 24 2367 mils $MILS # *
-pigs s 23 1275 s 24 2366 mils $MILS # 110.22° 12.06 ° -1.44,2.37
-pigs s 23 1272 s 24 2365 mils $MILS # *
-pigs s 23 1270 s 24 2364 mils $MILS # *
-pigs s 23 1267 s 24 2363 mils $MILS # *
-pigs s 23 1265 s 24 2362 mils $MILS # *
-pigs s 23 1262 s 24 2361 mils $MILS # *
-pigs s 23 1260 s 24 2360 mils $MILS # *
-pigs s 23 1257 s 24 2359 mils $MILS # *
-pigs s 23 1255 s 24 2358 mils $MILS # *
-pigs s 23 1252 s 24 2357 mils $MILS # *
-pigs s 23 1249 s 24 2356 mils $MILS # *
-pigs s 23 1247 s 24 2355 mils $MILS # *
-pigs s 23 1244 s 24 2354 mils $MILS # *
-pigs s 23 1242 s 24 2353 mils $MILS # *
-pigs s 23 1239 s 24 2352 mils $MILS # *
-pigs s 23 1237 s 24 2351 mils $MILS # *
-pigs s 23 1234 s 24 2350 mils $MILS # *
-pigs s 23 1231 s 24 2349 mils $MILS # *
-pigs s 23 1229 s 24 2348 mils $MILS # 114.37° 13.66 ° -1.26,2.28
-pigs s 23 1226 s 24 2347 mils $MILS # *
-pigs s 23 1224 s 24 2346 mils $MILS # *
-pigs s 23 1221 s 24 2345 mils $MILS # *
-pigs s 23 1218 s 24 2344 mils $MILS # *
-pigs s 23 1216 s 24 2343 mils $MILS # *
-pigs s 23 1213 s 24 2342 mils $MILS # *
-pigs s 23 1210 s 24 2341 mils $MILS # *
-pigs s 23 1208 s 24 2340 mils $MILS # *
-pigs s 23 1205 s 24 2339 mils $MILS # *
-pigs s 23 1202 s 24 2338 mils $MILS # *
-pigs s 23 1200 s 24 2337 mils $MILS # *
-pigs s 23 1197 s 24 2336 mils $MILS # *
-pigs s 23 1194 s 24 2335 mils $MILS # *
-pigs s 23 1191 s 24 2334 mils $MILS # *
-pigs s 23 1189 s 24 2333 mils $MILS # *
-pigs s 23 1186 s 24 2332 mils $MILS # *
-pigs s 23 1183 s 24 2331 mils $MILS # *
-pigs s 23 1181 s 24 2330 mils $MILS # *
-pigs s 23 1178 s 24 2329 mils $MILS # 118.97° 15.42 ° -1.08,2.2
-pigs s 23 1176 s 24 2328 mils $MILS # *
-pigs s 23 1173 s 24 2327 mils $MILS # *
-pigs s 23 1171 s 24 2326 mils $MILS # *
-pigs s 23 1168 s 24 2325 mils $MILS # *
-pigs s 23 1166 s 24 2324 mils $MILS # *
-pigs s 23 1163 s 24 2323 mils $MILS # *
-pigs s 23 1161 s 24 2322 mils $MILS # *
-pigs s 23 1159 s 24 2321 mils $MILS # *
-pigs s 23 1156 s 24 2320 mils $MILS # *
-pigs s 23 1154 s 24 2319 mils $MILS # *
-pigs s 23 1151 s 24 2318 mils $MILS # *
-pigs s 23 1149 s 24 2317 mils $MILS # *
-pigs s 23 1147 s 24 2316 mils $MILS # *
-pigs s 23 1144 s 24 2315 mils $MILS # *
-pigs s 23 1142 s 24 2314 mils $MILS # *
-pigs s 23 1139 s 24 2313 mils $MILS # *
-pigs s 23 1137 s 24 2312 mils $MILS # *
-pigs s 23 1134 s 24 2311 mils $MILS # *
-pigs s 23 1132 s 24 2310 mils $MILS # *
-pigs s 23 1130 s 24 2309 mils $MILS # *
-pigs s 23 1127 s 24 2308 mils $MILS # *
-pigs s 23 1125 s 24 2307 mils $MILS # *
-pigs s 23 1122 s 24 2306 mils $MILS # *
-pigs s 23 1120 s 24 2305 mils $MILS # 124.19° 17.53 ° -0.89,2.13
-pigs s 23 1118 s 24 2304 mils $MILS # *
-pigs s 23 1116 s 24 2303 mils $MILS # *
-pigs s 23 1113 s 24 2302 mils $MILS # *
-pigs s 23 1111 s 24 2301 mils $MILS # *
-pigs s 23 1109 s 24 2300 mils $MILS # *
-pigs s 23 1107 s 24 2299 mils $MILS # *
-pigs s 23 1105 s 24 2298 mils $MILS # *
-pigs s 23 1102 s 24 2297 mils $MILS # *
-pigs s 23 1100 s 24 2296 mils $MILS # *
-pigs s 23 1098 s 24 2295 mils $MILS # *
-pigs s 23 1096 s 24 2294 mils $MILS # *
-pigs s 23 1094 s 24 2293 mils $MILS # *
-pigs s 23 1092 s 24 2292 mils $MILS # *
-pigs s 23 1089 s 24 2291 mils $MILS # *
-pigs s 23 1087 s 24 2290 mils $MILS # *
-pigs s 23 1085 s 24 2289 mils $MILS # *
-pigs s 23 1083 s 24 2288 mils $MILS # *
-pigs s 23 1081 s 24 2287 mils $MILS # *
-pigs s 23 1078 s 24 2286 mils $MILS # *
-pigs s 23 1076 s 24 2285 mils $MILS # *
-pigs s 23 1074 s 24 2284 mils $MILS # *
-pigs s 23 1072 s 24 2283 mils $MILS # *
-pigs s 23 1070 s 24 2282 mils $MILS # *
-pigs s 23 1067 s 24 2281 mils $MILS # *
-pigs s 23 1065 s 24 2280 mils $MILS # *
-pigs s 23 1063 s 24 2279 mils $MILS # *
-pigs s 23 1061 s 24 2278 mils $MILS # 129.53° 20.01 ° -0.7,2.08
-pigs s 23 1059 s 24 2277 mils $MILS # *
-pigs s 23 1057 s 24 2276 mils $MILS # *
-pigs s 23 1055 s 24 2275 mils $MILS # *
-pigs s 23 1053 s 24 2274 mils $MILS # *
-pigs s 23 1052 s 24 2273 mils $MILS # *
-pigs s 23 1050 s 24 2272 mils $MILS # *
-pigs s 23 1048 s 24 2271 mils $MILS # *
-pigs s 23 1046 s 24 2270 mils $MILS # *
-pigs s 23 1044 s 24 2269 mils $MILS # *
-pigs s 23 1042 s 24 2268 mils $MILS # *
-pigs s 23 1040 s 24 2267 mils $MILS # *
-pigs s 23 1038 s 24 2266 mils $MILS # *
-pigs s 23 1037 s 24 2265 mils $MILS # *
-pigs s 23 1035 s 24 2264 mils $MILS # *
-pigs s 23 1033 s 24 2263 mils $MILS # *
-pigs s 23 1031 s 24 2262 mils $MILS # *
-pigs s 23 1029 s 24 2261 mils $MILS # *
-pigs s 23 1027 s 24 2260 mils $MILS # *
-pigs s 23 1025 s 24 2259 mils $MILS # *
-pigs s 23 1023 s 24 2258 mils $MILS # *
-pigs s 23 1022 s 24 2257 mils $MILS # *
-pigs s 23 1020 s 24 2256 mils $MILS # *
-pigs s 23 1018 s 24 2255 mils $MILS # *
-pigs s 23 1016 s 24 2254 mils $MILS # *
-pigs s 23 1014 s 24 2253 mils $MILS # *
-pigs s 23 1012 s 24 2252 mils $MILS # *
-pigs s 23 1010 s 24 2251 mils $MILS # *
-pigs s 23 1008 s 24 2250 mils $MILS # *
-pigs s 23 1006 s 24 2249 mils $MILS # *
-pigs s 23 1005 s 24 2248 mils $MILS # *
-pigs s 23 1003 s 24 2247 mils $MILS # *
-pigs s 23 1001 s 24 2246 mils $MILS # *
-pigs s 23 999  s 24 2245 mils $MILS # 135.1 ° 22.99 ° -0.5,2.04
-pigs s 23 998  s 24 2244 mils $MILS # *
-pigs s 23 996  s 24 2243 mils $MILS # *
-pigs s 23 995  s 24 2242 mils $MILS # *
-pigs s 23 993  s 24 2241 mils $MILS # *
-pigs s 23 992  s 24 2240 mils $MILS # *
-pigs s 23 990  s 24 2239 mils $MILS # *
-pigs s 23 989  s 24 2238 mils $MILS # *
-pigs s 23 987  s 24 2237 mils $MILS # *
-pigs s 23 986  s 24 2236 mils $MILS # *
-pigs s 23 984  s 24 2235 mils $MILS # *
-pigs s 23 983  s 24 2234 mils $MILS # *
-pigs s 23 981  s 24 2233 mils $MILS # *
-pigs s 23 980  s 24 2232 mils $MILS # *
-pigs s 23 978  s 24 2231 mils $MILS # *
-pigs s 23 977  s 24 2230 mils $MILS # *
-pigs s 23 975  s 24 2229 mils $MILS # *
-pigs s 23 974  s 24 2228 mils $MILS # *
-pigs s 23 972  s 24 2227 mils $MILS # *
-pigs s 23 971  s 24 2226 mils $MILS # *
-pigs s 23 969  s 24 2225 mils $MILS # *
-pigs s 23 968  s 24 2224 mils $MILS # *
-pigs s 23 966  s 24 2223 mils $MILS # *
-pigs s 23 965  s 24 2222 mils $MILS # *
-pigs s 23 963  s 24 2221 mils $MILS # *
-pigs s 23 962  s 24 2220 mils $MILS # *
-pigs s 23 960  s 24 2219 mils $MILS # *
-pigs s 23 959  s 24 2218 mils $MILS # *
-pigs s 23 957  s 24 2217 mils $MILS # *
-pigs s 23 956  s 24 2216 mils $MILS # *
-pigs s 23 954  s 24 2215 mils $MILS # *
-pigs s 23 953  s 24 2214 mils $MILS # *
-pigs s 23 951  s 24 2213 mils $MILS # *
-pigs s 23 950  s 24 2212 mils $MILS # *
-pigs s 23 948  s 24 2211 mils $MILS # *
-pigs s 23 947  s 24 2210 mils $MILS # *
-pigs s 23 945  s 24 2209 mils $MILS # *
-pigs s 23 944  s 24 2208 mils $MILS # *
-pigs s 23 942  s 24 2207 mils $MILS # *
-pigs s 23 941  s 24 2206 mils $MILS # 140.33° 26.49 ° -0.3,2.02
-pigs s 23 940  s 24 2205 mils $MILS # *
-pigs s 23 938  s 24 2204 mils $MILS # *
-pigs s 23 937  s 24 2203 mils $MILS # *
-pigs s 23 936  s 24 2202 mils $MILS # *
-pigs s 23 935  s 24 2201 mils $MILS # *
-pigs s 23 933  s 24 2200 mils $MILS # *
-pigs s 23 932  s 24 2199 mils $MILS # *
-pigs s 23 931  s 24 2198 mils $MILS # *
-pigs s 23 929  s 24 2197 mils $MILS # *
-pigs s 23 928  s 24 2196 mils $MILS # *
-pigs s 23 927  s 24 2195 mils $MILS # *
-pigs s 23 926  s 24 2194 mils $MILS # *
-pigs s 23 924  s 24 2193 mils $MILS # *
-pigs s 23 923  s 24 2192 mils $MILS # *
-pigs s 23 922  s 24 2191 mils $MILS # *
-pigs s 23 921  s 24 2190 mils $MILS # *
-pigs s 23 919  s 24 2189 mils $MILS # *
-pigs s 23 918  s 24 2188 mils $MILS # *
-pigs s 23 917  s 24 2187 mils $MILS # *
-pigs s 23 915  s 24 2186 mils $MILS # *
-pigs s 23 914  s 24 2185 mils $MILS # *
-pigs s 23 913  s 24 2184 mils $MILS # *
-pigs s 23 912  s 24 2183 mils $MILS # *
-pigs s 23 910  s 24 2182 mils $MILS # *
-pigs s 23 909  s 24 2181 mils $MILS # *
-pigs s 23 908  s 24 2180 mils $MILS # *
-pigs s 23 906  s 24 2179 mils $MILS # *
-pigs s 23 905  s 24 2178 mils $MILS # *
-pigs s 23 904  s 24 2177 mils $MILS # *
-pigs s 23 903  s 24 2176 mils $MILS # *
-pigs s 23 901  s 24 2175 mils $MILS # *
-pigs s 23 900  s 24 2174 mils $MILS # *
-pigs s 23 899  s 24 2173 mils $MILS # *
-pigs s 23 897  s 24 2172 mils $MILS # *
-pigs s 23 896  s 24 2171 mils $MILS # *
-pigs s 23 895  s 24 2170 mils $MILS # *
-pigs s 23 894  s 24 2169 mils $MILS # *
-pigs s 23 892  s 24 2168 mils $MILS # *
-pigs s 23 891  s 24 2167 mils $MILS # *
-pigs s 23 890  s 24 2166 mils $MILS # *
-pigs s 23 889  s 24 2165 mils $MILS # *
-pigs s 23 887  s 24 2164 mils $MILS # *
-pigs s 23 886  s 24 2163 mils $MILS # 145.3 ° 30.29 ° -0.1,2
-pigs s 23 885  s 24 2162 mils $MILS # *
-pigs s 23 884  s 24 2161 mils $MILS # *
-pigs s 23 883  s 24 2160 mils $MILS # *
-pigs s 23 882  s 24 2159 mils $MILS # *
-pigs s 23 881  s 24 2158 mils $MILS # *
-pigs s 23 880  s 24 2157 mils $MILS # *
-pigs s 23 879  s 24 2156 mils $MILS # *
-pigs s 23 878  s 24 2155 mils $MILS # *
-pigs s 23 877  s 24 2154 mils $MILS # *
-pigs s 23 876  s 24 2153 mils $MILS # *
-pigs s 23 875  s 24 2152 mils $MILS # *
-pigs s 23 874  s 24 2151 mils $MILS # *
-pigs s 23 873  s 24 2150 mils $MILS # *
-pigs s 23 872  s 24 2149 mils $MILS # *
-pigs s 23 871  s 24 2148 mils $MILS # *
-pigs s 23 870  s 24 2147 mils $MILS # *
-pigs s 23 869  s 24 2146 mils $MILS # *
-pigs s 23 868  s 24 2145 mils $MILS # *
-pigs s 23 867  s 24 2144 mils $MILS # *
-pigs s 23 866  s 24 2143 mils $MILS # *
-pigs s 23 865  s 24 2142 mils $MILS # *
-pigs s 23 864  s 24 2141 mils $MILS # *
-pigs s 23 863  s 24 2140 mils $MILS # *
-pigs s 23 862  s 24 2139 mils $MILS # *
-pigs s 23 861  s 24 2138 mils $MILS # *
-pigs s 23 860  s 24 2137 mils $MILS # *
-pigs s 23 859  s 24 2136 mils $MILS # *
-pigs s 23 858  s 24 2135 mils $MILS # *
-pigs s 23 857  s 24 2134 mils $MILS # *
-pigs s 23 856  s 24 2133 mils $MILS # *
-pigs s 23 855  s 24 2132 mils $MILS # *
-pigs s 23 854  s 24 2131 mils $MILS # *
-pigs s 23 853  s 24 2130 mils $MILS # *
-pigs s 23 852  s 24 2129 mils $MILS # *
-pigs s 23 851  s 24 2128 mils $MILS # *
-pigs s 23 850  s 24 2127 mils $MILS # *
-pigs s 23 849  s 24 2126 mils $MILS # *
-pigs s 23 848  s 24 2125 mils $MILS # *
-pigs s 23 847  s 24 2124 mils $MILS # *
-pigs s 23 846  s 24 2123 mils $MILS # *
-pigs s 23 845  s 24 2122 mils $MILS # *
-pigs s 23 844  s 24 2121 mils $MILS # *
-pigs s 23 843  s 24 2120 mils $MILS # *
-pigs s 23 842  s 24 2119 mils $MILS # *
-pigs s 23 841  s 24 2118 mils $MILS # *
-pigs s 23 840  s 24 2117 mils $MILS # *
-pigs s 23 839  s 24 2116 mils $MILS # *
-pigs s 23 838  s 24 2115 mils $MILS # *
-pigs s 23 837  s 24 2114 mils $MILS # 149.71° 34.7  ° 0.1,2
-pigs s 23 836  s 24 2113 mils $MILS # *
-pigs s 23 835  s 24 2111 mils $MILS # *
-pigs s 23 834  s 24 2110 mils $MILS # *
-pigs s 23 833  s 24 2109 mils $MILS # *
-pigs s 23 832  s 24 2108 mils $MILS # *
-pigs s 23 831  s 24 2106 mils $MILS # *
-pigs s 23 830  s 24 2105 mils $MILS # *
-pigs s 23 829  s 24 2104 mils $MILS # *
-pigs s 23 828  s 24 2102 mils $MILS # *
-pigs s 23 827  s 24 2101 mils $MILS # *
-pigs s 23 826  s 24 2100 mils $MILS # *
-pigs s 23 825  s 24 2099 mils $MILS # *
-pigs s 23 824  s 24 2097 mils $MILS # *
-pigs s 23 823  s 24 2096 mils $MILS # *
-pigs s 23 822  s 24 2095 mils $MILS # *
-pigs s 23 821  s 24 2094 mils $MILS # *
-pigs s 23 820  s 24 2092 mils $MILS # *
-pigs s 23 819  s 24 2091 mils $MILS # *
-pigs s 23 818  s 24 2090 mils $MILS # *
-pigs s 23 817  s 24 2088 mils $MILS # *
-pigs s 23 816  s 24 2087 mils $MILS # *
-pigs s 23 815  s 24 2086 mils $MILS # *
-pigs s 23 814  s 24 2085 mils $MILS # *
-pigs s 23 813  s 24 2083 mils $MILS # *
-pigs s 23 812  s 24 2082 mils $MILS # *
-pigs s 23 811  s 24 2081 mils $MILS # *
-pigs s 23 810  s 24 2079 mils $MILS # *
-pigs s 23 809  s 24 2078 mils $MILS # *
-pigs s 23 808  s 24 2077 mils $MILS # *
-pigs s 23 807  s 24 2076 mils $MILS # *
-pigs s 23 806  s 24 2074 mils $MILS # *
-pigs s 23 805  s 24 2073 mils $MILS # *
-pigs s 23 804  s 24 2072 mils $MILS # *
-pigs s 23 803  s 24 2070 mils $MILS # *
-pigs s 23 802  s 24 2069 mils $MILS # *
-pigs s 23 801  s 24 2068 mils $MILS # *
-pigs s 23 800  s 24 2067 mils $MILS # *
-pigs s 23 799  s 24 2065 mils $MILS # *
-pigs s 23 798  s 24 2064 mils $MILS # *
-pigs s 23 797  s 24 2063 mils $MILS # *
-pigs s 23 796  s 24 2062 mils $MILS # *
-pigs s 23 795  s 24 2060 mils $MILS # *
-pigs s 23 794  s 24 2059 mils $MILS # 153.51° 39.67 ° 0.3,2.02
-pigs s 23 793  s 24 2058 mils $MILS # *
-pigs s 23 792  s 24 2056 mils $MILS # *
-pigs s 23 791  s 24 2055 mils $MILS # *
-pigs s 23 790  s 24 2053 mils $MILS # *
-pigs s 23 789  s 24 2052 mils $MILS # *
-pigs s 23 788  s 24 2050 mils $MILS # *
-pigs s 23 787  s 24 2049 mils $MILS # *
-pigs s 23 786  s 24 2047 mils $MILS # *
-pigs s 23 785  s 24 2046 mils $MILS # *
-pigs s 23 784  s 24 2044 mils $MILS # *
-pigs s 23 783  s 24 2043 mils $MILS # *
-pigs s 23 782  s 24 2041 mils $MILS # *
-pigs s 23 781  s 24 2040 mils $MILS # *
-pigs s 23 780  s 24 2038 mils $MILS # *
-pigs s 23 779  s 24 2037 mils $MILS # *
-pigs s 23 778  s 24 2035 mils $MILS # *
-pigs s 23 777  s 24 2034 mils $MILS # *
-pigs s 23 776  s 24 2032 mils $MILS # *
-pigs s 23 775  s 24 2031 mils $MILS # *
-pigs s 23 774  s 24 2029 mils $MILS # *
-pigs s 23 773  s 24 2028 mils $MILS # *
-pigs s 23 772  s 24 2026 mils $MILS # *
-pigs s 23 771  s 24 2025 mils $MILS # *
-pigs s 23 770  s 24 2023 mils $MILS # *
-pigs s 23 769  s 24 2022 mils $MILS # *
-pigs s 23 768  s 24 2020 mils $MILS # *
-pigs s 23 767  s 24 2019 mils $MILS # *
-pigs s 23 766  s 24 2017 mils $MILS # *
-pigs s 23 765  s 24 2016 mils $MILS # *
-pigs s 23 764  s 24 2014 mils $MILS # *
-pigs s 23 763  s 24 2013 mils $MILS # *
-pigs s 23 762  s 24 2011 mils $MILS # *
-pigs s 23 761  s 24 2010 mils $MILS # *
-pigs s 23 760  s 24 2008 mils $MILS # *
-pigs s 23 759  s 24 2007 mils $MILS # *
-pigs s 23 758  s 24 2005 mils $MILS # *
-pigs s 23 757  s 24 2004 mils $MILS # *
-pigs s 23 756  s 24 2002 mils $MILS # *
-pigs s 23 755  s 24 2001 mils $MILS # 157.01° 44.9  ° 0.5,2.04
-pigs s 23 754  s 24 1999 mils $MILS # *
-pigs s 23 753  s 24 1997 mils $MILS # *
-pigs s 23 752  s 24 1995 mils $MILS # *
-pigs s 23 751  s 24 1993 mils $MILS # *
-pigs s 23 750  s 24 1992 mils $MILS # *
-pigs s 23 749  s 24 1990 mils $MILS # *
-pigs s 23 748  s 24 1988 mils $MILS # *
-pigs s 23 747  s 24 1986 mils $MILS # *
-pigs s 23 746  s 24 1984 mils $MILS # *
-pigs s 23 745  s 24 1982 mils $MILS # *
-pigs s 23 744  s 24 1980 mils $MILS # *
-pigs s 23 743  s 24 1978 mils $MILS # *
-pigs s 23 742  s 24 1977 mils $MILS # *
-pigs s 23 741  s 24 1975 mils $MILS # *
-pigs s 23 740  s 24 1973 mils $MILS # *
-pigs s 23 739  s 24 1971 mils $MILS # *
-pigs s 23 738  s 24 1969 mils $MILS # *
-pigs s 23 737  s 24 1967 mils $MILS # *
-pigs s 23 736  s 24 1965 mils $MILS # *
-pigs s 23 735  s 24 1963 mils $MILS # *
-pigs s 23 734  s 24 1962 mils $MILS # *
-pigs s 23 733  s 24 1960 mils $MILS # *
-pigs s 23 732  s 24 1958 mils $MILS # *
-pigs s 23 731  s 24 1956 mils $MILS # *
-pigs s 23 730  s 24 1954 mils $MILS # *
-pigs s 23 729  s 24 1952 mils $MILS # *
-pigs s 23 728  s 24 1950 mils $MILS # *
-pigs s 23 727  s 24 1948 mils $MILS # *
-pigs s 23 726  s 24 1946 mils $MILS # *
-pigs s 23 725  s 24 1945 mils $MILS # *
-pigs s 23 724  s 24 1943 mils $MILS # *
-pigs s 23 723  s 24 1941 mils $MILS # *
-pigs s 23 722  s 24 1939 mils $MILS # 159.99° 50.47 ° 0.7,2.08
-pigs s 23 721  s 24 1937 mils $MILS # *
-pigs s 23 720  s 24 1935 mils $MILS # *
-pigs s 23 719  s 24 1932 mils $MILS # *
-pigs s 23 718  s 24 1930 mils $MILS # *
-pigs s 23 717  s 24 1928 mils $MILS # *
-pigs s 23 716  s 24 1926 mils $MILS # *
-pigs s 23 715  s 24 1924 mils $MILS # *
-pigs s 23 714  s 24 1921 mils $MILS # *
-pigs s 23 713  s 24 1919 mils $MILS # *
-pigs s 23 712  s 24 1917 mils $MILS # *
-pigs s 23 711  s 24 1915 mils $MILS # *
-pigs s 23 710  s 24 1913 mils $MILS # *
-pigs s 23 709  s 24 1911 mils $MILS # *
-pigs s 23 708  s 24 1908 mils $MILS # *
-pigs s 23 707  s 24 1906 mils $MILS # *
-pigs s 23 706  s 24 1904 mils $MILS # *
-pigs s 23 705  s 24 1902 mils $MILS # *
-pigs s 23 704  s 24 1900 mils $MILS # *
-pigs s 23 703  s 24 1897 mils $MILS # *
-pigs s 23 702  s 24 1895 mils $MILS # *
-pigs s 23 701  s 24 1893 mils $MILS # *
-pigs s 23 700  s 24 1891 mils $MILS # *
-pigs s 23 699  s 24 1889 mils $MILS # *
-pigs s 23 698  s 24 1886 mils $MILS # *
-pigs s 23 697  s 24 1884 mils $MILS # *
-pigs s 23 696  s 24 1882 mils $MILS # *
-pigs s 23 695  s 24 1880 mils $MILS # 162.47° 55.81 ° 0.89,2.13
-pigs s 23 694  s 24 1878 mils $MILS # *
-pigs s 23 693  s 24 1875 mils $MILS # *
-pigs s 23 692  s 24 1873 mils $MILS # *
-pigs s 23 691  s 24 1870 mils $MILS # *
-pigs s 23 690  s 24 1868 mils $MILS # *
-pigs s 23 689  s 24 1865 mils $MILS # *
-pigs s 23 688  s 24 1863 mils $MILS # *
-pigs s 23 687  s 24 1861 mils $MILS # *
-pigs s 23 686  s 24 1858 mils $MILS # *
-pigs s 23 685  s 24 1856 mils $MILS # *
-pigs s 23 684  s 24 1853 mils $MILS # *
-pigs s 23 683  s 24 1851 mils $MILS # *
-pigs s 23 682  s 24 1849 mils $MILS # *
-pigs s 23 681  s 24 1846 mils $MILS # *
-pigs s 23 680  s 24 1844 mils $MILS # *
-pigs s 23 679  s 24 1841 mils $MILS # *
-pigs s 23 678  s 24 1839 mils $MILS # *
-pigs s 23 677  s 24 1836 mils $MILS # *
-pigs s 23 676  s 24 1834 mils $MILS # *
-pigs s 23 675  s 24 1832 mils $MILS # *
-pigs s 23 674  s 24 1829 mils $MILS # *
-pigs s 23 673  s 24 1827 mils $MILS # *
-pigs s 23 672  s 24 1824 mils $MILS # *
-pigs s 23 671  s 24 1822 mils $MILS # 164.58° 61.03 ° 1.08,2.2
-pigs s 23 670  s 24 1819 mils $MILS # *
-pigs s 23 669  s 24 1817 mils $MILS # *
-pigs s 23 668  s 24 1814 mils $MILS # *
-pigs s 23 667  s 24 1811 mils $MILS # *
-pigs s 23 666  s 24 1809 mils $MILS # *
-pigs s 23 665  s 24 1806 mils $MILS # *
-pigs s 23 664  s 24 1803 mils $MILS # *
-pigs s 23 663  s 24 1801 mils $MILS # *
-pigs s 23 662  s 24 1798 mils $MILS # *
-pigs s 23 661  s 24 1795 mils $MILS # *
-pigs s 23 660  s 24 1793 mils $MILS # *
-pigs s 23 659  s 24 1790 mils $MILS # *
-pigs s 23 658  s 24 1787 mils $MILS # *
-pigs s 23 657  s 24 1784 mils $MILS # *
-pigs s 23 656  s 24 1782 mils $MILS # *
-pigs s 23 655  s 24 1779 mils $MILS # *
-pigs s 23 654  s 24 1776 mils $MILS # *
-pigs s 23 653  s 24 1774 mils $MILS # *
-pigs s 23 652  s 24 1771 mils $MILS # 166.34° 65.63 ° 1.26,2.28
-pigs s 23 651  s 24 1768 mils $MILS # *
-pigs s 23 650  s 24 1766 mils $MILS # *
-pigs s 23 649  s 24 1763 mils $MILS # *
-pigs s 23 648  s 24 1761 mils $MILS # *
-pigs s 23 647  s 24 1758 mils $MILS # *
-pigs s 23 646  s 24 1756 mils $MILS # *
-pigs s 23 645  s 24 1753 mils $MILS # *
-pigs s 23 644  s 24 1751 mils $MILS # *
-pigs s 23 643  s 24 1748 mils $MILS # *
-pigs s 23 642  s 24 1745 mils $MILS # *
-pigs s 23 641  s 24 1743 mils $MILS # *
-pigs s 23 640  s 24 1740 mils $MILS # *
-pigs s 23 639  s 24 1738 mils $MILS # *
-pigs s 23 638  s 24 1735 mils $MILS # *
-pigs s 23 637  s 24 1733 mils $MILS # *
-pigs s 23 636  s 24 1730 mils $MILS # *
-pigs s 23 635  s 24 1727 mils $MILS # *
-pigs s 23 634  s 24 1725 mils $MILS # 167.94° 69.78 ° 1.44,2.37
-pigs s 23 633  s 24 1722 mils $MILS # *
-pigs s 23 632  s 24 1720 mils $MILS # *
-pigs s 23 631  s 24 1717 mils $MILS # *
-pigs s 23 630  s 24 1715 mils $MILS # *
-pigs s 23 629  s 24 1712 mils $MILS # *
-pigs s 23 628  s 24 1710 mils $MILS # *
-pigs s 23 627  s 24 1707 mils $MILS # *
-pigs s 23 626  s 24 1705 mils $MILS # *
-pigs s 23 625  s 24 1702 mils $MILS # *
-pigs s 23 624  s 24 1700 mils $MILS # *
-pigs s 23 623  s 24 1697 mils $MILS # *
-pigs s 23 622  s 24 1695 mils $MILS # *
-pigs s 23 621  s 24 1692 mils $MILS # *
-pigs s 23 620  s 24 1690 mils $MILS # *
-pigs s 23 619  s 24 1687 mils $MILS # 169.3 ° 73.19 ° 1.61,2.47
-pigs s 23 618  s 24 1685 mils $MILS # *
-pigs s 23 617  s 24 1682 mils $MILS # *
-pigs s 23 616  s 24 1680 mils $MILS # *
-pigs s 23 615  s 24 1678 mils $MILS # *
-pigs s 23 614  s 24 1676 mils $MILS # *
-pigs s 23 613  s 24 1673 mils $MILS # *
-pigs s 23 612  s 24 1671 mils $MILS # *
-pigs s 23 611  s 24 1669 mils $MILS # *
-pigs s 23 610  s 24 1666 mils $MILS # *
-pigs s 23 609  s 24 1664 mils $MILS # *
-pigs s 23 608  s 24 1662 mils $MILS # *
-pigs s 23 607  s 24 1660 mils $MILS # *
-pigs s 23 606  s 24 1657 mils $MILS # *
-pigs s 23 605  s 24 1655 mils $MILS # 170.57° 76.09 ° 1.78,2.58
-pigs s 23 604  s 24 1653 mils $MILS # *
-pigs s 23 603  s 24 1651 mils $MILS # *
-pigs s 23 602  s 24 1648 mils $MILS # *
-pigs s 23 601  s 24 1646 mils $MILS # *
-pigs s 23 600  s 24 1644 mils $MILS # *
-pigs s 23 599  s 24 1642 mils $MILS # *
-pigs s 23 598  s 24 1640 mils $MILS # *
-pigs s 23 597  s 24 1638 mils $MILS # *
-pigs s 23 596  s 24 1635 mils $MILS # *
-pigs s 23 595  s 24 1633 mils $MILS # *
-pigs s 23 594  s 24 1631 mils $MILS # 171.57° 78.21 ° 1.94,2.71
-pigs s 23 593  s 24 1629 mils $MILS # *
-pigs s 23 592  s 24 1628 mils $MILS # *
-pigs s 23 591  s 24 1626 mils $MILS # *
-pigs s 23 590  s 24 1624 mils $MILS # *
-pigs s 23 589  s 24 1623 mils $MILS # *
-pigs s 23 588  s 24 1621 mils $MILS # *
-pigs s 23 587  s 24 1620 mils $MILS # *
-pigs s 23 586  s 24 1618 mils $MILS # *
-pigs s 23 585  s 24 1616 mils $MILS # *
-pigs s 23 584  s 24 1615 mils $MILS # *
-pigs s 23 583  s 24 1613 mils $MILS # 172.5 ° 79.79 ° 2.09,2.84
-pigs s 23 582  s 24 1612 mils $MILS # *
-pigs s 23 581  s 24 1610 mils $MILS # *
-pigs s 23 580  s 24 1609 mils $MILS # *
-pigs s 23 579  s 24 1608 mils $MILS # *
-pigs s 23 578  s 24 1606 mils $MILS # *
-pigs s 23 577  s 24 1605 mils $MILS # 173.11° 80.56 ° 2.22,2.99
-pigs s 23 576  s 24 1604 mils $MILS # *
-pigs s 23 574  s 24 1603 mils $MILS # *
-pigs s 23 573  s 24 1602 mils $MILS # *
-pigs s 23 572  s 24 1601 mils $MILS # *
-pigs s 23 570  s 24 1600 mils $MILS # *
-pigs s 23 569  s 24 1599 mils $MILS # 173.79° 81.11 ° 2.35,3.14
-pigs s 23 566  s 24 1598 mils $MILS # *
-pigs s 23 562  s 24 1597 mils $MILS # 174.38° 81.23 ° 2.47,3.3
-pigs s 23 560  s 24 1598 mils $MILS # *
-pigs s 23 559  s 24 1599 mils $MILS # *
-pigs s 23 557  s 24 1600 mils $MILS # 174.88° 80.98 ° 2.58,3.47
-pigs s 23 556  s 24 1601 mils $MILS # *
-pigs s 23 555  s 24 1603 mils $MILS # *
-pigs s 23 554  s 24 1604 mils $MILS # *
-pigs s 23 553  s 24 1606 mils $MILS # *
-pigs s 23 552  s 24 1607 mils $MILS # 175.32° 80.39 ° 2.68,3.65
-pigs s 23 551  s 24 1610 mils $MILS # *
-pigs s 23 550  s 24 1614 mils $MILS # *
-pigs s 23 549  s 24 1617 mils $MILS # 175.62° 79.51 ° 2.76,3.83
-pigs s 23 548  s 24 1621 mils $MILS # *
-pigs s 23 547  s 24 1625 mils $MILS # *
-pigs s 23 546  s 24 1629 mils $MILS # 175.87° 78.38 ° 2.83,4.02
-pigs s 23 545  s 24 1634 mils $MILS # *
-pigs s 23 544  s 24 1638 mils $MILS # *
-pigs s 23 543  s 24 1643 mils $MILS # 176.11° 77.12 ° 2.89,4.21
-pigs s 23 542  s 24 1651 mils $MILS # *
-pigs s 23 541  s 24 1658 mils $MILS # 176.34° 75.75 ° 2.94,4.4
-pigs s 23 540  s 24 1677 mils $MILS # 176.42° 74.1  ° 2.97,4.6
-pigs s 23 539  s 24 1696 mils $MILS # 176.49° 72.36 ° 2.99,4.8
-pigs s 23 538  s 24 1716 mils $MILS # 176.56° 70.55 ° 3,5
-pigs s 23 539  s 24 1718 mils $MILS # *
-pigs s 23 540  s 24 1721 mils $MILS # *
-pigs s 23 541  s 24 1723 mils $MILS # *
-pigs s 23 542  s 24 1725 mils $MILS # *
-pigs s 23 543  s 24 1728 mils $MILS # *
-pigs s 23 544  s 24 1730 mils $MILS # *
-pigs s 23 545  s 24 1732 mils $MILS # *
-pigs s 23 546  s 24 1735 mils $MILS # *
-pigs s 23 547  s 24 1737 mils $MILS # *
-pigs s 23 548  s 24 1739 mils $MILS # *
-pigs s 23 549  s 24 1742 mils $MILS # *
-pigs s 23 550  s 24 1744 mils $MILS # *
-pigs s 23 551  s 24 1747 mils $MILS # *
-pigs s 23 552  s 24 1749 mils $MILS # *
-pigs s 23 553  s 24 1751 mils $MILS # *
-pigs s 23 554  s 24 1754 mils $MILS # *
-pigs s 23 555  s 24 1756 mils $MILS # *
-pigs s 23 556  s 24 1758 mils $MILS # *
-pigs s 23 557  s 24 1761 mils $MILS # *
-pigs s 23 558  s 24 1763 mils $MILS # *
-pigs s 23 559  s 24 1765 mils $MILS # *
-pigs s 23 560  s 24 1768 mils $MILS # *
-pigs s 23 561  s 24 1770 mils $MILS # *
-pigs s 23 562  s 24 1772 mils $MILS # *
-pigs s 23 563  s 24 1775 mils $MILS # *
-pigs s 23 564  s 24 1777 mils $MILS # *
-pigs s 23 565  s 24 1779 mils $MILS # *
-pigs s 23 566  s 24 1782 mils $MILS # *
-pigs s 23 567  s 24 1784 mils $MILS # *
-pigs s 23 568  s 24 1786 mils $MILS # *
-pigs s 23 569  s 24 1789 mils $MILS # *
-pigs s 23 570  s 24 1791 mils $MILS # *
-pigs s 23 571  s 24 1794 mils $MILS # *
-pigs s 23 572  s 24 1796 mils $MILS # *
-pigs s 23 573  s 24 1798 mils $MILS # *
-pigs s 23 574  s 24 1801 mils $MILS # *
-pigs s 23 575  s 24 1803 mils $MILS # *
-pigs s 23 576  s 24 1805 mils $MILS # *
-pigs s 23 577  s 24 1808 mils $MILS # *
-pigs s 23 578  s 24 1810 mils $MILS # *
-pigs s 23 579  s 24 1812 mils $MILS # *
-pigs s 23 580  s 24 1815 mils $MILS # *
-pigs s 23 581  s 24 1817 mils $MILS # *
-pigs s 23 582  s 24 1819 mils $MILS # *
-pigs s 23 583  s 24 1822 mils $MILS # *
-pigs s 23 584  s 24 1824 mils $MILS # *
-pigs s 23 585  s 24 1826 mils $MILS # *
-pigs s 23 586  s 24 1829 mils $MILS # *
-pigs s 23 587  s 24 1831 mils $MILS # *
-pigs s 23 588  s 24 1833 mils $MILS # *
-pigs s 23 589  s 24 1836 mils $MILS # *
-pigs s 23 590  s 24 1838 mils $MILS # *
-pigs s 23 591  s 24 1841 mils $MILS # *
-pigs s 23 592  s 24 1843 mils $MILS # *
-pigs s 23 593  s 24 1845 mils $MILS # *
-pigs s 23 594  s 24 1848 mils $MILS # *
-pigs s 23 595  s 24 1850 mils $MILS # *
-pigs s 23 596  s 24 1852 mils $MILS # *
-pigs s 23 597  s 24 1855 mils $MILS # *
-pigs s 23 598  s 24 1857 mils $MILS # *
-pigs s 23 599  s 24 1859 mils $MILS # *
-pigs s 23 600  s 24 1862 mils $MILS # *
-pigs s 23 601  s 24 1864 mils $MILS # *
-pigs s 23 602  s 24 1866 mils $MILS # *
-pigs s 23 603  s 24 1869 mils $MILS # *
-pigs s 23 604  s 24 1871 mils $MILS # *
-pigs s 23 605  s 24 1873 mils $MILS # *
-pigs s 23 606  s 24 1876 mils $MILS # *
-pigs s 23 607  s 24 1878 mils $MILS # *
-pigs s 23 608  s 24 1880 mils $MILS # *
-pigs s 23 609  s 24 1883 mils $MILS # *
-pigs s 23 610  s 24 1885 mils $MILS # *
-pigs s 23 611  s 24 1888 mils $MILS # *
-pigs s 23 612  s 24 1890 mils $MILS # *
-pigs s 23 613  s 24 1892 mils $MILS # *
-pigs s 23 614  s 24 1895 mils $MILS # *
-pigs s 23 615  s 24 1897 mils $MILS # *
-pigs s 23 616  s 24 1899 mils $MILS # *
-pigs s 23 617  s 24 1902 mils $MILS # *
-pigs s 23 618  s 24 1904 mils $MILS # *
-pigs s 23 619  s 24 1906 mils $MILS # *
-pigs s 23 620  s 24 1909 mils $MILS # *
-pigs s 23 621  s 24 1911 mils $MILS # *
-pigs s 23 622  s 24 1913 mils $MILS # *
-pigs s 23 623  s 24 1916 mils $MILS # *
-pigs s 23 624  s 24 1918 mils $MILS # *
-pigs s 23 625  s 24 1920 mils $MILS # *
-pigs s 23 626  s 24 1923 mils $MILS # *
-pigs s 23 627  s 24 1925 mils $MILS # *
-pigs s 23 628  s 24 1927 mils $MILS # *
-pigs s 23 629  s 24 1930 mils $MILS # *
-pigs s 23 630  s 24 1932 mils $MILS # *
-pigs s 23 631  s 24 1935 mils $MILS # *
-pigs s 23 632  s 24 1937 mils $MILS # *
-pigs s 23 633  s 24 1939 mils $MILS # *
-pigs s 23 634  s 24 1942 mils $MILS # *
-pigs s 23 635  s 24 1944 mils $MILS # *
-pigs s 23 636  s 24 1946 mils $MILS # *
-pigs s 23 637  s 24 1949 mils $MILS # *
-pigs s 23 638  s 24 1951 mils $MILS # *
-pigs s 23 639  s 24 1953 mils $MILS # *
-pigs s 23 640  s 24 1956 mils $MILS # *
-pigs s 23 641  s 24 1958 mils $MILS # *
-pigs s 23 642  s 24 1960 mils $MILS # *
-pigs s 23 643  s 24 1963 mils $MILS # *
-pigs s 23 644  s 24 1965 mils $MILS # *
-pigs s 23 645  s 24 1967 mils $MILS # *
-pigs s 23 646  s 24 1970 mils $MILS # *
-pigs s 23 647  s 24 1972 mils $MILS # *
-pigs s 23 648  s 24 1974 mils $MILS # *
-pigs s 23 649  s 24 1977 mils $MILS # *
-pigs s 23 650  s 24 1979 mils $MILS # *
-pigs s 23 651  s 24 1982 mils $MILS # *
-pigs s 23 652  s 24 1984 mils $MILS # *
-pigs s 23 653  s 24 1986 mils $MILS # *
-pigs s 23 654  s 24 1989 mils $MILS # *
-pigs s 23 655  s 24 1991 mils $MILS # *
-pigs s 23 656  s 24 1993 mils $MILS # *
-pigs s 23 657  s 24 1996 mils $MILS # *
-pigs s 23 658  s 24 1998 mils $MILS # *
-pigs s 23 659  s 24 2000 mils $MILS # *
-pigs s 23 660  s 24 2003 mils $MILS # *
-pigs s 23 661  s 24 2005 mils $MILS # *
-pigs s 23 662  s 24 2007 mils $MILS # *
-pigs s 23 663  s 24 2010 mils $MILS # *
-pigs s 23 664  s 24 2012 mils $MILS # *
-pigs s 23 665  s 24 2014 mils $MILS # *
-pigs s 23 666  s 24 2017 mils $MILS # *
-pigs s 23 667  s 24 2019 mils $MILS # *
-pigs s 23 668  s 24 2021 mils $MILS # *
-pigs s 23 669  s 24 2024 mils $MILS # *
-pigs s 23 670  s 24 2026 mils $MILS # *
-pigs s 23 671  s 24 2029 mils $MILS # *
-pigs s 23 672  s 24 2031 mils $MILS # *
-pigs s 23 673  s 24 2033 mils $MILS # *
-pigs s 23 674  s 24 2036 mils $MILS # *
-pigs s 23 675  s 24 2038 mils $MILS # *
-pigs s 23 676  s 24 2040 mils $MILS # *
-pigs s 23 677  s 24 2043 mils $MILS # *
-pigs s 23 678  s 24 2045 mils $MILS # *
-pigs s 23 679  s 24 2047 mils $MILS # *
-pigs s 23 680  s 24 2050 mils $MILS # *
-pigs s 23 681  s 24 2052 mils $MILS # *
-pigs s 23 682  s 24 2054 mils $MILS # *
-pigs s 23 683  s 24 2057 mils $MILS # *
-pigs s 23 684  s 24 2059 mils $MILS # *
-pigs s 23 685  s 24 2061 mils $MILS # *
-pigs s 23 686  s 24 2064 mils $MILS # *
-pigs s 23 687  s 24 2066 mils $MILS # *
-pigs s 23 688  s 24 2068 mils $MILS # *
-pigs s 23 689  s 24 2071 mils $MILS # *
-pigs s 23 690  s 24 2073 mils $MILS # *
-pigs s 23 691  s 24 2076 mils $MILS # *
-pigs s 23 692  s 24 2078 mils $MILS # *
-pigs s 23 693  s 24 2080 mils $MILS # *
-pigs s 23 694  s 24 2083 mils $MILS # *
-pigs s 23 695  s 24 2085 mils $MILS # *
-pigs s 23 696  s 24 2087 mils $MILS # *
-pigs s 23 697  s 24 2090 mils $MILS # *
-pigs s 23 698  s 24 2092 mils $MILS # *
-pigs s 23 699  s 24 2094 mils $MILS # *
-pigs s 23 700  s 24 2097 mils $MILS # *
-pigs s 23 701  s 24 2099 mils $MILS # *
-pigs s 23 702  s 24 2101 mils $MILS # *
-pigs s 23 703  s 24 2104 mils $MILS # *
-pigs s 23 704  s 24 2106 mils $MILS # *
-pigs s 23 705  s 24 2108 mils $MILS # *
-pigs s 23 706  s 24 2111 mils $MILS # *
-pigs s 23 707  s 24 2113 mils $MILS # *
-pigs s 23 708  s 24 2115 mils $MILS # *
-pigs s 23 709  s 24 2118 mils $MILS # *
-pigs s 23 710  s 24 2120 mils $MILS # *
-pigs s 23 711  s 24 2123 mils $MILS # *
-pigs s 23 712  s 24 2125 mils $MILS # *
-pigs s 23 713  s 24 2127 mils $MILS # *
-pigs s 23 714  s 24 2130 mils $MILS # *
-pigs s 23 715  s 24 2132 mils $MILS # *
-pigs s 23 716  s 24 2134 mils $MILS # *
-pigs s 23 717  s 24 2137 mils $MILS # *
-pigs s 23 718  s 24 2139 mils $MILS # *
-pigs s 23 719  s 24 2141 mils $MILS # *
-pigs s 23 720  s 24 2144 mils $MILS # *
-pigs s 23 721  s 24 2146 mils $MILS # *
-pigs s 23 722  s 24 2148 mils $MILS # *
-pigs s 23 723  s 24 2151 mils $MILS # *
-pigs s 23 724  s 24 2153 mils $MILS # *
-pigs s 23 725  s 24 2155 mils $MILS # *
-pigs s 23 726  s 24 2158 mils $MILS # *
-pigs s 23 727  s 24 2160 mils $MILS # *
-pigs s 23 728  s 24 2162 mils $MILS # *
-pigs s 23 729  s 24 2165 mils $MILS # *
-pigs s 23 730  s 24 2167 mils $MILS # *
-pigs s 23 731  s 24 2170 mils $MILS # *
-pigs s 23 732  s 24 2172 mils $MILS # *
-pigs s 23 733  s 24 2174 mils $MILS # *
-pigs s 23 734  s 24 2177 mils $MILS # *
-pigs s 23 735  s 24 2179 mils $MILS # *
-pigs s 23 736  s 24 2181 mils $MILS # *
-pigs s 23 737  s 24 2184 mils $MILS # *
-pigs s 23 738  s 24 2186 mils $MILS # *
-pigs s 23 739  s 24 2188 mils $MILS # *
-pigs s 23 740  s 24 2191 mils $MILS # *
-pigs s 23 741  s 24 2193 mils $MILS # *
-pigs s 23 742  s 24 2195 mils $MILS # *
-pigs s 23 743  s 24 2198 mils $MILS # *
-pigs s 23 744  s 24 2200 mils $MILS # *
-pigs s 23 745  s 24 2202 mils $MILS # *
-pigs s 23 746  s 24 2205 mils $MILS # *
-pigs s 23 747  s 24 2207 mils $MILS # *
-pigs s 23 748  s 24 2209 mils $MILS # *
-pigs s 23 749  s 24 2212 mils $MILS # *
-pigs s 23 750  s 24 2214 mils $MILS # *
-pigs s 23 751  s 24 2217 mils $MILS # *
-pigs s 23 752  s 24 2219 mils $MILS # *
-pigs s 23 753  s 24 2221 mils $MILS # *
-pigs s 23 754  s 24 2224 mils $MILS # *
-pigs s 23 755  s 24 2226 mils $MILS # *
-pigs s 23 756  s 24 2228 mils $MILS # *
-pigs s 23 757  s 24 2231 mils $MILS # *
-pigs s 23 758  s 24 2233 mils $MILS # *
-pigs s 23 759  s 24 2235 mils $MILS # *
-pigs s 23 760  s 24 2238 mils $MILS # *
-pigs s 23 761  s 24 2240 mils $MILS # 156.47° 23.53 ° 0,1.5
+pigs s 23 762  s 24 2231 # *
+pigs s 23 763  s 24 2223 # *
+pigs s 23 764  s 24 2215 # *
+pigs s 23 765  s 24 2207 # *
+pigs s 23 766  s 24 2199 # *
+pigs s 23 767  s 24 2191 # *
+pigs s 23 768  s 24 2183 # *
+pigs s 23 769  s 24 2175 # *
+pigs s 23 770  s 24 2167 # *
+pigs s 23 771  s 24 2159 # *
+pigs s 23 772  s 24 2151 # *
+pigs s 23 773  s 24 2143 # *
+pigs s 23 774  s 24 2135 # *
+pigs s 23 775  s 24 2127 # *
+pigs s 23 776  s 24 2119 # *
+pigs s 23 777  s 24 2111 # *
+pigs s 23 778  s 24 2102 # *
+pigs s 23 779  s 24 2094 # *
+pigs s 23 780  s 24 2086 # *
+pigs s 23 781  s 24 2078 # *
+pigs s 23 782  s 24 2070 # *
+pigs s 23 783  s 24 2062 # *
+pigs s 23 784  s 24 2054 # *
+pigs s 23 785  s 24 2046 # *
+pigs s 23 786  s 24 2038 # *
+pigs s 23 787  s 24 2030 # *
+pigs s 23 788  s 24 2022 # *
+pigs s 23 789  s 24 2014 # *
+pigs s 23 790  s 24 2006 # *
+pigs s 23 791  s 24 1998 # *
+pigs s 23 792  s 24 1990 # *
+pigs s 23 793  s 24 1982 # *
+pigs s 23 794  s 24 1974 # *
+pigs s 23 795  s 24 1966 # *
+pigs s 23 796  s 24 1958 # *
+pigs s 23 797  s 24 1950 # *
+pigs s 23 798  s 24 1942 # *
+pigs s 23 799  s 24 1934 # 153.06° 50.94 ° 1,5
+pigs s 23 798  s 24 1949 # 153.18° 49.6  ° 0.98,5.2
+pigs s 23 799  s 24 1955 # *
+pigs s 23 800  s 24 1962 # *
+pigs s 23 801  s 24 1968 # 152.92° 47.86 ° 0.92,5.39
+pigs s 23 802  s 24 1971 # *
+pigs s 23 803  s 24 1975 # *
+pigs s 23 804  s 24 1978 # *
+pigs s 23 805  s 24 1982 # *
+pigs s 23 806  s 24 1985 # *
+pigs s 23 807  s 24 1989 # *
+pigs s 23 808  s 24 1992 # 152.29° 45.76 ° 0.82,5.57
+pigs s 23 809  s 24 1994 # *
+pigs s 23 810  s 24 1997 # *
+pigs s 23 811  s 24 1999 # *
+pigs s 23 812  s 24 2002 # *
+pigs s 23 813  s 24 2004 # *
+pigs s 23 814  s 24 2006 # *
+pigs s 23 815  s 24 2009 # *
+pigs s 23 816  s 24 2011 # *
+pigs s 23 817  s 24 2014 # *
+pigs s 23 818  s 24 2016 # 151.34° 43.55 ° 0.69,5.72
+pigs s 23 819  s 24 2018 # *
+pigs s 23 820  s 24 2020 # *
+pigs s 23 821  s 24 2022 # *
+pigs s 23 822  s 24 2024 # *
+pigs s 23 823  s 24 2026 # *
+pigs s 23 824  s 24 2028 # *
+pigs s 23 825  s 24 2030 # *
+pigs s 23 826  s 24 2031 # *
+pigs s 23 827  s 24 2033 # *
+pigs s 23 828  s 24 2035 # *
+pigs s 23 829  s 24 2037 # *
+pigs s 23 830  s 24 2039 # *
+pigs s 23 831  s 24 2041 # *
+pigs s 23 832  s 24 2043 # 150.08° 41.16 ° 0.53,5.85
+pigs s 23 833  s 24 2044 # *
+pigs s 23 834  s 24 2046 # *
+pigs s 23 835  s 24 2047 # *
+pigs s 23 836  s 24 2049 # *
+pigs s 23 837  s 24 2050 # *
+pigs s 23 838  s 24 2052 # *
+pigs s 23 839  s 24 2053 # *
+pigs s 23 840  s 24 2055 # *
+pigs s 23 841  s 24 2056 # *
+pigs s 23 842  s 24 2057 # *
+pigs s 23 843  s 24 2059 # *
+pigs s 23 844  s 24 2060 # *
+pigs s 23 845  s 24 2062 # *
+pigs s 23 846  s 24 2063 # *
+pigs s 23 847  s 24 2065 # *
+pigs s 23 848  s 24 2066 # *
+pigs s 23 849  s 24 2067 # *
+pigs s 23 850  s 24 2069 # 148.53° 38.8  ° 0.35,5.94
+pigs s 23 851  s 24 2070 # *
+pigs s 23 852  s 24 2071 # *
+pigs s 23 853  s 24 2073 # *
+pigs s 23 854  s 24 2074 # *
+pigs s 23 855  s 24 2075 # *
+pigs s 23 856  s 24 2076 # *
+pigs s 23 857  s 24 2078 # *
+pigs s 23 858  s 24 2079 # *
+pigs s 23 859  s 24 2080 # *
+pigs s 23 860  s 24 2081 # *
+pigs s 23 861  s 24 2083 # *
+pigs s 23 862  s 24 2084 # *
+pigs s 23 863  s 24 2085 # *
+pigs s 23 864  s 24 2086 # *
+pigs s 23 865  s 24 2088 # *
+pigs s 23 866  s 24 2089 # *
+pigs s 23 867  s 24 2090 # *
+pigs s 23 868  s 24 2091 # *
+pigs s 23 869  s 24 2093 # *
+pigs s 23 870  s 24 2094 # *
+pigs s 23 871  s 24 2095 # 146.65° 36.48 ° 0.15,5.99
+pigs s 23 872  s 24 2096 # *
+pigs s 23 873  s 24 2097 # *
+pigs s 23 874  s 24 2098 # *
+pigs s 23 875  s 24 2099 # *
+pigs s 23 876  s 24 2100 # *
+pigs s 23 877  s 24 2101 # *
+pigs s 23 878  s 24 2102 # *
+pigs s 23 879  s 24 2103 # *
+pigs s 23 880  s 24 2104 # *
+pigs s 23 881  s 24 2106 # *
+pigs s 23 882  s 24 2107 # *
+pigs s 23 883  s 24 2108 # *
+pigs s 23 884  s 24 2109 # *
+pigs s 23 885  s 24 2110 # *
+pigs s 23 886  s 24 2111 # *
+pigs s 23 887  s 24 2112 # *
+pigs s 23 888  s 24 2113 # *
+pigs s 23 889  s 24 2114 # *
+pigs s 23 890  s 24 2115 # *
+pigs s 23 891  s 24 2116 # *
+pigs s 23 892  s 24 2117 # *
+pigs s 23 893  s 24 2118 # 144.61° 34.35 ° -0.05,6
+pigs s 23 894  s 24 2119 # *
+pigs s 23 895  s 24 2120 # *
+pigs s 23 896  s 24 2121 # *
+pigs s 23 898  s 24 2122 # *
+pigs s 23 899  s 24 2123 # *
+pigs s 23 900  s 24 2124 # *
+pigs s 23 901  s 24 2125 # *
+pigs s 23 902  s 24 2126 # *
+pigs s 23 903  s 24 2127 # *
+pigs s 23 904  s 24 2128 # *
+pigs s 23 906  s 24 2129 # *
+pigs s 23 907  s 24 2130 # *
+pigs s 23 908  s 24 2131 # *
+pigs s 23 909  s 24 2132 # *
+pigs s 23 910  s 24 2133 # *
+pigs s 23 911  s 24 2134 # *
+pigs s 23 912  s 24 2135 # *
+pigs s 23 914  s 24 2136 # *
+pigs s 23 915  s 24 2137 # *
+pigs s 23 916  s 24 2138 # *
+pigs s 23 917  s 24 2139 # *
+pigs s 23 918  s 24 2140 # 142.39° 32.39 ° -0.25,5.97
+pigs s 23 919  s 24 2141 # *
+pigs s 23 921  s 24 2142 # *
+pigs s 23 922  s 24 2143 # *
+pigs s 23 923  s 24 2144 # *
+pigs s 23 925  s 24 2145 # *
+pigs s 23 926  s 24 2146 # *
+pigs s 23 928  s 24 2147 # *
+pigs s 23 929  s 24 2148 # *
+pigs s 23 930  s 24 2149 # *
+pigs s 23 932  s 24 2150 # *
+pigs s 23 933  s 24 2151 # *
+pigs s 23 934  s 24 2152 # *
+pigs s 23 936  s 24 2153 # *
+pigs s 23 937  s 24 2154 # *
+pigs s 23 939  s 24 2155 # *
+pigs s 23 940  s 24 2156 # *
+pigs s 23 941  s 24 2157 # *
+pigs s 23 943  s 24 2158 # *
+pigs s 23 944  s 24 2159 # 140.05° 30.68 ° -0.44,5.9
+pigs s 23 946  s 24 2160 # *
+pigs s 23 947  s 24 2161 # *
+pigs s 23 949  s 24 2162 # *
+pigs s 23 951  s 24 2163 # *
+pigs s 23 952  s 24 2164 # *
+pigs s 23 954  s 24 2165 # *
+pigs s 23 955  s 24 2166 # *
+pigs s 23 957  s 24 2167 # *
+pigs s 23 959  s 24 2168 # *
+pigs s 23 960  s 24 2169 # *
+pigs s 23 962  s 24 2170 # *
+pigs s 23 964  s 24 2171 # *
+pigs s 23 965  s 24 2172 # *
+pigs s 23 967  s 24 2173 # *
+pigs s 23 968  s 24 2174 # *
+pigs s 23 970  s 24 2175 # 137.68° 29.28 ° -0.61,5.79
+pigs s 23 972  s 24 2176 # *
+pigs s 23 974  s 24 2177 # *
+pigs s 23 977  s 24 2178 # *
+pigs s 23 979  s 24 2179 # *
+pigs s 23 981  s 24 2180 # *
+pigs s 23 983  s 24 2181 # *
+pigs s 23 985  s 24 2182 # *
+pigs s 23 987  s 24 2183 # *
+pigs s 23 990  s 24 2184 # *
+pigs s 23 992  s 24 2185 # *
+pigs s 23 994  s 24 2186 # *
+pigs s 23 996  s 24 2187 # 135.32° 28.13 ° -0.76,5.65
+pigs s 23 999  s 24 2188 # *
+pigs s 23 1001 s 24 2189 # *
+pigs s 23 1004 s 24 2190 # *
+pigs s 23 1006 s 24 2191 # *
+pigs s 23 1009 s 24 2192 # *
+pigs s 23 1011 s 24 2193 # *
+pigs s 23 1014 s 24 2194 # *
+pigs s 23 1016 s 24 2195 # *
+pigs s 23 1019 s 24 2196 # 133.25° 27.38 ° -0.87,5.49
+pigs s 23 1025 s 24 2197 # *
+pigs s 23 1030 s 24 2198 # *
+pigs s 23 1036 s 24 2199 # *
+pigs s 23 1041 s 24 2200 # 131.3 ° 26.96 ° -0.95,5.3
+pigs s 23 1059 s 24 2201 # 129.73° 26.9  ° -0.99,5.1
+pigs s 23 1063 s 24 2200 # *
+pigs s 23 1067 s 24 2199 # *
+pigs s 23 1071 s 24 2198 # 128.64° 27.21 ° -0.99,4.9
+pigs s 23 1072 s 24 2197 # *
+pigs s 23 1073 s 24 2195 # *
+pigs s 23 1074 s 24 2194 # *
+pigs s 23 1075 s 24 2193 # *
+pigs s 23 1076 s 24 2191 # *
+pigs s 23 1077 s 24 2190 # 128.09° 27.91 ° -0.95,4.7
+pigs s 23 1076 s 24 2177 # 128.2 ° 29.05 ° -0.87,4.51
+pigs s 23 1075 s 24 2175 # *
+pigs s 23 1074 s 24 2173 # *
+pigs s 23 1073 s 24 2172 # *
+pigs s 23 1072 s 24 2170 # *
+pigs s 23 1071 s 24 2168 # *
+pigs s 23 1070 s 24 2166 # *
+pigs s 23 1069 s 24 2165 # *
+pigs s 23 1068 s 24 2163 # *
+pigs s 23 1067 s 24 2161 # 128.97° 30.53 ° -0.76,4.35
+pigs s 23 1066 s 24 2160 # *
+pigs s 23 1065 s 24 2158 # *
+pigs s 23 1064 s 24 2157 # *
+pigs s 23 1063 s 24 2156 # *
+pigs s 23 1062 s 24 2154 # *
+pigs s 23 1061 s 24 2153 # *
+pigs s 23 1060 s 24 2152 # *
+pigs s 23 1059 s 24 2150 # *
+pigs s 23 1058 s 24 2149 # *
+pigs s 23 1057 s 24 2148 # *
+pigs s 23 1056 s 24 2146 # *
+pigs s 23 1055 s 24 2145 # *
+pigs s 23 1054 s 24 2143 # *
+pigs s 23 1053 s 24 2142 # *
+pigs s 23 1052 s 24 2141 # *
+pigs s 23 1051 s 24 2139 # *
+pigs s 23 1050 s 24 2138 # 130.52° 32.55 ° -0.61,4.21
+pigs s 23 1049 s 24 2137 # *
+pigs s 23 1048 s 24 2136 # *
+pigs s 23 1047 s 24 2135 # *
+pigs s 23 1046 s 24 2133 # *
+pigs s 23 1045 s 24 2132 # *
+pigs s 23 1044 s 24 2131 # *
+pigs s 23 1043 s 24 2130 # *
+pigs s 23 1042 s 24 2129 # *
+pigs s 23 1041 s 24 2128 # *
+pigs s 23 1040 s 24 2127 # *
+pigs s 23 1039 s 24 2126 # *
+pigs s 23 1038 s 24 2124 # *
+pigs s 23 1037 s 24 2123 # *
+pigs s 23 1036 s 24 2122 # *
+pigs s 23 1035 s 24 2121 # *
+pigs s 23 1034 s 24 2120 # *
+pigs s 23 1033 s 24 2119 # *
+pigs s 23 1032 s 24 2118 # *
+pigs s 23 1031 s 24 2117 # *
+pigs s 23 1030 s 24 2115 # *
+pigs s 23 1029 s 24 2114 # *
+pigs s 23 1028 s 24 2113 # *
+pigs s 23 1027 s 24 2112 # 132.61° 34.89 ° -0.44,4.1
+pigs s 23 1026 s 24 2111 # *
+pigs s 23 1025 s 24 2110 # *
+pigs s 23 1024 s 24 2109 # *
+pigs s 23 1023 s 24 2108 # *
+pigs s 23 1022 s 24 2107 # *
+pigs s 23 1021 s 24 2106 # *
+pigs s 23 1020 s 24 2105 # *
+pigs s 23 1019 s 24 2104 # *
+pigs s 23 1018 s 24 2103 # *
+pigs s 23 1017 s 24 2102 # *
+pigs s 23 1016 s 24 2101 # *
+pigs s 23 1015 s 24 2100 # *
+pigs s 23 1014 s 24 2099 # *
+pigs s 23 1013 s 24 2098 # *
+pigs s 23 1012 s 24 2097 # *
+pigs s 23 1011 s 24 2096 # *
+pigs s 23 1010 s 24 2094 # *
+pigs s 23 1009 s 24 2093 # *
+pigs s 23 1008 s 24 2092 # *
+pigs s 23 1007 s 24 2091 # *
+pigs s 23 1006 s 24 2090 # *
+pigs s 23 1005 s 24 2089 # *
+pigs s 23 1004 s 24 2088 # *
+pigs s 23 1003 s 24 2087 # *
+pigs s 23 1002 s 24 2086 # *
+pigs s 23 1001 s 24 2085 # *
+pigs s 23 1000 s 24 2084 # *
+pigs s 23 999  s 24 2083 # *
+pigs s 23 998  s 24 2082 # 135.2 ° 37.58 ° -0.25,4.03
+pigs s 23 997  s 24 2081 # *
+pigs s 23 996  s 24 2080 # *
+pigs s 23 995  s 24 2079 # *
+pigs s 23 994  s 24 2078 # *
+pigs s 23 993  s 24 2077 # *
+pigs s 23 992  s 24 2076 # *
+pigs s 23 991  s 24 2075 # *
+pigs s 23 990  s 24 2074 # *
+pigs s 23 989  s 24 2073 # *
+pigs s 23 988  s 24 2072 # *
+pigs s 23 987  s 24 2071 # *
+pigs s 23 986  s 24 2070 # *
+pigs s 23 985  s 24 2069 # *
+pigs s 23 984  s 24 2068 # *
+pigs s 23 983  s 24 2067 # *
+pigs s 23 982  s 24 2066 # *
+pigs s 23 981  s 24 2065 # *
+pigs s 23 980  s 24 2064 # *
+pigs s 23 979  s 24 2063 # *
+pigs s 23 978  s 24 2062 # *
+pigs s 23 977  s 24 2061 # *
+pigs s 23 976  s 24 2060 # *
+pigs s 23 975  s 24 2059 # *
+pigs s 23 974  s 24 2058 # *
+pigs s 23 973  s 24 2057 # *
+pigs s 23 972  s 24 2056 # *
+pigs s 23 971  s 24 2055 # *
+pigs s 23 970  s 24 2054 # *
+pigs s 23 969  s 24 2053 # *
+pigs s 23 968  s 24 2052 # *
+pigs s 23 967  s 24 2051 # *
+pigs s 23 966  s 24 2050 # 138.07° 40.47 ° -0.05,4
+pigs s 23 965  s 24 2049 # *
+pigs s 23 964  s 24 2048 # *
+pigs s 23 963  s 24 2047 # *
+pigs s 23 962  s 24 2046 # *
+pigs s 23 961  s 24 2045 # *
+pigs s 23 960  s 24 2044 # *
+pigs s 23 959  s 24 2043 # *
+pigs s 23 958  s 24 2042 # *
+pigs s 23 957  s 24 2041 # *
+pigs s 23 956  s 24 2040 # *
+pigs s 23 955  s 24 2039 # *
+pigs s 23 954  s 24 2038 # *
+pigs s 23 953  s 24 2037 # *
+pigs s 23 952  s 24 2036 # *
+pigs s 23 951  s 24 2035 # *
+pigs s 23 950  s 24 2034 # *
+pigs s 23 949  s 24 2033 # *
+pigs s 23 948  s 24 2032 # *
+pigs s 23 947  s 24 2031 # *
+pigs s 23 946  s 24 2030 # *
+pigs s 23 945  s 24 2029 # *
+pigs s 23 944  s 24 2028 # *
+pigs s 23 943  s 24 2027 # *
+pigs s 23 942  s 24 2026 # *
+pigs s 23 941  s 24 2025 # *
+pigs s 23 940  s 24 2024 # *
+pigs s 23 939  s 24 2023 # *
+pigs s 23 938  s 24 2022 # *
+pigs s 23 937  s 24 2021 # *
+pigs s 23 936  s 24 2020 # *
+pigs s 23 935  s 24 2019 # *
+pigs s 23 934  s 24 2018 # 140.98° 43.37 ° 0.15,4.01
+pigs s 23 933  s 24 2017 # *
+pigs s 23 932  s 24 2016 # *
+pigs s 23 931  s 24 2015 # *
+pigs s 23 930  s 24 2014 # *
+pigs s 23 929  s 24 2013 # *
+pigs s 23 928  s 24 2012 # *
+pigs s 23 927  s 24 2011 # *
+pigs s 23 926  s 24 2010 # *
+pigs s 23 925  s 24 2009 # *
+pigs s 23 924  s 24 2008 # *
+pigs s 23 923  s 24 2007 # *
+pigs s 23 922  s 24 2006 # *
+pigs s 23 921  s 24 2005 # *
+pigs s 23 920  s 24 2004 # *
+pigs s 23 919  s 24 2003 # *
+pigs s 23 918  s 24 2002 # *
+pigs s 23 916  s 24 2001 # *
+pigs s 23 915  s 24 2000 # *
+pigs s 23 914  s 24 1999 # *
+pigs s 23 913  s 24 1998 # *
+pigs s 23 912  s 24 1997 # *
+pigs s 23 911  s 24 1996 # *
+pigs s 23 910  s 24 1995 # *
+pigs s 23 909  s 24 1994 # *
+pigs s 23 908  s 24 1993 # *
+pigs s 23 907  s 24 1992 # *
+pigs s 23 906  s 24 1991 # *
+pigs s 23 905  s 24 1990 # *
+pigs s 23 904  s 24 1989 # *
+pigs s 23 903  s 24 1988 # *
+pigs s 23 902  s 24 1987 # 143.84° 46.19 ° 0.35,4.06
+pigs s 23 901  s 24 1986 # *
+pigs s 23 900  s 24 1985 # *
+pigs s 23 899  s 24 1984 # *
+pigs s 23 898  s 24 1983 # *
+pigs s 23 897  s 24 1982 # *
+pigs s 23 896  s 24 1981 # *
+pigs s 23 894  s 24 1980 # *
+pigs s 23 893  s 24 1979 # *
+pigs s 23 892  s 24 1978 # *
+pigs s 23 891  s 24 1977 # *
+pigs s 23 890  s 24 1976 # *
+pigs s 23 889  s 24 1975 # *
+pigs s 23 888  s 24 1974 # *
+pigs s 23 887  s 24 1973 # *
+pigs s 23 886  s 24 1972 # *
+pigs s 23 885  s 24 1971 # *
+pigs s 23 884  s 24 1970 # *
+pigs s 23 883  s 24 1969 # *
+pigs s 23 881  s 24 1968 # *
+pigs s 23 880  s 24 1967 # *
+pigs s 23 879  s 24 1966 # *
+pigs s 23 878  s 24 1965 # *
+pigs s 23 877  s 24 1964 # *
+pigs s 23 876  s 24 1963 # *
+pigs s 23 875  s 24 1962 # *
+pigs s 23 874  s 24 1961 # 146.36° 48.54 ° 0.53,4.15
+pigs s 23 873  s 24 1960 # *
+pigs s 23 872  s 24 1959 # *
+pigs s 23 870  s 24 1958 # *
+pigs s 23 869  s 24 1957 # *
+pigs s 23 868  s 24 1956 # *
+pigs s 23 867  s 24 1955 # *
+pigs s 23 866  s 24 1954 # *
+pigs s 23 864  s 24 1953 # *
+pigs s 23 863  s 24 1952 # *
+pigs s 23 862  s 24 1951 # *
+pigs s 23 861  s 24 1950 # *
+pigs s 23 860  s 24 1949 # *
+pigs s 23 858  s 24 1948 # *
+pigs s 23 857  s 24 1947 # *
+pigs s 23 856  s 24 1946 # *
+pigs s 23 855  s 24 1945 # *
+pigs s 23 854  s 24 1944 # *
+pigs s 23 852  s 24 1943 # *
+pigs s 23 851  s 24 1942 # *
+pigs s 23 850  s 24 1941 # 148.53° 50.35 ° 0.69,4.28
+pigs s 23 848  s 24 1940 # *
+pigs s 23 847  s 24 1939 # *
+pigs s 23 845  s 24 1938 # *
+pigs s 23 844  s 24 1937 # *
+pigs s 23 842  s 24 1936 # *
+pigs s 23 841  s 24 1935 # *
+pigs s 23 839  s 24 1934 # *
+pigs s 23 838  s 24 1933 # *
+pigs s 23 836  s 24 1932 # *
+pigs s 23 835  s 24 1931 # *
+pigs s 23 833  s 24 1930 # *
+pigs s 23 832  s 24 1929 # *
+pigs s 23 830  s 24 1928 # 150.28° 51.5  ° 0.82,4.43
+pigs s 23 827  s 24 1927 # *
+pigs s 23 824  s 24 1926 # *
+pigs s 23 821  s 24 1925 # *
+pigs s 23 818  s 24 1924 # *
+pigs s 23 815  s 24 1923 # 151.64° 51.97 ° 0.92,4.61
+pigs s 23 810  s 24 1924 # *
+pigs s 23 805  s 24 1925 # 152.55° 51.76 ° 0.98,4.8
+pigs s 23 804  s 24 1927 # *
+pigs s 23 803  s 24 1928 # *
+pigs s 23 802  s 24 1930 # *
+pigs s 23 801  s 24 1931 # *
+pigs s 23 800  s 24 1933 # *
+pigs s 23 799  s 24 1934 # 153.06° 50.94 ° 1,5
+pigs s 23 798  s 24 1933 # *
+pigs s 23 797  s 24 1932 # *
+pigs s 23 796  s 24 1931 # *
+pigs s 23 795  s 24 1930 # *
+pigs s 23 793  s 24 1929 # *
+pigs s 23 792  s 24 1928 # *
+pigs s 23 791  s 24 1927 # *
+pigs s 23 790  s 24 1926 # *
+pigs s 23 789  s 24 1925 # *
+pigs s 23 788  s 24 1924 # *
+pigs s 23 787  s 24 1923 # *
+pigs s 23 786  s 24 1922 # *
+pigs s 23 785  s 24 1921 # *
+pigs s 23 784  s 24 1920 # *
+pigs s 23 782  s 24 1919 # *
+pigs s 23 781  s 24 1918 # *
+pigs s 23 780  s 24 1917 # *
+pigs s 23 779  s 24 1916 # *
+pigs s 23 778  s 24 1915 # *
+pigs s 23 777  s 24 1914 # *
+pigs s 23 776  s 24 1913 # *
+pigs s 23 775  s 24 1912 # *
+pigs s 23 774  s 24 1911 # *
+pigs s 23 773  s 24 1910 # *
+pigs s 23 771  s 24 1909 # *
+pigs s 23 770  s 24 1908 # *
+pigs s 23 769  s 24 1907 # *
+pigs s 23 768  s 24 1906 # *
+pigs s 23 767  s 24 1905 # *
+pigs s 23 766  s 24 1904 # *
+pigs s 23 765  s 24 1903 # *
+pigs s 23 764  s 24 1902 # *
+pigs s 23 763  s 24 1901 # *
+pigs s 23 762  s 24 1900 # *
+pigs s 23 760  s 24 1899 # *
+pigs s 23 759  s 24 1898 # *
+pigs s 23 758  s 24 1897 # *
+pigs s 23 757  s 24 1896 # *
+pigs s 23 756  s 24 1895 # *
+pigs s 23 755  s 24 1894 # *
+pigs s 23 754  s 24 1893 # *
+pigs s 23 753  s 24 1892 # *
+pigs s 23 752  s 24 1891 # *
+pigs s 23 751  s 24 1890 # *
+pigs s 23 749  s 24 1889 # *
+pigs s 23 748  s 24 1888 # *
+pigs s 23 747  s 24 1887 # *
+pigs s 23 746  s 24 1886 # *
+pigs s 23 745  s 24 1885 # *
+pigs s 23 744  s 24 1884 # *
+pigs s 23 743  s 24 1883 # *
+pigs s 23 742  s 24 1882 # *
+pigs s 23 741  s 24 1881 # *
+pigs s 23 740  s 24 1880 # *
+pigs s 23 738  s 24 1879 # *
+pigs s 23 737  s 24 1878 # *
+pigs s 23 736  s 24 1877 # *
+pigs s 23 735  s 24 1876 # *
+pigs s 23 734  s 24 1875 # *
+pigs s 23 733  s 24 1874 # *
+pigs s 23 732  s 24 1873 # *
+pigs s 23 731  s 24 1872 # *
+pigs s 23 730  s 24 1871 # *
+pigs s 23 729  s 24 1870 # *
+pigs s 23 727  s 24 1869 # *
+pigs s 23 726  s 24 1868 # *
+pigs s 23 725  s 24 1867 # *
+pigs s 23 724  s 24 1866 # *
+pigs s 23 723  s 24 1865 # *
+pigs s 23 722  s 24 1864 # *
+pigs s 23 721  s 24 1863 # *
+pigs s 23 720  s 24 1862 # *
+pigs s 23 719  s 24 1861 # *
+pigs s 23 718  s 24 1860 # *
+pigs s 23 716  s 24 1859 # *
+pigs s 23 715  s 24 1858 # *
+pigs s 23 714  s 24 1857 # *
+pigs s 23 713  s 24 1856 # *
+pigs s 23 712  s 24 1855 # *
+pigs s 23 711  s 24 1854 # *
+pigs s 23 710  s 24 1853 # *
+pigs s 23 709  s 24 1852 # *
+pigs s 23 708  s 24 1851 # *
+pigs s 23 707  s 24 1850 # *
+pigs s 23 705  s 24 1849 # *
+pigs s 23 704  s 24 1848 # *
+pigs s 23 703  s 24 1847 # *
+pigs s 23 702  s 24 1846 # *
+pigs s 23 701  s 24 1845 # *
+pigs s 23 700  s 24 1844 # *
+pigs s 23 699  s 24 1843 # *
+pigs s 23 698  s 24 1842 # *
+pigs s 23 697  s 24 1841 # *
+pigs s 23 696  s 24 1840 # *
+pigs s 23 694  s 24 1839 # *
+pigs s 23 693  s 24 1838 # *
+pigs s 23 692  s 24 1837 # *
+pigs s 23 691  s 24 1836 # *
+pigs s 23 690  s 24 1835 # *
+pigs s 23 689  s 24 1834 # *
+pigs s 23 688  s 24 1833 # *
+pigs s 23 687  s 24 1832 # *
+pigs s 23 686  s 24 1831 # *
+pigs s 23 685  s 24 1830 # *
+pigs s 23 683  s 24 1829 # *
+pigs s 23 682  s 24 1828 # *
+pigs s 23 681  s 24 1827 # *
+pigs s 23 680  s 24 1826 # *
+pigs s 23 679  s 24 1825 # *
+pigs s 23 678  s 24 1824 # *
+pigs s 23 677  s 24 1823 # *
+pigs s 23 676  s 24 1822 # *
+pigs s 23 675  s 24 1821 # *
+pigs s 23 674  s 24 1820 # *
+pigs s 23 672  s 24 1819 # *
+pigs s 23 671  s 24 1818 # *
+pigs s 23 670  s 24 1817 # *
+pigs s 23 669  s 24 1816 # *
+pigs s 23 668  s 24 1815 # *
+pigs s 23 667  s 24 1814 # 164.97° 61.7  ° 2,5
+pigs s 23 668  s 24 1853 # 164.91° 58.23 ° 1.96,5.4
+pigs s 23 669  s 24 1864 # *
+pigs s 23 670  s 24 1874 # 164.68° 56.3  ° 1.91,5.59
+pigs s 23 671  s 24 1880 # *
+pigs s 23 672  s 24 1886 # *
+pigs s 23 673  s 24 1892 # *
+pigs s 23 674  s 24 1898 # 164.33° 54.2  ° 1.84,5.78
+pigs s 23 675  s 24 1904 # *
+pigs s 23 676  s 24 1910 # *
+pigs s 23 677  s 24 1915 # *
+pigs s 23 678  s 24 1921 # 163.95° 52.1  ° 1.76,5.96
+pigs s 23 679  s 24 1925 # *
+pigs s 23 680  s 24 1928 # *
+pigs s 23 681  s 24 1932 # *
+pigs s 23 682  s 24 1935 # *
+pigs s 23 683  s 24 1939 # *
+pigs s 23 684  s 24 1942 # *
+pigs s 23 685  s 24 1946 # 163.31° 49.83 ° 1.65,6.13
+pigs s 23 686  s 24 1949 # *
+pigs s 23 687  s 24 1953 # *
+pigs s 23 688  s 24 1956 # *
+pigs s 23 689  s 24 1959 # *
+pigs s 23 690  s 24 1962 # *
+pigs s 23 691  s 24 1966 # *
+pigs s 23 692  s 24 1969 # *
+pigs s 23 693  s 24 1972 # 162.63° 47.56 ° 1.53,6.29
+pigs s 23 694  s 24 1975 # *
+pigs s 23 695  s 24 1977 # *
+pigs s 23 696  s 24 1980 # *
+pigs s 23 697  s 24 1983 # *
+pigs s 23 698  s 24 1985 # *
+pigs s 23 699  s 24 1988 # *
+pigs s 23 700  s 24 1991 # *
+pigs s 23 701  s 24 1993 # *
+pigs s 23 702  s 24 1996 # 161.84° 45.38 ° 1.4,6.43
+pigs s 23 703  s 24 1998 # *
+pigs s 23 704  s 24 2001 # *
+pigs s 23 705  s 24 2003 # *
+pigs s 23 706  s 24 2005 # *
+pigs s 23 707  s 24 2007 # *
+pigs s 23 708  s 24 2010 # *
+pigs s 23 709  s 24 2012 # *
+pigs s 23 710  s 24 2014 # *
+pigs s 23 711  s 24 2016 # *
+pigs s 23 712  s 24 2019 # *
+pigs s 23 713  s 24 2021 # 160.87° 43.1  ° 1.25,6.56
+pigs s 23 714  s 24 2023 # *
+pigs s 23 715  s 24 2026 # *
+pigs s 23 716  s 24 2028 # *
+pigs s 23 717  s 24 2030 # *
+pigs s 23 718  s 24 2032 # *
+pigs s 23 719  s 24 2035 # *
+pigs s 23 720  s 24 2037 # *
+pigs s 23 721  s 24 2039 # *
+pigs s 23 722  s 24 2041 # *
+pigs s 23 723  s 24 2044 # *
+pigs s 23 724  s 24 2046 # 159.83° 40.82 ° 1.09,6.68
+pigs s 23 725  s 24 2048 # *
+pigs s 23 726  s 24 2050 # *
+pigs s 23 727  s 24 2052 # *
+pigs s 23 728  s 24 2053 # *
+pigs s 23 729  s 24 2055 # *
+pigs s 23 730  s 24 2057 # *
+pigs s 23 731  s 24 2059 # *
+pigs s 23 732  s 24 2061 # *
+pigs s 23 733  s 24 2063 # *
+pigs s 23 734  s 24 2065 # *
+pigs s 23 735  s 24 2066 # *
+pigs s 23 736  s 24 2068 # *
+pigs s 23 737  s 24 2070 # *
+pigs s 23 738  s 24 2072 # 158.56° 38.52 ° 0.91,6.78
+pigs s 23 739  s 24 2074 # *
+pigs s 23 740  s 24 2075 # *
+pigs s 23 741  s 24 2077 # *
+pigs s 23 742  s 24 2078 # *
+pigs s 23 743  s 24 2080 # *
+pigs s 23 744  s 24 2082 # *
+pigs s 23 745  s 24 2083 # *
+pigs s 23 746  s 24 2085 # *
+pigs s 23 747  s 24 2086 # *
+pigs s 23 748  s 24 2088 # *
+pigs s 23 749  s 24 2090 # *
+pigs s 23 750  s 24 2091 # *
+pigs s 23 751  s 24 2093 # *
+pigs s 23 752  s 24 2094 # *
+pigs s 23 753  s 24 2096 # 157.24° 36.36 ° 0.73,6.86
+pigs s 23 754  s 24 2098 # *
+pigs s 23 755  s 24 2099 # *
+pigs s 23 756  s 24 2101 # *
+pigs s 23 757  s 24 2102 # *
+pigs s 23 758  s 24 2104 # *
+pigs s 23 759  s 24 2105 # *
+pigs s 23 760  s 24 2107 # *
+pigs s 23 761  s 24 2108 # *
+pigs s 23 762  s 24 2110 # *
+pigs s 23 763  s 24 2111 # *
+pigs s 23 764  s 24 2113 # *
+pigs s 23 765  s 24 2114 # *
+pigs s 23 766  s 24 2116 # *
+pigs s 23 767  s 24 2117 # *
+pigs s 23 768  s 24 2119 # *
+pigs s 23 769  s 24 2120 # 155.81° 34.18 ° 0.54,6.93
+pigs s 23 770  s 24 2121 # *
+pigs s 23 771  s 24 2123 # *
+pigs s 23 772  s 24 2124 # *
+pigs s 23 773  s 24 2125 # *
+pigs s 23 774  s 24 2126 # *
+pigs s 23 775  s 24 2128 # *
+pigs s 23 776  s 24 2129 # *
+pigs s 23 777  s 24 2130 # *
+pigs s 23 778  s 24 2132 # *
+pigs s 23 779  s 24 2133 # *
+pigs s 23 780  s 24 2134 # *
+pigs s 23 781  s 24 2135 # *
+pigs s 23 782  s 24 2137 # *
+pigs s 23 783  s 24 2138 # *
+pigs s 23 784  s 24 2139 # *
+pigs s 23 785  s 24 2141 # *
+pigs s 23 786  s 24 2142 # 154.25° 32.2  ° 0.35,6.97
+pigs s 23 787  s 24 2143 # *
+pigs s 23 788  s 24 2144 # *
+pigs s 23 789  s 24 2145 # *
+pigs s 23 790  s 24 2146 # *
+pigs s 23 791  s 24 2147 # *
+pigs s 23 792  s 24 2149 # *
+pigs s 23 793  s 24 2150 # *
+pigs s 23 794  s 24 2151 # *
+pigs s 23 795  s 24 2152 # *
+pigs s 23 796  s 24 2153 # *
+pigs s 23 797  s 24 2154 # *
+pigs s 23 798  s 24 2155 # *
+pigs s 23 799  s 24 2156 # *
+pigs s 23 800  s 24 2157 # *
+pigs s 23 801  s 24 2158 # *
+pigs s 23 802  s 24 2160 # *
+pigs s 23 803  s 24 2161 # *
+pigs s 23 804  s 24 2162 # *
+pigs s 23 805  s 24 2163 # *
+pigs s 23 806  s 24 2164 # 152.5 ° 30.26 ° 0.15,6.99
+pigs s 23 807  s 24 2165 # *
+pigs s 23 808  s 24 2166 # *
+pigs s 23 809  s 24 2167 # *
+pigs s 23 810  s 24 2168 # *
+pigs s 23 811  s 24 2170 # *
+pigs s 23 812  s 24 2171 # *
+pigs s 23 813  s 24 2172 # *
+pigs s 23 814  s 24 2173 # *
+pigs s 23 815  s 24 2174 # *
+pigs s 23 816  s 24 2175 # *
+pigs s 23 817  s 24 2176 # *
+pigs s 23 818  s 24 2177 # *
+pigs s 23 819  s 24 2178 # *
+pigs s 23 820  s 24 2180 # *
+pigs s 23 821  s 24 2181 # *
+pigs s 23 822  s 24 2182 # *
+pigs s 23 823  s 24 2183 # *
+pigs s 23 824  s 24 2184 # *
+pigs s 23 825  s 24 2185 # 150.72° 28.36 ° -0.05,7
+pigs s 23 826  s 24 2186 # *
+pigs s 23 827  s 24 2187 # *
+pigs s 23 828  s 24 2188 # *
+pigs s 23 830  s 24 2189 # *
+pigs s 23 831  s 24 2190 # *
+pigs s 23 832  s 24 2191 # *
+pigs s 23 833  s 24 2192 # *
+pigs s 23 834  s 24 2193 # *
+pigs s 23 835  s 24 2194 # *
+pigs s 23 837  s 24 2195 # *
+pigs s 23 838  s 24 2196 # *
+pigs s 23 839  s 24 2197 # *
+pigs s 23 840  s 24 2198 # *
+pigs s 23 841  s 24 2199 # *
+pigs s 23 842  s 24 2200 # *
+pigs s 23 844  s 24 2201 # *
+pigs s 23 845  s 24 2202 # *
+pigs s 23 846  s 24 2203 # *
+pigs s 23 847  s 24 2204 # 148.76° 26.63 ° -0.25,6.98
+pigs s 23 848  s 24 2205 # *
+pigs s 23 849  s 24 2206 # *
+pigs s 23 850  s 24 2207 # *
+pigs s 23 852  s 24 2208 # *
+pigs s 23 853  s 24 2209 # *
+pigs s 23 854  s 24 2210 # *
+pigs s 23 855  s 24 2211 # *
+pigs s 23 856  s 24 2212 # *
+pigs s 23 857  s 24 2213 # *
+pigs s 23 859  s 24 2214 # *
+pigs s 23 860  s 24 2215 # *
+pigs s 23 861  s 24 2216 # *
+pigs s 23 862  s 24 2217 # *
+pigs s 23 863  s 24 2218 # *
+pigs s 23 864  s 24 2219 # *
+pigs s 23 866  s 24 2220 # *
+pigs s 23 867  s 24 2221 # *
+pigs s 23 868  s 24 2222 # *
+pigs s 23 869  s 24 2223 # 146.76° 24.93 ° -0.45,6.95
+pigs s 23 870  s 24 2224 # *
+pigs s 23 872  s 24 2225 # *
+pigs s 23 873  s 24 2226 # *
+pigs s 23 874  s 24 2227 # *
+pigs s 23 876  s 24 2228 # *
+pigs s 23 877  s 24 2229 # *
+pigs s 23 878  s 24 2230 # *
+pigs s 23 880  s 24 2231 # *
+pigs s 23 881  s 24 2232 # *
+pigs s 23 883  s 24 2233 # *
+pigs s 23 884  s 24 2234 # *
+pigs s 23 885  s 24 2235 # *
+pigs s 23 887  s 24 2236 # *
+pigs s 23 888  s 24 2237 # *
+pigs s 23 889  s 24 2238 # *
+pigs s 23 891  s 24 2239 # *
+pigs s 23 892  s 24 2240 # 144.72° 23.4  ° -0.64,6.9
+pigs s 23 894  s 24 2241 # *
+pigs s 23 895  s 24 2242 # *
+pigs s 23 897  s 24 2243 # *
+pigs s 23 899  s 24 2244 # *
+pigs s 23 901  s 24 2245 # *
+pigs s 23 902  s 24 2246 # *
+pigs s 23 904  s 24 2247 # *
+pigs s 23 906  s 24 2248 # *
+pigs s 23 907  s 24 2249 # *
+pigs s 23 909  s 24 2250 # *
+pigs s 23 911  s 24 2251 # *
+pigs s 23 913  s 24 2252 # *
+pigs s 23 914  s 24 2253 # *
+pigs s 23 916  s 24 2254 # 142.56° 22.11 ° -0.82,6.82
+pigs s 23 918  s 24 2255 # *
+pigs s 23 919  s 24 2256 # *
+pigs s 23 921  s 24 2257 # *
+pigs s 23 923  s 24 2258 # *
+pigs s 23 924  s 24 2259 # *
+pigs s 23 926  s 24 2260 # *
+pigs s 23 928  s 24 2261 # *
+pigs s 23 929  s 24 2262 # *
+pigs s 23 931  s 24 2263 # *
+pigs s 23 933  s 24 2264 # *
+pigs s 23 934  s 24 2265 # *
+pigs s 23 936  s 24 2266 # *
+pigs s 23 938  s 24 2267 # *
+pigs s 23 939  s 24 2268 # *
+pigs s 23 941  s 24 2269 # 140.33° 20.81 ° -1,6.73
+pigs s 23 943  s 24 2270 # *
+pigs s 23 945  s 24 2271 # *
+pigs s 23 947  s 24 2272 # *
+pigs s 23 949  s 24 2273 # *
+pigs s 23 951  s 24 2274 # *
+pigs s 23 953  s 24 2275 # *
+pigs s 23 954  s 24 2276 # *
+pigs s 23 956  s 24 2277 # *
+pigs s 23 958  s 24 2278 # *
+pigs s 23 960  s 24 2279 # *
+pigs s 23 962  s 24 2280 # *
+pigs s 23 964  s 24 2281 # *
+pigs s 23 966  s 24 2282 # 138.04° 19.66 ° -1.17,6.62
+pigs s 23 969  s 24 2283 # *
+pigs s 23 971  s 24 2284 # *
+pigs s 23 974  s 24 2285 # *
+pigs s 23 976  s 24 2286 # *
+pigs s 23 979  s 24 2287 # *
+pigs s 23 981  s 24 2288 # *
+pigs s 23 984  s 24 2289 # *
+pigs s 23 986  s 24 2290 # *
+pigs s 23 989  s 24 2291 # *
+pigs s 23 991  s 24 2292 # 135.84° 18.68 ° -1.32,6.5
+pigs s 23 993  s 24 2293 # *
+pigs s 23 996  s 24 2294 # *
+pigs s 23 998  s 24 2295 # *
+pigs s 23 1000 s 24 2296 # *
+pigs s 23 1003 s 24 2297 # *
+pigs s 23 1005 s 24 2298 # *
+pigs s 23 1008 s 24 2299 # *
+pigs s 23 1010 s 24 2300 # *
+pigs s 23 1012 s 24 2301 # *
+pigs s 23 1015 s 24 2302 # *
+pigs s 23 1017 s 24 2303 # 133.49° 17.73 ° -1.47,6.36
+pigs s 23 1020 s 24 2304 # *
+pigs s 23 1023 s 24 2305 # *
+pigs s 23 1026 s 24 2306 # *
+pigs s 23 1029 s 24 2307 # *
+pigs s 23 1032 s 24 2308 # *
+pigs s 23 1035 s 24 2309 # *
+pigs s 23 1038 s 24 2310 # *
+pigs s 23 1041 s 24 2311 # 131.3 ° 17.04 ° -1.59,6.21
+pigs s 23 1045 s 24 2312 # *
+pigs s 23 1048 s 24 2313 # *
+pigs s 23 1052 s 24 2314 # *
+pigs s 23 1056 s 24 2315 # *
+pigs s 23 1060 s 24 2316 # *
+pigs s 23 1063 s 24 2317 # *
+pigs s 23 1067 s 24 2318 # 128.96° 16.34 ° -1.71,6.04
+pigs s 23 1071 s 24 2319 # *
+pigs s 23 1075 s 24 2320 # *
+pigs s 23 1079 s 24 2321 # *
+pigs s 23 1083 s 24 2322 # *
+pigs s 23 1087 s 24 2323 # *
+pigs s 23 1091 s 24 2324 # 126.85° 15.87 ° -1.8,5.87
+pigs s 23 1097 s 24 2325 # *
+pigs s 23 1103 s 24 2326 # *
+pigs s 23 1109 s 24 2327 # *
+pigs s 23 1115 s 24 2328 # 124.67° 15.46 ° -1.88,5.68
+pigs s 23 1122 s 24 2329 # *
+pigs s 23 1130 s 24 2330 # *
+pigs s 23 1137 s 24 2331 # 122.65° 15.17 ° -1.94,5.49
+pigs s 23 1148 s 24 2332 # *
+pigs s 23 1158 s 24 2333 # 120.81° 15    ° -1.98,5.3
+pigs s 23 1177 s 24 2334 # 119.07° 14.97 ° -2,5.1
+pigs s 23 1194 s 24 2333 # 117.54° 15.06 ° -2,4.9
+pigs s 23 1199 s 24 2332 # *
+pigs s 23 1204 s 24 2331 # *
+pigs s 23 1209 s 24 2330 # 116.22° 15.29 ° -1.98,4.7
+pigs s 23 1212 s 24 2329 # *
+pigs s 23 1215 s 24 2328 # *
+pigs s 23 1217 s 24 2327 # *
+pigs s 23 1220 s 24 2326 # 115.24° 15.65 ° -1.94,4.51
+pigs s 23 1221 s 24 2325 # *
+pigs s 23 1222 s 24 2324 # *
+pigs s 23 1224 s 24 2323 # *
+pigs s 23 1225 s 24 2322 # *
+pigs s 23 1226 s 24 2321 # *
+pigs s 23 1227 s 24 2320 # 114.54° 16.18 ° -1.88,4.32
+pigs s 23 1228 s 24 2318 # *
+pigs s 23 1229 s 24 2317 # *
+pigs s 23 1230 s 24 2315 # *
+pigs s 23 1231 s 24 2313 # 114.17° 16.86 ° -1.8,4.13
+pigs s 23 1230 s 24 2302 # *
+pigs s 23 1229 s 24 2300 # *
+pigs s 23 1228 s 24 2298 # *
+pigs s 23 1227 s 24 2296 # *
+pigs s 23 1226 s 24 2294 # *
+pigs s 23 1225 s 24 2292 # 114.74° 18.72 ° -1.59,3.79
+pigs s 23 1224 s 24 2291 # *
+pigs s 23 1223 s 24 2290 # *
+pigs s 23 1222 s 24 2288 # *
+pigs s 23 1221 s 24 2287 # *
+pigs s 23 1220 s 24 2286 # *
+pigs s 23 1219 s 24 2285 # *
+pigs s 23 1218 s 24 2284 # *
+pigs s 23 1217 s 24 2282 # *
+pigs s 23 1216 s 24 2281 # *
+pigs s 23 1215 s 24 2280 # 115.63° 19.83 ° -1.47,3.64
+pigs s 23 1214 s 24 2279 # *
+pigs s 23 1213 s 24 2278 # *
+pigs s 23 1212 s 24 2277 # *
+pigs s 23 1211 s 24 2276 # *
+pigs s 23 1210 s 24 2275 # *
+pigs s 23 1209 s 24 2274 # *
+pigs s 23 1208 s 24 2273 # *
+pigs s 23 1207 s 24 2272 # *
+pigs s 23 1205 s 24 2271 # *
+pigs s 23 1204 s 24 2270 # *
+pigs s 23 1203 s 24 2269 # *
+pigs s 23 1202 s 24 2268 # *
+pigs s 23 1201 s 24 2267 # *
+pigs s 23 1200 s 24 2266 # *
+pigs s 23 1199 s 24 2265 # *
+pigs s 23 1198 s 24 2264 # *
+pigs s 23 1197 s 24 2263 # 117.23° 21.37 ° -1.32,3.5
+pigs s 23 1196 s 24 2262 # *
+pigs s 23 1195 s 24 2261 # *
+pigs s 23 1193 s 24 2260 # *
+pigs s 23 1192 s 24 2259 # *
+pigs s 23 1191 s 24 2258 # *
+pigs s 23 1190 s 24 2257 # *
+pigs s 23 1189 s 24 2256 # *
+pigs s 23 1188 s 24 2255 # *
+pigs s 23 1186 s 24 2254 # *
+pigs s 23 1185 s 24 2253 # *
+pigs s 23 1184 s 24 2252 # *
+pigs s 23 1183 s 24 2251 # *
+pigs s 23 1182 s 24 2250 # *
+pigs s 23 1181 s 24 2249 # *
+pigs s 23 1179 s 24 2248 # *
+pigs s 23 1178 s 24 2247 # *
+pigs s 23 1177 s 24 2246 # *
+pigs s 23 1176 s 24 2245 # 119.18° 22.98 ° -1.17,3.38
+pigs s 23 1175 s 24 2244 # *
+pigs s 23 1173 s 24 2243 # *
+pigs s 23 1172 s 24 2242 # *
+pigs s 23 1171 s 24 2241 # *
+pigs s 23 1169 s 24 2240 # *
+pigs s 23 1168 s 24 2239 # *
+pigs s 23 1167 s 24 2238 # *
+pigs s 23 1165 s 24 2237 # *
+pigs s 23 1164 s 24 2236 # *
+pigs s 23 1163 s 24 2235 # *
+pigs s 23 1161 s 24 2234 # *
+pigs s 23 1160 s 24 2233 # *
+pigs s 23 1159 s 24 2232 # *
+pigs s 23 1158 s 24 2231 # *
+pigs s 23 1156 s 24 2230 # *
+pigs s 23 1155 s 24 2229 # *
+pigs s 23 1154 s 24 2228 # *
+pigs s 23 1152 s 24 2227 # *
+pigs s 23 1151 s 24 2226 # *
+pigs s 23 1150 s 24 2225 # *
+pigs s 23 1148 s 24 2224 # *
+pigs s 23 1147 s 24 2223 # 121.74° 24.97 ° -1,3.27
+pigs s 23 1146 s 24 2222 # *
+pigs s 23 1144 s 24 2221 # *
+pigs s 23 1143 s 24 2220 # *
+pigs s 23 1142 s 24 2219 # *
+pigs s 23 1141 s 24 2218 # *
+pigs s 23 1139 s 24 2217 # *
+pigs s 23 1138 s 24 2216 # *
+pigs s 23 1137 s 24 2215 # *
+pigs s 23 1136 s 24 2214 # *
+pigs s 23 1134 s 24 2213 # *
+pigs s 23 1133 s 24 2212 # *
+pigs s 23 1132 s 24 2211 # *
+pigs s 23 1130 s 24 2210 # *
+pigs s 23 1129 s 24 2209 # *
+pigs s 23 1128 s 24 2208 # *
+pigs s 23 1127 s 24 2207 # *
+pigs s 23 1125 s 24 2206 # *
+pigs s 23 1124 s 24 2205 # *
+pigs s 23 1123 s 24 2204 # *
+pigs s 23 1122 s 24 2203 # *
+pigs s 23 1120 s 24 2202 # *
+pigs s 23 1119 s 24 2201 # *
+pigs s 23 1118 s 24 2200 # *
+pigs s 23 1117 s 24 2199 # *
+pigs s 23 1115 s 24 2198 # *
+pigs s 23 1114 s 24 2197 # 124.77° 27.25 ° -0.82,3.18
+pigs s 23 1113 s 24 2196 # *
+pigs s 23 1111 s 24 2195 # *
+pigs s 23 1110 s 24 2194 # *
+pigs s 23 1109 s 24 2193 # *
+pigs s 23 1107 s 24 2192 # *
+pigs s 23 1106 s 24 2191 # *
+pigs s 23 1105 s 24 2190 # *
+pigs s 23 1103 s 24 2189 # *
+pigs s 23 1102 s 24 2188 # *
+pigs s 23 1101 s 24 2187 # *
+pigs s 23 1099 s 24 2186 # *
+pigs s 23 1098 s 24 2185 # *
+pigs s 23 1097 s 24 2184 # *
+pigs s 23 1095 s 24 2183 # *
+pigs s 23 1094 s 24 2182 # *
+pigs s 23 1093 s 24 2181 # *
+pigs s 23 1091 s 24 2180 # *
+pigs s 23 1090 s 24 2179 # *
+pigs s 23 1089 s 24 2178 # *
+pigs s 23 1087 s 24 2177 # *
+pigs s 23 1086 s 24 2176 # *
+pigs s 23 1085 s 24 2175 # *
+pigs s 23 1083 s 24 2174 # *
+pigs s 23 1082 s 24 2173 # *
+pigs s 23 1081 s 24 2172 # *
+pigs s 23 1079 s 24 2171 # *
+pigs s 23 1078 s 24 2170 # 128   ° 29.69 ° -0.64,3.1
+pigs s 23 1077 s 24 2169 # *
+pigs s 23 1076 s 24 2168 # *
+pigs s 23 1074 s 24 2167 # *
+pigs s 23 1073 s 24 2166 # *
+pigs s 23 1072 s 24 2165 # *
+pigs s 23 1071 s 24 2164 # *
+pigs s 23 1069 s 24 2163 # *
+pigs s 23 1068 s 24 2162 # *
+pigs s 23 1067 s 24 2161 # *
+pigs s 23 1066 s 24 2160 # *
+pigs s 23 1064 s 24 2159 # *
+pigs s 23 1063 s 24 2158 # *
+pigs s 23 1062 s 24 2157 # *
+pigs s 23 1061 s 24 2156 # *
+pigs s 23 1059 s 24 2155 # *
+pigs s 23 1058 s 24 2154 # *
+pigs s 23 1057 s 24 2153 # *
+pigs s 23 1056 s 24 2152 # *
+pigs s 23 1054 s 24 2151 # *
+pigs s 23 1053 s 24 2150 # *
+pigs s 23 1052 s 24 2149 # *
+pigs s 23 1051 s 24 2148 # *
+pigs s 23 1049 s 24 2147 # *
+pigs s 23 1048 s 24 2146 # *
+pigs s 23 1047 s 24 2145 # *
+pigs s 23 1046 s 24 2144 # *
+pigs s 23 1044 s 24 2143 # *
+pigs s 23 1043 s 24 2142 # *
+pigs s 23 1042 s 24 2141 # *
+pigs s 23 1041 s 24 2140 # *
+pigs s 23 1039 s 24 2139 # *
+pigs s 23 1038 s 24 2138 # 131.55° 32.54 ° -0.45,3.05
+pigs s 23 1037 s 24 2137 # *
+pigs s 23 1036 s 24 2136 # *
+pigs s 23 1035 s 24 2135 # *
+pigs s 23 1033 s 24 2134 # *
+pigs s 23 1032 s 24 2133 # *
+pigs s 23 1031 s 24 2132 # *
+pigs s 23 1030 s 24 2131 # *
+pigs s 23 1029 s 24 2130 # *
+pigs s 23 1028 s 24 2129 # *
+pigs s 23 1027 s 24 2128 # *
+pigs s 23 1025 s 24 2127 # *
+pigs s 23 1024 s 24 2126 # *
+pigs s 23 1023 s 24 2125 # *
+pigs s 23 1022 s 24 2124 # *
+pigs s 23 1021 s 24 2123 # *
+pigs s 23 1020 s 24 2122 # *
+pigs s 23 1019 s 24 2121 # *
+pigs s 23 1017 s 24 2120 # *
+pigs s 23 1016 s 24 2119 # *
+pigs s 23 1015 s 24 2118 # *
+pigs s 23 1014 s 24 2117 # *
+pigs s 23 1013 s 24 2116 # *
+pigs s 23 1012 s 24 2115 # *
+pigs s 23 1011 s 24 2114 # *
+pigs s 23 1009 s 24 2113 # *
+pigs s 23 1008 s 24 2112 # *
+pigs s 23 1007 s 24 2111 # *
+pigs s 23 1006 s 24 2110 # *
+pigs s 23 1005 s 24 2109 # *
+pigs s 23 1004 s 24 2108 # *
+pigs s 23 1003 s 24 2107 # *
+pigs s 23 1002 s 24 2106 # *
+pigs s 23 1000 s 24 2105 # *
+pigs s 23 999  s 24 2104 # *
+pigs s 23 998  s 24 2103 # *
+pigs s 23 997  s 24 2102 # 135.3 ° 35.78 ° -0.25,3.02
+pigs s 23 996  s 24 2101 # *
+pigs s 23 995  s 24 2100 # *
+pigs s 23 994  s 24 2099 # *
+pigs s 23 993  s 24 2098 # *
+pigs s 23 991  s 24 2097 # *
+pigs s 23 990  s 24 2096 # *
+pigs s 23 989  s 24 2095 # *
+pigs s 23 988  s 24 2094 # *
+pigs s 23 987  s 24 2093 # *
+pigs s 23 986  s 24 2092 # *
+pigs s 23 985  s 24 2091 # *
+pigs s 23 984  s 24 2090 # *
+pigs s 23 983  s 24 2089 # *
+pigs s 23 981  s 24 2088 # *
+pigs s 23 980  s 24 2087 # *
+pigs s 23 979  s 24 2086 # *
+pigs s 23 978  s 24 2085 # *
+pigs s 23 977  s 24 2084 # *
+pigs s 23 976  s 24 2083 # *
+pigs s 23 975  s 24 2082 # *
+pigs s 23 974  s 24 2081 # *
+pigs s 23 973  s 24 2080 # *
+pigs s 23 971  s 24 2079 # *
+pigs s 23 970  s 24 2078 # *
+pigs s 23 969  s 24 2077 # *
+pigs s 23 968  s 24 2076 # *
+pigs s 23 967  s 24 2075 # *
+pigs s 23 966  s 24 2074 # *
+pigs s 23 965  s 24 2073 # *
+pigs s 23 964  s 24 2072 # *
+pigs s 23 963  s 24 2071 # *
+pigs s 23 961  s 24 2070 # *
+pigs s 23 960  s 24 2069 # *
+pigs s 23 959  s 24 2068 # *
+pigs s 23 958  s 24 2067 # *
+pigs s 23 957  s 24 2066 # *
+pigs s 23 956  s 24 2065 # *
+pigs s 23 955  s 24 2064 # 139.01° 39.2  ° -0.05,3
+pigs s 23 954  s 24 2063 # *
+pigs s 23 953  s 24 2062 # *
+pigs s 23 952  s 24 2061 # *
+pigs s 23 951  s 24 2060 # *
+pigs s 23 950  s 24 2059 # *
+pigs s 23 949  s 24 2058 # *
+pigs s 23 948  s 24 2057 # *
+pigs s 23 947  s 24 2056 # *
+pigs s 23 946  s 24 2055 # *
+pigs s 23 945  s 24 2054 # *
+pigs s 23 944  s 24 2053 # *
+pigs s 23 943  s 24 2052 # *
+pigs s 23 942  s 24 2051 # *
+pigs s 23 941  s 24 2050 # *
+pigs s 23 940  s 24 2049 # *
+pigs s 23 939  s 24 2048 # *
+pigs s 23 938  s 24 2046 # *
+pigs s 23 937  s 24 2045 # *
+pigs s 23 936  s 24 2044 # *
+pigs s 23 935  s 24 2043 # *
+pigs s 23 934  s 24 2042 # *
+pigs s 23 933  s 24 2041 # *
+pigs s 23 932  s 24 2040 # *
+pigs s 23 931  s 24 2039 # *
+pigs s 23 930  s 24 2038 # *
+pigs s 23 929  s 24 2037 # *
+pigs s 23 928  s 24 2036 # *
+pigs s 23 927  s 24 2035 # *
+pigs s 23 926  s 24 2034 # *
+pigs s 23 925  s 24 2033 # *
+pigs s 23 924  s 24 2032 # *
+pigs s 23 923  s 24 2031 # *
+pigs s 23 922  s 24 2030 # *
+pigs s 23 921  s 24 2029 # *
+pigs s 23 920  s 24 2028 # *
+pigs s 23 919  s 24 2027 # *
+pigs s 23 918  s 24 2026 # *
+pigs s 23 917  s 24 2025 # *
+pigs s 23 916  s 24 2024 # 142.53° 42.84 ° 0.15,3.01
+pigs s 23 915  s 24 2023 # *
+pigs s 23 914  s 24 2022 # *
+pigs s 23 913  s 24 2021 # *
+pigs s 23 912  s 24 2020 # *
+pigs s 23 911  s 24 2018 # *
+pigs s 23 910  s 24 2017 # *
+pigs s 23 909  s 24 2016 # *
+pigs s 23 908  s 24 2015 # *
+pigs s 23 907  s 24 2014 # *
+pigs s 23 906  s 24 2013 # *
+pigs s 23 905  s 24 2012 # *
+pigs s 23 904  s 24 2011 # *
+pigs s 23 903  s 24 2010 # *
+pigs s 23 902  s 24 2008 # *
+pigs s 23 901  s 24 2007 # *
+pigs s 23 900  s 24 2006 # *
+pigs s 23 899  s 24 2005 # *
+pigs s 23 898  s 24 2004 # *
+pigs s 23 897  s 24 2003 # *
+pigs s 23 896  s 24 2002 # *
+pigs s 23 895  s 24 2001 # *
+pigs s 23 894  s 24 2000 # *
+pigs s 23 893  s 24 1998 # *
+pigs s 23 892  s 24 1997 # *
+pigs s 23 891  s 24 1996 # *
+pigs s 23 890  s 24 1995 # *
+pigs s 23 889  s 24 1994 # *
+pigs s 23 888  s 24 1993 # *
+pigs s 23 887  s 24 1992 # *
+pigs s 23 886  s 24 1991 # *
+pigs s 23 885  s 24 1990 # *
+pigs s 23 884  s 24 1988 # *
+pigs s 23 883  s 24 1987 # *
+pigs s 23 882  s 24 1986 # *
+pigs s 23 881  s 24 1985 # *
+pigs s 23 880  s 24 1984 # *
+pigs s 23 879  s 24 1983 # 145.88° 46.56 ° 0.35,3.03
+pigs s 23 878  s 24 1982 # *
+pigs s 23 877  s 24 1981 # *
+pigs s 23 876  s 24 1979 # *
+pigs s 23 875  s 24 1978 # *
+pigs s 23 874  s 24 1977 # *
+pigs s 23 873  s 24 1976 # *
+pigs s 23 872  s 24 1975 # *
+pigs s 23 871  s 24 1973 # *
+pigs s 23 870  s 24 1972 # *
+pigs s 23 869  s 24 1971 # *
+pigs s 23 868  s 24 1970 # *
+pigs s 23 867  s 24 1968 # *
+pigs s 23 866  s 24 1967 # *
+pigs s 23 865  s 24 1966 # *
+pigs s 23 864  s 24 1965 # *
+pigs s 23 863  s 24 1964 # *
+pigs s 23 862  s 24 1962 # *
+pigs s 23 861  s 24 1961 # *
+pigs s 23 860  s 24 1960 # *
+pigs s 23 859  s 24 1959 # *
+pigs s 23 858  s 24 1958 # *
+pigs s 23 857  s 24 1956 # *
+pigs s 23 856  s 24 1955 # *
+pigs s 23 855  s 24 1954 # *
+pigs s 23 854  s 24 1953 # *
+pigs s 23 853  s 24 1952 # *
+pigs s 23 852  s 24 1950 # *
+pigs s 23 851  s 24 1949 # *
+pigs s 23 850  s 24 1948 # *
+pigs s 23 849  s 24 1947 # *
+pigs s 23 848  s 24 1945 # *
+pigs s 23 847  s 24 1944 # *
+pigs s 23 846  s 24 1943 # 148.85° 50.14 ° 0.54,3.07
+pigs s 23 845  s 24 1942 # *
+pigs s 23 844  s 24 1940 # *
+pigs s 23 843  s 24 1939 # *
+pigs s 23 842  s 24 1938 # *
+pigs s 23 841  s 24 1937 # *
+pigs s 23 840  s 24 1935 # *
+pigs s 23 839  s 24 1934 # *
+pigs s 23 838  s 24 1933 # *
+pigs s 23 837  s 24 1931 # *
+pigs s 23 836  s 24 1930 # *
+pigs s 23 835  s 24 1929 # *
+pigs s 23 834  s 24 1927 # *
+pigs s 23 833  s 24 1926 # *
+pigs s 23 832  s 24 1925 # *
+pigs s 23 831  s 24 1924 # *
+pigs s 23 830  s 24 1922 # *
+pigs s 23 829  s 24 1921 # *
+pigs s 23 828  s 24 1920 # *
+pigs s 23 827  s 24 1918 # *
+pigs s 23 826  s 24 1917 # *
+pigs s 23 825  s 24 1916 # *
+pigs s 23 824  s 24 1914 # *
+pigs s 23 823  s 24 1913 # *
+pigs s 23 822  s 24 1912 # *
+pigs s 23 821  s 24 1911 # *
+pigs s 23 820  s 24 1909 # *
+pigs s 23 819  s 24 1908 # *
+pigs s 23 818  s 24 1907 # *
+pigs s 23 817  s 24 1905 # *
+pigs s 23 816  s 24 1904 # 151.54° 53.64 ° 0.73,3.14
+pigs s 23 815  s 24 1903 # *
+pigs s 23 814  s 24 1901 # *
+pigs s 23 813  s 24 1900 # *
+pigs s 23 812  s 24 1899 # *
+pigs s 23 811  s 24 1897 # *
+pigs s 23 810  s 24 1896 # *
+pigs s 23 809  s 24 1895 # *
+pigs s 23 808  s 24 1893 # *
+pigs s 23 807  s 24 1892 # *
+pigs s 23 806  s 24 1891 # *
+pigs s 23 805  s 24 1889 # *
+pigs s 23 804  s 24 1888 # *
+pigs s 23 803  s 24 1886 # *
+pigs s 23 802  s 24 1885 # *
+pigs s 23 801  s 24 1884 # *
+pigs s 23 800  s 24 1882 # *
+pigs s 23 799  s 24 1881 # *
+pigs s 23 798  s 24 1880 # *
+pigs s 23 797  s 24 1878 # *
+pigs s 23 796  s 24 1877 # *
+pigs s 23 795  s 24 1876 # *
+pigs s 23 794  s 24 1874 # *
+pigs s 23 793  s 24 1873 # *
+pigs s 23 792  s 24 1872 # *
+pigs s 23 791  s 24 1870 # *
+pigs s 23 790  s 24 1869 # 153.92° 56.78 ° 0.91,3.22
+pigs s 23 789  s 24 1868 # *
+pigs s 23 788  s 24 1866 # *
+pigs s 23 787  s 24 1865 # *
+pigs s 23 786  s 24 1864 # *
+pigs s 23 785  s 24 1863 # *
+pigs s 23 784  s 24 1861 # *
+pigs s 23 783  s 24 1860 # *
+pigs s 23 782  s 24 1859 # *
+pigs s 23 781  s 24 1857 # *
+pigs s 23 780  s 24 1856 # *
+pigs s 23 779  s 24 1855 # *
+pigs s 23 778  s 24 1854 # *
+pigs s 23 777  s 24 1852 # *
+pigs s 23 776  s 24 1851 # *
+pigs s 23 775  s 24 1850 # *
+pigs s 23 774  s 24 1849 # *
+pigs s 23 773  s 24 1847 # *
+pigs s 23 772  s 24 1846 # *
+pigs s 23 771  s 24 1845 # *
+pigs s 23 770  s 24 1843 # *
+pigs s 23 769  s 24 1842 # *
+pigs s 23 768  s 24 1841 # *
+pigs s 23 767  s 24 1840 # *
+pigs s 23 766  s 24 1838 # *
+pigs s 23 765  s 24 1837 # 156.13° 59.67 ° 1.09,3.32
+pigs s 23 764  s 24 1836 # *
+pigs s 23 763  s 24 1834 # *
+pigs s 23 762  s 24 1833 # *
+pigs s 23 761  s 24 1832 # *
+pigs s 23 760  s 24 1830 # *
+pigs s 23 759  s 24 1829 # *
+pigs s 23 758  s 24 1828 # *
+pigs s 23 757  s 24 1826 # *
+pigs s 23 756  s 24 1825 # *
+pigs s 23 755  s 24 1824 # *
+pigs s 23 754  s 24 1822 # *
+pigs s 23 753  s 24 1821 # *
+pigs s 23 752  s 24 1820 # *
+pigs s 23 751  s 24 1819 # *
+pigs s 23 750  s 24 1817 # *
+pigs s 23 749  s 24 1816 # *
+pigs s 23 748  s 24 1815 # *
+pigs s 23 747  s 24 1813 # *
+pigs s 23 746  s 24 1812 # 157.9 ° 61.9  ° 1.25,3.44
+pigs s 23 745  s 24 1811 # *
+pigs s 23 744  s 24 1810 # *
+pigs s 23 743  s 24 1809 # *
+pigs s 23 742  s 24 1808 # *
+pigs s 23 741  s 24 1806 # *
+pigs s 23 740  s 24 1805 # *
+pigs s 23 739  s 24 1804 # *
+pigs s 23 738  s 24 1803 # *
+pigs s 23 737  s 24 1802 # *
+pigs s 23 736  s 24 1801 # *
+pigs s 23 735  s 24 1800 # *
+pigs s 23 734  s 24 1799 # *
+pigs s 23 733  s 24 1798 # *
+pigs s 23 732  s 24 1796 # *
+pigs s 23 731  s 24 1795 # *
+pigs s 23 730  s 24 1794 # *
+pigs s 23 729  s 24 1793 # *
+pigs s 23 728  s 24 1792 # 159.47° 63.68 ° 1.4,3.57
+pigs s 23 727  s 24 1791 # *
+pigs s 23 726  s 24 1790 # *
+pigs s 23 725  s 24 1789 # *
+pigs s 23 724  s 24 1788 # *
+pigs s 23 723  s 24 1787 # *
+pigs s 23 722  s 24 1786 # *
+pigs s 23 720  s 24 1785 # *
+pigs s 23 719  s 24 1784 # *
+pigs s 23 718  s 24 1783 # *
+pigs s 23 717  s 24 1782 # *
+pigs s 23 716  s 24 1781 # *
+pigs s 23 715  s 24 1780 # *
+pigs s 23 714  s 24 1779 # 160.73° 64.87 ° 1.53,3.71
+pigs s 23 713  s 24 1778 # *
+pigs s 23 711  s 24 1777 # *
+pigs s 23 710  s 24 1776 # *
+pigs s 23 708  s 24 1775 # *
+pigs s 23 707  s 24 1774 # *
+pigs s 23 705  s 24 1773 # *
+pigs s 23 704  s 24 1772 # *
+pigs s 23 702  s 24 1771 # 161.83° 65.6  ° 1.65,3.87
+pigs s 23 699  s 24 1770 # *
+pigs s 23 697  s 24 1769 # *
+pigs s 23 694  s 24 1768 # *
+pigs s 23 691  s 24 1767 # 162.83° 65.94 ° 1.76,4.04
+pigs s 23 689  s 24 1768 # *
+pigs s 23 686  s 24 1769 # *
+pigs s 23 684  s 24 1770 # 163.48° 65.7  ° 1.84,4.22
+pigs s 23 683  s 24 1771 # *
+pigs s 23 682  s 24 1772 # *
+pigs s 23 680  s 24 1773 # *
+pigs s 23 679  s 24 1774 # *
+pigs s 23 678  s 24 1775 # *
+pigs s 23 677  s 24 1776 # 164.08° 65.16 ° 1.91,4.41
+pigs s 23 676  s 24 1778 # *
+pigs s 23 675  s 24 1780 # *
+pigs s 23 674  s 24 1781 # *
+pigs s 23 673  s 24 1783 # *
+pigs s 23 672  s 24 1785 # 164.52° 64.31 ° 1.96,4.6
+pigs s 23 671  s 24 1790 # *
+pigs s 23 670  s 24 1794 # *
+pigs s 23 669  s 24 1799 # 164.81° 63.12 ° 1.99,4.8
+pigs s 23 668  s 24 1807 # *
+pigs s 23 667  s 24 1814 # 164.97° 61.7  ° 2,5
+pigs s 23 666  s 24 1813 # *
+pigs s 23 664  s 24 1812 # *
+pigs s 23 663  s 24 1811 # *
+pigs s 23 662  s 24 1810 # *
+pigs s 23 660  s 24 1809 # *
+pigs s 23 659  s 24 1808 # *
+pigs s 23 658  s 24 1807 # *
+pigs s 23 656  s 24 1806 # *
+pigs s 23 655  s 24 1805 # *
+pigs s 23 654  s 24 1804 # *
+pigs s 23 652  s 24 1803 # *
+pigs s 23 651  s 24 1802 # *
+pigs s 23 650  s 24 1801 # *
+pigs s 23 649  s 24 1800 # *
+pigs s 23 647  s 24 1799 # *
+pigs s 23 646  s 24 1798 # *
+pigs s 23 645  s 24 1797 # *
+pigs s 23 643  s 24 1796 # *
+pigs s 23 642  s 24 1795 # *
+pigs s 23 641  s 24 1794 # *
+pigs s 23 639  s 24 1793 # *
+pigs s 23 638  s 24 1792 # *
+pigs s 23 637  s 24 1791 # *
+pigs s 23 635  s 24 1790 # *
+pigs s 23 634  s 24 1789 # *
+pigs s 23 633  s 24 1788 # *
+pigs s 23 631  s 24 1787 # *
+pigs s 23 630  s 24 1786 # *
+pigs s 23 629  s 24 1785 # *
+pigs s 23 627  s 24 1784 # *
+pigs s 23 626  s 24 1783 # *
+pigs s 23 625  s 24 1782 # *
+pigs s 23 623  s 24 1781 # *
+pigs s 23 622  s 24 1780 # *
+pigs s 23 621  s 24 1779 # *
+pigs s 23 619  s 24 1778 # *
+pigs s 23 618  s 24 1777 # *
+pigs s 23 617  s 24 1776 # *
+pigs s 23 616  s 24 1775 # *
+pigs s 23 614  s 24 1774 # *
+pigs s 23 613  s 24 1773 # *
+pigs s 23 612  s 24 1772 # *
+pigs s 23 610  s 24 1771 # *
+pigs s 23 609  s 24 1770 # *
+pigs s 23 608  s 24 1769 # *
+pigs s 23 606  s 24 1768 # *
+pigs s 23 605  s 24 1767 # *
+pigs s 23 604  s 24 1766 # *
+pigs s 23 602  s 24 1765 # *
+pigs s 23 601  s 24 1764 # *
+pigs s 23 600  s 24 1763 # *
+pigs s 23 598  s 24 1762 # *
+pigs s 23 597  s 24 1761 # *
+pigs s 23 596  s 24 1760 # *
+pigs s 23 594  s 24 1759 # *
+pigs s 23 593  s 24 1758 # *
+pigs s 23 592  s 24 1757 # *
+pigs s 23 590  s 24 1756 # *
+pigs s 23 589  s 24 1755 # *
+pigs s 23 588  s 24 1754 # *
+pigs s 23 586  s 24 1753 # *
+pigs s 23 585  s 24 1752 # *
+pigs s 23 584  s 24 1751 # *
+pigs s 23 583  s 24 1750 # *
+pigs s 23 581  s 24 1749 # *
+pigs s 23 580  s 24 1748 # *
+pigs s 23 579  s 24 1747 # *
+pigs s 23 577  s 24 1746 # *
+pigs s 23 576  s 24 1745 # *
+pigs s 23 575  s 24 1744 # *
+pigs s 23 573  s 24 1743 # *
+pigs s 23 572  s 24 1742 # *
+pigs s 23 571  s 24 1741 # *
+pigs s 23 569  s 24 1740 # *
+pigs s 23 568  s 24 1739 # *
+pigs s 23 567  s 24 1738 # *
+pigs s 23 565  s 24 1737 # *
+pigs s 23 564  s 24 1736 # *
+pigs s 23 563  s 24 1735 # *
+pigs s 23 561  s 24 1734 # *
+pigs s 23 560  s 24 1733 # *
+pigs s 23 559  s 24 1732 # *
+pigs s 23 557  s 24 1731 # *
+pigs s 23 556  s 24 1730 # *
+pigs s 23 555  s 24 1729 # *
+pigs s 23 553  s 24 1728 # *
+pigs s 23 552  s 24 1727 # *
+pigs s 23 551  s 24 1726 # *
+pigs s 23 550  s 24 1725 # *
+pigs s 23 548  s 24 1724 # *
+pigs s 23 547  s 24 1723 # *
+pigs s 23 546  s 24 1722 # *
+pigs s 23 544  s 24 1721 # *
+pigs s 23 543  s 24 1720 # *
+pigs s 23 542  s 24 1719 # *
+pigs s 23 540  s 24 1718 # *
+pigs s 23 539  s 24 1717 # *
+pigs s 23 538  s 24 1716 # 176.56° 70.55 ° 3,5
+pigs s 23 539  s 24 1738 # 176.5 ° 68.59 ° 2.99,5.2
+pigs s 23 540  s 24 1760 # 176.44° 66.57 ° 2.97,5.4
+pigs s 23 541  s 24 1792 # *
+pigs s 23 542  s 24 1799 # *
+pigs s 23 543  s 24 1807 # 176.16° 62.36 ° 2.89,5.79
+pigs s 23 544  s 24 1819 # *
+pigs s 23 545  s 24 1831 # 175.94° 60.17 ° 2.83,5.98
+pigs s 23 546  s 24 1839 # *
+pigs s 23 547  s 24 1848 # *
+pigs s 23 548  s 24 1856 # 175.71° 57.93 ° 2.76,6.17
+pigs s 23 549  s 24 1864 # *
+pigs s 23 550  s 24 1873 # *
+pigs s 23 551  s 24 1881 # 175.44° 55.71 ° 2.68,6.35
+pigs s 23 552  s 24 1888 # *
+pigs s 23 553  s 24 1894 # *
+pigs s 23 554  s 24 1901 # *
+pigs s 23 555  s 24 1907 # 175.05° 53.36 ° 2.58,6.53
+pigs s 23 556  s 24 1912 # *
+pigs s 23 557  s 24 1917 # *
+pigs s 23 558  s 24 1923 # *
+pigs s 23 559  s 24 1928 # *
+pigs s 23 560  s 24 1933 # 174.61° 51.04 ° 2.47,6.7
+pigs s 23 561  s 24 1937 # *
+pigs s 23 562  s 24 1941 # *
+pigs s 23 563  s 24 1946 # *
+pigs s 23 564  s 24 1950 # *
+pigs s 23 565  s 24 1954 # *
+pigs s 23 566  s 24 1958 # 174.1 ° 48.74 ° 2.35,6.86
+pigs s 23 567  s 24 1962 # *
+pigs s 23 568  s 24 1967 # *
+pigs s 23 569  s 24 1971 # *
+pigs s 23 570  s 24 1975 # *
+pigs s 23 571  s 24 1980 # *
+pigs s 23 572  s 24 1984 # 173.52° 46.45 ° 2.22,7.01
+pigs s 23 573  s 24 1989 # *
+pigs s 23 574  s 24 1994 # *
+pigs s 23 575  s 24 1999 # *
+pigs s 23 576  s 24 2004 # *
+pigs s 23 577  s 24 2009 # 173.03° 44.15 ° 2.09,7.16
+pigs s 23 578  s 24 2012 # *
+pigs s 23 579  s 24 2015 # *
+pigs s 23 580  s 24 2017 # *
+pigs s 23 581  s 24 2020 # *
+pigs s 23 582  s 24 2023 # *
+pigs s 23 583  s 24 2026 # *
+pigs s 23 584  s 24 2028 # *
+pigs s 23 585  s 24 2031 # *
+pigs s 23 586  s 24 2034 # 172.29° 41.9  ° 1.94,7.29
+pigs s 23 587  s 24 2037 # *
+pigs s 23 588  s 24 2041 # *
+pigs s 23 589  s 24 2044 # *
+pigs s 23 590  s 24 2047 # *
+pigs s 23 591  s 24 2050 # *
+pigs s 23 592  s 24 2054 # *
+pigs s 23 593  s 24 2057 # *
+pigs s 23 594  s 24 2060 # 171.53° 39.56 ° 1.78,7.42
+pigs s 23 595  s 24 2063 # *
+pigs s 23 596  s 24 2065 # *
+pigs s 23 597  s 24 2068 # *
+pigs s 23 598  s 24 2070 # *
+pigs s 23 599  s 24 2073 # *
+pigs s 23 600  s 24 2075 # *
+pigs s 23 601  s 24 2078 # *
+pigs s 23 602  s 24 2080 # *
+pigs s 23 603  s 24 2083 # *
+pigs s 23 604  s 24 2085 # 170.6 ° 37.32 ° 1.61,7.53
+pigs s 23 605  s 24 2087 # *
+pigs s 23 606  s 24 2089 # *
+pigs s 23 607  s 24 2092 # *
+pigs s 23 608  s 24 2094 # *
+pigs s 23 609  s 24 2096 # *
+pigs s 23 610  s 24 2098 # *
+pigs s 23 611  s 24 2100 # *
+pigs s 23 612  s 24 2102 # *
+pigs s 23 613  s 24 2105 # *
+pigs s 23 614  s 24 2107 # *
+pigs s 23 615  s 24 2109 # 169.66° 35.15 ° 1.44,7.63
+pigs s 23 616  s 24 2111 # *
+pigs s 23 617  s 24 2113 # *
+pigs s 23 618  s 24 2115 # *
+pigs s 23 619  s 24 2117 # *
+pigs s 23 620  s 24 2119 # *
+pigs s 23 621  s 24 2121 # *
+pigs s 23 622  s 24 2124 # *
+pigs s 23 623  s 24 2126 # *
+pigs s 23 624  s 24 2128 # *
+pigs s 23 625  s 24 2130 # *
+pigs s 23 626  s 24 2132 # *
+pigs s 23 627  s 24 2134 # 168.61° 32.98 ° 1.26,7.72
+pigs s 23 628  s 24 2136 # *
+pigs s 23 629  s 24 2138 # *
+pigs s 23 630  s 24 2140 # *
+pigs s 23 631  s 24 2142 # *
+pigs s 23 632  s 24 2144 # *
+pigs s 23 633  s 24 2147 # *
+pigs s 23 634  s 24 2149 # *
+pigs s 23 635  s 24 2151 # *
+pigs s 23 636  s 24 2153 # *
+pigs s 23 637  s 24 2155 # *
+pigs s 23 638  s 24 2157 # 167.54° 30.88 ° 1.08,7.8
+pigs s 23 639  s 24 2159 # *
+pigs s 23 640  s 24 2160 # *
+pigs s 23 641  s 24 2162 # *
+pigs s 23 642  s 24 2164 # *
+pigs s 23 643  s 24 2165 # *
+pigs s 23 644  s 24 2167 # *
+pigs s 23 645  s 24 2168 # *
+pigs s 23 646  s 24 2170 # *
+pigs s 23 647  s 24 2172 # *
+pigs s 23 648  s 24 2173 # *
+pigs s 23 649  s 24 2175 # *
+pigs s 23 650  s 24 2177 # *
+pigs s 23 651  s 24 2178 # *
+pigs s 23 652  s 24 2180 # 166.35° 28.77 ° 0.89,7.87
+pigs s 23 653  s 24 2182 # *
+pigs s 23 654  s 24 2183 # *
+pigs s 23 655  s 24 2185 # *
+pigs s 23 656  s 24 2186 # *
+pigs s 23 657  s 24 2188 # *
+pigs s 23 658  s 24 2189 # *
+pigs s 23 659  s 24 2191 # *
+pigs s 23 660  s 24 2193 # *
+pigs s 23 661  s 24 2194 # *
+pigs s 23 662  s 24 2196 # *
+pigs s 23 663  s 24 2197 # *
+pigs s 23 664  s 24 2199 # *
+pigs s 23 665  s 24 2200 # *
+pigs s 23 666  s 24 2202 # 165.04° 26.82 ° 0.7,7.92
+pigs s 23 667  s 24 2203 # *
+pigs s 23 668  s 24 2205 # *
+pigs s 23 669  s 24 2206 # *
+pigs s 23 670  s 24 2208 # *
+pigs s 23 671  s 24 2209 # *
+pigs s 23 672  s 24 2210 # *
+pigs s 23 673  s 24 2212 # *
+pigs s 23 674  s 24 2213 # *
+pigs s 23 675  s 24 2214 # *
+pigs s 23 676  s 24 2216 # *
+pigs s 23 677  s 24 2217 # *
+pigs s 23 678  s 24 2219 # *
+pigs s 23 679  s 24 2220 # *
+pigs s 23 680  s 24 2221 # *
+pigs s 23 681  s 24 2223 # *
+pigs s 23 682  s 24 2224 # 163.59° 24.86 ° 0.5,7.96
+pigs s 23 683  s 24 2225 # *
+pigs s 23 684  s 24 2226 # *
+pigs s 23 685  s 24 2227 # *
+pigs s 23 686  s 24 2228 # *
+pigs s 23 687  s 24 2230 # *
+pigs s 23 688  s 24 2231 # *
+pigs s 23 689  s 24 2232 # *
+pigs s 23 690  s 24 2233 # *
+pigs s 23 691  s 24 2234 # *
+pigs s 23 692  s 24 2235 # *
+pigs s 23 693  s 24 2236 # *
+pigs s 23 694  s 24 2237 # *
+pigs s 23 695  s 24 2238 # *
+pigs s 23 696  s 24 2240 # *
+pigs s 23 697  s 24 2241 # *
+pigs s 23 698  s 24 2242 # *
+pigs s 23 699  s 24 2243 # *
+pigs s 23 700  s 24 2244 # 162.01° 23.06 ° 0.3,7.98
+pigs s 23 701  s 24 2245 # *
+pigs s 23 702  s 24 2246 # *
+pigs s 23 703  s 24 2248 # *
+pigs s 23 704  s 24 2249 # *
+pigs s 23 705  s 24 2250 # *
+pigs s 23 706  s 24 2251 # *
+pigs s 23 707  s 24 2252 # *
+pigs s 23 708  s 24 2253 # *
+pigs s 23 709  s 24 2255 # *
+pigs s 23 710  s 24 2256 # *
+pigs s 23 711  s 24 2257 # *
+pigs s 23 712  s 24 2258 # *
+pigs s 23 713  s 24 2259 # *
+pigs s 23 714  s 24 2261 # *
+pigs s 23 715  s 24 2262 # *
+pigs s 23 716  s 24 2263 # *
+pigs s 23 717  s 24 2264 # 160.47° 21.22 ° 0.1,8
+pigs s 23 718  s 24 2265 # *
+pigs s 23 719  s 24 2266 # *
+pigs s 23 720  s 24 2267 # *
+pigs s 23 721  s 24 2268 # *
+pigs s 23 722  s 24 2269 # *
+pigs s 23 723  s 24 2270 # *
+pigs s 23 724  s 24 2271 # *
+pigs s 23 725  s 24 2272 # *
+pigs s 23 726  s 24 2273 # *
+pigs s 23 727  s 24 2274 # *
+pigs s 23 728  s 24 2275 # *
+pigs s 23 729  s 24 2276 # *
+pigs s 23 730  s 24 2277 # *
+pigs s 23 731  s 24 2278 # *
+pigs s 23 732  s 24 2279 # *
+pigs s 23 733  s 24 2280 # *
+pigs s 23 734  s 24 2281 # *
+pigs s 23 735  s 24 2282 # *
+pigs s 23 736  s 24 2283 # 158.78° 19.53 ° -0.1,8
+pigs s 23 737  s 24 2284 # *
+pigs s 23 738  s 24 2285 # *
+pigs s 23 740  s 24 2286 # *
+pigs s 23 741  s 24 2287 # *
+pigs s 23 742  s 24 2288 # *
+pigs s 23 743  s 24 2289 # *
+pigs s 23 744  s 24 2290 # *
+pigs s 23 745  s 24 2291 # *
+pigs s 23 747  s 24 2292 # *
+pigs s 23 748  s 24 2293 # *
+pigs s 23 749  s 24 2294 # *
+pigs s 23 750  s 24 2295 # *
+pigs s 23 751  s 24 2296 # *
+pigs s 23 753  s 24 2297 # *
+pigs s 23 754  s 24 2298 # *
+pigs s 23 755  s 24 2299 # *
+pigs s 23 756  s 24 2300 # 156.94° 17.99 ° -0.3,7.98
+pigs s 23 757  s 24 2301 # *
+pigs s 23 758  s 24 2302 # *
+pigs s 23 759  s 24 2303 # *
+pigs s 23 760  s 24 2304 # *
+pigs s 23 762  s 24 2305 # *
+pigs s 23 763  s 24 2306 # *
+pigs s 23 764  s 24 2307 # *
+pigs s 23 765  s 24 2308 # *
+pigs s 23 766  s 24 2309 # *
+pigs s 23 767  s 24 2310 # *
+pigs s 23 768  s 24 2311 # *
+pigs s 23 769  s 24 2312 # *
+pigs s 23 770  s 24 2313 # *
+pigs s 23 772  s 24 2314 # *
+pigs s 23 773  s 24 2315 # *
+pigs s 23 774  s 24 2316 # *
+pigs s 23 775  s 24 2317 # *
+pigs s 23 776  s 24 2318 # 155.14° 16.41 ° -0.5,7.96
+pigs s 23 777  s 24 2319 # *
+pigs s 23 779  s 24 2320 # *
+pigs s 23 780  s 24 2321 # *
+pigs s 23 782  s 24 2322 # *
+pigs s 23 783  s 24 2323 # *
+pigs s 23 784  s 24 2324 # *
+pigs s 23 786  s 24 2325 # *
+pigs s 23 787  s 24 2326 # *
+pigs s 23 788  s 24 2327 # *
+pigs s 23 790  s 24 2328 # *
+pigs s 23 791  s 24 2329 # *
+pigs s 23 793  s 24 2330 # *
+pigs s 23 794  s 24 2331 # *
+pigs s 23 795  s 24 2332 # *
+pigs s 23 797  s 24 2333 # *
+pigs s 23 798  s 24 2334 # 153.18° 14.96 ° -0.7,7.92
+pigs s 23 800  s 24 2335 # *
+pigs s 23 801  s 24 2336 # *
+pigs s 23 803  s 24 2337 # *
+pigs s 23 804  s 24 2338 # *
+pigs s 23 806  s 24 2339 # *
+pigs s 23 807  s 24 2340 # *
+pigs s 23 809  s 24 2341 # *
+pigs s 23 811  s 24 2342 # *
+pigs s 23 812  s 24 2343 # *
+pigs s 23 814  s 24 2344 # *
+pigs s 23 815  s 24 2345 # *
+pigs s 23 817  s 24 2346 # *
+pigs s 23 818  s 24 2347 # *
+pigs s 23 820  s 24 2348 # 151.23° 13.65 ° -0.89,7.87
+pigs s 23 822  s 24 2349 # *
+pigs s 23 823  s 24 2350 # *
+pigs s 23 825  s 24 2351 # *
+pigs s 23 827  s 24 2352 # *
+pigs s 23 828  s 24 2353 # *
+pigs s 23 830  s 24 2354 # *
+pigs s 23 831  s 24 2355 # *
+pigs s 23 833  s 24 2356 # *
+pigs s 23 835  s 24 2357 # *
+pigs s 23 836  s 24 2358 # *
+pigs s 23 838  s 24 2359 # *
+pigs s 23 840  s 24 2360 # *
+pigs s 23 841  s 24 2361 # *
+pigs s 23 843  s 24 2362 # 149.12° 12.46 ° -1.08,7.8
+pigs s 23 845  s 24 2363 # *
+pigs s 23 847  s 24 2364 # *
+pigs s 23 849  s 24 2365 # *
+pigs s 23 851  s 24 2366 # *
+pigs s 23 853  s 24 2367 # *
+pigs s 23 856  s 24 2368 # *
+pigs s 23 858  s 24 2369 # *
+pigs s 23 860  s 24 2370 # *
+pigs s 23 862  s 24 2371 # *
+pigs s 23 864  s 24 2372 # *
+pigs s 23 866  s 24 2373 # 147.02° 11.39 ° -1.26,7.72
+pigs s 23 868  s 24 2374 # *
+pigs s 23 870  s 24 2375 # *
+pigs s 23 872  s 24 2376 # *
+pigs s 23 874  s 24 2377 # *
+pigs s 23 876  s 24 2378 # *
+pigs s 23 878  s 24 2379 # *
+pigs s 23 881  s 24 2380 # *
+pigs s 23 883  s 24 2381 # *
+pigs s 23 885  s 24 2382 # *
+pigs s 23 887  s 24 2383 # *
+pigs s 23 889  s 24 2384 # *
+pigs s 23 891  s 24 2385 # 144.85° 10.34 ° -1.44,7.63
+pigs s 23 893  s 24 2386 # *
+pigs s 23 895  s 24 2387 # *
+pigs s 23 898  s 24 2388 # *
+pigs s 23 900  s 24 2389 # *
+pigs s 23 902  s 24 2390 # *
+pigs s 23 904  s 24 2391 # *
+pigs s 23 906  s 24 2392 # *
+pigs s 23 908  s 24 2393 # *
+pigs s 23 911  s 24 2394 # *
+pigs s 23 913  s 24 2395 # *
+pigs s 23 915  s 24 2396 # 142.68° 9.4   ° -1.61,7.53
+pigs s 23 918  s 24 2397 # *
+pigs s 23 920  s 24 2398 # *
+pigs s 23 923  s 24 2399 # *
+pigs s 23 925  s 24 2400 # *
+pigs s 23 928  s 24 2401 # *
+pigs s 23 930  s 24 2402 # *
+pigs s 23 933  s 24 2403 # *
+pigs s 23 935  s 24 2404 # *
+pigs s 23 938  s 24 2405 # *
+pigs s 23 940  s 24 2406 # 140.44° 8.47  ° -1.78,7.42
+pigs s 23 943  s 24 2407 # *
+pigs s 23 947  s 24 2408 # *
+pigs s 23 950  s 24 2409 # *
+pigs s 23 953  s 24 2410 # *
+pigs s 23 956  s 24 2411 # *
+pigs s 23 960  s 24 2412 # *
+pigs s 23 963  s 24 2413 # *
+pigs s 23 966  s 24 2414 # 138.1 ° 7.71  ° -1.94,7.29
+pigs s 23 969  s 24 2415 # *
+pigs s 23 972  s 24 2416 # *
+pigs s 23 974  s 24 2417 # *
+pigs s 23 977  s 24 2418 # *
+pigs s 23 980  s 24 2419 # *
+pigs s 23 983  s 24 2420 # *
+pigs s 23 985  s 24 2421 # *
+pigs s 23 988  s 24 2422 # *
+pigs s 23 991  s 24 2423 # 135.85° 6.97  ° -2.09,7.16
+pigs s 23 996  s 24 2424 # *
+pigs s 23 1001 s 24 2425 # *
+pigs s 23 1006 s 24 2426 # *
+pigs s 23 1011 s 24 2427 # *
+pigs s 23 1016 s 24 2428 # 133.55° 6.48  ° -2.22,7.01
+pigs s 23 1020 s 24 2429 # *
+pigs s 23 1025 s 24 2430 # *
+pigs s 23 1029 s 24 2431 # *
+pigs s 23 1033 s 24 2432 # *
+pigs s 23 1038 s 24 2433 # *
+pigs s 23 1042 s 24 2434 # 131.26° 5.9   ° -2.35,6.86
+pigs s 23 1046 s 24 2435 # *
+pigs s 23 1050 s 24 2436 # *
+pigs s 23 1055 s 24 2437 # *
+pigs s 23 1059 s 24 2438 # *
+pigs s 23 1063 s 24 2439 # *
+pigs s 23 1067 s 24 2440 # 128.96° 5.39  ° -2.47,6.7
+pigs s 23 1072 s 24 2441 # *
+pigs s 23 1077 s 24 2442 # *
+pigs s 23 1083 s 24 2443 # *
+pigs s 23 1088 s 24 2444 # *
+pigs s 23 1093 s 24 2445 # 126.64° 4.95  ° -2.58,6.53
+pigs s 23 1100 s 24 2446 # *
+pigs s 23 1106 s 24 2447 # *
+pigs s 23 1113 s 24 2448 # *
+pigs s 23 1119 s 24 2449 # 124.29° 4.56  ° -2.68,6.35
+pigs s 23 1127 s 24 2450 # *
+pigs s 23 1136 s 24 2451 # *
+pigs s 23 1144 s 24 2452 # 122.07° 4.29  ° -2.76,6.17
+pigs s 23 1152 s 24 2453 # *
+pigs s 23 1161 s 24 2454 # *
+pigs s 23 1169 s 24 2455 # 119.83° 4.06  ° -2.83,5.98
+pigs s 23 1181 s 24 2456 # *
+pigs s 23 1193 s 24 2457 # 117.64° 3.84  ° -2.89,5.79
+pigs s 23 1201 s 24 2458 # *
+pigs s 23 1208 s 24 2459 # *
+pigs s 23 1216 s 24 2460 # 115.52° 3.63  ° -2.94,5.6
+pigs s 23 1262 s 24 2461 # 111.41° 3.5   ° -2.99,5.2
+pigs s 23 1284 s 24 2462 # 109.45° 3.44  ° -3,5
+pigs s 23 1304 s 24 2461 # 107.64° 3.51  ° -2.99,4.8
+pigs s 23 1323 s 24 2460 # 105.9 ° 3.58  ° -2.97,4.6
+pigs s 23 1342 s 24 2459 # 104.25° 3.66  ° -2.94,4.4
+pigs s 23 1350 s 24 2458 # *
+pigs s 23 1357 s 24 2457 # 102.88° 3.89  ° -2.89,4.21
+pigs s 23 1362 s 24 2456 # *
+pigs s 23 1366 s 24 2455 # *
+pigs s 23 1371 s 24 2454 # 101.62° 4.13  ° -2.83,4.02
+pigs s 23 1375 s 24 2453 # *
+pigs s 23 1379 s 24 2452 # *
+pigs s 23 1383 s 24 2451 # 100.49° 4.38  ° -2.76,3.83
+pigs s 23 1386 s 24 2450 # *
+pigs s 23 1390 s 24 2449 # *
+pigs s 23 1393 s 24 2448 # 99.61 ° 4.68  ° -2.68,3.65
+pigs s 23 1394 s 24 2447 # *
+pigs s 23 1396 s 24 2446 # *
+pigs s 23 1397 s 24 2445 # *
+pigs s 23 1399 s 24 2444 # *
+pigs s 23 1400 s 24 2443 # 99.02 ° 5.12  ° -2.58,3.47
+pigs s 23 1401 s 24 2441 # *
+pigs s 23 1402 s 24 2440 # *
+pigs s 23 1403 s 24 2438 # 98.77 ° 5.62  ° -2.47,3.3
+pigs s 23 1402 s 24 2435 # *
+pigs s 23 1401 s 24 2431 # 98.89 ° 6.21  ° -2.35,3.14
+pigs s 23 1400 s 24 2430 # *
+pigs s 23 1399 s 24 2428 # *
+pigs s 23 1398 s 24 2427 # *
+pigs s 23 1397 s 24 2426 # *
+pigs s 23 1396 s 24 2424 # *
+pigs s 23 1395 s 24 2423 # 99.44 ° 6.89  ° -2.22,2.99
+pigs s 23 1394 s 24 2422 # *
+pigs s 23 1392 s 24 2421 # *
+pigs s 23 1391 s 24 2420 # *
+pigs s 23 1390 s 24 2419 # *
+pigs s 23 1388 s 24 2418 # *
+pigs s 23 1387 s 24 2417 # 100.21° 7.5   ° -2.09,2.84
+pigs s 23 1385 s 24 2416 # *
+pigs s 23 1384 s 24 2415 # *
+pigs s 23 1382 s 24 2414 # *
+pigs s 23 1380 s 24 2413 # *
+pigs s 23 1379 s 24 2412 # *
+pigs s 23 1377 s 24 2411 # *
+pigs s 23 1376 s 24 2410 # *
+pigs s 23 1374 s 24 2409 # *
+pigs s 23 1372 s 24 2408 # *
+pigs s 23 1371 s 24 2407 # *
+pigs s 23 1369 s 24 2406 # 101.79° 8.43  ° -1.94,2.71
+pigs s 23 1367 s 24 2405 # *
+pigs s 23 1365 s 24 2404 # *
+pigs s 23 1362 s 24 2403 # *
+pigs s 23 1360 s 24 2402 # *
+pigs s 23 1358 s 24 2401 # *
+pigs s 23 1356 s 24 2400 # *
+pigs s 23 1354 s 24 2399 # *
+pigs s 23 1352 s 24 2398 # *
+pigs s 23 1349 s 24 2397 # *
+pigs s 23 1347 s 24 2396 # *
+pigs s 23 1345 s 24 2395 # 103.91° 9.43  ° -1.78,2.58
+pigs s 23 1343 s 24 2394 # *
+pigs s 23 1340 s 24 2393 # *
+pigs s 23 1338 s 24 2392 # *
+pigs s 23 1336 s 24 2391 # *
+pigs s 23 1334 s 24 2390 # *
+pigs s 23 1331 s 24 2389 # *
+pigs s 23 1329 s 24 2388 # *
+pigs s 23 1327 s 24 2387 # *
+pigs s 23 1324 s 24 2386 # *
+pigs s 23 1322 s 24 2385 # *
+pigs s 23 1320 s 24 2384 # *
+pigs s 23 1318 s 24 2383 # *
+pigs s 23 1315 s 24 2382 # *
+pigs s 23 1313 s 24 2381 # 106.81° 10.7  ° -1.61,2.47
+pigs s 23 1310 s 24 2380 # *
+pigs s 23 1308 s 24 2379 # *
+pigs s 23 1305 s 24 2378 # *
+pigs s 23 1303 s 24 2377 # *
+pigs s 23 1300 s 24 2376 # *
+pigs s 23 1298 s 24 2375 # *
+pigs s 23 1295 s 24 2374 # *
+pigs s 23 1293 s 24 2373 # *
+pigs s 23 1290 s 24 2372 # *
+pigs s 23 1288 s 24 2371 # *
+pigs s 23 1285 s 24 2370 # *
+pigs s 23 1283 s 24 2369 # *
+pigs s 23 1280 s 24 2368 # *
+pigs s 23 1278 s 24 2367 # *
+pigs s 23 1275 s 24 2366 # 110.22° 12.06 ° -1.44,2.37
+pigs s 23 1272 s 24 2365 # *
+pigs s 23 1270 s 24 2364 # *
+pigs s 23 1267 s 24 2363 # *
+pigs s 23 1265 s 24 2362 # *
+pigs s 23 1262 s 24 2361 # *
+pigs s 23 1260 s 24 2360 # *
+pigs s 23 1257 s 24 2359 # *
+pigs s 23 1255 s 24 2358 # *
+pigs s 23 1252 s 24 2357 # *
+pigs s 23 1249 s 24 2356 # *
+pigs s 23 1247 s 24 2355 # *
+pigs s 23 1244 s 24 2354 # *
+pigs s 23 1242 s 24 2353 # *
+pigs s 23 1239 s 24 2352 # *
+pigs s 23 1237 s 24 2351 # *
+pigs s 23 1234 s 24 2350 # *
+pigs s 23 1231 s 24 2349 # *
+pigs s 23 1229 s 24 2348 # 114.37° 13.66 ° -1.26,2.28
+pigs s 23 1226 s 24 2347 # *
+pigs s 23 1224 s 24 2346 # *
+pigs s 23 1221 s 24 2345 # *
+pigs s 23 1218 s 24 2344 # *
+pigs s 23 1216 s 24 2343 # *
+pigs s 23 1213 s 24 2342 # *
+pigs s 23 1210 s 24 2341 # *
+pigs s 23 1208 s 24 2340 # *
+pigs s 23 1205 s 24 2339 # *
+pigs s 23 1202 s 24 2338 # *
+pigs s 23 1200 s 24 2337 # *
+pigs s 23 1197 s 24 2336 # *
+pigs s 23 1194 s 24 2335 # *
+pigs s 23 1191 s 24 2334 # *
+pigs s 23 1189 s 24 2333 # *
+pigs s 23 1186 s 24 2332 # *
+pigs s 23 1183 s 24 2331 # *
+pigs s 23 1181 s 24 2330 # *
+pigs s 23 1178 s 24 2329 # 118.97° 15.42 ° -1.08,2.2
+pigs s 23 1176 s 24 2328 # *
+pigs s 23 1173 s 24 2327 # *
+pigs s 23 1171 s 24 2326 # *
+pigs s 23 1168 s 24 2325 # *
+pigs s 23 1166 s 24 2324 # *
+pigs s 23 1163 s 24 2323 # *
+pigs s 23 1161 s 24 2322 # *
+pigs s 23 1159 s 24 2321 # *
+pigs s 23 1156 s 24 2320 # *
+pigs s 23 1154 s 24 2319 # *
+pigs s 23 1151 s 24 2318 # *
+pigs s 23 1149 s 24 2317 # *
+pigs s 23 1147 s 24 2316 # *
+pigs s 23 1144 s 24 2315 # *
+pigs s 23 1142 s 24 2314 # *
+pigs s 23 1139 s 24 2313 # *
+pigs s 23 1137 s 24 2312 # *
+pigs s 23 1134 s 24 2311 # *
+pigs s 23 1132 s 24 2310 # *
+pigs s 23 1130 s 24 2309 # *
+pigs s 23 1127 s 24 2308 # *
+pigs s 23 1125 s 24 2307 # *
+pigs s 23 1122 s 24 2306 # *
+pigs s 23 1120 s 24 2305 # 124.19° 17.53 ° -0.89,2.13
+pigs s 23 1118 s 24 2304 # *
+pigs s 23 1116 s 24 2303 # *
+pigs s 23 1113 s 24 2302 # *
+pigs s 23 1111 s 24 2301 # *
+pigs s 23 1109 s 24 2300 # *
+pigs s 23 1107 s 24 2299 # *
+pigs s 23 1105 s 24 2298 # *
+pigs s 23 1102 s 24 2297 # *
+pigs s 23 1100 s 24 2296 # *
+pigs s 23 1098 s 24 2295 # *
+pigs s 23 1096 s 24 2294 # *
+pigs s 23 1094 s 24 2293 # *
+pigs s 23 1092 s 24 2292 # *
+pigs s 23 1089 s 24 2291 # *
+pigs s 23 1087 s 24 2290 # *
+pigs s 23 1085 s 24 2289 # *
+pigs s 23 1083 s 24 2288 # *
+pigs s 23 1081 s 24 2287 # *
+pigs s 23 1078 s 24 2286 # *
+pigs s 23 1076 s 24 2285 # *
+pigs s 23 1074 s 24 2284 # *
+pigs s 23 1072 s 24 2283 # *
+pigs s 23 1070 s 24 2282 # *
+pigs s 23 1067 s 24 2281 # *
+pigs s 23 1065 s 24 2280 # *
+pigs s 23 1063 s 24 2279 # *
+pigs s 23 1061 s 24 2278 # 129.53° 20.01 ° -0.7,2.08
+pigs s 23 1059 s 24 2277 # *
+pigs s 23 1057 s 24 2276 # *
+pigs s 23 1055 s 24 2275 # *
+pigs s 23 1053 s 24 2274 # *
+pigs s 23 1052 s 24 2273 # *
+pigs s 23 1050 s 24 2272 # *
+pigs s 23 1048 s 24 2271 # *
+pigs s 23 1046 s 24 2270 # *
+pigs s 23 1044 s 24 2269 # *
+pigs s 23 1042 s 24 2268 # *
+pigs s 23 1040 s 24 2267 # *
+pigs s 23 1038 s 24 2266 # *
+pigs s 23 1037 s 24 2265 # *
+pigs s 23 1035 s 24 2264 # *
+pigs s 23 1033 s 24 2263 # *
+pigs s 23 1031 s 24 2262 # *
+pigs s 23 1029 s 24 2261 # *
+pigs s 23 1027 s 24 2260 # *
+pigs s 23 1025 s 24 2259 # *
+pigs s 23 1023 s 24 2258 # *
+pigs s 23 1022 s 24 2257 # *
+pigs s 23 1020 s 24 2256 # *
+pigs s 23 1018 s 24 2255 # *
+pigs s 23 1016 s 24 2254 # *
+pigs s 23 1014 s 24 2253 # *
+pigs s 23 1012 s 24 2252 # *
+pigs s 23 1010 s 24 2251 # *
+pigs s 23 1008 s 24 2250 # *
+pigs s 23 1006 s 24 2249 # *
+pigs s 23 1005 s 24 2248 # *
+pigs s 23 1003 s 24 2247 # *
+pigs s 23 1001 s 24 2246 # *
+pigs s 23 999  s 24 2245 # 135.1 ° 22.99 ° -0.5,2.04
+pigs s 23 998  s 24 2244 # *
+pigs s 23 996  s 24 2243 # *
+pigs s 23 995  s 24 2242 # *
+pigs s 23 993  s 24 2241 # *
+pigs s 23 992  s 24 2240 # *
+pigs s 23 990  s 24 2239 # *
+pigs s 23 989  s 24 2238 # *
+pigs s 23 987  s 24 2237 # *
+pigs s 23 986  s 24 2236 # *
+pigs s 23 984  s 24 2235 # *
+pigs s 23 983  s 24 2234 # *
+pigs s 23 981  s 24 2233 # *
+pigs s 23 980  s 24 2232 # *
+pigs s 23 978  s 24 2231 # *
+pigs s 23 977  s 24 2230 # *
+pigs s 23 975  s 24 2229 # *
+pigs s 23 974  s 24 2228 # *
+pigs s 23 972  s 24 2227 # *
+pigs s 23 971  s 24 2226 # *
+pigs s 23 969  s 24 2225 # *
+pigs s 23 968  s 24 2224 # *
+pigs s 23 966  s 24 2223 # *
+pigs s 23 965  s 24 2222 # *
+pigs s 23 963  s 24 2221 # *
+pigs s 23 962  s 24 2220 # *
+pigs s 23 960  s 24 2219 # *
+pigs s 23 959  s 24 2218 # *
+pigs s 23 957  s 24 2217 # *
+pigs s 23 956  s 24 2216 # *
+pigs s 23 954  s 24 2215 # *
+pigs s 23 953  s 24 2214 # *
+pigs s 23 951  s 24 2213 # *
+pigs s 23 950  s 24 2212 # *
+pigs s 23 948  s 24 2211 # *
+pigs s 23 947  s 24 2210 # *
+pigs s 23 945  s 24 2209 # *
+pigs s 23 944  s 24 2208 # *
+pigs s 23 942  s 24 2207 # *
+pigs s 23 941  s 24 2206 # 140.33° 26.49 ° -0.3,2.02
+pigs s 23 940  s 24 2205 # *
+pigs s 23 938  s 24 2204 # *
+pigs s 23 937  s 24 2203 # *
+pigs s 23 936  s 24 2202 # *
+pigs s 23 935  s 24 2201 # *
+pigs s 23 933  s 24 2200 # *
+pigs s 23 932  s 24 2199 # *
+pigs s 23 931  s 24 2198 # *
+pigs s 23 929  s 24 2197 # *
+pigs s 23 928  s 24 2196 # *
+pigs s 23 927  s 24 2195 # *
+pigs s 23 926  s 24 2194 # *
+pigs s 23 924  s 24 2193 # *
+pigs s 23 923  s 24 2192 # *
+pigs s 23 922  s 24 2191 # *
+pigs s 23 921  s 24 2190 # *
+pigs s 23 919  s 24 2189 # *
+pigs s 23 918  s 24 2188 # *
+pigs s 23 917  s 24 2187 # *
+pigs s 23 915  s 24 2186 # *
+pigs s 23 914  s 24 2185 # *
+pigs s 23 913  s 24 2184 # *
+pigs s 23 912  s 24 2183 # *
+pigs s 23 910  s 24 2182 # *
+pigs s 23 909  s 24 2181 # *
+pigs s 23 908  s 24 2180 # *
+pigs s 23 906  s 24 2179 # *
+pigs s 23 905  s 24 2178 # *
+pigs s 23 904  s 24 2177 # *
+pigs s 23 903  s 24 2176 # *
+pigs s 23 901  s 24 2175 # *
+pigs s 23 900  s 24 2174 # *
+pigs s 23 899  s 24 2173 # *
+pigs s 23 897  s 24 2172 # *
+pigs s 23 896  s 24 2171 # *
+pigs s 23 895  s 24 2170 # *
+pigs s 23 894  s 24 2169 # *
+pigs s 23 892  s 24 2168 # *
+pigs s 23 891  s 24 2167 # *
+pigs s 23 890  s 24 2166 # *
+pigs s 23 889  s 24 2165 # *
+pigs s 23 887  s 24 2164 # *
+pigs s 23 886  s 24 2163 # 145.3 ° 30.29 ° -0.1,2
+pigs s 23 885  s 24 2162 # *
+pigs s 23 884  s 24 2161 # *
+pigs s 23 883  s 24 2160 # *
+pigs s 23 882  s 24 2159 # *
+pigs s 23 881  s 24 2158 # *
+pigs s 23 880  s 24 2157 # *
+pigs s 23 879  s 24 2156 # *
+pigs s 23 878  s 24 2155 # *
+pigs s 23 877  s 24 2154 # *
+pigs s 23 876  s 24 2153 # *
+pigs s 23 875  s 24 2152 # *
+pigs s 23 874  s 24 2151 # *
+pigs s 23 873  s 24 2150 # *
+pigs s 23 872  s 24 2149 # *
+pigs s 23 871  s 24 2148 # *
+pigs s 23 870  s 24 2147 # *
+pigs s 23 869  s 24 2146 # *
+pigs s 23 868  s 24 2145 # *
+pigs s 23 867  s 24 2144 # *
+pigs s 23 866  s 24 2143 # *
+pigs s 23 865  s 24 2142 # *
+pigs s 23 864  s 24 2141 # *
+pigs s 23 863  s 24 2140 # *
+pigs s 23 862  s 24 2139 # *
+pigs s 23 861  s 24 2138 # *
+pigs s 23 860  s 24 2137 # *
+pigs s 23 859  s 24 2136 # *
+pigs s 23 858  s 24 2135 # *
+pigs s 23 857  s 24 2134 # *
+pigs s 23 856  s 24 2133 # *
+pigs s 23 855  s 24 2132 # *
+pigs s 23 854  s 24 2131 # *
+pigs s 23 853  s 24 2130 # *
+pigs s 23 852  s 24 2129 # *
+pigs s 23 851  s 24 2128 # *
+pigs s 23 850  s 24 2127 # *
+pigs s 23 849  s 24 2126 # *
+pigs s 23 848  s 24 2125 # *
+pigs s 23 847  s 24 2124 # *
+pigs s 23 846  s 24 2123 # *
+pigs s 23 845  s 24 2122 # *
+pigs s 23 844  s 24 2121 # *
+pigs s 23 843  s 24 2120 # *
+pigs s 23 842  s 24 2119 # *
+pigs s 23 841  s 24 2118 # *
+pigs s 23 840  s 24 2117 # *
+pigs s 23 839  s 24 2116 # *
+pigs s 23 838  s 24 2115 # *
+pigs s 23 837  s 24 2114 # 149.71° 34.7  ° 0.1,2
+pigs s 23 836  s 24 2113 # *
+pigs s 23 835  s 24 2111 # *
+pigs s 23 834  s 24 2110 # *
+pigs s 23 833  s 24 2109 # *
+pigs s 23 832  s 24 2108 # *
+pigs s 23 831  s 24 2106 # *
+pigs s 23 830  s 24 2105 # *
+pigs s 23 829  s 24 2104 # *
+pigs s 23 828  s 24 2102 # *
+pigs s 23 827  s 24 2101 # *
+pigs s 23 826  s 24 2100 # *
+pigs s 23 825  s 24 2099 # *
+pigs s 23 824  s 24 2097 # *
+pigs s 23 823  s 24 2096 # *
+pigs s 23 822  s 24 2095 # *
+pigs s 23 821  s 24 2094 # *
+pigs s 23 820  s 24 2092 # *
+pigs s 23 819  s 24 2091 # *
+pigs s 23 818  s 24 2090 # *
+pigs s 23 817  s 24 2088 # *
+pigs s 23 816  s 24 2087 # *
+pigs s 23 815  s 24 2086 # *
+pigs s 23 814  s 24 2085 # *
+pigs s 23 813  s 24 2083 # *
+pigs s 23 812  s 24 2082 # *
+pigs s 23 811  s 24 2081 # *
+pigs s 23 810  s 24 2079 # *
+pigs s 23 809  s 24 2078 # *
+pigs s 23 808  s 24 2077 # *
+pigs s 23 807  s 24 2076 # *
+pigs s 23 806  s 24 2074 # *
+pigs s 23 805  s 24 2073 # *
+pigs s 23 804  s 24 2072 # *
+pigs s 23 803  s 24 2070 # *
+pigs s 23 802  s 24 2069 # *
+pigs s 23 801  s 24 2068 # *
+pigs s 23 800  s 24 2067 # *
+pigs s 23 799  s 24 2065 # *
+pigs s 23 798  s 24 2064 # *
+pigs s 23 797  s 24 2063 # *
+pigs s 23 796  s 24 2062 # *
+pigs s 23 795  s 24 2060 # *
+pigs s 23 794  s 24 2059 # 153.51° 39.67 ° 0.3,2.02
+pigs s 23 793  s 24 2058 # *
+pigs s 23 792  s 24 2056 # *
+pigs s 23 791  s 24 2055 # *
+pigs s 23 790  s 24 2053 # *
+pigs s 23 789  s 24 2052 # *
+pigs s 23 788  s 24 2050 # *
+pigs s 23 787  s 24 2049 # *
+pigs s 23 786  s 24 2047 # *
+pigs s 23 785  s 24 2046 # *
+pigs s 23 784  s 24 2044 # *
+pigs s 23 783  s 24 2043 # *
+pigs s 23 782  s 24 2041 # *
+pigs s 23 781  s 24 2040 # *
+pigs s 23 780  s 24 2038 # *
+pigs s 23 779  s 24 2037 # *
+pigs s 23 778  s 24 2035 # *
+pigs s 23 777  s 24 2034 # *
+pigs s 23 776  s 24 2032 # *
+pigs s 23 775  s 24 2031 # *
+pigs s 23 774  s 24 2029 # *
+pigs s 23 773  s 24 2028 # *
+pigs s 23 772  s 24 2026 # *
+pigs s 23 771  s 24 2025 # *
+pigs s 23 770  s 24 2023 # *
+pigs s 23 769  s 24 2022 # *
+pigs s 23 768  s 24 2020 # *
+pigs s 23 767  s 24 2019 # *
+pigs s 23 766  s 24 2017 # *
+pigs s 23 765  s 24 2016 # *
+pigs s 23 764  s 24 2014 # *
+pigs s 23 763  s 24 2013 # *
+pigs s 23 762  s 24 2011 # *
+pigs s 23 761  s 24 2010 # *
+pigs s 23 760  s 24 2008 # *
+pigs s 23 759  s 24 2007 # *
+pigs s 23 758  s 24 2005 # *
+pigs s 23 757  s 24 2004 # *
+pigs s 23 756  s 24 2002 # *
+pigs s 23 755  s 24 2001 # 157.01° 44.9  ° 0.5,2.04
+pigs s 23 754  s 24 1999 # *
+pigs s 23 753  s 24 1997 # *
+pigs s 23 752  s 24 1995 # *
+pigs s 23 751  s 24 1993 # *
+pigs s 23 750  s 24 1992 # *
+pigs s 23 749  s 24 1990 # *
+pigs s 23 748  s 24 1988 # *
+pigs s 23 747  s 24 1986 # *
+pigs s 23 746  s 24 1984 # *
+pigs s 23 745  s 24 1982 # *
+pigs s 23 744  s 24 1980 # *
+pigs s 23 743  s 24 1978 # *
+pigs s 23 742  s 24 1977 # *
+pigs s 23 741  s 24 1975 # *
+pigs s 23 740  s 24 1973 # *
+pigs s 23 739  s 24 1971 # *
+pigs s 23 738  s 24 1969 # *
+pigs s 23 737  s 24 1967 # *
+pigs s 23 736  s 24 1965 # *
+pigs s 23 735  s 24 1963 # *
+pigs s 23 734  s 24 1962 # *
+pigs s 23 733  s 24 1960 # *
+pigs s 23 732  s 24 1958 # *
+pigs s 23 731  s 24 1956 # *
+pigs s 23 730  s 24 1954 # *
+pigs s 23 729  s 24 1952 # *
+pigs s 23 728  s 24 1950 # *
+pigs s 23 727  s 24 1948 # *
+pigs s 23 726  s 24 1946 # *
+pigs s 23 725  s 24 1945 # *
+pigs s 23 724  s 24 1943 # *
+pigs s 23 723  s 24 1941 # *
+pigs s 23 722  s 24 1939 # 159.99° 50.47 ° 0.7,2.08
+pigs s 23 721  s 24 1937 # *
+pigs s 23 720  s 24 1935 # *
+pigs s 23 719  s 24 1932 # *
+pigs s 23 718  s 24 1930 # *
+pigs s 23 717  s 24 1928 # *
+pigs s 23 716  s 24 1926 # *
+pigs s 23 715  s 24 1924 # *
+pigs s 23 714  s 24 1921 # *
+pigs s 23 713  s 24 1919 # *
+pigs s 23 712  s 24 1917 # *
+pigs s 23 711  s 24 1915 # *
+pigs s 23 710  s 24 1913 # *
+pigs s 23 709  s 24 1911 # *
+pigs s 23 708  s 24 1908 # *
+pigs s 23 707  s 24 1906 # *
+pigs s 23 706  s 24 1904 # *
+pigs s 23 705  s 24 1902 # *
+pigs s 23 704  s 24 1900 # *
+pigs s 23 703  s 24 1897 # *
+pigs s 23 702  s 24 1895 # *
+pigs s 23 701  s 24 1893 # *
+pigs s 23 700  s 24 1891 # *
+pigs s 23 699  s 24 1889 # *
+pigs s 23 698  s 24 1886 # *
+pigs s 23 697  s 24 1884 # *
+pigs s 23 696  s 24 1882 # *
+pigs s 23 695  s 24 1880 # 162.47° 55.81 ° 0.89,2.13
+pigs s 23 694  s 24 1878 # *
+pigs s 23 693  s 24 1875 # *
+pigs s 23 692  s 24 1873 # *
+pigs s 23 691  s 24 1870 # *
+pigs s 23 690  s 24 1868 # *
+pigs s 23 689  s 24 1865 # *
+pigs s 23 688  s 24 1863 # *
+pigs s 23 687  s 24 1861 # *
+pigs s 23 686  s 24 1858 # *
+pigs s 23 685  s 24 1856 # *
+pigs s 23 684  s 24 1853 # *
+pigs s 23 683  s 24 1851 # *
+pigs s 23 682  s 24 1849 # *
+pigs s 23 681  s 24 1846 # *
+pigs s 23 680  s 24 1844 # *
+pigs s 23 679  s 24 1841 # *
+pigs s 23 678  s 24 1839 # *
+pigs s 23 677  s 24 1836 # *
+pigs s 23 676  s 24 1834 # *
+pigs s 23 675  s 24 1832 # *
+pigs s 23 674  s 24 1829 # *
+pigs s 23 673  s 24 1827 # *
+pigs s 23 672  s 24 1824 # *
+pigs s 23 671  s 24 1822 # 164.58° 61.03 ° 1.08,2.2
+pigs s 23 670  s 24 1819 # *
+pigs s 23 669  s 24 1817 # *
+pigs s 23 668  s 24 1814 # *
+pigs s 23 667  s 24 1811 # *
+pigs s 23 666  s 24 1809 # *
+pigs s 23 665  s 24 1806 # *
+pigs s 23 664  s 24 1803 # *
+pigs s 23 663  s 24 1801 # *
+pigs s 23 662  s 24 1798 # *
+pigs s 23 661  s 24 1795 # *
+pigs s 23 660  s 24 1793 # *
+pigs s 23 659  s 24 1790 # *
+pigs s 23 658  s 24 1787 # *
+pigs s 23 657  s 24 1784 # *
+pigs s 23 656  s 24 1782 # *
+pigs s 23 655  s 24 1779 # *
+pigs s 23 654  s 24 1776 # *
+pigs s 23 653  s 24 1774 # *
+pigs s 23 652  s 24 1771 # 166.34° 65.63 ° 1.26,2.28
+pigs s 23 651  s 24 1768 # *
+pigs s 23 650  s 24 1766 # *
+pigs s 23 649  s 24 1763 # *
+pigs s 23 648  s 24 1761 # *
+pigs s 23 647  s 24 1758 # *
+pigs s 23 646  s 24 1756 # *
+pigs s 23 645  s 24 1753 # *
+pigs s 23 644  s 24 1751 # *
+pigs s 23 643  s 24 1748 # *
+pigs s 23 642  s 24 1745 # *
+pigs s 23 641  s 24 1743 # *
+pigs s 23 640  s 24 1740 # *
+pigs s 23 639  s 24 1738 # *
+pigs s 23 638  s 24 1735 # *
+pigs s 23 637  s 24 1733 # *
+pigs s 23 636  s 24 1730 # *
+pigs s 23 635  s 24 1727 # *
+pigs s 23 634  s 24 1725 # 167.94° 69.78 ° 1.44,2.37
+pigs s 23 633  s 24 1722 # *
+pigs s 23 632  s 24 1720 # *
+pigs s 23 631  s 24 1717 # *
+pigs s 23 630  s 24 1715 # *
+pigs s 23 629  s 24 1712 # *
+pigs s 23 628  s 24 1710 # *
+pigs s 23 627  s 24 1707 # *
+pigs s 23 626  s 24 1705 # *
+pigs s 23 625  s 24 1702 # *
+pigs s 23 624  s 24 1700 # *
+pigs s 23 623  s 24 1697 # *
+pigs s 23 622  s 24 1695 # *
+pigs s 23 621  s 24 1692 # *
+pigs s 23 620  s 24 1690 # *
+pigs s 23 619  s 24 1687 # 169.3 ° 73.19 ° 1.61,2.47
+pigs s 23 618  s 24 1685 # *
+pigs s 23 617  s 24 1682 # *
+pigs s 23 616  s 24 1680 # *
+pigs s 23 615  s 24 1678 # *
+pigs s 23 614  s 24 1676 # *
+pigs s 23 613  s 24 1673 # *
+pigs s 23 612  s 24 1671 # *
+pigs s 23 611  s 24 1669 # *
+pigs s 23 610  s 24 1666 # *
+pigs s 23 609  s 24 1664 # *
+pigs s 23 608  s 24 1662 # *
+pigs s 23 607  s 24 1660 # *
+pigs s 23 606  s 24 1657 # *
+pigs s 23 605  s 24 1655 # 170.57° 76.09 ° 1.78,2.58
+pigs s 23 604  s 24 1653 # *
+pigs s 23 603  s 24 1651 # *
+pigs s 23 602  s 24 1648 # *
+pigs s 23 601  s 24 1646 # *
+pigs s 23 600  s 24 1644 # *
+pigs s 23 599  s 24 1642 # *
+pigs s 23 598  s 24 1640 # *
+pigs s 23 597  s 24 1638 # *
+pigs s 23 596  s 24 1635 # *
+pigs s 23 595  s 24 1633 # *
+pigs s 23 594  s 24 1631 # 171.57° 78.21 ° 1.94,2.71
+pigs s 23 593  s 24 1629 # *
+pigs s 23 592  s 24 1628 # *
+pigs s 23 591  s 24 1626 # *
+pigs s 23 590  s 24 1624 # *
+pigs s 23 589  s 24 1623 # *
+pigs s 23 588  s 24 1621 # *
+pigs s 23 587  s 24 1620 # *
+pigs s 23 586  s 24 1618 # *
+pigs s 23 585  s 24 1616 # *
+pigs s 23 584  s 24 1615 # *
+pigs s 23 583  s 24 1613 # 172.5 ° 79.79 ° 2.09,2.84
+pigs s 23 582  s 24 1612 # *
+pigs s 23 581  s 24 1610 # *
+pigs s 23 580  s 24 1609 # *
+pigs s 23 579  s 24 1608 # *
+pigs s 23 578  s 24 1606 # *
+pigs s 23 577  s 24 1605 # 173.11° 80.56 ° 2.22,2.99
+pigs s 23 576  s 24 1604 # *
+pigs s 23 574  s 24 1603 # *
+pigs s 23 573  s 24 1602 # *
+pigs s 23 572  s 24 1601 # *
+pigs s 23 570  s 24 1600 # *
+pigs s 23 569  s 24 1599 # 173.79° 81.11 ° 2.35,3.14
+pigs s 23 566  s 24 1598 # *
+pigs s 23 562  s 24 1597 # 174.38° 81.23 ° 2.47,3.3
+pigs s 23 560  s 24 1598 # *
+pigs s 23 559  s 24 1599 # *
+pigs s 23 557  s 24 1600 # 174.88° 80.98 ° 2.58,3.47
+pigs s 23 556  s 24 1601 # *
+pigs s 23 555  s 24 1603 # *
+pigs s 23 554  s 24 1604 # *
+pigs s 23 553  s 24 1606 # *
+pigs s 23 552  s 24 1607 # 175.32° 80.39 ° 2.68,3.65
+pigs s 23 551  s 24 1610 # *
+pigs s 23 550  s 24 1614 # *
+pigs s 23 549  s 24 1617 # 175.62° 79.51 ° 2.76,3.83
+pigs s 23 548  s 24 1621 # *
+pigs s 23 547  s 24 1625 # *
+pigs s 23 546  s 24 1629 # 175.87° 78.38 ° 2.83,4.02
+pigs s 23 545  s 24 1634 # *
+pigs s 23 544  s 24 1638 # *
+pigs s 23 543  s 24 1643 # 176.11° 77.12 ° 2.89,4.21
+pigs s 23 542  s 24 1651 # *
+pigs s 23 541  s 24 1658 # 176.34° 75.75 ° 2.94,4.4
+pigs s 23 540  s 24 1677 # 176.42° 74.1  ° 2.97,4.6
+pigs s 23 539  s 24 1696 # 176.49° 72.36 ° 2.99,4.8
+pigs s 23 538  s 24 1716 # 176.56° 70.55 ° 3,5
+pigs s 23 539  s 24 1718 # *
+pigs s 23 540  s 24 1721 # *
+pigs s 23 541  s 24 1723 # *
+pigs s 23 542  s 24 1725 # *
+pigs s 23 543  s 24 1728 # *
+pigs s 23 544  s 24 1730 # *
+pigs s 23 545  s 24 1732 # *
+pigs s 23 546  s 24 1735 # *
+pigs s 23 547  s 24 1737 # *
+pigs s 23 548  s 24 1739 # *
+pigs s 23 549  s 24 1742 # *
+pigs s 23 550  s 24 1744 # *
+pigs s 23 551  s 24 1747 # *
+pigs s 23 552  s 24 1749 # *
+pigs s 23 553  s 24 1751 # *
+pigs s 23 554  s 24 1754 # *
+pigs s 23 555  s 24 1756 # *
+pigs s 23 556  s 24 1758 # *
+pigs s 23 557  s 24 1761 # *
+pigs s 23 558  s 24 1763 # *
+pigs s 23 559  s 24 1765 # *
+pigs s 23 560  s 24 1768 # *
+pigs s 23 561  s 24 1770 # *
+pigs s 23 562  s 24 1772 # *
+pigs s 23 563  s 24 1775 # *
+pigs s 23 564  s 24 1777 # *
+pigs s 23 565  s 24 1779 # *
+pigs s 23 566  s 24 1782 # *
+pigs s 23 567  s 24 1784 # *
+pigs s 23 568  s 24 1786 # *
+pigs s 23 569  s 24 1789 # *
+pigs s 23 570  s 24 1791 # *
+pigs s 23 571  s 24 1794 # *
+pigs s 23 572  s 24 1796 # *
+pigs s 23 573  s 24 1798 # *
+pigs s 23 574  s 24 1801 # *
+pigs s 23 575  s 24 1803 # *
+pigs s 23 576  s 24 1805 # *
+pigs s 23 577  s 24 1808 # *
+pigs s 23 578  s 24 1810 # *
+pigs s 23 579  s 24 1812 # *
+pigs s 23 580  s 24 1815 # *
+pigs s 23 581  s 24 1817 # *
+pigs s 23 582  s 24 1819 # *
+pigs s 23 583  s 24 1822 # *
+pigs s 23 584  s 24 1824 # *
+pigs s 23 585  s 24 1826 # *
+pigs s 23 586  s 24 1829 # *
+pigs s 23 587  s 24 1831 # *
+pigs s 23 588  s 24 1833 # *
+pigs s 23 589  s 24 1836 # *
+pigs s 23 590  s 24 1838 # *
+pigs s 23 591  s 24 1841 # *
+pigs s 23 592  s 24 1843 # *
+pigs s 23 593  s 24 1845 # *
+pigs s 23 594  s 24 1848 # *
+pigs s 23 595  s 24 1850 # *
+pigs s 23 596  s 24 1852 # *
+pigs s 23 597  s 24 1855 # *
+pigs s 23 598  s 24 1857 # *
+pigs s 23 599  s 24 1859 # *
+pigs s 23 600  s 24 1862 # *
+pigs s 23 601  s 24 1864 # *
+pigs s 23 602  s 24 1866 # *
+pigs s 23 603  s 24 1869 # *
+pigs s 23 604  s 24 1871 # *
+pigs s 23 605  s 24 1873 # *
+pigs s 23 606  s 24 1876 # *
+pigs s 23 607  s 24 1878 # *
+pigs s 23 608  s 24 1880 # *
+pigs s 23 609  s 24 1883 # *
+pigs s 23 610  s 24 1885 # *
+pigs s 23 611  s 24 1888 # *
+pigs s 23 612  s 24 1890 # *
+pigs s 23 613  s 24 1892 # *
+pigs s 23 614  s 24 1895 # *
+pigs s 23 615  s 24 1897 # *
+pigs s 23 616  s 24 1899 # *
+pigs s 23 617  s 24 1902 # *
+pigs s 23 618  s 24 1904 # *
+pigs s 23 619  s 24 1906 # *
+pigs s 23 620  s 24 1909 # *
+pigs s 23 621  s 24 1911 # *
+pigs s 23 622  s 24 1913 # *
+pigs s 23 623  s 24 1916 # *
+pigs s 23 624  s 24 1918 # *
+pigs s 23 625  s 24 1920 # *
+pigs s 23 626  s 24 1923 # *
+pigs s 23 627  s 24 1925 # *
+pigs s 23 628  s 24 1927 # *
+pigs s 23 629  s 24 1930 # *
+pigs s 23 630  s 24 1932 # *
+pigs s 23 631  s 24 1935 # *
+pigs s 23 632  s 24 1937 # *
+pigs s 23 633  s 24 1939 # *
+pigs s 23 634  s 24 1942 # *
+pigs s 23 635  s 24 1944 # *
+pigs s 23 636  s 24 1946 # *
+pigs s 23 637  s 24 1949 # *
+pigs s 23 638  s 24 1951 # *
+pigs s 23 639  s 24 1953 # *
+pigs s 23 640  s 24 1956 # *
+pigs s 23 641  s 24 1958 # *
+pigs s 23 642  s 24 1960 # *
+pigs s 23 643  s 24 1963 # *
+pigs s 23 644  s 24 1965 # *
+pigs s 23 645  s 24 1967 # *
+pigs s 23 646  s 24 1970 # *
+pigs s 23 647  s 24 1972 # *
+pigs s 23 648  s 24 1974 # *
+pigs s 23 649  s 24 1977 # *
+pigs s 23 650  s 24 1979 # *
+pigs s 23 651  s 24 1982 # *
+pigs s 23 652  s 24 1984 # *
+pigs s 23 653  s 24 1986 # *
+pigs s 23 654  s 24 1989 # *
+pigs s 23 655  s 24 1991 # *
+pigs s 23 656  s 24 1993 # *
+pigs s 23 657  s 24 1996 # *
+pigs s 23 658  s 24 1998 # *
+pigs s 23 659  s 24 2000 # *
+pigs s 23 660  s 24 2003 # *
+pigs s 23 661  s 24 2005 # *
+pigs s 23 662  s 24 2007 # *
+pigs s 23 663  s 24 2010 # *
+pigs s 23 664  s 24 2012 # *
+pigs s 23 665  s 24 2014 # *
+pigs s 23 666  s 24 2017 # *
+pigs s 23 667  s 24 2019 # *
+pigs s 23 668  s 24 2021 # *
+pigs s 23 669  s 24 2024 # *
+pigs s 23 670  s 24 2026 # *
+pigs s 23 671  s 24 2029 # *
+pigs s 23 672  s 24 2031 # *
+pigs s 23 673  s 24 2033 # *
+pigs s 23 674  s 24 2036 # *
+pigs s 23 675  s 24 2038 # *
+pigs s 23 676  s 24 2040 # *
+pigs s 23 677  s 24 2043 # *
+pigs s 23 678  s 24 2045 # *
+pigs s 23 679  s 24 2047 # *
+pigs s 23 680  s 24 2050 # *
+pigs s 23 681  s 24 2052 # *
+pigs s 23 682  s 24 2054 # *
+pigs s 23 683  s 24 2057 # *
+pigs s 23 684  s 24 2059 # *
+pigs s 23 685  s 24 2061 # *
+pigs s 23 686  s 24 2064 # *
+pigs s 23 687  s 24 2066 # *
+pigs s 23 688  s 24 2068 # *
+pigs s 23 689  s 24 2071 # *
+pigs s 23 690  s 24 2073 # *
+pigs s 23 691  s 24 2076 # *
+pigs s 23 692  s 24 2078 # *
+pigs s 23 693  s 24 2080 # *
+pigs s 23 694  s 24 2083 # *
+pigs s 23 695  s 24 2085 # *
+pigs s 23 696  s 24 2087 # *
+pigs s 23 697  s 24 2090 # *
+pigs s 23 698  s 24 2092 # *
+pigs s 23 699  s 24 2094 # *
+pigs s 23 700  s 24 2097 # *
+pigs s 23 701  s 24 2099 # *
+pigs s 23 702  s 24 2101 # *
+pigs s 23 703  s 24 2104 # *
+pigs s 23 704  s 24 2106 # *
+pigs s 23 705  s 24 2108 # *
+pigs s 23 706  s 24 2111 # *
+pigs s 23 707  s 24 2113 # *
+pigs s 23 708  s 24 2115 # *
+pigs s 23 709  s 24 2118 # *
+pigs s 23 710  s 24 2120 # *
+pigs s 23 711  s 24 2123 # *
+pigs s 23 712  s 24 2125 # *
+pigs s 23 713  s 24 2127 # *
+pigs s 23 714  s 24 2130 # *
+pigs s 23 715  s 24 2132 # *
+pigs s 23 716  s 24 2134 # *
+pigs s 23 717  s 24 2137 # *
+pigs s 23 718  s 24 2139 # *
+pigs s 23 719  s 24 2141 # *
+pigs s 23 720  s 24 2144 # *
+pigs s 23 721  s 24 2146 # *
+pigs s 23 722  s 24 2148 # *
+pigs s 23 723  s 24 2151 # *
+pigs s 23 724  s 24 2153 # *
+pigs s 23 725  s 24 2155 # *
+pigs s 23 726  s 24 2158 # *
+pigs s 23 727  s 24 2160 # *
+pigs s 23 728  s 24 2162 # *
+pigs s 23 729  s 24 2165 # *
+pigs s 23 730  s 24 2167 # *
+pigs s 23 731  s 24 2170 # *
+pigs s 23 732  s 24 2172 # *
+pigs s 23 733  s 24 2174 # *
+pigs s 23 734  s 24 2177 # *
+pigs s 23 735  s 24 2179 # *
+pigs s 23 736  s 24 2181 # *
+pigs s 23 737  s 24 2184 # *
+pigs s 23 738  s 24 2186 # *
+pigs s 23 739  s 24 2188 # *
+pigs s 23 740  s 24 2191 # *
+pigs s 23 741  s 24 2193 # *
+pigs s 23 742  s 24 2195 # *
+pigs s 23 743  s 24 2198 # *
+pigs s 23 744  s 24 2200 # *
+pigs s 23 745  s 24 2202 # *
+pigs s 23 746  s 24 2205 # *
+pigs s 23 747  s 24 2207 # *
+pigs s 23 748  s 24 2209 # *
+pigs s 23 749  s 24 2212 # *
+pigs s 23 750  s 24 2214 # *
+pigs s 23 751  s 24 2217 # *
+pigs s 23 752  s 24 2219 # *
+pigs s 23 753  s 24 2221 # *
+pigs s 23 754  s 24 2224 # *
+pigs s 23 755  s 24 2226 # *
+pigs s 23 756  s 24 2228 # *
+pigs s 23 757  s 24 2231 # *
+pigs s 23 758  s 24 2233 # *
+pigs s 23 759  s 24 2235 # *
+pigs s 23 760  s 24 2238 # *
+pigs s 23 761  s 24 2240 # 156.47° 23.53 ° 0,1.5
 
 pigs s 10 0 s 9 0 # all quiet
