@@ -1,113 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`calcServoAngles A angle @ max reach 1`] = `170.05`;
+exports[`calcServoAngles A angle @ max reach 1`] = `NaN`;
 
-exports[`calcServoAngles A angle @ min reach 1`] = `156.47`;
+exports[`calcServoAngles A angle @ min reach 1`] = `89.04`;
 
-exports[`calcServoAngles B angle @ max reach 1`] = `9.95`;
+exports[`calcServoAngles B angle @ max reach 1`] = `NaN`;
 
-exports[`calcServoAngles B angle @ min reach 1`] = `23.53`;
+exports[`calcServoAngles B angle @ min reach 1`] = `90.96`;
 
 exports[`calcTranslation calcTranslation diagonal / 1`] = `
 Object {
   "CURRENT_POSITION": Array [
-    103.04,
-    9.71,
+    69.3,
+    32.18,
   ],
-  "CURRENT_PULSE_A": 1355,
-  "CURRENT_PULSE_B": 2392,
-  "DELTA_DEGREES_A": 63.69,
-  "DELTA_DEGREES_B": 44.08,
-  "DELTA_PULSE_A": 708,
-  "DELTA_PULSE_B": 490,
+  "CURRENT_PULSE_A": 1730,
+  "CURRENT_PULSE_B": 2142,
+  "DELTA_DEGREES_A": 89.88,
+  "DELTA_DEGREES_B": 32.44,
+  "DELTA_PULSE_A": 999,
+  "DELTA_PULSE_B": 360,
   "DELTA_X": 4,
   "DELTA_Y": 3,
-  "NUM_STEPS": 490,
-  "PULSE_INCREMENT_A": -1.44,
+  "NUM_STEPS": 360,
+  "PULSE_INCREMENT_A": -2.77,
   "PULSE_INCREMENT_B": -1,
   "TARGET_POSITION": Array [
-    166.73,
-    53.79,
+    159.18,
+    64.62,
   ],
-  "TARGET_PULSE_A": 647,
-  "TARGET_PULSE_B": 1902,
+  "TARGET_PULSE_A": 731,
+  "TARGET_PULSE_B": 1782,
 }
 `;
 
 exports[`calcTranslation calcTranslation diagonal2 \\ 1`] = `
 Object {
   "CURRENT_POSITION": Array [
-    126.21,
-    13.27,
+    115.38,
+    20.82,
   ],
-  "CURRENT_PULSE_A": 1098,
-  "CURRENT_PULSE_B": 2353,
-  "DELTA_DEGREES_A": 44.08,
-  "DELTA_DEGREES_B": 63.69,
-  "DELTA_PULSE_A": 490,
-  "DELTA_PULSE_B": 708,
+  "CURRENT_PULSE_A": 1218,
+  "CURRENT_PULSE_B": 2269,
+  "DELTA_DEGREES_A": 32.44,
+  "DELTA_DEGREES_B": 89.88,
+  "DELTA_PULSE_A": 360,
+  "DELTA_PULSE_B": 999,
   "DELTA_X": 4,
   "DELTA_Y": 3,
-  "NUM_STEPS": 490,
+  "NUM_STEPS": 360,
   "PULSE_INCREMENT_A": -1,
-  "PULSE_INCREMENT_B": -1.44,
+  "PULSE_INCREMENT_B": -2.77,
   "TARGET_POSITION": Array [
-    170.29,
-    76.96,
+    147.82,
+    110.7,
   ],
-  "TARGET_PULSE_A": 608,
-  "TARGET_PULSE_B": 1645,
+  "TARGET_PULSE_A": 858,
+  "TARGET_PULSE_B": 1270,
 }
 `;
 
 exports[`calcTranslation calcTranslation horizontal 1`] = `
 Object {
   "CURRENT_POSITION": Array [
-    126.21,
-    13.27,
+    115.38,
+    20.82,
   ],
-  "CURRENT_PULSE_A": 1098,
-  "CURRENT_PULSE_B": 2353,
-  "DELTA_DEGREES_A": 40.52,
-  "DELTA_DEGREES_B": 40.52,
-  "DELTA_PULSE_A": 451,
-  "DELTA_PULSE_B": 451,
+  "CURRENT_PULSE_A": 1218,
+  "CURRENT_PULSE_B": 2269,
+  "DELTA_DEGREES_A": 43.8,
+  "DELTA_DEGREES_B": 43.8,
+  "DELTA_PULSE_A": 487,
+  "DELTA_PULSE_B": 487,
   "DELTA_X": 4,
   "DELTA_Y": 0,
-  "NUM_STEPS": 451,
+  "NUM_STEPS": 487,
   "PULSE_INCREMENT_A": -1,
   "PULSE_INCREMENT_B": -1,
   "TARGET_POSITION": Array [
-    166.73,
-    53.79,
+    159.18,
+    64.62,
   ],
-  "TARGET_PULSE_A": 647,
-  "TARGET_PULSE_B": 1902,
+  "TARGET_PULSE_A": 731,
+  "TARGET_PULSE_B": 1782,
 }
 `;
 
 exports[`calcTranslation calcTranslation vertical 1`] = `
 Object {
   "CURRENT_POSITION": Array [
-    140.92,
-    39.08,
+    124.51,
+    55.49,
   ],
-  "CURRENT_PULSE_A": 934,
-  "CURRENT_PULSE_B": 2066,
-  "DELTA_DEGREES_A": 4.21,
-  "DELTA_DEGREES_B": 4.21,
-  "DELTA_PULSE_A": 47,
-  "DELTA_PULSE_B": 47,
+  "CURRENT_PULSE_A": 1117,
+  "CURRENT_PULSE_B": 1883,
+  "DELTA_DEGREES_A": 9.79,
+  "DELTA_DEGREES_B": 9.79,
+  "DELTA_PULSE_A": 109,
+  "DELTA_PULSE_B": 109,
   "DELTA_X": 0,
   "DELTA_Y": 1,
-  "NUM_STEPS": 47,
+  "NUM_STEPS": 109,
   "PULSE_INCREMENT_A": -1,
   "PULSE_INCREMENT_B": 1,
   "TARGET_POSITION": Array [
-    145.13,
-    34.87,
+    134.3,
+    45.7,
   ],
-  "TARGET_PULSE_A": 887,
-  "TARGET_PULSE_B": 2113,
+  "TARGET_PULSE_A": 1008,
+  "TARGET_PULSE_B": 1992,
 }
 `;

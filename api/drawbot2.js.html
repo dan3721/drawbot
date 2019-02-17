@@ -103,21 +103,21 @@ const error = (msg) => {
  */
 const CFG = {
   servoOffset: 1,
-  arm1Length: 5,
-  arm2Length: 4.3,
+  arm1Length: 3.75,
+  arm2Length: 5,
   gigpoA: 23, // servo A (left)
   gigpoB: 24, // servo B (right)
   gigpoC: 25, // servo C (wrist)
-  servoAMaxPulseWidth: 2500,
-  servoAMinPulseWidth: 500,
-  servoBMaxPulseWidth: 2500,
-  servoBMinPulseWidth: 500,
+  servoAMaxPulseWidth: 2270,
+  servoAMinPulseWidth: 730,
+  servoBMaxPulseWidth: 2300,
+  servoBMinPulseWidth: 700,
 }
 
 const min_x = 0 + CFG.servoOffset - CFG.arm2Length
 const max_x = 0 - CFG.servoOffset + CFG.arm2Length
 
-const min_y = CFG.servoOffset + CFG.servoOffset / 2 // swag
+const min_y = CFG.servoOffset + CFG.servoOffset * .80 // swag
 const max_y = Math.sqrt(
   (Math.pow(CFG.arm2Length, 2) - Math.pow(CFG.servoOffset, 2))) + CFG.arm1Length
 
@@ -714,12 +714,17 @@ const execute = () => {
             }
 
             // round the actual pulses
-            const ACTUAL_PULSE_A = mapPulseWidthToRange(
-              protect(Math.round(PULSE_A)), CFG.servoAMinPulseWidth,
-              CFG.servoAMaxPulseWidth)
-            const ACTUAL_PULSE_B = mapPulseWidthToRange(
-              protect(Math.round(PULSE_B)), CFG.servoBMinPulseWidth,
-              CFG.servoBMaxPulseWidth)
+            const ACTUAL_PULSE_A =
+              protect(Math.round(mapPulseWidthToRange(PULSE_A,
+                CFG.servoAMinPulseWidth,
+                CFG.servoAMaxPulseWidth)))
+            const ACTUAL_PULSE_B =
+              protect(Math.round(mapPulseWidthToRange(
+                PULSE_B, CFG.servoBMinPulseWidth,
+                CFG.servoBMaxPulseWidth)))
+
+            // const ACTUAL_PULSE_A = protect(Math.round(PULSE_A))
+            // const ACTUAL_PULSE_B = protect(Math.round(PULSE_B))
 
             writePigsS(
               ACTUAL_PULSE_A, ACTUAL_PULSE_B,

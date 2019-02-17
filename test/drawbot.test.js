@@ -61,9 +61,9 @@ describe('utility', () => {
     () => expect(drawbot.isValidPoint(4, 8)).toBe(false)) // out top right
 
   // from circle-partially-out-of-bounds.js
-  const POINTS_HALF_IN_HALF_OUT = `-2,8,-2.08,8.38,-2.29,8.71,-2.62,8.92,-3,9,-3.38,8.92,-3.71\
-    8.71,-3.92,8.38,-4,8,-3.92,7.62,-3.71,7.29,-3.38,7.08,-3,7,-2.62,7.08,\
-    -2.29,7.29,-2.08,7.62`.split(',')
+  const POINTS_HALF_IN_HALF_OUT = `-0.5,8,-0.58,8.38,-0.79,8.71,-1.12,\
+  8.92,-1.5,9,-1.88,8.92,-2.21,8.71,-2.42,8.38,-2.5,8,-2.42,7.62,-2.21,7.29,\
+  -1.88,7.08,-1.5,7,-1.12,7.08,-0.79,7.29,-0.58,7.62`.split(',')
 
   it('ploylineContainsBadPoint',
     () => expect(drawbot.ploylineContainsBadPoint(POINTS_HALF_IN_HALF_OUT)).

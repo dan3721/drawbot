@@ -30,123 +30,116 @@
     <tbody>
     <tr style="vertical-align: top">
         <td>
-            <svg height="698" width="495"
+            <svg height="657" width="600"
                  style="background-color:white;border: black;border-style: solid;border-width: thin"
                  xmlns="http://www.w3.org/2000/svg">
 
                 <!--open drawable area-->
-                <circle cx="172.5" cy="323" r="322.5"
+                <circle cx="225" cy="375.75" r="375"
                         stroke="orange" stroke-width="1" fill="yellow" style="fill-opacity: 0.05;"/>
-                <circle cx="322.5" cy="323" r="322.5"
+                <circle cx="375" cy="375.75" r="375"
                         stroke="cyan" stroke-width="1" fill="cyan" style="fill-opacity: 0.05"/>
-                <rect y="585.5" width="495" height="112.5" style="fill:white;stroke-width:1;stroke:black"/>
+                <rect y="522" width="600" height="135" style="fill:white;stroke-width:1;stroke:black"/>
 
                 <!--x axis-->
-                <line x1="0" y1="698" x2="495" y2="698"
+                <line x1="0" y1="657" x2="600" y2="657"
                       style="stroke:red;stroke-width:4"/>
 
                 <!--y axis-->
-                <line x1="247.5" y1="698" x2="247.5" y2="0"
+                <line x1="300" y1="657" x2="300" y2="0"
                       style="stroke:green;stroke-width:1"/>
 
                 <!--servo A-->
-                <circle cx="172.5" cy="698" r="15" stroke="green" stroke-width="2" fill="green"
+                <circle cx="225" cy="657" r="15" stroke="green" stroke-width="2" fill="green"
                         style="fill-opacity: 0.1"/>
-                <text x="172.5" y="698" text-anchor="middle" stroke="black" stroke-width="1px">A
+                <text x="225" y="657" text-anchor="middle" stroke="black" stroke-width="1px">A
                 </text>
 
                 <!--servo B-->
-                <circle cx="322.5" cy="698" r="15" stroke="red" stroke-width="2" fill="red"
+                <circle cx="375" cy="657" r="15" stroke="red" stroke-width="2" fill="red"
                         style="fill-opacity: 0.1"/>
-                <text x="322.5" y="698" text-anchor="middle" stroke="black" stroke-width="1px">B
+                <text x="375" y="657" text-anchor="middle" stroke="black" stroke-width="1px">B
                 </text>
 
                 <!-- points and labels -->
-                <polyline points="247.5,585.5 210,98 204,69.49999999999989 188.25,44.749999999999886 81.75,151.25 106.5,167 135,173 163.5,167 188.25,151.25 204,126.5 210,98 247.5,585.5 "
+                <polyline points="300,522 262.5,57 256.5,28.499999999999886 134.25,110.25 159,126 187.5,132 216,126 240.75,110.25 256.5,85.5 262.5,57 300,522 "
                           style="fill:none;stroke:black;stroke-width:1"/>
-                <circle id="p0" cx="247.5" cy="585.5" r="2"
+                <circle id="p0" cx="300" cy="522" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(0, 0, 1.5)"
+                        fill="black" onmouseover="showPoint(0, 0, 1.8)"
                         onmouseout="resetPoint(0)"/>
-                <text x="257.5" y="575.5" fill="blue" style="font-size:85%">
-                    0(0,1.5)
+                <text x="310" y="512" fill="blue" style="font-size:85%">
+                    0(0,1.8)
                 </text>
-                <circle id="p1" cx="210" cy="98" r="2"
+                <circle id="p1" cx="262.5" cy="57" r="2"
                         stroke="blue" stroke-width="2"
                         fill="black" onmouseover="showPoint(1, -0.5, 8)"
                         onmouseout="resetPoint(1)"/>
-                <text x="220" y="88" fill="blue" style="font-size:85%">
+                <text x="272.5" y="47" fill="blue" style="font-size:85%">
                     1(-0.5,8)
                 </text>
-                <circle id="p2" cx="204" cy="69.49999999999989" r="2"
+                <circle id="p2" cx="256.5" cy="28.499999999999886" r="2"
                         stroke="blue" stroke-width="2"
                         fill="black" onmouseover="showPoint(2, -0.58, 8.38)"
                         onmouseout="resetPoint(2)"/>
-                <text x="214" y="59.499999999999886" fill="blue" style="font-size:85%">
+                <text x="266.5" y="18.499999999999886" fill="blue" style="font-size:85%">
                     2(-0.58,8.38)
                 </text>
-                <circle id="p3" cx="188.25" cy="44.749999999999886" r="2"
+                <circle id="p3" cx="134.25" cy="110.25" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(3, -0.79, 8.71)"
+                        fill="black" onmouseover="showPoint(3, -2.21, 7.29)"
                         onmouseout="resetPoint(3)"/>
-                <text x="198.25" y="34.749999999999886" fill="blue" style="font-size:85%">
-                    3(-0.79,8.71)
+                <text x="144.25" y="100.25" fill="blue" style="font-size:85%">
+                    3(-2.21,7.29)
                 </text>
-                <circle id="p4" cx="81.75" cy="151.25" r="2"
+                <circle id="p4" cx="159" cy="126" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(4, -2.21, 7.29)"
+                        fill="black" onmouseover="showPoint(4, -1.88, 7.08)"
                         onmouseout="resetPoint(4)"/>
-                <text x="91.75" y="141.25" fill="blue" style="font-size:85%">
-                    4(-2.21,7.29)
+                <text x="169" y="116" fill="blue" style="font-size:85%">
+                    4(-1.88,7.08)
                 </text>
-                <circle id="p5" cx="106.5" cy="167" r="2"
+                <circle id="p5" cx="187.5" cy="132" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(5, -1.88, 7.08)"
+                        fill="black" onmouseover="showPoint(5, -1.5, 7)"
                         onmouseout="resetPoint(5)"/>
-                <text x="116.5" y="157" fill="blue" style="font-size:85%">
-                    5(-1.88,7.08)
+                <text x="197.5" y="122" fill="blue" style="font-size:85%">
+                    5(-1.5,7)
                 </text>
-                <circle id="p6" cx="135" cy="173" r="2"
+                <circle id="p6" cx="216" cy="126" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(6, -1.5, 7)"
+                        fill="black" onmouseover="showPoint(6, -1.12, 7.08)"
                         onmouseout="resetPoint(6)"/>
-                <text x="145" y="163" fill="blue" style="font-size:85%">
-                    6(-1.5,7)
+                <text x="226" y="116" fill="blue" style="font-size:85%">
+                    6(-1.12,7.08)
                 </text>
-                <circle id="p7" cx="163.5" cy="167" r="2"
+                <circle id="p7" cx="240.75" cy="110.25" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(7, -1.12, 7.08)"
+                        fill="black" onmouseover="showPoint(7, -0.79, 7.29)"
                         onmouseout="resetPoint(7)"/>
-                <text x="173.5" y="157" fill="blue" style="font-size:85%">
-                    7(-1.12,7.08)
+                <text x="250.75" y="100.25" fill="blue" style="font-size:85%">
+                    7(-0.79,7.29)
                 </text>
-                <circle id="p8" cx="188.25" cy="151.25" r="2"
+                <circle id="p8" cx="256.5" cy="85.5" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(8, -0.79, 7.29)"
+                        fill="black" onmouseover="showPoint(8, -0.58, 7.62)"
                         onmouseout="resetPoint(8)"/>
-                <text x="198.25" y="141.25" fill="blue" style="font-size:85%">
-                    8(-0.79,7.29)
+                <text x="266.5" y="75.5" fill="blue" style="font-size:85%">
+                    8(-0.58,7.62)
                 </text>
-                <circle id="p9" cx="204" cy="126.5" r="2"
+                <circle id="p9" cx="262.5" cy="57" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(9, -0.58, 7.62)"
+                        fill="black" onmouseover="showPoint(9, -0.5, 8)"
                         onmouseout="resetPoint(9)"/>
-                <text x="214" y="116.5" fill="blue" style="font-size:85%">
-                    9(-0.58,7.62)
+                <text x="272.5" y="47" fill="blue" style="font-size:85%">
+                    9(-0.5,8)
                 </text>
-                <circle id="p10" cx="210" cy="98" r="2"
+                <circle id="p10" cx="300" cy="522" r="2"
                         stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(10, -0.5, 8)"
+                        fill="black" onmouseover="showPoint(10, 0, 1.8)"
                         onmouseout="resetPoint(10)"/>
-                <text x="220" y="88" fill="blue" style="font-size:85%">
-                    10(-0.5,8)
-                </text>
-                <circle id="p11" cx="247.5" cy="585.5" r="2"
-                        stroke="blue" stroke-width="2"
-                        fill="black" onmouseover="showPoint(11, 0, 1.5)"
-                        onmouseout="resetPoint(11)"/>
-                <text x="257.5" y="575.5" fill="blue" style="font-size:85%">
-                    11(0,1.5)
+                <text x="310" y="512" fill="blue" style="font-size:85%">
+                    10(0,1.8)
                 </text>
             </svg>
         </td>
