@@ -102,7 +102,6 @@ const error = (msg) => {
  * Setup configurations.
  */
 const CFG = {
-  home: {x: 0, y: 1.5},
   servoOffset: 1,
   arm1Length: 5,
   arm2Length: 4.3,
@@ -124,6 +123,9 @@ const max_y = Math.sqrt(
 
 log(
   `&lt;&lt; min_x:[${min_x}] max_x:[${max_x}] min_y:[${min_y}] max_y:[${max_y}] >>`)
+
+const HOME_X = 0
+const HOME_Y = min_y
 
 /**
  * Generates a random point within the drawable area.
@@ -219,6 +221,9 @@ const splitIntoContiguousMoves = (polyline, moves = []) => {
     }
 
   }
+  else {
+    moves = [polyline]
+  }
 
   return moves
 }
@@ -267,7 +272,7 @@ let _drawEnabled = false
 const CMD_QUEUE = []
 
 // current position
-let _currentPosition = CFG.home
+let _currentPosition = {x: HOME_X, y: HOME_Y}
 
 // point stack
 const POINTS = []
@@ -408,7 +413,7 @@ const calcServoAngle = (x, y, same) => {
   const ANGLE2 = radians2Degrees(
     Math.acos((Math.pow(A, 2) + Math.pow(B, 2) - Math.pow(C, 2)) / (2 * A * B)))
 
-  // step 4: add angles
+  // step 4: add / subtract angles
   let angle = same ? ANGLE1 + ANGLE2 : ANGLE2 - ANGLE1
 
   // console.log(
@@ -475,7 +480,7 @@ const move = (x, y, drawMove = false, throwErrorIfInvalid = false) => {
 /**
  * Moves the arms to the home position.
  */
-const moveHome = () => move(CFG.home.x, CFG.home.y)
+const moveHome = () => move(HOME_X, HOME_Y)
 
 /**
  * Queues the specified polygon. Same as invoking `queuePolyline(pints, true)`
@@ -502,23 +507,33 @@ const queuePolyline = (points, returnToStart = false) => {
   }
 
   // TODO: test with circle-partially-out-of-bounds.js
-  // points = splitIntoContiguousMoves(points)
-
-  // move to starting location (without drawing)
-  const xStart = points.shift()
-  const yStart = points.shift()
-  move(xStart, yStart)
-
-  // draw to all points
-  for (let i = 0; i &lt; points.length; i += 2) {
-    move(points[i], points[i + 1], true)
+  let moves = splitIntoContiguousMoves(points)
+  if (moves.length > 1) {
+    // capture starting point
+    let startX = moves[0][0], startY = moves[0][1]
+    // queue each move
+    moves.forEach(move => queuePolyline(move, false))
+    // return to starting point
+    move(startX, startY, true)
   }
+  else {
 
-  if (returnToStart) {
+    // move to starting location (without drawing)
+    const xStart = points.shift()
+    const yStart = points.shift()
     move(xStart, yStart)
-  }
 
-  drawOff()
+    // draw to all points
+    for (let i = 0; i &lt; points.length; i += 2) {
+      move(points[i], points[i + 1], true)
+    }
+
+    if (returnToStart) {
+      move(xStart, yStart)
+    }
+
+    drawOff()
+  }
 }
 
 /**
@@ -863,7 +878,7 @@ const writeHtml = (filename, _coordinates) => {
 
 }
 
-move(CFG.home.x, CFG.home.y) // reset to starting position
+moveHome() // start at home position
 
 // public API
 module.exports = {

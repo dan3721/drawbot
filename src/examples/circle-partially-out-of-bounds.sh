@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Sunday, February 17th, 2019, 9:31:21 AM
+# Sunday, February 17th, 2019, 2:41:21 PM
 #
 # filename:     circle-partially-out-of-bounds.js
-# num cmds:     262
-# num points:   19
+# num cmds:     225
+# num points:   12
 #
 
 pigs s 23 762  s 24 2247 # *
@@ -95,49 +95,12 @@ pigs s 23 698  s 24 2447 # *
 pigs s 23 697  s 24 2450 # *
 pigs s 23 696  s 24 2452 # *
 pigs s 23 695  s 24 2454 # 162.46° 4.15  ° -0.79,8.71
-pigs s 23 694  s 24 2457 # *
-pigs s 23 693  s 24 2459 # *
-pigs s 23 692  s 24 2462 # *
-pigs s 23 691  s 24 2464 # *
-pigs s 23 690  s 24 2467 # *
-pigs s 23 689  s 24 2469 # *
-pigs s 23 688  s 24 2472 # *
-pigs s 23 687  s 24 2474 # *
-pigs s 23 686  s 24 2477 # *
-pigs s 23 685  s 24 2480 # *
-pigs s 23 684  s 24 2482 # *
-pigs s 23 683  s 24 2485 # *
-pigs s 23 682  s 24 2487 # *
-pigs s 23 681  s 24 2490 # *
-pigs s 23 680  s 24 2492 # *
-pigs s 23 679  s 24 2495 # *
-pigs s 23 678  s 24 2498 # *
-pigs s 23 677  s 24 2500 # 164.04° 0     ° -1.12,8.92
-pigs s 23 960  s 24 2498 # *
-pigs s 23 961  s 24 2496 # *
-pigs s 23 962  s 24 2494 # *
-pigs s 23 963  s 24 2492 # *
-pigs s 23 964  s 24 2490 # *
-pigs s 23 965  s 24 2488 # *
-pigs s 23 966  s 24 2486 # *
-pigs s 23 967  s 24 2484 # *
-pigs s 23 968  s 24 2482 # *
-pigs s 23 969  s 24 2480 # *
-pigs s 23 970  s 24 2478 # *
-pigs s 23 971  s 24 2476 # *
-pigs s 23 972  s 24 2473 # *
-pigs s 23 973  s 24 2471 # *
-pigs s 23 974  s 24 2469 # *
-pigs s 23 975  s 24 2467 # *
-pigs s 23 976  s 24 2465 # *
-pigs s 23 977  s 24 2463 # *
-pigs s 23 978  s 24 2461 # *
-pigs s 23 979  s 24 2459 # *
-pigs s 23 980  s 24 2457 # *
-pigs s 23 981  s 24 2455 # *
-pigs s 23 982  s 24 2453 # *
-pigs s 23 983  s 24 2451 # *
-pigs s 23 984  s 24 2449 # *
+pigs s 23 736  s 24 2453 # *
+pigs s 23 778  s 24 2452 # *
+pigs s 23 819  s 24 2451 # *
+pigs s 23 861  s 24 2450 # *
+pigs s 23 902  s 24 2449 # *
+pigs s 23 944  s 24 2448 # *
 pigs s 23 985  s 24 2447 # 136.37° 4.8   ° -2.21,7.29
 pigs s 23 984  s 24 2420 # *
 pigs s 23 983  s 24 2392 # 136.5 ° 9.71  ° -1.88,7.08

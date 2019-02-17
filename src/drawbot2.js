@@ -162,6 +162,9 @@ const splitIntoContiguousMoves = (polyline, moves = []) => {
     }
 
   }
+  else {
+    moves = [polyline]
+  }
 
   return moves
 }
@@ -445,23 +448,33 @@ const queuePolyline = (points, returnToStart = false) => {
   }
 
   // TODO: test with circle-partially-out-of-bounds.js
-  // points = splitIntoContiguousMoves(points)
-
-  // move to starting location (without drawing)
-  const xStart = points.shift()
-  const yStart = points.shift()
-  move(xStart, yStart)
-
-  // draw to all points
-  for (let i = 0; i < points.length; i += 2) {
-    move(points[i], points[i + 1], true)
+  let moves = splitIntoContiguousMoves(points)
+  if (moves.length > 1) {
+    // capture starting point
+    let startX = moves[0][0], startY = moves[0][1]
+    // queue each move
+    moves.forEach(move => queuePolyline(move, false))
+    // return to starting point
+    move(startX, startY, true)
   }
+  else {
 
-  if (returnToStart) {
+    // move to starting location (without drawing)
+    const xStart = points.shift()
+    const yStart = points.shift()
     move(xStart, yStart)
-  }
 
-  drawOff()
+    // draw to all points
+    for (let i = 0; i < points.length; i += 2) {
+      move(points[i], points[i + 1], true)
+    }
+
+    if (returnToStart) {
+      move(xStart, yStart)
+    }
+
+    drawOff()
+  }
 }
 
 /**
